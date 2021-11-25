@@ -169,8 +169,10 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
     mainFrame.Navigate(typeof(Pages.Page1));
     ```    
     
-    After adding the content, your screen will look like below screenshot.
+    After adding the content, your screen will look like below screenshot.   
     
-    
-    
+1. Right-click the **DemoWindowsapp** project node in Solution Explorer and select **Add** then **New Folder** and name it as Pages.
+
+1. Right-click the **DemoWindowsapp** project node in Solution Explorer and select **Add** then **New Item** and name it as Page1.cs.
+
    
