@@ -35,6 +35,7 @@ MySQL is a database management system that allows you to manage relational datab
    `mysql>`
 
 1. Use the SHOW DATABASES to display all databases in the current server. The output for the above command will be shown as below:
+    
     ```
     show databases;
     ```
@@ -47,14 +48,64 @@ MySQL is a database management system that allows you to manage relational datab
    `Query OK, 1 row affected (0.02 sec)`
    
 1. Run the following command for using the database **demo** which we created in the above step. After running the command you will be prompted with a message saying **Database changed**.
+   
    ```
    USE demo;
    ```
 1. **DROP DATABASE** command is used for deleting the databases in MySQL. After running the following command the database **demo** which we created at the step 6 will be deleted. The query will resuls with a message saying **Query OK, 0 rows affected (0.03 sec)**.
+   
    ```
    DROP DATABASE demo;
    ```
 
 ### Task 2: CRUD(Create, Read, Update and Delete) operations in MySQL
 
-1. 
+1. Run the below commands to create a new database named **sample** and creating a table using **CREATE TABLE** command inside the **sample** database.
+   
+   ```
+   CREATE DATABASE sample;
+   USE sample;
+   CREATE TABLE sample_table ( id smallint unsigned not null auto_increment, name varchar(20) not null, constraint pk_example primary key (id) );
+   ```
+1. **INSERT INTO** command is used for adding the data to the table which we created in the above step. The below command will add the data to the **sample_table**.
+   
+   ```
+   INSERT INTO sample_table ( id, name ) VALUES ( 1, 'Sample data1' );
+   INSERT INTO sample_table ( id, name ) VALUES ( 2, 'Sample data2' );
+   INSERT INTO sample_table ( id, name ) VALUES ( 3, 'Sample data3' );
+   ```
+1. In order to view the data created inside the **sample_table**, run the following command and you will be prompted with a table with two fields **id** and **name**.
+   
+   ```
+   SELECT * FROM sample_table;
+   ```
+1. With the below command we are only selecting the **name** field from the above table.
+   
+   ```
+   SELECT name FROM sample_table;
+   ```
+1. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause. For example, the following statement updates data in **name** field with **id=2**.
+   
+   ```
+    UPDATE sample_data SET name = 'Hill' WHERE id = 2;
+   ```
+   Run the below command to view the changes to the table after running update command.
+    
+    ```
+     SELECT * FROM sample_table;
+    ```
+1. To delete the data inside the above table, we are using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
+   
+   ```
+   DELETE FROM sample_table WHERE id=3;
+   ```
+   Run the below command to view the changes to the table after running **DELETE FROM** command.
+    ```
+     SELECT * FROM sample_table;
+    ```
+1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
+   
+   ```
+    DROP TABLE sample_table;
+    ```
+### Task 3: Clauses in MySQL
