@@ -109,15 +109,73 @@ MySQL is a database management system that allows you to manage relational datab
     DROP TABLE sample_table;
     ```
 ### Task 3: Clauses in MySQL
-1. Create a new table **cource** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
+1. Create a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
    
    ```
-   CREATE TABLE course
+   CREATE TABLE Course
    (
     CourseId INT PRIMARY KEY,
     Name NVARCHAR(50) NOT NULL,
     Teacher NVARCHAR(256) NOT NULL
    );
    ```
+   ```
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 101, 'C Programming', 'Neelima' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 102, 'C ++', 'Neelima' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 103, 'Java', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 104, '.Net', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 105, 'Advanced Java', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 106, 'Oracle', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 107, 'MySQL', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 108, 'T-SQL', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 109, 'Big Data', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 110, 'Machine Learning', 'Ashok' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 111, 'Devops', 'Vani' );
+   ```
+ 1. In the below query we have used **select**, **from**, **where** clauses. Select clauses is used to mention the required fields from the table(s). In **from** clause, source table(s) will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table(s)(the table mentioned in the from clause) based on the field.
+ 
+  ```
+  SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
+  ```
+1. The following clause **GROUP BY** is used to aggregate the data from the **Course** table.
    
+   ```
+   SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
+   ```
+1. **HAVING** clause is used to restrict the data upon data aggregation(along with GROUP BY).
+  > Note: **HAVING** clause works only with the **GROUP BY** clause.
+  
+  ```
+  SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
+  ```
+1. **ORDER By** clause is used to order the data based on the required field from the source table.
+
+   ```
+   SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
+   ```
+1. Below is the query with all the clauses.
    
+   ```
+   SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
+   ```
+
+### Task 4: Update, Delete and Replace commands in MySQL
+
+1. **Update** command is used to update the data in the table. The following query replaces course ID 101 with 1001 inside **Course** table.
+   
+   ```
+   UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
+   ```
+1. Replace command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
+   
+   ```
+   SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
+   ```
+1. Delete statement is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from course table.
+
+   ```
+   DELETE FROM Course WHERE Teacher = 'Neelima';
+   ```
+
+### Task 5: Joins in MySQL
+
