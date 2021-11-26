@@ -21,7 +21,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    > Please note that installation process takes 4-5 minutes to complete.
 
 
-# Exercise : Build a sample C# WinUI 3 App 
+# Exercise 2: Build a sample C# WinUI 3 App 
 
 1. Go to **Start** button in the VM, search for **Visual Studio 2022** there and select **Visual Studio 2022 Current** to open it.
 
@@ -166,13 +166,63 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 1. Finally, add the following line inide the **MainWindow** method to load Page1 into the mainFrame when the MainWindow is initialized.
 
     ```
-    mainFrame.Navigate(typeof(Pages.Page1));
+    mainFrame.Navigate(typeof(Page1));
     ```    
     
     After adding the content, your screen will look like below screenshot.   
     
-1. Right-click the **DemoWindowsapp** project node in Solution Explorer and select **Add** then **New Folder** and name it as Pages.
 
-1. Right-click the **DemoWindowsapp** project node in Solution Explorer and select **Add** then **New Item** and name it as Page1.cs.
+# Exercise 3: Build and run the application
 
-   
+1. Right-click the **DemoWindowsapp** project node in Solution Explorer and click on **Build** to build the application.
+
+1. Once the build is suceeded, you will receive a **succeeded** message in the output window.
+
+1. Press **F5** or select the **green Start arrow** button on the Visual Studio toolbar to run the application.
+
+1. When the application is launched, Page1 will be loaded by default as you have configured the **MainWindow** method earlier to load Page1.
+
+1. Now, click on **Go to Page 2** button to navigate to Page2.
+
+1. Next, Page2 will be loaded on the application. You can navigate back to Page1 by cliccking **Go to Page 1** button.
+
+1. Click on **X** on the Page 2 to close the page and stop the application.
+
+
+# Exercise 4: Package the application and deploy it
+
+## Configure your project
+
+1. In Solution Explorer, expand the project node of your application project.
+
+1. Double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
+
+1. Select the Packaging tab and enter the below name for the package publishing data. 
+ 
+   > This is where you can choose which certificate to use to sign your app. All MSIX apps must be signed with a certificate.
+
+1. Save your **Package.appxmanifest** file after you have made the necessary edits for your app.
+
+## Generate an app package
+
+1. In Solution Explorer, open the solution for your application project.
+
+1. Right-click the project and choose Publish->Create App Packages (before Visual Studio 2019 version 16.3, the Publish menu is named Store).
+
+1. Select Sideloading in the first page of the wizard and then click Next.
+
+1. On the Select signing method page, select **No, skip packaging signing** and then click Next.
+ 
+   > You can whether to skip packaging signing or select a certificate for signing. select a certificate from your local certificate store, select a certificate file, or create a new certificate. For an MSIX package to be installed on an end user's machine, it must be signed with a cert that is trusted on the machine.
+
+1. On the **Select and Configure Packages** dialog, select the architecture configurations (x86, x64) to ensure that your app can be deployed to the widest range of devices.
+
+1. On the **Configure update settings** blade, enter the below value in the **Intaller location** field and click on **Create**.
+
+   ```
+   C:\Users\demouser\source\repos\DemoWindowsapp\
+   ```
+
+1. Wait until the package is created. When your app has been successfully packaged, you will be presented with the below page.
+
+1. 
