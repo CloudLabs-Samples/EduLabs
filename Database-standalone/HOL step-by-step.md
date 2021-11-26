@@ -109,3 +109,15 @@ MySQL is a database management system that allows you to manage relational datab
     DROP TABLE sample_table;
     ```
 ### Task 3: Clauses in MySQL
+1. Create a new table **cource** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
+   
+   ```
+   CREATE TABLE course
+   (
+    CourseId INT PRIMARY KEY,
+    Name NVARCHAR(50) NOT NULL,
+    Teacher NVARCHAR(256) NOT NULL
+   );
+   ```
+   
+   
