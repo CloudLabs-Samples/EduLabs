@@ -26,11 +26,10 @@ MySQL is a relational database management system (RDBMS) developed by Oracle tha
 
 A database is a separate application that stores a collection of data. Each database has one or more distinct APIs for creating, accessing, managing, searching and replicating the data it holds. Nowadays, we use relational database management systems (RDBMS) to store and manage huge volume of data. This is called relational database because all the data is stored into different tables and relations are established using primary keys or other keys known as Foreign Keys.
 
-1. Copy the IP address from Environment details page. Add **Host Name/IP address** and click on **open** to connect to Linux virtual machine from putty.
-
+1. Copy the IP address from Environment details page. 
 1. Search **Putty** inside the Jump VM by searching in the windows search bar.
 
-1. Add **Host Name/IP address** and click on **open** to connect to Linux virtual machine from putty.
+1. Add **IP address** under **Host Name(or IP address)** and click on **open** to connect to Linux virtual machine from putty.
 
    ![](media/putty.png)
 
@@ -45,29 +44,29 @@ A database is a separate application that stores a collection of data. Each data
 
    `mysql>`
 
-1. Enter the below query in putty and click **Enter** to view all databases in the current server. The output for the following command will be simlar to below screenshot.
+1. Copy and paste the below query and click **Enter** to view all databases in the current server. The output for the following command will be simlar to below screenshot.
     
     ```
     show databases;
     ```
     ![](media/mysql-showDB.png)
     
-1. Create a sample database named **demo** using the following query. We will be using it in further steps of this task.
+1. Copy and paste the below query to create a sample database named **demo**. We will be using this database in further steps of this task.
     ```
     CREATE DATABASE demo;
     ```
-   An Output message will be prompted  as shown below after running the above command successfully which says `Query OK, 1 row affected (0.02 sec)`.
+   An Output message will be prompted  as shown below after running the above command successfully which shows `Query OK, 1 row affected (0.02 sec)`.
    
    ![](media/mysql-quey1.png)
    
-1. Run the below query for using the database **demo** which we created in the previous step. After running the command you will be prompted with a message saying **Database changed**.
+1. Run the below query for using the database **demo** which we created in the previous step. After running the command you will be prompted with a message saying **Database changed** which refers to change in database from Default to **Demo**.
    
    ```
    USE demo;
    ```
    ![](media/mysql-dbchange.png)
    
-1. The database **demo** which we created at the step 7 will be deleted after running the following query. The query will give an output message which says **Query OK, 0 rows affected (0.03 sec)**. **DROP DATABASE** command is used for deleting the databases in MySQL. 
+1. Run the below query to delete the database **demo** which we created in step 7. The query will give an output message which says **Query OK, 0 rows affected (0.03 sec)**. **DROP DATABASE** command is used for deleting the databases in MySQL. 
    
    ```
    DROP DATABASE demo;
@@ -76,10 +75,12 @@ A database is a separate application that stores a collection of data. Each data
 
 ### Task 2: CRUD(Create, Read, Update and Delete) operations in MySQL
 
-MySQL provides a set of some basic but most essential operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations. 
+MySQL provides a set of some basic operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations. 
 Let us start with the understanding of CRUD operations in SQL with the help of examples. We will be writing all the queries in the supporting examples using the MySQL database.
 
-1. Run the below commands to create a new database named **sample**. Inside new database **sample**, we are creating a table named **sample_table** using **CREATE TABLE** command.
+CRUD is an acronym that stands for Create, Read, Update, and Delete. 
+
+1. Run the below commands to create a new database named **sample** and a table named **sample_table**. Now you created a table named **sample_table** inside the database **sample**.
 
    ```
    CREATE DATABASE sample;
@@ -88,7 +89,9 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-createtable.png)
    
-1. Insert data to the **sample_table** by running the following queries in putty. **INSERT INTO** command along with Values is used for adding the data to the table in MySQL.
+1. Now you created a table named **sample_table** inside the database **sample**.
+   
+1. In the next step, you will insert the data to the **sample_table** by running the following queries. SQL uses **INSERT INTO** statement to create new records within the table.
    
    ```
    INSERT INTO sample_table ( id, name ) VALUES ( 1, 'Sample data1' );
@@ -97,7 +100,7 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-inserttable.png)
    
-1. In order to view the data created inside the **sample_table**, run the following query and you will be prompted with a table with two fields named **id** and **name** with data. 
+1. Run the following query in order to view the data created inside the **sample_table**. You will be prompted with a table with two fields named **id** and **name** with data. 
    
    ```
    SELECT * FROM sample_table;
@@ -111,34 +114,38 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-selectname.png)
    
-1. Copy the query and run the command in putty. Observe the updated data in **name** field with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause.
+1. Copy and paste the below query and hit **Enter**. Observe the updated data under **name** column with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments with **SET** clause.
    
    ```
    UPDATE sample_table SET name = 'Hill' WHERE id = 2;
    ```
    ![](media/mysql-update.png)
    
-1. Run the below command to view the changes to the table after running update command. Observe the changed data inside the sample_table.
+   > Note: Now you have successfully updated the table with new value under **name** cloumn
+   
+1. Run the below query to view the changes that have been done to the table **sample_table**.
     
     ```
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-update2.png)
     
-1. Run the following query to delete the row with **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
+1. Run the following query to delete the row **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific data inside the table.
    
    ```
    DELETE FROM sample_table WHERE id=3;
    ```
    ![](media/mysql-delete02.png)
    
-1. Run the below command to view the changes to the table after running **DELETE FROM** command.The above command will delete the data with id=3.
+   > Note :The above command will delete the row **id=3**.
+   
+1. Copy and paste the below query and hit **Enter** to view the changes that have been done in table after running **DELETE FROM** command.
     ```
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-deletetable.png)
     
-1. The following query is used to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
+1. Run the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. You will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
    
     ```
     DROP TABLE sample_table;
@@ -147,7 +154,7 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
     
 ### Task 3: Clauses in MySQL
 
-Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database.
+Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database. A clause in SQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. MySQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses 
 
 1. Run the following query inside the terminal which creates a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
    
@@ -201,7 +208,7 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
     ```
     ![](media/mysql-having.png)
     
-1. The following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order in the output.
+1. The following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
@@ -219,21 +226,21 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
 
 
 
-1. **Update** command is used to update the data in the table. The following query replaces course ID 101 with 1001 inside **Course** table.
+1. Copy the command and run it in the mysql terminal inside putty. The below **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
    
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
    ![](media/mysql-updatenew.png)
    
-1. Replace command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
+1. Run following query and observe that the Name Bhaskar is replced with John. Replace command is used to replace all occurrences of a substring within a string, with a new substring. 
    
    ```
    SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
    ```
    ![](media/mysql-replace.png)
    
-1. Delete statement is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from course table.
+1. Copy the following query and run it. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from **Course** table.
 
    ```
    DELETE FROM Course WHERE Teacher = 'Neelima';
@@ -248,7 +255,7 @@ MySQL JOINS are used to retrieve data from multiple tables. A MySQL JOIN is perf
    - MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
    - MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
     
-1. We need two tables for performing the actions in MySQL using Joins. Let us create one more table named **Qualification** and add the data to the table.
+1. We need two tables for performing the actions in MySQL using Joins. Let us create one more table named **Qualification** and add the data to the table by running the following queries.
    
    ```
    CREATE TABLE Qualification
