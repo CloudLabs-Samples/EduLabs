@@ -195,21 +195,28 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
 
 ### Task 4: Update, Delete and Replace commands in MySQL
 
+
+
 1. **Update** command is used to update the data in the table. The following query replaces course ID 101 with 1001 inside **Course** table.
    
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
+   ![](media/mysql-updatenew.png)
+   
 1. Replace command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
    
    ```
    SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
    ```
+   ![](media/mysql-replace.png)
+   
 1. Delete statement is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from course table.
 
    ```
    DELETE FROM Course WHERE Teacher = 'Neelima';
    ```
+   ![](media/mysql-delete.png)
 
 ### Task 5: Joins in MySQL
 
