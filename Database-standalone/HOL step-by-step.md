@@ -156,7 +156,7 @@ CRUD is an acronym that stands for Create, Read, Update, and Delete.
 
 Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database. A clause in SQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. MySQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses 
 
-1. Run the following query inside the terminal which creates a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
+1. Run the following query to creates a new table **course** and insert the different values into the table. We will use this table in further steps for learning the clauses in MYSQL.
    
    ```
    CREATE TABLE Course
@@ -179,21 +179,21 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
    INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 110, 'Machine Learning', 'Ashok' );
    INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 111, 'Devops', 'Vani' );
    ```
-1. In order to view the data created inside the **sample_table**, run the following query.
+1. Run the following query inorder to view the data created inside the **Course** table.
    
    ```
    SELECT * FROM Course;
    ```
    ![](media/mysql-selecttask2.png)
    
-1. The following query will select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **where** clauses. Select clauses is used to mention the required fields from the table. In **from** clause, source table will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table. Run the below query and observe the data.
+1. Copy and Paste the following query and hit **Enter** to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table. Run the below query and observe the data how clauses will work for fetching the data.
  
    ```
    SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
    ```
    ![](media/mysql-coursesselect.png)
    
-1. The following query with **GROUP BY** clause which is used to aggregate the data from the **Course** table.
+1. Run the following query with **GROUP BY** clause which is used to aggregate the data from the **Course** table.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
@@ -215,7 +215,7 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
    ```
    ![](media/mysql-orderby.png)
    
-1. Below is an example query with all the clauses. Run the query and explore the above queries by changing the fields.
+1. Below is an example query with all the clauses. Run the following query and you can explore the above queries by changing the fields.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
