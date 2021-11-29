@@ -15,10 +15,7 @@ SQL contains three parts:
 
 ## MySQL
 
-The daughter’s name of the MySQL’s co-founder is **Monty Widenius**. The name of MySQL is the combination of My and SQL, MySQL.
-
 MySQL is a database management system that allows you to manage relational databases. It is open source software backed by Oracle. It means you can use MySQL without paying a dime. Also, if you want, you can change its source code to suit your needs. Even though MySQL is open source software, you can buy a commercial license version from Oracle to get premium support services. MySQL is pretty easy to master in comparison with other database software like Oracle Database, or Microsoft SQL Server.
-
 
 
 
@@ -26,10 +23,18 @@ MySQL is a database management system that allows you to manage relational datab
 
 A database is a separate application that stores a collection of data. Each database has one or more distinct APIs for creating, accessing, managing, searching and replicating the data it holds. Nowadays, we use relational database management systems (RDBMS) to store and manage huge volume of data. This is called relational database because all the data is stored into different tables and relations are established using primary keys or other keys known as Foreign Keys.
 
-1. To connect to the MySQL Server, use this command:
+1. Copy the IP address from Environment details page. Add **Host Name/IP address** and click on **open** to connect to Linux virtual machine from putty.
+
+1. Search **Putty** inside the Jump VM by searching in the windows search bar.
+
+1. Add **Host Name/IP address** and click on **open** to connect to Linux virtual machine from putty.
+
+   ![](media/putty.png)
+
+1. Enter the following query to connect to the MySQL Server from putty.
 
    ```
-     sudo mysql -u root
+   sudo mysql -u root
    ```
    ![](media/mysql-root.png)
    
@@ -37,31 +42,34 @@ A database is a separate application that stores a collection of data. Each data
 
    `mysql>`
 
-1. Use the SHOW DATABASES to display all databases in the current server. The output for the above command will be shown as below:
+1. Enter the below query in putty and click **Enter** to view all databases in the current server. The output for the following command will be simlar to below screenshot.
     
     ```
     show databases;
     ```
     ![](media/mysql-showDB.png)
     
-1. Use the following commands for creating a sample database **demo** and we will be using it in further steps of this task.
+1. Create a sample database named **demo** using the following query. We will be using it in further steps of this task.
     ```
     CREATE DATABASE demo;
     ```
-   The following message will be prompted after running the above command successfully.
+   An Output message will be prompted  as shown below after running the above command successfully which says `Query OK, 1 row affected (0.02 sec)`.
    
-   `Query OK, 1 row affected (0.02 sec)`
+   ![](media/mysql-quey1.png)
    
-1. Run the following command for using the database **demo** which we created in the above step. After running the command you will be prompted with a message saying **Database changed**.
+1. Run the below query for using the database **demo** which we created in the previous step. After running the command you will be prompted with a message saying **Database changed**.
    
    ```
    USE demo;
    ```
-1. **DROP DATABASE** command is used for deleting the databases in MySQL. After running the following command the database **demo** which we created at the step 6 will be deleted. The query will resuls with a message saying **Query OK, 0 rows affected (0.03 sec)**.
+   ![](media/mysql-dbchange.png)
+   
+1. The database **demo** which we created at the step 7 will be deleted after running the following query. The query will give an output message which says **Query OK, 0 rows affected (0.03 sec)**. **DROP DATABASE** command is used for deleting the databases in MySQL. 
    
    ```
    DROP DATABASE demo;
    ```
+  ![](media/mysql-dropdemo.png)
 
 ### Task 2: CRUD(Create, Read, Update and Delete) operations in MySQL
 
