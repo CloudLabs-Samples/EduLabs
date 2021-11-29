@@ -224,9 +224,9 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
 
 ### Task 4: Update, Delete and Replace commands in MySQL
 
+SQL **UPDATE** command can be used to modify any field value of any MySQL table. The **DELETE** statement is used to delete existing records in a table. The **REPLACE** statement in MySQL is an extension of the SQL Standard. This statement works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
 
-
-1. Copy the command and run it in the mysql terminal inside putty. The below **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
+1. Copy and paste the below query and hit **Enter**. The below **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
    
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
@@ -249,13 +249,13 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
 
 ### Task 5: Joins in MySQL
 
-MySQL JOINS are used to retrieve data from multiple tables. A MySQL JOIN is performed whenever two or more tables are joined in a SQL statement. There are different types of MySQL joins:
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them. MySQL JOINS are used to retrieve data from multiple tables. A MySQL JOIN is performed whenever two or more tables are joined in a SQL statement. There are different types of MySQL joins:
 
    - MySQL INNER JOIN (or sometimes called simple join)
    - MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
    - MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
     
-1. We need two tables for performing the actions in MySQL using Joins. Let us create one more table named **Qualification** and add the data to the table by running the following queries.
+1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in MySQL using Joins. 
    
    ```
    CREATE TABLE Qualification
@@ -273,20 +273,20 @@ MySQL JOINS are used to retrieve data from multiple tables. A MySQL JOIN is perf
    INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MCA', 'Vani', '2017-04-30' );
    INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MSC', 'Ashok', '2014-07-30' );
    ```
-1. Inner join is used to join both the tables. Data qualified only when the data exist in both the tables.(Based on the given fields). Run the following query to perform **INNER JOIN** operation on the tables **Course** and **Qualification**.
+1. Run the following query to perform **INNER JOIN** operation on the tables **Course** and **Qualification**. Inner join is used to join both the tables. Data qualified only when the data exist in both the tables.(Based on the given fields). 
    > Note: In general, primary key fields will be used to join the tables.
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A INNER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
    ```
    ![](media/mysql-innerjoin.png)
    
-1. Run the below query and observe the **Left outer join** operation. Left outer join is used to qualify all the records from the left table(Course) and only matched records from the right table(Qualification).
+1. Run the below query and observe the **Left outer join** operation. Left outer join is used to qualify all the records from the left table **Course** and only matched records from the right tabl **Qualification**.
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A LEFT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
    ```
    ![](media/mysql-leftjoin.png)
    
-1. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
+1. Copy and paste the following query and hit **Enter**. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
    
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
