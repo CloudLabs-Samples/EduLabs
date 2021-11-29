@@ -1,8 +1,8 @@
-# Exercise 1: Intall the C# and C++ Windows App SDK extension for Visual Studio 
+# Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio 
 
-In this exercise, you will install the C# and C++ Windows App SDK extensions that allows to create the applications in Visual Studio.
+In this exercise, you will install the C# and C++ Windows App SDK extensions that allow you to create the applications in Visual Studio.
 
-1. From the Virtual Machine, open file explorer and navigate to the path `C:\LabFiles` to select the C# extension file.
+1. From the Virtual Machine, open the file explorer and navigate to the path `C:\LabFiles` to select the C# extension file.
 
 1. Double click on the **WindowsAppSDK.Cs.Extension.Dev17.Standalone** file to open the VSIX installer.
 
@@ -16,9 +16,9 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/Extension-3.png)
 
-   > Please note that installation process takes 4-5 minutes to complete.
+   > Please note that the installation process takes 4-5 minutes to complete.
    
-1. Navigate back to file eplorer and double click on the **WindowsAppSDK.Cpp.Extension.Dev17.Standalone** file to open the VSIX installer of C++ extension.
+1. Navigate back to file explorer and double click on the **WindowsAppSDK.Cpp.Extension.Dev17.Standalone** file to open the VSIX installer of C++ extension.
 
    ![](./media/Extension-4.png)
 
@@ -30,16 +30,16 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/Extension-6.png)
    
-   > Please note that installation process takes 4-5 minutes to complete.
+   > Please note that the installation process takes 4-5 minutes to complete.
 
 
 # Exercise 2: Build a sample C# WinUI 3 App 
 
-1. Go to **Start** button in the VM, search for **Visual Studio 2022** there and select **Visual Studio 2022 Current** to open it.
+1. Go to the **Start** button in the VM, search for **Visual Studio 2022** there and select **Visual Studio 2022 Current** to open it.
 
    ![](./media/App1.png)
 
-1. On the Sign in to Visual Studio click on **Sign in** and complete the Sign in process by using the below credentials.
+1. On the Sign in to Visual Studio click on **Sign in** and complete the Sign-in process by using the below credentials.
 
    ![](./media/App.png)
 
@@ -60,7 +60,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 1. Click on **Next** to enter the project details.
 
-1. On the **Configure your ne project** blade, enter the below value for **Project name (1)** field and click on **Create (2)**.
+1. On the **Configure your new project** blade, enter the below value for **Project name (1)** field and click on **Create (2)**.
 
    ```
    DemoWindowsapp
@@ -72,7 +72,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/App7.png)
 
-1. If you receive a pop-up to enable the Developer mode, toggle the Developer mode to **On** and click on **Yes** to allow installing and running apps outside from the Microoft store.
+1. If you receive a pop-up to enable the Developer mode, toggle the Developer mode to **On** and click on **Yes** to allow installing and running apps outside of the Microsoft store.
 
    ![](./media/App8.1.png)
    
@@ -131,11 +131,11 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
         }
     ```    
 
-    After adding the content, your screen ill look like below screenshot.
+    After adding the content, your screen will look like the below screenshot.
     
     ![](./media/App14.png)
     
-    > Info: The above method will navigate the current frame to Page2 when the Page1 button is clicked. You ill create a second page called Page2 and create the same layout and button click handler in the below steps. But this time navigate back to Page 1.
+    > Info: The above method will navigate the current frame to Page2 when the Page1 button is clicked. You'll create a second page called Page2 and create the same layout and button click handler in the below steps. But this time navigate back to Page 1.
 
 
 1. To add a second page to your app project, right-click the **DemoWindowsapp** project node in Solution Explorer and select **Add** then **New Item**.
@@ -182,7 +182,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    }
    ```
    
-   After adding the content, your screen ill look like below screenshot.   
+   After adding the content, your screen will look like the below screenshot.   
    
    ![](./media/App16.png)
     
@@ -197,19 +197,19 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    </Grid>
    ```
    
-    After adding the content, your screen will look like below screenshot.
+    After adding the content, your screen will look like the below screenshot.
     
     ![](./media/App17.png)
  
 1. Open **MainWindow.xaml.cs** and remove the method **myButton_Click**.
 
-1. Finally, add the following line inide the **MainWindow** method to load Page1 into the mainFrame when the MainWindow is initialized.
+1. Finally, add the following line inside the **MainWindow** method to load Page1 into the mainFrame when the MainWindow is initialized.
 
     ```
     mainFrame.Navigate(typeof(Page1));
     ```    
     
-    After adding the content, your screen will look like below screenshot.   
+    After adding the content, your screen will look like the below screenshot.   
     
     ![](./media/App18.png)
 
@@ -217,7 +217,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 1. Right-click the **DemoWindowsapp** project node in Solution Explorer and click on **Build** to build the application.
 
-1. Once the build is suceeded, you will receive a **succeeded** message in the output window.
+1. Once the build is succeeded, you will receive a **succeeded** message in the output window.
 
    ![](./media/buildapp-1.png)
 
@@ -229,11 +229,11 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/buildapp-3.png)
 
-1. Now, click on **Go to Page 2** button to navigate to Page2.
+1. Now, click on the **Go to Page 2** button to navigate to Page2.
 
    ![](./media/buildapp-4.png)
 
-1. Next, Page2 will be loaded on the application. You can navigate back to Page1 by cliccking **Go to Page 1** button.
+1. Next, Page2 will be loaded on the application. You can navigate back to Page1 by clicking the **Go to Page 1** button.
 
 1. Click on **X** on the Page 2 to close the page and stop the application.
 
@@ -252,7 +252,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    
    > This is where you can choose which certificate to use to sign your app. All MSIX apps must be signed with a certificate.
 
-1. Save your **Package.appxmanifest** file after you have made the necessary edits for your app.
+1. Click on **File** and select **save Package.appxmanifest** to save the file.
 
    ![](./media/packageapp-.png)
 
@@ -260,9 +260,9 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 1. In Solution Explorer, open the solution for your application project.
 
-1. Right-click the project and choose Publish->Create App Packages (before Visual Studio 2019 version 16.3, the Publish menu is named Store).
+1. Right-click the project and choose to Publish->Create App Packages (before Visual Studio 2019 version 16.3, the Publish menu is named Store).
 
-1. Select **Sideloading** in the first page of the wizard and then click **Next**.
+1. Select **Sideloading** on the first page of the wizard and then click **Next**.
 
    ![](./media/packageapp-3.png)
 
@@ -276,7 +276,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/packageapp-5.png)
 
-1. On the **Configure update settings** blade, enter the below value in the **Intaller location** field and click on **Create**.
+1. On the **Configure update settings** blade, enter the below value in the **Installer location** field and click on **Create**.
 
    ```
    C:\Users\demouser\source\repos\DemoWindowsapp\
