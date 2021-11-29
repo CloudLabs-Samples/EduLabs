@@ -222,9 +222,9 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
 
 MySQL JOINS are used to retrieve data from multiple tables. A MySQL JOIN is performed whenever two or more tables are joined in a SQL statement. There are different types of MySQL joins:
 
-    -MySQL INNER JOIN (or sometimes called simple join)
-    -MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
-    -MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
+    - MySQL INNER JOIN (or sometimes called simple join)
+    - MySQL LEFT OUTER JOIN (or sometimes called LEFT JOIN)
+    - MySQL RIGHT OUTER JOIN (or sometimes called RIGHT JOIN)
     
 1. We need two tables for performing the actions in MySQL using Joins. Let us create one more table named **Qualification** and add the data to the table.
    
