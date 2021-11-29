@@ -1,7 +1,7 @@
 # Exercise 1: MYSQL Learning
 
 
-## Database: A database is merely a structured collection of data.
+## Database: A database is a structured collection of data.
 
 Data is a collection of a distinct small unit of information. It can be used in a variety of forms like text, numbers, media, bytes, etc. it can be stored in pieces of paper or electronic memory, etc.
 
