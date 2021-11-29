@@ -2,21 +2,24 @@
 
 
 ## Database: A database is merely a structured collection of data.
-The data relating to each other by nature. Therefore, we use the term relational database.
-A table contains columns and rows. It is like a spreadsheet.
-A table may relate to another table using a relationship, e.g., one-to-one and one-to-many relationships.
+
+Data is a collection of a distinct small unit of information. It can be used in a variety of forms like text, numbers, media, bytes, etc. it can be stored in pieces of paper or electronic memory, etc.
+
+A database is an organized collection of data, so that it can be easily accessed and managed. You can organize data into tables, rows, columns, and index it to make it easier to find relevant information.
+
 
 ## SQL(structured query language) – the language of the relational database
-SQL is the standardized language used to access the database. ANSI/SQL defines the SQL standard.
+SQL or Structured Query Language is used to operate on the data stored in a database. SQL depends on relational algebra and tuple relational calculus.
 SQL contains three parts:
-   - **Data definition language** includes statements that help you define the database and its objects, e.g., tables, views, triggers, stored procedures, etc.
-   - **Data manipulation language** contains statements that allow you to update and query data.
-   - **Data control language** allows you to grant the permissions to a user to access specific data in the database.
+   - **Data definition language** DDL is abbreviation of Data Definition Language. It is used to create, modify and destroy the structure of database objects in database.
+   - **Data manipulation language** DML is abbreviation of Data Manipulation Language. It is used to retrieve, modify, add, and delete data in database.
+   - **Data control language** DCL is abbreviation of Data Control Language. It is used to create roles, permissions, and referential integrity as well it is used to control access to database by securing it.
+   - **Transaction Control Language** TCL is abbreviation of Transactional Control Language. It is used to manage different transactions occurring within a database.
+
 
 ## MySQL
 
-MySQL is a database management system that allows you to manage relational databases. It is open source software backed by Oracle. It means you can use MySQL without paying a dime. Also, if you want, you can change its source code to suit your needs. Even though MySQL is open source software, you can buy a commercial license version from Oracle to get premium support services. MySQL is pretty easy to master in comparison with other database software like Oracle Database, or Microsoft SQL Server.
-
+MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL).It stores that information in separate “tables” and connects it with “keys”, which is why it’s relational. When your Website needs to access the information, it sends a request to the MySQL database server using SQL (this is the client-server model).MySQL uses something called the client-server model.The server part is where your data actually resides. In order to access this data, you need to request it. That’s where the client comes in. Using SQL programming language we mentioned earlier, the client sends a request to the database server for the data that the client needs.
 
 
 ### Task 1: Connect to MySQL server(In Ubuntu VM)
