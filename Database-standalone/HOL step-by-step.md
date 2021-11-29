@@ -131,6 +131,9 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
     DROP TABLE sample_table;
     ```
 ### Task 3: Clauses in MySQL
+
+Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database.
+
 1. Create a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
    
    ```
@@ -156,30 +159,39 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
 1. In the below query we have used **select**, **from**, **where** clauses. Select clauses is used to mention the required fields from the table(s). In **from** clause, source table(s) will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table(s)(the table mentioned in the from clause) based on the field.
  
-  ```
-  SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
-  ```
+   ```
+   SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
+   ```
+   ![](media/mysql-coursesselect.png)
+   
 1. The following clause **GROUP BY** is used to aggregate the data from the **Course** table.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
    ```
+   ![](media/mysql-groupby.png)
+   
 1. **HAVING** clause is used to restrict the data upon data aggregation(along with GROUP BY).
-  > Note: **HAVING** clause works only with the **GROUP BY** clause.
+   > Note: **HAVING** clause works only with the **GROUP BY** clause.
   
-  ```
-  SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
-  ```
+    ```
+    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
+    ```
+    ![](media/mysql-having.png)
+    
 1. **ORDER By** clause is used to order the data based on the required field from the source table.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
    ```
+   ![](media/mysql-orderby.png)
+   
 1. Below is the query with all the clauses.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
    ```
+   ![](media/mysql-allclauses.png)
 
 ### Task 4: Update, Delete and Replace commands in MySQL
 
