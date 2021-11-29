@@ -106,4 +106,106 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
     ```
     DROP TABLE sample_table;
     ```
+### Task 3: Clauses in PostgreSQL
+
+Clause is defined as a set of rules, that makes to understand the concepts of PostgreSQL command in Database.
+
+1. Create a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
+   
+   ```
+   CREATE TABLE Course
+   (
+   CourseId INT PRIMARY KEY,
+   Name VARCHAR(50),
+   Teacher VARCHAR(256)
+   );
+   ```
+   ```
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 101, 'C Programming', 'Neelima' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 102, 'C ++', 'Neelima' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 103, 'Java', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 104, '.Net', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 105, 'Advanced Java', 'Hema' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 106, 'Oracle', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 107, 'MySQL', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 108, 'T-SQL', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 109, 'Big Data', 'Bhaskar' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 110, 'Machine Learning', 'Ashok' );
+   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 111, 'Devops', 'Vani' );
+   ```
+   Run the following query to check the created table **Course**.
+   
+   ```
+   SELECT * FROM Course;
+   ```
+   
+1. In the below query we have used **Select**, **From**, **Where** clauses. Select clauses is used to mention the required fields from the table. In **From** clause, source table will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table (the table mentioned in the from clause) based on the field.
+ 
+   ```
+   SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
+   ```
+   ![](media/)
+   
+1. The following clause **GROUP BY** is used to aggregate the data from the **Course** table.
+   
+   ```
+   SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
+   ```
+   ![](media/)
+   
+1. **HAVING** clause is used to restrict the data upon data aggregation(along with GROUP BY).
+   > Note: **HAVING** clause works only with the **GROUP BY** clause.
+  
+    ```
+    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
+    ```
+    ![](media/)
+    
+1. **ORDER By** clause is used to order the data based on the required field from the source table.
+
+   ```
+   SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
+   ```
+   ![](media/)
+   
+1. Using **With** clause  we can create a temporary table and perform required aggregations and filters.
+
+   ```
+   With temp_course AS ( SELECT COUNT(CourseId) N, Teacher FROM Course GROUP BY Teacher)
+   (SELECT * FROM temp_course WHERE N > 1);
+   ```
+   ![](media/)
+   
+1. Below is the query with all the clauses.
+   
+   ```
+   SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
+   ```
+   ![](media/)
+   
+
+### Task 4: Update, Delete and Replace commands in PostgreSQL
+
+1. **Update** command is used to update the data in the table. The following query replaces course ID 101 with 1001 inside **Course** table.
+   
+   ```
+   UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
+   ```
+   ![](media/)
+   
+1. Replace command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
+   
+   ```
+   SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
+   ```
+   ![](media/)
+   
+1. Delete statement is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from course table.
+
+   ```
+   DELETE FROM Course WHERE Teacher = 'Neelima';
+   ```
+   ![](media/)
+
+
 
