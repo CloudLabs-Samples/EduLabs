@@ -69,7 +69,7 @@ A database is a separate application that stores a collection of data. Each data
    ```
    DROP DATABASE demo;
    ```
-  ![](media/mysql-dropdemo.png)
+   ![](media/mysql-dropdemo.png)
 
 ### Task 2: CRUD(Create, Read, Update and Delete) operations in MySQL
 
