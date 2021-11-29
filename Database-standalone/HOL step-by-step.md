@@ -1,4 +1,4 @@
-# Exercise1: MYSQL Learning
+# Exercise 1: MYSQL Learning
 
 
 ## Database: A database is merely a structured collection of data.
@@ -29,7 +29,7 @@ MySQL is a database management system that allows you to manage relational datab
    ```
      sudo mysql -u root
    ```
-
+   ![](media/mysql-root.png)
 1. The following command will be prompted if you successfully connected to the MySQL server:
 
    `mysql>`
