@@ -111,14 +111,14 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-selectname.png)
    
-1. The following statement updates data in **name** field with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause.
+1. Copy the query and run the command in putty. Observe the updated data in **name** field with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause.
    
    ```
-    UPDATE sample_table SET name = 'Hill' WHERE id = 2;
+   UPDATE sample_table SET name = 'Hill' WHERE id = 2;
    ```
    ![](media/mysql-update.png)
    
-1. Run the below command to view the changes to the table after running update command.
+1. Run the below command to view the changes to the table after running update command. Observe the changed data inside the sample_table.
     
     ```
      SELECT * FROM sample_table;
@@ -140,7 +140,7 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
     
 1. The following query is used to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
    
-   ```
+    ```
     DROP TABLE sample_table;
     ```
     ![](media/mysql-delete3.png)
@@ -149,7 +149,7 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
 
 Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database.
 
-1. Create a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
+1. Run the following query inside the terminal which creates a new table **course** and insert the different values to the table. We will use this table in further steps for learning the clauses in MYSQL.
    
    ```
    CREATE TABLE Course
@@ -172,21 +172,28 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
    INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 110, 'Machine Learning', 'Ashok' );
    INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 111, 'Devops', 'Vani' );
    ```
-1. In the below query we have used **select**, **from**, **where** clauses. Select clauses is used to mention the required fields from the table(s). In **from** clause, source table(s) will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table(s)(the table mentioned in the from clause) based on the field.
+1. In order to view the data created inside the **sample_table**, run the following query.
+   
+   ```
+   SELECT * FROM Course;
+   ```
+   ![](media/mysql-selecttask2.png)
+   
+1. The following query will select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **where** clauses. Select clauses is used to mention the required fields from the table. In **from** clause, source table will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table. Run the below query and observe the data.
  
    ```
    SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
    ```
    ![](media/mysql-coursesselect.png)
    
-1. The following clause **GROUP BY** is used to aggregate the data from the **Course** table.
+1. The following query with **GROUP BY** clause which is used to aggregate the data from the **Course** table.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
    ```
    ![](media/mysql-groupby.png)
    
-1. **HAVING** clause is used to restrict the data upon data aggregation(along with GROUP BY).
+1. Run the following query with **HAVING** clause which will be used to restrict the data upon data aggregation(along with GROUP BY).
    > Note: **HAVING** clause works only with the **GROUP BY** clause.
   
     ```
@@ -194,14 +201,14 @@ Clause is defined as a set of rules, that makes to understand the concepts of My
     ```
     ![](media/mysql-having.png)
     
-1. **ORDER By** clause is used to order the data based on the required field from the source table.
+1. The following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order in the output.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
    ```
    ![](media/mysql-orderby.png)
    
-1. Below is the query with all the clauses.
+1. Below is an example query with all the clauses. Run the query and explore the above queries by changing the fields.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
