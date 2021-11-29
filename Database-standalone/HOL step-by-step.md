@@ -79,8 +79,8 @@ A database is a separate application that stores a collection of data. Each data
 MySQL provides a set of some basic but most essential operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations. 
 Let us start with the understanding of CRUD operations in SQL with the help of examples. We will be writing all the queries in the supporting examples using the MySQL database.
 
-1. Run the below commands to create a new database named **sample** and creating a table using **CREATE TABLE** command inside the **sample** database.
-   
+1. Run the below commands to create a new database named **sample**. Inside new database **sample**, we are creating a table named **sample_table** using **CREATE TABLE** command.
+
    ```
    CREATE DATABASE sample;
    USE sample;
@@ -88,7 +88,7 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-createtable.png)
    
-1. **INSERT INTO** command is used for adding the data to the table which we created in the above step. The below command will add the data to the **sample_table**.
+1. Insert data to the **sample_table** by running the following queries in putty. **INSERT INTO** command along with Values is used for adding the data to the table in MySQL.
    
    ```
    INSERT INTO sample_table ( id, name ) VALUES ( 1, 'Sample data1' );
@@ -97,50 +97,54 @@ Let us start with the understanding of CRUD operations in SQL with the help of e
    ```
    ![](media/mysql-inserttable.png)
    
-1. In order to view the data created inside the **sample_table**, run the following command and you will be prompted with a table with two fields **id** and **name**.
+1. In order to view the data created inside the **sample_table**, run the following query and you will be prompted with a table with two fields named **id** and **name** with data. 
    
    ```
    SELECT * FROM sample_table;
    ```
    ![](media/mysql_sample_table.png)
    
-1. With the below command we are only selecting the **name** field from the above table.
+1. Run the below query to select only the **name** field from the above table.
    
    ```
    SELECT name FROM sample_table;
    ```
    ![](media/mysql-selectname.png)
    
-1. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause. For example, the following statement updates data in **name** field with **id=2**.
+1. The following statement updates data in **name** field with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause.
    
    ```
     UPDATE sample_table SET name = 'Hill' WHERE id = 2;
    ```
    ![](media/mysql-update.png)
    
-   Run the below command to view the changes to the table after running update command.
+1. Run the below command to view the changes to the table after running update command.
     
     ```
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-update2.png)
     
-1. To delete the data inside the above table, we are using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
+1. Run the following query to delete the row with **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
    
    ```
    DELETE FROM sample_table WHERE id=3;
    ```
-   Run the below command to view the changes to the table after running **DELETE FROM** command.The above command will delete the data with id=3.
+   ![](media/mysql-delete02.png)
+   
+1. Run the below command to view the changes to the table after running **DELETE FROM** command.The above command will delete the data with id=3.
     ```
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-deletetable.png)
     
-1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
+1. The following query is used to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
    
    ```
     DROP TABLE sample_table;
     ```
+    ![](media/mysql-delete3.png)
+    
 ### Task 3: Clauses in MySQL
 
 Clause is defined as a set of rules, that makes to understand the concepts of MySQL command in Database.
