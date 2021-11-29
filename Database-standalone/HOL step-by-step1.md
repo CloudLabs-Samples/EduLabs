@@ -12,35 +12,39 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
 
 ### Task 1:
 
-1. Use the following commands to connect to the PostgreSQL Server.
+1. Run the following queries in putty to connect to the PostgreSQL Server which has been isntalled inside the Jump VM.
 
    ```
    sudo su postgres
    psql
    ```
+   ![](media/postgre-sudo.png)
    
-1. The following command will be prompted on screen if you successfully connected to the MySQL server:
+1. The following command will be prompted on screen if you successfully connected to the MySQL server
 
    `postgres=#`
 
-1. Use the **\l** to display all defualt databases in the current server. The output for the above command will be shown as below:
+1. Enter **\l** to display all defualt databases in the current server. The output for the below command will be similar to below screenshot.
     
     ```
     \l
     ```
-    ![](media/)
+    ![](media/postgre-l.png)
     
-1. Use the following commands for creating a sample database **postgredb** and we will be using it in further steps of this task.
+1. Run the following commands for creating a sample database **postgredb**. We will be using this database in further steps of this task.
 
     ```
     CREATE DATABASE postgredb;
     ```
+    ![](media/postgre-createdb.png)
    
 1. Run the following command for using the database **postgredb** which we created in the above step. After running the command you will be prompted with a message saying **You are now connected to database "postgredb" as user "postgres"**.
    
    ```
    \c postgredb
    ```
+   ![](media/postgre-connect.png)
+   
 1. **DROP DATABASE** command is used for deleting the databases in PostgreSQL. We are not dropping the database now as we will be using it in further tasks.
 
 
@@ -51,7 +55,7 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
    ```
    CREATE TABLE sample_table(id int, name varchar(15));
    ```
-   ![](media/)
+   ![](media/postgre-createtable.png)
    
 1. **INSERT INTO** command is used for adding the data to the table which we created in the above step. The below command will add the data to the **sample_table**.
    
@@ -60,52 +64,56 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
    INSERT INTO sample_table ( id, name ) VALUES ( 2, 'Sample data2' );
    INSERT INTO sample_table ( id, name ) VALUES ( 3, 'Sample data3' );
    ```
-   ![](media/)
+   ![](media/postgre-insert.png)
    
 1. In order to view the data created inside the **sample_table**, run the following command and you will be prompted with a table with two fields **id** and **name**.
    
    ```
    SELECT * FROM sample_table;
    ```
-   ![](media/)
+   ![](media/postgre-select1.png)
    
 1. With the below command we are only selecting the **name** field from the above table.
    
    ```
    SELECT name FROM sample_table;
    ```
-   ![](media/)
+   ![](media/postgre-select2.png)
    
 1. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause. For example, the following statement updates data in **name** field with **id=2**.
    
    ```
    UPDATE sample_table SET name = 'Hill' WHERE id = 2;
    ```
-   ![](media/)
+   ![](media/postgre-update1.png)
    
    Run the below command to view the changes to the table after running update command.
     
     ```
     SELECT * FROM sample_table;
     ```
-    ![](media/)
+    ![](media/postgre-select3.png)
     
 1. To delete the data inside the above table, we are using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
    
    ```
    DELETE FROM sample_table WHERE id=3;
    ```
+   ![](media/postgre-deletequery.png)
+   
    Run the below command to view the changes to the table after running **DELETE FROM** command.The above command will delete the data with id=3.
     ```
     SELECT * FROM sample_table;
     ```
-    ![](media/)
+    ![](media/postgre-select4.png)
     
 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
    
     ```
     DROP TABLE sample_table;
     ```
+    ![](media/postgre-drop.png)
+    
 ### Task 3: Clauses in PostgreSQL
 
 Clause is defined as a set of rules, that makes to understand the concepts of PostgreSQL command in Database.
@@ -139,19 +147,21 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
    SELECT * FROM Course;
    ```
    
+   ![](media/postgre-courseselect.png)
+   
 1. In the below query we have used **Select**, **From**, **Where** clauses. Select clauses is used to mention the required fields from the table. In **From** clause, source table will be mentioned from where data is going to be fetched. **Where** clause is used to restrict the data while fetching data from source table (the table mentioned in the from clause) based on the field.
  
    ```
    SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
    ```
-   ![](media/)
+   ![](media/postgre-where.png)
    
 1. The following clause **GROUP BY** is used to aggregate the data from the **Course** table.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
    ```
-   ![](media/)
+   ![](media/postgre-groupby.png)
    
 1. **HAVING** clause is used to restrict the data upon data aggregation(along with GROUP BY).
    > Note: **HAVING** clause works only with the **GROUP BY** clause.
@@ -159,14 +169,14 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
     ```
     SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
     ```
-    ![](media/)
+    ![](media/postgre-having.png)
     
 1. **ORDER By** clause is used to order the data based on the required field from the source table.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
    ```
-   ![](media/)
+   ![](media/postgre-orderby.png)
    
 1. Using **With** clause  we can create a temporary table and perform required aggregations and filters.
 
@@ -174,14 +184,14 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
    With temp_course AS ( SELECT COUNT(CourseId) N, Teacher FROM Course GROUP BY Teacher)
    (SELECT * FROM temp_course WHERE N > 1);
    ```
-   ![](media/)
+   ![](media/postgre-with.png)
    
 1. Below is the query with all the clauses.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
    ```
-   ![](media/)
+   ![](media/postgre-allclause.png)
    
 
 ### Task 4: Update, Delete and Replace commands in PostgreSQL
@@ -191,21 +201,23 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
-   ![](media/)
+   ![](media/postgre-update.png)
    
-1. Replace command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
+1. **Replace** command is used to replace all occurrences of a substring within a string, with a new substring. The following query replaces the Name Bhaskar with John.
    
    ```
    SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
    ```
-   ![](media/)
+   ![](media/postgre-replace.png)
    
 1. Delete statement is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from course table.
 
    ```
    DELETE FROM Course WHERE Teacher = 'Neelima';
    ```
-   ![](media/)
+   ![](media/postgre-delete.png)
+   
+   ![](media/postgre-select.png)
    
 
 ### Task 5: Joins in MySQL
