@@ -24,6 +24,8 @@ MySQL is a database management system that allows you to manage relational datab
 
 ### Task 1: Connect to MySQL server(In Ubuntu VM)
 
+A database is a separate application that stores a collection of data. Each database has one or more distinct APIs for creating, accessing, managing, searching and replicating the data it holds. Nowadays, we use relational database management systems (RDBMS) to store and manage huge volume of data. This is called relational database because all the data is stored into different tables and relations are established using primary keys or other keys known as Foreign Keys.
+
 1. To connect to the MySQL Server, use this command:
 
    ```
@@ -39,6 +41,7 @@ MySQL is a database management system that allows you to manage relational datab
     ```
     show databases;
     ```
+    ![](media/mysql-showDB.png)
 1. Use the following commands for creating a sample database **demo** and we will be using it in further steps of this task.
     ```
     CREATE DATABASE demo;
@@ -67,6 +70,7 @@ MySQL is a database management system that allows you to manage relational datab
    USE sample;
    CREATE TABLE sample_table ( id smallint unsigned not null auto_increment, name varchar(20) not null, constraint pk_example primary key (id) );
    ```
+   ![](media/mysql-createtable.png)
 1. **INSERT INTO** command is used for adding the data to the table which we created in the above step. The below command will add the data to the **sample_table**.
    
    ```
@@ -74,35 +78,42 @@ MySQL is a database management system that allows you to manage relational datab
    INSERT INTO sample_table ( id, name ) VALUES ( 2, 'Sample data2' );
    INSERT INTO sample_table ( id, name ) VALUES ( 3, 'Sample data3' );
    ```
+   ![](media/mysql-inserttable.png)
 1. In order to view the data created inside the **sample_table**, run the following command and you will be prompted with a table with two fields **id** and **name**.
    
    ```
    SELECT * FROM sample_table;
    ```
+   ![](media/mysql_sample_table.png)
 1. With the below command we are only selecting the **name** field from the above table.
    
    ```
    SELECT name FROM sample_table;
    ```
+   ![](media/mysql-selectname.png)
 1. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause. For example, the following statement updates data in **name** field with **id=2**.
    
    ```
-    UPDATE sample_data SET name = 'Hill' WHERE id = 2;
+    UPDATE sample_table SET name = 'Hill' WHERE id = 2;
    ```
+   ![](media/mysql-update.png)
+   
    Run the below command to view the changes to the table after running update command.
     
     ```
      SELECT * FROM sample_table;
     ```
+    ![](media/mysql-update2.png)
 1. To delete the data inside the above table, we are using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
    
    ```
    DELETE FROM sample_table WHERE id=3;
    ```
-   Run the below command to view the changes to the table after running **DELETE FROM** command.
+   Run the below command to view the changes to the table after running **DELETE FROM** command.The above command will delete the data with id=3.
     ```
      SELECT * FROM sample_table;
     ```
+    ![](media/mysql-deletetable.png)
 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
    
    ```
