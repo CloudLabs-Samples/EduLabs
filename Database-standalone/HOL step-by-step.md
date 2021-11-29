@@ -32,6 +32,7 @@ A database is a separate application that stores a collection of data. Each data
      sudo mysql -u root
    ```
    ![](media/mysql-root.png)
+   
 1. The following command will be prompted if you successfully connected to the MySQL server:
 
    `mysql>`
@@ -42,6 +43,7 @@ A database is a separate application that stores a collection of data. Each data
     show databases;
     ```
     ![](media/mysql-showDB.png)
+    
 1. Use the following commands for creating a sample database **demo** and we will be using it in further steps of this task.
     ```
     CREATE DATABASE demo;
@@ -63,6 +65,9 @@ A database is a separate application that stores a collection of data. Each data
 
 ### Task 2: CRUD(Create, Read, Update and Delete) operations in MySQL
 
+MySQL provides a set of some basic but most essential operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations. 
+Let us start with the understanding of CRUD operations in SQL with the help of examples. We will be writing all the queries in the supporting examples using the MySQL database.
+
 1. Run the below commands to create a new database named **sample** and creating a table using **CREATE TABLE** command inside the **sample** database.
    
    ```
@@ -71,6 +76,7 @@ A database is a separate application that stores a collection of data. Each data
    CREATE TABLE sample_table ( id smallint unsigned not null auto_increment, name varchar(20) not null, constraint pk_example primary key (id) );
    ```
    ![](media/mysql-createtable.png)
+   
 1. **INSERT INTO** command is used for adding the data to the table which we created in the above step. The below command will add the data to the **sample_table**.
    
    ```
@@ -79,18 +85,21 @@ A database is a separate application that stores a collection of data. Each data
    INSERT INTO sample_table ( id, name ) VALUES ( 3, 'Sample data3' );
    ```
    ![](media/mysql-inserttable.png)
+   
 1. In order to view the data created inside the **sample_table**, run the following command and you will be prompted with a table with two fields **id** and **name**.
    
    ```
    SELECT * FROM sample_table;
    ```
    ![](media/mysql_sample_table.png)
+   
 1. With the below command we are only selecting the **name** field from the above table.
    
    ```
    SELECT name FROM sample_table;
    ```
    ![](media/mysql-selectname.png)
+   
 1. To update values in the multiple columns of the table, you need to specify the assignments in the SET clause. For example, the following statement updates data in **name** field with **id=2**.
    
    ```
@@ -104,6 +113,7 @@ A database is a separate application that stores a collection of data. Each data
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-update2.png)
+    
 1. To delete the data inside the above table, we are using **DELETE FROM** command with **WHERE** clause to delete the specific row of data inside the table.
    
    ```
@@ -114,6 +124,7 @@ A database is a separate application that stores a collection of data. Each data
      SELECT * FROM sample_table;
     ```
     ![](media/mysql-deletetable.png)
+    
 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `Query OK, 0 rows affected (0.30 sec)` message after running the following command.
    
    ```
