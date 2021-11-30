@@ -286,7 +286,7 @@ A JOIN clause is used to combine rows from two or more tables, based on a relate
    ```
    ![](media/mysql-leftjoin.png)
    
-1. Copy and paste the following query and hit **Enter**. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
+1. Copy and paste the following query and hit **Enter**. **Right outer join** is used to qualify all the records from the Right table **Qualification** and only matched records from the left table **Course**.
    
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
