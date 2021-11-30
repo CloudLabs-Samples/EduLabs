@@ -9,7 +9,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
 
 ### Getting Started with Lab
 
-1. Once the environment is provisioned, an SSH session to the linux virtual machine and lab guide will get loaded in your browser tab. 
+1. Once the environment is provisioned, an SSH session to the Linux virtual machine and lab guide will get loaded in your browser tab. 
    
    ![](../images/vmandguidelinux.png)
 
