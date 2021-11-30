@@ -1,4 +1,4 @@
-# Getting started with Datascience
+# Getting started with Data Science Lab Environment
 
 
 ## Overview
