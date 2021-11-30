@@ -31,7 +31,7 @@ A database is a separate application that stores a collection of data. Each data
 
 1. Add **IP address** under **Host Name(or IP address)** and click on **open** to connect to Linux virtual machine from putty.
 
-   ![](media/putty.png)
+   ![](media/mysql-putty.png)
 
 1. Enter the following query to connect to the MySQL Server from putty.
 
