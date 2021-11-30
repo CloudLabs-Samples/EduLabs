@@ -212,6 +212,8 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
     After adding the content, your screen will look like the below screenshot.   
     
     ![](./media/App18.png)
+    
+    
 
 # Exercise 3: Build and run the application
 
@@ -281,7 +283,11 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
     - Password: <inject key="AzureAdUserPassword"></inject>
 
+    ![](./media/packageapp-4.2.png)
+
 1. Click on **Next** on the Select signing method page.
+
+    ![](./media/packageapp-4.3.png)
 
 1. On the **Select and Configure Packages** dialog, select the architecture configurations (x86, x64) to ensure that your app can be deployed to the widest range of devices.
 
