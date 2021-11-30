@@ -130,12 +130,12 @@ CRUD operations mean:
     ```
     ![](media/postgre-select4.png)
     
-1.Run the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
+1. Run the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
    
     ```
     DROP TABLE sample_table;
     ```
-    ![](media/postgre-drop.png)
+   ![](media/postgre-drop.png)
     
 ### Task 3: Clauses in PostgreSQL
 
