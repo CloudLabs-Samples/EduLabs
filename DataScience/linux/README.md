@@ -15,7 +15,6 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
    
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
-   ![](https://github.com/CloudLabsAI-Azure/AIW-SAP-on-Azure/blob/main/media/M2-Ex1-Splitwindow.png?raw=true)
 
 ## Task 1: Log in to JupyterLab Portal
 
