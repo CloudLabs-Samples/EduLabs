@@ -3,4 +3,4 @@ Azure Machine Learning designer gives you a cloud-based interactive, visual work
 
 ## **Module 1**
 
-Lab 1: [Create Dataset, Train and Visualize the Result](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/ML%20Labs/Module%201/README.md)
+Lab 1: [Create Dataset, Train and Visualize the Result](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/ML_Labs/Module_1/README.md)
