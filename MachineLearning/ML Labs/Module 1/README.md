@@ -95,7 +95,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
    
 4. Provide the respective column names: **Age, Education, Relationship, Race, Sex, and Income**, and click on **Save**.
 
-   ![Column Names](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/ML%20Labs/Module%201/Images/18.png)
+   ![Column Names](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/ML%20Labs/Module%201/Images/18-1.png)
    
 With the required columns selected, Data filtering is complete to use only the necessary columns in this module.
 
