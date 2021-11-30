@@ -1,0 +1,12 @@
+[
+    {
+      "Name": "Azure Machine Learning Demo",
+      "Language": "English",
+      "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/ML_Labs/Module_1/README.md",
+          "Order": 1  
+        }
+      ]
+    }
+  ]
