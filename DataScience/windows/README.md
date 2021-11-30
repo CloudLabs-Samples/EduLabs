@@ -14,7 +14,7 @@
 
    ![](../images/resourcestab.png)
    
-## **Access the JupyterLab Application**
+## Access the JupyterLab Application
 
 1. In the virtual machine, double click on the **Jupyter** shortcut on the desktop.
 
