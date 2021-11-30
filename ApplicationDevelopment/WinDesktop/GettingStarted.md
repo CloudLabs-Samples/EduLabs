@@ -2,7 +2,7 @@
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab. You can see the number on lab guide bottom area to switch on different exercises of lab guide.
 
-   ![](images/local/cloudlab-vm-guide.png "Lab Environment")
+   ![](images/local/cloudlab-vm-guide.png)
 
 1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration. 
 
@@ -12,6 +12,6 @@
 
 1. The virtual machines can started, stopped and restarted from the **Virtual Machines** tab.
  
-   ![](images/local/cloudlabs-env-page.png "Lab Environment")
+   ![](images/local/cloudlabs-env-page.png)
  
 
