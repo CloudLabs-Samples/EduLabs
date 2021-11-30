@@ -300,3 +300,13 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    ![](./media/packageapp-7.png)
 
 
+## Install app package
+
+1. Open PowerShell ISE session and run the below command to navigate to the path that has package files.
+
+   ```
+   C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.2.0_Debug_Test
+   ```
+   
+ 1. Right-click on the **Add-AppDevPackage.ps1** file. Choose **Run with PowerShell**.  
+
