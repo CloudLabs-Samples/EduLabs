@@ -26,12 +26,7 @@ MySQL is a relational database management system (RDBMS) developed by Oracle tha
 
 A database is a separate application that stores a collection of data. Each database has one or more distinct APIs for creating, accessing, managing, searching and replicating the data it holds. Nowadays, we use relational database management systems (RDBMS) to store and manage huge volume of data. This is called relational database because all the data is stored into different tables and relations are established using primary keys or other keys known as Foreign Keys.
 
-1. Copy the IP address from Environment details page. 
-1. Search **Putty** inside the Jump VM by searching in the windows search bar.
-
-1. Add **IP address** under **Host Name(or IP address)** and click on **open** to connect to Linux virtual machine from putty.
-
-   ![](media/mysql-putty.png)
+1. You will already be connected to the Linux Virtual Machine as demouser that is provisioned already.
 
 1. Enter the following query to connect to the MySQL Server from putty.
 
