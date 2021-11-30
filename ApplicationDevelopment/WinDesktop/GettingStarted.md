@@ -4,12 +4,14 @@
 
    ![](images/local/cloudlab-vm-guide.png "Lab Environment")
 
-1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration. You can also open the Lab Guide on separate and full window by selecting the **Split Window** from lower right corner. Also, you can start, stop and restart virtual machines from **Virtual Machines** tab.
+1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration. 
 
+    > You will see DeploymentId value on **Environment Details** tab, use it whereever you see SUFFIX or DeploymentID in lab steps.
+
+1. You can also open the Lab Guide on separate and full window by selecting the **Split Window** from lower right corner. You can get the Lab Guide back in the environment by clicking on the **Join Windows** button in the bottom right corner.
+
+1. The virtual machines can started, stopped and restarted from the **Virtual Machines** tab.
+ 
    ![](images/local/cloudlabs-env-page.png "Lab Environment")
  
-    > You will see SUFFIX value on **Environment Details** tab, use it whereever you see SUFFIX or DeploymentID in lab steps.
 
-1. You can validate the each task by navigating to **Lab Validation** tab and clicking on **Validate** button. Please make sure to run the validation steps for each task after performing it. 
-
-   ![](images/local/validation.png "Lab Environment")
