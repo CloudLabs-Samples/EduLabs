@@ -18,11 +18,11 @@ Importance of PostgreSQL:
 There are several tools available as front-end to PostgreSQL. Some of these tools are open sources while others are Paid tools Some of these tools are psql, pgAdmin, phpPgAdmin, pgFouine.
 
 
-### Task 1: Connect to MySQL server(In Ubuntu VM)
+### Task 1: Connect to PostgreSQL server(In Ubuntu VM)
 
 In this section, you will learn how to manage databases in PostgreSQL including creating databases, modifying existing database features, and deleting databases.
 
-1. Enter the following query to connect to the MySQL Server from putty.
+1. Enter the following query to connect to the PostgreSQL Server from putty.
 
    ```
    sudo su postgres
@@ -30,7 +30,7 @@ In this section, you will learn how to manage databases in PostgreSQL including 
    ```
    ![](media/postgre-sudo.png)
    
-1. The following command will be prompted on screen if you successfully connected to the MySQL server
+1. The following command will be prompted on screen if you successfully connected to the PostgreSQL server
 
    `postgres=#`
 
@@ -252,13 +252,13 @@ PostgreSQL **UPDATE** command can be used to modify any field value of any table
    ![](media/postgre-select.png)
    
 
-### Task 5: Joins in MySQL
+### Task 5: Joins in PostgreSQL
 
 PostgreSQL join is used to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
 
 PostgreSQL supports joins including inner join, left join, right join, and full outer join.
     
-1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in MySQL using Joins. 
+1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in PostgreSQL using Joins. 
    
    ```
    CREATE TABLE Qualification
