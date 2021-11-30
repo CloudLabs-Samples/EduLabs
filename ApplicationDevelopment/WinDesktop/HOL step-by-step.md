@@ -240,37 +240,48 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 # Exercise 4: Package the application and deploy it
 
-## Configure your project
+## Configure your project with the manifest designer
 
 1. In Solution Explorer, expand the project node of your application project.
 
 1. Double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 
-1. Select the Packaging tab and enter the below name for the package publishing data. 
+1. Select the **Packaging** tab and enter the below value in the package name field. 
+
+   ```
+   DemoWindowsapp-package
+   ```
 
    ![](./media/packageapp-1.png)
-   
-   > This is where you can choose which certificate to use to sign your app. All MSIX apps must be signed with a certificate.
 
 1. Click on **File** and select **save Package.appxmanifest** to save the file.
 
    ![](./media/packageapp-.png)
 
+
 ## Generate an app package
 
 1. In Solution Explorer, open the solution for your application project.
 
-1. Right-click the project and choose to Publish->Create App Packages (before Visual Studio 2019 version 16.3, the Publish menu is named Store).
+1. Right-click on the project and choose to **Publish** and **Create App Packages**.
 
 1. Select **Sideloading** on the first page of the wizard and then click **Next**.
 
    ![](./media/packageapp-3.png)
 
-1. On the Select signing method page, select **No, skip packaging signing** and then click Next.
+1. On the **Select signing method** page, select **Yes, select a certificate** then **Select from File**.
  
-    ![](./media/packageapp-4.png)
+    ![](./media/packageapp-4.1.png)
 
    > You can whether to skip packaging signing or select a certificate for signing. select a certificate from your local certificate store, select a certificate file, or create a new certificate. For an MSIX package to be installed on an end user's machine, it must be signed with a cert that is trusted on the machine.
+
+1. Navigate to this path `C:\LabFiles` in the file explorer and select **UwpSigningCert.pfx**.
+
+1. Now, enter the below password and click on **OK** to select the certificate.
+
+    - Password: <inject key="AzureAdUserPassword"></inject>
+
+1. Click on **Next** on the Select signing method page.
 
 1. On the **Select and Configure Packages** dialog, select the architecture configurations (x86, x64) to ensure that your app can be deployed to the widest range of devices.
 
@@ -288,4 +299,4 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
    ![](./media/packageapp-7.png)
 
-1. 
+
