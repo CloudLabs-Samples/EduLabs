@@ -10,7 +10,7 @@
    
    ![](../images/envdetails.png)
  
-3. You can start(1) or stop(2) the Virtual Machine from the **Resources** tab.
+3. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
    ![](../images/resourcestab.png)
    
@@ -22,7 +22,7 @@
 
    ![](../images/jupyteronvm.png)
    
-3. You can now use JupyterLab and start exploring 
+3. You can now use **JupyterLab** and start exploring 
 
    ![](../images/jupyterlab-browser.png)
    
