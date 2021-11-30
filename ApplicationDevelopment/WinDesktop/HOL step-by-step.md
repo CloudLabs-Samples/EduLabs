@@ -244,9 +244,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 ## Configure your project with the manifest designer
 
-1. In Solution Explorer, expand the project node of your application project.
-
-1. Double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
+1. In Solution Explorer, double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 
 1. Select the **Packaging** tab and enter the below value in the package name field. 
 
@@ -265,7 +263,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 1. In Solution Explorer, open the solution for your application project.
 
-1. Right-click on the project and choose to **Publish** and **Create App Packages**.
+1. Right-click on the **DemoWindowsapp (package)** project and choose to **Publish** and **Create App Packages**.
 
 1. Select **Sideloading** on the first page of the wizard and then click **Next**.
 
@@ -308,11 +306,11 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
 
 ## Install app package
 
-1. Open PowerShell ISE session and run the below command to navigate to the path that has package files.
+1. From the Virtual Machine, open the file explorer and navigate to the below path to locate the powershell script file that intall the app package.
 
-   ```
-   C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.2.0_Debug_Test
-   ```
+   > C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.2.0_Debug_Test
    
- 1. Right-click on the **Add-AppDevPackage.ps1** file. Choose **Run with PowerShell**.  
+1. Right-click on the **Add-AppDevPackage.ps1** file. Choose **Run with PowerShell**.  
+
+1. Go to the Start button in the VM, search for **DemoWindowsapp (package)** and double-click on it to run the application.
 
