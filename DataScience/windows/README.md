@@ -22,7 +22,7 @@
 
    ![](../images/jupyteronvm.png)
    
-3. You can now use **JupyterLab** and start exploring 
+3. Once the Jupyter Lab loads up, you will see the File System on the left and Launcher on the right. There are a lot of samples loaded up for the various technologies. You can navigate through the lab and perform any exercise with the environment.
 
    ![](../images/jupyterlab-browser.png)
    
