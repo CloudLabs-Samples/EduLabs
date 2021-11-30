@@ -14,10 +14,9 @@
 
    ![](./media/labenvironment-3.1.png)
 
-   You can get the Lab Guide back in the environment by clicking on the **Join Windows** button in the bottom right corner.
+1. You can get the Lab Guide back in the environment by clicking on the **Join Windows** button in the bottom right corner.
    
    ![](./media/labenvironment-3.2.png)
-
 
 1. The virtual machines can started, stopped and restarted from the **Virtual Machines** tab.
  
