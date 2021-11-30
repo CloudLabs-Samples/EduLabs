@@ -1,10 +1,13 @@
-[ {
-  "Name": "Datascience on Windows- Jupyter, R",
-  "Language": "English",
-  "Files": [
-        {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DataScience/windows/README.md",
-      "Order": 1
-    }
- 
+[
+  {
+    "Name": "Datascience on Windows- Jupyter, R",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DataScience/windows/README.md",
+        "Order": 1
+      }
+
     ]
+  }
+]
