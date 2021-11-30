@@ -7,7 +7,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
 
 ## Instructions
 
-### Getting Started with Lab
+### Getting started with the Lab environment
 
 1. Once the environment is provisioned, an SSH session to the Linux virtual machine and lab guide will get loaded in your browser tab. 
    
