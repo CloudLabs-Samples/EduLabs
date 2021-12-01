@@ -1,4 +1,4 @@
-# Getting started with Database Standalone
+# Getting Started with Database Standalone
 
 
 ## Overview
@@ -9,7 +9,6 @@ In this lab, we are going to learn the basic concepts of the following databases
 
    - MySQL
    - PostgreSQL
-   - MongoDB
 
 ## Instructions
 
@@ -31,6 +30,3 @@ In this lab, we are going to learn the basic concepts of the following databases
 
    ![](media/Resources.png)
    
-## Summary
-
-In this exercise, you have reviewed the environment.
