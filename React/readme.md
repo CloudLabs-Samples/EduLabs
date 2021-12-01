@@ -194,10 +194,64 @@ This app requires the following npm modules to run correctly:
     ```
  This HTML page loads app-bundle.js, which contains the JSX and React code transpiled to plain JavaScript. Currently, app-bundle.js is an empty file. In the next section, you configure options to transpile the code.
  
+## Task 4 : Configure webpack and TypeScript compiler options
 
- ## Summary
+Next, you will add webpack configuration code to **webpack-config.js** file. Youwill  add a simple webpack configuration that specifies an input file, app.tsx, and an output file, app-bundle.js, for bundling and transpiling JSX to plain JavaScript. For transpiling, you also configure some TypeScript compiler options. This basic configuration code is an introduction to **webpack and the TypeScript compiler**.
+
+1. In Solution Explorer, open **webpack-config.js** file and add the following code.The webpack configuration code instructs webpack to use the TypeScript loader to transpile the JSX.
+
+   ```
+   module.exports = {
+    devtool: 'source-map',
+    entry: "./app.tsx",
+    mode: "development",
+    output: {
+        filename: "./app-bundle.js"
+    },
+    resolve: {
+        extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.jsx', '.tsx']
+    },
+    module: {
+        rules: [
+            {
+                test: /\.tsx$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'ts-loader'
+                }
+            }
+        ]
+    }
+   }
+   ```
+2. Open **tsconfig.json** file and replace the contents with the following code, which specifies the TypeScript compiler options.
+   The code specifies app.tsx as the source file.
+
+   ```
+   {
+   "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react"
+   },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "app.tsx"
+  ]
+  }
+  ```
+
+3. Select **File** menu and click on **Save All** to save all changes.
  
- In this environment, you have learned how to create a React app from Visual studio and run the application.
+## Summary
+ 
+In this lab, you learned how to create a React app from Visual studio and run the application.
 
 
    
