@@ -152,7 +152,7 @@ CRUD is an acronym that stands for Create, Read, Update, and Delete.
     
 ### Task 3: Clauses in MySQL
 
-In this task, we will use various clauses that let you to filter how your data is queried to you. MySQL queries are SQL functions that allow us to get specific records from a database table. We will use different clauses to understand and comprehend the principles of MySQL commands in the database. In the following task we will use **select**, **from**, **Where**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get information or data from the database.
+In this task, we will use various clauses that let you to filter how your data is queried to you. MySQL queries are SQL functions that allow us to get specific records from a database table. We will use different clauses to understand and comprehend the principles of MySQL commands in the database. In the following task we will use **SELECT**, **FROM**, **WHERE**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get information or data from the database and observe how clauses will work for fetching the data.
 
 1. Execute the following query to creates a new table **Course** and insert the different values into the table. We will use this table in further steps for learning the clauses in MYSQL.
    
@@ -184,7 +184,7 @@ In this task, we will use various clauses that let you to filter how your data i
    ```
    ![](media/mysql-selecttask2.png)
    
-1. Execute the below query to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table. Run the below query and observe the data how clauses will work for fetching the data.
+1. Execute the below query to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table. Observe how clauses will work for fetching the data.
  
    ```
    SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
