@@ -295,7 +295,7 @@ In this task, we will use different queries to learn about **JOINS** in MySQL. A
    
 ## Summary
 
- > **Note:** Before moving to the Next exercise enter the following command to exit from the MySQL client.
+ > **Note:** Before moving to the next exercise, enter the following command to exit from the MySQL client.
      
    ```
    Exit;
