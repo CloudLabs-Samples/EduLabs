@@ -237,16 +237,15 @@ Next, you will add webpack configuration code to **webpack-config.js** file. You
     "sourceMap": true,
     "target": "es5",
     "jsx": "react"
-   },
-  "exclude": [
+   },"exclude": [
     "node_modules"
-  ],
-  "files": [
+   ],
+   "files": [
     "app.tsx"
-  ]
-  }
+   ]
+   }
   ```
-
+  
 3. Select **File** menu and click on **Save All** to save all changes.
  
 ## Summary
