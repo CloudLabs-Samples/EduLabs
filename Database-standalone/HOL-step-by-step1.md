@@ -1,4 +1,5 @@
-# Exercise 2: getting Started with PostgreSQL Learning
+# Exercise 2: Getting Started with PostgreSQL Learning
+
 
 ## Overview
 
