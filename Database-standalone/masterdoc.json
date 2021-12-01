@@ -4,13 +4,17 @@
   "Language": "English",
   "Files": [
         {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/README.md",
+         "Order": 1
+       },
+        {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/HOL-step-by-step.md",
-      "Order": 1
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/HOL-step-by-step1.md",
       "Order": 2
-    }
+      },
+      {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/HOL-step-by-step1.md",
+      "Order": 3
+      }
     ]
 }
 ]
