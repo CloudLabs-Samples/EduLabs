@@ -309,11 +309,12 @@ We will run the example queries with joins including inner join, left join, righ
    
 ## Summary
 
-  > **Note:** Before moving to the Next exercise enter the following command to exit from the PostgreSQL client.
+ > **Note:** Before moving to the Next exercise enter the following command to exit from the PostgreSQL client.
     
-    ```
-    \q
-    ```
+   ```
+   \q
+   exit;
+   ```
  
  In this Exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
    
