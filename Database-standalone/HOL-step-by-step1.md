@@ -2,9 +2,9 @@
 
 
 ## Database: 
-Each POSTGRESQL server controls access to a number of databases. Databases are storage areas used by the server to partition information.
+Each PostgreSQL server controls access to a number of databases. Databases are storage areas used by the server to partition information.
 
-## PostgreSQL – POSTGRESQL is the most advanced open source database server.
+## PostgreSQL – PostgreSQL is the most advanced open source database server.
 
 PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. PostgreSQL runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), and Windows. It Supports many features of SQL including some advanced features. Several extensions can be installed to add additional functionality to PostgreSQL.
 
@@ -22,26 +22,26 @@ There are several tools available as front-end to PostgreSQL. Some of these tool
 
 In this section, you will learn how to manage databases in PostgreSQL including creating databases, modifying existing database features, and deleting databases.
 
-1. Enter the following query to connect to the PostgreSQL Server from putty.
+1. Run the following query to connect to the PostgreSQL server from terminal.
 
    ```
    sudo su postgres
    psql
    ```
+1. Once you are connected to the PostgreSQL server, a welcome message will be displayed and the `postgres=#` prompt appears as shown below.
+
    ![](media/postgre-sudo.png)
-   
-1. The following command will be prompted on screen if you successfully connected to the PostgreSQL server
 
-   `postgres=#`
-
-1. Enter **\l** andhit **Enter** to display all defualt databases in the current server. The output for the below command will be similar to below screenshot.
+1. Enter **\l** and hit **Enter** to display all default databases in the current server. 
     
     ```
     \l
     ```
+    The output for the above command will be similar to below screenshot.
+    
     ![](media/postgre-l.png)
     
-1. Copy and paste the below query and hit **Enter** to create a sample database named **postgredb**. We will be using this database in further steps of this task. 
+1. Execute the below query to create a sample database named **postgredb**. We will be using this database in further steps of this task. 
 
     ```
     CREATE DATABASE postgredb;
@@ -60,7 +60,7 @@ In this section, you will learn how to manage databases in PostgreSQL including 
 
 ### Task 2: CRUD Operations in PostgreSQL
 
-In a PostgreSQL database, we need CRUD operations which perform basic operations like reading and writing of data and creation and alteration of the schemas that store the data in that particular system.. CRUD stands for Create, Read, Update and Delete operations in a PostgreSQL database. So, for each operation in the PostgreSQL database, we have a dedicated query to perform those operations.
+In this task we will learn about CRUD operations in PostgreSQL database which perform basic operations like reading and writing of data and creation and alteration of the schemas that store the data in that particular system.. CRUD stands for Create, Read, Update and Delete operations in a PostgreSQL database. So, for each operation in the PostgreSQL database, we have a dedicated query to perform those operations.
 
 CRUD operations mean:
   - C- Create means "Insert the data".
@@ -68,7 +68,7 @@ CRUD operations mean:
   - U- Update means "Update the data".
   - D- Delete means "Delete the data".
 
-1. Run the below command to create a new table named **sample_table** inside the **postgredb** database. The PostgreSQL **CREATE TABLE** statement is used to create a new table in any of the database.
+1. Run the below query to create a new table named **sample_table** inside the **postgredb** database. The PostgreSQL **CREATE TABLE** statement is used to create a new table in any of the database.
    
    ```
    CREATE TABLE sample_table(id int, name varchar(15));
@@ -91,14 +91,14 @@ CRUD operations mean:
    ```
    ![](media/postgre-select1.png)
    
-1. Run the below query to select only the **name** field from the above table.
+1. Execute the following query to select only the **name** field from the above table.
    
    ```
    SELECT name FROM sample_table;
    ```
    ![](media/postgre-select2.png)
    
-1. Copy and paste the below query and hit **Enter**. Observe the updated data under **name** column with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments with **SET** clause.
+1. execute the below query and observe the updated data under **name** column with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments with **SET** clause.
 
    ```
    UPDATE sample_table SET name = 'Hill' WHERE id = 2;
@@ -114,7 +114,7 @@ CRUD operations mean:
     ```
     ![](media/postgre-select3.png)
     
-1. Run the following query to delete the row **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific data inside the table.
+1. Execute the following query to delete the row with **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific data inside the table.
    
    ```
    DELETE FROM sample_table WHERE id=3;
@@ -123,14 +123,14 @@ CRUD operations mean:
    
    > Note :The above command will delete the row **id=3**.
    
-1. Copy and paste the below query and hit **Enter** to view the changes that have been done in table after running **DELETE FROM** command.
+1. Run the below query and hit **Enter** to view the changes that have been done in table after running **DELETE FROM** command.
 
     ```
     SELECT * FROM sample_table;
     ```
     ![](media/postgre-select4.png)
     
-1. Run the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
+1. Execute the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
    
     ```
     DROP TABLE sample_table;
@@ -139,7 +139,7 @@ CRUD operations mean:
     
 ### Task 3: Clauses in PostgreSQL
 
-Clause is defined as a set of rules, that makes to understand the concepts of PostgreSQL command in Database. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses.
+In this task, we will use various clauses that let you to filter how your data is queried to you. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses. In the following task we will use **SELECT**, **FROM**, **WHERE**, **WITH**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get the data from the database and observe how clauses will work for fetching the data.
 
 
 1. Run the following query to creates a new table **course** and insert the different values into the table. We will use this table in further steps for learning the clauses in PostgreSQL.
@@ -173,7 +173,7 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
    
    ![](media/postgre-courseselect.png)
    
-1. Copy and Paste the following query and hit **Enter** to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table. Run the below query and observe the data how clauses will work for fetching the data.
+1. Execute the following query and hit **Enter** to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table.
  
    ```
    SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
@@ -195,14 +195,14 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
     ```
     ![](media/postgre-having.png)
     
-1. The following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
+1. Execute following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
    ```
    ![](media/postgre-orderby.png)
    
-1. Run the following query and observe how **With** clause  we can create a temporary table and perform required aggregations and filters.
+1. Run the following query and observe how **WITH** clause we can create a temporary table and perform required aggregations and filters.
 
    ```
    With temp_course AS ( SELECT COUNT(CourseId) N, Teacher FROM Course GROUP BY Teacher)
@@ -210,7 +210,7 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
    ```
    ![](media/postgre-with.png)
    
-1. Below is an example query with all the clauses. Run the following query and you can explore the above queries by changing the fields.
+1. Below is an example query with all the clauses. Run the following query and you can explore the different clauses in PostgreSQL by changing the fields in the above queries.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
@@ -220,23 +220,23 @@ Clause is defined as a set of rules, that makes to understand the concepts of Po
 
 ### Task 4: Update, Delete and Replace commands in PostgreSQL
 
-PostgreSQL **UPDATE** command can be used to modify any field value of any table. The **DELETE** statement is used to delete existing records in a table. The **REPLACE** statement works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
+In this task, we will use PostgreSQL **UPDATE** statement which can be used to modify any field value of any table and **DELETE** statement which is used to delete existing records in a table. The **REPLACE** statement in PostgreSQL works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
 
-1. Copy and paste the below query and hit **Enter** to run the query. The below **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
+1. Execute the following query. In the below query **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
    
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
    ![](media/postgre-update.png)
    
-1. Run following query and observe that the Name Bhaskar is replced with John. **Replace command** is used to replace all occurrences of a substring within a string, with a new substring. 
+1. Run following query and observe that the Name Bhaskar is replced with **John**. **Replace command** is used to replace all occurrences of a substring within a string, with a new substring. 
    
    ```
    SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
    ```
    ![](media/postgre-replace.png)
    
-1. Copy the following query and run it. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from **Course** table.
+1. Execute the following query. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher with name **Neelima** from **Course** table.
 
    ```
    DELETE FROM Course WHERE Teacher = 'Neelima';
@@ -254,9 +254,9 @@ PostgreSQL **UPDATE** command can be used to modify any field value of any table
 
 ### Task 5: Joins in PostgreSQL
 
-PostgreSQL join is used to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
+We will use PostgreSQL joins to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
 
-PostgreSQL supports joins including inner join, left join, right join, and full outer join.
+We will run the example queries with joins including inner join, left join, right join, and full outer join in the following task. Observe the data and changes made to the table after running each query.
     
 1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in PostgreSQL using Joins. 
    
@@ -291,7 +291,7 @@ PostgreSQL supports joins including inner join, left join, right join, and full 
    ```
    ![](media/postgre-leftjoin.png)
    
-1. Copy and paste the following query and hit **Enter** to run the query. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
+1. Execute following query and observe the output data inside table. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
    
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
@@ -306,6 +306,17 @@ PostgreSQL supports joins including inner join, left join, right join, and full 
    ![](media/postgre-outerjoin.png)
    
    
+   
+## Summary
+
+ > **Note:** Before moving to the Next exercise enter the following command to exit from the PostgreSQL client.
+    
+   ```
+   \q
+   exit;
+   ```
+ 
+ In this Exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
    
 
 
