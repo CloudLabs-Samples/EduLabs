@@ -280,13 +280,35 @@ Next, you will add webpack configuration code to **webpack-config.js** file. You
    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
-Visual Studio versions starting with **Visual Studio 2019** require a build script. Instead of transpiling JSX at the command line, as shown above you can transpile JSX when building from Visual Studio.
+  Visual Studio versions starting with **Visual Studio 2019** require a build script. Instead of transpiling JSX at the command line, as shown above you can transpile JSX when building from Visual Studio.
 
 10. Select **File** menu and click on **Save** to save the changes made to package.json file.
 
+## Task 6: Run the React app
+
+1. In the **Debug toolbar**, select either **Web Server (Microsoft Edge)** or **Web Server (Google Chrome)** as the debug target.
+   
+   ![](images/tutorial-nodejs-react-debug-target.png)
+
+2. If the preferred debug target is set to different target such as **Web Server(Internet Explorer), select **Browse With** from the debug target dropdown list. 
+   
+   ![](images/ie-debug-target.png)
+    
+3. Select your default browser target as **Microsoft Edge** in the list, select **Set as Default and then select **Browse**
+   
+   ![](images/edge-debug-target.png)
+
+4. To run the app, press **F5** or select the green arrow button, or select **Debug > Start Debugging**.
+
+5. A Node.js console window opens that shows the debugger listening port and Visual Studio starts the app on a browser by launching the startup file, server.js.
+   
+   ![](images/welcometoreact.png)
+    
+6. Close the browser and console windows.
+
 ## Summary
  
-In this lab, you learned how to create a React app from Visual studio and run the application.
+In this lab, you learned how to create a React app from Visual studio, run the application and display a simple message.
 
 
    
