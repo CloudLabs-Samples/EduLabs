@@ -309,7 +309,7 @@ We will run the example queries with joins including inner join, left join, righ
    
 ## Summary
 
- > **Note:** Before moving to the Next exercise enter the following command to exit from the PostgreSQL client.
+ > **Note:** Before moving to the next exercise enter the following command to exit from the PostgreSQL client.
     
    ```
    \q
