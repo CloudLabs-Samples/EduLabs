@@ -31,7 +31,7 @@ You will learn how to:
    
 ## Key concepts
 
-Before you begin, here's a quick introduction some key concepts:
+Before you begin, here's a quick introduction to some key concepts:
 
 **Node.js**: Node.js is a server-side JavaScript runtime environment that executes JavaScript code.
 
@@ -300,7 +300,7 @@ Next, you will add webpack configuration code to **webpack-config.js** file. You
 
 4. To run the app, press **F5** or select the green arrow button, or select **Debug > Start Debugging**.
 
-5. A Node.js console window opens that shows the debugger listening port and Visual Studio starts the app on a browser by launching the startup file, server.js.
+5. A Node.js console window opens that shows the debugger listening port and Visual Studio starts the app on a browser which displays a sample message by launching the startup file, server.js.
    
    ![](images/welcometoreact.png)
     
@@ -308,7 +308,7 @@ Next, you will add webpack configuration code to **webpack-config.js** file. You
 
 ## Summary
  
-In this lab, you learned how to create a React app from Visual studio, run the application and display a simple message.
+In this lab, you learned how to create a React app from Visual studio, run the application and display a sample message using the app.
 
 
    
