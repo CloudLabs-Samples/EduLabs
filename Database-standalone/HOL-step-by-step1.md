@@ -32,7 +32,7 @@ In this section, you will learn how to manage databases in PostgreSQL including 
 
    ![](media/postgre-sudo.png)
 
-1. Enter **\l** and hit **Enter** to display all default databases in the current server. 
+1. Run the following query to display all default databases in the current server. 
     
     ```
     \l
