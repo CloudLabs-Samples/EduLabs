@@ -1,7 +1,7 @@
-# Exercise 1: MySQL Learning
+# Exercise 1: Getting Started with MySQL Learning
 
 
-## Database: A database is a structured collection of data.
+## Overview
 
 Data is a collection of a distinct small unit of information. It can be used in a variety of forms like text, numbers, media, bytes, etc. it can be stored in pieces of paper or electronic memory.
 
@@ -293,12 +293,12 @@ In this task, we will use different queries to learn about **JOINS** in MySQL. A
    ```
    ![](media/mysql-rightjoin.png)
    
-## Summary
-
- > **Note:** Before moving to the next exercise, enter the following command to exit from the MySQL client.
+  > **Note:** Before moving to the next exercise, enter the following command to exit from the MySQL client.
      
    ```
    Exit;
    ```
+   
+## Summary
  
- In this Exercise, you have learned basic operations of MySQL for beginners. You can see the numbers on lab guide bottom area to switch on different exercises of lab guide. Click on **Next** to move to the next exercise.
+ In this exercise, you have learned basic operations of MySQL for beginners. You can see the numbers on lab guide bottom area to switch on different exercises of lab guide. Click on **Next** to move to the next exercise.
