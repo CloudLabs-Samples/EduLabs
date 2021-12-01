@@ -1,5 +1,6 @@
-# Exercise 2: PostgreSQL Learning
+# Exercise 2: getting Started with PostgreSQL Learning
 
+## Overview
 
 ## Database: 
 Each PostgreSQL server controls access to a number of databases. Databases are storage areas used by the server to partition information.
@@ -18,7 +19,7 @@ Importance of PostgreSQL:
 There are several tools available as front-end to PostgreSQL. Some of these tools are open sources while others are Paid tools Some of these tools are psql, pgAdmin, phpPgAdmin, pgFouine.
 
 
-### Task 1: Connect to PostgreSQL server(In Ubuntu VM)
+### Task 1: Connect to PostgreSQL server
 
 In this section, you will learn how to manage databases in PostgreSQL including creating databases, modifying existing database features, and deleting databases.
 
@@ -305,18 +306,16 @@ We will run the example queries with joins including inner join, left join, righ
    ```
    ![](media/postgre-outerjoin.png)
    
-   
-   
-## Summary
-
- > **Note:** Before moving to the next exercise enter the following command to exit from the PostgreSQL client.
+   > **Note:** Before moving to the next exercise enter the following command to exit from the PostgreSQL client.
     
    ```
    \q
    exit;
    ```
+   
+## Summary
  
- In this Exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
+ In this exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
    
 
 
