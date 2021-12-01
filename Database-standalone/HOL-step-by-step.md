@@ -28,7 +28,7 @@ A database is a separate application that stores a collection of data. Each data
 
 1. You will already be connected to the Linux Virtual Machine as demouser that is provisioned already.
 
-1. Enter the following query to connect to the MySQL Server from putty.
+1. Enter the following query to connect to the MySQL Server Terminal.
 
    ```
    sudo mysql -u root
