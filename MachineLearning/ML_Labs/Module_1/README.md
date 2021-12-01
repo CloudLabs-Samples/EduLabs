@@ -13,7 +13,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 3. Select **Launch Studio** under the **Manage your machine learning lifecycle** message.
 
-   ![Launch Azure ML Studio](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/ML%20Labs/Module%201/Images/01.png)
+   ![Launch Azure ML Studio](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/ML%20Labs/Module%201/Images/01.png)
 
 4. From the studio, select **Datasets, + Create dataset, From local files**.This will open *Create dataset from local files* prompt dialogue on the right.
 
