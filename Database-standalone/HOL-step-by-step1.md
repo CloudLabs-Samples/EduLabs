@@ -11,7 +11,7 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
 Importance of PostgreSQL:
 
   - Stores data securely.
-  - Supports best practices,
+  - Supports best practices.
   - Allows retrieving the data when the request is processed.
   - Is cross-platform and can run on many operating systems including Linux, FreeBSD, OS X, Solaris, and Microsoft Windows.
 
