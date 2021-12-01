@@ -3,7 +3,6 @@
 
 ## Overview
 
-## Database: 
 Each PostgreSQL server controls access to a number of databases. Databases are storage areas used by the server to partition information.
 
 ## PostgreSQL – PostgreSQL is the most advanced open source database server.
