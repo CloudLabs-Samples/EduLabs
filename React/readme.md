@@ -43,7 +43,7 @@ Before you begin, here's a quick introduction some key concepts:
 
 **webpack**: Webpack bundles JavaScript files so they can run in a browser, and can also transform or package other resources and assets. Webpack can specify a compiler, such as Babel or TypeScript, to transpile JSX or TypeScript code to plain JavaScript.
    
-## Task 1: Create a project
+## Task 1: Create a Node.js project
 
 Visual Studio with the Node.js development workload is pre-installed for you.
 
@@ -67,11 +67,11 @@ Visual Studio with the Node.js development workload is pre-installed for you.
   
    ![](images/blank.png)
    
-6. In the **Configure your new project** dialog box, select **Create**.
+6. In the **Configure your new project** dialog box, leave the default value for project name and select **Create**.
    
    ![](images/create.png)
    
-7. Look at the project structure in Solution Explorer in the right pane 
+7. Look at the project structure in **Solution Explorer** in the right pane 
  
    ![](images/solutionexp.png)
    
@@ -130,7 +130,71 @@ This app requires the following npm modules to run correctly:
 
     ![](images/allnpmpackages.png)
  
+ ## Task 3: Add project files and React code to your app
+ 
+ For this app, you will be adding the following new project files in the project root.
+ - app.tsx
+ - webpack-config.js
+ - index.html
+ - tsconfig.json
+ 
+ 1. In the **Solution Explorer**, right-click on the project name and select **Add > New Item** option.
+    
+    ![](images/proj-additem.png)
+ 
+ 2. In the **Add New Item** dialog box choose **TypeScript JSX File**, type the name **app.tsx**, and select **Add or OK**.
+     
+    ![](images/appfile.png)
+     
+ 3. Repeat these steps to add a **JavaScript file** named **webpack-config.js**.
+
+ 4. Repeat these steps to add an **HTML file** named **index.html**.
+
+ 5. Repeat these steps to add a **TypeScript JSON Configuration File** named **tsconfig.json**.
+ 
+ 6. In the next few steps, you will add the required app code for your application.
+ 
+ 7. In Solution Explorer, open **server.js** file and replace the existing code with the following code:
+ 
+    ```
+    'use strict';
+     var path = require('path');
+     var express = require('express');
+     var app = express();
+     var staticPath = path.join(__dirname, '/');
+     app.use(express.static(staticPath));
+
+     // Allows you to set port in the project properties.
+     app.set('port', process.env.PORT || 3000);
+     var server = app.listen(app.get('port'), function() {
+     console.log('listening');
+     });
+    ```
+    Note: The preceding code uses Express to start Node.js as your web application server. The code sets the port to the port number configured in the project properties, which by default is 1337. If you need to open the project properties, right-click the project name in Solution Explorer and select Properties.
+
+8. Open **app.tsx** file and add the following code which uses JSX syntax and React to display a message
    
+   ```
+   var React = require('react');
+   var ReactDOM = require('react-dom');
+   ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+   );
+   ReactDOM.render(<Hello />, document.getElementById('root'));
+   ```
+ 
+ 9. Open **index.html** and replace the **body** section with the following code:
+    ```
+    <body>
+    <div id="root"></div>
+    <!-- scripts -->
+    <script src="./dist/app-bundle.js"></script>
+    </body>
+    ```
+ This HTML page loads app-bundle.js, which contains the JSX and React code transpiled to plain JavaScript. Currently, app-bundle.js is an empty file. In the next section, you configure options to transpile the code.
+ 
+
  ## Summary
  
  In this environment, you have learned how to create a React app from Visual studio and run the application.
