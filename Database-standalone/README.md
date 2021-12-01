@@ -5,7 +5,7 @@
 
 In this lab environment, you will be able to access the Ubuntu VM which has several popular database servers pre-installed for stroring data, Adding, modifying, deleting rows (records) and columns, Searching and filtering records and Running queries.
 
-In this lab, we are going to learn the basic concepts of the following databases for beginners.
+In this lab, we are going to learn the basic concepts of the following databases.
 
    - MySQL
    - PostgreSQL
