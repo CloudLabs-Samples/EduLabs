@@ -98,7 +98,7 @@ CRUD is an acronym that stands for Create, Read, Update, and Delete.
    ```
    ![](media/mysql-inserttable.png)
    
-1. Execute the following query in order to view the data created inside the **sample_table**. You will be prompted with a table with two fields named **id** and **name** with data. 
+1. Execute the following query in order to view the data inside **sample_table**. You will be prompted with a table with two fields named **id** and **name** with data. 
    
    ```
    SELECT * FROM sample_table;
@@ -135,7 +135,7 @@ CRUD is an acronym that stands for Create, Read, Update, and Delete.
    ```
    ![](media/mysql-delete02.png)
    
-   > Note :The above command will delete the row **id=3**.
+   > Note :The above command will delete the row with **id=3**.
    
 1. Run the below query to view the changes that have been done in table after running **DELETE FROM** command.
     
@@ -281,13 +281,13 @@ In this task, we will use different queries to learn about **JOINS** in MySQL. A
    ```
    ![](media/mysql-innerjoin.png)
    
-1. Execute the following query and observe the **Left outer join** operation. Left outer join is used to qualify all the records from the left table **Course** and only matched records from the right tabl **Qualification**.
+1. Execute the following query and observe the **LEFT OUTER JOIN** operation. Left outer join is used to qualify all the records from the left table **Course** and only matched records from the right tabl **Qualification**.
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A LEFT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
    ```
    ![](media/mysql-leftjoin.png)
    
-1. Execute the following query and observe the output data. **Right outer join** is used to qualify all the records from the Right table **Qualification** and only matched records from the left table **Course**.
+1. Execute the following query and observe the output data. **RIGHT OUTER JOIN** is used to qualify all the records from the Right table **Qualification** and only matched records from the left table **Course**.
    
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
@@ -296,4 +296,4 @@ In this task, we will use different queries to learn about **JOINS** in MySQL. A
    
 ## Summary
  
- In this Exercise, you have learned basic operations of MySQL for beginners. You can see the numbers on lab guide bottom area to switch on different exercises of lab guide. Click on **Next** to move to the next Exercise.
+ In this Exercise, you have learned basic operations of MySQL for beginners. You can see the numbers on lab guide bottom area to switch on different exercises of lab guide. Click on **Next** to move to the next exercise.
