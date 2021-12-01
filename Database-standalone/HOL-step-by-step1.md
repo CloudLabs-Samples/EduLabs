@@ -139,7 +139,7 @@ CRUD operations mean:
     
 ### Task 3: Clauses in PostgreSQL
 
-In this task, we will use various clauses that let you to filter how your data is queried to you. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses. In the following task we will use **select**, **from**, **Where**, **With**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get the data from the database and observe how clauses will work for fetching the data.
+In this task, we will use various clauses that let you to filter how your data is queried to you. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses. In the following task we will use **SELECT**, **FROM**, **WHERE**, **WITH**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get the data from the database and observe how clauses will work for fetching the data.
 
 
 1. Run the following query to creates a new table **course** and insert the different values into the table. We will use this table in further steps for learning the clauses in PostgreSQL.
@@ -195,14 +195,14 @@ In this task, we will use various clauses that let you to filter how your data i
     ```
     ![](media/postgre-having.png)
     
-1. The following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
+1. Execute following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
 
    ```
    SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
    ```
    ![](media/postgre-orderby.png)
    
-1. Run the following query and observe how **With** clause  we can create a temporary table and perform required aggregations and filters.
+1. Run the following query and observe how **WITH** clause we can create a temporary table and perform required aggregations and filters.
 
    ```
    With temp_course AS ( SELECT COUNT(CourseId) N, Teacher FROM Course GROUP BY Teacher)
@@ -210,7 +210,7 @@ In this task, we will use various clauses that let you to filter how your data i
    ```
    ![](media/postgre-with.png)
    
-1. Below is an example query with all the clauses. Run the following query and you can explore the above queries by changing the fields.
+1. Below is an example query with all the clauses. Run the following query and you can explore the different clauses in PostgreSQL by changing the fields in the above queries.
    
    ```
    SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
@@ -220,23 +220,23 @@ In this task, we will use various clauses that let you to filter how your data i
 
 ### Task 4: Update, Delete and Replace commands in PostgreSQL
 
-PostgreSQL **UPDATE** command can be used to modify any field value of any table. The **DELETE** statement is used to delete existing records in a table. The **REPLACE** statement works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
+In this task, we will use PostgreSQL **UPDATE** statement which can be used to modify any field value of any table and **DELETE** statement which is used to delete existing records in a table. The **REPLACE** statement in PostgreSQL works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
 
-1. Copy and paste the below query and hit **Enter** to run the query. The below **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
+1. Execute the following query. In the below query **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
    
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
    ![](media/postgre-update.png)
    
-1. Run following query and observe that the Name Bhaskar is replced with John. **Replace command** is used to replace all occurrences of a substring within a string, with a new substring. 
+1. Run following query and observe that the Name Bhaskar is replced with **John**. **Replace command** is used to replace all occurrences of a substring within a string, with a new substring. 
    
    ```
    SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
    ```
    ![](media/postgre-replace.png)
    
-1. Copy the following query and run it. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher Neelima from **Course** table.
+1. Execute the following query. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher with name **Neelima** from **Course** table.
 
    ```
    DELETE FROM Course WHERE Teacher = 'Neelima';
@@ -254,9 +254,9 @@ PostgreSQL **UPDATE** command can be used to modify any field value of any table
 
 ### Task 5: Joins in PostgreSQL
 
-PostgreSQL join is used to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
+We will use PostgreSQL joins to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
 
-PostgreSQL supports joins including inner join, left join, right join, and full outer join.
+We will run the example queries with joins including inner join, left join, right join, and full outer join in the following task. Observe the data and changes made to the table after running each query.
     
 1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in PostgreSQL using Joins. 
    
@@ -291,7 +291,7 @@ PostgreSQL supports joins including inner join, left join, right join, and full 
    ```
    ![](media/postgre-leftjoin.png)
    
-1. Copy and paste the following query and hit **Enter** to run the query. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
+1. Execute following query and observe the output data inside table. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
    
    ```
    SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
@@ -306,6 +306,16 @@ PostgreSQL supports joins including inner join, left join, right join, and full 
    ![](media/postgre-outerjoin.png)
    
    
+   
+## Summary
+
+  > **Note:** Before moving to the Next exercise enter the following command to exit from the PostgreSQL client.
+    
+    ```
+    \q
+    ```
+ 
+ In this Exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
    
 
 
