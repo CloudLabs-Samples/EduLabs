@@ -3,7 +3,13 @@
 
 ## Overview
 
-In this lab environment, you will be able to access the Ubuntu VM which has several popular database servers pre-installed for creating databases, Adding, modifying, deleting rows (records) and columns, Searching and filtering records and Running queries.
+In this lab environment, you will be able to access the Ubuntu VM which has several popular database servers pre-installed for stroring data, Adding, modifying, deleting rows (records) and columns, Searching and filtering records and Running queries.
+
+In this lab, we are going to learn the basic concepts of the following databases for beginners.
+
+   - MySQL
+   - PostgreSQL
+   - MongoDB
 
 ## Instructions
 
@@ -15,7 +21,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
 
 2. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration.
 
-   ![](media/environment-details.png)
+   ![](media/environment-details1.png)
    
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
