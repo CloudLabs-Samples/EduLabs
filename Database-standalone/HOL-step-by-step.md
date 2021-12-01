@@ -35,9 +35,9 @@ In this task, we are going to connect to the pre-installed MySQL server inside t
    ```
    ![](media/mysql-root.png)
    
-1. The following command will be prompted if you successfully connected to the MySQL client:
+1. Once you are connected to the MySQL server, a welcome message will be displayed and the `mysql>` prompt appears as shown below.
 
-   `mysql>`
+   ![](media/mysql-welcome.png)
 
 1. Run the below query to view all databases in the current server. 
     
