@@ -178,7 +178,7 @@ This app requires the following npm modules to run correctly:
    var React = require('react');
    var ReactDOM = require('react-dom');
    ReactDOM.render(
-    <h1>Hello, world!</h1>,
+    <h1>Welcome to React!</h1>,
     document.getElementById('root')
    );
    ReactDOM.render(<Hello />, document.getElementById('root'));
