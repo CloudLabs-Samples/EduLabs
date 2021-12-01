@@ -294,5 +294,11 @@ In this task, we will use different queries to learn about **JOINS** in MySQL. A
    ![](media/mysql-rightjoin.png)
    
 ## Summary
+
+   > **Note:** Before moving to the Next exercise enter the following command to exit from the MySQL client.
+    
+    ```
+    EXIT;
+    ```
  
  In this Exercise, you have learned basic operations of MySQL for beginners. You can see the numbers on lab guide bottom area to switch on different exercises of lab guide. Click on **Next** to move to the next exercise.
