@@ -1,6 +1,6 @@
 # Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio 
 
-In this exercise, you will install the C# and C++ Windows App SDK extensions that allows you to create the C# and C++ applications in Visual Studio.
+In this exercise, you will install the C# and C++ Windows App SDK extensions that allow you to create the C# and C++ applications in Visual Studio.
 
 > You can find more references about installing tools for developing Windows apps from here: `https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=vs-2022`
 
@@ -43,7 +43,7 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
 
 **Packaged apps** are packaged using MSIX. MSIX is a package format that gives end-users an easy way to install, uninstall, and update their Windows apps using a modern UI.
 
-In this exercise, you will build a packaged C# Windows Desktop application uing built-in template and configure it with two pages, buttons, event handlers, and navigation.
+In this exercise, you will build a packaged C# Windows Desktop application using the built-in template and configure it with two pages, buttons, event handlers, and navigation.
 
 > You can find more references about building  packaged and unpackaged WinUI 3 apps from here: `https://docs.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app?pivots=winui3-packaged-csharp`
 
@@ -250,7 +250,7 @@ In this exercise, you will build a packaged C# Windows Desktop application uing 
 
 ### Summary
 
-In this exercise, you have built a packaged C# Windows Desktop application uing built-in template and configured it to navigate between the pages.
+In this exercise, you have built a packaged C# Windows Desktop application using the built-in template and configured it to navigate between the pages.
 
 # Exercise 3: Build and run the application
 
@@ -290,7 +290,7 @@ By default, when you create a project using one of the built-in **WinUI project 
 
 > You can find more references about building  packaging and deploying the applications from here: `https://docs.microsoft.com/en-us/windows/msix/package/packaging-uwp-apps`
 
-In this exercise, you will package the application that you have built earlier in task 2 then install it. You will also run the application after installing it and then test the behaviour of it by navigating between the two pages.
+In this exercise, you will package the application that you have built earlier in task 2 then install it. You will also run the application after installing it and then test its behavior by navigating between the two pages.
 
 ## Task 1: Configure your project with the manifest designer
 
@@ -298,7 +298,7 @@ The app manifest file (Package.appxmanifest) is an XML file that contains the pr
 
 The Visual Studio manifest designer allows you to update the manifest file without editing the raw XML of the file.
 
-In this task, you will create a app manifest file that is used in the next task to create a app package.
+In this task, you will create an app manifest file that is used in the next task to create an app package.
 
 1. In Solution Explorer, double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 
@@ -310,7 +310,7 @@ In this task, you will create a app manifest file that is used in the next task 
 
    ![](./media/packageapp-1.png)
 
-1. Leave other values a default and click on **File** then select **save Package.appxmanifest** to save the file.
+1. Leave other values as default and click on **File** then select **save Package.appxmanifest** to save the file.
 
    ![](./media/packageapp-.png)
    
@@ -319,7 +319,7 @@ In this task, you will create a app manifest file that is used in the next task 
 
 Apps can be installed without being published in the Store by publishing them on your Website, using application management tools such as Microsoft Intune and Configuration Manager, etc. You can also directly install an MSIX package for testing on your local or remote machine.
 
-In this task, you will generate an app package and install it on your local or remote machine then test the behaviour of the application.
+In this task, you will generate an app package and install it on your local or remote machine then test the behavior of the application.
 
 1. Right-click on the **DemoWindowsapp (package) (1)** project and select **Publish (2)** then **Create App Packages (3)**.
 
@@ -349,7 +349,7 @@ In this task, you will generate an app package and install it on your local or r
 
     ![](./media/packageapp-4.3.png)
 
-1. On the **Select and Configure Packages** dialog, select the architecture configurations **(x86, x64)** to ensure that your app can be deployed to the widest range of devices and click on **Next (2)**..
+1. On the **Select and Configure Packages** dialog, select the architecture configurations **(x86, x64)** to ensure that your app can be deployed to the widest range of devices and click on **Next (2)**.
 
    ![](./media/packageapp-5.png)
 
@@ -370,7 +370,7 @@ In this task, you will generate an app package and install it on your local or r
    ![](./media/packageapp-7.png)
 
 
-1. From the Virtual Machine, open the file explorer and navigate to the below path to locate the powershell script file that installs the app package.
+1. From the Virtual Machine, open the file explorer and navigate to the below path to locate the PowerShell script file that installs the app package.
 
    `C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.0.0_Debug_Test`
    
@@ -382,11 +382,11 @@ In this task, you will generate an app package and install it on your local or r
 
    ![](./media/installapp-2.png)
 
-1. Once the app installation is done you will receive a below message, click **enter** again to close the powesrhell session.
+1. Once the app installation is done you will receive the below message, click **enter** again to close the PowerShell session.
 
    ![](./media/installapp-3.1.png)
 
-1. Go to the Start button in the VM, search for  **DemoWindowsapp** and double-click on **DemoWindowsapp (package)** app to run the application.
+1. Go to the Start button in the VM, search for  **DemoWindowsapp**, and double-click on **DemoWindowsapp (package)** app to run the application.
 
    ![](./media/installapp-3.png)
    
@@ -402,4 +402,4 @@ In this task, you will generate an app package and install it on your local or r
 
 
 ### Summary  
-In this task, you have created a app manifest file that will be used to create a app package. You have also generated the app package and installed it on your local or remote  machine then run the application to test the behaviour of it.
+In this task, you have created an app manifest file that will be used to create an app package. You have also generated the app package and installed it on your local or remote machine then run the application to test its behavior.
