@@ -151,15 +151,15 @@ After training the above model, we would like to know the accuracy of our model,
 
    ![Connection Evaluate](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/028.png)
    
-The 20% of the left-over data in **Split Data** function will be used in **Score Model** function, the score model function contains the trained algorithm function will come across 20% data which is untrained or unexpected, and this will help us determine whether the **Score Model** function is capable of accuartely predicting a person's income or not.( **Training Any ML Model:** 70-80% of data is taken as training data and the remaining 20-30% data is used as test data to check the accuracy of the model).
+4. The 20% of the left-over data in **Split Data** function will be used in **Score Model** function, the score model function contains the trained algorithm function will come across 20% data which is untrained or unexpected, and this will help us determine whether the **Score Model** function is capable of accuartely predicting a person's income or not.( **Training Any ML Model:** 70-80% of data is taken as training data and the remaining 20-30% data is used as test data to check the accuracy of the model).
 
    ![Connection Score](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/029.png)
    
-4. Make sure to click on the **Submit** button.
+5. Make sure to click on the **Submit** button.
 
    ![Submit](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/030.png)
    
-5. Select **Create New**, provide an experiment name and **Submit**.( This will save and run the experiment)
+6. Select **Create New**, provide an experiment name and **Submit**.( This will save and run the experiment)
 
    ![Submit Pipeline](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/031.png)
    
