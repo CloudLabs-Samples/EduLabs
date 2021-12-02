@@ -247,6 +247,8 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
 # Exercise 3: Build and run the application
 
 1. Right-click the **DemoWindowsapp** project node in Solution Explorer and click on **Build** to build the application.
+   
+   ![](./media/buildapp-5.png)
 
 1. Once the build is succeeded, you will receive a **succeeded** message in the output window.
 
