@@ -317,7 +317,11 @@ In this task, you will create a app manifest file that is used to create your ap
    
    
 
-## Task 2: Generate an app package
+## Task 2: Generate an app package and install it
+
+Apps can be installed without being published in the Store by publishing them on your Website, using application management tools such as Microsoft Intune and Configuration Manager, etc. You can also directly install an MSIX package for testing on your local or remote machine.
+
+In this task, you will generate an app package and install it on your local or remote machine then test the behaviour of the application.
 
 1. Right-click on the **DemoWindowsapp (package) (1)** project and select **Publish (2)** then **Create App Packages (3)**.
 
@@ -368,8 +372,6 @@ In this task, you will create a app manifest file that is used to create your ap
    ![](./media/packageapp-7.png)
 
 
-## Install app package
-
 1. From the Virtual Machine, open the file explorer and navigate to the below path to locate the powershell script file that installs the app package.
 
    `C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.0.0_Debug_Test`
@@ -397,7 +399,5 @@ In this task, you will create a app manifest file that is used to create your ap
 1. Now, click on the **Go to Page 2** button to navigate to Page2.
 
    ![](./media/buildapp-4.png)
-
-1. Next, Page2 will be loaded on the application. You can navigate back to Page1 by clicking the **Go to Page 1** button.
 
 1. Click on **X** on the Page 2 to close the page and stop the application.
