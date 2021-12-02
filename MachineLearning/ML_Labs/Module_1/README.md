@@ -67,7 +67,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
    
 3. Scroll down, and make sure the SKU selected is the default one, and click on **Create**.
 
-![Create Compute](https://github.com/SD-14/EduLabs/blob/main/MachineLearning/Module_1/Images1/011.png)
+![Create Compute](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/011.png)
    
 4. Select the Compute Instance once it is in *Running State*.
 
