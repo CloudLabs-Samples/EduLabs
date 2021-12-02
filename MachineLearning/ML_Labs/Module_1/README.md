@@ -13,19 +13,19 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 3. Select **Launch Studio** under the **Manage your machine learning lifecycle** message.
 
-![Launch Azure ML Studio](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/001.png)
+![Launch Azure ML Studio](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0001.png)
 
 4. From the studio, select **Datasets, + Create dataset, From local files**.This will open *Create dataset from local files* prompt dialogue on the right.
 
-![Create Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/002.png)
+![Create Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0002.png)
    
 5. Provide a name( in my case, I have given the name *Adult_Income_Data*, let the **Dataset Type be Tabular**, and **Description** is optional, and click on next.
 
-![Dataset Name](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/003.png)
+![Dataset Name](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0003.png)
    
 6. On the Datastore and file selection panel, let the **Datastore and file selection** be default, and click on *Upload* under **Select files for your dataset**, and upload the file which has been downloaded from [Kaggle](https://www.kaggle.com/uciml/adult-census-income). The upload path can be default, and after uploading click on Next.
 
-![Upload Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/004.png)
+![Upload Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0004.png)
 
 ## Task 2: Preview Dataset
 
@@ -33,13 +33,13 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 2. Scroll the data preview to the right to observe target column: **income**. After you are done reviewing the data, click Next.
 
-![Preview Data](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/005.png)
+![Preview Data](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0005.png)
    
 ## Task 3: Select Columns
 
 1. Select columns from the dataset to include as part of your training dataset, let it be default choice( all columns are selected) and click on **Next**.
 
-![Columns Selection](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/006.png)
+![Columns Selection](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/0006.png)
    
 ## Task 4: Create Dataset
 
