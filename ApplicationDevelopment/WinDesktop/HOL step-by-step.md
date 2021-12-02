@@ -290,8 +290,7 @@ By default, when you create a project using one of the built-in **WinUI project 
 
 > You can find more references about building  packaging and deploying the applications from here: `https://docs.microsoft.com/en-us/windows/msix/package/packaging-uwp-apps`
 
-In this exercise, you will package the application that you have built earlier in task 2 then install it. You will also run the application after installing it and navigated between the two pages.
-
+In this exercise, you will package the application that you have built earlier in task 2 then install it. You will also run the application after installing it and then test the behaviour of it by navigating between the two pages.
 
 ## Task 1: Configure your project with the manifest designer
 
@@ -299,7 +298,7 @@ The app manifest file (Package.appxmanifest) is an XML file that contains the pr
 
 The Visual Studio manifest designer allows you to update the manifest file without editing the raw XML of the file.
 
-In this task, you will create a app manifest file that is used to create your app package.
+In this task, you will create a app manifest file that is used in the next task to create a app package.
 
 1. In Solution Explorer, double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 
@@ -314,7 +313,6 @@ In this task, you will create a app manifest file that is used to create your ap
 1. Leave other values a default and click on **File** then select **save Package.appxmanifest** to save the file.
 
    ![](./media/packageapp-.png)
-   
    
 
 ## Task 2: Generate an app package and install it
@@ -401,3 +399,7 @@ In this task, you will generate an app package and install it on your local or r
    ![](./media/buildapp-4.png)
 
 1. Click on **X** on the Page 2 to close the page and stop the application.
+
+
+### Summary  
+In this task, you have created a app manifest file that will be used to create a app package. You have also generated the app package and installed it on your local or remote  machine then run the application to test the behaviour of it.
