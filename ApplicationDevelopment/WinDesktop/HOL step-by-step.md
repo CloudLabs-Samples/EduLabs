@@ -2,7 +2,7 @@
 
 In this exercise, you will install the C# and C++ Windows App SDK extensions that allows you to create the C# and C++ applications in Visual Studio.
 
->You can find more references about installing tools for developing Windows apps from here: `https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=vs-2022`
+> You can find more references about installing tools for developing Windows apps from here: `https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=vs-2022`
 
 
 1. From the Virtual Machine, open the file explorer and navigate to the path `C:\LabFiles` to select the C# extension file.
@@ -39,8 +39,14 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    
 In this exercise, you have installed the C# and C++ Windows App SDK extensions to create the C# and C++ applications in Visual Studio.
 
-
 # Exercise 2: Build a sample C# WinUI 3 App 
+
+**Packaged apps** are packaged using MSIX. MSIX is a package format that gives end-users an easy way to install, uninstall, and update their Windows apps using a modern UI.
+
+In this exercise, you will build a packaged C# Windows Desktop application uing built-in template and configure it with two pages, buttons, event handlers, and navigation.
+
+> You can find more references about building  packaged and unpackaged WinUI 3 apps from here: `https://docs.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app?pivots=winui3-packaged-csharp`
+
 
 1. Go to the **Start** button in the VM, search for **Visual Studio 2022** there and select **Visual Studio 2022 Current** to open it.
 
@@ -241,10 +247,14 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
     After adding the content, your screen will look like the below screenshot.   
     
     ![](./media/App18.png)
-    
-    
+
+### Summary
+
+In this exercise, you have built a packaged C# Windows Desktop application uing built-in template and configured it to navigate between the pages.
 
 # Exercise 3: Build and run the application
+
+In this exercise, you will build and run the application then navigate between the two pages Page1 and Page2.
 
 1. Right-click the **DemoWindowsapp** project node in Solution Explorer and click on **Build** to build the application.
    
@@ -270,10 +280,26 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
 
 1. Click on **X** on the Page 2 to close the page and stop the application.
 
+### Summary
 
-# Exercise 4: Package the application and deploy it
+In this exercise, you have built and run the application then navigated between the two pages Page1 and Page2.
 
-## Configure your project with the manifest designer
+# Exercise 4: Package the application and install it
+
+By default, when you create a project using one of the built-in **WinUI project templates** that are provided with the Windows App SDK extension for Visual Studio, your project includes a **Windows Application Packaging** Project that is configured to build the app into an MSIX package.
+
+> You can find more references about building  packaging and deploying the applications from here: `https://docs.microsoft.com/en-us/windows/msix/package/packaging-uwp-apps`
+
+In this exercise, you will package the application that you have built earlier in task 2 then install it. You will also run the application after installing it and navigated between the two pages.
+
+
+## Task 1: Configure your project with the manifest designer
+
+The app manifest file (Package.appxmanifest) is an XML file that contains the properties and settings required to create your app package. For example, properties in the app manifest file describe the image to use as the tile of your app and the orientations that your app supports when a user rotates the device.
+
+The Visual Studio manifest designer allows you to update the manifest file without editing the raw XML of the file.
+
+In this task, you will create a app manifest file that is used to create your app package.
 
 1. In Solution Explorer, double-click the Package.appxmanifest file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 
@@ -285,40 +311,43 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
 
    ![](./media/packageapp-1.png)
 
-1. Click on **File** and select **save Package.appxmanifest** to save the file.
+1. Leave other values a default and click on **File** then select **save Package.appxmanifest** to save the file.
 
    ![](./media/packageapp-.png)
+   
+   
 
+## Task 2: Generate an app package
 
-## Generate an app package
-
-1. In Solution Explorer, open the solution for your application project.
-
-1. Right-click on the **DemoWindowsapp (package)** project and choose to **Publish** and **Create App Packages**.
-
-1. Select **Sideloading** on the first page of the wizard and then click **Next**.
+1. Right-click on the **DemoWindowsapp (package) (1)** project and select **Publish (2)** then **Create App Packages (3)**.
 
    ![](./media/packageapp-3.png)
 
-1. On the **Select signing method** page, select **Yes, select a certificate** then **Select from File**.
+1. On the **Select distribution method** wizard, select **Sideloading (1)** and then click on **Next (2)**.
+
+   ![](./media/packageapp-3.png)
+
+1. On the **Select signing method** page, select **Yes, select a certificate (1)** then **Select from File (2)**.
  
     ![](./media/packageapp-4.1.png)
 
    > You can whether to skip packaging signing or select a certificate for signing. select a certificate from your local certificate store, select a certificate file, or create a new certificate. For an MSIX package to be installed on an end user's machine, it must be signed with a cert that is trusted on the machine.
 
-1. Navigate to this path `C:\LabFiles` in the file explorer and select **UwpSigningCert.pfx**.
+1. Navigate to this path `C:\LabFiles` in the file explorer and select **UwpSigningCert.pfx (1)** then click on **Ok (2)**.
+
+    ![](./media/packageapp-4.1.1.png)
 
 1. Now, enter the below password and click on **OK** to select the certificate.
 
-    - Password: <inject key="AzureAdUserPassword"></inject>
+    - Password: <inject key="Labvm Admin Password"></inject>
 
     ![](./media/packageapp-4.2.png)
 
-1. Click on **Next** on the Select signing method page.
+1. Click on **Next** on the **Select signing method** page.
 
     ![](./media/packageapp-4.3.png)
 
-1. On the **Select and Configure Packages** dialog, select the architecture configurations (x86, x64) to ensure that your app can be deployed to the widest range of devices.
+1. On the **Select and Configure Packages** dialog, select the architecture configurations **(x86, x64)** to ensure that your app can be deployed to the widest range of devices and click on **Next (2)**..
 
    ![](./media/packageapp-5.png)
 
@@ -327,6 +356,10 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
    ```
    C:\Users\demouser\source\repos\DemoWindowsapp\
    ```
+
+   ![](./media/packageapp-5.png)
+   
+1. Once the package is created you will be presented with the below page, click on **Close** to close the **Create App Packages** blade.
 
    ![](./media/packageapp-6.png)
 
@@ -339,8 +372,32 @@ In this exercise, you have installed the C# and C++ Windows App SDK extensions t
 
 1. From the Virtual Machine, open the file explorer and navigate to the below path to locate the powershell script file that installs the app package.
 
-   > C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.2.0_Debug_Test
+   `C:\Users\demouser\source\repos\DemoWindowsapp\DemoWindowsapp\DemoWindowsapp (Package)\AppPackages\DemoWindowsapp (Package)_1.0.0.0_Debug_Test`
    
-1. Right-click on the **Add-AppDevPackage.ps1** file. Choose **Run with PowerShell**.  
+1. Right-click on the **Add-AppDevPackage.ps1** file. Choose **Run with PowerShell**. 
 
-1. Go to the Start button in the VM, search for **DemoWindowsapp (package)**, and double-click on it to run the application.
+   ![](./media/installapp-1.png)
+
+1. When prompted to confirm the installation of the certificate, enter **Y** and click **enter** to accept and continue the installation.
+
+   ![](./media/installapp-2.png)
+
+1. Once the app installation is done you will receive a below message, click **enter** again to close the powesrhell session.
+
+   ![](./media/installapp-3.1.png)
+
+1. Go to the Start button in the VM, search for  **DemoWindowsapp** and double-click on **DemoWindowsapp (package)** app to run the application.
+
+   ![](./media/installapp-3.png)
+   
+1. When the application is launched, Page1 will be loaded by default as you have configured the **MainWindow** method earlier to load Page1.
+
+   ![](./media/buildapp-3.png)
+
+1. Now, click on the **Go to Page 2** button to navigate to Page2.
+
+   ![](./media/buildapp-4.png)
+
+1. Next, Page2 will be loaded on the application. You can navigate back to Page1 by clicking the **Go to Page 1** button.
+
+1. Click on **X** on the Page 2 to close the page and stop the application.
