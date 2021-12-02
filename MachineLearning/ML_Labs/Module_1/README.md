@@ -171,4 +171,4 @@ The 20% of the left-over data in **Split Data** function will be used in **Score
    
 2. We can visualize the model, by expanding the Evaluation results and find out the accuracy of our model which is 0.829(82.9% in our case).
 
-![Visualize](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/034.png)
+   ![Visualize](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Module_1/Images1/034.png)
