@@ -3,133 +3,150 @@
 
 ## Overview
 
-Each PostgreSQL server controls access to a number of databases. Databases are storage areas used by the server to partition information.
+NoSQL databases (Not only SQL) are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
 
-## PostgreSQL – PostgreSQL is the most advanced open source database server.
+## MongoDB
 
-PostgreSQL is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. PostgreSQL runs on all major operating systems, including Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), and Windows. It Supports many features of SQL including some advanced features. Several extensions can be installed to add additional functionality to PostgreSQL.
+MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL (Not only SQL) database because the storage and retrieval of data in the MongoDB are not in the form of tables. 
 
-Importance of PostgreSQL:
+The data stored in the MongoDB is in the format of BSON documents. Here, BSON stands for Binary representation of JSON documents. The MongoDB server converts the JSON data into a binary form that is known as BSON and this BSON is stored and queried more efficiently. MongoDB has a rich set of queries for performing fast and easy operations.
 
-  - Stores data securely.
-  - Supports best practices.
-  - Allows retrieving the data when the request is processed.
-  - Is cross-platform and can run on many operating systems including Linux, FreeBSD, OS X, Solaris, and Microsoft Windows.
+Basic building blocks of MongoDB:
 
-There are several tools available as front-end to PostgreSQL. Some of these tools are open sources while others are Paid tools Some of these tools are psql, pgAdmin, phpPgAdmin, pgFouine.
+  - **Collection**: Its group of MongoDB documents. This can be thought similar to a table MySQL. This collection doesn’t enforce any structure. 
+  - **Document**: Document is referred to as a record in MongoDB collection. Which is similar to **Table** in MySQL.
+  - **Field**: It is a name-value pair in a document. A document has zero or more fields. Fields are like columns in relational databases.
 
 
-### Task 1: Connect to PostgreSQL server
+### Task 1: Create and Drop Database Operations in MongoDB
 
-In this section, you will learn how to manage databases in PostgreSQL including creating databases, modifying existing database features, and deleting databases.
+In this section, you will learn how to manage databases in MongoDB including creating databases, viewing database features, and deleting databases.
 
-1. Run the following query to connect to the PostgreSQL server from terminal.
+1. Run the following query to connect to the MongoDB server from terminal.
 
    ```
-   sudo su postgres
-   psql
+   mongo
    ```
-1. Once you are connected to the PostgreSQL server, a welcome message will be displayed and the `postgres=#` prompt appears as shown below.
+1. Once you are connected to the MongoDB server, a message will be displayed and the `>` prompt appears as shown below.
 
-   ![](media/postgre-sudo.png)
+   ![](media/)
 
 1. Run the following query to display all default databases in the current server. 
     
     ```
-    \l
+    show dbs;
     ```
     The output for the above command will be similar to below screenshot.
     
-    ![](media/postgre-l.png)
+    ![](media/)
     
-1. Execute the below query to create a sample database named **postgredb**. We will be using this database in further steps of this task. 
+1. Execute the below query to create a sample database named **demodb** and connect to it. We will be using this database in further steps of this task. 
 
     ```
-    CREATE DATABASE postgredb;
+    use demodb;
     ```
-    ![](media/postgre-createdb.png)
+    ![](media/)
    
-1. Run the below query for using the database **demo** which we created in the previous step. After running the command you will be prompted with a message saying **You are now connected to database "postgredb" as user "postgres"**.
+1. Run the below query to create a connection inside **demodb** database. In MongoDB, we can't view the view the database until we create a connection inside the database.
    
    ```
-   \c postgredb
+   db.createCollection("Demo");
    ```
-   ![](media/postgre-connect.png)
+   ![](media/)
    
-1. **DROP DATABASE** command is used for deleting the databases in PostgreSQL. however we are not dropping the database now as we will be using it in further tasks.
+1. Run the following query to view the database **demodb** which we created in step 4. 
+
+   ````
+   show dbs;
+   ```
+   The output for the above command will be similar to below screenshot. Observe the newly added database in the output.
+   
+   ![](media/)
+   
+1. **db.dropDatabase();** command is used for deleting the databases in PostgreSQL. however we are not dropping the database now as we will be using it in further tasks.
 
 
-### Task 2: CRUD Operations in PostgreSQL
+### Task 2: MongoDB CRUD Operations
 
-In this task we will learn about CRUD operations in PostgreSQL database which perform basic operations like reading and writing of data and creation and alteration of the schemas that store the data in that particular system.. CRUD stands for Create, Read, Update and Delete operations in a PostgreSQL database. So, for each operation in the PostgreSQL database, we have a dedicated query to perform those operations.
+In this task we will learn about CRUD operations in MongoDB. CRUD stands for Create, Read, Update and Delete operations in MongoDB. 
 
 CRUD operations mean:
-  - C- Create means "Insert the data".
-  - R- Read means "Select the data".
-  - U- Update means "Update the data".
-  - D- Delete means "Delete the data".
+  - C- Create or insert operations add new documents to a collection. If the collection does not currently exist, insert operations will create the collection.
+  - R- Read operations retrieve documents from a collection; i.e. query a collection for documents. MongoDB provides the following methods to read documents from a collection.
+  - U- Update operations modify existing documents in a collection. MongoDB provides the following methods to update documents of a collection.
+  - D- Delete operations remove documents from a collection. MongoDB provides the following methods to delete documents of a collection.
 
-1. Run the below query to create a new table named **sample_table** inside the **postgredb** database. The PostgreSQL **CREATE TABLE** statement is used to create a new table in any of the database.
+1. Run the below query to create a new collection named **student** inside the **demodb** database. In MongoDB, **db.createCollection(name)** is used to create collection.
    
    ```
-   CREATE TABLE sample_table(id int, name varchar(15));
+   db.createCollection("student");
    ```
-   ![](media/postgre-createtable.png)
+   ![](media/)
    
-1. In the next step, you will insert the data to the **sample_table** by running the following queries. SQL uses **INSERT INTO** statement to create new records within the table.
-   
-   ```
-   INSERT INTO sample_table ( id, name ) VALUES ( 1, 'Sample data1' );
-   INSERT INTO sample_table ( id, name ) VALUES ( 2, 'Sample data2' );
-   INSERT INTO sample_table ( id, name ) VALUES ( 3, 'Sample data3' );
-   ```
-   ![](media/postgre-insert.png)
-   
-1. Run the following query in order to view the data created inside the **sample_table**. You will be prompted with a table with two fields named **id** and **name** with the inserted data from above query.
+1. In the next step, you will insert the documents to the **student** collection by running the following queries. MongoDB uses **db.student.insert** statement to create new documents within the collection.
    
    ```
-   SELECT * FROM sample_table;
+   db.student.insertMany([
+   { name:"Suraj", age:"21", department:"science"},
+   { name:"Ram", age:"21", department:"maths"},
+   { name:"Dev", age:"25", department:"history"},
+   { name:"Tom", age:"26", department:"sociology"},
+   { name:"Harry", age:"23", department:"science"}
+   ]);
    ```
-   ![](media/postgre-select1.png)
+   ![](media/)
    
-1. Execute the following query to select only the **name** field from the above table.
+1. Run the following query in order to view the documents inside the **student** collection. 
    
    ```
-   SELECT name FROM sample_table;
+   db.student.find();
    ```
-   ![](media/postgre-select2.png)
+   You will be prompted with documents within the **student** collection as shown below.
    
-1. execute the below query and observe the updated data under **name** column with **id=2**. To update values in the multiple columns of the table, you need to specify the assignments with **SET** clause.
+   ![](media/)
+   
+1. Execute the following query to output the documents in a formatted output. In MongoDB, we use **pretty()** method along with query for formatting the output data.
+   
+   ```
+   db.student.find().pretty();
+   ```
+   ![](media/)
+   
+1. Run the below query and observe the output document. **findone()** method is used in MongoDB for retrieving the first document inside the collection.
 
    ```
-   UPDATE sample_table SET name = 'Hill' WHERE id = 2;
+   db.student.findOne();
    ```
-   ![](media/postgre-update1.png)
+   ![](media/)
    
-   > Note: Now you have successfully updated the table with new value under **name** cloumn
+   > Note: The above query will select the first document inside **student** connection.
    
-1. Run the below query to view the changes that have been done to the table **sample_table**.
+1. Execute the following query select the records with **age=21**.
     
     ```
-    SELECT * FROM sample_table;
+    db.student.find({"age":"21"});
     ```
-    ![](media/postgre-select3.png)
+    ![](media/)
     
-1. Execute the following query to delete the row with **id=3** inside the **sample_table**. We will be using **DELETE FROM** command with **WHERE** clause to delete the specific data inside the table.
+1. Execute the below to query. **$gt** selects those documents where the value of the field is greater than (i.e. > ) the specified value.
    
    ```
-   DELETE FROM sample_table WHERE id=3;
+   db.student.find({"age":{$gt:"21"}});
    ```
-   ![](media/postgre-deletequery.png)
+   ![](media/)
    
-   > Note :The above command will delete the row **id=3**.
+   > Note :The above query will return the records whose age is greater than 21 inside the student collection.
    
-1. Run the below query and hit **Enter** to view the changes that have been done in table after running **DELETE FROM** command.
+1. Run the below query. **$lt** selects those documents where the value of the field is greater than (i.e. < ) the specified value.
 
     ```
-    SELECT * FROM sample_table;
+    db.student.find({"age":{$lt:"25"}});
     ```
-    ![](media/postgre-select4.png)
+    ![](media/)
+    
+    > Note :The above query will return the records whose age is less than 25 inside the student collection.
+
+1. **$lte** and **$ne** 
     
 1. Execute the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
    
