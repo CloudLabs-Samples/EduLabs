@@ -19,7 +19,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 ![Create Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/002.png)
    
-5. Provide a name( in my case, I have given the name *Adult_Income_Data*, let the **Dataset Type be Tabular**, and **Description** is optional, and click on next.
+5. Provide a name( in my case, I have given the name *Adult_Income_Data*), let the **Dataset Type be Tabular**, and **Description** is optional, and click on next.
 
 ![Dataset Name](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/003.png)
    
