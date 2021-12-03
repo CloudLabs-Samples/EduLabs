@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Windows Desktop Application Development",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/tejaswini972/EduLabs/main/ApplicationDevelopment/WinDesktop/GettingStarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/tejaswini972/EduLabs/main/ApplicationDevelopment/WinDesktop/HOL%20step-by-step.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/tejaswini972/EduLabs/main/ApplicationDevelopment/WinDesktop/lab-completed.md",
+        "Order": 3
+      }
+    ]
+  }
+]
