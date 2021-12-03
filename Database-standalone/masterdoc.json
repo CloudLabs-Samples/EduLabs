@@ -14,6 +14,10 @@
       {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/HOL-step-by-step1.md",
       "Order": 3
+      },
+      {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Database-standalone/HOL-step-by-step2.md",
+      "Order": 4
       }
     ]
 }
