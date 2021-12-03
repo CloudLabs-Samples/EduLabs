@@ -185,7 +185,7 @@ CRUD operations mean:
 There are numerous operators that we can use in our queries to answer more and more complex questions related to our collection. Some of these operators help with learning more about the data stored in the collection whereas others help with understanding the metadata. In this task, we will execute and learn few of the **Comparison & Logical Operators** in MongoDB.
 
 
-1. Run the below query to create a new collection named **teachers**  and insert the documents to collection inside the **demodb** database. We will be using this collection in the further tasks.
+1. Run the below queries to create a new collection named **teachers**  and insert the documents to collection inside the **demodb** database. We will be using this collection in the further tasks.
    
    ```
    db.createCollection("teachers");
