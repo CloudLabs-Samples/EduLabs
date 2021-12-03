@@ -112,6 +112,22 @@ CRUD operations mean:
    ```
    ![](media/)
    
+1. Run the below query and observe the output document. **findone()** method is used in MongoDB for retrieving the first document inside the collection.
+
+   ```
+   db.student.findOne();
+   ```
+   ![](media/)
+   
+   > Note: The above query will select the first document inside **student** connection.
+   
+1. Execute the following query select the records with **age=21**.
+    
+    ```
+    db.student.find({"age":"21"});
+    ```
+    ![](media/)
+   
 1. The MongoDB query language supports 2 update operations **updateOne()** and **updateMany()**. Run the below query and observe the output for **updateOne()** method.
 
    ```
@@ -156,6 +172,7 @@ CRUD operations mean:
     ![](media/)
     
 1. Execute the following query to delete the collection **student** which we created in the task 1. **db.COLLECTION_NAME.drop()** query is used to delete the whole collection inside the database.
+   
    > Note: Inside **db.COLLECTION_NAME.drop()**, **COLLECTION_NAME** refers to the name of the collection which you created.
    
     ```
@@ -163,86 +180,95 @@ CRUD operations mean:
     ```
    ![](media/)
     
-### Task 3: Filtering Documents in MongoDB
+### Task 3: Comparison & Logical Operators in MongoDB
 
 In this task, we will use various clauses that let you to filter how your data is queried to you. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses. In the following task we will use **SELECT**, **FROM**, **WHERE**, **WITH**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get the data from the database and observe how clauses will work for fetching the data.
 
 
-1. Run the following query to creates a new table **course** and insert the different values into the table. We will use this table in further steps for learning the clauses in PostgreSQL.
+1. Run the below query to create a new collection named **teachers**  and insert the documents to collection inside the **demodb** database. We will be using this collection in the further tasks.
    
    ```
-   CREATE TABLE Course
-   (
-   CourseId INT PRIMARY KEY,
-   Name VARCHAR(50),
-   Teacher VARCHAR(256)
-   );
+   db.createCollection("teachers");
+
    ```
    ```
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 101, 'C Programming', 'Neelima' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 102, 'C ++', 'Neelima' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 103, 'Java', 'Hema' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 104, '.Net', 'Hema' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 105, 'Advanced Java', 'Hema' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 106, 'Oracle', 'Bhaskar' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 107, 'MySQL', 'Bhaskar' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 108, 'T-SQL', 'Bhaskar' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 109, 'Big Data', 'Bhaskar' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 110, 'Machine Learning', 'Ashok' );
-   INSERT INTO Course ( CourseId, Name, Teacher ) VALUES ( 111, 'Devops', 'Vani' );
+   db.teachers.insertMany([
+   { name:"Sam", age:"28", department:"science", year:"1994"},
+   { name:"Ram", age:"30", department:"maths", year:"1992"},
+   { name:"Jerry", age:"27", department:"history", year:"1995"},
+   { name:"Tom", age:"23", department:"sociology", year:"1998"},
+   { name:"Harry", age:"32", department:"science", year:"1989"}
+   ]);
    ```
-1. Run the following query inorder to view the data created inside the **Course** table.
+1. Run the following query inorder to view the documents added inside the **teachers** table.
    
    ```
-   SELECT * FROM Course;
+   db.teachers.find().pretty();
    ```
    
-   ![](media/postgre-courseselect.png)
+   ![](media/)
    
-1. Execute the following query and hit **Enter** to select the Name and Teacher field from **Course** table. In the below query we will use **select**, **from**, **Where** clauses. **Select** clause is used to retrieve the from the table. Using **from** clause, you can mention the source table from where data is going to be fetched. **Where** clause is used to specify a condition while fetching the data from a table.
- 
-   ```
-   SELECT Name, Teacher FROM Course WHERE Teacher='Hema';
-   ```
-   ![](media/postgre-where.png)
-   
-1. Run the following query with **GROUP BY** clause which is used to aggregate the data from the **Course** table.
+1. Execute the below to query and observe the ouput. **$gt** selects those documents where the value of the field is greater than (i.e. > ) the specified value.
    
    ```
-   SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher;
+   db.teachers.find({"age":{$gt:"30"}}).pretty();
    ```
-   ![](media/postgre-groupby.png)
+   ![](media/)
    
-1. Run the following query with **HAVING** clause which will be used to restrict the data upon data aggregation(along with GROUP BY).
-   > Note: **HAVING** clause works only with the **GROUP BY** clause.
-  
+   > Note :The above query will return the records whose age is greater than 30 inside the **teachers** collection.
+   
+1. Run the below query check the ouput records. **$lt** selects those documents where the value of the field is greater than (i.e. < ) the specified value.
+
     ```
-    SELECT count(CourseId) N_subjects, Teacher FROM Course GROUP BY Teacher HAVING count(CourseId) > 1;
+    db.teachers.find({"age":{$lt:"25"}}).pretty();
     ```
-    ![](media/postgre-having.png)
+    ![](media/)
     
-1. Execute following query with **ORDER By** clause is used to order the data based on the required field from the source table. Run the query and observe the order of Teacher field in the output.
+    > Note :The above query will return the records whose age is less than 25 inside the student collection.
 
-   ```
-   SELECT Name, Teacher, CourseId FROM Course ORDER BY Teacher;
-   ```
-   ![](media/postgre-orderby.png)
+1. Execute the below to query and observe the ouput. **$gte** selects those documents where the value of the field is greater than or equals  (i.e. >= ) to the specified value.
    
-1. Run the following query and observe how **WITH** clause we can create a temporary table and perform required aggregations and filters.
+   ```
+   db.teachers.find({"age":{$gte:"30"}}).pretty();
+   ```
+   ![](media/)
+   
+   > Note :The above query will return the records whose age is greater than or equals 30 inside the **teachers** collection.
 
-   ```
-   With temp_course AS ( SELECT COUNT(CourseId) N, Teacher FROM Course GROUP BY Teacher)
-   (SELECT * FROM temp_course WHERE N > 1);
-   ```
-   ![](media/postgre-with.png)
-   
-1. Below is an example query with all the clauses. Run the following query and you can explore the different clauses in PostgreSQL by changing the fields in the above queries.
+1. Run the below to query and observe the ouput. **$lte** selects those documents where the value of the field is less than or equals (i.e. <= ) to the specified value.
    
    ```
-   SELECT count(CourseId) N_subjects, Teacher FROM Course WHERE Teacher != 'Hema' GROUP BY Teacher HAVING count(CourseId) > 1 ORDER BY Teacher;
+   db.teachers.find({"age":{$lte:"30"}}).pretty();
    ```
-   ![](media/postgre-allclause.png)
+   ![](media/)
    
+   > Note :The above query will return the records whose age is less than or equals 30 inside the **teachers** collection.
+   
+1. Execute the below to query and observe the ouput. **$ne** selects those documents where the value of the field is not equals (i.e. != ) to the specified value.
+   
+   ```
+   db.teachers.find({"age":{$ne:"23"}}).pretty;
+   ```
+   ![](media/)
+   
+   > Note :The above query will return all the records except **age=23** inside the **teachers** collection.
+   
+1. Run the below query and observe the output records. **$and** operator evaluates one or more expressions and returns ouput only if all of the expressions are true. The following query will will return the document with **name=Sam** and **age=28**.
+   
+   ```
+   db.teachers.find( { $and : [{age:"28"}, {name:"Sam"}]}).pretty();
+   ```
+   ![](media/)
+
+1. Run the below query and observe the output records. **$or** operator selects the documents that satisfy at least one of the expressions. The following query will will return the document with **name=tom** or **age=30**.
+  
+   ```
+   db.teachers.find( { $or : [{"name":"zayn"},{"age":"30"}]}).pretty();
+   ```
+   
+   > Note: As we all know we don't have any document with name **zayn** in the **teachers** collection. So the **$or** operator will return the document with **age=30** from the **teachers** collection as shown in the below screenshot.
+  
+   ![](media/)
 
 ### Task 4: Update, Delete and Replace commands in PostgreSQL
 
