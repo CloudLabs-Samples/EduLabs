@@ -55,15 +55,15 @@ In this section, you will learn how to manage databases in MongoDB including cre
    ![](media/)
    
 1. Run the following query to view the database **demodb** which we created in step 4. 
-
-   ````
+   
+   ```
    show dbs;
    ```
    The output for the above command will be similar to below screenshot. Observe the newly added database in the output.
    
    ![](media/)
    
-1. **db.dropDatabase();** command is used for deleting the databases in PostgreSQL. however we are not dropping the database now as we will be using it in further tasks.
+1. **db.dropDatabase();** command is used for deleting the databases in MongoDB. however we are not dropping the database now as we will be using it in further tasks.
 
 
 ### Task 2: MongoDB CRUD Operations
@@ -76,7 +76,7 @@ CRUD operations mean:
   - U- Update operations modify existing documents in a collection. MongoDB provides the following methods to update documents of a collection.
   - D- Delete operations remove documents from a collection. MongoDB provides the following methods to delete documents of a collection.
 
-1. Run the below query to create a new collection named **student** inside the **demodb** database. In MongoDB, **db.createCollection(name)** is used to create collection.
+1. Run the below query to create a new collection named **student** inside the **demodb** database. In MongoDB, **db.createCollection()** method is used to create collection.
    
    ```
    db.createCollection("student");
@@ -163,7 +163,7 @@ CRUD operations mean:
     ```
    ![](media/)
     
-### Task 3: Clauses in PostgreSQL
+### Task 3: Filtering Documents in MongoDB
 
 In this task, we will use various clauses that let you to filter how your data is queried to you. A clause in PostgreSQL is a part of a query that lets you filter or customizes how you want your data to be queried to you. PostgreSQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses. In the following task we will use **SELECT**, **FROM**, **WHERE**, **WITH**, **GROUP BY**, **HAVING**, **ORDER By** clauses to get the data from the database and observe how clauses will work for fetching the data.
 
