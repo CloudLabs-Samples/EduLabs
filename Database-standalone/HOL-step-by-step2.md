@@ -323,5 +323,3 @@ When working with data in MongoDB, you may quickly have to run complex operation
  
  In this exercise, you have learned basic operations of MongoDB. 
    
-
-
