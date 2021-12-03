@@ -47,7 +47,7 @@ In this section, you will learn how to manage databases in MongoDB including cre
     ```
     ![](media/)
    
-1. Run the below query to create a connection inside **demodb** database. In MongoDB, we can't view the view the database until we create a connection inside the database.
+1. Run the below query to create a connection inside **demodb** database. In MongoDB, we can't view the database until we create a connection inside the database.
    
    ```
    db.createCollection("Demo");
