@@ -270,103 +270,58 @@ In this task, we will use various clauses that let you to filter how your data i
   
    ![](media/)
 
-### Task 4: Update, Delete and Replace commands in PostgreSQL
+### Task 4: Aggregation Functions in MongoDB
 
-In this task, we will use PostgreSQL **UPDATE** statement which can be used to modify any field value of any table and **DELETE** statement which is used to delete existing records in a table. The **REPLACE** statement in PostgreSQL works the same as the INSERT statement, except that if an old row matches the new record in the table for a PRIMARY KEY or a UNIQUE index, this command deleted the old row before the new row is added.
+In this task, we will use 
 
-1. Execute the following query. In the below query **Update** command is used to update the data in the **Course** table. The following query replaces course ID **101** with **1001** inside **Course** table.
+1. Execute the following query. In the below query we are using **$sort** aggregate function to take the document that specifies **name** field. Observe the output section which contains all name fields in alphabetical order.
    
    ```
-   UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
+   db.teachers.aggregate( 
+   [{ $sort: {"name":1}}
+   ]).pretty();
    ```
-   ![](media/postgre-update.png)
+   ![](media/)
    
-1. Run following query and observe that the Name Bhaskar is replced with **John**. **Replace command** is used to replace all occurrences of a substring within a string, with a new substring. 
-   
-   ```
-   SELECT CourseId, Name, Teacher, REPLACE (Teacher, 'Bhaskar', 'John') Teacher_New FROM Course;
-   ```
-   ![](media/postgre-replace.png)
-   
-1. Execute the following query. **DELETE FROM** command is used to delete the records based on the given condition from the table. The below command deletes the Teacher with name **Neelima** from **Course** table.
-
-   ```
-   DELETE FROM Course WHERE Teacher = 'Neelima';
-   ```
-   ![](media/postgre-delete.png)
-   
-1. Run the following query inorder to view the data inside the **Course** table, observe the data that has been removed from the table.
+1. Run following query and observe how **$limit** function is used along with **$sort** function to get the specific set of documents from the **teachers** collection. 
    
    ```
-   SELECT * FROM Course;
+   db.teachers.aggregate(
+   [{ $sort: {"name":1}}, 
+   {$limit: 3}
+   ]).pretty();
    ```
+   ![](media/)
    
-   ![](media/postgre-select.png)
-   
-
-### Task 5: Joins in PostgreSQL
-
-We will use PostgreSQL joins to combine columns from one (self-join) or more tables based on the values of the common columns between related tables. The common columns are typically the primary key columns of the first table and foreign key columns of the second table.
-
-We will run the example queries with joins including inner join, left join, right join, and full outer join in the following task. Observe the data and changes made to the table after running each query.
-    
-1. Let us create one more table named **Qualification** and insert different values to the table by running the following queries. We need two tables for performing the actions in PostgreSQL using Joins. 
-   
-   ```
-   CREATE TABLE Qualification
-   (
-    Qualification Varchar(20),
-    Teacher_Name VARCHAR(50) PRIMARY KEY,
-    Year_of_Passed DATE 
-   );
-   ```
-   ```
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MCA', 'Neelima', '2015-04-30' );
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'BCA', 'Hema', '2012-06-30' );
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MCA', 'Bhaskar', '2012-04-10' );
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'PHD', 'John', '2019-01-04' );
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MCA', 'Vani', '2017-04-30' );
-   INSERT INTO Qualification( Qualification, Teacher_Name, Year_of_Passed ) VALUES ( 'MSC', 'Ashok', '2014-07-30' );
-   ```
-1. Run the following query to perform **INNER JOIN** operation on the tables **Course** and **Qualification**. Inner join is used to join both the tables. Data qualified only when the data exist in both the tables.(Based on the given fields). 
-   > Note: In general, primary key fields will be used to join the tables.
+1. Execute the following query. We are using **$group** function along with **$sum** operator for retrieving the grouped data from the **teachers** collection. Observe the output after running the query.
 
    ```
-   SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A INNER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
+   db.teachers.aggregate(
+   [{ $group: { "_id": "year", teacherCount: {$sum: 1}}}
+   ]).pretty();
    ```
-   ![](media/postgre-innerjoin.png)
+   ![](media/)
    
-1. Run the below query and observe the **Left outer join** operation. Left outer join is used to qualify all the records from the left table **Course** and only matched records from the right tabl **Qualification**.
-
-   ```
-   SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A LEFT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
-   ```
-   ![](media/postgre-leftjoin.png)
-   
-1. Execute following query and observe the output data inside table. **Right outer join** is used to qualify all the records from the Right table(Qualification) and only matched records from the left table(Course).
+1. Run the following query inorder to view the document that matches the field **department** inside the **teachers** collection using **$match** aggregate function.
    
    ```
-   SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A RIGHT OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
+   db.teachers.aggregate(
+   [{ $match: {"department": "science"}}
+   ]).pretty();
    ```
-   ![](media/postgre-rightjoin.png)
    
-1. Run the following query to perform **FULL OUTER JOIN** operation on the tables **Course** and **Qualification**. The full outer join combines the results of both left join and right join. If the rows in the joined table do not match, the full outer join sets NULL values for every column of the table that does not have the matching row.
+   ![](media/)
    
-   ```
-   SELECT CourseId, Name, Teacher, Qualification, Year_of_Passed FROM Course A FULL OUTER JOIN Qualification B on A.Teacher  = B.Teacher_Name;
-   ```
-   ![](media/postgre-outerjoin.png)
-   
-   > **Note:** Before moving to the next exercise enter the following command to exit from the PostgreSQL client.
+  
+  > **Note:** Run the following command to exit from the PostgreSQL client.
     
    ```
-   \q
-   exit;
+   exit
    ```
    
 ## Summary
  
- In this exercise, you have learned basic operations of PostgreSQL. Click on **Next** at the bottom of lab guide to move to the next exercise.
+ In this exercise, you have learned basic operations of MongoDB. 
    
 
 
