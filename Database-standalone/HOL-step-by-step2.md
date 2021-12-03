@@ -83,7 +83,7 @@ CRUD operations mean:
    ```
    ![](media/)
    
-1. In the next step, you will insert the documents to the **student** collection by running the following queries. MongoDB uses **db.student.insert** statement to create new documents within the collection.
+1. In the next step, you will insert the documents to the **student** collection by running the following queries. In MongoDB insert documents can be done using 2 methods, **insertOne()** and **insertMany()**. we are using insertMany() method here as we are inserting multiple documents.
    
    ```
    db.student.insertMany([
@@ -112,48 +112,56 @@ CRUD operations mean:
    ```
    ![](media/)
    
-1. Run the below query and observe the output document. **findone()** method is used in MongoDB for retrieving the first document inside the collection.
+1. The MongoDB query language supports 2 update operations **updateOne()** and **updateMany()**. Run the below query and observe the output for **updateOne()** method.
 
    ```
-   db.student.findOne();
+   db.student.updateOne( {age: "25"}, {"$set": {"age": "24"}} );
    ```
    ![](media/)
    
-   > Note: The above query will select the first document inside **student** connection.
-   
-1. Execute the following query select the records with **age=21**.
-    
-    ```
-    db.student.find({"age":"21"});
-    ```
-    ![](media/)
-    
-1. Execute the below to query. **$gt** selects those documents where the value of the field is greater than (i.e. > ) the specified value.
+1. Execute the following query to view the updated document. The above query will update the value of **age=25** to **age=24** inside the **student** collection.
    
    ```
-   db.student.find({"age":{$gt:"21"}});
+   db.student.find().pretty();
    ```
    ![](media/)
    
-   > Note :The above query will return the records whose age is greater than 21 inside the student collection.
-   
-1. Run the below query. **$lt** selects those documents where the value of the field is greater than (i.e. < ) the specified value.
-
+1. Execute the following query and observe the output for **updateMany()** method. This query will set all the records will **age=21** to **age=20**.
+    
     ```
-    db.student.find({"age":{$lt:"25"}});
+    db.student.updateMany( {age: "21"}, {"$set": {"age": "20"}} );
     ```
     ![](media/)
     
-    > Note :The above query will return the records whose age is less than 25 inside the student collection.
+1. Execute the below query to view the updated document. The above query will update all the values of **age=21** to **age=20** inside the **student** collection.
+   
+   ```
+   db.student.find().pretty();
+   ```
+   ![](media/)
 
-1. **$lte** and **$ne** 
+1. Run the following query to delete the **document** inside the student collection. MongoDB query language supports 2 delete operations **deleteOne()** and **deleteMany()**. In the below query we are using **deleteMany()** method to delete the multiple documents. 
+   
+   ```
+   db.student.deleteMany( {age: "20"});
+   ```
+   ![](media/)
+   
+   
+1. Execute the below query to view the updated document. The above query will delete all the records with **age=20** inside the **student** collection.
+
+    ```
+    db.student.find().pretty();
+    ```
+    ![](media/)
     
-1. Execute the following query to delete the table **sample_table** which we created in the step 1. **DROP TABLE** command is used to delete the complete table inside database. you will be prompted with a `DROP TABLE` message after running the following command.
+1. Execute the following query to delete the collection **student** which we created in the task 1. **db.COLLECTION_NAME.drop()** query is used to delete the whole collection inside the database.
+   > Note: Inside **db.COLLECTION_NAME.drop()**, **COLLECTION_NAME** refers to the name of the collection which you created.
    
     ```
-    DROP TABLE sample_table;
+    db.student.drop();
     ```
-   ![](media/postgre-drop.png)
+   ![](media/)
     
 ### Task 3: Clauses in PostgreSQL
 
