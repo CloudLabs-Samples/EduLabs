@@ -9,6 +9,7 @@ In this lab, we are going to learn the basic concepts of the following databases
 
    - MySQL
    - PostgreSQL
+   - MongoDB
 
 ## Instructions
 
