@@ -1,4 +1,3 @@
-# Exercise 1: Basics of Kubernetes
 
 ## Overview
 
@@ -12,8 +11,56 @@ The following are the core concepts of Kubernetes:
    - **Services** - Service is an abstraction which defines a logical set of Pods and a policy by which to access them.
 
 
+Kubernetes aids in ensuring that containerized applications execute where and when you want them to, as well as assisting them in locating the resources and tools they require.
 
+# Exercise 1: Creating a Cluster using Minikube
 
+In this Exercise, we will look at the cluster's nodes that can be used to host our applications. We will be using the Kubernetes command-line tool, kubectl, which allows to run commands against Kubernetes clusters.
 
-### Task 1: Creating a Cluster using Minikube
-
+1. Run the following command to start the preinstalled minikube.
+   
+   ```
+   minikube start
+   ```
+1. Run the following command to check the pre-installed version of **kubectl**.
+   
+   ```
+   kubectl version
+   ```
+   
+1.
+   ```
+   kubectl cluster-info
+   ```
+   
+1.   
+  ```
+  minikube addons list
+  ```
+1.   
+  ```
+  kubectl get nodes
+  ```
+  
+1. 
+   ```
+   kubectl run my-nginx --image=nginx --port=80
+   ```
+1.
+   ```
+   kubectl get pods
+   ```
+   
+1. 
+  ```
+  kubectl get deployment
+  ```
+1. 
+   ```
+   kubectl expose deployment my-nginx --port=80 --type=LoadBalancer
+   ```
+   
+1. 
+  ```
+  kubectl get svc
+  ```
