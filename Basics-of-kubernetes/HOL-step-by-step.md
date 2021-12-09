@@ -72,6 +72,12 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    ```
    kubectl get nodes
    ```
+1. Execute the below query to to get the details about the node **minikube**.
+
+   ```
+   kubectl describe node minikube
+   ```
+   
 1. Check the pods inside the cluster.
 
    ```
