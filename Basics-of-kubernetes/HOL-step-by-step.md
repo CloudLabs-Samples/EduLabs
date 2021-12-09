@@ -89,6 +89,12 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    ```
    kubectl create deployment nginx --image=nginx
    ```
+1. Run the below query to expose the deployments.
+
+   ```
+   kubectl expose deployment nginx --port 80 --type=LoadBalancer
+   ```
+   
 1. You can now see the state of your deployment.
    
    ```
@@ -116,5 +122,54 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    kubectl get svc
    ```
    
+# Exercise 3: Using a Service to Expose Your App
 
+1. let’s list the current Services from our cluster:
 
+   ```
+   kubectl get services
+   ```
+1. We have a Service called kubernetes that is created by default when minikube starts the cluster. To create a new service and expose it to external traffic we’ll use the expose command with NodePort as parameter.
+
+   ```
+   ```
+   
+1. To find out what port was opened externally (by the NodePort option) we’ll run the describe service command:
+
+   ```
+   kubectl describe services/nginx
+   ```
+1. Create an environment variable called NODE_PORT that has the value of the Node port assigned:
+
+   ```
+   export NODE_PORT=$(kubectl get services/nginx -o go-template='{{(index .spec.ports 0).nodePort}}')
+   echo NODE_PORT=$NODE_PORT
+   ```
+1. Now we can test that the app is exposed outside of the cluster using curl, the IP of the Node and the externally exposed port:
+
+   ```
+   curl $(minikube ip):$NODE_PORT
+   ```
+1. Get the name of the Pod and store it in the POD_NAME environment variable:
+
+   ```
+   export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+   echo Name of the Pod: $POD_NAME
+   ```
+1. To apply a new label we use the label command followed by the object type, object name and the new label:
+
+   ```
+   kubectl label pods $POD_NAME version=v1
+   ```
+1. This will apply a new label to our Pod (we pinned the application version to the Pod), and we can check it with the describe pod command:
+
+   ```
+   kubectl describe pods $POD_NAME
+   ```
+   
+1. You can confirm that the app is still running with a curl inside the pod:
+
+   ```
+   kubectl exec -ti $POD_NAME -- curl localhost:8080
+   ```
+   
