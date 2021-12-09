@@ -84,15 +84,21 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    kubectl get pods
    ```
 
-1. Create a Deployment based on the YAML file.
+1. We create a deployment of NGINX using the NGINX image.
   
    ```
-   kubectl apply -f https://k8s.io/examples/application/deployment.yaml
+   kubectl create deployment nginx --image=nginx
    ```
+1. You can now see the state of your deployment.
+   
+   ```
+   kubectl get deployments
+   ```
+   
 1. Display information about the Deployment:
 
    ```
-   kubectl describe deployment nginx-deployment
+   kubectl describe deployment nginx
    ```
 1. List the Pods created by the deployment:
 
