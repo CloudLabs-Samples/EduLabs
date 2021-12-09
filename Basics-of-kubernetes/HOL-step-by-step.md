@@ -173,3 +173,73 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    kubectl exec -ti $POD_NAME -- curl localhost:8080
    ```
    
+# Exercise 4: Scaling the App.
+
+1. To list your deployments use the get deployments command:
+
+   ```
+   kubectl get deployments
+   ```
+1. To see the ReplicaSet created by the Deployment, run
+
+   ```
+   kubectl get rs
+   ```
+1. let’s scale the Deployment to 4 replicas. We’ll use the kubectl scale command, followed by the deployment type, name and desired number of instances:
+
+   ```
+   kubectl scale deployments/nginx --replicas=4
+   ```
+1. The change was applied, and we have 4 instances of the application available. Next, let’s check if the number of Pods changed:
+
+   ```
+   kubectl get pods
+   ```
+1. To scale down the Service to 2 replicas, run again the scale command:
+
+   ```
+   kubectl scale deployments/nginx --replicas=2
+   ```
+1. List the Deployments to check if the change was applied with the get deployments command:
+
+   ```
+   kubectl get deployments
+   ```
+1. The number of replicas decreased to 2. List the number of Pods, with get pods:
+
+   ```
+   kubectl get pods -o wide
+   ```
+   
+# Exercise 5: Perform a rolling update on App
+
+1. To list the running Pods, run the get pods command:
+
+   ```
+   kubectl get pods
+   ```
+1. To view the current image version of the app, run the describe pods command and look for the Image field:
+
+   ```
+   kubectl set image deployments/nginx nginx=jocatalin/kubernetes-bootcamp:v2
+   ```
+1. First, check that the app is running. To find the exposed IP and Port, run the describe service command:
+
+   ```
+   kubectl describe services/nginx
+   ```
+1. Notice that all Pods are running the latest version (v2).You can also confirm the update by running the rollout status command:
+
+   ```
+   kubectl rollout status deployments/nginx
+   ```
+1. To view the current image version of the app, run the describe pods command:
+
+   ```
+   kubectl describe pods
+   ```
+1. To roll back the deployment to your last working version, use the rollout undo command:
+
+   ```
+   kubectl rollout undo deployments/nginx
+   ```
