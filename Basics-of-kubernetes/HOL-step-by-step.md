@@ -92,7 +92,7 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
 1. Run the below query to expose the deployments.
 
    ```
-   kubectl expose deployment nginx --port 80 --type=LoadBalancer
+   kubectl expose deployment nginx --port 80 --type=NodePort
    ```
    
 1. You can now see the state of your deployment.
