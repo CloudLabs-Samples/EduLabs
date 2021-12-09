@@ -64,3 +64,45 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    
 1. **minikube delete --all** command is used to delete all the clusters inside kubernetes. We are not using this command in the lab as we are using the cluster for further exercises.
   
+
+# Exercise 2: Creating an nginx deployment 
+
+1. Run the below command to get the list of nodes inside the kubernetes cluster.
+
+   ```
+   kubectl get nodes
+   ```
+1. Check the pods inside the cluster.
+
+   ```
+   kubectl get pods
+   ```
+
+1. Create a Deployment based on the YAML file.
+  
+   ```
+   kubectl apply -f https://k8s.io/examples/application/deployment.yaml
+   ```
+1. Display information about the Deployment:
+
+   ```
+   kubectl describe deployment nginx-deployment
+   ```
+1. List the Pods created by the deployment:
+
+   ```
+   kubectl get pods -l app=nginx
+   ```
+1. Display information about a Pod:
+
+   ```
+   kubectl describe pod
+   ```
+1. Run the following query to get the service details of kubernetes cluster.
+
+   ```
+   kubectl get svc
+   ```
+   
+
+
