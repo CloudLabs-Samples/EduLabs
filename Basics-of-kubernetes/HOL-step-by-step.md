@@ -64,7 +64,7 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    
 1. **minikube delete --all** command is used to delete all the clusters inside kubernetes. We are not using this command in the lab as we are using the cluster for further exercises.
   
-## Summary
+### Summary
 
 In this exercise, we explored on Kubectl commands which are used to interact and manage Kubernetes objects and the cluster.
   
