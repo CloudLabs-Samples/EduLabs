@@ -18,9 +18,100 @@ Kubernetes aids in ensuring that containerized applications execute where and wh
 
 **Azure Kubernetes Service** is a managed container orchestration service based on the open source Kubernetes system, which is available on the Microsoft Azure public cloud. An organization can use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.
 
+In this exercise, we are going to create an Kubernetes service from **azure portal** and connect to the **AKS cluster** using Azure CLI to explore the basic commands.
 
+1. Login to [Azure portal](https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_uri=https%3A%2F%2Fportal.azure.com%2Fsignin%2Findex%2F&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.windows.net%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D9RbHacLBqoneUWLcGM_b3Hf4Un0_XF3G6VNFoeQbojsIL_NUijyDA3SQxFnjKfMXMJgFE9lYjgnvzIb_OXEAHAXnHf2ajNgAN-66jBKMXWtGmMZccGIhuAkzh6mdE_FFIhhXSHlzT6Qh4MaHh8O1CzeX-TV1WZT0or4jlisi2wpULvkXxZKiyXoc2ar7wlvrHygXnwHGONjykyeIPc75z9XKViw97tRLJU7w3to1NQu7e81EudsNTRXgS3iLCoDq-CdO8nvQpXVyo1JQW5ZHF9bmzolk6fVqmuS4V5zLkigbWl3zKaTilO2D9InFuix2ELViBI21pHlppN0jUEIF4UDshHfrV8kBYsnAWuaWyq2UDKBZzEKpgJ9YtO2ry0CHMe5oezXuSnXbe4EpxSWQ8A&response_mode=form_post&nonce=637738305446507717.MzY3YmU4OWQtZGY1NS00Y2YzLTliZDgtNTk5YTQ4ZjE2MWJjYjZkMzM5NmUtZjZkMy00ZWExLTg4NmYtYzQ3NjY3YzFlNTAz&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&site_id=501430&client-request-id=fff3e214-45e3-459b-b648-d995087b6b08&x-client-SKU=ID_NET472&x-client-ver=6.11.0.0&sso_reload=true) using the below credentials to complete the login process.
+   
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
+   ![](./media/)
 
+1. Select the resource group **Demo-<inject key="DeploymentID" enableCopy="false"/>**. 
+
+    ![](./media/)
+
+1. Select **Create** inside the resource group to add a new resource.Select **Create** inside the resource group to add a new resource.
+   
+   ![](./media/)
+   
+1. Type **Kubernetes Service** into the search box and select **Kubernetes Service** from the dropdown.
+   
+   ![](./media/)
+   
+1. Select **Create** to continue.
+
+   ![](./media/)
+
+1. Provide Kubernetes cluster name as **demo-kube**, leave all the other values to default and click on **Review + Create**.
+
+   ![](./media/)
+   
+1. On the lab VM terminal window, Run the following command to install the azure CLI and explore on **Azure Kubernetes Service**.
+
+   ```
+   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+   ```
+
+   ![](./media/)
+   
+1. Execute the following command and login to the azure portal using credentials from **Environment Details** page.
+
+    ```
+    az login
+    ```
+   ![](./media/)
+  
+1. Run the following command by replacing the **Sub-ID** with the **Subscription ID** to set the subscription of azure. You can copy the subscription ID from **Environment Details** page.
+
+   ```
+   az account set --subscription "Sub-ID"
+   ```
+   ![](./media/)
+   
+1. Execute the below command by replacing **RGNAME** with resource group name. **az aks get-credentials** is used to get the OS options available for creating a managed Kubernetes cluster.
+
+    ```
+    az aks get-credentials --resource-group RGNAME --name demo-kube
+    ```
+    ![](./media/)
+    
+ 1. Execute the below command to get the nodes inside the Azure Kubernetes Service and observe the output.
+
+    ```
+    kubectl get nodes
+    ```
+    ![](./media/)
+    
+1. Run the below command to get all the details of the nodes inside the kubernetes cluster and observe all the fields.
+
+   ```
+   kubectl describe nodes
+   ```
+1. Execute the below command to create a namespace called **Demo** using **kubectl create** command.
+
+   ```
+   kubectl create namespace demo
+   ```
+   ![](./media/)
+   
+1. Run the following query and observe the created namespace inside the cluster.
+
+   ```
+   kubectl get namespaces
+   ```
+   
+   ![](./media/)
+   
+1. Execute the below command to list all the available services inside the cluster.
+
+   ```
+   kubectl get svc
+   ```
+   ![](./media/)
+   
+   
+## Summary
 
 
 # Exercise 2: Creating a Cluster using Minikube
