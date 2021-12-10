@@ -13,20 +13,20 @@ This flexibility enables you to try out Kubernetes deployments, perform developm
 
 1. Once the environment is provisioned, an SSH session to the Linux virtual machine and lab guide will get loaded in your browser tab. 
    
-   ![](media/getting-started.png)
+   ![](./media/minikube-01.png)
 
 1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration.
 
-   ![](media/environment-details1.png)
+   ![](./media/minikube-02.png)
    
 1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
-   ![](media/getting-started1.png)
+   ![](./media/minikube-03.png)
 
 1. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
-   ![](media/Resources.png)
+   ![](./media/minikube-04.png)
    
 1. Now, click on the **Next** from lower right corner to move on next page.
    
-
+    ![](./media/minikube-05.png)
