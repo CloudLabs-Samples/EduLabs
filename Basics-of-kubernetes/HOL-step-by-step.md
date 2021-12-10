@@ -14,7 +14,7 @@ The following are the core concepts of Kubernetes:
 Kubernetes aids in ensuring that containerized applications execute where and when you want them to, as well as assisting them in locating the resources and tools they require.
 
 
-# Exercise 1: Exploring Basic operations on AKS(Azure Kubernetes Service)
+# Exercise 1: Exploring Basic operations on Azure Kubernetes Service
 
 **Azure Kubernetes Service** is a managed container orchestration service based on the open source Kubernetes system, which is available on the Microsoft Azure public cloud. An organization can use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.
 
@@ -25,27 +25,25 @@ In this exercise, we are going to create an Kubernetes service from **azure port
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![](./media/)
+1. Select the resource group with the name **Demo**. 
 
-1. Select the resource group **Demo-<inject key="DeploymentID" enableCopy="false"/>**. 
-
-    ![](./media/)
+    ![](./media/portal1.png)
 
 1. Select **Create** inside the resource group to add a new resource.Select **Create** inside the resource group to add a new resource.
    
-   ![](./media/)
+   ![](./media/portal2.png)
    
 1. Type **Kubernetes Service** into the search box and select **Kubernetes Service** from the dropdown.
    
-   ![](./media/)
+   ![](./media/portal3.png)
    
 1. Select **Create** to continue.
 
-   ![](./media/)
+   ![](./media/portal4.png)
 
 1. Provide Kubernetes cluster name as **demo-kube**, leave all the other values to default and click on **Review + Create**.
 
-   ![](./media/)
+   ![](./media/portal5.png)
    
 1. On the lab VM terminal window, Run the following command to install the azure CLI and explore on **Azure Kubernetes Service**.
 
