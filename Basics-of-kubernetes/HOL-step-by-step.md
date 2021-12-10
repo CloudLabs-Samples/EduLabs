@@ -24,45 +24,56 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    ```
    minikube start
    ```
+   ![](./media/)
+   
 1. Execute the following command to check the pre-installed version of **kubectl**. You will use the Kubernetes command-line tool, kubectl, to conduct commands on Kubernetes clusters.
    
    ```
    kubectl version
    ```
+   ![](./media/)
    
 1. Run the below command to get the kubernetes cluster information. **kubectl cluster-info** command is used to display the cluster Info.
    
    ```
    kubectl cluster-info
    ```
+   ![](./media/)
    
 1. Execute the following command to pause the kubernetes inside minikube without affecting deployed applications.
    
    ```
    minikube pause
    ```
+   ![](./media/)
+   
 1. Run the below command to start the kubernetes inside minikube.
     
     ```
     minikube unpause
     ```
+    ![](./media/)
   
 1. Execute the beow command to halt the kubernetes cluster.
    
    ```
    minikube stop
    ```
+   ![](./media/)
+   
    Please run the minikube start command before going to further steps.
    
    ```
    minikube start
    ```
+   ![](./media/)
    
 1. Run the below command and observe the catlog of easily installed Kubernetes services.
    
    ```
    minikube addons list
    ```
+   ![](./media/)
    
 1. **minikube delete --all** command is used to delete all the clusters inside kubernetes. We are not using this command in the lab as we are using the cluster for further exercises.
   
