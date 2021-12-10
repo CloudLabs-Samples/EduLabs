@@ -15,7 +15,9 @@ Kubernetes aids in ensuring that containerized applications execute where and wh
 
 # Exercise 1: Creating a Cluster using Minikube
 
-In this Exercise, we will look at the cluster's nodes that can be used to host our applications. We will be using the Kubernetes command-line tool, kubectl, which allows to run commands against Kubernetes clusters.
+In this exercise, we will look at the cluster's nodes that can be used to host our applications. We will be using the Kubernetes command-line tool, kubectl, which allows to run commands against Kubernetes clusters.
+
+By default, minikube start creates a cluster named **minikube**. If you would like to create a different cluster or change its name, you can use the --profile (or -p) flag, which will create a cluster with the specified name. Please note that we will be using the default cluster **minikube** in this lab.
 
 1. Run the following command to start the preinstalled minikube inside the lab VM.
    
@@ -24,56 +26,56 @@ In this Exercise, we will look at the cluster's nodes that can be used to host o
    ```
    minikube start
    ```
-   ![](./media/)
+   ![](./media/minikube-start.png)
    
 1. Execute the following command to check the pre-installed version of **kubectl**. You will use the Kubernetes command-line tool, kubectl, to conduct commands on Kubernetes clusters.
    
    ```
    kubectl version
    ```
-   ![](./media/)
+   ![](./media/minikube-version.png)
    
 1. Run the below command to get the kubernetes cluster information. **kubectl cluster-info** command is used to display the cluster Info.
    
    ```
    kubectl cluster-info
    ```
-   ![](./media/)
+   ![](./media/minikube-cluster-info.png)
    
 1. Execute the following command to pause the kubernetes inside minikube without affecting deployed applications.
    
    ```
    minikube pause
    ```
-   ![](./media/)
+   ![](./media/minikube-pause.png)
    
 1. Run the below command to start the kubernetes inside minikube.
     
     ```
     minikube unpause
     ```
-    ![](./media/)
+    ![](./media/minikube-unpause.png)
   
 1. Execute the beow command to halt the kubernetes cluster.
    
    ```
    minikube stop
    ```
-   ![](./media/)
+   ![](./media/minikube-stop.png)
    
    Please run the minikube start command before going to further steps.
    
    ```
    minikube start
    ```
-   ![](./media/)
+   ![](./media/minikube-start.png)
    
 1. Run the below command and observe the catlog of easily installed Kubernetes services.
    
    ```
    minikube addons list
    ```
-   ![](./media/)
+   ![](./media/minikube-addons.png)
    
 1. **minikube delete --all** command is used to delete all the clusters inside kubernetes. We are not using this command in the lab as we are using the cluster for further exercises.
   
