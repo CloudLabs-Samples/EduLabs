@@ -1,15 +1,11 @@
-# Getting Started with Database Standalone
+# Getting Started Kubernetes
 
 
 ## Overview
 
-In this lab environment, you will be able to access the Ubuntu VM which has several popular database servers pre-installed for stroring data, Adding, modifying, deleting rows (records) and columns, Searching and filtering records and Running queries.
+In this lab environment, you will be able to access the Ubuntu VM which has Minikube pre-installed. Minikube is a utility you can use to run Kubernetes (k8s) on your local machine. It creates a single node cluster contained in a virtual machine (VM). This cluster lets you demo Kubernetes operations without requiring the time and resource-consuming installation of full-blown K8s.
 
-In this lab, we are going to learn the basic concepts of the following databases.
-
-   - MySQL
-   - PostgreSQL
-   - MongoDB
+This flexibility enables you to try out Kubernetes deployments, perform development tasks, or test configurations easily. Minikube is especially useful for those new to kubernetes since it enables you to gain familiarity with basic concepts.
 
 ## Instructions
 
