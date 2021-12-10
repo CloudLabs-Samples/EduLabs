@@ -19,7 +19,7 @@ In this exercise, we will look at the cluster's nodes that can be used to host o
 
 By default, minikube start creates a cluster named **minikube**. If you would like to create a different cluster or change its name, you can use the --profile (or -p) flag, which will create a cluster with the specified name. Please note that we will be using the default cluster **minikube** in this lab.
 
-1. Run the following command to start the preinstalled minikube inside the lab VM.
+1. Run the following command to start the pre-installed minikube inside lab VM.
    
    > Please note that the minikube can take upto 3 minutes to start. 
    
@@ -64,7 +64,7 @@ By default, minikube start creates a cluster named **minikube**. If you would li
    ![](./media/minikube-stop.png)
    
   
-   Please run the minikube start command before going to further steps.
+ Please run the minikube start command before going to further steps.
    
    ```
    minikube start
