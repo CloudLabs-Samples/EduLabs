@@ -86,71 +86,96 @@ In this exercise, we explored on Kubectl commands which are used to interact and
 
 # Exercise 2: Creating an nginx deployment 
 
+We are going to create a sample deployment of NGINX using the NGINX image in this exercise. Run each command and observe the output before proceeding to next steps.
+
 1. Run the below command to get the list of nodes inside the kubernetes cluster.
 
    ```
    kubectl get nodes
    ```
-1. Execute the below query to to get the details about the node inside **minikube**.
+   ![](./media/minikube-node.png)
+   
+1. Execute the below query to to get the details about the node inside **minikube** and observe the node details from the output section.
 
    ```
    kubectl describe node minikube
    ```
+   ![](./media/minikube-describe.png)
    
 1. Run the below command to check the pods inside the cluster. **kubectl get pods** command is used to get all the pods inside the kubernetes.
 
    ```
    kubectl get pods
    ```
+   After running the above command you will recieve an output message **No resources found in default namespace** as there are no pods created.
 
-1. Execute the below command to create a deployment of NGINX using the NGINX image.
+1. Execute the below command to create a deployment of NGINX using the NGINX image. Once the command ran successfully, you will prompted with an output message saying **deployment.apps/nginx created**
   
    ```
    kubectl create deployment nginx --image=nginx
    ```
-1. Run the below query to expose the deployments inside the kubernetes.
+   ![](./media/minikube-deployment.png)
+   
+1. Run the below query to expose the deployments inside the kubernetes. You will be prompted with an output message **service/nginx exposed** after running the command successfully.
 
    ```
    kubectl expose deployment nginx --port 80 --type=NodePort
    ```
+   ![](./media/minikube-expose.png)
    
 1. By executing the following query you can now see the state of your deployment. Make sure that the deployment is in running state before proceeding to further steps.
    
    ```
    kubectl get deployments
    ```
+   ![](./media/minikube-deployment1.png)
    
 1. Execute the below command to get display information about the deployment.
 
    ```
    kubectl describe deployment nginx
    ```
+   ![](./media/minikube-deployment.nginx.png)
    
 1. Run the below command to check the pods inside the cluster.
 
     ```
    kubectl get pods
    ```
-1. Execute the below command to list the Pods created by the deployment.
+   ![](./media/minikube-podstatus.png)
+   
+1. Execute the below command to list the Pods created by the **nginx** deployment.
 
    ```
    kubectl get pods -l app=nginx
    ```
+   ![](./media/minikube-nginx.deploy.png)
+   
 1. Run the folloiwng command and observe the pd details from output. **kubectl describe pod** displays information about a Pod.
 
    ```
    kubectl describe pod
    ```
-1. Run the following query to get the service details of kubernetes cluster.
+   ![](./media/minikube-podrunning.png)
+   
+1. Run the **get svc** command to see a summary of the service and the ports exposed.
 
    ```
    kubectl get svc
    ```
+   ![](./media/minikube-getsvc.png)
    
 ### Summary
-   
+
+In this exercise, we created a sample deployment and explored on checking the status of the nodes and pods inside kubernetes.
    
 # Exercise 3: Using a Service to Expose Your App
+
+In this Exercise, we are going to learn about a **Service in Kubernetes**, understand how labels objects relate to a service, expose an application outside a Kubernetes cluster and using a service.
+
+A Kubernetes service is a logical abstraction for a deployed group of pods in a cluster which all perform the same function.
+
+Since pods are ephemeral, a service enables a group of pods, which provide specific functions to be assigned a name and unique IP address (clusterIP). As long as the service is running that IP address, it will not change. Services also define policies for their access.
 
 1. Execute the following command to list the current **Services** from our cluster inside kubernetes.
 
@@ -159,62 +184,78 @@ In this exercise, we explored on Kubectl commands which are used to interact and
    ```
    Observe in the output window that we have a service called **kubernetes** that is created by default when minikube starts the cluster. 
 
-   
+   ![](./media/minikube-ex3-01.png)
    
 1. Run the following command to find out what port was opened externally. We will run the **Describe service** command to find the port.
 
    ```
    kubectl describe services/nginx
    ```
+   ![](./media/minikube-ex3-services.png)
+   
 1. Run the below command to store the value of node port inside an environment variable. We are creating an environment variable called **NODE_PORT** that has the value of the Node port assigned.
 
    ```
    export NODE_PORT=$(kubectl get services/nginx -o go-template='{{(index .spec.ports 0).nodePort}}')
    ```
+   Please note that the above command will not give any output after running successfully.
    
 1. Execute the below command to see the value of **NODE_PORT**.
    
    ```
    echo NODE_PORT=$NODE_PORT
    ```
+   ![](./media/minikube-node-port.png)
    
 1. Execute the below command. we are using the following command to expose the app outside of the cluster using curl, the IP of the Node and the externally exposed port.
 
    ```
    curl $(minikube ip):$NODE_PORT
    ```
+   ![](./media/minikube-ex03-niginx.png)
+   
 1. Run the below command to get the name of the Pod and store it in the **POD_NAME** environment variable.
 
    ```
    export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
    ```
+   Please note that the above command will not give any output after running successfully.
    
 1. Execute the following command to view the value of **POD_NAME**.
 
    ```
    echo Name of the Pod: $POD_NAME
    ```
+   ![](./media/minikube-podname.png)
    
 1. Run the following command to apply a new label to the pods. we use the **label** command followed by the object type, object name and the new label to apply a label to the pods.
 
    ```
    kubectl label pods $POD_NAME version=v1
    ```
-1. Execute the below command to view the new label to our **Pod**. We can check it with the **describe pod** command.
+   ![](./media/minikube-label.png)
+   
+1. Execute the below command to view the new version of label to our **Pod**. We can check it with the **describe pod** command.
 
    ```
    kubectl describe pods $POD_NAME
    ```
+   ![](./media/minikube-version.png)
    
 1. Run the below command so that you can confirm that the app is still running with a curl inside the pod.
 
    ```
    kubectl exec -ti $POD_NAME -- curl localhost:80
    ```
+   ![](./media/minikube-exec.png)
    
 ### Summary
+
+In this exercise, we learned about how to expose an app using kubernetes services.
    
 # Exercise 4: Scaling the App.
+
+
 
 1. Run the below command and observe the list of your deployments using the **get deployments** command.
 
