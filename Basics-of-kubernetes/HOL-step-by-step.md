@@ -13,7 +13,17 @@ The following are the core concepts of Kubernetes:
 
 Kubernetes aids in ensuring that containerized applications execute where and when you want them to, as well as assisting them in locating the resources and tools they require.
 
-# Exercise 1: Creating a Cluster using Minikube
+
+# Exercise 1: Exploring Basic operations on AKS(Azure Kubernetes Service)
+
+**Azure Kubernetes Service** is a managed container orchestration service based on the open source Kubernetes system, which is available on the Microsoft Azure public cloud. An organization can use AKS to handle critical functionality such as deploying, scaling and managing Docker containers and container-based applications.
+
+
+
+
+
+
+# Exercise 2: Creating a Cluster using Minikube
 
 In this exercise, we will look at the cluster's nodes that can be used to host our applications. We will be using the Kubernetes command-line tool, kubectl, which allows to run commands against Kubernetes clusters.
 
@@ -85,7 +95,7 @@ By default, minikube start creates a cluster named **minikube**. If you would li
 In this exercise, we explored on Kubectl commands which are used to interact and manage Kubernetes objects and the cluster.
   
 
-# Exercise 2: Creating an nginx deployment 
+# Exercise 3: Creating an nginx deployment 
 
 We are going to create a sample deployment of NGINX using the NGINX image in this exercise. Run each command and observe the output before proceeding to next steps.
 
@@ -170,7 +180,7 @@ We are going to create a sample deployment of NGINX using the NGINX image in thi
 
 In this exercise, we created a sample deployment and explored on checking the status of the nodes and pods inside kubernetes.
    
-# Exercise 3: Using a Service to Expose Your App
+# Exercise 4: Using a Service to Expose Your App
 
 In this Exercise, we are going to learn about a **Service in Kubernetes**, understand how labels objects relate to a service, expose an application outside a Kubernetes cluster and using a service.
 
@@ -254,7 +264,7 @@ Since pods are ephemeral, a service enables a group of pods, which provide speci
 
 In this exercise, we learned about how to expose an app using kubernetes services.
    
-# Exercise 4: Scaling the App.
+# Exercise 5: Scaling the App.
 
 When traffic increases, we will need to scale the application to keep up with user demand. We've have learned about deployments and services, now lets learn about scaling.
 
@@ -331,7 +341,7 @@ we will use the **scale** command to scale the deployments. and we can check the
 
 In this exercise, we learned about how to use **scale** command to scale the deployments up and down.
 
-# Exercise 5: Perform a rolling update on App
+# Exercise 6: Perform a rolling update on App
 
 Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Kubernetes this is done with rolling updates. Rolling updates allow **Deployments update** to take place with zero downtime by incrementally updating Pods instances with new ones. We are going to perform basic rolling update to our image in this exercise.
 
