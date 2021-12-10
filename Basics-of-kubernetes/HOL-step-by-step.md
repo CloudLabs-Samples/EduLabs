@@ -63,6 +63,7 @@ By default, minikube start creates a cluster named **minikube**. If you would li
    ```
    ![](./media/minikube-stop.png)
    
+  
    Please run the minikube start command before going to further steps.
    
    ```
