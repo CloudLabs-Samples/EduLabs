@@ -41,7 +41,7 @@ In this exercise, we are going to create an Kubernetes service from **azure port
 
    ![](./media/portal4.png)
 
-1. Provide Kubernetes cluster name as **demo-kube**, leave all the other values to default and click on **Review + Create**.
+1. Provide Kubernetes cluster name as **demo-kube**, leave all the other values to default and click on **Review + Create**. Once the validation is successful click on **create**.
 
    ![](./media/portal5.png)
    
@@ -51,47 +51,51 @@ In this exercise, we are going to create an Kubernetes service from **azure port
    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
    ```
 
-   ![](./media/)
+   ![](./media/aks-1.png)
    
 1. Execute the following command and login to the azure portal using credentials from **Environment Details** page.
 
     ```
     az login
     ```
-   ![](./media/)
+   ![](./media/aks-2.png)
+   
+   Once you are successfully logged in, you will prompted with a json output.
   
 1. Run the following command by replacing the **Sub-ID** with the **Subscription ID** to set the subscription of azure. You can copy the subscription ID from **Environment Details** page.
 
    ```
    az account set --subscription "Sub-ID"
    ```
-   ![](./media/)
    
 1. Execute the below command by replacing **RGNAME** with resource group name. **az aks get-credentials** is used to get the OS options available for creating a managed Kubernetes cluster.
 
     ```
     az aks get-credentials --resource-group RGNAME --name demo-kube
     ```
-    ![](./media/)
     
- 1. Execute the below command to get the nodes inside the Azure Kubernetes Service and observe the output.
+    The output of the above command will be similar to the screenshot below.
+    
+    ![](./media/aks-3.png)
+    
+ 1. Execute the below command to get the **nodes** inside the Azure Kubernetes Service and observe the output.
 
     ```
     kubectl get nodes
     ```
-    ![](./media/)
+    ![](./media/aks-4.png)
     
 1. Run the below command to get all the details of the nodes inside the kubernetes cluster and observe all the fields.
 
    ```
    kubectl describe nodes
    ```
-1. Execute the below command to create a namespace called **Demo** using **kubectl create** command.
+1. Execute the below command to create a namespace called **Demo** using **kubectl create** command. You will be prompted with an output message **namespace/demo created**.
 
    ```
    kubectl create namespace demo
    ```
-   ![](./media/)
+   ![](./media/aks-5.png)
    
 1. Run the following query and observe the created namespace inside the cluster.
 
@@ -99,18 +103,19 @@ In this exercise, we are going to create an Kubernetes service from **azure port
    kubectl get namespaces
    ```
    
-   ![](./media/)
+   ![](./media/aks-6.png)
    
 1. Execute the below command to list all the available services inside the cluster.
 
    ```
    kubectl get svc
    ```
-   ![](./media/)
+   ![](./media/aks-7.png)
    
    
 ## Summary
 
+In this exercise, we learned about Azure Kubernetes Service and few basic kubectl commands.
 
 # Exercise 2: Creating a Cluster using Minikube
 
