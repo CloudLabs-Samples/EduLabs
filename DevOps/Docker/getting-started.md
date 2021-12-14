@@ -24,4 +24,11 @@
     ![](./images/ges5.png)
  
   
- 
+1. In the environment click on ok if you recevie a prompt regarding windows deprecation.
+
+   
+
+
+1. If prompted accept the service agreement and start the **Docker desktop**.
+
+
