@@ -26,9 +26,14 @@
   
 1. In the environment click on ok if you recevie a prompt regarding windows deprecation.
 
+   ![](./images/ges6.png)
+
+1. On the service agrement page check ** I accept the terms** and click on **Accept**.
+
+   ![](./images/ges7.png)
    
+1. Now start the **Docker Desktop** by click on **Start**.
 
-
-1. If prompted accept the service agreement and start the **Docker desktop**.
+   ![](./images/ges8.png)
 
 
