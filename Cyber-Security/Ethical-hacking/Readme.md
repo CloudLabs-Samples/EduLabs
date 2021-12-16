@@ -150,7 +150,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    ```
    ![](images/kip.png)
    
-## Exercise 2 : Scanning with Nmap
+## Exercise 2 : Scanning with Nmap to find the vulnerable machines
 
 Nmap stands for “Network Mapper”. Nmap utilizes novel ways of using IP packets for determining the hosts available on the network, services offered by the hosts, operating systems they are running on, types of packets or firewalls being used and many such characteristics.
 Nmap mainly aims at protecting the network by performing a sniffing which leads to detailed network analysis. The detailed network analysis enables the admin who built the system to protect on a network to have complete detail about the packet traffic. Being vigilant and prepared allows the admin to quickly respond to attacks.
@@ -190,3 +190,43 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
 
 **Note:** Using the details printed on the console, one can take a copy of the same into a text editor perform required analytics. Along with this, Kali Linux provides utility to get the entire result of the Nmap on a file and utilize it later for its numerous other uses. With just its one base command with multiple other options, Nmap helps users with loads of information to protect machines from unwanted attacks.
+
+## Exercise 3 - Basics of Exploitation using Metasploit
+
+Metasploit is used for hacking into systems for testing purposes.The Metasploit Framework is an open source platform and a kali linux tool that supports vulnerability research, exploit development, and the creation of custom security tools. 
+
+1. In the kali linux open the terminal and run the below command to start the postgresql database serber. 
+   PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
+   
+   ```
+   service postgresql start
+   ```
+2. Verify if the postgresql database's status **active** by running the below command.
+   
+   ```
+   service postgresql status
+   ```
+   ![](images/msp-1.png)
+   
+3. Run the below command to start the postgresql server everytime kali linux is rebooted.
+   ```
+   update-rc.d postgresql enable
+   ```
+   
+4. Run the below command to verify if sockets are listening to the incoming connections and to ensure postgresql server is running.
+   ```
+   ss -ant
+   ```
+   ![](images/msp-2.png)
+
+5. Run the below command to open the Metasploit Framework console.
+   ```
+   msfconsole
+   ```
+   ![](images/msp-3.png)
+   
+6. Run the below command to ensure that the database is connected to Metasploitable.
+   ```
+   db_status
+   ```
+   ![](images/msp-4.png)
