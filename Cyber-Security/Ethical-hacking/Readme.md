@@ -73,8 +73,7 @@ In this exercise you will update/upgrade kali and download some of the essential
 3. Open the **Root terminal emulator** from top left corner of the kali linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user
    ![](images/root-terminal.png)
    
-4. In the terminal, run the following command to verify if the repository is correctly defined in the sources.
-   
+4. In the terminal, run the following command to verify if the repository is correctly defined in the sources.  
    ```
    more /etc/apt/sources.list
    ```
@@ -98,13 +97,11 @@ In this exercise you will update/upgrade kali and download some of the essential
 Vm tools are required to supprot Shared folders and to support drag and drop operations etc.
 
 1. Open the terminal again, and run the below command to install the packages.If prompted with **Do you want to continue (Y/N), type Y**
-   
    ```
    apt-get install open-vm-tools-desktop fuse
    ```
    
 2. Once the installation is complete, reboot the system by running the below command
-
     ```
     reboot
     ```
