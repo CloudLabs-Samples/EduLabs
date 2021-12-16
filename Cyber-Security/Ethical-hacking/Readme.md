@@ -1,4 +1,4 @@
-# Getting started with ethical hacking
+# Getting started with ethical hacking and Penetration testing
 
 ## Introduction to hacking
 
@@ -150,9 +150,10 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    ```
    ![](images/kip.png)
    
-## Exercise 2 : Working with Nmap
+## Exercise 2 : Scanning with Nmap
 
 Nmap stands for “Network Mapper”. Nmap utilizes novel ways of using IP packets for determining the hosts available on the network, services offered by the hosts, operating systems they are running on, types of packets or firewalls being used and many such characteristics.
+Nmap mainly aims at protecting the network by performing a sniffing which leads to detailed network analysis. The detailed network analysis enables the admin who built the system to protect on a network to have complete detail about the packet traffic. Being vigilant and prepared allows the admin to quickly respond to attacks.
 
 In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing network** is an important skill and tools for the same is without a doubt the absolute necessity so that we can uncover the potential attacks possible in the weak points in the network and fix them to safeguard our system. And in this exercise you will use nmap commands for network sniffing.
 
@@ -161,19 +162,34 @@ In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing n
    nmap
    ```
    **nmap** helps in network discovery that is it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
-   
-2. Run the below command to scan all the ip addresses available and the virtual machines connected in a specific ip address range. In our case the 192.168.100 is the address range(For kali linux and Metasploitable), you can see all the virtual machines connected in this address range as shown below.
-   >* indicates all results to be considered.
-  
-    ```
-    nmap -sP 192.168.100.*
-    ```
-    ![](images/nmap-sp.png)
 
-3. To scan a specific ip address and perform sniffing, run the below command. Here we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
+2. To scan a specific ip address's ports and services, run the below command. In this example, we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
     
     ```
     nmap <ip_addresss of metasploitable vm>
     ```
    
    ![](images/nmap-sip.png)
+   
+Using this, the “threat sniffer” who is noticing some unfamiliar activities from a single IP can scan so that the false positives and false negatives can be distinguished and hit the target if the IP is a notorious one. False positives trigger alert unnecessarily, which might hide any attack. Using the utility to distinguish false positives and false negatives will allow false positives to come out in the open and keep the network analyst on toes to respond to any true positive attack without worrying about the false positives.
+
+3. Run the below command to scan all the ip addresses available, virtual machines connected in a specific ip address range. In our case the 192.168.100 is the address range(For kali linux and Metasploitable), you can see all the virtual machines connected in this address range as shown below.
+   >* indicates all results to be considered.
+  
+    ```
+    nmap -sP 192.168.100.*
+    ```
+    ![](images/nmap-sp.png)
+    
+    In an extended scenario of scanning an IP address, a user also has the flexibility to use Nmap to scan a range of IP addresses to look for instances or loopholes through which an attack might be possible.
+    
+4. Run the below command to scan a host.
+   ```
+   nmap www.yahoo.com
+   ```
+The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
+
+**Note:** Using the details printed on the console, one can take a copy of the same into a text editor perform required analytics. Along with this, Kali Linux provides utility to get the entire result of the Nmap on a file and utilize it later for its numerous other uses. With just its one base command with multiple other options, Nmap helps users with loads of information to protect machines from unwanted attacks.
+
+## Exercise 3 Exploitation with Metasploit
+
