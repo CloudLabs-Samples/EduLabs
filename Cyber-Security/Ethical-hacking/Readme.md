@@ -90,7 +90,7 @@ In this exercise you will update/upgrade kali and download some of the essential
    ```
    apt-get upgrade
    ```
-6. Now the system is updated with latest packages/updates from the repository.
+6. Now the system is updated with latest packages or updates from the repository.
 
 # Task 2 : Installing VM tools
 
