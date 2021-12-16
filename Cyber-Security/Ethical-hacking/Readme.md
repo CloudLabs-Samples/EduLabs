@@ -1,4 +1,4 @@
-# Ethical hacking using Hyper-V
+# Ethical hacking
 
 ## Introduction to hacking
 
