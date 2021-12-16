@@ -1,4 +1,4 @@
-# Ethical hacking
+# Getting started with ethical hacking
 
 ## Introduction to hacking
 
