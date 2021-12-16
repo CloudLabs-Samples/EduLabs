@@ -1,0 +1,12 @@
+[
+ {
+    "Name": "Getting started with Ethical hacking and Pentration testing",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Cyber-Security/Ethical-hacking/Readme.md",
+        "Order": 1
+      }
+    ]
+  }
+]
