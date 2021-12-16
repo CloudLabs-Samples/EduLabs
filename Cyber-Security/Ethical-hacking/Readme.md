@@ -19,7 +19,7 @@ the compromise of a company’s target server, to competitors
 
 The sole difference between the terms “hacking” and “ethical hacking” is the permission. Now, let us know what is ethical hacking in the next section.
 
-## Ethical hacking and Penetration testing(pen-testing_
+## Ethical hacking and Penetration testing(Pen-testing)
 
 **Ethical hacking** is a process of detecting vulnerabilities in an application, system, or organization’s infrastructure that an attacker can use to exploit an individual or organizationa and an **ethical hacker** is as a person who is hired and permitted by an organization to attack its systems for the purpose of identifying vulnerabilities, which an attacker might take advantage of.
 
