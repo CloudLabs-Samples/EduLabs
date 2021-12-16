@@ -225,7 +225,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    ```
    ![](images/msp-3.png)
    
-6. Run the below command to ensure that the database is connected to Metasploitable.
+6. Run the below command to ensure that the postgresql database is connected to Metasploitable Framework.
    ```
    db_status
    ```
