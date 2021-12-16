@@ -54,6 +54,7 @@ using such applications
 ## Explore the lab environment 
 
 In this lab environment you are provided with a lab virtual machine with Hyper-V manager pre-installed along with the guest operating systems like Kali Linux and Metasploitable using which you will learn the penetration testing skills.
+
 **Kali linux** is a penetration testing platform which is a debian based linux distribution aimed at advanced penetration testing and security auditing. It contains several tools for various information security tasks like social engineering, Forensics or penetration testing.
 **Metasploitable** is an intentionally vulnerable linux virtual machine, this virtual machine is usually used to conduct security training, test security tools and practice common penetration testing techniques.
 
@@ -77,7 +78,6 @@ In this exercise you will update/upgrade kali and download some of the essential
    ```
    more /etc/apt/sources.list
    ```
-  
    ![](images/kali-sourceslist.png)
   
 4. Next, run the below command to update the list of available packages.
@@ -99,8 +99,7 @@ Vm tools are required to supprot Shared folders and to support drag and drop ope
 1. Open the terminal again, and run the below command to install the packages.If prompted with **Do you want to continue (Y/N), type Y**
    ```
    apt-get install open-vm-tools-desktop fuse
-   ```
-   
+   ```  
 2. Once the installation is complete, reboot the system by running the below command
     ```
     reboot
