@@ -1,4 +1,4 @@
-# Getting started with ethical hacking and Penetration testing
+# Getting started with Ethical hacking and Penetration testing
 
 ## Introduction to hacking
 
