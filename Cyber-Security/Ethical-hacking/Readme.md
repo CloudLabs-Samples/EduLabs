@@ -190,6 +190,3 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
 
 **Note:** Using the details printed on the console, one can take a copy of the same into a text editor perform required analytics. Along with this, Kali Linux provides utility to get the entire result of the Nmap on a file and utilize it later for its numerous other uses. With just its one base command with multiple other options, Nmap helps users with loads of information to protect machines from unwanted attacks.
-
-## Exercise 3 Exploitation with Metasploit
-
