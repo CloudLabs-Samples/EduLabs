@@ -56,6 +56,7 @@ using such applications
 In this lab environment you are provided with a lab virtual machine with Hyper-V manager pre-installed along with the guest operating systems like Kali Linux and Metasploitable using which you will learn the penetration testing skills.
 
 **Kali linux** is a penetration testing platform which is a debian based linux distribution aimed at advanced penetration testing and security auditing. It contains several tools for various information security tasks like social engineering, Forensics or penetration testing.
+
 **Metasploitable** is an intentionally vulnerable linux virtual machine, this virtual machine is usually used to conduct security training, test security tools and practice common penetration testing techniques.
 
 ## Exercise 1 : Working with Kali
