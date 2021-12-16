@@ -50,4 +50,69 @@ using such applications
 
 5. **Physical Penetration test**
    A physical penetration test is what you would rarely be doing in your career as a penetration tester. In a physical penetration test, you would be asked to walk into the organization’s building physically and test physical security controls such as locks and RFID mechanisms.
+   
+## Explore the lab environment 
+
+In this lab environment you are provided with a lab virtual machine with Hyper-V manager pre-installed along with the guest operating systems like Kali Linux and Metasploitable using which you will learn the penetration testing skills.
+**Kali linux** is a penetration testing platform which is a debian based linux distribution aimed at advanced penetration testing and security auditing. It contains several tools for various information security tasks like social engineering, Forensics or penetration testing.
+**Metasploitable** is an intentionally vulnerable linux virtual machine, this virtual machine is usually used to conduct security training, test security tools and practice common penetration testing techniques.
+
+## Exercise 1 : Working with Kali
+
+In this exercise you will update/upgrade kali and download some of the essential tools required.
+
+# Task 1 : Updating and Upgrading Kali Linux
+
+1. In the labvm provided, click on **Hyper-V Manager** and select **Kali-linux** under the Virtual machines and click on **Start** to start the virtual machine.
+   ![](images/hyper-v.png)
+   
+2. Once the kali linux is turned on, you will be prompted to login to the Virtual machine. Use the below credentials and login to the VM.
+   * **Username:** <inject key="Kali VM Username" />
+   * **Password:** <inject key="Kali VM Password" />
+
+3. Open the **Root terminal emulator** from top left corner of the kali linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user
+   ![](images/root-terminal.png)
+   
+4. In the terminal, run the following command to verify if the repository is correctly defined in the sources.
+   
+   ```
+   more /etc/apt/sources.list
+   ```
+  
+   ![](images/kali-sourceslist.png)
+  
+4. Next, run the below command to update the list of available packages.
+   ```
+   apt-get update
+   ```
+  ![](images/kali-updatecmd.png)
+  
+5. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
+   ```
+   apt-get upgrade
+   ```
+6. Now the system is updated with latest packages/updates from the repository.
+
+# Task 2 : Installing VM tools
+
+Vm tools are required to supprot Shared folders and to support drag and drop operations etc.
+
+1. Open the terminal again, and run the below command to install the packages.If prompted with **Do you want to continue (Y/N), type Y**
+   
+   ```
+   apt-get install open-vm-tools-desktop fuse
+   ```
+   
+2. Once the installation is complete, reboot the system by running the below command
+
+    ```
+    reboot
+    ```
+
+
+  
+
+
+
+
 
