@@ -61,7 +61,7 @@ In this lab environment you are provided with a lab virtual machine with Hyper-V
 
 ## Exercise 1 : Working with Kali
 
-In this exercise you will update/upgrade kali and download some of the essential tools required.
+In this exercise you will update/upgrade kali linux system and explore some of the essential tools used in ethical hacking
 
 ## Task 1 : Updating and Upgrading Kali Linux
 
@@ -85,7 +85,7 @@ In this exercise you will update/upgrade kali and download some of the essential
    ```
    apt-get update
    ```
-  ![](images/kali-updatecmd.png)
+   ![](images/kali-updatecmd.png)
   
 5. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
    ```
@@ -143,7 +143,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    ```
    ifconfig
    ```
-  ![](images/kip.png)
+   ![](images/kip.png)
    
 ## Exercise 2 : Working with Nmap
 
