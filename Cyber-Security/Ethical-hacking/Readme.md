@@ -55,7 +55,7 @@ using such applications
 
 In this lab environment you are provided with a lab virtual machine with Hyper-V manager pre-installed along with the guest operating systems like Kali Linux and Metasploitable using which you will learn the penetration testing skills.
 
-**Kali linux** is a penetration testing platform which is a debian based linux distribution aimed at advanced penetration testing and security auditing. It contains several tools for various information security tasks like social engineering, Forensics or penetration testing.
+**Kali Linux** is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.
 
 **Metasploitable** is an intentionally vulnerable linux virtual machine, this virtual machine is usually used to conduct security training, test security tools and practice common penetration testing techniques.
 
@@ -93,23 +93,40 @@ In this exercise you will update/upgrade kali and download some of the essential
    ```
 6. Now the system is updated with latest packages or updates from the repository.
 
-## Task 2 : Installing VM tools
+## Task 2 : Essential Kali tools
 
-Vm tools are required to supprot Shared folders and to support drag and drop operations etc.
+The Kali Linux penetration testing platform contains a vast array of tools and utilities pre-installed. From information gathering to final reporting, Kali Linux enables security and IT professionals to assess the security of their systems.
+Some of the pre-installed Kali tools you will explore in this lab are :
+- Nmap
+- Metasploit framework
+- Hydra
 
-1. Open the terminal again, and run the below command to install the packages.If prompted with **Do you want to continue (Y/N), type Y**
-   ```
-   apt-get install open-vm-tools-desktop fuse
-   ```  
-2. Once the installation is complete, reboot the system by running the below command
-    ```
-    reboot
-    ```
-
-
+1. From the top left corner of the kali linux, select **Applications** adn search for pre-installed tools like nmap. Similarly you can check for other pre-installed tools.
   
+   ![](images/kali-updatecmd.png)
+  
+2. **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
+- Real time information of a network
+- Detailed information of all the IPs activated on your network
+- Number of ports open in a network
+- Provide the list of live hosts
+- Port, OS and Host scanning
 
+   Open the Terminal again and run the below command, **nmap** to list the options of target specification or host discovery.
+   ```
+   nmap
+   ```
+   ![](images/nmap.png)
+    
+3. The **Metasploit framework** is a very powerful tool which can be used by cybercriminals as well as ethical hackers to probe systematic vulnerabilities on networks and servers. Because it's an open-source framework, it can be easily customized and used with most operating systems
 
-
+  - Click on **Applications** from the top-left corner and select **Metasploit framework**. This will open up a terminal if prompted provide the kali linux password **kali**
+   
+   ![](images/mf.png)
+   
+4. **Hydra** is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
+   This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.
+ 
+   - Click on **Applications** from the top-left corner and select **Hydra**.
 
 
