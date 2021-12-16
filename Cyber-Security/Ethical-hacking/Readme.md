@@ -62,7 +62,7 @@ In this lab environment you are provided with a lab virtual machine with Hyper-V
 
 In this exercise you will update/upgrade kali and download some of the essential tools required.
 
-# Task 1 : Updating and Upgrading Kali Linux
+## Task 1 : Updating and Upgrading Kali Linux
 
 1. In the labvm provided, click on **Hyper-V Manager** and select **Kali-linux** under the Virtual machines and click on **Start** to start the virtual machine.
    ![](images/hyper-v.png)
@@ -92,7 +92,7 @@ In this exercise you will update/upgrade kali and download some of the essential
    ```
 6. Now the system is updated with latest packages or updates from the repository.
 
-# Task 2 : Installing VM tools
+## Task 2 : Installing VM tools
 
 Vm tools are required to supprot Shared folders and to support drag and drop operations etc.
 
