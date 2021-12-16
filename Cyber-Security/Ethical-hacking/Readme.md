@@ -105,17 +105,8 @@ Some of the pre-installed Kali tools you will explore in this lab are :
   
    ![](images/kali-updatecmd.png)
   
-2. **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
-- Real time information of a network
-- Detailed information of all the IPs activated on your network
-- Number of ports open in a network
-- Provide the list of live hosts
-- Port, OS and Host scanning
+2. **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators.
 
-   Open the Terminal again and run the below command, **nmap** to list the options of target specification or host discovery.
-   ```
-   nmap
-   ```
    ![](images/nmap.png)
     
 3. The **Metasploit framework** is a very powerful tool which can be used by cybercriminals as well as ethical hackers to probe systematic vulnerabilities on networks and servers. Because it's an open-source framework, it can be easily customized and used with most operating systems
@@ -129,4 +120,47 @@ Some of the pre-installed Kali tools you will explore in this lab are :
  
    - Click on **Applications** from the top-left corner and select **Hydra**.
 
+## Task 3 : Configuring Victim
 
+1. In the labvm provided, click on **Hyper-V Manager** and select **Metasploitable** under the Virtual machines and click on **Start** to start the virtual machine.
+   ![](images/mfstart.png)
+   
+2. Once the kali linux is turned on, you will be prompted to login to the Virtual machine. Use the below credentials and login to the VM.
+   * **Username:** <inject key="Metasploitable VM Username" />
+   * **Password:** <inject key="Metasploitable VM Password" />
+
+3. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address as you will be using it in the next step.
+   ```
+   ifconfig
+   ```
+   ![](images/mip.png)
+
+4. Now, navigate back to Kali linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the <ip_address of metasploitable vm> with the ip address value you noted in the previous step.
+   ```
+   ping <ip_address of metasploitable vm>
+   ```
+   ![](images/ping-m.png)
+ 
+5. Also, run the below command to note down the ip address of kali linux as you will be using it in the further tasks.
+   ```
+   ifconfig
+   ```
+  ![](images/kip.png)
+   
+## Exercise 2 : Working with Nmap
+
+ **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
+- Real time information of a network
+- Detailed information of all the IPs activated on your network
+- Number of ports open in a network
+- Provide the list of live hosts
+- Port, OS and Host scanning
+
+1. Open the Terminal on kali linux and run the below command, **nmap** to list the options of target specification or host discovery.
+   ```
+   nmap
+   ```
+   **nmap** helps in network discovery that is it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
+   
+2. There are different techniques for port scanning to find the running 
+   
