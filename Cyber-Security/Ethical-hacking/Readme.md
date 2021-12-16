@@ -105,8 +105,13 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    
    ![](images/nmap.png)
   
-**Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators.
-   
+  **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
+- Real time information of a network
+- Detailed information of all the IPs activated on your network
+- Number of ports open in a network
+- Provide the list of live hosts
+- Port, OS and Host scanning 
+
 2. The **Metasploit framework** is a very powerful tool which can be used by cybercriminals as well as ethical hackers to probe systematic vulnerabilities on networks and servers. Because it's an open-source framework, it can be easily customized and used with most operating systems
 
   - Click on **Applications** from the top-left corner and select **Metasploit framework**. This will open up a terminal if prompted provide the kali linux password **kali**
@@ -147,18 +152,28 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    
 ## Exercise 2 : Working with Nmap
 
- **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
-- Real time information of a network
-- Detailed information of all the IPs activated on your network
-- Number of ports open in a network
-- Provide the list of live hosts
-- Port, OS and Host scanning
+Nmap stands for “Network Mapper”. Nmap utilizes novel ways of using IP packets for determining the hosts available on the network, services offered by the hosts, operating systems they are running on, types of packets or firewalls being used and many such characteristics.
 
-1. Open the Terminal on kali linux and run the below command, **nmap** to list the options of target specification or host discovery.
+In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing network** is an important skill and tools for the same is without a doubt the absolute necessity so that we can uncover the potential attacks possible in the weak points in the network and fix them to safeguard our system. And in this exercise you will use nmap commands for network sniffing.
+
+1. Open the Terminal on kali linux and run the below command, **nmap** to list the options of target specification or host discovery and the nmap manual.
    ```
    nmap
    ```
    **nmap** helps in network discovery that is it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
    
-2. There are different techniques for port scanning to find the running 
+2. Run the below command to scan all the ip addresses available and the virtual machines connected in a specific ip address range. In our case the 192.168.100 is the address range(For kali linux and Metasploitable), you can see all the virtual machines connected in this address range as shown below.
+   >* indicates all results to be considered.
+  
+    ```
+    nmap -sP 192.168.100.*
+    ```
+    ![](images/nmap-sp.png)
+
+3. To scan a specific ip address and perform sniffing, run the below command. Here we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
+    
+    ```
+    nmap <ip_addresss of metasploitable vm>
+    ```
    
+   ![](images/nmap-sip.png)
