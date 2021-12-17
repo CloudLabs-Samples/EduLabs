@@ -1,4 +1,4 @@
-# Exercise 2: Creating a Cluster using Minikube
+# Exercise 1: Creating a Cluster using Minikube
 
 In this exercise, we will look at the cluster's nodes that can be used to host our applications. To conduct commands against Kubernetes clusters, we'll use the Kubernetes command-line tool **kubectl**.
 
@@ -17,14 +17,14 @@ You can use **kubectl** to deploy applications, inspect and manage cluster resou
    ```
    View cluster events
    ```
-   ![](./media/)
+   ![](./media/minikube-get_events.png)
    
 1. Run the following command to view the **kubectl** configuration and observe the output details.
    
    ```
    kubectl config view
    ```
-   ![](./media/)
+   ![](./media/minikube-config.png)
    
 1. Run the below command to get the kubernetes cluster information. **kubectl cluster-info** command is used to display the cluster information in kubectl.
    
