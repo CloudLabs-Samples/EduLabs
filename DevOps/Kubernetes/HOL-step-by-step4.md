@@ -1,6 +1,6 @@
 # Exercise 4: Scaling the App
 
-When traffic increases, we will need to scale the application to keep up with user demand. We've have learned about deployments and services, now lets learn about scaling.
+When traffic increases, we will need to scale the application to keep up with user demand. We have learned about deployments and services, now lets learn about scaling.
 
 We will use the **scale** command to scale the deployments and we can check the status of scaling by using **get pods** command.
 
@@ -36,10 +36,10 @@ We will use the **scale** command to scale the deployments and we can check the 
    
 1. Execute the below command. We can see the status of scaling operation by using **describe** command.
 
-  ```
-  kubectl describe deployments/nginx
-  ```
-  ![](./media/minikube-rs-update2.png)
+   ```
+   kubectl describe deployments/nginx
+   ```
+   ![](./media/minikube-rs-update2.png)
   
 1. Run the following command and observe that the changes were applied, and we have 4 pods of the application available in **Running** state.
 
