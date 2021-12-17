@@ -51,14 +51,14 @@ We are going to create a sample deployment of nginx using the nginx image in thi
    ```
    ![](./media/minikube-deployment.nginx.png)
    
-1. Run the below command to check the pods inside the cluster. You can see that a new pod has been created and is currently running.
+1. Run the below command to check the pods inside the cluster. You can see that a new pod has been created and is currently in **running** state.
 
     ```
    kubectl get pods
    ```
    ![](./media/minikube-podstatus.png)
    
-1. Execute the below command to list the Pods created by the **nginx** deployment.
+1. Execute the below command to list the pods created by the **nginx** deployment.
 
    ```
    kubectl get pods -l app=nginx
