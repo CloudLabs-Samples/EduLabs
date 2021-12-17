@@ -1,4 +1,4 @@
-# Exercise 6: Perform a rolling update on App
+# Exercise 5: Perform a rolling update on App
 
 Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Kubernetes this is done with rolling updates. Rolling updates allow **Deployments update** to take place with zero downtime by incrementally updating Pods instances with new ones. We are going to perform basic rolling update to our image in this exercise.
 
