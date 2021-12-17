@@ -10,7 +10,7 @@ You can use **kubectl** to deploy applications, inspect and manage cluster resou
    ```
    kubectl version
    ```
-   ![](./media/minikube-version.png)
+   ![](./media/kubectl-version.png)
    
 1. Run the below command to view the **cluster events** in kubectl.
 
