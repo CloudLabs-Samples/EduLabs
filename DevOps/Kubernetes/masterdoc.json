@@ -1,16 +1,36 @@
 [ 
   {
-  "Name": "Basics of Kubernetes",
+  "Name": "Kubernetes",
   "Language": "English",
   "Files": [
         {
-         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Basics-of-kubernetes/README.md",
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/getting-started.md",
          "Order": 1
        },
         {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Basics-of-kubernetes/HOL-step-by-step.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step.md",
       "Order": 2
-      }
+      },
+      {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step1.md",
+         "Order": 3
+       },
+    {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step2.md",
+         "Order": 4
+       },
+    {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step3.md",
+         "Order": 5
+       },
+    {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step4.md",
+         "Order": 6
+       },
+    {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DevOps/Kubernetes/HOL-step-by-step5.md",
+         "Order": 7
+       }
     ]
 }
 ]
