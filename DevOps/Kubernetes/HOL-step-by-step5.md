@@ -11,7 +11,7 @@ Users expect applications to be available all the time and developers are expect
    
    ![](./media/minikube-imageold.png)
    
-1. Run the following query to set the nginx pods to use the **nginx:v2** image instead of the nginx:v1 image.
+1. Run the following query to set the nginx pods to use the **nginx:v2** image instead of the **nginx** image.
    
    ```
    kubectl set image deployments/nginx nginx=jocatalin/kubernetes-bootcamp:v2
