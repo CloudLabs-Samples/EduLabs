@@ -1,3 +1,3 @@
-# Lab Completed
+# End of the Lab
 
-You have executed through the lab. We will take care of environment cleanup from here.
+You've finished working your way through the lab. We will take care of environment cleanup from here.
