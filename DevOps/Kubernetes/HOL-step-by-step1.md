@@ -1,1 +1,55 @@
+# Exercise 2: Creating a Cluster using Minikube
+
+In this exercise, we will look at the cluster's nodes that can be used to host our applications. To conduct commands against Kubernetes clusters, we'll use the Kubernetes command-line tool **kubectl**.
+
+You can use **kubectl** to deploy applications, inspect and manage cluster resources, and view logs.
+
+   
+1. Execute the following command to check the version of **kubectl** that will be used to conduct commands on Kubernetes clusters.
+   
+   ```
+   kubectl version
+   ```
+   ![](./media/minikube-version.png)
+   
+1. Run the below command to view the **cluster events** in kubectl.
+
+   ```
+   View cluster events
+   ```
+   ![](./media/)
+   
+1. Run the following command to view the **kubectl** configuration and observe the output details.
+   
+   ```
+   kubectl config view
+   ```
+   ![](./media/)
+   
+1. Run the below command to get the kubernetes cluster information. **kubectl cluster-info** command is used to display the cluster information in kubectl.
+   
+   ```
+   kubectl cluster-info
+   ```
+   ![](./media/minikube-cluster-info.png)
+   
+1. Execute the below command to create a namespace called **Demo** using **kubectl create** command. You will be prompted with an output message **namespace/demo created**.
+
+   ```
+   kubectl create namespace demo
+   ```
+   ![](./media/aks-5.png)
+   
+1. Run the following query and observe the created namespace inside the cluster.
+
+   ```
+   kubectl get namespaces
+   ```
+   
+   ![](./media/aks-6.png)
+  
+### Summary
+
+In this exercise, we explored on Kubectl commands which are used to interact and manage Kubernetes objects and the cluster.
+  
 
