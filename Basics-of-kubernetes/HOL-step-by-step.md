@@ -168,7 +168,7 @@ By default, minikube start creates a cluster named **minikube**. If you would li
    ![](./media/minikube-stop.png)
    
   
- Please run the minikube start command before going to further steps.
+   Please run the minikube start command before going to further steps.
    
    ```
    minikube start
@@ -396,10 +396,10 @@ we will use the **scale** command to scale the deployments. and we can check the
    
 1. Execute the following command. We can see the status of this scaling operation by using the **describe** command.
 
-  ```
-  kubectl describe deployments/nginx
-  ```
-  ![](./media/minikube-rs-update2.png)
+   ```
+   kubectl describe deployments/nginx
+   ```
+   ![](./media/minikube-rs-update2.png)
   
 1. Run the following command and observe that the changes were applied, and we have 4 pods of the application available in **Running** state.
 
