@@ -57,7 +57,7 @@ We will use the **scale** command to scale the deployments and we can check the 
    
    ![](./media/minikube-rs2.png)
    
-1. Execute the below command to check if the changes are applied using the **get deployments** command.
+1. Execute the below command to see if the modifications made with the **get deployments** command have been applied successfully or not.
 
    ```
    kubectl get deployments
