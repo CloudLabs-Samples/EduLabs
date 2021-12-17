@@ -1,11 +1,10 @@
-# Getting Started Kubernetes
+# Getting Started with Kubernetes
 
 
 ## Overview
 
-In this lab environment, you will be able to access the Ubuntu VM which has Minikube pre-installed. Minikube is a utility you can use to run Kubernetes (k8s) on your local machine. It creates a single node cluster contained in a virtual machine (VM). This cluster lets you demo Kubernetes operations without requiring the time and resource-consuming installation of full-blown K8s.
+In this lab environment, you'll be able to use the Ubuntu VM which comes with preloaded images of Minikube. This flexibility enables you to try out Kubernetes deployments, perform development tasks, or test configurations easily. Minikube is especially useful for those new to kubernetes since it enables you to gain familiarity with basic concepts.
 
-This flexibility enables you to try out Kubernetes deployments, perform development tasks, or test configurations easily. Minikube is especially useful for those new to kubernetes since it enables you to gain familiarity with basic concepts.
 
 ## Instructions
 
