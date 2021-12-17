@@ -1,8 +1,8 @@
 # Exercise 5: Perform a rolling update on App
 
-Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Kubernetes this is done with rolling updates. Rolling updates allow **Deployments update** to take place with zero downtime by incrementally updating Pods instances with new ones. We are going to perform basic rolling update to our image in this exercise.
+Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Kubernetes this is done with **rolling updates**. Rolling updates allow **Deployments update** to take place with zero downtime by incrementally updating pods instances with new ones. We are going to perform basic rolling update to our image in this exercise.
 
-1. Execute the below command and observe the current image version of the app in the Image field. The **describe pods** command is sued to get the pod details.
+1. Execute the below command and observe the current image version of the app in the **Image** field. The **describe pods** command is used to get the pod details.
    
    ```
    kubectl describe pods
@@ -20,7 +20,7 @@ Users expect applications to be available all the time and developers are expect
    
    ![](./media/minikube-imagemsg.png)
    
-1. Execute the below command to find the exposed IP and Port. We are using **describe service** command to check the service details and notice that all Pods are running the latest version (v2).
+1. Execute the below command to find the exposed **IP address** and **Port**. We are using **describe service** command to check the service details and notice that all pods are running the latest version (v2).
 
    ```
    kubectl describe services/nginx
