@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 Kubernetes is an open-source system for managing containerized applications across multiple hosts in a cluster. Kubernetes provides mechanisms for application deployment, scheduling, updating, maintenance, and scaling.
 
