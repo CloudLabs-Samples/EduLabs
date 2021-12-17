@@ -80,4 +80,4 @@ Since pods are ephemeral, a service enables a group of pods, which provide speci
    
 ### Summary
 
-In this exercise, we learned about how to expose an app using kubernetes services.
+In this exercise, we learned to expose an app using kubernetes services.
