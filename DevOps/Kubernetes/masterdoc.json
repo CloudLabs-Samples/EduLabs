@@ -1,0 +1,16 @@
+[ 
+  {
+  "Name": "Basics of Kubernetes",
+  "Language": "English",
+  "Files": [
+        {
+         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Basics-of-kubernetes/README.md",
+         "Order": 1
+       },
+        {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Basics-of-kubernetes/HOL-step-by-step.md",
+      "Order": 2
+      }
+    ]
+}
+]
