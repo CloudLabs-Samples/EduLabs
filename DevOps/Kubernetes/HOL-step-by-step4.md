@@ -1,4 +1,4 @@
-# Exercise 4: Scaling the App.
+# Exercise 4: Scaling the App
 
 When traffic increases, we will need to scale the application to keep up with user demand. We've have learned about deployments and services, now lets learn about scaling.
 
