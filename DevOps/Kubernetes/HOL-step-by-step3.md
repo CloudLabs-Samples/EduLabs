@@ -1,6 +1,6 @@
 # Exercise 3: Using a service to expose Your App
 
-In this Exercise, we are going to learn about **Service** in Kubernetes, understand how to label objects related to a service, expose an application outside a Kubernetes cluster and using a service.
+In this exercise, we are going to learn about **Service** in Kubernetes, understand how to label objects related to a service, expose an application outside a Kubernetes cluster and using a service.
 
 A Kubernetes service is a logical abstraction for a deployed group of pods in a cluster which all perform the same function.
 
@@ -15,7 +15,7 @@ Since pods are ephemeral, a service enables a group of pods, which provide speci
 
    ![](./media/minikube-ex3-01.png)
    
-1. Run the following command to find out the port that was opened externally. We will run the **Describe service** command to find the port.
+1. Run the following command to find out the port that was opened externally. We will run the **describe service** command to find the port.
 
    ```
    kubectl describe services/nginx
