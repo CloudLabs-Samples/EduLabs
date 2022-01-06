@@ -7,23 +7,39 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 ## Task 1: Upload Dataset
 
-1. Download the [Adult-Census-Income](https://www.kaggle.com/uciml/adult-census-income) dataset.
+1. Download the [Adult-Census-Income](https://www.kaggle.com/uciml/adult-census-income) dataset to your machine.
 
-2. In [Azure portal](https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_uri=https%3A%2F%2Fportal.azure.com%2Fsignin%2Findex%2F&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.windows.net%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D9RbHacLBqoneUWLcGM_b3Hf4Un0_XF3G6VNFoeQbojsIL_NUijyDA3SQxFnjKfMXMJgFE9lYjgnvzIb_OXEAHAXnHf2ajNgAN-66jBKMXWtGmMZccGIhuAkzh6mdE_FFIhhXSHlzT6Qh4MaHh8O1CzeX-TV1WZT0or4jlisi2wpULvkXxZKiyXoc2ar7wlvrHygXnwHGONjykyeIPc75z9XKViw97tRLJU7w3to1NQu7e81EudsNTRXgS3iLCoDq-CdO8nvQpXVyo1JQW5ZHF9bmzolk6fVqmuS4V5zLkigbWl3zKaTilO2D9InFuix2ELViBI21pHlppN0jUEIF4UDshHfrV8kBYsnAWuaWyq2UDKBZzEKpgJ9YtO2ry0CHMe5oezXuSnXbe4EpxSWQ8A&response_mode=form_post&nonce=637738305446507717.MzY3YmU4OWQtZGY1NS00Y2YzLTliZDgtNTk5YTQ4ZjE2MWJjYjZkMzM5NmUtZjZkMy00ZWExLTg4NmYtYzQ3NjY3YzFlNTAz&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&site_id=501430&client-request-id=fff3e214-45e3-459b-b648-d995087b6b08&x-client-SKU=ID_NET472&x-client-ver=6.11.0.0&sso_reload=true), navigate to the Resource-Group and open the available machine learning workspace.
+1. Open [Azure portal](https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_uri=https%3A%2F%2Fportal.azure.com%2Fsignin%2Findex%2F&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.windows.net%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D9RbHacLBqoneUWLcGM_b3Hf4Un0_XF3G6VNFoeQbojsIL_NUijyDA3SQxFnjKfMXMJgFE9lYjgnvzIb_OXEAHAXnHf2ajNgAN-66jBKMXWtGmMZccGIhuAkzh6mdE_FFIhhXSHlzT6Qh4MaHh8O1CzeX-TV1WZT0or4jlisi2wpULvkXxZKiyXoc2ar7wlvrHygXnwHGONjykyeIPc75z9XKViw97tRLJU7w3to1NQu7e81EudsNTRXgS3iLCoDq-CdO8nvQpXVyo1JQW5ZHF9bmzolk6fVqmuS4V5zLkigbWl3zKaTilO2D9InFuix2ELViBI21pHlppN0jUEIF4UDshHfrV8kBYsnAWuaWyq2UDKBZzEKpgJ9YtO2ry0CHMe5oezXuSnXbe4EpxSWQ8A&response_mode=form_post&nonce=637738305446507717.MzY3YmU4OWQtZGY1NS00Y2YzLTliZDgtNTk5YTQ4ZjE2MWJjYjZkMzM5NmUtZjZkMy00ZWExLTg4NmYtYzQ3NjY3YzFlNTAz&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&site_id=501430&client-request-id=fff3e214-45e3-459b-b648-d995087b6b08&x-client-SKU=ID_NET472&x-client-ver=6.11.0.0&sso_reload=true) in a browser
 
-3. Select **Launch Studio** under the **Manage your machine learning lifecycle** message.
+1. On **Sign in to Micsoft Azure** tab you will see login screen, in that enter following email/username and then click on **Next**. 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+     
+1. Now enter the following password and click on **Sign in**.
+   * Password: <inject key="AzureAdUserPassword"></inject>
+     
+1. If you see the pop-up **Stay Signed in?**, click No
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+   
+1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+
+1. Then navigate to the Resource-Group you have access to and select the Azure Machine Learning Resource.
+
+1. Then, Select **Launch Studio** under the **Manage your machine learning lifecycle** message.
 
    ![Launch Azure ML Studio](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/001.png)
 
-4. From the studio, select **Datasets, + Create dataset, From local files**.This will open *Create dataset from local files* prompt dialogue on the right.
+1. From the studio, select **Datasets, + Create dataset, From local files**.This will open *Create dataset from local files* prompt dialogue on the right.
 
    ![Create Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/002.png)
    
-5. Provide a name( in my case, I have given the name *Adult_Income_Data*), let the **Dataset Type be Tabular**, and **Description** is optional, and click on next.
+1. Provide a name( in my case, I have given the name *Adult_Income_Data*), let the **Dataset Type be Tabular**, and **Description** is optional, and click on next.
 
    ![Dataset Name](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/003.png)
    
-6. On the Datastore and file selection panel, let the **Datastore and file selection** be default, and click on *Upload* under **Select files for your dataset**, and upload the file which has been downloaded from [Kaggle](https://www.kaggle.com/uciml/adult-census-income). The upload path can be default, and after uploading click on Next.
+1. On the Datastore and file selection panel, let the **Datastore and file selection** be default, and click on *Upload* under **Select files for your dataset**, and upload the file which has been downloaded from [Kaggle](https://www.kaggle.com/uciml/adult-census-income). The upload path can be default, and after uploading click on Next.
 
    ![Upload Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/004.png)
 
@@ -31,7 +47,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
 1. On the Settings and preview panel, let all the values be default and make sure to check **Column headers** is set to **All files have same headers**. 
 
-2. Scroll the data preview to the right to observe target column: **income**. After you are done reviewing the data, click Next.
+1. Scroll the data preview to the right to observe target column: **income**. After you are done reviewing the data, click Next.
 
    ![Preview Data](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/005.png)
    
