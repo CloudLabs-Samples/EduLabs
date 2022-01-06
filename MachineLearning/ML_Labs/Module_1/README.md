@@ -71,33 +71,22 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
    ![Pipeline editor](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/008.png)
 
-## Task 2: Setup Compute Target
+## Task 2: Select Compute Target
 
-1. In the settings panel on the right, select **Select Compute Type as Compute instance**, and click on **Create Azure ML Compute Instance**.
+1. In the settings panel on the right, select **Select Compute Type as Compute Cluster**, and select the available cluster from the drop down under **select Azure ML Compute Cluster**.
 
-   ![ML Compute](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/009.png)
+   ![ML Compute](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/MachineLearning/Images/009.png)
    
-2. A **Create Compute Instance Panel** opens up, and provide a name to the Compute.
-
-   ![Compute Name](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/010.png)
-   
-3. Scroll down, and make sure the SKU selected is the default one, and click on **Create**.
-
-   ![Create Compute](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/011.png)
-   
-4. Select the Compute Instance once it is in *Running State*.
-
-   ![Running Compute](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/012.png)
    
 ## Task 3: Add Dataset
 
-1. Select **Datasets** section in the left navigation pane, select the dataset which you just created( In my case, it is **Adult_Income_Data**), and drag and drop the selected dataset on to the canvas.
+1. Select **Datasets** section in the left navigation pane, select the dataset **Adult_Income_Data** which you just created, and drag and drop the selected dataset on to the canvas.
 
    ![Drag Dataset](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/013.png)
    
 ## Task 4: Select Required Columns
 
-1. In the search bar which is located on the left navigation pane, search for **Select Columns**, and drag and drop it on the canvas.
+1. In the search bar which is located on the left navigation pane, search for **Select Columns**, and drag and drop **Select Columns in Dataset** on the canvas.
 
    ![Select Columns](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/014.png)
    
@@ -109,7 +98,7 @@ In this lab, we will be using **Adult Census Income Dataset** which is available
 
    ![Edit Column](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/016.png)
    
-4. Provide the respective column names: **Age, Education, Relationship, Race, Sex, and Income**, and click on **Save**.
+4. Provide the respective column names: **age, education, relationship, race, sex, and income**, and click on **Save**.
 
    ![Column Names](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/017.png)
    
@@ -119,7 +108,7 @@ With the required columns selected, Data filtering is complete to use only the n
 
 We are going to be using a **Classification** algorithm , and we will be making use of **Two-Class Boosted Decision Tree** which is ideal in predicting true or false scenario.Hence, we want to train our model, and we begin to split the data before training our model.
 
-1. In the left navigation pane, click on **Machine Learning Algorithms** and scroll down until you find **Two-Class Boosted Decision Tree**.
+1. In the left navigation pane, remove the entires from Search bar and then, click on **Machine Learning Algorithms** from the list and scroll down until you find **Two-Class Boosted Decision Tree**.
 
    ![ML Algorithm](https://raw.githubusercontent.com/SD-14/EduLabs/main/MachineLearning/Images/018.png)
    
