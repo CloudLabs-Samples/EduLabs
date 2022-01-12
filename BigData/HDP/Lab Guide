@@ -13,6 +13,6 @@ Task 1: Connecting to Ambari Dashboard
    a.docker start sandbox-hdf
    b.docker start sandbox-proxy
    c.docker ps
-   
+   ![](Media/Screenshot 2022-01-12 182129.jpg)
    
  2.Open browser and enter the following IP Address 
