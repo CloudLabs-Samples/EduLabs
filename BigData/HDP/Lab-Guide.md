@@ -1,4 +1,4 @@
-Exercise:Set up a lab for big data analytics using Docker deployment of HortonWorks Data Platform
+# Exercise:Set up a lab for big data analytics using Docker deployment of HortonWorks Data Platform
 This lab will guide you on how to set up a big data analytics class. With this type of class, students learn how to handle large volumes of data and apply machine and statistical learning algorithms to derive data insights. A key objective for students is to learn to use data analytics tools, such as Apache Hadoop's open-source software package which provides tools for storing, managing, and processing big data.
 
 In this lab, students will use a popular commercial version of Hadoop provided by Cloudera, called Hortonworks Data Platform (HDP). Specifically, students will use HDP Sandbox 3.0.1 which is a simplified, easy-to-use version of the platform that is free of cost and intended for learning and experimentation. Although this class may use either Windows or Linux virtual machines (VM) with HDP Sandbox deployed, this article will show how to use Windows.
@@ -8,11 +8,14 @@ Another interesting aspect of this lab, is that we will deploy HDP Sandbox on th
 sandbox-hdp
 sandbox-proxy
 
-Task 1: Connecting to Ambari Dashboard
- 1.Open GitBash or any terminal and execute the following commands
-   a.docker start sandbox-hdf
-   b.docker start sandbox-proxy
-   c.docker ps
-   ![](Media/Screenshot 2022-01-12 182129.jpg)
+# Task 1: Connecting to Ambari Dashboard
+
+1.Open GitBash or any terminal and execute the following commands
+   
+   - a.docker start sandbox-hdf
+   - b.docker start sandbox-proxy
+   - c.docker ps
+   
+ ![](Media/Screenshot 2022-01-12 182129.jpg)
    
  2.Open browser and enter the following IP Address 
