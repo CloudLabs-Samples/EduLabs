@@ -18,7 +18,7 @@ Another interesting aspect of this lab, is that we will deploy HDP Sandbox on th
    
  ![](Media/screenshot1.jpg)
    
- 2.Open browser and enter the following IP Address 172.0.0.1/8080 or localhost. After entering the IP address you will be able to the see the screen where in you will be        asked to enter the username and password.
+ 2.Open browser and enter the following IP Address 172.0.0.1:8080 or localhost. After entering the IP address you will be able to the see the screen where in you will be        asked to enter the username and password.
  
    - enter the following details for username and password
    - username:admin
