@@ -44,6 +44,28 @@ docker ps
 1. Once you have logged in, you can able to explore the various features of the Ambari Dashboard.
 
   ![](Media/screenshot05.png) 
+  
+### Task 4 : Stop the HDP Sandbox
+
+1. On the labvm, select git bash.
+
+1. In the git bash, run the following commands to stop the **HDP Sandbox**
+
+```
+docker stop sandbox-hdp
+docker stop sandbox-proxy
+```
+
+### Task 5 : To Restart the HDP Sandbox
+
+1. On the labvm, select git bash.
+
+1. In the git bash, run the following commands to restart the **HDP Sandbox**
+
+```
+docker start sandbox-hdp
+docker start sandbox-proxy
+```
 
  
 
