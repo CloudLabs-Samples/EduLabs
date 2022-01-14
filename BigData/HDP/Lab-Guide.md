@@ -21,15 +21,12 @@ In this lab, we will use Hortonworks Data Platform(HDP), a popular commercial ve
 1. In the git bash, run the following to start the **HDP SandBox**
 
 ```
-docker start sandbox-hdf
+docker start sandbox-hdp
 
 docker start sandbox-proxy
 
 docker ps
 ```
-   ![](Media/screenshot02.png)
-   
-   ![](Media/screenshot03.png) 
    
 ### Task 3 : Connecting to the Ambari Dashboard
 
