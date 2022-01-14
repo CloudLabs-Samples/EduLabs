@@ -60,7 +60,7 @@ docker stop sandbox-proxy
 
 1. On the labvm, select git bash.
 
-1. In the git bash, run the following commands to restart the **HDP Sandbox**
+1. In the git bash, run the following commands to restart the **HDP Sandbox** whenever it is required.
 
 ```
 docker start sandbox-hdp
