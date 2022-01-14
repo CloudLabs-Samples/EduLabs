@@ -37,8 +37,6 @@ docker ps
 
 1. In the browser, enter the following ip address 127.0.0.1:8080. It navigates to the Ambari Signin Page.
 
-   ![](Media/screenshot04.png) 
-
 1. By using the following credentials you can able to login to the Ambari Dashboard
 
    |Setting|Value|
@@ -46,7 +44,7 @@ docker ps
    |Username| admin|
    |Password| admin|
 
-1. Once you have logged in, you can able to explore the various features.
+1. Once you have logged in, you can able to explore the various features of the Ambari Dashboard.
 
   ![](Media/screenshot05.png) 
 
