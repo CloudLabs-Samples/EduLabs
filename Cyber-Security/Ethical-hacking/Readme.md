@@ -104,8 +104,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 1. From the top left corner of the kali linux, select **Applications** adn search for pre-installed tools like nmap. Similarly you can check for other pre-installed tools.
    
    
-  
-  ![](images/nmap.png)
+   ![](images/nmap.png)
   
   **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
 - Real time information of a network
@@ -119,7 +118,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
   - Click on **Applications** from the top-left corner and select **Metasploit framework**. This will open up a terminal if prompted provide the kali linux password **kali**
     
     
-   ![](images/mf.png)
+    ![](images/mf.png)
    
 3. **Hydra** is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
    This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.
