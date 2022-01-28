@@ -21,7 +21,7 @@ In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial versio
 1. In the git bash, run the following to start the **HDP SandBox**
 
 ```
-docker start sandbox-hdp
+docker start sandbox-hdf
 
 docker start sandbox-proxy
 
@@ -50,7 +50,7 @@ docker ps
 1. In the git bash, run the following commands to stop the **HDP Sandbox**
 
 ```
-docker stop sandbox-hdp
+docker stop sandbox-hdf
 docker stop sandbox-proxy
 ```
 
@@ -61,7 +61,7 @@ docker stop sandbox-proxy
 1. In the git bash, run the following commands to restart the **HDP Sandbox** whenever it is required.
 
 ```
-docker start sandbox-hdp
+docker start sandbox-hdf
 docker start sandbox-proxy
 ```
 
