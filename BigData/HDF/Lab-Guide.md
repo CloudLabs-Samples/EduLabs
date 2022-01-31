@@ -73,7 +73,7 @@ docker start sandbox-proxy
 
 1. On the file explorer, navigate to the file located in C:\Windows\System32\drivers\etc and then select hosts file.
 
-1.Select the hosts file, select open with and then select with **NotePad**.
+1. Select the hosts file, select open with and then select with **NotePad**.
 
 1. On the hosts file, add the following {IP-Address} localhost sandbox-hdp.hortonworks.com sandbox-hdf.hortonworks.com
 
