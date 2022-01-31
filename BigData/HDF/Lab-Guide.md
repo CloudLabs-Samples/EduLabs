@@ -14,11 +14,11 @@ In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial versio
     
   >Note : If it is not enabled make sure that you are enabling it.
     
-### Task 2 : Verfying the HDP Sandbox
+### Task 2 : Verfying the HDF Sandbox
 
 1. On the Labvm desktop, select the **Git Bash**.
 
-1. In the git bash, run the following to start the **HDP SandBox**
+1. In the git bash, run the following to start the **HDF SandBox**
 
 ```
 docker start sandbox-hdf
@@ -32,9 +32,9 @@ docker ps
 
 1. In the labvm desktop, select the microsoft edge icon.
 
-1. In the browser, enter the following ip address 127.0.0.1:8080. It navigates to the Ambari Signin Page.
+1. In the browser, enter the following ip address 127.0.0.1:8080 or the local host. It navigates to the Ambari Signin Page.
 
-1. By using the following credentials you can able to login to the Ambari Dashboard
+1. By using the following credentials you can able to login to the Ambari Dashboard.
 
    |Setting|Value|
    |------|-------|
@@ -43,32 +43,43 @@ docker ps
 
 1. Once you have logged in, you can able to explore the various features of the Ambari Dashboard.
 
-  ![](Media/screenshot05.png) 
+  ![](Media/screenshot05.png)
 
-### Task 4 : Stop the HDP Sandbox
+### Task 4 : Stop the HDF Sandbox
 
 1. On the labvm, select git bash.
 
-1. In the git bash, run the following commands to stop the **HDP Sandbox**
+1. In the git bash, run the following commands to stop the **HDF Sandbox**
 
 ```
 docker stop sandbox-hdf
 docker stop sandbox-proxy
 ```
 
-### Task 5 : To Restart the HDP Sandbox
+### Task 5 : To Restart the HDF Sandbox
 
 1. On the labvm, select git bash.
 
-1. In the git bash, run the following commands to restart the **HDP Sandbox** whenever it is required.
+1. In the git bash, run the following commands to restart the **HDF Sandbox** whenever it is required.
 
 ```
 docker start sandbox-hdf
 docker start sandbox-proxy
 ```
 
- 
+### Task 6 : Mapping SandBox IP to the desired hostname in the hosts file
 
+1. Open the file explorer.
+
+1. On the file explorer, navigate to the file located in C:\Windows\System32\drivers\etc and then select hosts file.
+
+1.Select the hosts file, select open with and then select with **NotePad**.
+
+1. On the hosts file, add the following {IP-Address} localhost sandbox-hdp.hortonworks.com sandbox-hdf.hortonworks.com
+
+1. Replace the IP-Address with the following IP Address 127.0.0.1:8080.
+
+1. Save the file.
 
 
 
