@@ -2,7 +2,7 @@
 
 This lab explains you to set up a big data analytics class. It assists the user in dealing with massive volumes of data and apply machine and statistical learning methods to obtain data insights. A key objective of this lab is to learn how to use data analytics technologies, such as Apache Hadoop's open-source software package, which provides tools for storing, managing, and processing massive data.
 
-In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial version of Hadoop provided by Cloudera. We are using HDP Sandbox 3.0.1, which is a free, simplified version of the platform that is used to design for learning and experimentation purpose. We may use either Windows or Linux virtual machines (VM) with HDP Sandbox deployed, but here we are using windows virtual machine to perform this lab.
+In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial version of Hadoop provided by Cloudera. We are using HDF Sandbox 3.0.1, which is a free, simplified version of the platform that is used to design for learning and experimentation purpose. We may use either Windows or Linux virtual machines (VM) with HDF Sandbox deployed, but here we are using windows virtual machine to perform this lab.
 
 ### Task 1: Verifying the Pre-requisites of the lab
 
@@ -122,6 +122,46 @@ sudo ambari-server status
 
 `````
  ![](Media/screenshot09.png)  
+ 
+ ### Exercise 2 : 
+ 
+ ## Task 1 : Setting up Hadoop
+ 
+ 1. In the browser, navigate to the link provided, [Hadoop](https://archive.apache.org/dist/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz), that will automatically download hadoop version 3.2.1.
+
+1. In the lab vm, select command prompt, Select the path where you have downloaded the file earlier.  
+
+`````
+cd C:\Users\labuser\Downloads
+`````
+
+1. To Unzip the hadoop binary package, run the following command
+`````
+tar -xvf hadoop-3.2.1.tar.gz
+`````
+
+## Task 2 : Install Hadoop native IO binary and configure environment variables
+
+1. Navigate to the link [Hadoop binary files](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.1/bin) and download all the binary files.
+
+1.  Once you have downloaded, copy the contents of hadoop-3.2.1/bin into the extracted location of the Hadoop binary package.
+
+1. Open the Start Menu and type in 'environment' and press enter. Then select **Edit the system environment variables** and in the system properties page select **Environment variables**.
+
+1. In the **User Variables for labuser**, select new.
+
+1. Create a new User variable with the variable name as HADOOP_HOME and the value as C:\Users\labuser\Downloads\hadoop-3.2.1.
+ 
+    >Note : The value should be the hadoop where you have downloaded.
+
+1. Click Path and then Edit.
+
+1. Click New on the top right.
+
+1. Add C:\Users\labuser\Downloads\hadoop-3.2.1\bin.
+
+1. 
+
   
 
 
