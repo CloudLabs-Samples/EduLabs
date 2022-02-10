@@ -67,7 +67,7 @@ docker start sandbox-hdf
 docker start sandbox-proxy
 ```
 
-### Task 6 : Mapping SandBox IP to the desired hostname in the hosts file
+### Task 6 : Mapping SandBox IP to the desired hostname in the hosts file and the sandbox welcome page
 
 1. Open the file explorer.
 
@@ -80,6 +80,51 @@ docker start sandbox-proxy
 1. Replace the IP-Address with the following IP Address 127.0.0.1:8080.
 
 1. Save the file.
+
+1. In the browser, enter the localhost or 127.0.0.1:1080. The Sandbox Welcome Page is also known as the Splash Page.
+
+   ![](Media/screenshot06.png)
+
+1. On the welcome page, select launch dashboard.
+
+1. It will be navigated to the signin page for the Ambari Dashboard. Login with the credentials provided.
+
+   |Setting|Value|
+   |------|-------|
+   |Username| admin|
+   |Password| admin|
+   
+### Task 7 : To check the Ambari server status
+
+1. In the browser, enter the localhost or 127.0.0.1:1080. The Sandbox Welcome Page is also known as the Splash Page.
+
+1. Under the **Advanced HDF**, select **Quick Links**. This will navigate to the **Advanced HDF Quick Links** Page
+
+1. In the **Quick Links** page, select **Web Shell Client**.
+
+     ![](Media/screenshot07.png)
+
+1.  This will open a **Shell in a box** page.
+
+1. Login with the credetials provided below.
+
+   |Setting|Value|
+   |------|-------|
+   |Username| root|
+   |Password| hadoop|
+   
+   ![](Media/screenshot08.png)
+   
+1. In the **Shell in a box** page, enter the following, to get the details of the Ambari server status
+
+`````
+sudo ambari-server status
+
+`````
+ ![](Media/screenshot09.png)  
+  
+
+
 
 
 
