@@ -123,9 +123,9 @@ sudo ambari-server status
 `````
  ![](Media/screenshot09.png)  
  
- ### Exercise 2 : 
+ ### Exercise 2 : Setup Hadoop on windows
  
- ## Task 1 : Setting up Hadoop
+ ### Task 1 : Setting up Hadoop
  
 1. In the browser, navigate to the link provided, [Hadoop](https://archive.apache.org/dist/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz), that will automatically download hadoop version 3.2.1.
 
@@ -138,7 +138,7 @@ sudo ambari-server status
    tar -xvf hadoop-3.2.1.tar.gz
   `````
 
-## Task 2 : Install Hadoop native IO binary and configure environment variables
+### Task 2 : Install Hadoop native IO binary and configure environment variables
 
 1. Navigate to the link [Hadoop binary files](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.1/bin) and download all the binary files.
 
@@ -158,7 +158,7 @@ sudo ambari-server status
 
 1. Add C:\Users\labuser\Downloads\hadoop-3.2.1\bin.
 
-## Task 3 : Configure Hadoop
+### Task 3 : Configure Hadoop
 
 Now  we need to configure hadoop configurations which involves Core, YARN, MapReduce, and HDFS configurations.
 
@@ -233,11 +233,54 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
    ```````
    >Note : If you encounter any error while performing the above then perform the steps that is mentioned below.
 1. Navigate to the [HDFS jar file](https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar) and download it.
+
+1. Now place the downloaded file in C:\LabFiles\hadoop-3.2.1\etc\hadoop\hdfs
+
 ### Task 4 : Start HDFS and YARN daemons
+
+1. Run the following command to start HDFS daemons
+
+   `````
+   cd C:\LabFiles\hadoop-3.2.1
+
+   cd sbin\start-dfs.cmd
+   `````
+1. Run the following command (with elevated permissions) to start YARN daemons.
+   ``````
+   cd C:\LabFiles\hadoop-3.2.1
+
+   cd sbin\start-yarn.cmd
+   ``````
+### Task 5 : Stop HDFS and YARN daemons
+
+1. Run the following command to start HDFS daemons
+
+   `````
+   cd C:\LabFiles\hadoop-3.2.1
+
+   cd sbin\stop-dfs.cmd
+   `````
+1. Run the following command (with elevated permissions) to start YARN daemons.
+   ``````
+   cd C:\LabFiles\hadoop-3.2.1
+
+   cd sbin\stop-yarn.cmd
+   ``````
+
+### Exercise 3 : Hadoop Application on Eclipse
+
+### Task 1 : Running Hadoop Application
+
+1. On the desktop vm, open eclipse. If it asks to select workspace then select the location and click on **launch**.
+
+1. On the top left select **file**, select **New** and then choose **Java Project**.
+
+1. In the dialogue box, provide the name **WordCount** under the project name and click on **Next**.
+
+1. Notice that a folder called src will be automatically created, which is used to store source files and click on **Finish**
 
 1. 
 
-
-
+1. 
 
      
