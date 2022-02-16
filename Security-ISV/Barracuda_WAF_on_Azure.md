@@ -4,6 +4,13 @@
 
 This document will help you in configuring the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
+## Prerequisites
+
+- Microsoft Azure Subscription with admin credentials.
+
+- Azure Quick-start template **Barracuda-waf-solution** needs to be deployed successfully in the subscription
+
+
 ### Instructions
 
 1.	**Launch** the Edge browser and **Navigate** to https://portal.azure.com.
@@ -110,7 +117,7 @@ This document will help you in configuring the Barracuda Web Application firewal
     
     After configuration, click **Add**.
  
-   ![](images/Picture21.jpg)
+    ![](images/Picture21.png)
 
 24.	If the Sign-In page of **Barracuda** occurs, use the following credentials:
 
@@ -121,8 +128,7 @@ Click on **Sign in**.
  
    ![](images/Picture22.jpg)
 
-25.	Now, you can see that the **Services** section is updated with the configuration you provided.
-Click on **Edit** against **Server_10.0.1.5_80**.
+25.	Now, you can see that the **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
 
    ![](images/Picture23.png)
 
@@ -208,7 +214,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
 7.	In the **Overview** blade, you can see the **Public IP address** of the load balancer. This is the same public IP noted earlier from **Outputs** of the deployment.
 
-    ![](images/Picture40.jpg)
+    ![](images/Picture40.png)
 
 8.	Click on **Inbound NAT rules** in **Settings**.
 
@@ -216,7 +222,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
 9.	Make a note of the NAT port number for the VM you’d want to access via RDP.
 
-    ![](images/Picture42.jpg)
+    ![](images/Picture42.png)
 
 10.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the port number noted from previous step.
  
