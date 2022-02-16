@@ -20,7 +20,7 @@ This document will help you in configuring the Barracuda Web Application firewal
 
 5.	Select the Resource Group in which you deployed the quick start template.
 
-   ![](images/Picture3.jpg)
+    ![](images/Picture3.jpg)
  
 6.	From **Settings**, select **Deployments**.
 
@@ -32,7 +32,7 @@ This document will help you in configuring the Barracuda Web Application firewal
  
 8.	In the Deployment blade, Click on the **Outputs** section (1). You will see the **Public IP address** of **Barracuda WAF VM** (3) and **Load Balancer(2)**.
 
-   ![](images/Picture6.jpg)
+    ![](images/Picture6.jpg)
 
 9.	Click the **Copy icon** to copy the **Public IP address**. Create a new text document in **Notepad** or **Notepad++** and paste both IP addresses to it as **Load Balancer Public Ip** and **Barracuda WAF Public IP**.
  
@@ -75,7 +75,7 @@ This document will help you in configuring the Barracuda Web Application firewal
 
     ![](images/Picture16.jpg)
 
-This is the **Barracuda End User License Agreement.**
+    This is the **Barracuda End User License Agreement.**
 
 19.	Scroll down to the bottom of the page. Fill the text boxes with appropriate values and Click **Accept**.
 
@@ -83,12 +83,12 @@ This is the **Barracuda End User License Agreement.**
  
 20.	In the **Sign-In page** of Barracuda, use the following credentials:
 
-Username : **admin**
-Password : The password you provided when deploying the quickstart template.
+    - Username : **admin**
+    - Password : The password you provided when deploying the quickstart template.
 
-Click on **Sign in**.
+    Click on **Sign in**.
 
-   ![](images/Picture18.jpg)
+    ![](images/Picture18.jpg)
 
 21.	Now, you will be able to see the management portal of **Barracuda**.
 
@@ -100,14 +100,15 @@ Click on **Sign in**.
 
 23.	In the **ADD NEW SERVICE** section, configure as below:
 
-Service Name: **Demo-Websites** (Or your custom service name)
-Type : **HTTP**
-Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1** VM.)
-Port : Leave the default
-Real Servers : Copy and paste web-vm1 Private IP from the notepad.
-Create Group : Leave the default
-Service Groups : Leave the default
-After configuration, click **Add**.
+    - Service Name: **Demo-Websites** (Or your custom service name)
+    - Type : **HTTP**
+    - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1**     VM.)
+    - Port : Leave the default
+    - Real Servers : Copy and paste web-vm1 Private IP from the notepad.
+    - Create Group : Leave the default
+    - Service Groups : Leave the default
+    
+    After configuration, click **Add**.
  
    ![](images/Picture21.jpg)
 
@@ -135,12 +136,12 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
 28.	In the window that appears, configure as follows:
     
-    Server Name : **web-vm2**
-    IP Address : **10.0.1.4**
+    - Server Name : **web-vm2**
+    - IP Address : **10.0.1.4**
 
     Keep the default for others and click **Add**
 
-   ![](images/Picture26.png)
+    ![](images/Picture26.jpg)
 
 
 29.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
@@ -155,7 +156,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
     For more details, go to the link https://campus.barracuda.com/product/webapplicationfirewall/article/WAF/ConfigLoadBalanci ng/
 
-   ![](images/Picture29.png)
+    ![](images/Picture29.png)
 
 32.	Click on **Save** after any configuration change.
 
@@ -176,7 +177,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
 36.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
  
-    ![](images/Picture35.jpg)
+    ![](images/Picture35.png)
 
 37.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
@@ -195,7 +196,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
  
 4.	Click on the **Resource groups** button in the **Menu navigation** bar, to view the Resource groups blade.
 
-    ![](images/Picture37.png)
+    ![](images/Picture37.jpg)
 
 5.	Select the Resource Group in which you deployed **Barracuda-waf-Solution** quickstart template.
 
@@ -211,7 +212,7 @@ Click on **Edit** against **Server_10.0.1.5_80**.
 
 8.	Click on **Inbound NAT rules** in **Settings**.
 
-    ![](images/Picture41.png)
+    ![](images/Picture41.jpg)
 
 9.	Make a note of the NAT port number for the VM you’d want to access via RDP.
 
@@ -221,9 +222,9 @@ Click on **Edit** against **Server_10.0.1.5_80**.
  
     Now, your **Remote Desktop Connection** window should looks like this:
 
-   ![](images/Picture43.png)
+    ![](images/Picture43.png)
 
-Click **Connect**.
+    Click **Connect**.
 
 11.	In the following window, provide the username and password used while deploying the solution.. Click **OK**.
 
@@ -235,4 +236,4 @@ Click **Connect**.
 
 13.	This should open the remote desktop to the virtual machine.
 
-    ![](images/Picture46.png)
+    ![](images/Picture46.jpg)
