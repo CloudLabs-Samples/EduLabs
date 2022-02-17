@@ -116,7 +116,7 @@ This app requires the following npm modules to run correctly:
    "typescript": "^4.5.2",
    "webpack": "^5.64.4",
    "webpack-cli": "^4.9.1"
-   },
+   }
    ```
 7. Press Ctrl+S or select **File->Save** to save the changes made to package.json file.
 
@@ -181,7 +181,6 @@ This app requires the following npm modules to run correctly:
     <h1>Welcome to React!</h1>,
     document.getElementById('root')
    );
-   ReactDOM.render(<Hello />, document.getElementById('root'));
    ```
  
  9. Open **index.html** and replace the **body** section with the following code:
