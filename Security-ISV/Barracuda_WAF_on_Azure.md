@@ -96,10 +96,10 @@ This document will help you in configuring the Barracuda Web Application firewal
  
 1.	In the **Sign-In page** of Barracuda, use the following credentials:
 
-    - Username : **admin**
-    - Password : The password you provided when deploying the quickstart template.
+   - Username : **admin**
+   - Password : The password you provided when deploying the quickstart template.
 
-    Click on **Sign in**.
+   Click on **Sign in**.
 
    ![](images/Picture18.jpg)
 
@@ -113,22 +113,22 @@ This document will help you in configuring the Barracuda Web Application firewal
 
 4.	In the **ADD NEW SERVICE** section, configure as below:
 
-    - Service Name: **Demo-Websites** (Or your custom service name)
-    - Type : **HTTP**
-    - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1**     VM.)
-    - Port : Leave the default
-    - Real Servers : Copy and paste web-vm1 Private IP from the notepad.
-    - Create Group : Leave the default
-    - Service Groups : Leave the default
+   - Service Name: **Demo-Websites** (Or your custom service name)
+   - Type : **HTTP**
+   - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1**     VM.)
+   - Port : Leave the default
+   - Real Servers : Copy and paste web-vm1 Private IP from the notepad.
+   - Create Group : Leave the default
+   - Service Groups : Leave the default
     
-    After configuration, click **Add**.
+   After configuration, click **Add**.
  
    ![](images/Picture21.png)
 
 5.	If the Sign-In page of **Barracuda** occurs, use the following credentials:
 
-    - Username : **admin**
-    - Password : The password you provided when deploying the quickstart template.
+   - Username : **admin**
+   - Password : The password you provided when deploying the quickstart template.
 
 Click on **Sign in**.
  
@@ -148,10 +148,10 @@ Click on **Sign in**.
 
 9.	In the window that appears, configure as follows:
     
-    - Server Name : **web-vm2**
-    - IP Address : **10.0.1.4**
+   - Server Name : **web-vm2**
+   - IP Address : **10.0.1.4**
 
-    Keep the default for others and click **Add**
+   Keep the default for others and click **Add**
 
    ![](images/Picture26.jpg)
 
