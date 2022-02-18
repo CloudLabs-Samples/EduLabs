@@ -1,17 +1,19 @@
-# Barracuda WAF on Azure: Post Deployment Configuration Guide
+# Getting started with Barracuda on Azure
 
 ## Overview 
 
 This document will help you in configuring the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
+<!---
 ## Prerequisites
 
 - Microsoft Azure Subscription with admin credentials.
 
 - Azure Quick-start template **Barracuda-waf-solution** needs to be deployed successfully in the subscription
+ -->
 
 
-### Instructions
+## Task 1: Getting started with the environment
 
 1.	**Launch** the Edge browser and **Navigate** to https://portal.azure.com.
 
@@ -73,22 +75,26 @@ This document will help you in configuring the Barracuda Web Application firewal
 **web-vm2** in step **11**. Now, you will have all the following IP addresses in your notepad.
 
    ![](images/Picture14.png)
+   
+## Task 2: Accessing the Barracuda Dashboard   
 
-17.	Open a new tab in the browser and paste the **Barracuda WAF Public IP** from the notepad. Append a **colon** and the port number **8000** to the ip address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
+1.	Open a new tab in the browser and paste the **Barracuda WAF Public IP** from the notepad. Append a **colon** and the port number **8000** to the ip address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
 
    ![](images/Picture15.png)
 
-18.	A page as shown below will appear.
+2.	A page as shown below will appear.
 
    ![](images/Picture16.jpg)
 
-    This is the **Barracuda End User License Agreement.**
+  This is the **Barracuda End User License Agreement.**
 
-19.	Scroll down to the bottom of the page. Fill the text boxes with appropriate values and Click **Accept**.
+3.	Scroll down to the bottom of the page. Fill the text boxes with appropriate values and Click **Accept**.
 
    ![](images/Picture17.jpg)
+   
+## Task 3: Configuiring Barracuda Firewall   
  
-20.	In the **Sign-In page** of Barracuda, use the following credentials:
+1.	In the **Sign-In page** of Barracuda, use the following credentials:
 
     - Username : **admin**
     - Password : The password you provided when deploying the quickstart template.
@@ -97,15 +103,15 @@ This document will help you in configuring the Barracuda Web Application firewal
 
    ![](images/Picture18.jpg)
 
-21.	Now, you will be able to see the management portal of **Barracuda**.
+2.	Now, you will be able to see the management portal of **Barracuda**.
 
    ![](images/Picture19.jpg)
 
-22.	Click on **Services** in the Basic menu.
+3.	Click on **Services** in the Basic menu.
 
    ![](images/Picture20.jpg)
 
-23.	In the **ADD NEW SERVICE** section, configure as below:
+4.	In the **ADD NEW SERVICE** section, configure as below:
 
     - Service Name: **Demo-Websites** (Or your custom service name)
     - Type : **HTTP**
@@ -119,28 +125,28 @@ This document will help you in configuring the Barracuda Web Application firewal
  
    ![](images/Picture21.png)
 
-24.	If the Sign-In page of **Barracuda** occurs, use the following credentials:
+5.	If the Sign-In page of **Barracuda** occurs, use the following credentials:
 
-Username : **admin**
-Password : The password you provided when deploying the quickstart template.
+    - Username : **admin**
+    - Password : The password you provided when deploying the quickstart template.
 
 Click on **Sign in**.
  
    ![](images/Picture22.jpg)
 
-25.	Now, you can see that the **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
+6.	Now, you can see that the **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
 
    ![](images/Picture23.png)
 
-26.	In the **Server Configuration** page, provide the **Server Name** as **web-vm1**. Click on **Save**.
+7.	In the **Server Configuration** page, provide the **Server Name** as **web-vm1**. Click on **Save**.
 
    ![](images/Picture24.jpg)
  
-27.	The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
+8.	The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
 
    ![](images/Picture25.png)
 
-28.	In the window that appears, configure as follows:
+9.	In the window that appears, configure as follows:
     
     - Server Name : **web-vm2**
     - IP Address : **10.0.1.4**
@@ -150,45 +156,45 @@ Click on **Sign in**.
    ![](images/Picture26.jpg)
 
 
-29.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
+10.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
    ![](images/Picture27.png)
 
-30.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
+11.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
 
    ![](images/Picture28.png)
 
-31.	In the window that comes up, scroll down to see the **Load Balance** section. You can choose the **Load Balancing Algorithm**, **Persistence Method** and **Failover Method**.
+12.	In the window that comes up, scroll down to see the **Load Balance** section. You can choose the **Load Balancing Algorithm**, **Persistence Method** and **Failover Method**.
 
     For more details, go to the link https://campus.barracuda.com/product/webapplicationfirewall/article/WAF/ConfigLoadBalanci ng/
 
    ![](images/Picture29.png)
 
-32.	Click on **Save** after any configuration change.
+13.	Click on **Save** after any configuration change.
 
    ![](images/Picture30.png)
 
 
-33.	Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
+14.	Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
    ![](images/Picture31.png)
 
-34.	As you can see, the request will be forwarded to the backend web servers as configured.
+15.	As you can see, the request will be forwarded to the backend web servers as configured.
 
    ![](images/Picture32.jpg)
 
-35.	Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
+16.	Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
 
    ![](images/Picture33.png)
 
-36.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
+17.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
  
    ![](images/Picture35.png)
 
-37.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+18.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
 
-## Accessing Web VMs via RDP
+## Task 4: Accessing Web VMs via RDP
 
 ### Instructions
 
@@ -230,7 +236,7 @@ Click on **Sign in**.
 
    ![](images/Picture43.png)
 
-    Click **Connect**.
+   Click **Connect**.
 
 11.	In the following window, provide the username and password used while deploying the solution.. Click **OK**.
 
