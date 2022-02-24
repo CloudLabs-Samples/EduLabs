@@ -4,15 +4,6 @@
 
 This document will help you in configuring the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
-<!---
-## Prerequisites
-
-- Microsoft Azure Subscription with admin credentials.
-
-- Azure Quick-start template **Barracuda-waf-solution** needs to be deployed successfully in the subscription
- -->
-
-
 ## Task 1: Getting started with the environment
 
 1.	**Launch** the Edge browser and **Navigate** to https://portal.azure.com.
