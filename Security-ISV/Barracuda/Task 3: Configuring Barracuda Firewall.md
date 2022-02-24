@@ -92,12 +92,12 @@
    ![](../images/Picture32.jpg)
 
 1.	Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
-
-   ![](../images/Picture33.png)
+ 
+    ![](../images/Picture33.png)
 
 1.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
-
-     ![](../images/Picture35.png)
+ 
+    ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
