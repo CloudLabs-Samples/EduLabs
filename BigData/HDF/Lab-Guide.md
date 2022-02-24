@@ -189,11 +189,11 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
    </property>
    <property>
      <name>dfs.namenode.name.dir</name>
-     <value>file://C:\Users\labuser\hadoop-3.2.1/Data/data</value>
+     <value>file://C:/Users/labuser/hadoop-3.2.1/Data/data</value>
    </property>
    <property>
      <name>dfs.datanode.data.dir</name>
-     <value>file://C:\Users\labuser\hadoop-3.2.1/Data/name</value>
+     <value>file://C:/Users/labuser/hadoop-3.2.1/Data/name</value>
    </property>
    </configuration>
    ```````
