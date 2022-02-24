@@ -2,9 +2,15 @@
 
 1. Once the environment is provisioned, a lab guide will get loaded into your browser. Use this Lab guide throughout the workshop to perform the lab.
 
+  ![](../images/image003.jpg)
+
 1. To get the lab environment details, you can select the Environment Details tab.
 
+  ![](../images/image-001.jpg)
+
 1. Also, you can **start, stop and restart** the virtual machines from **Resources** tab.
+
+  ![](../images/image002.jpg)
 
 ### Log-in to the Azure portal
 
@@ -16,14 +22,24 @@
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
         **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
+        
+  ![](../images/image-004.jpg)
+  
+  ![](../images/image-005.jpg)
   
 1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
 
+  ![](../images/image004.jpg)
+
 1. If you see the pop-up  **Stay Signed in?**, click **No**.
+
+  ![](../images/image-006.jpg)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!** , close the window to continue the lab. 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+  ![](../images/image-007.jpg)
 
 1. Now you can see the Azure Portal Dashboard.
 
@@ -33,7 +49,10 @@
 
 In this hands on lab you will perform the following tasks:
 
-- **Module 2 **
+- **Task 1: Getting started with Barracuda on Azure**
+- **Task 2: Accessing Barracuda Dashboard**
+- **Task 3: Configuring Barracuda Firewall**
+- **Task 4: Access Web VMs via RDP**
 
 
 
