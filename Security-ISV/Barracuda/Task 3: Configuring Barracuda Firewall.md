@@ -61,8 +61,7 @@
    - Server Name : **web-vm2**
    - IP Address : **10.0.1.4** 
    
-   Keep the default for others and click **Add**
-
+   Keep the default for others and click **Add**.
    ![](../images/Picture26.jpg)
 
 10.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
