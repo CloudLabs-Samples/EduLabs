@@ -54,7 +54,7 @@
  
 1.The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
   
-  ![](../images/Picture25.png)
+    ![](../images/Picture25.png)
 
 1.	In the window that appears, configure as follows:
 
@@ -67,7 +67,7 @@
 
 10.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
-     ![](../images/Picture27.png)
+    ![](../images/Picture27.png)
 
 11.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
 
