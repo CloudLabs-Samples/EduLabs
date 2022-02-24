@@ -33,8 +33,8 @@
 
 1. If the Sign-In page of **Barracuda** occurs, use the following credentials:
 
-   - Username : **admin**
-   - Password : The password you provided when deploying the quickstart template.
+   - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
+   - Password : <inject key="AzureAdUserBarracudaPassword"></inject>
 
     Click on **Sign in**.
  
