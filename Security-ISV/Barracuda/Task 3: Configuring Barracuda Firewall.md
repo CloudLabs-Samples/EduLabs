@@ -52,7 +52,7 @@
 
     ![](../images/Picture24.jpg)
  
-1. The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
+1.The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
 
    ![](../images/Picture25.png)
 
@@ -96,8 +96,8 @@
    ![](../images/Picture33.png)
 
 1.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
- 
-   ![](../images/Picture35.png)
+
+     ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
