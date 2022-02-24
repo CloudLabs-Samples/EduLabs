@@ -1,6 +1,6 @@
 # **Getting Started**
 
-1. Once the environment is provisioned, a lab guide will get loaded into your browser. Use this Lab guide throughout the workshop to perform the lab.
+1. Once the environment is provisioned, a lab guide will get loaded into your browser.
 
     ![](../images/image003.jpg)
 
