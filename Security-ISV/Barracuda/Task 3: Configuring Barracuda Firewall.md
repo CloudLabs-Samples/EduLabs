@@ -63,7 +63,7 @@
     
     Keep the default for others and click **Add**
 
-    ![](../images/Picture26.jpg)
+   ![](../images/Picture26.jpg)
 
 1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
