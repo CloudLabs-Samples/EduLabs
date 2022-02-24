@@ -58,7 +58,7 @@
 
 1.	In the window that appears, configure as follows:
 
-    -Server Name : **web-vm2**<br>-IP Address : **10.0.1.4** 
+    Server Name : **web-vm2**<br>IP Address : **10.0.1.4** 
     
 1. Keep the default for others and click **Add**
    
