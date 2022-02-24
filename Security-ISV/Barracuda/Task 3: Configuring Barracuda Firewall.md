@@ -5,6 +5,8 @@
    - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
    - Password : <inject key="AzureAdUserBarracudaPassword"></inject> 
 
+        **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-XXXX**.
+
    Click on **Sign in**.
 
     ![](../images/Picture18.jpg)
@@ -35,6 +37,8 @@
 
    - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
    - Password : <inject key="AzureAdUserBarracudaPassword"></inject>
+
+        **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-XXXX**.
 
     Click on **Sign in**.
  
