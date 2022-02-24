@@ -4,19 +4,9 @@ This lab explains you to set up a big data analytics class. It assists the user 
 
 In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial version of Hadoop provided by Cloudera. We are using HDF Sandbox 3.0.1, which is a free, simplified version of the platform that is used to design for learning and experimentation purpose. We may use either Windows or Linux virtual machines (VM) with HDF Sandbox deployed, but here we are using windows virtual machine to perform this lab.
 
-### Task 1: Verifying the Pre-requisites of the lab
+### Task 1 : To start the HDF Sandbox
 
-1. In the search Window, type windows features and select the windows features
-
-1. In the **windows features** dialog box ensure that windows container and Hyper-V are turned on.
- 
-    ![](Media/screenshot01.png)
-    
-  >Note : If it is not enabled make sure that you are enabling it.
-    
-### Task 2 : Verfying the HDF Sandbox
-
-1. On the Labvm desktop, select the **Git Bash**.
+1. On the environment provided, select the **Git Bash** from the **Type here to search** .
 
 1. In the git bash, run the following to start the **HDF SandBox**
 
@@ -28,7 +18,7 @@ docker start sandbox-proxy
 docker ps
 ```
    
-### Task 3 : Mapping SandBox IP to the desired hostname in the hosts file and the sandbox welcome page
+### Task 2 : Mapping SandBox IP to the desired hostname in the hosts file and the sandbox welcome page
 
 1. Open the file explorer.
 
@@ -48,16 +38,14 @@ docker ps
 
 1. On the welcome page, select launch dashboard.
 
-1. It will be navigated to the signin page for the Ambari Dashboard. Login with the credentials provided.
+1. It will be navigated to the login page for the Ambari Dashboard. Login with the credentials provided.
 
-   |Setting|Value|
-   |------|-------|
-   |Username| admin|
-   |Password| admin|
+   - Username : <inject key="admin"></inject> 
+   - Password : <inject key="admin"></inject> 
 
-### Task 4 : Connecting to the Ambari Dashboard
+### Task 3 : Connecting to the Ambari Dashboard
 
-1. In the labvm desktop, select the microsoft edge icon.
+1. On the environment provided, open the Microsoft Edge icon.
 
 1. In the browser, enter the following ip address 127.0.0.1:8080 or the local host. It navigates to the Ambari Signin Page.
 
@@ -72,29 +60,8 @@ docker ps
 
   ![](Media/screenshot05.png)
 
-### Task 5 : Stop the HDF Sandbox
 
-1. On the labvm, select git bash.
-
-1. In the git bash, run the following commands to stop the **HDF Sandbox**
-
-```
-docker stop sandbox-hdf
-docker stop sandbox-proxy
-```
-
-### Task 6 : To Restart the HDF Sandbox
-
-1. On the labvm, select git bash.
-
-1. In the git bash, run the following commands to restart the **HDF Sandbox** whenever it is required.
-
-```
-docker start sandbox-hdf
-docker start sandbox-proxy
-```
-   
-### Task 7 : To check the Ambari server status
+### Task 5 : Verifying the Ambari server status
 
 1. In the browser, enter the localhost or 127.0.0.1:1080. The Sandbox Welcome Page is also known as the Splash Page.
 
@@ -123,9 +90,9 @@ sudo ambari-server status
 `````
  ![](Media/screenshot09.png)  
  
- ### Exercise 2 : Setup Hadoop on windows
+ ### Exercise 2 : Setup Hadoop on the environment provided
  
- ### Task 1 : Setting up Hadoop
+ ### Task 1 : Set up Hadoop
  
 1. Navigate to the location **C:\Users\labuser** and check for the **hadoop-3.2.1** if it is installed proceed to **Task 2**, else perform the below steps. 
  
@@ -262,7 +229,7 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 
    cd sbin\stop-dfs.cmd
    `````
-1. Run the following command (with elevated permissions) to start YARN daemons.
+1. Run the following command (with elevated permissions) to stop YARN daemons.
    ``````
    cd C:\Users\labuser\hadoop-3.2.1
 
