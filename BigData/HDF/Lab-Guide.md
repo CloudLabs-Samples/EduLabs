@@ -28,46 +28,7 @@ docker start sandbox-proxy
 docker ps
 ```
    
-### Task 3 : Connecting to the Ambari Dashboard
-
-1. In the labvm desktop, select the microsoft edge icon.
-
-1. In the browser, enter the following ip address 127.0.0.1:8080 or the local host. It navigates to the Ambari Signin Page.
-
-1. By using the following credentials you can able to login to the Ambari Dashboard.
-
-   |Setting|Value|
-   |------|-------|
-   |Username| admin|
-   |Password| admin|
-
-1. Once you have logged in, you can able to explore the various features of the Ambari Dashboard.
-
-  ![](Media/screenshot05.png)
-
-### Task 4 : Stop the HDF Sandbox
-
-1. On the labvm, select git bash.
-
-1. In the git bash, run the following commands to stop the **HDF Sandbox**
-
-```
-docker stop sandbox-hdf
-docker stop sandbox-proxy
-```
-
-### Task 5 : To Restart the HDF Sandbox
-
-1. On the labvm, select git bash.
-
-1. In the git bash, run the following commands to restart the **HDF Sandbox** whenever it is required.
-
-```
-docker start sandbox-hdf
-docker start sandbox-proxy
-```
-
-### Task 6 : Mapping SandBox IP to the desired hostname in the hosts file and the sandbox welcome page
+### Task 3 : Mapping SandBox IP to the desired hostname in the hosts file and the sandbox welcome page
 
 1. Open the file explorer.
 
@@ -93,6 +54,45 @@ docker start sandbox-proxy
    |------|-------|
    |Username| admin|
    |Password| admin|
+
+### Task 4 : Connecting to the Ambari Dashboard
+
+1. In the labvm desktop, select the microsoft edge icon.
+
+1. In the browser, enter the following ip address 127.0.0.1:8080 or the local host. It navigates to the Ambari Signin Page.
+
+1. By using the following credentials you can able to login to the Ambari Dashboard.
+
+   |Setting|Value|
+   |------|-------|
+   |Username| admin|
+   |Password| admin|
+
+1. Once you have logged in, you can able to explore the various features of the Ambari Dashboard.
+
+  ![](Media/screenshot05.png)
+
+### Task 5 : Stop the HDF Sandbox
+
+1. On the labvm, select git bash.
+
+1. In the git bash, run the following commands to stop the **HDF Sandbox**
+
+```
+docker stop sandbox-hdf
+docker stop sandbox-proxy
+```
+
+### Task 6 : To Restart the HDF Sandbox
+
+1. On the labvm, select git bash.
+
+1. In the git bash, run the following commands to restart the **HDF Sandbox** whenever it is required.
+
+```
+docker start sandbox-hdf
+docker start sandbox-proxy
+```
    
 ### Task 7 : To check the Ambari server status
 
@@ -127,13 +127,15 @@ sudo ambari-server status
  
  ### Task 1 : Setting up Hadoop
  
+1. Navigate to the location **C:\Users\labuser** and check for the **hadoop-3.2.1** if it is installed proceed to **Task 2**, else perform the below steps. 
+ 
 1. In the browser, navigate to the link provided, [Hadoop](https://archive.apache.org/dist/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz), that will automatically download hadoop version 3.2.1.
 
 1. In the lab vm, select command prompt, Select the path where you have downloaded the file earlier.  
   `````
    cd C:\Users\labuser\Downloads
   `````
-3. To Unzip the hadoop binary package, run the following command
+1. To Unzip the hadoop binary package, run the following command
   `````
    tar -xvf hadoop-3.2.1.tar.gz
   `````
@@ -164,7 +166,7 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 
 1. Now we need to configure hadoop files
 
-1. Navigate to the location **C:\LabFiles\hadoop-3.2.1\etc\hadoop** and edit **core-site.xml** and replace the code between the <configuration> and </configuration>
+1. Navigate to the location **C:\Users\labuser\hadoop-3.2.1\etc\hadoop** and edit **core-site.xml** and replace the code between the <configuration> and </configuration>
 
     ```````
     <configuration>
@@ -176,9 +178,9 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 
     ```````
  
-1. On the desktop VM, select **file explorer** and navigate to the location **C:\LabFiles\hadoop-3.2.1** and create a folder named **Data** and create two folders inside **Data folder**, one for namenode directory and the another one for data directory.
+1. On the desktop VM, select **file explorer** and navigate to the location **C:\Users\labuser\hadoop-3.2.1** and create a folder named **Data** and create two folders inside **Data folder**, one for namenode directory and the another one for data directory.
 
-1. Navigate to the location **C:\LabFiles\hadoop-3.2.1\etc\hadoop** and edit **hdfs-site.xml** and replace the code between the <configuration> and </configuration>
+1. Navigate to the location **C:\Users\labuser\hadoop-3.2.1\etc\hadoop** and edit **hdfs-site.xml** and replace the code between the <configuration> and </configuration>
    ```````
    <configuration>
    <property>
@@ -187,17 +189,17 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
    </property>
    <property>
      <name>dfs.namenode.name.dir</name>
-     <value>file://C:/LabFiles/hadoop-3.2.1/Data/data</value>
+     <value>file://C:\Users\labuser\hadoop-3.2.1/Data/data</value>
    </property>
    <property>
      <name>dfs.datanode.data.dir</name>
-     <value>file://C:/LabFiles/hadoop-3.2.1/Data/name</value>
+     <value>file://C:\Users\labuser\hadoop-3.2.1/Data/name</value>
    </property>
    </configuration>
    ```````
    >Note : In the **value** under **name** replace the values accoriding to the files you have created in the previous step.
 
-1. Navigate to the location **C:\LabFiles\hadoop-3.2.1\etc\hadoop** and edit **mapred-site.xml** and replace the code between the <configuration> and </configuration>
+1. Navigate to the location **C:\Users\labuser\hadoop-3.2.1\etc\hadoop** and edit **mapred-site.xml** and replace the code between the <configuration> and </configuration>
    ```````
     <configuration>
    <property>
@@ -210,7 +212,7 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
    </property>
    </configuration>
     ```````
-1. Navigate to the location **C:\LabFiles\hadoop-3.2.1\etc\hadoop** and edit **yarn-site.xml** and replace the code between the <configuration> and </configuration>
+1. Navigate to the location **C:\Users\labuser\hadoop-3.2.1\etc\hadoop** and edit **yarn-site.xml** and replace the code between the <configuration> and </configuration>
    ```````
    <configuration>
    <property>
@@ -241,13 +243,13 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 1. Run the following command to start HDFS daemons
 
    `````
-   cd C:\LabFiles\hadoop-3.2.1
+   cd C:\Users\labuser\hadoop-3.2.1
 
    cd sbin\start-dfs.cmd
    `````
 1. Run the following command (with elevated permissions) to start YARN daemons.
    ``````
-   cd C:\LabFiles\hadoop-3.2.1
+   cd C:\Users\labuser\hadoop-3.2.1
 
    cd sbin\start-yarn.cmd
    ``````
@@ -256,13 +258,13 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 1. Run the following command to start HDFS daemons
 
    `````
-   cd C:\LabFiles\hadoop-3.2.1
+   cd C:\Users\labuser\hadoop-3.2.1
 
    cd sbin\stop-dfs.cmd
    `````
 1. Run the following command (with elevated permissions) to start YARN daemons.
    ``````
-   cd C:\LabFiles\hadoop-3.2.1
+   cd C:\Users\labuser\hadoop-3.2.1
 
    cd sbin\stop-yarn.cmd
    ``````
@@ -368,7 +370,7 @@ Now  we need to configure hadoop configurations which involves Core, YARN, MapRe
 
 1. To run Hadoop application, the Hadoop system must be started first.
    ``````
-   cd C:\Users\labuser\Downloads\hadoop-3.2.1\sbin\start-all.sh
+   cd C:\Users\labuser\hadoop-3.2.1\sbin\start-all.sh
    ``````
 
 1. On the microsoft edge in the desktop vm, and access the following urls, to view the running status of Hadoop.
