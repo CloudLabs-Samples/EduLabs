@@ -84,21 +84,21 @@
    ![](../images/Picture30.png)
 
 
-14.	Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
+14. Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
-   ![](../images/Picture31.png)
+    ![](../images/Picture31.png)
 
-15.	As you can see, the request will be forwarded to the backend web servers as configured.
+15. As you can see, the request will be forwarded to the backend web servers as configured.
 
-   ![](../images/Picture32.jpg)
+    ![](../images/Picture32.jpg)
 
-16.	Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
+16. Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
 
-   ![](../images/Picture33.png)
+    ![](../images/Picture33.png)
 
-17.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
+17. You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
 
-	![](../images/Picture35.png)
+    ![](../images/Picture35.png)
 
 18.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
