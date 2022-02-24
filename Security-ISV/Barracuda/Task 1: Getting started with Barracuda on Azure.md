@@ -22,7 +22,7 @@ In the following task you will able to view the pre-deployed Barracuda WAF VM an
 
       ![](../images/Picture3.jpg)
  
-1. Note down the **Public IP address**: <inject key="AzureAdUserEmail"></inject> of **Barracuda WAF VM** and **public IP address**: <inject key="AzureAdUserEmail"></inject> of **Load Balancer** in **Notepad** or **Notepad++**. Additionaly, Navigate back to the Environment, select the **Environment Details tab**. 
+1. Note down the **Public IP address**: <inject key="bwafIP"></inject> of **Barracuda WAF VM** and **public IP address**: <inject key="loadBalancerIP"></inject> of **Load Balancer** in **Notepad** or **Notepad++**. Additionaly, Navigate back to the Environment, select the **Environment Details tab**. 
 
       ![](../images/image-010.jpg)
 
