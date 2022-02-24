@@ -54,7 +54,7 @@
  
 1.	The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
 
-   ![](../images/Picture25.png)
+    ![](../images/Picture25.png)
 
 1.	In the window that appears, configure as follows:
 
@@ -63,7 +63,7 @@
     
     Keep the default for others and click **Add**
 
-   ![](../images/Picture26.jpg)
+    ![](../images/Picture26.jpg)
 
 1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
