@@ -56,15 +56,16 @@
   
     ![](../images/Picture25.png)
 
-<!---1.	In the window that appears, configure as follows:
+<!---
+1.	In the window that appears, configure as follows:
 
    - Server Name : **web-vm2** 
    - IP Address : **10.0.1.4** 
---->
+
 1. Keep the default for others and click **Add**
    
     ![](../images/Picture26.jpg)
-
+-->
 1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
     ![](../images/Picture27.png)
