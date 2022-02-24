@@ -62,8 +62,7 @@ This document will help you in configuring the Barracuda Web Application firewal
 
       ![](../images/Picture13.jpg)
 
-1.	Repeat steps **11 to 13** to obtain the **Private IP address** of **web-vm2** as well by selecting
-**web-vm2** in step **11**. Now, you will have all the following IP addresses in your notepad.
+1.	Repeat steps **11 to 13** to obtain the **Private IP address** of **web-vm2** as well by selecting **web-vm2** in step **11**. Now, you will have all the following IP addresses in your notepad.
 
       ![](../images/Picture14.png)
    
