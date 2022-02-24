@@ -52,35 +52,36 @@
 
     ![](../images/Picture24.jpg)
  
-1.The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
+1. The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
   
     ![](../images/Picture25.png)
 
 1.	In the window that appears, configure as follows:
 
-   - Server Name : **web-vm2**
-   - IP Address : **10.0.1.4** 
+    - Server Name : **web-vm2**
+    - IP Address : **10.0.1.4** 
+    
+    Keep the default for others and click **Add**
    
-   Keep the default for others and click **Add**.
-   ![](../images/Picture26.jpg)
+    ![](../images/Picture26.jpg)
 
 10.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
-   ![](../images/Picture27.png)
+    ![](../images/Picture27.png)
 
 11.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
 
-   ![](../images/Picture28.png)
+    ![](../images/Picture28.png)
 
 12.	In the window that comes up, scroll down to see the **Load Balance** section. You can choose the **Load Balancing Algorithm**, **Persistence Method** and **Failover Method**.
 
     For more details, go to the link https://campus.barracuda.com/product/webapplicationfirewall/article/WAF/ConfigLoadBalanci ng/
 
-   ![](../images/Picture29.png)
+       ![](../images/Picture29.png)
 
 13.	Click on **Save** after any configuration change.
 
-   ![](../images/Picture30.png)
+       ![](../images/Picture30.png)
 
 14. Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
