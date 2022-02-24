@@ -2,7 +2,7 @@
 
 1. Once the environment is provisioned, a lab guide will get loaded into your browser.
 
-    ![](../images/image003.jpg)
+    ![](../images/image-008.jpg)
 
 1. To get the lab environment details, you can select the Environment Details tab.
 
