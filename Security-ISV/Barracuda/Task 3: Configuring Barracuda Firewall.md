@@ -2,8 +2,8 @@
  
 1. In the **Sign-In page** of Barracuda, use the following credentials:
 
-   - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
-   - Password : <inject key="AzureAdUserBarracudaPassword"></inject> 
+   - Username : <inject key="Barracuda Username"></inject> 
+   - Password : <inject key="Barracuda Password"></inject> 
 
         **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-XXXX**.
 
@@ -35,8 +35,8 @@
 
 1. If the Sign-In page of **Barracuda** Prompted, use the following credentials:
 
-   - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
-   - Password : <inject key="AzureAdUserBarracudaPassword"></inject>
+   - Username : <inject key="Barracuda Username"></inject> 
+   - Password : <inject key="Barracuda Password"></inject>
 
         **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-XXXX**.
 
