@@ -1,10 +1,10 @@
 # **Getting Started**
 
-1. Once the environment is provisioned, a lab guide will get loaded into your browser.
+1. Once the environment is provisioned, a lab guide will get loaded into your browser **(1)**, Click on **Next** from the bottom right corner and follow the instructions to perform the labs **(2)**.
 
     ![](../images/image-008.jpg)
 
-1. To get the lab environment details, you can select the Environment Details tab.
+1. To get the lab environment details, you can select the **Environment Details** tab.
 
     ![](../images/image-001.jpg)
 
@@ -49,7 +49,7 @@
 
 In this hands on lab you will perform the following tasks:
 
-- **Task 1: Getting started with Barracuda on Azure**
+- **Task 1: Getting started with Barracuda CloudGen WAF on Azure**
 - **Task 2: Accessing Barracuda Dashboard**
 - **Task 3: Configuring Barracuda Firewall**
 - **Task 4: Access Web VMs via RDP**
