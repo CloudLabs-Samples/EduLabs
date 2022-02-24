@@ -94,3 +94,5 @@
     ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+
+1. Click on Next from the bottom right corner and follow the instructions to perform the lab.
