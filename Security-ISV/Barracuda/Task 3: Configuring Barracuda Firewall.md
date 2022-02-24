@@ -2,8 +2,8 @@
  
 1. In the **Sign-In page** of Barracuda, use the following credentials:
 
-   - Username : <inject key="AzureAdUserEmail"></inject> 
-   - Password : <inject key="AzureAdUserEmail"></inject> 
+   - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
+   - Password : <inject key="AzureAdUserBarracudaPassword"></inject> 
 
    Click on **Sign in**.
 
