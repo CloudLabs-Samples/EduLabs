@@ -60,7 +60,7 @@
 
    - Server Name : **web-vm2**
    - IP Address : **10.0.1.4** 
-    
+   
    Keep the default for others and click **Add**
 
     ![](../images/Picture26.jpg)
