@@ -33,7 +33,7 @@
  
     ![](../images/Picture21.png)
 
-1. If the Sign-In page of **Barracuda** occurs, use the following credentials:
+1. If the Sign-In page of **Barracuda** Prompted, use the following credentials:
 
    - Username : <inject key="AzureAdUserBarracudaEmail"></inject> 
    - Password : <inject key="AzureAdUserBarracudaPassword"></inject>
