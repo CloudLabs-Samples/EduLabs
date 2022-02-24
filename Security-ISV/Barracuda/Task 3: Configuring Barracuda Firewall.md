@@ -9,7 +9,7 @@
 
     ![](../images/Picture18.jpg)
 
-1.	Now, you will be able to see the management portal of **Barracuda**.
+1. Now, you will be able to see the management portal of **Barracuda**.
 
     ![](../images/Picture19.jpg)
 
@@ -52,14 +52,18 @@
 
     ![](../images/Picture25.png)
 
-1.	In the window that appears, configure as follows, Keep the default for others and click **Add**
-    
-   - Server Name : **web-vm2**
-   - IP Address : **10.0.1.4** 
-   
-   ![](../images/Picture26.jpg)
+1.	In the window that appears, configure as follows:
 
-10.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
+    |Settings | Values|
+    | --- | --- |
+    | Server Name | **web-vm2** |
+    | IP Address |**10.0.1.4** | 
+    
+    Keep the default for others and click **Add**
+
+    ![](../images/Picture26.jpg)
+
+1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
     ![](../images/Picture27.png)
 
@@ -90,7 +94,7 @@
     ![](../images/Picture33.png)
 
 1.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
-
+ 
     ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
