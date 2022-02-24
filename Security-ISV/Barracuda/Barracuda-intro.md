@@ -45,7 +45,7 @@
 
 1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
 
-### Modules Included
+### Tasks Included
 
 In this hands on lab you will perform the following tasks:
 
