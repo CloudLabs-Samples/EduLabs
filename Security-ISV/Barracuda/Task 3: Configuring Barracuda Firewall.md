@@ -58,10 +58,8 @@
 
 1.	In the window that appears, configure as follows:
 
-    |Settings | Values|
-    | --- | --- |
-    | Server Name | **web-vm2** |
-    | IP Address |**10.0.1.4** | 
+    - Server Name : **web-vm2**
+    - IP Address : **10.0.1.4** 
     
     Keep the default for others and click **Add**
 
