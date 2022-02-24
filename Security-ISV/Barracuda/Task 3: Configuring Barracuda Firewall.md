@@ -71,7 +71,7 @@
 
 1.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
    
-   ![](../images/Picture28.png)
+     ![](../images/Picture28.png)
 
 1.	In the window that comes up, scroll down to see the **Load Balance** section. You can choose the **Load Balancing Algorithm**, **Persistence Method** and **Failover Method**.
 
@@ -81,7 +81,7 @@
 
 1.	Click on **Save** after any configuration change.
 
-   ![](../images/Picture30.png)
+    ![](../images/Picture30.png)
 
 1.	Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
@@ -89,15 +89,15 @@
 
 1.	As you can see, the request will be forwarded to the backend web servers as configured.
 
-   ![](../images/Picture32.jpg)
+    ![](../images/Picture32.jpg)
 
 1.	Now, navigate back to the **Management portal of Barracuda Web Application Firewall**. Click on **Access Logs**.
- 
+
     ![](../images/Picture33.png)
 
 1.	You should see that the request you made to the firewall is logged. Click on **Details** to see more about the request.
- 
-    ![](../images/Picture35.png)
+
+   ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
