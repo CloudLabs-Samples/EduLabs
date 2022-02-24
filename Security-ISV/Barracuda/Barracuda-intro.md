@@ -29,7 +29,7 @@
   
 1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
 
-    ![](../images/image004.jpg)
+    ![](../images/image004.png)
 
 1. If you see the pop-up  **Stay Signed in?**, click **No**.
 
