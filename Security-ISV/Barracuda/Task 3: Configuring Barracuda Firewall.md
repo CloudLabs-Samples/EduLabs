@@ -48,7 +48,6 @@
 
     ![](../images/Picture23.png)
     
-
 1. In the **Server Configuration** page, provide the **Server Name** as **web-vm1**. Click on **Save**.
 
     ![](../images/Picture24.jpg)
@@ -66,7 +65,7 @@
   
     ![](../images/Picture26.jpg)
 
-1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
+1. Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
     ![](../images/Picture27.png)
 
