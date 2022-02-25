@@ -67,7 +67,7 @@
 
 1.	Again, the page will be refreshed and **web-vm2** will be added to the service **Demo-Websites**.
 
-      ![](../images/Picture27.png)
+    ![](../images/Picture27.png)
 
 1.	Now, to configure load balancing of **web-vm1** and **web-vm2**, click on **Edit** against **Demo-Websites**.
 
