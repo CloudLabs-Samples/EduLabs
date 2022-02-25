@@ -34,7 +34,7 @@
 
       ![](../images/Picture42.png)
 
-1.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the port number noted from previous step.
+1.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the **port number** noted from previous step.
 
       Now, your **Remote Desktop Connection** window should looks like this:
 
@@ -42,7 +42,7 @@
 
 1. Click **Connect**.
 
-1.	In the following window, provide the username and password used while deploying the solution.. Click **OK**.
+1.	In the following window, provide the **Username** as `.\barracudauser` and **Password** as <inject key="Barracuda Password"></inject> and Click **OK**.
 
       ![](../images/Picture44.png)
 
