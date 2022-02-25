@@ -44,9 +44,10 @@
  
     ![](../images/Picture22.jpg)
 
-1. Now, you can see that the **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
+1. Now, you can see that tha **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
 
     ![](../images/Picture23.png)
+    
 
 1. In the **Server Configuration** page, provide the **Server Name** as **web-vm1**. Click on **Save**.
 
