@@ -48,11 +48,11 @@
 
     ![](../images/Picture23.png)
     
-1. In the **Server Configuration** page, provide the **Server Name** as **web-vm1**. Click on **Save**.
+1. In the **Server Configuration** page, provide the **Server Name** as `web-vm1`. Click on **Save**.
 
     ![](../images/Picture24.jpg)
  
-1. The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
+1. The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as `web-vm1`. Now, click on Server against the **Demo-Websites** service.
   
     ![](../images/Picture25.png)
 
