@@ -61,7 +61,7 @@
    - **Server Name** : ` web-vm2 `
    - **IP Address** : Copy and paste web-vm2 Private IP from the notepad  
   
-    Keep the default for others and click **Add**
+    Keep the default for others and click **Save**
   
     ![](../images/Picture26.jpg)
 
@@ -81,7 +81,7 @@
 
 1. Click on **Save** after any configuration change.
 
-1. Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
+1. Open a new tab in the browser. Copy **Barracuda WAF Public IP** either from the notepad or Environment tab and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
     ![](../images/Picture31.png)
 
