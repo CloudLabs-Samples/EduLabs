@@ -1,16 +1,36 @@
-### Exercise 3 : Hadoop Application on Eclipse
+# Hadoop and MapReduce
+
+## Overview
+
+### Hadoop
+
+Hadoop is an Apache open source framework that allows distributed processing of large datasets across clusters of computers using simple programming models. The Hadoop framework application works in an environment that provides distributed storage and computation across clusters of computers. Its framework is based on Java programming with some native code in C and shell scripts.
+
+### MapReduce
+
+MapReduce is a processing technique and a program model for distributed computing based on java. The MapReduce algorithm contains two important tasks, namely Map and Reduce. Map takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). Secondly, reduce task, which takes the output from a map as an input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce task is always performed after the map job.
+
+### Exercise 3 : Running Hadoop Application on Eclipse
 
 ### Task 1 : Running Hadoop Application
 
-1. On the desktop vm, open eclipse. If it asks to select workspace then select the location and click on **launch**.
+In this task you will get to know how to run Hadoop Application through Eclipse.
 
-1. On the top left select **file**, select **New** and then choose **Java Project**.
+1. On the environment provided, Launch **Eclipse**. If it asks to select workspace then select the default location and click on **Launch**.
 
-1. In the dialogue box, provide the name **WordCount** under the project name and click on **Next**.
+1. Once it is launched, on the top left select **File**, select **New** and then choose **Java Project**.
 
-1. Notice that a folder called src will be automatically created, which is used to store source files and click on **Finish**
+1. On the **New Java Project**, provide the name **WordCount** under the project name and click on **Next**.
+  
+     ![](Media/bigdata8.png)
 
-1. Create a package called **polyu.bigdata** under the src folder, by selecting **File** and select **New** and select **Package** and assigning name as polyu.bigdata in the dialogue box.
+1. Notice that a folder called **src** will be automatically created, which is used to store source files and click on **Finish**
+
+     ![](Media/bigdata9.png)
+
+1. Create a package called **polyu.bigdata** under the src folder, by selecting **File** and select **New** and select **Package** and provide the name as **polyu.bigdata** in the dialogue box and click on **Finish**.
+
+     ![](Media/bigdata10.png)
 
 1. Create a class called WordCount, by selecting File **New** and **Class** and assigning name as **WordCount** in the dialogue box and then copy the code below to WordCount.java and save it.
     ```````
@@ -77,12 +97,14 @@
     }
     ```````
  
-1. Notice that there are some red wavy lines underneath imported packages, which indicates the error Fail to import class. 
-      ![](Media/screenshot10.png)
+1. Notice that there are some red wavy lines underneath imported packages, which indicates the error Fail to import class and also the dependency errors. 
+      ![](Media/bigdata11.png)
       
-1. Right click on the WordCount project and select **Properties**.
+1. Right click on the **WordCount project** and select **Properties**.
 
-1. Once the dialog box opens, select Java Build Path and select **Libraries**,select **Add External JARs**, select jars **hadoop-common-2.6.3.jar** and **hadoop-mapreduce-client-core-2.6.3.jar**.
+1. Once the dialog box opens, select Java Build Path and select **Libraries**,select **Add External JARs**, select jars **hadoop-common-2.6.3.jar** and **hadoop-mapreduce-client-core-2.6.3.jar** and select **Apply and Close**
+
+     ![](Media/bigdata12.png)
 
 1. Now verify that red wavy lines should disappear now, which means the dependency errors are solved.
 
@@ -90,8 +112,8 @@
 
 1. Now right click **WordCount** project, then click **Export**, then select **JAR** and click on **Next**.
       
-      ![](Media/screenshot11.png)
-      ![](Media/screenshot12.png)
+      ![](Media/bigdata13.png)
+      ![](Media/bigdata14.png)
 
 1. Make sure you select the choose all export destination in src folder. Select the export destination to the location where you need to place the file and then click Finish, the jar file will be exported successfully.
 
