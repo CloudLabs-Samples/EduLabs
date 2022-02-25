@@ -81,7 +81,7 @@
 
 1. Click on **Save** after any configuration change.
 
-    ![](../images/Picture30.jpg)
+    ![](../images/Picture30.png)
 
 1. Open a new tab in the browser. Copy **Barracuda WAF Public IP** from the notepad and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
 
