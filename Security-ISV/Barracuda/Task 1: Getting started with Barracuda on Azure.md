@@ -4,7 +4,7 @@ The Barracuda Web Application Firewall inspects inbound web traffic and blocks S
 
 ## Task 1: Getting started with the environment
 
-In the following task you will able to view the pre-deployed Barracuda WAF VM and multiple backend web servers. 
+In the following task you will able to view the pre-deployed Barracuda Cloudgen WAF VM and multiple backend web servers. 
 
 1. **Launch** the Edge browser and **Navigate** to https://portal.azure.com.
 
