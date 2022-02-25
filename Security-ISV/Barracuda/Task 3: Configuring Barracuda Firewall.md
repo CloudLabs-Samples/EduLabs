@@ -58,8 +58,8 @@
 
 1. In the window that appears, configure as follows :
    
-   - **Server Name** : ``` web-vm2 ``` 
-   - **IP Address** : ``` Copy and paste web-vm2 Private IP from the notepad ``` 
+   - **Server Name** : ` web-vm2 `
+   - **IP Address** : Copy and paste web-vm2 Private IP from the notepad  
   
     Keep the default for others and click **Add**
   
