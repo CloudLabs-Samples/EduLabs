@@ -1,4 +1,9 @@
-## Task 3: Configuiring Barracuda Firewall   
+# 03 - Configuiring Barracuda Firewall 
+
+## Overview
+In this task, you will configure the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
+
+## Task 1: Configuiring Barracuda Firewall   
  
 1. In the **Sign-In page** of Barracuda, use the following credentials:
 
@@ -25,7 +30,7 @@
    - Type : **HTTP**
    - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1** VM.)
    - Port : Leave the default
-   - Real Servers : Copy and paste web-vm1 Private IP from the notepad.
+   - Real Servers : paste the web-vm1 Private IP value that you copied in previous task.
    - Create Group : Leave the default
    - Service Groups : Leave the default
     
@@ -44,7 +49,7 @@
  
     ![](../images/Picture22.jpg)
 
-1. Now, you can see that tha **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
+1. Now, you can see that **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
 
     ![](../images/Picture23.png)
     
@@ -59,7 +64,7 @@
 1. In the window that appears, configure as follows :
    
    - **Server Name** : ` web-vm2 `
-   - **IP Address** : Copy and paste web-vm2 Private IP from the notepad  
+   - **IP Address** : paste the web-vm2 Private IP value that you copied in previous task  
   
     Keep the default for others and click **Save**
   
@@ -75,13 +80,13 @@
 
 1. In the window that comes up, scroll down to see the **Load Balance** section. You can choose the **Load Balancing Algorithm**, **Persistence Method** and **Failover Method**.
 
-    For more details, go to the link https://campus.barracuda.com/product/webapplicationfirewall/article/WAF/ConfigLoadBalanci ng/
+    For more details, go to the link https://campus.barracuda.com/product/webapplicationfirewall/article/WAF/ConfigLoadBalancing/
 
     ![](../images/Picture29.png)
 
 1. Click on **Save** after any configuration change.
 
-1. Open a new tab in the browser. Copy **Barracuda WAF Public IP** either from the notepad or Environment tab and paste it in the URL box. Press **Enter** key. By default, this use port **80**.
+1. Open a new tab in the browser. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
 
     ![](../images/Picture31.png)
 
@@ -99,4 +104,3 @@
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
-1. Click on Next from the bottom right corner and follow the instructions to perform the lab.
