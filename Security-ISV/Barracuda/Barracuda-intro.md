@@ -8,7 +8,7 @@
 
     ![](../images/image-001.jpg)
 
-1. Also, you can **start, stop and restart** the virtual machines from **Resources** tab.
+1. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
 
     ![](../images/image002.jpg)
 
@@ -21,7 +21,7 @@
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-        **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
+        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
     ![](../images/image-004.jpg)
   
@@ -35,7 +35,7 @@
 
     ![](../images/image-006.jpg)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!** , close the window to continue the lab. 
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab. 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
