@@ -2,7 +2,7 @@
 
 ## Tasks Included
 
-In this hands on lab you will perform the following tasks:
+In this hands-on lab you will perform the following tasks:
 
 - **Task 1: Getting started with Barracuda CloudGen WAF on Azure**
 - **Task 2: Accessing Barracuda Dashboard**
@@ -25,7 +25,7 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 1. **Launch** the Edge browser and **Navigate** to https://portal.azure.com.
 
-1. **Login** with your username and Password as provided in the **Environment Details** tab.
+1. **Login** with your username and password as provided in the **Environment Details** tab.
 
 1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
 
