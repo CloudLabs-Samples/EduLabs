@@ -69,7 +69,7 @@ This document will help you in configuring the Barracuda Web Application firewal
    
 ## Task 2: Accessing the Barracuda Dashboard   
 
-1.	Open a new tab in the browser and paste the **Barracuda WAF Public IP** from the notepad. Append a **colon** and the port number **8000** to the ip address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
+1.	Open a new tab in the browser and paste the **Barracuda WAF Public IP** from the notepad. Append a **colon** and the port number **8000** to the IP address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
 
    ![](../images/Picture15.png)
 
@@ -83,12 +83,12 @@ This document will help you in configuring the Barracuda Web Application firewal
 
    ![](../images/Picture17.jpg)
    
-## Task 3: Configuiring Barracuda Firewall   
+## Task 3: Configuring Barracuda Firewall   
  
 1.	In the **Sign-In page** of Barracuda, use the following credentials:
 
    - Username : **admin**
-   - Password : The password you provided when deploying the quickstart template.
+   - Password: The password you provided when deploying the quickstart template.
 
    Click on **Sign in**.
 
@@ -106,11 +106,11 @@ This document will help you in configuring the Barracuda Web Application firewal
 
    - Service Name: **Demo-Websites** (Or your custom service name)
    - Type : **HTTP**
-   - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1**     VM.)
-   - Port : Leave the default
-   - Real Servers : Copy and paste web-vm1 Private IP from the notepad.
-   - Create Group : Leave the default
-   - Service Groups : Leave the default
+   - Virtual IP Address: Leave the default. (This is the private IP address of **bwaf-vm1**     VM.)
+   - Port: Leave the default
+   - Real Servers: Copy and paste web-vm1 Private IP from the notepad.
+   - Create Group: Leave the default
+   - Service Groups: Leave the default
     
    After configuration, click **Add**.
  
@@ -119,7 +119,7 @@ This document will help you in configuring the Barracuda Web Application firewal
 5.	If the Sign-In page of **Barracuda** occurs, use the following credentials:
 
    - Username : **admin**
-   - Password : The password you provided when deploying the quickstart template.
+   - Password: The password you provided when deploying the quickstart template.
 
 Click on **Sign in**.
  
@@ -133,7 +133,7 @@ Click on **Sign in**.
 
    ![](../images/Picture24.jpg)
  
-8.	The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
+8.	The page will be refreshed, and the webserver **Server_10.0.1.5_80** will be renamed as **web-vm1**. Now, click on Server against the **Demo-Websites** service.
 
    ![](../images/Picture25.png)
 
@@ -221,9 +221,9 @@ Click on **Sign in**.
 
    ![](../images/Picture42.png)
 
-10.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the port number noted from previous step.
+10.	On your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the port number noted from the previous step.
  
-    Now, your **Remote Desktop Connection** window should looks like this:
+    Now, your **Remote Desktop Connection** window should look like this:
 
    ![](../images/Picture43.png)
 
@@ -233,7 +233,7 @@ Click on **Sign in**.
 
    ![](../images/Picture44.png)
 
-12.	Click **Yes** in the security page.
+12.	Click **Yes** on the security page.
  
    ![](../images/Picture45.png)
 
