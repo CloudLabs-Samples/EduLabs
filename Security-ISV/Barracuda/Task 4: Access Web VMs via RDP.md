@@ -2,6 +2,7 @@
 
 ## Overview
 
+In this task, You will access Web VMs via RDP
 
 ## Task 1: Accessing Web VMs via RDP
 
@@ -19,7 +20,7 @@
 
       ![](../images/Picture37.jpg)
 
-1. Select the Resource Group in which you deployed **Barracuda-waf-Solution** quickstart template.
+1. Select the **ODL-Barracuda-XXXX** resource group in the resource groups blade.
 
       ![](../images/Picture38.jpg)
  
@@ -27,7 +28,7 @@
 
       ![](../images/Picture39.jpg)
 
-1.	In the **Overview** blade, you can see the **Public IP address** of the load balancer. This is the same public IP noted earlier from **Outputs** of the deployment.
+1.	In the **Overview** blade, you can see the **Public IP address** of the load balancer.
 
       ![](../images/Picture40.png)
 
@@ -39,7 +40,7 @@
 
       ![](../images/Picture42.png)
 
-1.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP from the notepad and paste it in the text box against **Computer** followed by a **colon** and the **port number** noted from previous step.
+1.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP : <inject key="loadBalancerIP"></inject> and paste it in the text box against **Computer** followed by a **colon** and the **port number** noted from previous step.
 
       Now, your **Remote Desktop Connection** window should looks like this:
 
