@@ -104,4 +104,6 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
 
+1. Click on **Next** to continue to the next section of the lab.
+
 
