@@ -162,6 +162,8 @@ In this task, you will start the Hadoop and will verify the status of Hadoop and
      cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -get /Users/labuser/bigdata/wordcount/output ~/
      ``````
      
-  
+The end result is you will get the folder which is downloaded in Outputs folders which provides the word count of the entire text that you have provided while performing the lab
+
+The final output of performing this lab is you will learn how to perform Hadoop Application through Eclipse.  
  
 
