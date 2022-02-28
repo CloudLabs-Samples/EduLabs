@@ -72,4 +72,6 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
       ![](../images/Picture9.png)
 
 1. Explore through pre-deployed resources from the resource list
+
+1. Click on **Next** to continue to the next section of the lab.
    
