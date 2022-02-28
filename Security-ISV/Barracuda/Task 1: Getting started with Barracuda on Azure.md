@@ -59,8 +59,17 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
       ![](../images/Picture13.jpg)
 
-1. Repeat steps **11 to 13** to obtain the **Private IP address** of **web-vm2** as well by selecting **web-vm2** in step **11**.
+1. Repeat steps **7 to 10** to obtain the **Private IP address** of **web-vm2** as well by selecting **web-vm2** in step **7**.
 
       ![](../images/Picture14.png)
+
+1. Navigate back to the Resource groups and select your Resource Group
+
+      ![](../images/Picture8.png)
+    
+1. On the Resource group blade, click on Overview.
+
+      ![](../images/Picture9.png)
+
+1. Explore through pre-deployed resources from the resource list
    
-1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
