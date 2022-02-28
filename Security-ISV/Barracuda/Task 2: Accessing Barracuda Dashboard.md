@@ -20,5 +20,4 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
    ![](../images/Picture17.jpg)
    
-1. Click on **Next** from the bottom middle to continue the lab.
-
+1. Click on **Next** to continue to the next section of the lab.
