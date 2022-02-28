@@ -24,7 +24,7 @@ In this task, You will access Web VMs via RDP
 
       ![](../images/Picture38.jpg)
  
-1.	From the list of resources, select **webrdp-lb**.
+1.	From the list of resources, select **web RDP-lb**.
 
       ![](../images/Picture39.jpg)
 
@@ -42,7 +42,7 @@ In this task, You will access Web VMs via RDP
 
 1.	In your PC, go to **Start Menu>Run**. Type **mstsc** and click **OK**. The **Remote Desktop** Connection window will appear. Copy **webrdp-lb** public IP : <inject key="loadBalancerIP"></inject> and paste it in the text box against **Computer** followed by a **colon** and the **port number** noted from previous step.
 
-      Now, your **Remote Desktop Connection** window should looks like this:
+      Now, your **Remote Desktop Connection** window should look like this:
 
       ![](../images/Picture43.png)
 
@@ -52,10 +52,11 @@ In this task, You will access Web VMs via RDP
 
       ![](../images/Picture44.png)
 
-1.	Click **Yes** in the security page.
+1.	Click **Yes** on the security page.
  
       ![](../images/Picture45.png)
 
 1.	This should open the remote desktop to the virtual machine.
 
       ![](../images/Picture46.jpg)
+
