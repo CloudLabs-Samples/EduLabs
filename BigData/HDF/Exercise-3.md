@@ -98,7 +98,8 @@ In this task you will get to know how to run Hadoop Application through Eclipse.
     ```````
  
 1. Notice that there are some red wavy lines underneath imported packages, which indicates the error Fail to import class and also the dependency errors. 
-      ![](Media/bigdata11.png)
+     
+     ![](Media/bigdata11.png)
       
 1. Right click on the **WordCount project** and select **Properties**.
 
@@ -110,6 +111,8 @@ In this task you will get to know how to run Hadoop Application through Eclipse.
 
 ### Task 2 : Export Jar Files
 
+In this task, you will learn how to export jar files.
+
 1. Now right click **WordCount** project, then click **Export**, then select **JAR** and click on **Next**.
       
       ![](Media/bigdata13.png)
@@ -118,6 +121,8 @@ In this task you will get to know how to run Hadoop Application through Eclipse.
 1. Make sure you select the choose all export destination in src folder. Select the export destination to the location where you need to place the file and then click Finish, the jar file will be exported successfully.
 
 ### Task 3 : Start Hadoop, Check Hadoop status and Upload data to Hadoop File System(HDFS)
+
+In this task, you will start the Hadoop and will verify the status of Hadoop and download the output folder from HDFS 
 
 1. To run Hadoop application, the Hadoop system must be started first.
    ``````
@@ -134,29 +139,29 @@ In this task you will get to know how to run Hadoop Application through Eclipse.
 
 1. Create folder for data on HDFS and run the commands in the terminal
      ``````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -mkdir -p /user/bigdata/wordcount/input
+     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -mkdir -p /Users/labuser/bigdata/wordcount/input
      ``````
-     >Note : Ensure that you are replacing the location where you need the input file to be created.
 
 1. Upload the data to HDFS
 
     ```````
-    cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -put ~/hadoop.txt /user/bigdata/wordcount/input
+    cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -put ~/hadoop.txt /Users/labuser/bigdata/wordcount/input
     ```````
    
 1. Execution Hadoop Application, to run the program
     ```````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop jar ~/wordcount.jar polyu.bigdata.WordCount /user/bigdata/wordcount/input /user/bigdata/wordcount/output
+     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop jar ~/wordcount.jar polyu.bigdata.WordCount /Users/labuser/bigdata/wordcount/input /Users/labuser/bigdata/wordcount/output
     ```````
-    >Note : Ensure that you are replacing the input and output destination folders
-
+    
 1. Open microsoft edge and verify the status of hadoop.
      ``````
      http://localhost:8088 
      ``````
 1. To check the output, we need to first download the output folder from HDFS by using the command below.
      ``````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -get /user/bigdata/wordcount/output ~/
+     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -get /Users/labuser/bigdata/wordcount/output ~/
      ``````
+     
+  
  
 
