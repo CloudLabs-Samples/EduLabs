@@ -1,9 +1,9 @@
-# 03 - Configuiring Barracuda Firewall 
+# 03 - Configuring Barracuda Firewall 
 
 ## Overview
 In this task, you will configure the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
-## Task 1: Configuiring Barracuda Firewall   
+## Task 1: Configuring Barracuda Firewall   
  
 1. In the **Sign-In page** of Barracuda, use the following credentials:
 
@@ -28,11 +28,11 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
    - Service Name: **Demo-Websites** (Or your custom service name)
    - Type : **HTTP**
-   - Virtual IP Address : Leave the default. (This is the private IP address of **bwaf-vm1** VM.)
-   - Port : Leave the default
-   - Real Servers : paste the web-vm1 Private IP value that you copied in previous task.
-   - Create Group : Leave the default
-   - Service Groups : Leave the default
+   - Virtual IP Address: Leave the default. (This is the private IP address of **bwaf-vm1** VM.)
+   - Port: Leave the default
+   - Real Servers: paste the web-vm1 Private IP value that you copied in the previous task.
+   - Create Group: Leave the default
+   - Service Groups: Leave the default
     
    After configuration, click **Add**.
  
@@ -49,7 +49,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
  
     ![](../images/Picture22.jpg)
 
-1. Now, you can see that **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
+1. Now, you can see that the **Services** section is updated with the configuration you provided. Click on **Edit** against **Server_10.0.1.5_80**.
 
     ![](../images/Picture23.png)
     
@@ -57,7 +57,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/Picture24.jpg)
  
-1. The page will be refreshed, and the web server **Server_10.0.1.5_80** will be renamed as `web-vm1`. Now, click on Server against the **Demo-Websites** service.
+1. The page will be refreshed, and the webserver **Server_10.0.1.5_80** will be renamed as `web-vm1`. Now, click on Server against the **Demo-Websites** service.
   
     ![](../images/Picture25.png)
 
@@ -103,4 +103,5 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
     ![](../images/Picture35.png)
 
 1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+
 
