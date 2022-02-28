@@ -31,7 +31,7 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
       ![](../images/Picture1.png)
 
-1. **Click** on the **Resource groups** button in the **Menu navigation bar**, to view the Resource groups blade.
+1. **Click** on the **Resource groups** button in the **Menu navigation bar** to view the Resource groups blade.
  
       ![](../images/Picture2.jpg)
 
