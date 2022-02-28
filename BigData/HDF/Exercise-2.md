@@ -1,6 +1,9 @@
-#
 
-##
+## Overview
+
+### HDFS
+
+HDFS is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN. The goals of HDFS are Fast recovery from hardware failures, Access to streaming data.
   
 ### Exercise 2 : Start Daemons
 
@@ -36,7 +39,7 @@ In this task you will start the daemons that are necessary while running Hadoop 
    ``````
 ### Task 3 : Stop HDFS and YARN daemons
 
-1. Run the following command to start HDFS daemons
+1. Run the following command to stop HDFS daemons
 
    `````
    cd C:\Users\labuser\hadoop-3.2.1
