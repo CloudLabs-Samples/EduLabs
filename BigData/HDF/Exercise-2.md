@@ -37,18 +37,4 @@ In this task you will start the daemons that are necessary while running Hadoop 
 
    cd sbin\start-yarn.cmd
    ``````
-### Task 3 : Stop HDFS and YARN daemons
 
-1. Run the following command to stop HDFS daemons
-
-   `````
-   cd C:\Users\labuser\hadoop-3.2.1
-
-   cd sbin\stop-dfs.cmd
-   `````
-1. Run the following command (with elevated permissions) to stop YARN daemons.
-   ``````
-   cd C:\Users\labuser\hadoop-3.2.1
-
-   cd sbin\stop-yarn.cmd
-   ``````
