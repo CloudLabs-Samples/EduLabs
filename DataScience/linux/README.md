@@ -60,9 +60,9 @@ Here, training of the neural networks has been processed. In this, the famous al
 
 1. Select **Beginner** folder and in that move on to **basics** option
 
-   ![](../images/beginner.png)
+   ![](../images/beginnerfolder.png)
    
-   ![](../images/basic.png)
+   ![](../images/basicfolder.png)
 
 1. Select **autogradqs_tutorial** file
 
