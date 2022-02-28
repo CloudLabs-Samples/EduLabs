@@ -5,9 +5,8 @@
 In this hands on lab you will perform the following tasks:
 
 - **Task 1 : Getting Started with the HDF Sandbox**
-- **Task 2: Accessing Barracuda Dashboard**
-- **Task 3: Configuring Barracuda Firewall**
-- **Task 4: Access Web VMs via RDP**
+- **Task 2: Start Daemons**
+- **Task 3: Running Hadoop Application on Eclipse**
 
 ## Task 1: Getting started with the environment
 
