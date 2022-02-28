@@ -3,7 +3,7 @@
 
 ## Overview
 
-In this lab environment, you will access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed. 
+In this lab environment, you will access the **Ubuntu VM** which has several popular tools for Data Exploration, Analysis, Modeling & Development Pre-Installed. 
 
 You will learn how to:
 
@@ -33,7 +33,7 @@ You will learn how to:
    
 ## Task 1: Log in to JupyterLab Portal
 
-1. Let us start by logging into the JupyterLab Portal to check the resources deployed for the lab environment. Open a new tab in your browser and Copy-paste the below link.
+1. Let us start by logging into the JupyterLab Portal to check the resources deployed for the lab environment. Copy and paste the link below into a new tab in your browser.
 
    <inject key="Jupyter Lab Environment" enableCopy="true" />
 
@@ -63,17 +63,17 @@ Here, training of the neural networks has been processed. In this, the famous al
 
    ![](../images/pytorch.png)
 
-1. Select **Beginner** folder and in that move on to **basics** option
+1. Choose the **Beginner** folder and then select to **Basics** option inside it.
 
    ![](../images/beginnerfolder.png)
    
    ![](../images/basicfolder.png)
 
-1. Select **autogradqs_tutorial** file
+1. Select **autogradqs_tutorial** file from **Basics** folder
 
    ![](../images/auto.png)
 
-1. Execute one by one cell by clicking on the cell and selecting the execute button.
+1. Execute each cell one at a time by clicking on it and selecting the execute button.
 
    ![](../images/runcommand.png)
 
