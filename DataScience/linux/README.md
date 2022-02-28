@@ -3,7 +3,8 @@
 
 ## Overview
 
-In this lab environment, you will access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+In this lab environment, you will access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed. 
+
 You will learn how to:
 
 - Log in to JupyterLab Portal
