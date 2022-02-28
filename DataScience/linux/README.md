@@ -3,7 +3,11 @@
 
 ## Overview
 
-In this lab environment, you will be able to access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+In this lab environment, you will access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+You will learn how to:
+
+- Log in to JupyterLab Portal
+- Execute Notebooks
 
 ## Instructions
 
@@ -28,7 +32,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
    
 ## Task 1: Log in to JupyterLab Portal
 
-1. Let us start by logging into the JupyterLab Portal to check the resources deployed for the lab environment. Copy the below link and open in a new tab in your local machine browser.
+1. Let us start by logging into the JupyterLab Portal to check the resources deployed for the lab environment. Open a new tab in your browser and Copy-paste the below link.
 
    <inject key="Jupyter Lab Environment" enableCopy="true" />
 
@@ -36,7 +40,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
 
    ![](../images/url.png)
 
-1. In the page that loads up, enter the following username, password and click on **Sign in**. 
+1. On the page that loads up, enter the following username, password and click on **Sign in**. 
 
    * Username: <inject key="Jupyter Lab Username"></inject>
 
@@ -44,7 +48,7 @@ In this lab environment, you will be able to access the Ubuntu VM which has seve
 
    ![](../images/signin.png)
 
-1. First time users will be prompted **Server not running**, click on **Launch Server** and wait for 1-2 minutes for the server to start up.
+1. First-time users will be prompted **Server not running**, click on **Launch Server** and wait for 1-2 minutes for the server to start up.
 
 1. Once the Jupyter Lab loads up, you will see the File System on the left and Launcher on the right. There are a lot of samples loaded up for the various technologies.
 
@@ -68,10 +72,10 @@ Here, training of the neural networks has been processed. In this, the famous al
 
    ![](../images/auto.png)
 
-1. Execute one by one cells by clicking on the cell and selecting the execute button.
+1. Execute one by one cell by clicking on the cell and selecting the execute button.
 
    ![](../images/runcommand.png)
 
 ## Summary
 
-In this exercise, you have signed in to the JupyterLab Portal and reviewed the environment.
+In this exercise, you have signed in to the JupyterLab Portal and executed the Notebook.
