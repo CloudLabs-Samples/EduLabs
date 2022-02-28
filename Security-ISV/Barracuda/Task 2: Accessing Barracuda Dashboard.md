@@ -1,8 +1,12 @@
-## Task 2: Accessing the Barracuda Dashboard   
+# 02 - Accessing the Barracuda Dashboard  
 
-In this task, you will access the Barracuda Cloudgen WAF dashboard by using Public Ip address. 
+## Overview 
 
-1. Open a new tab in the browser and paste the **Barracuda WAF Public IP** : <inject key="bwafIP"></inject> . Append a **colon** and the port number **8000** to the ip address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
+In this task, you will access the Barracuda Cloudgen WAF dashboard by using Public Ip address.
+
+## Task 1: Accessing the Barracuda Dashboard 
+
+1. Open a new tab in the browser and copy paste the **Barracuda WAF Public IP** : <inject key="bwafIP"></inject> . Append a **colon** and the port number **8000** to the ip address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
 
     ![](../images/Picture15.png)
 
