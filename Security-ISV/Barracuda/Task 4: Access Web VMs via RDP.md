@@ -28,7 +28,7 @@ In this task, You will access Web VMs via RDP
 
       ![](../images/Picture39.jpg)
 
-1.	In the **Overview** blade, you can see the **Public IP address** of the load balancer.
+1.	On the **Overview** blade, you can see the **Public IP address** of the load balancer.
 
       ![](../images/Picture40.png)
 
