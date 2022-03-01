@@ -28,3 +28,6 @@ You will learn how to:
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
    ![](images/resourcestab.png)
+
+
+Click on **Next** at the bottom of lab guide to move to the next exercise.
