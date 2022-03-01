@@ -1,6 +1,7 @@
-###  Getting started with Docker 
+#  Getting Started with Windows Desktop Application Development
 
-### Overview
+
+## Overview
 
 A **Windows desktop application** is a software program that can be run on a standalone computer to perform a specific task by an end-user. **WinUI** is a user interface layer that contains modern controls and styles for building Windows apps.
 
@@ -12,8 +13,12 @@ In this lab, you have will learn how to build a sample **packaged C# Windows Des
 
 This lab includes the following exercises:
 
-* [Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio](##exercise-1-install-the-c-and-c-windows-app-sdk-extension-for-visual-studio)
-* 
+* [Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio](#exercise-1-install-the-c-and-c-windows-app-sdk-extension-for-visual-studio)
+* [Exercise 2: Build a sample C# WinUI 3 App](#exercise-2-build-a-sample-c-winui-3-app)
+* [Exercise 3: Build and run the application](#exercise-3-build-and-run-the-application)
+* [Exercise 4: Package the application and install it](#exercise-4-package-the-application-and-install-it)
+
+
 ### Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio
 
 In this exercise, you will install the C# and C++ Windows App SDK extensions that allow you to create the C# and C++ applications in Visual Studio.
@@ -55,7 +60,7 @@ In this exercise, you will install the C# and C++ Windows App SDK extensions tha
    
 In this exercise, you have installed the C# and C++ Windows App SDK extensions to create the C# and C++ applications in Visual Studio.
 
-# Exercise 2: Build a sample C# WinUI 3 App 
+### Exercise 2: Build a sample C# WinUI 3 App 
 
 **Packaged apps** are packaged using MSIX. MSIX is a package format that gives end-users an easy way to install, uninstall, and update their Windows apps using a modern UI.
 
@@ -252,7 +257,7 @@ In this exercise, you will build a packaged C# Windows Desktop application using
  
 1. Open **MainWindow.xaml.cs** and remove the method **myButton_Click**.
 
-    ![](./media/App171.png)
+    ![](./media/App17.1.png)
 
 1. Finally, add the following line inside the **MainWindow** method to load Page1 into the mainFrame when the MainWindow is initialized.
 
@@ -268,7 +273,7 @@ In this exercise, you will build a packaged C# Windows Desktop application using
 
 In this exercise, you have built a packaged C# Windows Desktop application using the built-in template and configured it to navigate between the pages.
 
-# Exercise 3: Build and run the application
+### Exercise 3: Build and run the application
 
 In this exercise, you will build and run the application then navigate between the two pages Page1 and Page2.
 
@@ -300,7 +305,7 @@ In this exercise, you will build and run the application then navigate between t
 
 In this exercise, you have built and run the application then navigated between the two pages Page1 and Page2.
 
-# Exercise 4: Package the application and install it
+### Exercise 4: Package the application and install it
 
 By default, when you create a project using one of the built-in **WinUI project templates** that are provided with the Windows App SDK extension for Visual Studio, your project includes a **Windows Application Packaging** Project that is configured to build the app into an MSIX package.
 
