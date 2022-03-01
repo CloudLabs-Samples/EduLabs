@@ -37,3 +37,4 @@
    ![](./images/ges8.png)
 
 
+Click on **Next** at the bottom of lab guide to move to the next exercise.
