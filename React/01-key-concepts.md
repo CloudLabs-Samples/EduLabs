@@ -11,3 +11,6 @@ Before you begin, here's a quick introduction to some key concepts:
 **JSX**: JSX is a JavaScript syntax extension typically used with React to describe UI elements. You must transpile JSX code to plain JavaScript before it can run in a browser.
 
 **webpack**: Webpack bundles JavaScript files so they can run in a browser, and can also transform or package other resources and assets. Webpack can specify a compiler, such as Babel or TypeScript, to transpile JSX or TypeScript code to plain JavaScript.
+
+
+Click on **Next** at the bottom of lab guide to move to the next exercise.
