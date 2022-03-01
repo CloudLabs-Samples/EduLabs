@@ -1,4 +1,20 @@
-# Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio 
+###  Getting started with Docker 
+
+### Overview
+
+A **Windows desktop application** is a software program that can be run on a standalone computer to perform a specific task by an end-user. **WinUI** is a user interface layer that contains modern controls and styles for building Windows apps.
+
+The **Windows UI Library (WinUI) 3** is the latest and recommended user interface (UI) framework for **Windows desktop apps**, including managed apps that use C# and .NET and native apps that use C++ with the Win32 API. By incorporating the Fluent Design System into all experiences, controls, and styles, WinUI provides consistent, intuitive, and accessible experiences using the latest UI patterns.
+
+**WinUI 3** is available as part of the Windows App SDK. The **Windows App SDK** provides a unified set of APIs and tools that can be used consistently by any C++ Win32 or C# .NET app on a broad set of target Windows OS versions.
+
+In this lab, you have will learn how to build a sample **packaged C# Windows Desktop application** by installing the required Windows App SDK extensions. You will also learn to package the application into an MSIX package and then install the MSIX package on your local or remote machine for testing the behaviour of the application.
+
+This lab includes the following exercises:
+
+* [Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio](##exercise-1-install-the-c-and-c-windows-app-sdk-extension-for-visual-studio)
+* 
+### Exercise 1: Install the C# and C++ Windows App SDK extension for Visual Studio
 
 In this exercise, you will install the C# and C++ Windows App SDK extensions that allow you to create the C# and C++ applications in Visual Studio.
 
