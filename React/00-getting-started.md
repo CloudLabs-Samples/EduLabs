@@ -13,7 +13,9 @@ You will learn how to:
 
 ## Instructions
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
+1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. 
+   
+   > Note: Use this virtual machine throughout the workshop to perform the lab.
 
    ![](images/vmandguide.png)
 
@@ -30,4 +32,4 @@ You will learn how to:
    ![](images/resourcestab.png)
 
 
-Click on **Next** at the bottom of lab guide to move to the next exercise.
+Click on **Next** at the bottom of lab guide to move to the next task.
