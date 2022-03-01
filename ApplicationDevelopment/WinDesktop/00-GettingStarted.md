@@ -25,5 +25,7 @@
    ![](./media/labenvironment-4.png)
  
  
+ You can see the page number on lab guide at the bottom area to switch on different exercises of the lab guide.
+ 
  Click on **Next** at the bottom of lab guide to move to the next exercise.
 
