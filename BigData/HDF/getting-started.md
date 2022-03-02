@@ -1,12 +1,12 @@
 # Getting started with Big Data
 
-### Tasks Included
+### Modules Included
 
 In this hands-on lab you will perform the following tasks:
 
-- **Task 1 : Getting Started with the HDF Sandbox**
-- **Task 2: Start Daemons**
-- **Task 3: Running Hadoop Application on Eclipse**
+- **Module 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow**
+- **Module 2 : Start Daemons**
+- **Module 3 : Running Hadoop Application on Eclipse**
 
 # Overview
 
@@ -22,4 +22,4 @@ In the following task, you will view the pre-deployed resources in the environme
 
 1. Refer to the **Environment Details** tab for any other lab credentials/details.
 
-1. Click on Next to continue to the next section of the lab.
+1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab 
