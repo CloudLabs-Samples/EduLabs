@@ -102,4 +102,4 @@ In this task you find the status of the Ambari server.
      `````
    ![](Media/bigdata2.png)  
  
-1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab 
+1. Click on **Next** to continue to the next section of the lab.
