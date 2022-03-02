@@ -10,7 +10,7 @@ Hadoop is an Apache open-source framework that allows distributed processing of 
 
 MapReduce is a processing technique and a program model for distributed computing based on java. The MapReduce algorithm contains two important tasks, namely Map and Reduce. The Map takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). Secondly, reduce task, which takes the output from a map as an input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce task is always performed after the map job.
 
-### Exercise 3 : Running Hadoop Application on Eclipse
+### Module 3 : Running Hadoop Application on Eclipse
 
 ### Task 1 : Running Hadoop Application
 
