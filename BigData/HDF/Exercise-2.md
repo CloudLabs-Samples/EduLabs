@@ -37,4 +37,4 @@ In this task, you will start the daemons that are necessary while running the Ha
 
    cd sbin\start-yarn.cmd
    ``````
-
+1. Click on **Next** to continue to the next section of the lab.
