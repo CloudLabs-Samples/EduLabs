@@ -4,23 +4,23 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/ApplicationDevelopment/WinDesktop/00-GettingStarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/ApplicationDevelopment/WinDesktop/00-GettingStarted.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/ApplicationDevelopment/WinDesktop/01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/ApplicationDevelopment/WinDesktop/01.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/ApplicationDevelopment/WinDesktop/02.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/ApplicationDevelopment/WinDesktop/02.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/ApplicationDevelopment/WinDesktop/03.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/ApplicationDevelopment/WinDesktop/03.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/ApplicationDevelopment/WinDesktop/04.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/ApplicationDevelopment/WinDesktop/04.md",
         "Order": 5
       }
     ]
