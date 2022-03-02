@@ -11,7 +11,7 @@ Cloudera DataFlow which is formerly known as Hortonworks DataFlow (HDF) is a sca
 Apache Ambari is an open-source administration tool deployed on top of Hadoop clusters, and it is responsible for keeping track of the running applications and their status.
 Apache Ambari can be referred to as a web-based management tool that manages, monitors, and provisions the health of Hadoop clusters. It provides a highly interactive dashboard that allows administrators to visualize the progress and status of every application running over the Hadoop cluster. Its flexible and scalable user interface allows a range of tools such as Pig, MapReduce, Hive, etc. to be installed on the cluster and administers their performances in a user-friendly fashion.
 
-### Exercise 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow
+### Module 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow
 
 This lab explains you to set up a big data analytics class. It assists the user in dealing with massive volumes of data and applies machine learning and statistical learning methods to obtain data insights. A key objective of this lab is to learn how to use data analytics technologies, such as Apache Hadoop's open-source software package, which provides tools for storing, managing, and processing massive data.
 
