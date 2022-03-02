@@ -5,7 +5,7 @@
 
 HDFS is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN. The goals of HDFS are Fast recovery from hardware failures, Access to streaming data.
   
-### Exercise 2 : Start Daemons
+### Module 2 : Start Daemons
 
 ### Task 1 : To initialize the HDFS
 
