@@ -78,8 +78,8 @@ Here, training of the neural networks has been processed. In this, the famous al
 
 1. Execute each cell one at a time by clicking on it and selecting the execute button.
 
-   ![](../images/runcommand.png)
+   ![](../images/execute.png)
 
 ## Summary
 
-In this exercise, you have signed in to the JupyterLab Portal and executed the Notebook.
+In this exercise, you have signed in to the JupyterLab Portal and learned how to use Notebook to run the code and get the desired results.
