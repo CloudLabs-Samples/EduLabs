@@ -25,16 +25,16 @@ In the following task, you will be able to start the HDF SandBox and verify the 
 
 1. In the Git Bash, run the following commands to start the **HDF SandBox**
 
-```
-docker start sandbox-hdf
-```
-```
-docker start sandbox-proxy
-```
+   ```
+   docker start sandbox-hdf
+   ```
+   ```
+   docker start sandbox-proxy
+   ```
 
-```
-docker ps
-```
+   ```
+   docker ps
+   ```
    
 ### Task 2 : Accessing the SandBox welcome page
 
@@ -72,9 +72,9 @@ In the above task, you have learned how to login to Ambari Dashboard through San
 
 1. Once you have logged in, you will be able to explore the various features of the Ambari Dashboard.
 
-  ![](Media/bigdata4.png)
+   ![](Media/bigdata4.png)
 
-## Task 4 : Verify the status of the Ambari Server
+### Task 4 : Verify the status of the Ambari Server
 
 In this task you find the status of the Ambari server.
 
@@ -82,18 +82,18 @@ In this task you find the status of the Ambari server.
 
 1. Under the **Advanced HDF**, select **Quick Links**. This will be redirected to the **Advanced HDF Quick Links** Page
 
-    ![](Media/bigdata7.png)
+   ![](Media/bigdata7.png)
 
 1. In the **Advanced HDF Quick Links** page, select **Web Shell Client**.
 
-    ![](Media/bigdata6.png)
+   ![](Media/bigdata6.png)
 
 1. This will be redirected to **Shell in a box** page where you need to provide the username and password that is mentioned below.
 
    - Username : `root`
    - Password : `hadoop`
    
-    ![](Media/bigdata1.png)
+   ![](Media/bigdata1.png)
    
 1. In the **Shell in a box** page, enter the following command, to get the status of the **Ambari Server**
 

@@ -1,4 +1,4 @@
-# Getting started with Big Data
+## Getting started with Big Data
 
 ### Modules Included
 
@@ -16,9 +16,9 @@ Big data can be defined as a concept used to describe a large volume of data, wh
 
 ## Task 1: Getting started with the environment
 
-In the following task, you will view the pre-deployed resources in the environment provided
+In the following task, you will view the pre-deployed resources provided in the environment.
 
-1. In the virtual machine provided on the left side, you can view the resources like Eclipse is installed.
+1. In the virtual machine provided on the left side, you can view the resources like Eclipse, Docker is installed.
 
 1. Refer to the **Environment Details** tab for any other lab credentials/details.
 

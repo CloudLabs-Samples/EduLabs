@@ -27,13 +27,13 @@ In this task, you will start the daemons that are necessary while running the Ha
 1. Run the following command to start HDFS daemons
 
    `````
-   cd C:\Users\labuser\hadoop-3.2.1
+   cd C:\labfiles\hadoop-3.2.1
 
    cd sbin\start-dfs.cmd
    `````
 1. Run the following command (with elevated permissions) to start YARN daemons.
    ``````
-   cd C:\Users\labuser\hadoop-3.2.1
+   cd C:\labfiles\hadoop-3.2.1
 
    cd sbin\start-yarn.cmd
    ``````
