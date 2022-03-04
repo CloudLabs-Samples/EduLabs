@@ -103,7 +103,7 @@ In this task, you will get to know how to run Hadoop Application through Eclipse
       
 1. Right-click on the **WordCount project** and select **Properties**.
 
-1. Once the dialog box opens, select Java Build Path and select **Libraries**,select **Add External JARs**, select jars **Hadoop-common-2.6.3.jar** and **Hadoop-mapreduce-client-core-2.6.3.jar** and select **Apply and Close**
+1. Once the dialog box opens, select Java Build Path and select **Libraries**,select **Add External JARs**, select jars and navigate to the path **C:\labfiles\hadoop-common-2.6.3.jar** and select **Hadoop-common-2.6.3.jar** and navigate to **C:\labfiles\hadoop-mapreduce-client-core-2.6.3.jar** and select **Hadoop-mapreduce-client-core-2.6.3.jar** and select **Apply and Close**
 
      ![](Media/bigdata12.png)
 
@@ -118,7 +118,7 @@ In this task, you will learn how to export jar files.
       ![](Media/bigdata13.png)
       ![](Media/bigdata14.png)
 
-1. Make sure you select the choose all export destinations in src folder. Select the export destination to the location **C:/Users/labuser/bigdata** where you need to place the file and then click Finish, the jar file will be exported successfully.
+1. Make sure you select the choose all export destinations in src folder. Select the export destination to the location **C:\labfiles\bigdata** where you need to place the file and then click Finish, the jar file will be exported successfully.
 
 ### Task 3 : Start Hadoop, Check Hadoop status and Upload data to Hadoop File System(HDFS)
 
@@ -126,7 +126,7 @@ In this task, you will start the Hadoop and will verify the status of Hadoop, an
 
 1. To run the Hadoop application, the Hadoop system must be started first.
    ``````
-   cd C:\Users\labuser\hadoop-3.2.1\sbin\start-all.sh
+   cd C:\labfiles\hadoop-3.2.1\sbin\start-all.sh
    ``````
 
 1. In the virtual machine provided on the left side, open the Microsoft Edge and access the following URLs, to view the running status of Hadoop.
@@ -135,22 +135,22 @@ In this task, you will start the Hadoop and will verify the status of Hadoop, an
     http://localhost:50070
     ```````
   
-1. Before executing the word count program, we also need a text file to process, download this hadoop.txt from [File](http://www.cse.cuhk.edu.hk/~ericlo/teaching/bigdata/lab/2-HadoopMR/HadoopMR/hadoop.txt) and save the file locally.
+1. Before executing the word count program, we also need a text file to process, download this hadoop.txt from [File](http://www.cse.cuhk.edu.hk/~ericlo/teaching/bigdata/lab/2-HadoopMR/HadoopMR/hadoop.txt) and save the file locally in C:/labfiles/bigdata.
 
 1. Create a folder for data on HDFS and run the commands in the terminal
      ``````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -mkdir -p /Users/labuser/bigdata/wordcount/input
+     cd C:\labfiles\hadoop-3.2.1\bin\hadoop fs -mkdir -p /C:/labfiles/bigdata/wordcount/input
      ``````
 
 1. Upload the data to HDFS
 
     ```````
-    cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -put ~/hadoop.txt /Users/labuser/bigdata/wordcount/input
+    cd C:\labfiles\hadoop-3.2.1\bin\hadoop fs -put ~/hadoop.txt /labfiles/bigdata/wordcount/input
     ```````
    
 1. Execution Hadoop Application, to run the program
     ```````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop jar ~/wordcount.jar polyu.bigdata.WordCount /Users/labuser/bigdata/wordcount/input /Users/labuser/bigdata/wordcount/output
+     cd C:\labfiles\hadoop-3.2.1\bin\hadoop jar ~/wordcount.jar polyu.bigdata.WordCount /labfiles/bigdata/wordcount/input /labfiles/bigdata/wordcount/output
     ```````
     
 1. Open Microsoft Edge and verify the status of Hadoop.
@@ -159,7 +159,7 @@ In this task, you will start the Hadoop and will verify the status of Hadoop, an
      ``````
 1. To check the output, we need to first download the output folder from HDFS by using the command below.
      ``````
-     cd C:\Users\labuser\Downloads\hadoop-3.2.1\bin\hadoop fs -get /Users/labuser/bigdata/wordcount/output ~/
+     cd C:\labfiles\hadoop-3.2.1\bin\hadoop fs -get /labfiles/bigdata/wordcount/output ~/
      ``````
      
 The result is you will get the folder that is downloaded in Outputs folders which provides the word count of the entire text that you have provided while performing the lab
