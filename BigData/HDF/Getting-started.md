@@ -1,4 +1,4 @@
-# Getting started with Big Data
+## Getting started with Big Data
 
 ### Modules Included
 
