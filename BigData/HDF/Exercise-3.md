@@ -1,6 +1,8 @@
-# Hadoop and MapReduce
+### Module 3 : Running Hadoop Application on Eclipse
 
 ## Overview
+
+# Hadoop and MapReduce
 
 ### Hadoop
 
@@ -8,15 +10,13 @@ Hadoop is an Apache open-source framework that allows distributed processing of 
 
 ### MapReduce
 
-MapReduce is a processing technique and a program model for distributed computing based on java. The MapReduce algorithm contains two important tasks, namely Map and Reduce. The Map takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). Secondly, reduce task, which takes the output from a map as an input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce task is always performed after the map job.
-
-### Module 3 : Running Hadoop Application on Eclipse
+MapReduce is a processing technique and a program model for distributed computing based on java. The MapReduce algorithm contains two important tasks, namely Map and Reduce. The Map takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). Secondly, reduce task, which takes the output from a map as an input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce task is always performed after the map task.
 
 ### Task 1 : Running Hadoop Application
 
 In this task, you will get to know how to run Hadoop Application through Eclipse.
 
-1. On the environment provided, Launch **Eclipse**. If it asks to select workspace then select the default location and click on **Launch**.
+1. On the environment provided, double-click on **Eclipse**. If a dialogue box appears to select workspace then select the default location and click on **Launch**.
 
 1. Once it is launched, on the top left select **File**, select **New**, and then choose **Java Project**.
 
