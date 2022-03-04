@@ -74,7 +74,7 @@ In the above task, you have learned how to login to Ambari Dashboard through San
 
    ![](Media/bigdata4.png)
 
-## Task 4 : Verify the status of the Ambari Server
+### Task 4 : Verify the status of the Ambari Server
 
 In this task you find the status of the Ambari server.
 
