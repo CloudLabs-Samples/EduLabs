@@ -52,7 +52,8 @@ In the following task, you will be able to explore the SandBox Welcome page.
 
 1. In the **Sign-In Page** of the Ambari Dashboard, use the following credentials that are provided below.
 
-   - Username : admin
+  **- Username : <inject key="admin" enableCopy="true"/>** 
+ 
                
    - Password : admin
 
