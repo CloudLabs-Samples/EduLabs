@@ -5,10 +5,13 @@
 
 In this lab environment, you will access the **Ubuntu VM** which has several popular tools for Data Exploration, Analysis, Modeling & Development Pre-Installed.
 
-### Jupyter Notebook
-The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Its uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+### JupyterLab
+JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 
-You will learn how to:
+### Jupyter Notebook
+The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.
+
+After completing this, you will learn how to:
 
 - Log in to JupyterLab Portal
 - Execute Notebooks
@@ -60,19 +63,25 @@ You will learn how to:
 
 ## Task 2: Execute Notebooks
 
-Here, training of the neural networks has been processed. In this, the famous algorithm has been used where model weights have been adjusted as the gradient weights. To compute these gradients Pytorch has a built-in differentiation engine called 'torch-autograd' is used. 
+Here, When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.To compute those gradients, PyTorch has a built-in differentiation engine called torch.autograd. It supports automatic computation of gradient for any computational graph. 
 
-1. Navigate to **Pytorch** folder
+1. In the Jupyter lab, in the left pane, select to **Pytorch** folder and double-click on it to open.
 
    ![](../images/pytorch.png)
 
-1. Choose the **Beginner** folder and then select to **Basics** option inside it.
+1. Inside the Pytorch folder, select the **Beginner** folder and double-click on it to open and select the **Basics** folder inside it.
 
    ![](../images/beginnerfolder.png)
    
    ![](../images/basicfolder.png)
 
-1. Select **autogradqs_tutorial** file from **Basics** folder
+1. In the **Basics** folder, Select **autograd_tutorial.html** file and double-click to open it on the right side of the Jupyter lab portal. In this file you will learn about:
+   - Torch.Autograd
+   - Tensors, Functions and Computational graph
+   - Computing Gradients
+   - Disabling Gradient Tracking
+   - More on Computational Graphs
+   - Optional Reading: Tensor Gradients and Jacobian Products
 
    ![](../images/auto.png)
 
