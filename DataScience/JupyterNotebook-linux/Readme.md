@@ -9,7 +9,7 @@ In this lab environment, you will access the **Ubuntu VM** which has several pop
 JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 
 ### Jupyter Notebook
-The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Its uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
 After completing this, you will learn how to:
 
@@ -91,4 +91,4 @@ Here, When training neural networks, the most frequently used algorithm is back 
 
 ## Summary
 
-In this exercise, you have signed in to the JupyterLab Portal and learned how to use Notebook to run the code and get the desired results.
+In this exercise, you have signed in to the JupyterLab Portal using User_id and password and expolre the JupyterLab portal and learned how to use the Notebook and  run the code of each cell of the file and get the desired results.
