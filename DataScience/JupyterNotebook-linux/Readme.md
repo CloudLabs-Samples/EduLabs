@@ -88,7 +88,10 @@ Here, When training neural networks, the most frequently used algorithm is back 
 1. Execute each cell one at a time by clicking on it and selecting the execute button.
 
    ![](../images/execute.png)
+   
+   **Note** : You can run the notebook document step-by-step (one cell a time) by pressing crtl + enter for running the particular cell or shift + enter to run the current cell.
+
 
 ## Summary
 
-In this exercise, you signed in to the JupyterLab Portal with your User id and password, explored the JupyterLab Portal, and learned how to utilize the Notebook and run the code in each cell of the file to get the required results.
+In this exercise, you signed in to the JupyterLab Portal, explored the JupyterLab Portal, We have understood some of the details and in-depth mechanisms of Jupyter Notebooks. We can conclude that these Notebooks are absolutely amazing in performing tasks related to visualizations, cleansing of data, and any projects related to data science or Python in general.
