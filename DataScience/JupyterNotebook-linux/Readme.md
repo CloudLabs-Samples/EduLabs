@@ -6,7 +6,7 @@
 In this lab environment, you will access the **Ubuntu VM** which has several popular tools for Data Exploration, Analysis, Modeling & Development Pre-Installed.
 
 ### JupyterLab
-JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
+JupyterLab is a next-generation web-based user interface for Project Jupyter.It is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 
 ### Jupyter Notebook
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Its uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
@@ -76,6 +76,7 @@ Here, When training neural networks, the most frequently used algorithm is back 
    ![](../images/basicfolder.png)
 
 1. In the **Basics** folder, Select **autograd_tutorial.html** file and double-click to open it on the right side of the Jupyter lab portal. <br>In this file you will learn about:
+
    - Torch.Autograd
    - Tensors, Functions and Computational graph
    - Computing Gradients
@@ -84,7 +85,7 @@ Here, When training neural networks, the most frequently used algorithm is back 
    - Optional Reading: Tensor Gradients and Jacobian Products
 
    ![](../images/auto.png)
-
+   
 1. Execute each cell one at a time by clicking on it and selecting the execute button.
 
    ![](../images/execute.png)
