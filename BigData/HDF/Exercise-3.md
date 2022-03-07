@@ -1,38 +1,49 @@
-### Module 3 : Running Hadoop Application on Eclipse
+### Exercise 1 : Using Eclipse to Run a Hadoop Application
 
 ## Overview
 
-# Hadoop and MapReduce
+In this walkthrough, we will be getting to know how to perform the Hadoop Application on Eclipse and learning more about Hadoop and MapReduce. In this Exercise, we will be learning how to execute WordCount Program using Hadoop and Eclipse.
+
+## Hadoop and MapReduce
 
 ### Hadoop
 
-Hadoop is an Apache open-source framework that allows distributed processing of large datasets across clusters of computers using simple programming models. The Hadoop framework application works in an environment that provides distributed storage and computation across clusters of computers. Its framework is based on Java programming with some native code in C and shell scripts.
+Hadoop is an open-source framework and it is provided by Apache to process and analyze a very huge volume of data. It is written in Java and is currently used by Google, Facebook, LinkedIn Apache Hadoop is a system for storing and processing huge datasets with sizes ranging from gigabytes to petabytes of data.
+
+Hadoop mainly consists of four modules, namely
+
+1. Hadoop Distributed File System (HDFS) - A distributed file system that can run on low-cost or traditional hardware. In addition to strong fault tolerance and natural support for huge datasets, HDFS provides better data throughput than traditional file systems.
+
+2. Yet Another Resource Negotiator (YARN) – Manages and tracks the use of cluster nodes and resources. 
+
+3. Hadoop Common - Provides a common set of Java libraries that can be utilized by all modules.
+
+4. MapReduce - MapReduce is a programming paradigm that enables massive scalability across hundreds or thousands of servers in a Hadoop cluster.
 
 ### MapReduce
 
-MapReduce is a processing technique and a program model for distributed computing based on java. The MapReduce algorithm contains two important tasks, namely Map and Reduce. The Map takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). Secondly, reduce task, which takes the output from a map as an input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce task is always performed after the map task.
+A MapReduce is a data processing tool that is used to process the data parallelly in a distributed form. The MapReduce is a model which will be having two phases, the first phase is the  mapper phase, and the second is the reducer phase.  In the Mapper phase, the input is given in the form of a key-value pair. The reducer receives the Mapper's output as input. Only once the Mapper is finished then, the Reducer runs. The Reducer also takes the input in key-value format and provides the output of the Reducer and then the final output is produced in the Reducer phase.
 
-### Task 1 : Running Hadoop Application
+### Task 1 : Getting Started With the Eclipse and Creating a Java Project.
+In this task, you will get to know how to create a Java Project and solve the dependency errors.
 
-In this task, you will get to know how to run Hadoop Application through Eclipse.
+1. On the environment provided, double-click on **Eclipse**. If a dialogue box appears to select workspace then select the default location and click on **Launch**. This will launch the workspace.
 
-1. On the environment provided, double-click on **Eclipse**. If a dialogue box appears to select workspace then select the default location and click on **Launch**.
+1. Once it is launched, on the top left corner, select **File**, select **New**, and then choose **Java Project**.
 
-1. Once it is launched, on the top left select **File**, select **New**, and then choose **Java Project**.
-
-1. On the **New Java Project**, provide the name **WordCount** under the project name and click on **Next**.
+1. On the **New Java Project**, under Project name provide the name as **WordCount** and then click on **Next**.
   
      ![](Media/bigdata8.png)
 
-1. Notice that a folder called **src** will be automatically created, which is used to store source files, and click on **Finish**
+1. Under **Source**, notice that a folder called **src** will be automatically created, which is used to store the source files, and click on **Finish**
 
      ![](Media/bigdata9.png)
 
-1. Create a package called **polyu.bigdata** under the src folder, by selecting **File** and select **New** and select **Package** and provide the name as **polyu.bigdata** in the dialogue box and click on **Finish**.
+1. On the top left corner, Select **File**, select **New** and then select **Package** and on the **New Java Package** page, provide the name as **polyu.bigdata** in the name dialogue box and click on **Finish**.
 
      ![](Media/bigdata10.png)
 
-1. Create a class called WordCount, by selecting File **New** and **Class** and assigning name as **WordCount** in the dialogue box and then copy the code below to WordCount.java and save it.
+1. Create a class called **WordCount**, by selecting File **New** and **Class** and provide the name as **WordCount** in the  name dialogue box and then copy the code below to WordCount.java and save it.
     ```````
     package polyu.bigdata;
 
@@ -97,28 +108,29 @@ In this task, you will get to know how to run Hadoop Application through Eclipse
     }
     ```````
  
-1. Notice that there are some red wavy lines underneath imported packages, which indicates the error Fail to import the class and also the dependency errors. 
+1. Now you will notice that there are some red wavy lines underneath imported packages, which indicates the error **Fail to import the class** and also  resembles the dependency errors. 
      
      ![](Media/bigdata11.png)
       
 1. Right-click on the **WordCount project** and select **Properties**.
 
-1. Once the dialog box opens, select Java Build Path and select **Libraries**,select **Add External JARs**, select jars and navigate to the path **C:\labfiles\hadoop-common-2.6.3.jar** and select **Hadoop-common-2.6.3.jar** and navigate to **C:\labfiles\hadoop-mapreduce-client-core-2.6.3.jar** and select **Hadoop-mapreduce-client-core-2.6.3.jar** and select **Apply and Close**
+1. Once the dialog box opens, select **Java Build Path** and  then select **Libraries**, select **classpath** and select **Add External JARs**, navigate to the path **C:\labfiles\hadoop-common-2.6.3.jar** and select **Hadoop-common-2.6.3.jar** and navigate to **C:\labfiles\hadoop-mapreduce-client-core-2.6.3.jar** and select **Hadoop-mapreduce-client-core-2.6.3.jar** and select **Apply and Close**
 
      ![](Media/bigdata12.png)
 
-1. Now verify that red wavy lines should disappear now, which means the dependency errors are solved.
+1. Now you need to verify that red wavy lines should disappear now, which means the dependency errors are solved.
 
-### Task 2 : Export Jar Files
+### Task 2 : Export the Jar Files
 
-In this task, you will learn how to export jar files.
+In this task, you will learn how to export jar files that are needed for this lab.
 
-1. Now right-click **WordCount** project, then click **Export**, then select **JAR** and click on **Next**.
+1. Now right-click **WordCount** project, then click **Export**, then expand **Java** folder and  select **JAR** and click on **Next**.
       
       ![](Media/bigdata13.png)
-      ![](Media/bigdata14.png)
-
+     
 1. Make sure you select the choose all export destinations in src folder. Select the export destination to the location **C:\labfiles\bigdata** where you need to place the file and then click Finish, the jar file will be exported successfully.
+
+      ![](Media/bigdata14.png)
 
 ### Task 3 : Start Hadoop, Check Hadoop status and Upload data to Hadoop File System(HDFS)
 
