@@ -91,4 +91,4 @@ Here, When training neural networks, the most frequently used algorithm is back 
 
 ## Summary
 
-In this exercise, you have signed in to the JupyterLab Portal using User_id and password and expolre the JupyterLab portal and learned how to use the Notebook and  run the code of each cell of the file and get the desired results.
+In this exercise, you signed in to the JupyterLab Portal with your User id and password, explored the JupyterLab Portal, and learned how to utilize the Notebook and run the code in each cell of the file to get the required results.
