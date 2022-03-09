@@ -104,6 +104,4 @@ In this task you will know the status of the Ambari server. Ambari server provid
      `````
    ![](Media/bigdata2.png)  
  
-1. Click on **Next** to continue to the next section of the lab.
-
 In this lab you have learnt how to use the Dockerized version of HortonWorks DataFLow(HDF) and various ways of accessing the Ambari Dashboard.
