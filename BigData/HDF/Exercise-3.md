@@ -1,15 +1,21 @@
+## Exercise 2 : Starting the Daemons
 
-## Overview
+### Overview
+
+Daemons in computing terms is a process that runs in the background. Hadoop has five such daemons. They are NameNode, Secondary NameNode, DataNode, JobTracker and TaskTracker.
+
+ - NameNode – Is is the Master node which is responsible for storing the meta-data for all the files and directories. 
+ - DataNode – It is the Slave node that contains the actual data. 
+ - Secondary NameNode – It periodically merges all the changes in the NameNode with the edit log. It also keeps a copy of the image which can be used in case of failure of NameNode.
 
 ### HDFS
 
 HDFS is a distributed file system that handles large data sets running on commodity hardware. It is used to scale a single Apache Hadoop cluster to hundreds (and even thousands) of nodes. HDFS is one of the major components of Apache Hadoop, the others being MapReduce and YARN. The goals of HDFS are Fast recovery from hardware failures, Access to streaming data.
   
-### Module 2 : Start Daemons
 
 ### Task 1 : To initialize the HDFS
 
-In this task, you are initializing the HDFS for the Hadoop
+In this task, you are initializing the HDFS for the Hadoop.
 
 1. To initialize the **HDFS** perform the following command in the command prompt 
    ```````
@@ -37,4 +43,4 @@ In this task, you will start the daemons that are necessary while running the Ha
 
    cd sbin\start-yarn.cmd
    ``````
-1. Click on **Next** to continue to the next section of the lab.
+In this lab you have learnt how to start the daemons that are required for accessing Hadoop 
