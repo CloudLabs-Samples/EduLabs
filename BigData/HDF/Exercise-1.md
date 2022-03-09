@@ -1,10 +1,8 @@
-### Exercise 1 : Using Eclipse to Run a Hadoop Application
+## Exercise 1 : Using Eclipse to Run a Hadoop Application
 
-## Overview
+### Overview
 
 In this walkthrough, we will be learning Hadoop MapReduce programming by giving them a hands-on experience in developing their first Hadoop based WordCount application. WordCount example reads text files and counts the frequency of the words. Each mapper takes a line of the input file as input and breaks it into words. It then emits a key/value pair of the word (In the form of (word, 1)) and each reducer sums the counts for each word and emits a single key/value with the word and sum. 
-
-## Hadoop and MapReduce
 
 ### Hadoop
 
