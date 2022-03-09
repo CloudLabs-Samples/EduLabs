@@ -4,12 +4,10 @@
 
 In this hands-on lab you will perform the following tasks:
 
-- **Module 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow**
-- **Module 2 : Start Daemons**
-- **Module 3 : Running Hadoop Application on Eclipse**
+- **Exercise 1 : Using Eclipse to Run a Hadoop Application**
+- **Exercise 2 : Hortonworks DataFlow using Dockerized Deployment**
 
 # Overview
-
 ## Introduction to Big Data
 
 Big data can be defined as a concept used to describe a large volume of data, which are both structured and unstructured, and that gets increased day by day by any system or business. However, it is not the quantity of data, which is essential. The important part is what any firm or organization can do with the data matters a lot. Analysis can be performed on big data for insight and predictions, which can lead to a better decision and reliable strategy in business moves.
