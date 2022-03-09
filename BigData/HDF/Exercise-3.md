@@ -43,4 +43,8 @@ In this task, you will start the daemons that are necessary while running the Ha
 
    cd sbin\start-yarn.cmd
    ``````
-In this lab you have learnt how to start the daemons that are required for accessing Hadoop. 
+1. Now open the Microsoft Edge and navigate to the URLs, to verify the status of Hadoop.
+     ``````
+     http://localhost:8088 
+     ``````
+In this lab you have learnt how to start the daemons that are required and accessing the Hadoop Dashboard.
