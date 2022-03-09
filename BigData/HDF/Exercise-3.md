@@ -1,4 +1,4 @@
-## Exercise 2 : Starting the Daemons
+## Exercise 3 : Starting the Daemons
 
 ### Overview
 
@@ -43,4 +43,4 @@ In this task, you will start the daemons that are necessary while running the Ha
 
    cd sbin\start-yarn.cmd
    ``````
-In this lab you have learnt how to start the daemons that are required for accessing Hadoop 
+In this lab you have learnt how to start the daemons that are required for accessing Hadoop. 
