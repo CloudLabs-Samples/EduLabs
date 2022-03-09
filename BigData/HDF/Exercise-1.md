@@ -129,9 +129,36 @@ In this task, you will learn how to export jar files that are needed for this la
 1. Make sure you select the choose all export destinations in src folder. Select the export destination to the location **C:\labfiles\bigdata** where you need to place the file and then click Finish, the jar file will be exported successfully.
 
       ![](Media/bigdata14.png)
+      
+### Task 3 : To initialize the HDFS and Starting the Daemons
 
-### Task 3 : Start Hadoop, Check Hadoop status and Upload data to Hadoop File System(HDFS)
+In this task, you are initializing the HDFS for the Hadoop.
 
+1. To initialize the **HDFS** perform the following command in the command prompt 
+   ```````
+    hdfs namenode -format
+   ```````
+   >Note : If you encounter any error while performing the above then perform the steps that are mentioned below.
+
+1. Navigate to the [HDFS jar file](https://github.com/FahaoTang/big-data/blob/master/hadoop-hdfs-3.2.1.jar) and download it.
+
+1. Now place the downloaded file in C:\LabFiles\hadoop-3.2.1\etc\hadoop\hdfs
+
+1. Run the following command to start HDFS daemons
+
+   `````
+   cd C:\labfiles\hadoop-3.2.1
+
+   cd sbin\start-dfs.cmd
+   `````
+1. Run the following command (with elevated permissions) to start YARN daemons.
+   ``````
+   cd C:\labfiles\hadoop-3.2.1
+
+   cd sbin\start-yarn.cmd
+   ``````
+
+### Task 4 : Start Hadoop, verifying the status of Hadoop and Upload data to Hadoop File System(HDFS)
 In this task, you will be starting the Hadoop Application and run the Hadoop Application.
 
 1. Execute the following command, to start the Hadoop.
