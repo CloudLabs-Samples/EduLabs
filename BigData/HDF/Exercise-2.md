@@ -54,9 +54,9 @@ In the following task, you will be able to explore the SandBox Welcome page.
 
 1. In the **Sign-In Page** of the Ambari Dashboard, use the following credentials that are provided below.
 
-  - Username : admin
+  - Username : `admin`
  
-  - Password : admin
+  - Password : `admin`
 
 ### Task 3 : Accessing the Ambari Dashboard
 
@@ -68,7 +68,7 @@ In the above task, you have learned how to login to Ambari Dashboard through San
 
 1. On the **Ambari Sign-In** page, use the following credentials to log in.
 
-   - UserName : `admin`
+   - Username : `admin`
    
    - Password : `admin`
 
