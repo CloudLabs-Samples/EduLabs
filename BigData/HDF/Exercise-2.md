@@ -1,6 +1,14 @@
-# HortonWorks DataFlow and Ambari Server
+## Exercise 2 : Hortonworks DataFlow using Dockerized Deployment
 
-## Overview 
+### Overview 
+The Hortonworks DataFlow Platform (HDF) provides flow management, stream processing, and enterprise services for collecting, curating, analyzing and acting on data in motion
+across on-premise data centers and cloud environments. 
+
+   ![](Media/bigdata15.png)
+    
+This lab explains about the Dockerized version of Hortonworks DataFlow. It assists the user in dealing with massive volumes of data and applies machine learning and statistical learning methods to obtain data insights. A key objective of this lab is to learn how to use data analytics technologies, such as Apache Hadoop's open-source software package, which provides tools for storing, managing, and processing massive data.
+
+In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial version of Hadoop provided by Cloudera. We are using HDF Sandbox 3.0.1, which is a free, simplified version of the platform that is used to design for learning and experimentation purpose.
 
 ### Hortonworks DataFlow (Data-In-Motion)
 
@@ -11,15 +19,9 @@ Cloudera DataFlow which is formerly known as Hortonworks DataFlow (HDF) is a sca
 Apache Ambari is an open-source administration tool deployed on top of Hadoop clusters, and it is responsible for keeping track of the running applications and their status.
 Apache Ambari can be referred to as a web-based management tool that manages, monitors, and provisions the health of Hadoop clusters. It provides a highly interactive dashboard that allows administrators to visualize the progress and status of every application running over the Hadoop cluster. Its flexible and scalable user interface allows a range of tools such as Pig, MapReduce, Hive, etc. to be installed on the cluster and administers their performances in a user-friendly fashion.
 
-### Module 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow
-
-This lab explains you to set up a big data analytics class. It assists the user in dealing with massive volumes of data and applies machine learning and statistical learning methods to obtain data insights. A key objective of this lab is to learn how to use data analytics technologies, such as Apache Hadoop's open-source software package, which provides tools for storing, managing, and processing massive data.
-
-In this lab, we will use Hortonworks DataFlow (HDF), a popular commercial version of Hadoop provided by Cloudera. We are using HDF Sandbox 3.0.1, which is a free, simplified version of the platform that is used to design for learning and experimentation purpose.
-
 ### Task 1 : Getting Started with the HDF Sandbox
 
-In the following task, you will be able to start the HDF SandBox and verify the status of the SandBox.
+In the following task, you will start the HDF SandBox.
 
 1. On the environment provided, select the **Git Bash** from the **Type here to search**.
 
@@ -77,7 +79,7 @@ In the above task, you have learned how to login to Ambari Dashboard through San
 
 ### Task 4 : Verify the status of the Ambari Server
 
-In this task you find the status of the Ambari server.
+In this task you will know the status of the Ambari server. Ambari server provides a dashboard for monitoring health and status of the Hadoop cluster.
 
 1. Navigate to the browser, enter the following ip address 127.0.0.1:1080. 
 
@@ -104,3 +106,5 @@ In this task you find the status of the Ambari server.
    ![](Media/bigdata2.png)  
  
 1. Click on **Next** to continue to the next section of the lab.
+
+In this lab you have learnt how to use the Dockerized version of HortonWorks DataFLow(HDF) and various ways of accessing the Ambari Dashboard.
