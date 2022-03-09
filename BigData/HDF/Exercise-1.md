@@ -173,6 +173,8 @@ In this task, you will be starting the Hadoop Application and run the Hadoop App
      ``````
      cd C:\labfiles\hadoop-3.2.1\bin\hadoop fs -get /labfiles/bigdata/wordcount/output ~/
      ``````
-     
+1. Click on **Next** to continue to the next section of the lab.    
+
+
 Hadoop MapReduce WordCount example is an example where users begin their hands-on experience. This lab explains how to use MapReduce to create the WordCount example code, which counts the number of times a specific word appears in the input file.
 
