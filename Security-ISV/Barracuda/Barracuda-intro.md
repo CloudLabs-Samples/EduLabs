@@ -2,8 +2,10 @@
 
 1. Once the environment is provisioned, a lab guide will get loaded into your browser **(1)**, Click on **Next** from the bottom middle and follow the instructions to perform the labs **(2)**.
 
-    ![](../images/image-008.jpg)
-
+    ![](../images/image-900.jpg)
+    
+    ![](../images/image-901.jpg)
+    
 1. To get the lab environment details, you can select the **Environment Details** tab.
 
     ![](../images/image-001.jpg)
