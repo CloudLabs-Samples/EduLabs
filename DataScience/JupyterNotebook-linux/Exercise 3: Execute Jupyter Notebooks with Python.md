@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task you will learn about:
+In this exercise you will learn about:
 
    - Torch.Autograd
    - Tensors, Functions and Computational graph
