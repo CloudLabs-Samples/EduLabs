@@ -1,14 +1,13 @@
 ## Getting started with Big Data
 
-### Modules Included
+BigData is a term related to extracting meaningful data by analyzing the huge amount of complex, variously formatted data generated at high speed, that cannot be handled, processed by the traditional system.
 
 In this hands-on lab you will perform the following tasks:
 
-- **Module 1 : Set up a lab for big data analytics using Docker deployment of HortonWorks DataFlow**
-- **Module 2 : Start Daemons**
-- **Module 3 : Running Hadoop Application on Eclipse**
+- **Exercise 1 : Using Eclipse to Run a Hadoop Application**
+- **Exercise 2 : Hortonworks DataFlow using Dockerized Deployment**
 
-# Overview
+## Overview
 
 ## Introduction to Big Data
 
