@@ -1,4 +1,4 @@
-# Execute Jupyter Notebooks with Python
+# Exercise 3: Execute Jupyter Notebooks with Python
 
 ## Overview
 
