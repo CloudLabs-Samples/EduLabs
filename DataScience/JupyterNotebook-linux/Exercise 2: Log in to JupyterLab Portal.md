@@ -21,3 +21,5 @@
 1. Once the Jupyter Lab loads up, you will see the File System on the left and Launcher on the right. There are a lot of samples loaded up for the various technologies.
 
    ![](../images/jupyterlab-browserlinux.png)
+
+# Proceed to Exercise 3: Execute Jupyter Notebooks with Python
