@@ -20,12 +20,4 @@ JupyterLab is a next-generation web-based user interface for Project Jupyter. It
 ### Jupyter Notebook
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Its uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
-## Task 1: Getting started with the environment
-
-In the following task, you will view the pre-deployed resources provided in the environment.
-
-1. In this lab environment, you will be able to access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
-
-1. Refer to the **Environment Details** tab for any other lab credentials/details.
-
-1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab 
+# Proceed to Exercise 1: Getting started with the Lab environment
