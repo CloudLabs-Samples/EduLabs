@@ -1,4 +1,4 @@
-## Task 2: Execute Notebooks
+## Execute Notebooks
 
 Here, When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.To compute those gradients, PyTorch has a built-in differentiation engine called torch.autograd. It supports automatic computation of gradient for any computational graph.<br><br>In this task you will learn about:
 
