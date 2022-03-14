@@ -1,4 +1,4 @@
-## Task 1: Log in to JupyterLab Portal
+## Exercise 2: Log in to JupyterLab Portal
 
 1. Let us start by logging into the JupyterLab Portal to check the resources deployed for the lab environment. Copy and paste the link below into a new tab in your browser.
 
