@@ -15,8 +15,3 @@ After completing this, you will learn how to:
 
 - Log in to JupyterLab Portal
 - Execute Notebooks
-
-
-## Summary
-
-In this exercise, you signed in to the JupyterLab Portal, explored the JupyterLab Portal, We have understood some of the details and in-depth mechanisms of Jupyter Notebooks. We can conclude that these Notebooks are absolutely amazing in performing tasks related to visualizations, cleansing of data, and any projects related to data science or Python in general.
