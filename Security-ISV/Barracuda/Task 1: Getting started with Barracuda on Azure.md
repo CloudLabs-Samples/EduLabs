@@ -69,4 +69,4 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 1. Explore through pre-deployed resources from the resource list
    
-# Proceed to Task 2
+# Proceed to Task 2 - Accessing the Barracuda Dashboard 
