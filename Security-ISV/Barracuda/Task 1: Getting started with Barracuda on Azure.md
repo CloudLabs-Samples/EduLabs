@@ -23,9 +23,7 @@ The Barracuda Web Application Firewall inspects inbound web traffic and blocks S
 
 In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multiple backend web servers. 
 
-1. **Launch** the Edge browser and **Navigate** to https://portal.azure.com.
-
-1. **Login** with your username and password as provided in the **Environment Details** tab.
+1. You should be logged into **Azure Portal** if not, then do so now
 
 1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
 
@@ -35,13 +33,13 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
  
       ![](../images/Picture2.jpg)
 
-1. Select the **ODL-Barracuda-XXXX** resource group in the resource groups blade.
+1. Select the **barracuda-DeploymentID** resource group in the resource groups blade.
 
-      ![](../images/Picture3.jpg)
+      ![](../images/image-904.jpg)
  
 1. On the Resource group blade, click on **Overview**.
 
-      ![](../images/Picture9.png)
+      ![](../images/image-905.jpg)
 
 1. Select the **web-vm1** virtual machine from the resource list.
 
@@ -63,13 +61,14 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 1. Navigate back to the Resource groups and select your Resource Group
 
-      ![](../images/Picture8.png)
+      ![](../images/image-906.jpg)
     
 1. On the Resource group blade, click on Overview.
 
-      ![](../images/Picture9.png)
+      ![](../images/image-905.jpg)
 
 1. Explore through pre-deployed resources from the resource list
 
 1. Click on **Next** to continue to the next section of the lab.
    
+# Proceed to Task 2
