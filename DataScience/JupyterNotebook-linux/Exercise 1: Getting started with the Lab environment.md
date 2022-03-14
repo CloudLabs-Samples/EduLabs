@@ -1,6 +1,10 @@
-## Instructions
+# Exercise 1: Getting started with the Lab environment
 
-### Exercise 1: Getting started with the Lab environment
+### Overview
+
+In this lab environment, you will be able to access the Ubuntu VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+
+### Task 1: Getting started with the Lab environment
 
 1. Once the environment is provisioned, an SSH session to the Linux virtual machine and lab guide will get loaded in your browser tab. 
    
