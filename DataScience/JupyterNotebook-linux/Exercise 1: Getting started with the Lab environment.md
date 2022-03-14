@@ -18,4 +18,4 @@
 
    ![](../images/resourcestablinux.png)
    
-# Exercise 2: Log in to JupyterLab Portal
+# Proceed to Exercise 2: Log in to JupyterLab Portal
