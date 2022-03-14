@@ -88,7 +88,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
 1. Open a new tab in the browser. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
 
-    ![](../images/Picture31.png)
+    ![](../images/image-908.png)
 
 1. As you can see, the request will be forwarded to the backend web servers as configured.
 
