@@ -16,7 +16,7 @@
 
 ### Log-in to the Azure portal
 
-1. Open a New InPrivate window and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. In the Local Machine, Open a New InPrivate window and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
 
