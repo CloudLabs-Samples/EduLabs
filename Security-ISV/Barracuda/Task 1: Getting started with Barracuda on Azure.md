@@ -1,29 +1,37 @@
-# Getting started with Barracuda CloudGen WAF on Azure
-
-## Tasks Included
-
-In this hands-on lab you will perform the following tasks:
-
-- **Task 1: Getting started with Barracuda CloudGen WAF on Azure**
-- **Task 2: Accessing Barracuda Dashboard**
-- **Task 3: Configuring Barracuda Firewall**
-- **Task 4: Access Web VMs via RDP**
-
-# Overview 
-
-## Barracuda Web Application Firewall
-
-The Barracuda Web Application Firewall inspects inbound web traffic and blocks SQL injections, Cross-Site Scripting, malware uploads & application DDoS, and other attacks targeted at your web applications. It also inspects the responses from the back-end web servers for Data Loss Prevention (DLP). The integrated access control engine enables administrators to create granular access control policies for Authentication, Authorization & Accounting (AAA), which gives organizations strong authentication and user control. The onboard L4/L7 Load Balancing capabilities enable organizations to quickly add back-end servers to scale deployments. Application acceleration capabilities, including SSL Offloading, caching, compression, and connection pooling, ensure faster web application content application delivery.
-
-## Architecture Diagram
-
-   ![](../images/image-diagram.jpg)
-
 ## Task 1: Getting started with the environment
 
 In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multiple backend web servers. 
 
-1. You should be logged into **Azure Portal** if not, then do so now
+### Log-in to the Azure portal
+
+1. In the Local Machine, Open a New InPrivate window and sign in to the **Azure Portal** (<http://portal.azure.com>).
+
+1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
+
+   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+
+        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+        
+    ![](../images/image-004.jpg)
+  
+    ![](../images/image-005.jpg)
+  
+1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
+
+    ![](../images/image004.png)
+
+1. If you see the pop-up **Stay Signed in?** click **No**.
+
+    ![](../images/image-006.jpg)
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+    ![](../images/image-007.jpg)
+
+1. Now will now see the Azure Portal Dashboard.
 
 1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
 
