@@ -4,7 +4,7 @@
 
 In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multiple backend web servers. 
 
-### Log-in to the Azure portal
+## Task 1: Getting started with the Azure Portal
 
 1. In the Local Machine, Open a New InPrivate window and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
