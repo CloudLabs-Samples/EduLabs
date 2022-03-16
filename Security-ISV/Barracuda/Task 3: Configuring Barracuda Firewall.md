@@ -104,6 +104,12 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/Picture35.png)
 
+# Conclusion
+
+Congratulation, You have completed this workshop. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+  
+----------------
+
 
 
 
