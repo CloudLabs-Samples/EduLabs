@@ -39,6 +39,6 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
    ![](../images/Picture17.jpg)
  
- # Proceed to Task 2 - Getting started with the Azure Portal**
+ # Proceed to Task 2 - Getting started with the Azure Portal
 
 
