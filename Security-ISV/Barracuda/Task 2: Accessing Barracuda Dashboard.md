@@ -1,4 +1,4 @@
-# 02 - Accessing the Barracuda Dashboard  
+# 01 - Accessing the Barracuda Dashboard  
 
 ## Overview 
 
