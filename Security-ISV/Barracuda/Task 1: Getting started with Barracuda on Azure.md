@@ -1,4 +1,6 @@
-## Task 1: Getting started with the environment
+# 02 : Getting started with the Azure Portal
+
+## Overview
 
 In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multiple backend web servers. 
 
