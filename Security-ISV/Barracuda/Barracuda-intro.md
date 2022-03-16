@@ -14,5 +14,5 @@
 
     ![](../images/image002.jpg)
     
-1. Click on **Next** from the bottom middle and follow the instructions to perform the lab.
+1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
 
