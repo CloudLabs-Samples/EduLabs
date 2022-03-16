@@ -5,9 +5,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
 ## Task 1: Configuring Barracuda Firewall  
 
-1. Switch back to Barracuda Tab and after Providing information to the bottom of the Barracuda End User License Agreement page, It asks you to sign in.
- 
-1. In the **Sign-In page** of Barracuda, use the following credentials:
+1. Switch back to Barracuda Tab and In the **Sign-In page** of Barracuda, use the following credentials:
 
    - Username : <inject key="Barracuda Username"></inject> 
    - Password : <inject key="Barracuda Password"></inject> 
