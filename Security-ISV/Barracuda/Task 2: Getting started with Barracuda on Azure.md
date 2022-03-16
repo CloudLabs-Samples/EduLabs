@@ -6,7 +6,7 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 ## Task 1: Getting started with the Azure Portal
 
-1. Open a New tab in the JumpVM, and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. Open a New tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
 
