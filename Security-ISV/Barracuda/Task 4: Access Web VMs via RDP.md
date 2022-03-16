@@ -42,7 +42,10 @@ In this task, You will access Web VMs via RDP
 
 1. Click **Connect**.
 
-1.	In the following window, provide the **Username** as ```.\barracudauser``` and **Password** as <inject key="Barracuda Password"></inject> and Click **OK**.
+1.	In the following window, enter the Username and Password as given below and click **OK**.
+
+   * **Username**:  ```.\barracudauser``` 
+   * **Password**:  <inject key="Barracuda Password"></inject>
 
       ![](../images/Picture44.png)
 
@@ -57,4 +60,6 @@ In this task, You will access Web VMs via RDP
 # Conclusion
       
   Congratulation, You have completed this workshop. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+  
+----------------
 
