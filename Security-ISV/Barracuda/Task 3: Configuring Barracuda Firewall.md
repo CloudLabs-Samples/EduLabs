@@ -104,6 +104,6 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/Picture35.png)
 
- # Proceed to Task 4 - Accessing Web VMs via RDP
+
 
 
