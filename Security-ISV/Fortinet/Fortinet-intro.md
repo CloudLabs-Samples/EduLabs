@@ -1,19 +1,15 @@
 # Getting Started
 
 1. Once the environment is provisioned, a lab guide will get loaded into your browser **(1)**, Click on **Next** from the bottom middle and follow the instructions to perform the labs **(2)**.
-
-    ![](../images/image-900.jpg)
-
-    ![](../images/image-901.png)
     
 2. To get the lab environment details, you can select the **Environment Details** tab.
 
-    ![](../images/image-903.png)
-    ![](../images/image-904.png)
+    ![](../images/image_100.png)
+    ![](../images/image_101.png)
 
 3. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
     
-    ![](../images/image-905.png)
+    ![](../images/image_102.png)
     
 ### Log-in to the Azure portal
 
