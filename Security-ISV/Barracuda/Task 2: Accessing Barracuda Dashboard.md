@@ -5,9 +5,8 @@
 In this hands-on lab you will perform the following tasks:
 
 - **Task 1: Accessing the Barracuda Dashboard**
-- **Task 2: Accessing Barracuda Dashboard**
+- **Task 2: Getting started with the Azure Portal**
 - **Task 3: Configuring Barracuda Firewall**
-- **Task 4: Access Web VMs via RDP**
 
 ## Barracuda Web Application Firewall
 
@@ -40,6 +39,6 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
    ![](../images/Picture17.jpg)
  
- # Proceed to Task 2 - Configuring Barracuda Firewall 
+ # Proceed to Task 2 - Getting started with the Azure Portal**
 
 
