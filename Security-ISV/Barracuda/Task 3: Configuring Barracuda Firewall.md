@@ -3,7 +3,9 @@
 ## Overview
 In this task, you will configure the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
-## Task 1: Configuring Barracuda Firewall   
+## Task 1: Configuring Barracuda Firewall  
+
+1. After Providing information to the bottom of the Barracuda End User License Agreement page, It asks you to sign in.
  
 1. In the **Sign-In page** of Barracuda, use the following credentials:
 
