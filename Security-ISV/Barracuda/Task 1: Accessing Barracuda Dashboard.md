@@ -34,8 +34,8 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
 1. Scroll down to the bottom of the page. enter the following information and then Click **Accept**.
  
-   * **Name**: ODL_User
-   * **Email Address**:  <inject key="AzureAdUserEmail"></inject> 
+   * **Name**: ODLUser
+   * **Email Address**: Provide your personal Email address
 
    ![](../images/Picture17.jpg)
  
