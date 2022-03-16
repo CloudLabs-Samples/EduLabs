@@ -38,6 +38,8 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
    * **Email Address**: Provide your personal Email address
 
    ![](../images/Picture17.jpg)
+   
+1. After Providing information to the bottom of the Barracuda End User License Agreement page, It asks you to sign in. 
  
  # Proceed to Task 2 - Getting started with the Azure Portal
 
