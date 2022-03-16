@@ -14,7 +14,7 @@ The Barracuda Web Application Firewall inspects inbound web traffic and blocks S
 
 ## Architecture Diagram
 
-   ![](../images/image-diagram.jpg)# 01 - Accessing the Barracuda Dashboard  
+   ![](../images/image-diagram.jpg)
 
 ## Overview 
 
