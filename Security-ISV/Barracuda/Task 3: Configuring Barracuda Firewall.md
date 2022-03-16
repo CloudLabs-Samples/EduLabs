@@ -90,7 +90,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/image-908.png)
 
-1. As you can see, the request will be forwarded to the backend web servers as configured.
+1. As you can see, the request will be forwarded to the backend web servers as configured and try refresh this page for once or twice.
 
     ![](../images/Picture32.jpg)
 
