@@ -13,4 +13,6 @@
 1. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
 
     ![](../images/image002.jpg)
+    
+1. Click on **Next** from the bottom middle and follow the instructions to perform the lab.
 
