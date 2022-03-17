@@ -12,4 +12,4 @@ As workloads are being moved from local data centers connectivity and security a
 
 ### Architecture Diagram
 
-    ![](../images/image_design.png)
+   ![](../images/image_design.png)
