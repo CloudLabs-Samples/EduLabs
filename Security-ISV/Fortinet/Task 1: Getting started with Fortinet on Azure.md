@@ -31,4 +31,8 @@ As workloads are being moved from local data centers connectivity and security a
  5.  Select the **fortigate-XXXX** resource group in the resource groups blade.
 
        ![](../images/image_500.png)
+       
+ 6. On the Resource group blade, click on **Overview**.
+
+       ![](../images/image_501.png)
  
