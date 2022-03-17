@@ -28,11 +28,52 @@ As workloads are being moved from local data centers connectivity and security a
 
        ![](../images/Picture2.jpg)
        
- 5.  Select the **fortigate-XXXX** resource group in the resource groups blade.
+ 5.  Select the **fortiGate-XXXX** resource group in the resource groups blade.
 
        ![](../images/image_500.png)
        
  6. On the Resource group blade, click on **Overview**.
 
        ![](../images/image_501.png)
+       
+ 7. Select the **fortigatevm-XXXX** virtual machine from the resource list.
+
+       ![](../images/image_502.png)
+       
+ 8. On the virtual machine blade, scroll down to the **Settings** section, click on **Networking**
+
+       ![](../images/image_503.png)
+       
+ 9. Select the **fortigatevm-xxxx-Nic1** Network Interfaces.
+
+       ![](../images/image_504.png)
+       
+ 10. In the Network Interfaces blade, you can see the **Private IP address** of **fortigatevm-XXXX**. Copy the value of the Private IP address. You will need it in the next task.
+
+       ![](../images/image_505.png)
+       
+ 11. Select the **fortigatevm-xxxx-Nic2** Network Interfaces.
+
+       ![](../images/image_506.png)
+       
+ 12. In the Network Interfaces blade, you can see the **Private IP address** of **fortigatevm-XXXX**. Copy the value of the Private IP address. You will need it in the next task.
+
+       ![](../images/image_507.png)
+       
+ 13.  Repeat steps **7 to 10** to obtain the **Private IP address** of **apache-vm** as well by selecting **apache-vm** in step **7**.
+
+       ![](../images/image_508.png)
+       
+ 14. Navigate back to the Resource groups and select your Resource Group
+
+       ![](../images/image_509.png)
+       
+ 15. On the Resource group blade, click on Overview.
+
+       ![](../images/image_501.png)
+       
+ 16. Explore through pre-deployed resources from the resource list
+
+ 17. Click on **Next** to continue to the next section of the lab.
+      
  
