@@ -11,3 +11,24 @@ As workloads are being moved from local data centers connectivity and security a
 ## Architecture Diagram
 
    ![](../images/image_design.png)
+ 
+ ## Task 1: Getting started with the environment
+ 
+ In this task, you will view the pre-deployed Fortigate Singe-VM, network interfaces and a backend web server.
+ 
+ 1. **Launch** the Edge browser and **Navigate** to https://portal.azure.com.
+
+ 2. **Login** with your username and password as provided in the **Environment Details** tab.
+
+ 3. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
+ 
+       ![](../images/Picture1.png)
+       
+ 4. **Click** on the **Resource groups** button in the **Menu navigation bar** to view the Resource groups blade.
+
+       ![](../images/Picture2.jpg)
+       
+ 5.  Select the **fortigate-XXXX** resource group in the resource groups blade.
+
+       ![](../images/image_500.png)
+ 
