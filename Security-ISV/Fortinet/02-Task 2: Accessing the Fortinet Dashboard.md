@@ -14,7 +14,7 @@ In this task, you will access the Fortinet dashboard by using the FortiGate FQDN
 
      ![](../images/image_701.png)
      
- 3. Click on the following link on the page as shown in the image. 
+ 3. Click on the following link on the page as shown below. 
 
      ![](../images/image_702.png)
      
