@@ -4,11 +4,11 @@
     
 2. To get the lab environment details, you can select the **Environment Details** tab.
 
-    ![](../images/image_103.png)
+    ![](../images/image_002.png)
 
 3. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
     
-    ![](../images/image_102.png)
+    ![](../images/image_003.png)
     
 ### Log-in to the Azure portal
 
