@@ -8,13 +8,9 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/01-Task%201%3A%20Getting%20started%20with%20Fortinet%20on%20Azure.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/02-Task%202%3A%20Accessing%20the%20Fortinet%20Dashboard.md",
         "Order": 2
       },
-      {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/02-Task%202%3A%20Accessing%20the%20Fortinet%20Dashboard.md",
-        "Order": 3
-      }
     ] 
   }
 ]  
