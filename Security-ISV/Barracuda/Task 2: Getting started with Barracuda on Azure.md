@@ -79,4 +79,4 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 1. Explore the pre-deployed resources
    
-# Proceed to Task 3 - Configuring Barracuda Firewall 
+## Proceed to Task 3 - Configuring Barracuda Firewall 
