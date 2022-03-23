@@ -34,7 +34,7 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
     This is the **Barracuda End User License Agreement.**
 
-1. Scroll down to the bottom of the page. enter the following information and then Click **Accept**.
+1. Scroll down to the bottom of the page. enter the following information and then click **Accept**.
  
    * **Name**: ODLUser
    * **Email Address**: Provide your personal Email address
