@@ -6,9 +6,7 @@ In this task, you will access the Fortinet dashboard by using the FortiGate FQDN
 
 ## Task 1: Accessing the Fortinet Dashboard 
 
- 1. Open a new tab in the browser and copy-paste the FortiGateFQDN from the environmental details tab.
- 
-     ![](../images/image_700.png)
+ 1. Open a new tab in the browser and copy-paste the FortiGateFQDN <inject key="FortiGateFQDN"></inject>
      
  2. A page shown below will apear. Click on **Adavanced**.
 
@@ -18,7 +16,10 @@ In this task, you will access the Fortinet dashboard by using the FortiGate FQDN
 
      ![](../images/image_702.png)
      
- 4. You will be redirected to the page shown below with empty **Username** and **Password** text boxes. Enter **labuser** as Username and **Password.1!!** as Password.
+ 4. You will be redirected to the page shown below with empty **Username** and **Password** text boxes. Enter the following username/password and then click on **Login**.
+     
+     **Username**:  <inject key="AdminUsername"></inject>
+     **Password**:  <inject key="AdminPassword"></inject>
 
      ![](../images/image_703.png)
      
