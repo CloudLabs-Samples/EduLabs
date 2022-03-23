@@ -22,7 +22,7 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
 ## Task 1: Accessing the Barracuda Dashboard 
 
-1. In the LabVM desktop, Select any web browser icon.
+1. In the LabVM desktop, select the **Microsoft Edge** icon.
   
 1. Open a new tab in the browser and copy-paste the **Barracuda WAF Public IP** : <inject key="bwafIP"></inject> . Append a **colon** and the port number **8000** to the IP address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
 
@@ -41,7 +41,7 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
    ![](../images/Picture17.jpg)
    
-1. After Providing information to the bottom of the Barracuda End User License Agreement page, It asks you to sign in. 
+1. After clicking on Accept, you will be prompted to login which will be completed in Page No 4
  
  # Proceed to Task 2 - Getting started with the Azure Portal
 
