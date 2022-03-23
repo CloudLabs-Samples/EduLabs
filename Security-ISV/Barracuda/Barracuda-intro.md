@@ -1,6 +1,6 @@
 # Getting Started
 
-1. Once the environment is provisioned, a virtual machine and lab guide will get loaded into your browser. Use this virtual machine to perform the lab.
+1. Once the environment is provisioned, a **virtual machine** and **lab guide** will get loaded into your browser. Use this virtual machine to perform the lab.
 
     ![](../images/image-started.jpg)
      
