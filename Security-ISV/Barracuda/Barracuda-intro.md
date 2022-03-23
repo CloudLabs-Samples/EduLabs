@@ -12,10 +12,11 @@
 
     ![](../images/image002.jpg)
     
-1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
+1. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
 
     ![](../images/image-901.jpg)
     
 1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
+    ![](../images/image-split.jpg)
 
