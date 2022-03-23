@@ -43,6 +43,6 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
    
 1. After clicking on Accept, you will be prompted to login which will be completed in Page No 4
  
- ## Proceed to Task 2 - Getting started with the Azure Portal
+ ### Proceed to Task 2 - Getting started with the Azure Portal
 
 
