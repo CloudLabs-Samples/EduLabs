@@ -18,8 +18,8 @@ In this task, you will access the Fortinet dashboard by using the FortiGate FQDN
      
  4. You will be redirected to the page shown below with empty **Username** and **Password** text boxes. Enter the following username/password and then click on **Login**.
      
-     **Username**:  <inject key="AdminUsername"></inject>
-     **Password**:  <inject key="AdminPassword"></inject>
+     * **Username**:  <inject key="AdminUsername"></inject>
+     * **Password**:  <inject key="AdminPassword"></inject>
 
      ![](../images/image_703.png)
      
