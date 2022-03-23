@@ -4,13 +4,17 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/00-Fortinet-intro.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/01-Fortinet-intro.md",
         "Order": 1
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/02-Task%202%3A%20Accessing%20the%20Fortinet%20Dashboard.md",
         "Order": 2
       },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/03-Login%20to%20Azure%20portal.md",
+        "Order": 3
+      } 
     ] 
   }
 ]  
