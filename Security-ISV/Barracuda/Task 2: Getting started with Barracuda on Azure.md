@@ -6,7 +6,7 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
 ## Task 1: Getting started with the Azure Portal
 
-1. Again click on **+** to open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
 
@@ -33,7 +33,7 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
     ![](../images/image-007.jpg)
 
-1. Now will now see the Azure Portal Dashboard.
+1. Now you will be able to view the Azure Portal Dashboard.
 
 1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
 
@@ -77,6 +77,6 @@ In this task, you will view the pre-deployed Barracuda Cloudgen WAF VM and multi
 
       ![](../images/image-905.jpg)
 
-1. Explore through pre-deployed resources from the resource list
+1. Explore the pre-deployed resources
    
 # Proceed to Task 3 - Configuring Barracuda Firewall 
