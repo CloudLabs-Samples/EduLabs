@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will be able to view the static content on web server
+In this task, you will be able to view the static content on web server and its related traffic.
 
 1. In the Firewall dashboard, on the top right corner, click on **Commit** and wait till the process completes.
 
