@@ -8,7 +8,7 @@ This document helps you to view the precreated resources for this lab
 
 1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com)
 
-1. Login with the credentails that is provided under **Environment Details** tab.
+1. Login with the credentials that are provided under the **Environment Details** tab.
 
      ![](../images/image08.png)
 
@@ -22,4 +22,4 @@ This document helps you to view the precreated resources for this lab
 
      ![](../images/image02.png)
 
-1. You can ble to view the deployed resources in that resorce group
+1. You can able to view the deployed resources in that resource group **poloalto-DID**.
