@@ -10,6 +10,8 @@ This document helps you to view the precreated resources for this lab
 
 1. Login with the credentails that is provided under **Environment Details** tab.
 
+     ![](../images/image08.png)
+
 1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
 
      ![](../images/image01.png)
