@@ -35,6 +35,17 @@ In this task, you will access the Fortinet dashboard by using the FortiGate FQDN
 
      ![](../images/image_708.png)
      
- 8. Click on **Next** to continue to the next section of the lab.
+ 8. To connect to the Apache webserver, click on the **CLI Console** on the FortiGate dashboard as shown below.
+     
+     ![](../images/image_400.png)
+     
+ 9. Connect to the webserver host via the CLI Console by copying the following command and password in the console.
+     
+     * **exec ssh labuser@10.0.3.4**
+     * **labuser@10.0.3.4's password**:  <inject key="AdminPassword"></inject>
+     
+     ![](../images/image_401.png)
+     
+ 11. Click on **Next** to continue to the next section of the lab.
      
 
