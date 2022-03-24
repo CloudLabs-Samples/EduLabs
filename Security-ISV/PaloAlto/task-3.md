@@ -1,10 +1,10 @@
-## Task 3 : To view the Object, Network and Device Tabs and Security Policies
+## Task 3 : To view the Object, Network, and Device Tabs and Security Policies
 
 ### Overview
 
-In this task, you will learn about the various management capabilities such as Object tab, Network tab and Device tab and security policies.
+In this task, you will learn about the various management capabilities such as the Object tab, Network tab, Device tab, and security policies.
   
-1. The Object tab allows to manage the building blocks for creating policies such as address objects, custom application and security profiles.
+1. The object tab allows to manage the building blocks for creating policies such as address objects, custom application, and security profiles.
 
 1. Select the **Object** tab and verify the various options.
     
