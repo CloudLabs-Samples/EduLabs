@@ -13,12 +13,12 @@ Task 1: Accessing the Firewall Dashbaord
    <inject key="VMseriesURL" enableCopy="true" />
    
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
-   
-     ![](images/image03.png)
+       
+    ![](../images/image03.png)
      
 1. Select the link under the **Advanced**.
 
-     ![](images/image04.png)
+    ![](../images/image04.png)
     
 1. In the page that loads up, enter the following username, password and click on Log in.
  
@@ -30,6 +30,6 @@ Task 1: Accessing the Firewall Dashbaord
 
 1. The dashboard provides the detailed visual summary of the device status.
 
-     ![](images/image05.png)
+     ![](../images/image05.png)
      
    > Note : If it was a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
