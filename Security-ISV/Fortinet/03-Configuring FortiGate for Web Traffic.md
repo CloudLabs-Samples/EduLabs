@@ -40,6 +40,6 @@ In this task you will configure the web traffic of an Apache server through the 
     * Destination: **WebTrafficToWebserver**
     * Service: **HTTP**
     
-    ![](../images/image_408.png)
+    ![](../images/image_409.png)
     
 6. Click on **Next** to continue to the next section of the lab.
