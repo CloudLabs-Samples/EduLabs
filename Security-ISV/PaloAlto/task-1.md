@@ -1,13 +1,7 @@
-# Getting started with the Firewall Dashboard
+### Task 1 : Getting started with the Firewall Dashboard
 
-## Tasks Included 
-
-In this hands-on lab, you will perform the following tasks
-
-Task 1: Accessing the Firewall Dashbaord
-
-### Task 1 : Accessing the Firewall Dashboard
-
+In this lab you will be able to access the Firewall Dashbaord and explore various options
+ 
 1. Let us start by logging into the **Firewall login page**. Copy the below link and open in a new tab in your browser.
 
    <inject key="VMseriesURL" enableCopy="true" />
