@@ -14,6 +14,14 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/03-Login%20to%20Azure%20portal.md",
         "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/04-Configuring%20FortiGate%20for%20Web%20Traffic.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/05-Connect%20to%20the%20Weberver.md",
+        "Order": 5
       } 
     ] 
   }
