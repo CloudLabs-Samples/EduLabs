@@ -12,8 +12,12 @@ This document helps you to view the precreated resources for this lab
 
 1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
 
+     ![](../images/image01.png)
+
 1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
 
 1. On the Resource group blade, select the resource group with **poloalto-DID**.
+
+     ![](../images/image02.png)
 
 1. You can ble to view the deployed resources in that resorce group
