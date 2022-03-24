@@ -1,4 +1,4 @@
-### Log-in to the Azure portal
+# 02 - Log-in to the Azure portal
 
 1. Open a New InPrivate window and sign in to the **Azure Portal** (http://portal.azure.com).
 
