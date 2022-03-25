@@ -2,10 +2,10 @@
 
 In this lab, you will be able to access the Firewall Dashboard and explore various options
  
-1. Let us start by logging into the **Firewall login page**. Copy the below link and open it in a new tab in your browser.
+1. Let us start by logging into the **Firewall login page**. Copy the link for **VMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
 
-   <inject key="VMseriesURL" enableCopy="true" />
-   
+   ![](../images/image08.png)
+
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
        
     ![](../images/image03.png)
@@ -16,7 +16,7 @@ In this lab, you will be able to access the Firewall Dashboard and explore vario
     
 1. On the page that loads up, enter the following username, password and click on Log in.
  
-   * admin : `paloatlo`
+   * admin : `paloalto`
    
    * password : `Pal0Alt0@123`
 
