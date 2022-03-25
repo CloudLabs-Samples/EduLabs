@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will view the pre-deployed resources in the **fortiGate**-XXXX RG and virtaul machines.
+In this task, you will view the pre-deployed resources in the **fortiGate-XXXX** RG.
 
 ## Task
 
