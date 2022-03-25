@@ -4,9 +4,10 @@
 
 * **01 - Accessing the FortiGate Dashboard**
 * **02 - Login to Azure Portal**
+* **03 - Connect to the Webserver**
 * **03 - Getting Started with Azure Portal**
 * **04 - Configure FortiGate for Web Traffic**
-* **05 - Connect to the Webserver**
+* **05 - Access the Webserver through Internet**
 
 ## Overview
 
@@ -16,4 +17,4 @@ The FortiGate firewall enables enterprises to control their resources and applic
 
   ![](../images/image_01.png)
   
-Click on **Next** at the bottom of lab guide to move to the next task.
+Click on **Next** to continue to the next section of the lab.
