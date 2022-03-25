@@ -5,7 +5,7 @@
 2. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.
 
     * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
-    * * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
     
         **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
