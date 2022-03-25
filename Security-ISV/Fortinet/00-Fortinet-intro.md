@@ -1,6 +1,6 @@
 # Getting Started
 
-1. Once the environment is provisioned, a lab guide will get loaded into your browser **(1)**, Click on **Next** from the bottom middle and follow the instructions to perform the labs **(2)**.
+1. Once the environment is provisioned, a lab guide will get loaded into your browser, Click on **Next** from the bottom of the lab guide and follow the instructions to perform the labs.
     
 2. To get the lab environment details, you can select the **Environment Details** tab.
 
