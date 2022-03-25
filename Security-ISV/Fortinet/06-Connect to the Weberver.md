@@ -2,13 +2,13 @@
 
 ## Overview 
 
-In this task you will connect to the Apache webserver which you configured previously through the FortiGate dashboard.
+In this task you will connect to the Apache webserver via internet which you configured previously in the FortiGate dashboard.
 
-## Task: Accessing the Fortinet Dashboard 
+## Task: Connect to the Webserver
 
 1. Open a new tab in the browser and copy-paste the following FQDN to access the Apache webserver.
 
-    * http://<inject key="FortiGateFQDN"></inject>
+    * <inject key="ApacheFQDN"></inject>
     
 2. You should be able to see the Apache webserver in the browser.
 
