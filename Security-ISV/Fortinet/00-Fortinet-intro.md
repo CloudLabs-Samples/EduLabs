@@ -4,9 +4,9 @@
     
 2. To get the lab environment details, you can select the **Environment Details** tab.
 
-    ![](../images/image_002.png)
+    ![](../images/image_004.png)
 
 3. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
     
-    ![](../images/image_003.png)
+    ![](../images/image_005.png)
     
