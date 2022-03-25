@@ -1,4 +1,4 @@
-### Task 1 : Getting started with the PaloAlto Network Dashboard
+# Task 1 : Getting started with the PaloAlto Network Dashboard
 
 ## Overview
 
@@ -25,3 +25,6 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
      ![](../images/image05.png)
      
    > Note : If it was a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
+
+
+# Proceed to Task 2 : To view the Application Command Center(ACC)
