@@ -4,7 +4,7 @@
 
 In this task, you will access the Fortinet dashboard by using the FortiGate FQDN.
 
-## Task 1: Accessing the Fortinet Dashboard 
+## Task 1: Accessing the FortiGate Dashboard 
 
  1. Open a new tab in the browser and copy-paste the FortiGateFQDN <inject key="FortiGateFQDN"></inject>
      
