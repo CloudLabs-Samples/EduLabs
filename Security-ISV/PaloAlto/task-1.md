@@ -14,11 +14,7 @@ In this lab, you will be able to access the Firewall Dashboard and explore vario
 
     ![](../images/image04.png)
     
-1. On the page that loads up, enter the following username, password and click on Log in.
- 
-   * admin : `paloalto`
-   
-   * password : `Pal0Alt0@123`
+1. On the page that loads up, enter the username, password which is provided under **Environment Details** tab and click on Log in.
 
 1. Now, you will be redirected to the dashboard to the VM-Series.
 
