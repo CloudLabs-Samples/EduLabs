@@ -29,4 +29,4 @@
     
 7. Now will now see the Azure Portal Dashboard.
 
-8. Click on **Next** from the bottom middle and follow the instructions to perform the lab.
+8. Click on **Next** to continue to the next section of the lab.
