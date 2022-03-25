@@ -22,5 +22,5 @@ In this lab, you can perform log analysis and generate reports on all traffic fl
 
     ![](../images/image016.png)
     
-# Procees to Task 5 : To view the static content on web server
+# Proceed to Task 5 : To view the static content on web server
 
