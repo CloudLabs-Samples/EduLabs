@@ -2,9 +2,9 @@
 
 ## Tasks Included
 
-* **01 - Accessing the FortiGate Dashboard**
-* **02 - Login to Azure Portal**
-* **03 - Connect to the Webserver**
+* **01 - Accessing the FortiGate Dashboard**      
+* **02 - Connect to the Webserver**
+* **03 - Login to Azure Portal**
 * **03 - Getting Started with Azure Portal**
 * **04 - Configure FortiGate for Web Traffic**
 * **05 - Access the Webserver through Internet**
