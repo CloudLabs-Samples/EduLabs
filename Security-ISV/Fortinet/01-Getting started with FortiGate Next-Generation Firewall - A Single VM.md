@@ -15,3 +15,5 @@ The FortiGate firewall enables enterprises to control their resources and applic
 ## Architecture Diagram
 
   ![](../images/image_01.png)
+  
+Click on **Next** at the bottom of lab guide to move to the next task.
