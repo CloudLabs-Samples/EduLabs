@@ -1,6 +1,6 @@
-## Task 2 : To view the Application Command Center(ACC)
+# Task 2 : To view the Application Command Center(ACC)
 
-### Overview
+## Overview
 
 In this task, you can able to view the Application Command Center(ACC). This provides the detailed widget-based summary of the applications, and the default time period is 1 hour. With the help of **Application Command Center(ACC)**, you can able to view the contextual linkage between the application and the content which allows you to make more security decisions. 
 
@@ -24,3 +24,5 @@ The default view of **ACC** will show the network, threat , blocked and tunnel a
 
     >Note : If you are using a new firewall, you cannot see much data for now.
 
+
+# Proceed to Task 3 : To view the Object, Network, and Device Tabs and Security Policies
