@@ -1,6 +1,6 @@
-## Task 4 : To explore the various options in Monitor tab
+# Task 4 : To explore the various options in Monitor tab
 
-### Overview
+## Overview
 
 In this lab, you can perform log analysis and generate reports on all traffic flowing through VM-Series and explore various options in **Monitor** tab.
 
@@ -21,3 +21,6 @@ In this lab, you can perform log analysis and generate reports on all traffic fl
 1. You can view the various option for **Fully customizable reporting** under the **Monitor** tab.
 
     ![](../images/image016.png)
+    
+# Procees to Task 5 : To view the static content on web server
+
