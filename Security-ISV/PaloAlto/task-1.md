@@ -2,7 +2,7 @@
 
 In this lab, you will be able to access the Firewall Dashboard and explore various options
  
-1. Let us start by logging into the **Firewall login page**. Copy the link for **VMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
+1. Let us start by logging into the **PaloAlto Networks page**. Copy the link for **VMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
 
    ![](../images/image08.png)
 
