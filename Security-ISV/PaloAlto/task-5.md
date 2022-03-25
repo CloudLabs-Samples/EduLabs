@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will be able to view the static content on web server and its related traffic.
+In this task, you will see that link state for the interfaces will be **OFF** and the static content of the webserver page will be showing error at this moment. You will resolve that error and can able to view the static content of the web server and also verify the status of the link state for the interfaces will be **UP**
 
 1. Switch back to the **Network** tab and select **Interfaces** and verify the **Link State** of the Interface type **Layer 3**.
 
