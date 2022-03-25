@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you will be able to access the Firewall Dashboard and explore various options
+In this lab, you will be able to access the paloAlto Network Dashboard and explore various options in it.
  
 1. Let us start by logging into the **PaloAlto Networks page**. Copy the link for **VMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
 
