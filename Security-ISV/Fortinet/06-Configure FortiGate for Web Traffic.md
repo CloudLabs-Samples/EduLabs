@@ -31,7 +31,7 @@ In this task you will configure the web traffic of an Apache server through the 
 
 5. Create a new Firewall policy to access the webserver by entering the following values and the click **OK**. 
     
-    **NOTE**: This new policy will allow all traffic in port1 and out port2.
+    >**NOTE**: This new policy will allow all traffic in port1 and out port2.
 
     * Name:  **WebTraffictoWebserverVIP**
     * Incoming Interface:  **port1**
