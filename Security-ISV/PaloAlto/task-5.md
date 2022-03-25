@@ -1,4 +1,4 @@
-## Task 5 : To view the static content on web server
+# Task 5 : To view the static content on web server
 
 ## Overview
 
@@ -37,5 +37,5 @@ In this task, you will see that link state for the interfaces will be **OFF** an
     ![](../images/image027.png)
 
    
-
+# Congratulations, you have successfully completed the lab
 
