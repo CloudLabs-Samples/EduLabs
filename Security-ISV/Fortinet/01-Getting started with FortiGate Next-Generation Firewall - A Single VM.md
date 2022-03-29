@@ -6,7 +6,7 @@
 * **02 - Login to Azure Portal**
 * **03 - Getting Started with Azure Portal**
 * **04 - Configure FortiGate for Web Traffic**
-* **05 - Access the Webserver through Internet**
+* **05 - Access the Webserver**
 
 ## Overview
 
