@@ -2,9 +2,15 @@
 
 ## Overview
 
-In this task you will configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard and then add Virtual IPs to provide secured access from your device to the webserver hosted in Azure and protected by the FortiGate.
+In this task you will try to access the webserver via FortiGate's FQDN, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard and then add Virtual IPs to provide secured access from your device to the webserver hosted in Azure and protected by the FortiGate.
 
-## Task: Configuring an Apache webserver through FortiGate dashboard
+## Task 1: Access the Webserver
+
+1. Open a new tab in the browser and attempt to access the webserver via http to the same FQDN as the FortiGate. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
+
+    
+
+## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
 1. On the FortiGate dashboard click on **Policy & Objects** dropdown and the **Virtual IPs**.
     
@@ -44,7 +50,7 @@ In this task you will configure Firewall policies on the FortiGate-VM firewall v
     
 ## Summary
 
-In this task you configured the Firewall policies on the FortiGate-VM firewall through the FortiGate dashboard and then added Virtual IPs to provide secured access from your device to the webserver hosted in Azure.
+In this task you tried to access the webserver using FortiGate's FQDN, configured the Firewall policies on the FortiGate-VM firewall through the FortiGate dashboard and then added Virtual IPs to provide secured access from your device to the webserver hosted in Azure.
 
 
 Click on **Next** to continue to the next section of the lab.
