@@ -2,7 +2,7 @@
 
 ## Overview 
 
-In this task you will connect to the Apache webserver via internet which you configured previously in the FortiGate dashboard.
+In this task you will access the Apache webserver hosted in Azure via internet using the FQDN which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
 
 ## Task: Connect to the Webserver
 
@@ -14,4 +14,8 @@ In this task you will connect to the Apache webserver via internet which you con
 
     ![](../images/image_410.png)   
     
-3. Click on **Next** to see the summary of the lab.
+## Summary
+
+In this task you accessd the Apache webserver through the internet using the Apache-VM's FQDN.
+
+Click on **Next** to see the summary of the lab.
