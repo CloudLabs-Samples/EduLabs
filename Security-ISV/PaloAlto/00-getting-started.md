@@ -2,9 +2,13 @@
 
 ## Overview
 
-This document helps you to view the precreated resources for this lab
-
+ In this task, you will view the pre-created resources of this lab
+ 
 ### Task 1 : Getting started with the environment
+
+1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
+ 
+     ![](../images/image031.png)
 
 1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com)
 
@@ -23,3 +27,7 @@ This document helps you to view the precreated resources for this lab
      ![](../images/image02.png)
 
 1. You can able to view the deployed resources in that resource group **poloalto-DID**.
+
+     ![](../images/image029.png)
+
+ 

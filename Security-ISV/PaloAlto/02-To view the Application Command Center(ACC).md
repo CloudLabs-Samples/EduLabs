@@ -6,7 +6,7 @@ In this task, you can able to view the Application Command Center(ACC). This pro
 
 The default view of **ACC** will show the network, threat , blocked and tunnel activity in four seperate tabs. The time frame and each tab can be customized to display the revelant application, threat, and can view the user activity depending upon the user role.
 
-1. Switch back to the Firewall dashboard Page, Click on the **ACC** tab.
+1. Switch back to the PaloAlto Network dashboard Page, Click on the **ACC** tab.
  
     ![](../images/image06.png)
 

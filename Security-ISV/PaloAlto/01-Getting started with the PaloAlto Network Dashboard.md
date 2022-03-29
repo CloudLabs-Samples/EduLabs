@@ -4,9 +4,9 @@
 
 In this lab, you will be able to access the paloAlto Network Dashboard and explore various options in it.
  
-1. Let us start by logging into the **PaloAlto Networks page**. Copy the link for **VMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
+1. Let us start by logging into the **PaloAlto Networks** page. Copy the link for **PaloAltoVMseriesURL** under the **Environment Details** tab and open it in a new tab in your browser.
 
-   ![](../images/image08.png)
+   ![](../images/image032.png)
 
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
        
@@ -16,9 +16,11 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
 
     ![](../images/image04.png)
     
-1. On the page that loads up, enter the username, password which is provided under **Environment Details** tab and click on Log in.
+1. On the page that loads up, enter the **PaloaltoUsername**, **PaloaltoPassword** which is provided under **Environment Details** tab and click on Log in.
 
-1. Now, you will be redirected to the dashboard to the VM-Series.
+    ![](../images/image030.png)
+
+1. Now, you will be redirected to the dashboard to the **PaloAlto Networks**.
 
 1. The dashboard provides a detailed visual summary of the device status.
 

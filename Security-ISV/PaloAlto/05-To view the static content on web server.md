@@ -37,6 +37,14 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 1. Navigate to the **Dashbord** and you can see the data for **Config Logs** and **System Logs**.
  
     ![](../images/image027.png)
+    
+1. Switch back to the PaloAlto Network dashboard Page, Click on the ACC tab to view the data.
+
+    ![](../images/image033.png)
+    
+1. By clicking on the arrow towards the right of the filter, which will force all other widgets to be updated based on the context.
+
+    ![](../images/image034.png)
 
    
 # Congratulations, you have successfully completed the lab
