@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will view the pre-deployed resources in the **fortiGate-XXXX** RG.
+In this task, you will navigate to your resource group, note down the Private IPs of the virtual machines in a notepad and view the pre-deployed resources. 
 
 ## Task
 
@@ -50,7 +50,11 @@ In this task, you will view the pre-deployed resources in the **fortiGate-XXXX**
     
 12. Explore through pre-deployed resources from the resource list.
 
-13. Click on Next to continue to the next section of the lab.
+## Summary
+
+In this task you navigated to your resource group, noted down the Private IPs of the virtual machines and went through the pre-deployed resources.
+
+Click on **Next** to continue to the next section of the lab.
     
     
 
