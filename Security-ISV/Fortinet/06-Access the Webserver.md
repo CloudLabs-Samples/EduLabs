@@ -18,4 +18,4 @@ In this task you will access the Apache webserver hosted in Azure via internet u
 
 In this task you accessd the Apache webserver through the internet using the Apache-VM's FQDN.
 
-Click on **Next** to see the summary of the lab.
+
