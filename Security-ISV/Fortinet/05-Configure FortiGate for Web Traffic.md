@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task you will configure the web traffic of an Apache server through the FortiGate dashboard.
+In this task you will configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard and then add Virtual IPs to provide secured access from your device to the webserver hosted in Azure and protected by the FortiGate.
 
 ## Task: Configuring an Apache webserver through FortiGate dashboard
 
@@ -42,4 +42,9 @@ In this task you will configure the web traffic of an Apache server through the 
     
     ![](../images/image_409.png)
     
-6. Click on **Next** to continue to the next section of the lab.
+## Summary
+
+In this task you configured the Firewall policies on the FortiGate-VM firewall through the FortiGate dashboard and then added Virtual IPs to provide secured access from your device to the webserver hosted in Azure.
+
+
+Click on **Next** to continue to the next section of the lab.
