@@ -8,7 +8,7 @@ In this task you will try to access the webserver via FortiGate's FQDN, configur
 
 1. Open a new tab in the browser and attempt to access the webserver via http to the same FQDN as the FortiGate. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
 
-    
+    ![](../images/image123.png)
 
 ## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
