@@ -1,5 +1,9 @@
 # 02 - Log-in to the Azure portal
 
+## Overview
+
+In this task you will login to Microsoft Azure using your credentials and access the Azure Portal dashboard.
+
 1. Open a New InPrivate window and sign in to the **Azure Portal** (http://portal.azure.com).
 
 2. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.
@@ -29,4 +33,8 @@
     
 7. Now will now see the Azure Portal Dashboard.
 
-8. Click on **Next** to continue to the next section of the lab.
+## Summary
+
+In this task, you logged into Microsoft Azure using your credentials and accessed the Azure Portal dashboard.
+
+Click on **Next** to continue to the next section of the lab.
