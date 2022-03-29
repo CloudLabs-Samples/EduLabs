@@ -1,4 +1,4 @@
-# 01 - Accessing the Fortinet Dashboard 
+# 01 - Accessing the FortiGate Dashboard 
 
 ## Overview 
 
@@ -31,7 +31,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
     ![](../images/image_706.png)
 
-7. The **Fortinet** dashboard will appear as shown below.
+7. The **FortiGate** dashboard will appear as shown below.
 
     ![](../images/image_708.png)
      
