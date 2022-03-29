@@ -4,8 +4,6 @@
 
 In this task, you will navigate to your resource group, note down the Private IPs of the virtual machines in a notepad and view the pre-deployed resources. 
 
-## Task
-
 1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
  
     ![](../images/Picture1.png)
