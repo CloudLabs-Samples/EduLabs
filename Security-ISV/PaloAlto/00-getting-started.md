@@ -2,8 +2,8 @@
 
 ## Overview
 
-This document helps you to view the precreated resources for this lab
-
+ In this task, you will view the pre-created resources of this lab
+ 
 ### Task 1 : Getting started with the environment
 
 1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com)
