@@ -28,6 +28,6 @@
 
 1. You can able to view the deployed resources in that resource group **poloalto-DID**.
 
-     ![](../images/image29.png)
+     ![](../images/image029.png)
 
  
