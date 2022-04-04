@@ -25,6 +25,9 @@
       },
       "trainerUserPassword": {
         "value": "Password.1!!"
-      }
+      },
+      "InstallCloudLabsShadow": {
+        "value": "yes"
+      }   
     }
 }
