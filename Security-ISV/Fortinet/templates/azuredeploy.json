@@ -38,7 +38,7 @@
       "AzureTenantID": "[subscription().tenantId]",
       "location": "[resourceGroup().location]",
       "rgName": "[resourceGroup().name]",
-      "jumpVmName": "[concat('JUMP-VM-',parameters('DeploymentID'))]",
+      "jumpVmName": "[concat('JUMPVM-',parameters('DeploymentID'))]",
       "networkInterfaceName": "[concat(variables('jumpVmName'), '-nic')]",
       "publicIpAddressName": "[concat('labvmip', uniqueString(resourceGroup().id))]",
       "networkSecurityGroupName": "nsg",
