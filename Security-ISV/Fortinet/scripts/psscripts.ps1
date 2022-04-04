@@ -16,7 +16,7 @@ Param (
     $ODLID,
     
     [string]
-    $DeploymentID
+    $DeploymentID,
 
     [string]
     $InstallCloudLabsShadow,
