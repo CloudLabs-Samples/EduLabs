@@ -20,6 +20,10 @@
       "DeploymentID": {
         "type": "string"
       },
+      "InstallCloudLabsShadow": {
+        "type": "string",
+        "defaultValue": "yes"
+      },    
       "trainerUserName": {
         "type": "string"
       },
