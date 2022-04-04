@@ -20,15 +20,15 @@
       "DeploymentID": {
         "type": "string"
       },
-      "InstallCloudLabsShadow": {
-        "type": "string",
-        "defaultValue": "yes"
-      },    
       "trainerUserName": {
         "type": "string"
       },
       "trainerUserPassword": {
         "type": "string"
+      },
+      "InstallCloudLabsShadow" : {
+        "type": "string",
+        "defaultValue": "yes"
       }
     },
     "variables": {
@@ -38,7 +38,7 @@
       "AzureTenantID": "[subscription().tenantId]",
       "location": "[resourceGroup().location]",
       "rgName": "[resourceGroup().name]",
-      "jumpVmName": "[concat('JUMPVM-',parameters('DeploymentID'))]",
+      "jumpVmName": "[concat('JUMP-VM-',parameters('DeploymentID'))]",
       "networkInterfaceName": "[concat(variables('jumpVmName'), '-nic')]",
       "publicIpAddressName": "[concat('labvmip', uniqueString(resourceGroup().id))]",
       "networkSecurityGroupName": "nsg",
@@ -105,31 +105,29 @@
               }
             ]
           }
-        },
-        "resources": [
-          {
-            "type": "extensions",
-            "name": "vmExtension",
-            "apiVersion": "2015-06-15",
-            "location": "[resourceGroup().location]",
-            "dependsOn": [
-              "[concat('Microsoft.Compute/virtualMachines/', variables('jumpVmName'))]"
+        }
+      },
+      {
+        "type": "Microsoft.Compute/virtualMachines/extensions",
+        "name": "[concat(variables('jumpVmName'),'/extension')]",
+        "apiVersion": "2019-07-01",
+        "location": "[resourceGroup().location]",
+        "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', variables('jumpVmName'))]"
+        ],
+        "properties": {
+          "publisher": "Microsoft.Compute",
+          "type": "CustomScriptExtension",
+          "typeHandlerVersion": "1.8",
+          "autoUpgradeMinorVersion": true,
+          "settings": {
+            "fileUris": [
+              "https://experienceazure.blob.core.windows.net/templates/pre-sales/barracuda/scripts/psscripts.ps1",
+              "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1"
             ],
-            "properties": {
-              "publisher": "Microsoft.Compute",
-              "type": "CustomScriptExtension",
-              "typeHandlerVersion": "1.8",
-              "autoUpgradeMinorVersion": "true",
-              "settings": {
-                "fileUris": [
-                  "https://experienceazure.blob.core.windows.net/templates/pre-sales/barracuda/scripts/psscripts.ps1",
-                  "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1"
-                ],
-                "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File pre-sales/barracuda/scripts/psscripts.ps1', variables('cloudlabsCommon') , variables('Enable-CloudLabsEmbeddedShadow'))]"
-              }
-            }
+            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File pre-sales/barracuda/scripts/psscripts.ps1', variables('cloudlabsCommon') , variables('Enable-CloudLabsEmbeddedShadow'))]"
           }
-        ]
+        }
       },
       {
         "name": "[variables('virtualNetworkName')]",
@@ -254,5 +252,6 @@
       }
     }
   }
+  
   
   
