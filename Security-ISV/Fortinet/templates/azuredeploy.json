@@ -122,10 +122,10 @@
           "autoUpgradeMinorVersion": true,
           "settings": {
             "fileUris": [
-              "https://experienceazure.blob.core.windows.net/templates/pre-sales/barracuda/scripts/psscripts.ps1",
+              "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/scripts/psscripts.ps1",
               "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1"
             ],
-            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File pre-sales/barracuda/scripts/psscripts.ps1', variables('cloudlabsCommon') , variables('Enable-CloudLabsEmbeddedShadow'))]"
+            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File EduLabs/main/Security-ISV/Fortinet/scripts/psscripts.ps1', variables('cloudlabsCommon') , variables('Enable-CloudLabsEmbeddedShadow'))]"
           }
         }
       },
