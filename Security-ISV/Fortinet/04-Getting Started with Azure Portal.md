@@ -40,7 +40,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
 10. Copy the private IPs of both the virtual machines in a notepad. You will need them in the next task.
 
-    ![](../images/image010.png)
+    ![](../images/image_808.png)
 
 11. Navigate back to the Resource groups and select your Resource Group
 
