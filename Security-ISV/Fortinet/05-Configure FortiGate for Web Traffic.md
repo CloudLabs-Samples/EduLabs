@@ -6,26 +6,43 @@ In this task you will try to access the webserver via FortiGate's FQDN, configur
 
 ## Task 1: Access the Webserver
 
-1. Open a new tab in the browser and attempt to access the webserver via http to the same FQDN as the FortiGate. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
+1. Open a new tab in the browser and attempt to access the webserver via http to the same FQDN as the FortiGate.
+
+    * <inject key="ApacheFQDN"></inject>
 
     ![](../images/image123.png)
+    
+2. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
 
 ## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
-1. On the FortiGate dashboard click on **Policy & Objects** dropdown and the **Virtual IPs**.
+1. Navigate back to FortiGate dashboard and login with the user credentials given below if the session has expired.
+
+    * **Username**:  <inject key="AdminUsername"></inject>
+    * **Password**:  <inject key="AdminPassword"></inject>
+
+    ![](../images/image_412.png)
+    
+2. Click on **OK** to bypass “What’s New in FortiOS 7.0".
+
+    ![](../images/image_709.png)
+
+3. On the FortiGate dashboard click on **Policy & Objects** dropdown and select **Virtual IPs**.
     
     ![](../images/image_402.png)
     
-2. Click on the  **Create New** button and the select **Virtual IP**.
+2. Click on the  **Create New** button and the select **Virtual IP** from the drop down.
 
     ![](../images/image_403.png)
     
-3. Create a new virtual IP to forward traffic for interface **port1** by entering the following values, enable **Port Forwarding** to specify the ports and then click **OK**.
+3. Create a new virtual IP to forward traffic for interface **port1** by entering the following values and then click **OK**.
     
     * Name:  **WebTraffictoWebserver**
     * Interface:  **port1**
     * External IP Address/Range:  **10.0.1.4**
     * Map to IPv4 Address/Range:  **10.0.3.4**
+    * Enable **Port Forwarding**
+    * Protocol:  **TCP**
     * External service port:  **80**
     * Map to IPv4 port:  **80**
 
