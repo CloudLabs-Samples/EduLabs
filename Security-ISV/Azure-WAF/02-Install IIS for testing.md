@@ -45,7 +45,7 @@ In this task, you will install Install IIS for the virtual machines. The virtual
      
  1. Repeat the above step and install the IIS server to other virtual machine.
 
-
+# Proceed to Task 3 : Create and link a Web Application Firewall policy
 
 
      
