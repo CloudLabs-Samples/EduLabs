@@ -32,21 +32,25 @@ In this task, you will navigate to your resource group, note down the Private IP
 
     ![](../images/image_805.png)
     
-8. In the Network Interfaces blade, you can see the Private IP address of fortigatevm-XXXX. Copy the value of the Private IP address. You will need it in the next task.
+8. In the Network Interfaces blade, you can see the Private IP address of fortigatevm-XXXX. Copy the value of the Private IP address. 
 
     ![](../images/image_806.png)
     
 9. Repeat steps 5 to 8 to obtain the Private IP address of apache-vm as well by selecting **apache-vm** in step 5.
 
-10. Navigate back to the Resource groups and select your Resource Group
+10. Copy the private IPs of both the virtual machines in a notepad. You will need them in the next task.
+
+    ![](../images/image010.png)
+
+11. Navigate back to the Resource groups and select your Resource Group
 
     ![](../images/image_807.png)
     
-11. On the Resource group blade, click on **Overview**.
+12. On the Resource group blade, click on **Overview**.
 
     ![](../images/image_801.png)
     
-12. Explore through pre-deployed resources from the resource list.
+13. Explore through pre-deployed resources from the resource list.
 
 ## Summary
 
