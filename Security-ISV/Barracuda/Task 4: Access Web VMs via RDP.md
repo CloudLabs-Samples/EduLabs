@@ -8,21 +8,15 @@ In this task, You will access Web VMs via RDP
 
 ### Instructions
 
-1. Launch a **browser** and Navigate to https://portal.azure.com.
+1. Switch back to the Azure portal tab.
 
-1.	Login with your MicrosoftAzure credentials.
-
-1.	To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
-
-      ![](../images/Picture36.png)
- 
 1.	Click on the **Resource groups** button in the **Menu navigation** bar, to view the Resource groups blade.
 
       ![](../images/Picture37.jpg)
 
-1. Select the **ODL-Barracuda-XXXX** resource group in the resource groups blade.
+1. Select the **barracuda-DeploymentID** resource group in the resource groups blade.
 
-      ![](../images/Picture38.jpg)
+      ![](../images/image-904.jpg)
  
 1.	From the list of resources, select **web RDP-lb**.
 
@@ -48,7 +42,10 @@ In this task, You will access Web VMs via RDP
 
 1. Click **Connect**.
 
-1.	In the following window, provide the **Username** as `.\barracudauser` and **Password** as <inject key="Barracuda Password"></inject> and Click **OK**.
+1.	In the following window, enter the Username and Password as given below and click **OK**.
+
+   * **Username**:  ```.\barracudauser``` 
+   * **Password**:  <inject key="Barracuda Password"></inject>
 
       ![](../images/Picture44.png)
 
@@ -59,4 +56,10 @@ In this task, You will access Web VMs via RDP
 1.	This should open the remote desktop to the virtual machine.
 
       ![](../images/Picture46.jpg)
+      
+# Conclusion
+      
+  Congratulation, You have completed this workshop. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+  
+----------------
 

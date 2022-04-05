@@ -1,11 +1,11 @@
-# 03 - Configuring Barracuda Firewall 
+# 03: Configuring Barracuda Firewall 
 
 ## Overview
 In this task, you will configure the Barracuda Web Application firewall hosted on Azure for publishing IIS Based websites.
 
-## Task 1: Configuring Barracuda Firewall   
- 
-1. In the **Sign-In page** of Barracuda, use the following credentials:
+## Task 1: Configuring Barracuda Firewall  
+
+1. Switch back to Barracuda Tab and In the **Sign-In page** of Barracuda, use the following credentials:
 
    - Username : <inject key="Barracuda Username"></inject> 
    - Password : <inject key="Barracuda Password"></inject> 
@@ -86,11 +86,11 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
 1. Click on **Save** after any configuration change.
 
-1. Open a new tab in the browser. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
+1. Again click on **+** to open a New tab. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
 
-    ![](../images/Picture31.png)
+    ![](../images/image-908.png)
 
-1. As you can see, the request will be forwarded to the backend web servers as configured.
+1. As you can see, the request will be forwarded to the backend web servers as configured, and try to refresh this page once or twice.
 
     ![](../images/Picture32.jpg)
 
@@ -102,8 +102,12 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/Picture35.png)
 
-1.	Now you can update the website at the backend servers as per your requirements and configure similar services via Barracuda. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+# Conclusion
 
-1. Click on **Next** to continue to the next section of the lab.
+Congratulation, You have completed this lab. Follow Barracuda documentation to learn more about configuring Barracuda web application firewall (https://campus.barracuda.com/product/webapplicationfirewall)
+  
+----------------
+
+
 
 
