@@ -47,7 +47,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
      
 2. Connect to the webserver host via the CLI Console by copying the following command & password in the console. Click ENTER on your keyboard for executing the commands.
      
-    * **exec ssh labuser@10.0.3.4**<copy>
+    * **exec ssh fortigateuser@10.0.3.4**<copy>
     * **labuser@10.0.3.4's password**:  <inject key="AdminPassword"></inject>
      
     ![](../images/image_401.png)
