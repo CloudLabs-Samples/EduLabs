@@ -30,5 +30,5 @@
      ![](../images/waf048.png)
 
 
-# Proceed to Task 1 : View the Apl=plication Gateway
+# Proceed to Task 1 : View the Application Gateway
  
