@@ -4,7 +4,9 @@
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. With Azure Application Gateway, you direct your application web traffic to specific resources by assigning listeners to ports, creating rules, and adding resources to a backend pool.
 
-In this task, you will learn how to create application gateway through azure portal.
+Backend pools can be composed of NICs, virtual machine scale sets, public IPs, internal IPs, fully qualified domain names (FQDN), and multi-tenant back-ends. The backend pool is used to route requests to the backend servers that will respond.
+
+In this task, you will view the backend pool with your application gateway and then added backend targets to the backend pool.
 
 1. Navigate to [Azure Portal](https://portal.azure.com) and login with the credentails provided.
 
@@ -12,31 +14,23 @@ In this task, you will learn how to create application gateway through azure por
 
      ![](../images/waf021.png)
 
-1. Under the resource group tab, select **waf-DID**.
+1. Under the resource group tab, select the resource group **waf-DID**.
 
-     ![](../images/waf022.png)
+     ![](../images/waf051.png)
 
-1. On the resource group page of **waf-DID**, select the **gateway-DID**.
+1. On the resource group page of **waf-DID**, select the application gateway with the name **gateway-DID**.
 
-     ![](../images/waf023.png)
+     ![](../images/waf050.png)
 
-1. On the overview page, verify the details such as **Frontend public IP addres**, **Virtual Network/Subnets**.
+1. On the application gatway overview page, under **settings**, select the **HTTP Settings** and select **httpsetting**.
 
-     ![](../images/waf024.png)
-
-1. On the left side of the portal, under **settings**, select the **HTTP Settings**.
-
-1. On the gatewayDID|HTTP settings page, select **httpsetting**.
-
-     ![](../images/waf025.png)
+     ![](../images/waf052.png)
 
 1. On the **Add HTTP setting**, review the settings and click on **Cancel**.
 
      ![](../images/waf026.png)
 
-1. On the left side of the portal, under **settings**, select the **Listeners**.
-
-1. On the gatewayDID|Listeners page, select **MyListener**.
+1. On the application gateway overview, under **settings**, select the **Listeners** and select **MyListener**.
 
      ![](../images/waf027.png)
 
@@ -46,7 +40,7 @@ In this task, you will learn how to create application gateway through azure por
 
 1. Under **Settings**, select **Rules**.
 
-1. On the **gatewayDID| Rules**, select **routingrule**.
+1. On the **application gateway**, select **routingrule**.
 
       ![](../images/waf029.png)
 
@@ -60,9 +54,7 @@ In this task, you will learn how to create application gateway through azure por
 
       ![](../images/waf031.png)
 
-1. On the left side of the portal, under **settings**, select the **Backend pools**.
-
-1. On the backend pools page, select the **backendpool**.
+1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
 
       ![](../images/waf032.png)
 
