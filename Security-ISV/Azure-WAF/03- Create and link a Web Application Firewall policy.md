@@ -46,3 +46,4 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
      ![](../images/waf045.png)
 
+# Proceeed to Task 4 : Test the application gateway
