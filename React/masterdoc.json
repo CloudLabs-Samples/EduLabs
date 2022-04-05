@@ -4,9 +4,41 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/readme.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/00-getting-started.md",
         "Order": 1
-      }
+      },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/01-key-concepts.md",
+      "Order": 2
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/02.md",
+      "Order": 3
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/03.md",
+      "Order": 4
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/04.md",
+      "Order": 5
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/05.md",
+      "Order": 6
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/06.md",
+      "Order": 7
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/07.md",
+      "Order": 8
+     },
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/React/08-summary.md",
+      "Order": 9
+     }
     ]
   }
 ]

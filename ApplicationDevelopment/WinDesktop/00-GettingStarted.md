@@ -1,6 +1,8 @@
 # Getting Started with Windows Desktop Application Development
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab. You can see the number on lab guide bottom area to switch on different exercises of lab guide.
+1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. 
+   
+   >Note: Use this virtual machine throughout the workshop to perform the the lab. You can see the number on lab guide bottom area to switch on different exercises of lab guide.
 
    ![](./media/labenvironment-1.png)
 
@@ -22,4 +24,8 @@
  
    ![](./media/labenvironment-4.png)
  
+ 
+ You can see the page number on lab guide at the bottom area to switch on different exercises of the lab guide.
+ 
+ Click on **Next** at the bottom of lab guide to move to the next exercise.
 
