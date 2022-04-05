@@ -77,7 +77,7 @@ In this task, you will learn how to create application gateway through azure por
       ![](../images/waf033.png)
 
 
-
+# Proceed to Task 2 : Install IIS for testing
 
 
 
