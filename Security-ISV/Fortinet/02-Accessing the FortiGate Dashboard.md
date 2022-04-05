@@ -6,13 +6,13 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
 ## Task 1: Accessing the FortiGate Dashboard 
 
-1. Open a new tab in the browser and copy-paste the FortiGateFQDN <inject key="FortiGateFQDN"></inject>
+1. In the LabVM desktop, select the **Microsoft Edge** icon and in a new tab copy-paste the FortiGateFQDN <inject key="FortiGateFQDN"></inject>
      
-2. A page shown below will apear. Click on **Adavanced**.
+2. A page shown below will apear. Click on **Advanced** on the web page.
 
     ![](../images/image_701.png)
      
-3. Click on the following link on the page as shown below. 
+3. Click on the link **Continue to fortigatevm-XXXXX** on the page as shown below. 
 
     ![](../images/image_702.png)
      
@@ -30,8 +30,12 @@ In this task, you will access the FortiGate dashboard through the internet by us
 6. A **Dashboard Setup** page appears as shown below. Keep the **Optimal** option as default and click on **OK**
 
     ![](../images/image_706.png)
+    
+7. Click on **OK** to bypass “What’s New in FortiOS 7.0".
 
-7. The **FortiGate** dashboard will appear as shown below.
+     ![](../images/image_709.png)
+
+8. The **FortiGate** dashboard will appear as shown below.
 
     ![](../images/image_708.png)
      
@@ -41,9 +45,9 @@ In this task, you will access the FortiGate dashboard through the internet by us
      
     ![](../images/image_400.png)
      
-2. Connect to the webserver host via the CLI Console by copying the following command and password in the console.
+2. Connect to the webserver host via the CLI Console by copying the following command & password in the console. Click ENTER on your keyboard for executing the commands.
      
-    * **exec ssh labuser@10.0.3.4**
+    * **exec ssh labuser@10.0.3.4**<copy>
     * **labuser@10.0.3.4's password**:  <inject key="AdminPassword"></inject>
      
     ![](../images/image_401.png)
