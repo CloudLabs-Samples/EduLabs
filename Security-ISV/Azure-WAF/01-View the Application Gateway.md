@@ -6,13 +6,7 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 In this task, you will learn how to create application gateway through azure portal.
 
-1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com) and login with the credentials provided under **Environment Details** tab.
-
-     ![](../images/waf01.png)
-
-1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
-
-     ![](../images/image01.png)
+1. Navigate to [Azure Portal](https://portal.azure.com) and login with the credentails provided.
 
 1. On the home page, select **resource group**.
 
