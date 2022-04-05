@@ -4,31 +4,31 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/00-Fortinet-intro.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/00-Fortinet-intro.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/01-Getting%20started%20with%20FortiGate%20Next-Generation%20Firewall%20-%20A%20Single%20VM.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/01-Getting%20started%20with%20FortiGate%20Next-Generation%20Firewall%20-%20A%20Single%20VM.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/02-Accessing%20the%20FortiGate%20Dashboard.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/02-Accessing%20the%20FortiGate%20Dashboard.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/03-Login%20to%20Azure%20portal.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/03-Login%20to%20Azure%20portal.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/04-Getting%20Started%20with%20Azure%20Portal.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/04-Getting%20Started%20with%20Azure%20Portal.md",
         "Order": 5
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/05-Configure%20FortiGate%20for%20Web%20Traffic.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/05-Configure%20FortiGate%20for%20Web%20Traffic.md",
         "Order": 6
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Fortinet/06-Access%20the%20Webserver.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/06-Access%20the%20Webserver.md",
         "Order": 7
       }
     ] 
