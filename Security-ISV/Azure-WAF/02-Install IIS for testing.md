@@ -41,7 +41,7 @@ In this task, you will install Install IIS for the virtual machines. The virtual
           
  1. Verify the status as **OK**.
 
-        ![](../images/waf036.png)
+       ![](../images/waf036.png)
      
  1. Repeat the above step and install the IIS server to other virtual machine.
 
