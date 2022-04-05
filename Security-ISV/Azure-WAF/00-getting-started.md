@@ -4,7 +4,7 @@
 
  In this task, you will view the pre-created resources of this lab
  
-### Task 1 : Getting started with the environment
+## Getting started with the environment
 
 1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
 
@@ -29,4 +29,6 @@
 
      ![](../images/waf048.png)
 
+
+# Proceed to Task 1 : View the Apl=plication Gateway
  
