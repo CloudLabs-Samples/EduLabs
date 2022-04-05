@@ -16,7 +16,7 @@ In this task you will try to access the webserver via FortiGate's FQDN, configur
 
 ## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
-1. Navigate back to FortiGate dashboard and login with the user credentials given below if the session has expired.
+1. Navigate back to FortiGate dashboard and login with the user credentials given below if the session has expired and click on **Login**.
 
     * **Username**:  <inject key="AdminUsername"></inject>
     * **Password**:  <inject key="AdminPassword"></inject>
