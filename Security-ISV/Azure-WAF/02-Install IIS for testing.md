@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will install Install IIS for the virtual machines. The virtual are pre-created.
+In this task, you will install Install IIS for the virtual machines. The virtual machines are pre-created
 
 1. On the home page, select **resource group**.
 
