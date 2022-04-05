@@ -4,9 +4,9 @@
 
 In this task, you will navigate to your resource group, note down the Private IPs of the virtual machines in a notepad and view the pre-deployed resources. 
 
-1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
+1. On the Azure Portal, click on **Show portal menu**.
  
-    ![](../images/Picture1.png)
+    ![](../images/Picture01.png)
        
 2. **Click** on the **Resource groups** button in the **Menu navigation bar** to view the Resource groups blade.
 
