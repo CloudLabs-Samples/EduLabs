@@ -6,11 +6,13 @@
  
 ## Getting started 
 
-1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
+1. Click on the **Resource tab**, and you can able to view the virtual Machines running. You can start and stop the virtual machines.
+
+1. Click on the start(1) to start the virtual machine and stop(2) to stop the virtual machine.
 
      ![](../images/waf049.png)
 
-1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com) and login with the credentials provided under **Environment Details** tab.
+1. On the environment provided to you, on the left side of the environment launch the browser and Navigate to [Azure Portal](https://portal.azure.com) and login with the credentials provided under **Environment Details** tab.
 
      ![](../images/waf01.png)
 
