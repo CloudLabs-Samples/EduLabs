@@ -63,7 +63,7 @@ In this task, you will view the backend pool with your application gateway and t
       ![](../images/waf033.png)
 
 
-# Proceed to Task 2 : Install IIS for testing
+# Proceed to Task 2 : Create and link a Web Application Firewall policy
 
 
 
