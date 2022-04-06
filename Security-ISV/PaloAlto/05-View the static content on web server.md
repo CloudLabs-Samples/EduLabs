@@ -1,10 +1,10 @@
-# Task 5 : To view the static content on web server
+# Task 5: View the static content on web server
 
 ## Overview
 
-In this task, you will see that link state for the interfaces will be **OFF** and the static content of the webserver page will be showing error at this moment. You will resolve that error and can able to view the static content of the web server and also verify the status of the link state for the interfaces will be **UP**
+In this task, you will see that link state for the interfaces will be **OFF** and the static content of the webserver page will be showing an error at this moment. You will resolve that error and can able to view the static content of the web server and also verify the status of the link state for the interfaces will be **UP**
 
-1. On the **PaloAlto Network** dashboard page, select the **Network** tab and select **Interfaces** and verify the **Link State** is **OFF** for the interface type **Layer 3**.
+1. On the **PaloAlto VMseries Firewall** dashboard page, select the **Network** tab and select **Interfaces** and verify the **Link State** is **OFF** for the interface type **Layer 3**.
 
     ![](../images/image028.png)
 
@@ -22,11 +22,11 @@ In this task, you will see that link state for the interfaces will be **OFF** an
     
     ![](../images/image025.png)
     
-1. Now switch back to the **Palolalto Network** dashboard, navigate to the **Network** tab and select the **Interfaces** and verify the **Link Status** is **UP**. The Interfaces should turn into the **Green** color.
+1. Now on the **PaloAlto VMseries Firewall** dashboard, navigate to the **Network** tab and select the **Interfaces** and verify the **Link Status** is **UP**. The Interfaces should turn into the **Green** color.
 
     ![](../images/image026.png)
     
-1. To verify the static content of the webserver. Navigate to the **Environment Details** tab and copy the URL of **WebServerURL** and open it in the new browser.
+1. To verify the static content of the webserver. Navigate to the **Environment Details** tab and copy the URL of **WebServerURL**: <inject key="WebServerURL"></inject> and open it in the new browser.
    
    ![](../images/image017.png)
    
@@ -38,7 +38,7 @@ In this task, you will see that link state for the interfaces will be **OFF** an
  
     ![](../images/image027.png)
     
-1. Switch back to the PaloAlto Network dashboard Page, Click on the ACC tab to view the data.
+1.On the **PaloAlto VMseries Firewall** dashboard Page, Click on the ACC tab to view the data.
 
     ![](../images/image033.png)
     
@@ -47,5 +47,5 @@ In this task, you will see that link state for the interfaces will be **OFF** an
     ![](../images/image034.png)
 
    
-# Congratulations, you have successfully completed the lab
+# Congratulatios, you have successfully completed the lab
 
