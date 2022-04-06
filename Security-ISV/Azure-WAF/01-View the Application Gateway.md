@@ -1,12 +1,12 @@
-# Task 1 : View the Application Gateway
+# Task 1 : Verify the Application gateway with WAF Enabled
 
 ## Overview
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. With Azure Application Gateway, you direct your application web traffic to specific resources by assigning listeners to ports, creating rules, and adding resources to a backend pool.
 
-Backend pools can be composed of NICs, virtual machine scale sets, public IPs, internal IPs, fully qualified domain names (FQDN), and multi-tenant back-ends. The backend pool is used to route requests to the backend servers that will respond.
+In this task, you will view the backend pool with application gateway attached and then backend targets attached to the backend pool.
 
-In this task, you will view the backend pool with your application gateway and then added backend targets to the backend pool.
+1.  To communicate with the azure resources that is already created, virtual network is needed.
 
 1. Navigate to [Azure Portal](https://portal.azure.com) and login with the credentails provided.
 
@@ -17,10 +17,24 @@ In this task, you will view the backend pool with your application gateway and t
 1. Under the resource group tab, select the resource group **waf-DID**.
 
      ![](../images/waf051.png)
+     
+1. On the resource group page of **Waf-DID**, select the virtual network **vnetDID**.
+
+     ![](../images/waf066.png)
+
+1. On the virtual network page, under **settings**, select **subnet** and verify the subnets **agsubnet** and **backendsubnet** which is already attached.
+
+    ![](../images/waf067.png)
 
 1. On the resource group page of **waf-DID**, select the application gateway with the name **gateway-DID**.
 
      ![](../images/waf050.png)
+     
+## Task 2 : Frontend Tab 
+
+1. On the application gateway overview page, verify the **Frontend IP Address** is set to **Public**.
+
+    >Note : For the Application Gateway v2 SKU, private frontend IP configuration is currently not enabled.
 
 1. On the application gatway overview page, under **settings**, select the **HTTP Settings** and select **httpsetting**.
 
