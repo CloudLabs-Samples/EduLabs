@@ -5,10 +5,11 @@
 In this hands-on lab you will perform the following tasks:
 
 - **Task 1: Getting started with the PaloAlto VMseries Firewall Dashboard**
-- **Task 2: View the Application Command Center(ACC)**
-- **Task 3: View the Object, Network, and Device Tabs and Security Policies**
-- **Task 4: Explore the various options in Monitor tab**
-- **Task 5: View the static content on web server**
+- **Task 2: Getting started with the Azure Portal**
+- **Task 3: View the Application Command Center(ACC)**
+- **Task 4: View the Object, Network, and Device Tabs and Security Policies**
+- **Task 5: Explore the various options in Monitor tab**
+- **Task 6: View the static content on web server**
 
 # Task 1: Getting started with the PaloAlto VMseries Firewall Dashboard
 
