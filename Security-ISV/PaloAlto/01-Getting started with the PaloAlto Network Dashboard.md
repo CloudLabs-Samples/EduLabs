@@ -1,4 +1,4 @@
-# Task 1 : Getting started with the PaloAlto Network Dashboard
+# Task 1: Getting started with the PaloAlto Network Dashboard
 
 ## Overview
 
