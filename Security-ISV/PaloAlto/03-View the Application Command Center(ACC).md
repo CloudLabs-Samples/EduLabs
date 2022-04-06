@@ -1,4 +1,4 @@
-# Task 2: View the Application Command Center(ACC)
+# Task 3: View the Application Command Center(ACC)
 
 ## Overview
 
@@ -24,4 +24,4 @@ The default view of **ACC** will show the network, threat, blocked, and tunnel a
 
 >Note: Since this is a new firewall, you cannot see much data for now.
 
-### Proceed to Task 3: View the Object, Network, and Device Tabs and Security Policies
+### Proceed to Task 4: View the Object, Network, and Device Tabs and Security Policies
