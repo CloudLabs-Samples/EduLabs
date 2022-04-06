@@ -4,22 +4,18 @@
 
 In this task, we will use  IIS to test the application gateway.
 
-1. On the home page, select **resource group**.
+1. To get the lab environment details, you can select the Environment Details tab.
 
-     ![](../images/waf021.png)
+     ![](../images/waf065.png)
 
-1. Under the resource group tab, select **waf-DID**.
+1. Copy the **publicIPAddress** and paste in the browser
 
-      ![](../images/waf054.png)
+      ![](../images/waf064.png)
      
-1. Under the resource group, select **gatewayDID**.
-
-1. On the overview tab, select the **Frontend public IP address** and open it in the browser.
-
 1. Check the response. A valid response verifies that the application gateway was successfully created and it can successfully connect with the backend.
 
-1. Refresh the browser and verify the output.
-
+1. Refresh the browser and verify the output of it. For the refernce, you can verify the screenshot that is attached below
+   
    ![](../images/waf047.png)
    
    ![](../images/waf046.png)
