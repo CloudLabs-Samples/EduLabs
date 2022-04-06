@@ -1,10 +1,4 @@
-# Getting started 
-
-## Overview
-
-In this task, you will view the pre-created resources of this lab.
- 
-### Getting started with the environment
+# Getting started with the environment
 
 1. To get the lab environment details, you can select the Environment Details tab.
 
