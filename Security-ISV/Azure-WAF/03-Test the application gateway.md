@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, we will use  IIS to test the application gateway.
+In this task, you have installed IIS on the virtual machines only to verify that application gateway was successfully created.
 
 1. To get the lab environment details, you can select the Environment Details tab.
 
