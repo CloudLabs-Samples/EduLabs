@@ -15,10 +15,26 @@ In this task, you can view the pre-deployed resources that are needed for this l
 
 1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
 
-1. If you see the pop-up **Stay Signed in?** click **No**.
+    ![](../images/image004.png)
+
+1. If you see the pop-up **Stay Signed in?** click **Yes**.
+
+    ![](../images/image-006.jpg)
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+   
+    ![](../images/image-007.jpg)
+1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
 
+     ![](../images/image01.png)
+
+1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
+
+1. On the Resource group blade, select the resource group with **paloalto-DID**.
+
+1. You can able to view the deployed resources in that resource group **paloalto-DID**.
+
+     ![](../images/image035.png)
 
 # Proceed to Task 3: View the Application Command Center(ACC)
 
