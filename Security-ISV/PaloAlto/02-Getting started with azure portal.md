@@ -1,10 +1,8 @@
-# 02 : Getting started with the Azure Portal
+## Task 2: Getting started with the Azure Portal
 
 ## Overview
 
-In this task, you will view the pre-deployed resources that are needed for this lab.
-
-## Task 2: Getting started with the Azure Portal
+In this task, you can view the pre-deployed resources that are needed for this lab.
 
 1. Open a New tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
