@@ -4,7 +4,7 @@
 
 In this task, you will view the pre-deployed resources that are needed for this lab.
 
-## Task 1: Getting started with the Azure Portal
+## Task 2: Getting started with the Azure Portal
 
 1. Open a New tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
@@ -20,4 +20,7 @@ In this task, you will view the pre-deployed resources that are needed for this 
 1. If you see the pop-up **Stay Signed in?** click **No**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+
+# Proceed to Task 3: View the Application Command Center(ACC)
 
