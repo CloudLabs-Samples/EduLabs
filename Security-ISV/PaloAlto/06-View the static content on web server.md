@@ -47,5 +47,5 @@ In this task, you will see that link state for the interfaces will be **OFF** an
     ![](../images/image034.png)
 
    
-# Congratulatios, you have successfully completed the lab
+# Congratulations, you have successfully completed the lab
 
