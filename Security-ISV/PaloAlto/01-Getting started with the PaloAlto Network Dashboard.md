@@ -1,4 +1,16 @@
-# Task 1: Getting started with the PaloAlto Network Dashboard
+# Getting started with PaloAlto VMseries Firewall
+
+## Tasks Included
+
+In this hands-on lab you will perform the following tasks:
+
+- **Task 1: Getting started with the PaloAlto VMseries Firewall Dashboard**
+- **Task 2: View the Application Command Center(ACC)**
+- **Task 3: View the Object, Network, and Device Tabs and Security Policies**
+- **Task 4: Explore the various options in Monitor tab**
+- **Task 5: View the static content on web server**
+
+# Task 1: Getting started with the PaloAlto VMseries Firewall Dashboard
 
 ## Overview
 
@@ -28,4 +40,4 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
-# Proceed to Task 2: To view the Application Command Center(ACC)
+# Proceed to Task 2: View the Application Command Center(ACC)
