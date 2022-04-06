@@ -32,27 +32,27 @@ In this task, you will view the backend pool with your application gateway and t
 
 1. On the application gateway overview, under **settings**, select the **Listeners** and select **MyListener**.
 
-     ![](../images/waf027.png)
+     ![](../images/waf056.png)
 
 1. On the **MyListener** page review the settings and click on **Cancel**.
 
-     ![](../images/waf028.png)
+     ![](../images/waf057.png)
 
 1. Under **Settings**, select **Rules**.
 
 1. On the **application gateway**, select **routingrule**.
 
-      ![](../images/waf029.png)
+      ![](../images/waf058.png)
 
-1. On the **routingrule** page, review the settings and click on **Cancel**.
+1. On the **routingrule** page, review the settings for the **Listener**.
 
-      ![](../images/waf030.png)
+      ![](../images/waf059.png)
       
 1. On the routingrule page, verify the settings and click on **Backend Target**.
 
 1. Review the details of the backend target and click on **Cancel**.
 
-      ![](../images/waf031.png)
+      ![](../images/waf060.png)
 
 1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
 
