@@ -1,8 +1,8 @@
-# Task 3 : Create and link a Web Application Firewall policy
+# Task 2 : Create and link a Web Application Firewall policy
 
 ## Overview
 
-In this task, you will be creating a Web Application Firewall policy with the associated  Application Gateway
+In this task, you will be creating a Web Application Firewall policy with the associated Application Gateway. All of the WAF customizations and settings are in a separate object, called a WAF Policy.
 
 1. On the upper left side of the portal, select Create a resource. Search for WAF, select **Web Application Firewall**, then select Create.
 
@@ -46,4 +46,4 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
      ![](../images/waf062.png)
 
-# Proceeed to Task 4 : Test the application gateway
+# Proceeed to Task 3 : Test the application gateway
