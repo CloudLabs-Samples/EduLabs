@@ -6,6 +6,8 @@ In this task, you will view the pre-created resources of this lab.
  
 ### Getting started with the environment
 
+1. To get the lab environment details, you can select the Environment Details tab.
+
 1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
  
      ![](../images/image031.png)
@@ -19,14 +21,6 @@ In this task, you will view the pre-created resources of this lab.
 
         **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
 
-1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
+1. Click on Next from the bottom right corner and follow the instructions to perform the lab.
 
-     ![](../images/image01.png)
-
-1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
-
-1. On the Resource group blade, select the resource group with **paloalto-DID**.
-
-1. You can able to view the deployed resources in that resource group **paloalto-DID**.
-
-     ![](../images/image035.png)
+      ![](../images/image-901.jpg)
