@@ -1,15 +1,14 @@
-# Getting started with the an application gateway with a Web Application Firewall 
+# Getting started with the Environment  
 
 ## Overview
 
- In this task, you will view the pre-created resources of this lab
+ In this task, you will view the pre-created resources of this lab.
  
-## Getting started with the environment
+## Getting started 
 
 1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
 
      ![](../images/waf049.png)
-
 
 1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com) and login with the credentials provided under **Environment Details** tab.
 
@@ -23,11 +22,11 @@
 
 1. Under the resource group tab, select **waf-DID**.
 
-     ![](../images/waf022.png)
+     ![](../images/waf054.png)
      
 1. You can able to view the deployed resources in that resource group **waf-DID**.
 
-     ![](../images/waf048.png)
+     ![](../images/waf055.png)
 
 
 # Proceed to Task 1 : View the Application Gateway
