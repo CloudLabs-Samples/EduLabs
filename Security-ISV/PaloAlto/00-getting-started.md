@@ -2,9 +2,9 @@
 
 ## Overview
 
-In this task, you will view the pre-created resources of this lab
+In this task, you will view the pre-created resources of this lab.
  
-### Task 1: Getting started with the environment
+### Getting started with the environment
 
 1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
  
@@ -22,10 +22,10 @@ In this task, you will view the pre-created resources of this lab
 
 1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
 
-1. On the Resource group blade, select the resource group with **poloalto-DID**.
+1. On the Resource group blade, select the resource group with **paloalto-DID**.
 
      ![](../images/image02.png)
 
-1. You can able to view the deployed resources in that resource group **poloalto-DID**.
+1. You can able to view the deployed resources in that resource group **paloalto-DID**.
 
      ![](../images/image029.png)
