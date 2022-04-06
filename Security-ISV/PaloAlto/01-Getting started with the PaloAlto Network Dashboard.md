@@ -37,4 +37,4 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
-# Proceed to Task 2: View the Application Command Center(ACC)
+# Proceed to Task 2: Getting started with the Azure Portal
