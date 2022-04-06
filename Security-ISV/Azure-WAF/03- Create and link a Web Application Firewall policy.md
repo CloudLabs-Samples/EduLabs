@@ -20,7 +20,7 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
 1. Select **Next : Managed rules**.
 
-     ![](../images/waf038.png)
+     ![](../images/waf063.png)
 
 1. Accept the defaults and then select **Next : Policy settings**.
     
@@ -40,10 +40,10 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
 1. On the **Associate an application gateway** page, select the gateway with the **gatewayDID** and click on **Add**.
 
-     ![](../images/waf044.png)
+     ![](../images/waf061.png)
 
-1. Select Review + create, then select Create.
+1. On the **Association** page, review the settings and select Review + create and then select Create.
 
-     ![](../images/waf045.png)
+     ![](../images/waf062.png)
 
 # Proceeed to Task 4 : Test the application gateway
