@@ -27,8 +27,6 @@ In this task, you will view the pre-created resources of this lab.
 
 1. On the Resource group blade, select the resource group with **paloalto-DID**.
 
-     ![](../images/image02.png)
-
 1. You can able to view the deployed resources in that resource group **paloalto-DID**.
 
-     ![](../images/image029.png)
+     ![](../images/image035.png)
