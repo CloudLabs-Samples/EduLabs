@@ -8,7 +8,7 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 
     ![](../images/image013.png)
     
-    >Note : Since the firewall is new, you cannot see any data for now, you can return to this step at the end of the lab and can verify the data.
+>Note : Since the firewall is new, you cannot see any data for now, you can return to this step at the end of the lab and can verify the data.
 
 1. The below screenshot refers to different option to **view and analyze logs** within the **Monitor** tab.
 
@@ -17,10 +17,9 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 1. The screenshot represents the various items  related to **compare the activity over the time period**.
 
     ![](../images/image015.png)
-     
+
 1. You can view the various option for **Fully customizable reporting** under the **Monitor** tab.
 
     ![](../images/image016.png)
-    
-# Proceed to Task 6: View the static content on web server
 
+### Proceed to Task 6: View the static content on web server
