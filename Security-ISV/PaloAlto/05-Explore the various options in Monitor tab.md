@@ -1,4 +1,4 @@
-# Task 4: Explore the various options in Monitor tab
+# Task 5: Explore the various options in Monitor tab
 
 ## Overview
 
@@ -22,5 +22,5 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 
     ![](../images/image016.png)
     
-# Proceed to Task 5: View the static content on web server
+# Proceed to Task 6: View the static content on web server
 
