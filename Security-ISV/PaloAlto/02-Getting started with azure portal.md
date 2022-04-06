@@ -6,12 +6,12 @@ In this task, you can view the pre-deployed resources that are needed for this l
 
 1. Open a New tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
-1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
+1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.
 
-   * **Azure Username/Email**:  <inject key="Username"></inject> 
+   * **Azure Username/Email**:  <inject key="Username"></inject>
    * **Azure Password**:  <inject key="Password"></inject>
 
-       **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+**Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
 
 1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
 
@@ -22,8 +22,9 @@ In this task, you can view the pre-deployed resources that are needed for this l
     ![](../images/image-006.jpg)
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-   
+
     ![](../images/image-007.jpg)
+
 1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
 
      ![](../images/image01.png)
@@ -36,5 +37,4 @@ In this task, you can view the pre-deployed resources that are needed for this l
 
      ![](../images/image035.png)
 
-# Proceed to Task 3: View the Application Command Center(ACC)
-
+### Proceed to Task 3: View the Application Command Center(ACC)
