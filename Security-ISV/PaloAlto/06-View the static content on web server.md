@@ -1,4 +1,4 @@
-# Task 5: View the static content on web server
+# Task 6: View the static content on web server
 
 ## Overview
 
