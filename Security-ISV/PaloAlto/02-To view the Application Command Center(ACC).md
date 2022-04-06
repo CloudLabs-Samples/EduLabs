@@ -24,4 +24,4 @@ The default view of **ACC** will show the network, threat, blocked, and tunnel a
 
 >Note: If you are using a new firewall, you cannot see much data for now.
 
-# Proceed to Task 3: To view the Object, Network, and Device Tabs and Security Policies
+### Proceed to Task 3: To view the Object, Network, and Device Tabs and Security Policies
