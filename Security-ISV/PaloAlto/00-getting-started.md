@@ -12,9 +12,12 @@ In this task, you will view the pre-created resources of this lab.
 
 1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com)
 
-1. Login with the credentials that are provided under the **Environment Details** tab.
+1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
 
-     ![](../images/image08.png)
+   * **Azure Username/Email**:  <inject key="Username"></inject> 
+   * **Azure Password**:  <inject key="Password"></inject>
+
+        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
 
 1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
 
