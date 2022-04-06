@@ -18,8 +18,6 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
 
 1. Let us start by logging into the **PaloAlto VMseries Firewall** page. Copy the link for **PaloAltoVMseriesURL** : <inject key="PaloAltoVMseriesURL"></inject>, open it in a new tab in your browser.
 
-   ![](../images/image032.png)
-
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
     
     ![](../images/image03.png)
@@ -29,8 +27,6 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
     ![](../images/image04.png)
    
 1. On the page that loads up, enter the **PaloaltoUsername** : <inject key="PaloaltoUsername"></inject>, **PaloaltoPassword** : <inject key="PaloaltoPassword"></inject>  and click on Log in.
-
-    ![](../images/image030.png)
 
 1. Now, you will be redirected to the dashboard to the **PaloAlto VMseries Firewall**.
 
