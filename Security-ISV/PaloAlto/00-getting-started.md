@@ -2,9 +2,9 @@
 
 ## Overview
 
- In this task, you will view the pre-created resources of this lab
+In this task, you will view the pre-created resources of this lab
  
-### Task 1 : Getting started with the environment
+### Task 1: Getting started with the environment
 
 1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
  
@@ -29,5 +29,3 @@
 1. You can able to view the deployed resources in that resource group **poloalto-DID**.
 
      ![](../images/image029.png)
-
- 
