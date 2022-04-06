@@ -38,7 +38,7 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
     ![](../images/image027.png)
 
-1.On the **PaloAlto VMseries Firewall** dashboard Page, Click on the ACC tab to view the data.
+1. On the **PaloAlto VMseries Firewall** dashboard Page, Click on the ACC tab to view the data.
 
     ![](../images/image033.png)
 
