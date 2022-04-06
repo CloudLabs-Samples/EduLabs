@@ -10,9 +10,9 @@ In this task, we will use  IIS to test the application gateway.
 
 1. Under the resource group tab, select **waf-DID**.
 
-     ![](../images/waf022.png)
+      ![](../images/waf054.png)
      
-1. Under the resorce group, select **gatewayDID**.
+1. Under the resource group, select **gatewayDID**.
 
 1. On the overview tab, select the **Frontend public IP address** and open it in the browser.
 
