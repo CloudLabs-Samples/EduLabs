@@ -4,7 +4,17 @@
 
 In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure for publishing IIS Based websites.
 
-## Task 1: Configuring F5 Advanced Web Application firewall  
+## Task 1: Access the Webserver
+
+1. Open a new tab in the browser and attempt to access the webserver via http to the same IP address as the F5.
+
+    * <inject key="f5_httpURL"></inject>
+
+    ![](../images/image123.png)
+    
+2. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
+
+## Task 2: Configuring F5 Advanced Web Application firewall  
 
 ### Exercise 1: Creating a pool and adding members to it
 
