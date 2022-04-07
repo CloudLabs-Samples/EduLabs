@@ -4,7 +4,7 @@
 
 In this lab, you will be able to access the paloAlto Network Dashboard and explore various options in it.
 
-1. Let us start by logging into the **PaloAlto VMseries Firewall** page. Copy the link for **PaloAltoVMseriesURL** : <inject key="PaloAltoVMseriesURL"></inject>, open it in a new tab in your browser.
+1. Let us start by logging into the **PaloAlto VMseries Firewall** page. Copy the link for **PaloAltoVMseriesURL** : <inject key="VMseriesURL"></inject>, open it in a new tab in your browser.
 
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
     
