@@ -4,15 +4,9 @@
 
 1. To get the lab environment details, you can select the **Environment Details** tab.
 
-    ![](../images/image040.png)
-
 1. You can start, stop and restart the virtual machines from the Resources tab.
 
-    ![](../images/image041.png)
-
 1. Click on Next from the bottom right corner and follow the instructions to perform the lab.
-
-     ![](../images/image-901.jpg)
 
 1. You can also open the Lab Guide on a separate full window by selecting the Split Window button on the bottom right corner.
 
