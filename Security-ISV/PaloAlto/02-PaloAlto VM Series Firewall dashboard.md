@@ -24,4 +24,7 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
-### Proceed to Task 2: Getting started with the Azure Portal
+# Summary
+In this task you accessed the PaloAlto VMseries Firewall dashboard using the PaloAltoVMseriesURL.
+
+Click on **Next** to continue to the next section of the lab.
