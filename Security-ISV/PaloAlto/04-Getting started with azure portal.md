@@ -1,40 +1,36 @@
-## Task 2: Getting started with the Azure Portal
+## Task 3: Getting started with the Azure Portal
 
 ## Overview
 
-In this task, you can view the pre-deployed resources that are needed for this lab.
+In this task, you will navigate to your resource group and view the pre-deployed resources.
 
-1. Open a New tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
-
-1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.
-
-   * **Azure Username/Email**:  <inject key="Username"></inject>
-   * **Azure Password**:  <inject key="Password"></inject>
-
-**Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
-
-1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
-
-    ![](../images/image004.png)
-
-1. If you see the pop-up **Stay Signed in?** click **Yes**.
-
-    ![](../images/image-006.jpg)
-
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-    ![](../images/image-007.jpg)
-
-1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
+1. On the Azure Portal, click on the **Show Menu** button.
 
      ![](../images/image01.png)
 
 1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
 
+     ![](../images/Picture2.jpg)
+
 1. On the Resource group blade, select the resource group with **paloalto-DID**.
 
-1. You can able to view the deployed resources in that resource group **paloalto-DID**.
+1. You can view the deployed resources in that resource group **paloalto-DID**.
 
      ![](../images/image035.png)
+     
+1. You can view the **Network Interfaces**. 
 
-### Proceed to Task 3: View the Application Command Center(ACC)
+     * **FWeth0** - This is the management interface
+
+     * **FWeth1** - This network interface is in the untrust zone
+
+     * **FWeth2** - This network interface is in the trust zone
+   
+     ![](../images/image036.png)
+
+     >Note : You can learn more about untrust and trust zone in the next section of the lab
+
+# Summary
+In this task you navigated to your resource group, and viewed the pre-deployed resourced
+
+Click on Next to continue to the next section of the lab.
