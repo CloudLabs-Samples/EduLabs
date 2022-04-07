@@ -22,4 +22,7 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 
     ![](../images/image016.png)
 
-### Proceed to Task 6: View the static content on web server
+# Summary
+In this task you have explored various options in **Monitor** tab.
+
+Click on **Next** to continue to the next section of the lab.
