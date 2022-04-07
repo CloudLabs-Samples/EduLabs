@@ -12,7 +12,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
     ![](../images/accesswebserver.png)
     
-2. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
+2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
 ## Task 2: Configuring F5 Advanced Web Application firewall  
 
@@ -85,4 +85,4 @@ In this exercise, A virtual server listens for packets destined for the external
 
 # Conclusion
 
-Congratulations, You have successfully completed this lab. You learned how to publish a Web Application hosted behind F5 advanced WAF
+Congratulations, You have successfully completed this lab. You learned how to publish a Web Application hosted behind F5 advanced Web application firewall
