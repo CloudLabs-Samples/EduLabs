@@ -30,6 +30,17 @@ In this task, you will navigate to your resource group and view the pre-deployed
 
      >Note : You can learn more about untrust and trust zone in the next section of the lab
 
+1. You can view the **Network security group** namely **DefaultNSG**.
+
+    * The Network security group specifies the rules that allows and deny access to the resources within the specific resource group.
+
+1. You can view the Inbound and Outbound security rules of the defaultNSG..
+
+    ![](../images/image043.png)
+    
+    ![](../images/image044.png)
+
+
 # Summary
 In this task you navigated to your resource group, and viewed the pre-deployed resourced
 
