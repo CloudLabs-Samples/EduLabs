@@ -3,6 +3,12 @@
 ## Tasks Included
 
 In this hands-on lab you will perform the following tasks:
+ 
+- **01: Login to Azure Portal**
+- **02: Getting started with the Azure Portal**
+- **03: Verify the Application gateway with WAF Enabled**
+- **04: Create and link a Web Application Firewall policy**
+- **05: Test the application gateway**
 
 
 
