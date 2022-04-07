@@ -30,8 +30,8 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
     
 1. Enter the following F5 Portal username and Password and then click on **Log in**.  
 
-   * **F5 Portal Username**:  <inject key="AzureAdUserEmail"></inject> 
-   * **F5 Portal Password**:  <inject key="AzureAdUserPassword"></inject>
+   * **F5 Portal Username**:  <inject key="F5 Portal Username"></inject> 
+   * **F5 Portal Password**:  <inject key="F5 Portal Password"></inject>
 
         **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
