@@ -33,4 +33,4 @@ In this task, you will navigate to your resource group and view the pre-deployed
 # Summary
 In this task you navigated to your resource group, and viewed the pre-deployed resourced
 
-Click on Next to continue to the next section of the lab.
+Click on **Next** to continue to the next section of the lab.
