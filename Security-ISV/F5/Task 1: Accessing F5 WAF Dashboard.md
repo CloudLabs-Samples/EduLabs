@@ -6,7 +6,7 @@ In this hands-on lab you will perform the following tasks:
 
 - **Task 1: Accessing the F5 Dashboard**
 - **Task 2: Getting started with the Azure Portal**
-- **Task 3: Configuring F5 Firewall**
+- **Task 3: Configuring F5 Advanced Web Application firewall**
 
 ## F5 Web Application Firewall
 
