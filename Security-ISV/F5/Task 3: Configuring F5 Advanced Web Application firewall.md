@@ -7,6 +7,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 ## Task 1: Configuring F5 Advanced Web Application firewall  
 
 ### Exercise 1: Creating a pool and adding members to it
+
 Traffic goes through BIG-IP VE to a pool. Your application servers should be members of this pool.
 
 1. Switch back to F5 WAF Tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
@@ -30,6 +31,50 @@ Traffic goes through BIG-IP VE to a pool. Your application servers should be mem
     ![](../images/f5-14.jpg)
     
 ### Exercise 2: Creating a virtual server
+
 A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
 
-1. 
+1. On the **Main** tab, click **Local Traffic -> Virtual Servers**
+
+    ![](../images/f5-15.jpg)
+    
+1. Click **Create** to create the Virtual server.  
+
+    ![](../images/f5-16.jpg)
+    
+1. In the **General Properties** section, configure as below:
+
+   - Name: **Demo-Websites** (Or your custom service name)
+   - Destination Address/Mask: **0.0.0.0/0**
+   - Service port: **80**
+   - State: Leave the default
+
+    ![](../images/f5-17.jpg)
+ 
+1. In the **Configuration** section, configure as below:
+
+   - Source Address Translation: Select **Auto Map**
+
+    ![](../images/f5-18.jpg)
+
+1. In the **Resource** section, configure as below:
+
+   - Default Pool: Select the Pool which you created in the Previous exercise
+
+   After configuration, click **Finished**.
+    
+    ![](../images/f5-19.jpg)
+ 
+ 1. 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
