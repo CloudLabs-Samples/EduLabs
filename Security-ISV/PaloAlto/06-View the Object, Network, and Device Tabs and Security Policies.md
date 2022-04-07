@@ -1,4 +1,4 @@
-# Task 4: View the Object, Network, and Device Tabs and Security Policies
+# Task 5: The Object, Network, and Device Tabs and Security Policies
 
 ## Overview
 
@@ -34,4 +34,7 @@ In this task, you will learn about the various management capabilities such as t
 
 1. You can also add the policies such as NAT, Decryption, and Qos to the existing policies.
 
-### Proceed to Task 5: Explore the various options in the Monitor tab
+# Summary
+In this task you have explored about the various management capabilities such as the Object tab, Network tab, Device tab, and security policies.
+
+Click on Next to continue to the next section of the lab.
