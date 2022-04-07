@@ -9,6 +9,7 @@ In this hands-on lab you will perform the following tasks:
 - **Task 3: Configuring F5 Advanced Web Application firewall**
 
 ## F5 Web Application Firewall
+F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic, all OWASP top 10 threats and API protocol vulnerabilities.The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
 
 ## Architecture Diagram
    ![](../images/f5-archdiag.jpg)
