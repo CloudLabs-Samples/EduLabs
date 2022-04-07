@@ -84,7 +84,7 @@
       "value": "yes"
     },
     "location": {
-      "value": "East US"
+      "value": "West US"
     },
     "vmName": {
       "value": "apache-vm"
