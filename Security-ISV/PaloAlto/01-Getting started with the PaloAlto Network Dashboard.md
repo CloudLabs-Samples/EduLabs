@@ -19,6 +19,6 @@ The Palo Alto Networks firewall allows you to specify security policies based on
 
 ## Architecture Diagram 
 
-     ![](../images/paloarchi.png)
-
+   ![](../images/image042.png)
+   
 Click on Next to continue to the next section of the lab.
