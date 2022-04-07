@@ -1,4 +1,4 @@
-# 05: Test the application gateway
+# 05: Test the Application Gateway
 
 ## Overview
 
