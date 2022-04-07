@@ -1,4 +1,4 @@
-## Task 3: Getting started with the Azure Portal
+## 02: Getting started with the Azure Portal
 
 ## Overview
 
