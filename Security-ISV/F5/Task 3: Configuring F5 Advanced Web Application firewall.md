@@ -38,7 +38,7 @@ A virtual server listens for packets destined for the external IP address. You m
 
     ![](../images/f5-15.jpg)
     
-1. Click **Create** to create the Virtual server.  
+1. Click **Create** to create the Virtual Server.  
 
     ![](../images/f5-16.jpg)
     
@@ -59,7 +59,7 @@ A virtual server listens for packets destined for the external IP address. You m
 
 1. In the **Resource** section, configure as below:
 
-   - Default Pool: Select the Pool which you created in the Previous exercise
+   - Default Pool: Select the Pool which you created in the previous exercise
 
    After configuration, click **Finished**.
     
@@ -76,13 +76,4 @@ A virtual server listens for packets destined for the external IP address. You m
 # Conclusion
 
 Congratulation, You have completed this lab.
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
