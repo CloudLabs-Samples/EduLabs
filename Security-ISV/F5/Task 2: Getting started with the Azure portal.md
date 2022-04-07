@@ -8,7 +8,7 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
 
 1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
-1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.  
+1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.  
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
@@ -63,7 +63,7 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
 
       ![](../images/f5-07.jpg)
  
-1. In the Network Interfaces blade, you can see the **Private IP address** of **web-vm1**. Copy the value of the Private IP address. You will need it in the next task.
+1. In the Network Interfaces blade, you can see the **Private IP address** of **web-vm1**. Copy the value of the Private IP address. You will need it for the next task.
 
       ![](../images/f5-08.jpg)
 
