@@ -10,7 +10,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
     * <inject key="f5_httpURL"></inject>
 
-    ![](../images/image123.png)
+    ![](../images/accesswebserver.png)
     
 2. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
 
@@ -85,5 +85,4 @@ In this exercise, A virtual server listens for packets destined for the external
 
 # Conclusion
 
-Congratulation, You have completed this lab.
- 
+Congratulations, You have successfully completed this lab. You learned how to publish a Web Application hosted behind F5 advanced WAF
