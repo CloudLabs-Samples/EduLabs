@@ -1,14 +1,14 @@
-# Task 3 : Test the application gateway
+# 05: Test the application gateway
 
 ## Overview
 
-In this task, you have installed IIS on the virtual machines only to verify that application gateway was successfully created.
+In this task, you will have pre-installed IIS server on the virtual machines to verify that application gateway was successfully created.
 
-1. To get the lab environment details, you can select the Environment Details tab.
-
+1. To verify the linkage of the application gateway, got the environment details page.
+     
      ![](../images/waf065.png)
 
-1. Copy the **publicIPAddress** under the resource group **waf-DID** and paste in the browser.
+1. Let us take the **publicIPAddress**: <inject key="PublicIPAddress"></inject> and paste in the browser.
 
       ![](../images/waf064.png)
      
@@ -19,7 +19,10 @@ In this task, you have installed IIS on the virtual machines only to verify that
    ![](../images/waf047.png)
    
    ![](../images/waf046.png)
+   
 
+# Summary
 
+ In this task, you have verified the application gateway was successfully created and it is successfully connected with the backend.
 
 # Congraluations! you have successfully completed the lab
