@@ -34,3 +34,48 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
     ![](../images/image-007.jpg)
 
 1. Now you will be able to view the Azure Portal Dashboard.
+
+1. To toggle **show/hide** the Portal menu options with icon, **Click** on the **Show Menu** button.
+
+      ![](../images/Picture1.png)
+
+1. **Click** on the **Resource groups** button in the **Menu navigation bar** to view the Resource groups blade.
+ 
+      ![](../images/Picture2.jpg)
+      
+1. Select the **f5-DeploymentID** resource group in the resource groups blade.
+
+      ![](../images/f5-04.jpg)
+ 
+1. On the Resource group blade, click on **Overview**.
+
+      ![](../images/f5-05.jpg)
+      
+1. Select the **web-vm1** virtual machine from the resource list.
+
+      ![](../images/f5-06.jpg)
+      
+1. On the virtual machine blade, scroll down to the **Settings** section, click on **Networking**
+
+      ![](../images/Picture11.png)
+      
+1. Select the **web-vm-nic1** Network Interfaces.
+
+      ![](../images/f5-07.jpg)
+ 
+1. In the Network Interfaces blade, you can see the **Private IP address** of **web-vm1**. Copy the value of the Private IP address. You will need it in the next task.
+
+      ![](../images/f5-08.jpg)
+
+1. Navigate back to the Resource groups and select your Resource Group
+
+      ![](../images/f5-09.jpg)
+    
+1. On the Resource group blade, click on Overview.
+
+      ![](../images/f5-05.jpg)
+
+1. Explore the pre-deployed resources
+   
+### Proceed to Task 3 - Configuring F5 Firewall 
+
