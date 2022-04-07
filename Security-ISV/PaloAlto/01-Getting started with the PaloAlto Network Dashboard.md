@@ -16,3 +16,9 @@ In this hands-on lab you will perform the following tasks:
 ## Overview
 
 The Palo Alto Networks firewall allows you to specify security policies based on accurate identification of each application seeking access to your network. Unlike traditional firewalls that identify applications only by protocol and port number, the firewall uses packet inspection and a library of application signatures to distinguish between applications that have the same protocol and port, and to identify potentially malicious applications that use non-standard ports
+
+## Architecture Diagram 
+
+     ![](../images/paloarchi.png)
+
+Click on Next to continue to the next section of the lab.
