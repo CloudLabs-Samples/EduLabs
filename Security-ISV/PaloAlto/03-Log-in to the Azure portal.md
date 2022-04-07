@@ -17,7 +17,9 @@ In this task you will login to Microsoft Azure using your credentials and access
     
    ![](../images/image-005.jpg)
    
-1. If you see the pop-up, click **Skip for now(14 days until this is required)**.
+1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
+
+     ![](../images/image004.png)
 
 1. If you see the pop-up **Stay signed in?** Click **Yes**.
 
