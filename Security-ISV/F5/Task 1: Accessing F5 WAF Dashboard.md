@@ -20,15 +20,15 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
 
 1. In the LabVM desktop, select the **Microsoft Edge** icon.
   
-1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Advanced WAF Public IP** : <inject key="F5IP"></inject> . Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
+1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Advanced WAF Public IP**: <inject key="F5IP"></inject>. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
     ![](../images/f5-01.jpg)
     
-1. A page as shown below will appear. This is the **F5 Advanced WAf** Login page.
+1. A page as shown below will appear. This is the **F5 Advanced WAF** Login page.
 
     ![](../images/f5-02.jpg)
     
-1. Enter the following F5 Portal username and Password and then click on **Log in**.  
+1. Enter the following F5 Portal username and password and then click on **Log in**.  
 
    * **F5 Portal Username**:  <inject key="F5 Portal Username"></inject> 
    * **F5 Portal Password**:  <inject key="F5 Portal Password"></inject>
