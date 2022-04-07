@@ -14,7 +14,7 @@ The default view of **ACC** will show the network, threat, blocked, and tunnel a
 
     ![](../images/image07.png)
 
->Note: You can come back to this page at the end of the lab to see the data.
+   >Note: You can come back to this page at the end of the lab to see the data.
 
 1. You can explore each of the widgets, by selecting the relevant data point. Clicking on the arrow towards the right of the filter will force all other widgets to be updated based on the context.
 
