@@ -77,5 +77,5 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
 
 1. Explore the pre-deployed resources
    
-### Proceed to Task 3 - Configuring F5 Firewall 
+### Proceed to Task 3 - Configuring F5 Advanced Web Application firewall 
 
