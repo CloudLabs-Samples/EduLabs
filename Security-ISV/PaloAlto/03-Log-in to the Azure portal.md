@@ -11,7 +11,7 @@ In this task you will login to Microsoft Azure using your credentials and access
     * **Azure Username/Email**:  <inject key="Username"></inject> 
     * **Azure Password**:  <inject key="Password"></inject>
     
-      **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
    ![](../images/image-004.jpg)
     
