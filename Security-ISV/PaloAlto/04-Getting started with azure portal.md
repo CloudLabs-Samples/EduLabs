@@ -39,6 +39,10 @@ In this task, you will navigate to your resource group and view the pre-deployed
     ![](../images/image043.png)
     
     ![](../images/image044.png)
+    
+1. The **User defines Routes(UDR)** enables the VM-series Firewall to secure the resource group
+
+    ![](../images/image045.png)
 
 
 # Summary
