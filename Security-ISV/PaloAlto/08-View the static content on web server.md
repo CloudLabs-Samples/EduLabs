@@ -1,4 +1,4 @@
-# Task 6: View the static content on web server
+# Task 7: Verify the static content on web server
 
 ## Overview
 
@@ -45,5 +45,8 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 1. By clicking on the arrow towards the right of the filter, which will force all other widgets to be updated based on the context.
 
     ![](../images/image034.png)
+    
+# Summary
+In this task you have verified the static content of the web server and the status of the link state for the interfaces will be UP
 
 # Congratulations, you have successfully completed the lab
