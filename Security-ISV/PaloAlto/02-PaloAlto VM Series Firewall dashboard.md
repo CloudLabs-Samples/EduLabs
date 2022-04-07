@@ -1,4 +1,4 @@
-# Task 1: Getting started with the PaloAlto VMseries Firewall Dashboard
+# Task 1: Access the PaloAlto VMseries Firewall Dashboard
 
 ## Overview
 
