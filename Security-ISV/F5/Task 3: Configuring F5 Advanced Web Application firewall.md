@@ -65,9 +65,17 @@ A virtual server listens for packets destined for the external IP address. You m
     
     ![](../images/f5-19.jpg)
  
- 1. 
+ 1. Again Open a new tab in the same browser. Copy **F5 Advanced WAF Public IP** : <inject key="F5IP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
 
+    ![](../images/image-908.png)
 
+1. As you can see, the request will be forwarded to the backend web server as configured.
+    
+    ![](../images/Picture32.jpg)
+
+# Conclusion
+
+Congratulation, You have completed this lab.
     
     
     
