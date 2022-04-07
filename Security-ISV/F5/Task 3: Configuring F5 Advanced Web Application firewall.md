@@ -7,8 +7,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 ## Task 1: Access the Webserver
 
 1. Open a new tab in the browser and attempt to access the webserver via http to the same IP address as the F5.
-
-    * <inject key="f5_httpURL"></inject>
+   * <inject key="f5_httpURL"></inject>
 
     ![](../images/accesswebserver.png)
     
@@ -42,7 +41,7 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
     
 1. Refresh the page and verify if the created pool's status is shown as available (indicated in green) 
    
-   ![](../images/f5-poolstatus.jpg)
+   ![](../images/f5-poolstatus.png)
     
 ### Exercise 2: Creating a virtual server
 
@@ -79,7 +78,7 @@ In this exercise, A virtual server listens for packets destined for the external
   
 1. Verify if the created Virtual server's status is shown as available (indicated in green) 
     
-   ![](../images/f5-vsstatus.jpg)
+   ![](../images/f5-vsstatus.png)
     
 1.  Open a new tab in the browser and copy-paste the following to access the webserver.
     * <inject key="f5_httpURL"></inject>
