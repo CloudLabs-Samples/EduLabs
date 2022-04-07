@@ -42,8 +42,6 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
  
     ![](../images/f5-10.jpg)
  
-1. You will continue accessing this dashboard which will be instructed on page 4
-    
 ### Proceed to Task 2 - Getting started with the Azure Portal
 
     
