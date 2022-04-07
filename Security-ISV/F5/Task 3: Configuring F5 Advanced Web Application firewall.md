@@ -39,7 +39,7 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
    
     ![](../images/f5-14.jpg)
     
-1. Refresh the page and verify if the created pool's status is shown as available (indicated in green) 
+1. Refresh the page and verify if the created pool's status is shown as **Available** (indicated in green) 
    
    ![](../images/f5-poolstatus.png)
     
@@ -76,7 +76,7 @@ In this exercise, A virtual server listens for packets destined for the external
     
     ![](../images/f5-19.jpg)
   
-1. Verify if the created Virtual server's status is shown as available (indicated in green) 
+1. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
    ![](../images/f5-vsstatus.png)
     
