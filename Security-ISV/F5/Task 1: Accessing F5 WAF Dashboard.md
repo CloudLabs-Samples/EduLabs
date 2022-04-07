@@ -26,7 +26,15 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
 
     ![](../images/f5-01.jpg)
     
-1. A page as shown below will appear. This is the **F5 Advanced WAF** Login page.
+1. A page shown below will apear. Click on **Advanced** on the web page.
+
+    ![](../images/f5-adv.png)
+     
+1. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
+
+    ![](../images/f5-cont.png)
+    
+1. You will be redirected to the **F5 Advanced WAF** Login page.
 
     ![](../images/f5-02.jpg)
     
