@@ -43,7 +43,7 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
  
       ![](../images/Picture2.jpg)
       
-1. Select the **f5-DeploymentID** resource group in the resource groups blade.
+1. Select the **F5-DeploymentID** resource group in the resource groups blade.
 
       ![](../images/f5-04.jpg)
  
