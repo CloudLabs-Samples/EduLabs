@@ -20,7 +20,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
-1. Switch back to F5 WAF Tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
+1. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
     ![](../images/f5-11.jpg)
     
@@ -28,17 +28,21 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
         
     ![](../images/f5-12.jpg)
 
-1. In the **Name** field, type **web_pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **http_head_f5** from the **Available** to the **Active list**.
+1. In the **Name** field, type **web_pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **http_head_f5** from the **Available** to the **Active** list by clicking on <<.
 
     ![](../images/f5-13.jpg)  
 
-1. In the **New Members** section, in the **Address field**, type the Private IP address which you copied in the previous task **(1)**. In the **Service Port** field, type **80** as service port **(2)** and Click **Add** **(3)**.
+1. In the **New Members** section, in the **Address** field, type the Private IP address which you copied in the previous task **(1)**. In the **Service Port** field, type **80** as service port **(2)** and Click **Add** **(3)**.
 
       **Note**: The list now contains the member **(4)**
         
     Click **Finished** **(5)**.
    
     ![](../images/f5-14.jpg)
+    
+1. Refresh the page and verify if the pool's status is shown as available (green icon) 
+   
+   ![](../images/f5-poolstatus.jpg)
     
 ### Exercise 2: Creating a virtual server
 
