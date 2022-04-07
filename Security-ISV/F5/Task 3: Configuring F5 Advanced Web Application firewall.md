@@ -7,4 +7,5 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 1. Switch back to Barracuda Tab, you will be able to see the management portal of F5.
 
+    ![](../images/f5-10.jpg)
 
