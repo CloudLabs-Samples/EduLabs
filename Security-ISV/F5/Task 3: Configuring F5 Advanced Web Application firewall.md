@@ -89,4 +89,4 @@ In this exercise, A virtual server listens for packets destined for the external
 
 # Conclusion
 
-Congratulations, You have successfully completed this lab. You learned how to publish a Web Application hosted behind F5 advanced Web application firewall
+Congratulations, You have successfully completed this lab. In this lab, you were able to publish a Web Application hosted behind F5 advanced Web application firewall
