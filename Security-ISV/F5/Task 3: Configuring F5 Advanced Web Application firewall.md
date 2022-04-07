@@ -8,7 +8,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 ### Exercise 1: Creating a pool and adding members to it
 
-Traffic goes through BIG-IP VE to a pool. Your application servers should be members of this pool.
+BIG-IP VE routes traffic to a pool. Your application servers should be members of this pool.
 
 1. Switch back to F5 WAF Tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
