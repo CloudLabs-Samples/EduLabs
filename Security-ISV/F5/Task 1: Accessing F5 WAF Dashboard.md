@@ -36,5 +36,11 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
         **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
     ![](../images/f5-03.jpg)
+ 
+ 1. you will continue accessing this dashboard which will be instructed on page 
+    
+ ### Proceed to Task 2 - Getting started with the Azure Portal
+
+    
   
 
