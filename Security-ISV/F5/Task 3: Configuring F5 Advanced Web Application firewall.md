@@ -51,13 +51,13 @@ In this exercise, A virtual server listens for packets destined for the external
 
     ![](../images/f5-17.jpg)
  
-1. In the **Configuration** section, configure as below:
+1. Scroll down to the **Configuration** section, configure as below:
 
    - Source Address Translation: Select **Auto Map**
 
     ![](../images/f5-18.jpg)
 
-1. In the **Resource** section, configure as below:
+1. Scroll down to the **Resource** section, configure it as below:
 
    - Default Pool: Select the Pool which you created in the previous exercise
 
