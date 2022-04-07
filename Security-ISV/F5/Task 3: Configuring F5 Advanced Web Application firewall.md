@@ -40,7 +40,7 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
    
     ![](../images/f5-14.jpg)
     
-1. Refresh the page and verify if the pool's status is shown as available (green icon) 
+1. Refresh the page and verify if the created pool's status is shown as available (indicated in green) 
    
    ![](../images/f5-poolstatus.jpg)
     
@@ -48,7 +48,7 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
 
 In this exercise, A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
 
-1. On the **Main** tab, click **Local Traffic -> Virtual Servers**
+1. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
     ![](../images/f5-15.jpg)
     
@@ -71,16 +71,17 @@ In this exercise, A virtual server listens for packets destined for the external
 
     ![](../images/f5-18.jpg)
 
-1. Scroll down to the **Resource** section, configure it as below:
+1. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
 
    - Default Pool: Select the Pool which you created in the previous exercise
-
-   After configuration, click **Finished**.
     
     ![](../images/f5-19.jpg)
- 
+  
+1. Verify if the created Virtual server's status is shown as available (indicated in green) 
+    
+   ![](../images/f5-vsstatus.jpg)
+    
 1.  Open a new tab in the browser and copy-paste the following to access the webserver.
-
     * <inject key="f5_httpURL"></inject>
     
 1. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
