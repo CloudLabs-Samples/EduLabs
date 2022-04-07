@@ -30,11 +30,33 @@ In this task, you will view the backend pool with application gateway attached a
 
      ![](../images/waf050.png)
      
-## Task 2 : Frontend Tab 
+## Frontend Tab 
+
+In this task, the application gateway uses its frontend public IP to reach the server.
 
 1. On the application gateway overview page, verify the **Frontend IP Address** is set to **Public**.
 
     >Note : For the Application Gateway v2 SKU, private frontend IP configuration is currently not enabled.
+
+## Backends Tab
+
+The backend pool is used to route requests to the backend servers that serve the request. Backend pools can be composed of NICs, virtual machine scale sets, public IPs, internal IPs, fully qualified domain names (FQDN), and multi-tenant back-ends like Azure App Service. 
+
+1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
+
+      ![](../images/waf032.png)
+
+1. On that page, review the **Backend targets** aand click on **Cancel**.
+
+      ![](../images/waf033.png)
+      
+## Configuration Tab
+
+In this, it uses different Components such as routing rules, listners and backend target.
+
+   * **Listener** : A listener is a logical object that monitors connection requests for new ones. A listener accepts a request if the request's protocol, port, hostname, and IP address match the listener's configuration components.
+
+   *  **
 
 1. On the application gatway overview page, under **settings**, select the **HTTP Settings** and select **httpsetting**.
 
@@ -68,13 +90,7 @@ In this task, you will view the backend pool with application gateway attached a
 
       ![](../images/waf060.png)
 
-1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
 
-      ![](../images/waf032.png)
-
-1. On that page, review the **Backend targets** aand click on **Cancel**.
-
-      ![](../images/waf033.png)
 
 
 # Proceed to Task 2 : Create and link a Web Application Firewall policy
