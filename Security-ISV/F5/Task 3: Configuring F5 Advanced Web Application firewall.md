@@ -8,7 +8,7 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 ### Exercise 1: Creating a pool and adding members to it
 
-BIG-IP VE routes traffic to a pool. Your application servers should be members of this pool.
+In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
 1. Switch back to F5 WAF Tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
@@ -32,7 +32,7 @@ BIG-IP VE routes traffic to a pool. Your application servers should be members o
     
 ### Exercise 2: Creating a virtual server
 
-A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
+In this exercise, A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
 
 1. On the **Main** tab, click **Local Traffic -> Virtual Servers**
 
