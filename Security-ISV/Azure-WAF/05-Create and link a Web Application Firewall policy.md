@@ -1,4 +1,4 @@
-# Task 2 : Create and link a Web Application Firewall policy
+# 04: Create and link a Web Application Firewall policy
 
 ## Overview
 
@@ -46,4 +46,7 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
      ![](../images/waf062.png)
 
-# Proceeed to Task 3 : Test the application gateway
+# Summary
+In this task you are ceating and linking a Web Application Firewall policy
+
+Click on Next to continue to the next section of the lab.
