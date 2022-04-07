@@ -1,4 +1,4 @@
-# Task 5: Explore the various options in Monitor tab
+# Task 6: Explore the various options in Monitor tab
 
 ## Overview
 
