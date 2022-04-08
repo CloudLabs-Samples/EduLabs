@@ -16,5 +16,5 @@
     
 1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
-    ![](../images/image_011.png)
+    ![](../images/waf004.png)
 
