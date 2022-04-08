@@ -2,6 +2,7 @@
  {
     "Name": "Getting started with FortiGate Next-Generation Firewall",
     "Language": "English",
+    "BaseURL": "https://github.com/singhsupriya2819/EduLabs/tree/main/Security-ISV/Fortinet",
     "Files": [
       {
         "RawFilePath": "https://raw.githubusercontent.com/singhsupriya2819/EduLabs/main/Security-ISV/Fortinet/00-Fortinet-intro.md",
