@@ -21,7 +21,6 @@ The Palo Alto Networks firewall allows you to specify security policies based on
 
    ![](../images/image042.png)
    
-Click on Next to continue to the next section of the lab.
 
 # Task 1: Access the PaloAlto VMseries Firewall Dashboard
 
@@ -49,8 +48,6 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
-# Summary
-In this task you accessed the PaloAlto VMseries Firewall dashboard using the PaloAltoVMseriesURL.
 
 
 # Task 2: Login to Azure Portal
@@ -86,9 +83,6 @@ In this task you will login to Microsoft Azure using your credentials and access
     
 1. Now will now see the Azure Portal Dashboard.
 
-# Summary
-
-In this task, you logged into Microsoft Azure using your credentials and accessed the Azure Portal dashboard.
 
 
 ## Task 3: Getting started with the Azure Portal
@@ -136,10 +130,7 @@ In this task, you will navigate to your resource group and view the pre-deployed
 1. The **User defines Routes(UDR)** enables the VM-series Firewall to secure the resource group
 
     ![](../images/image045.png)
-
-
-# Summary
-In this task you navigated to your resource group, and viewed the pre-deployed resourced
+    
 
 
 # Task 4: Application Command Center(ACC)
@@ -168,8 +159,6 @@ The default view of **ACC** will show the network, threat, blocked, and tunnel a
 
 >Note: Since this is a new firewall, you cannot see much data for now.
 
-# Summary
-In this task you have explored about Application Command Center(ACC). 
 
 
 # Task 5: The Object, Network, and Device Tabs and Security Policies
@@ -208,8 +197,6 @@ In this task, you will learn about the various management capabilities such as t
 
 1. You can also add the policies such as NAT, Decryption, and Qos to the existing policies.
 
-# Summary
-In this task you have explored about the various management capabilities such as the Object tab, Network tab, Device tab, and security policies.
 
 
 # Task 6: Explore the various options in Monitor tab
@@ -235,9 +222,7 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 4. You can view the various option for **Fully customizable reporting** under the **Monitor** tab.
 
     ![](../images/image016.png)
-
-# Summary
-In this task you have explored various options in **Monitor** tab.
+    
 
 
 # Task 7: Verify the static content on web server
