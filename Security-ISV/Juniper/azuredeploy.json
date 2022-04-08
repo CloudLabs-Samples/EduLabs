@@ -725,7 +725,7 @@
       "type": "string",
       "value": "[reference(variables('nicName')).ipConfigurations[0].properties.privateIPAddress]"
     },  
-    "fortiGateFQDN": {
+    "JuniperFQDN": {
       "type": "string",
       "value": "[concat('https://', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpName'))).dnsSettings.fqdn)]"
     },
