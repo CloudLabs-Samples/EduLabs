@@ -74,9 +74,6 @@ In this task, you will access the FortiGate dashboard through the internet by us
  
     ![](../images/image_411.png)
     
-## Summary
-
-In this task, you accessed the FortiGate dashboard using the FortiGate FQDN and connected to the Apache Webserver via the CLI Console present on the dashboard.
 
   
 # 02 - Log-in to the Azure portal
@@ -114,9 +111,6 @@ In this task, you will log in to Microsoft Azure using your credentials and acce
     
 7. Now will now see the Azure Portal Dashboard.
 
-## Summary
-
-In this task, you logged into Microsoft Azure using your credentials and accessed the Azure Portal dashboard.
   
 
 # Getting Started with Azure Portal
@@ -173,9 +167,6 @@ In this task, you will navigate to your resource group, note down the Private IP
     
 13. Explore through pre-deployed resources from the resource list.
 
-## Summary
-
-In this task, you navigated to your resource group, noted down the Private IPs of the virtual machines, and went through the pre-deployed resources.
   
     
 # 04 - Configuring FortiGate for Web Traffic
@@ -244,10 +235,6 @@ In this task, you will try to access the webserver via FortiGate's FQDN, configu
     * Service: **HTTP**
     
     ![](../images/image_409.png)
-    
-## Summary
-
-In this task, you tried to access the webserver using FortiGate's FQDN, configured the Firewall policies on the FortiGate-VM firewall through the FortiGate dashboard, and then added Virtual IPs to provide secured access from your device to the webserver hosted in Azure.
 
 
 
