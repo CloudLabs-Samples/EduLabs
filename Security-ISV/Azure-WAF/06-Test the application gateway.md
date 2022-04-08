@@ -4,11 +4,7 @@
 
 In this task, you will have pre-installed IIS server on the virtual machines to verify that application gateway was successfully created.
 
-1. To verify the linkage of the application gateway, got the environment details page.
-     
-     ![](../images/waf065.png)
-
-1. Let us take the **publicIPAddress**: <inject key="PublicIPAddress"></inject> and paste in the browser.
+1. To verify the linkage of the application gateway, take the **publicIPAddress**: <inject key="PublicIPAddress"></inject> and paste in the browser.
 
       ![](../images/waf064.png)
      
