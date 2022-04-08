@@ -1,0 +1,17 @@
+[
+ {
+    "Name": "Getting started with FortiGate Next-Generation Firewall",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Security-ISV/Fortinet",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/00-Fortinet-intro.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/Fortinet/01-Getting%20started%20with%20FortiGate%20Next-Generation%20Firewall%20-%20A%20Single%20VM.md",
+        "Order": 2
+      }
+    ] 
+  }
+]  
