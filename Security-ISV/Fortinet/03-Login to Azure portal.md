@@ -2,11 +2,11 @@
 
 ## Overview
 
-In this task you will login to Microsoft Azure using your credentials and access the Azure Portal dashboard.
+In this task, you will log in to Microsoft Azure using your credentials and access the Azure Portal dashboard.
 
 1. In the LabVM desktop, select the **Azure Portal** icon to access the Azure Portal.
 
-2. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**.
+2. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.
 
     * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
     * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
