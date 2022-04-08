@@ -8,7 +8,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
 1. In the LabVM desktop, select the **Microsoft Edge** icon and in a new tab copy-paste the FortiGateFQDN <inject key="FortiGateFQDN"></inject>
      
-2. A page shown below will apear. Click on **Advanced** on the web page.
+2. A page shown below will appear. Click on **Advanced** on the web page.
 
     ![](../images/image_701.png)
      
@@ -58,7 +58,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
     
 ## Summary
 
-In this task you accessed the FortiGate dashboard using the FortiGate FQDN and connected to the Aapche Webserver via the CLI Console present on the dashboard.
+In this task, you accessed the FortiGate dashboard using the FortiGate FQDN and connected to the Apache Webserver via the CLI Console present on the dashboard.
      
 Click on **Next** to continue to the next section of the lab.
      
