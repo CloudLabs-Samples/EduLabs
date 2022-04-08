@@ -12,11 +12,11 @@
     
     ![](../images/image_005.png)
     
-4. Click on Next from the bottom right corner and follow the instructions to perform the lab.
+4. Click on **Next** from the bottom right corner and follow the instructions to perform the lab.
 
     ![](../images/image_011.png)
     
-5. You can also open the Lab Guide on a separate full window by selecting the Split Window button on the bottom right corner.
+5. You can also open the Lab Guide in a separate full window by selecting the Split Window button in the bottom right corner.
 
     ![](../images/image_012.png)
     
