@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "F5 Advanced WAF for Azure",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Security-ISV/F5",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/F5/Lab-intro.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/F5/Task%201%3A%20Accessing%20F5%20WAF%20Dashboard.md",
+        "Order": 2
+      }
+    ]
+  }
+]
