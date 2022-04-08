@@ -2,7 +2,7 @@
 
 ## Overview 
 
-In this task you will access the Apache webserver hosted in Azure via internet using the FQDN which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
+In this task, you will access the Apache webserver hosted in Azure via the internet using the FQDN which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
 
 ## Task: Connect to the Webserver
 
@@ -16,6 +16,6 @@ In this task you will access the Apache webserver hosted in Azure via internet u
     
 ## Summary
 
-In this task you accessd the Apache webserver through the internet using the Apache-VM's FQDN.
+In this task, you accessed the Apache webserver through the internet using the Apache-VM's FQDN.
 
 
