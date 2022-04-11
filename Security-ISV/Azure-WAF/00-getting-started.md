@@ -1,6 +1,8 @@
-# Getting started with Web Application Firewall 
+# Getting started
 
 1. Once the environment is provisioned, a virtual machine and lab guide will get loaded into your browser. Use this virtual machine to perform the lab.
+
+    ![](../images/waf075.png)
 
 1. To get the lab environment details, you can select the **Environment Details** tab.
 
