@@ -1,4 +1,4 @@
-# 03: View the Application Gateway
+# 03: Verify the Application gateway with WAF Enabled
 
 ## Overview
 
