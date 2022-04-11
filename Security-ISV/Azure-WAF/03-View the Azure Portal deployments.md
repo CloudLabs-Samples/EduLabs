@@ -18,7 +18,7 @@ In this task, you will navigate to your resource group and view the pre-deployed
 
 1. You can view the deployed resources in that resource group **waf-<inject key="DeploymentID"></inject>**.
 
-     ![](../images/waf055.png)
+     ![](../images/waf053.png)
      
 
 
