@@ -1,33 +1,19 @@
-# Getting started with the PaloAlto on Azure
+# Getting started 
 
-## Overview
+1. Once the environment is provisioned, a virtual machine and lab guide will get loaded into your browser. Use this virtual machine to perform the lab.
 
- In this task, you will view the pre-created resources of this lab
- 
-### Task 1 : Getting started with the environment
+1. To get the lab environment details, you can select the **Environment Details** tab.
 
-1. You can start(1) or stop(2) the Virtual Machine from the Resources tab.
- 
-     ![](../images/image031.png)
+    ![](../images/image040.png)
 
-1. Launch the Edge browser and Navigate to [Azure Portal](https://portal.azure.com)
+1. You can start, stop and restart the virtual machines from the Resources tab.
 
-1. Login with the credentials that are provided under the **Environment Details** tab.
+    ![](../images/image041.png)
 
-     ![](../images/image08.png)
+1. Click on Next from the bottom right corner and follow the instructions to perform the lab.
 
-1. To toggle **show/hide** the Portal menu options with icon, Click on the **Show Menu** button.
+     ![](../images/image-901.jpg)
 
-     ![](../images/image01.png)
+1. You can also open the Lab Guide on a separate full window by selecting the Split Window button on the bottom right corner.
 
-1. Click on the **Resource groups** button in the Menu navigation bar, to view the Resource groups blade.
-
-1. On the Resource group blade, select the resource group with **poloalto-DID**.
-
-     ![](../images/image02.png)
-
-1. You can able to view the deployed resources in that resource group **poloalto-DID**.
-
-     ![](../images/image029.png)
-
- 
+     ![](../images/image039.png)

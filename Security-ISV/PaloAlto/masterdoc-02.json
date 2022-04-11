@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Palo Alto VM Series Firewall into Azure Environment",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Security-ISV/PaloAlto",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/PaloAlto/00-getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Security-ISV/PaloAlto/PaloAlto-merged-file.md",
+        "Order": 2
+      }
+    ]
+  }
+]

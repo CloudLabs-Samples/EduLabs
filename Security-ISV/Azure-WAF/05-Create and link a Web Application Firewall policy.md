@@ -10,6 +10,8 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
 1. Search for WAF, select **Web Application Firewall**, then select Create.
 
+1. On the upper left side of the portal, select Create a resource. Search for WAF, select **Web Application Firewall**, then select Create.
+
      ![](../images/waf037.png)
 
 1. On Create a WAF policy page, Basics tab, provide the following information :
@@ -51,6 +53,7 @@ In this task, you will be creating a Web Application Firewall policy with the as
      ![](../images/waf062.png)
 
 # Summary
+
 In this task you created and linked a Web Application Firewall policy
 
 Click on **Next** to continue to the next section of the lab.

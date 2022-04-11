@@ -1,3 +1,4 @@
+
 # Getting started
 
 1. Once the environment is provisioned, a virtual machine and lab guide will get loaded into your browser. Use this virtual machine to perform the lab.
@@ -19,4 +20,5 @@
 1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
 
     ![](../images/waf004.png)
+
 

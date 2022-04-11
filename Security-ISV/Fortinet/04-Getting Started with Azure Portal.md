@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this task, you will navigate to your resource group, note down the Private IPs of the virtual machines in a notepad and view the pre-deployed resources. 
+In this task, you will navigate to your resource group, note down the Private IPs of the virtual machines in a notepad, and view the pre-deployed resources. 
 
 1. On the Azure Portal, click on **Show portal menu**.
  
@@ -24,7 +24,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
     ![](../images/image_803.png)
     
-6. On the virtual machine blade, scroll down to the **Settings** section, click on **Networking**.
+6. On the virtual machine blade, scroll down to the **Settings** section, and click on **Networking**.
 
     ![](../images/image_804.png)
     
@@ -54,7 +54,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
 ## Summary
 
-In this task you navigated to your resource group, noted down the Private IPs of the virtual machines and went through the pre-deployed resources.
+In this task, you navigated to your resource group, noted down the Private IPs of the virtual machines, and went through the pre-deployed resources.
 
 Click on **Next** to continue to the next section of the lab.
     
