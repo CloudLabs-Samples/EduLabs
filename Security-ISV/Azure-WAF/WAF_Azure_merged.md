@@ -59,7 +59,7 @@ In this task, you logged into Microsoft Azure using your credentials and accesse
 
 Click on **Next** to continue to the next section of the lab.
 
-## 02: View the Azure Portal deployments
+# 02: View the Azure Portal deployments
 
 ## Overview
 
@@ -266,6 +266,6 @@ In this task, you will have pre-installed IIS server on the virtual machines to 
 
  In this task, you verified that the application gateway was successfully created and connected to the backend.
 
-# Congradulations! You have successfully completed the lab
+# Congratulations! You have successfully completed the lab
 
 
