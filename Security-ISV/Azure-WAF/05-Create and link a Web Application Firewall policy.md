@@ -4,7 +4,7 @@
 
 In this task, you will be creating a Web Application Firewall policy with the associated Application Gateway. All of the WAF customizations and settings are in a separate object, called a WAF Policy.
 
-1. On Azure Portal click on **Show menu** from the top left corner, select **Create a resource**.
+1. On Azure Portal click on **Show menu** from the top left corner and select **Create a resource**.
 
      ![](../images/waf501.png)
 
@@ -51,6 +51,6 @@ In this task, you will be creating a Web Application Firewall policy with the as
      ![](../images/waf062.png)
 
 # Summary
-In this task you are ceating and linking a Web Application Firewall policy
+In this task you created and linked a Web Application Firewall policy
 
-Click on Next to continue to the next section of the lab.
+Click on **Next** to continue to the next section of the lab.
