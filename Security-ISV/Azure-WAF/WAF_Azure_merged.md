@@ -113,7 +113,7 @@ In this task, you will view the backend pool with application gateway attached a
 
      ![](../images/waf066.png)
 
-1. On the virtual network page, under **settings**, select **subnet** and verify the subnets **agsubnet** and **backendsubnet** which is already attached.
+1. On the virtual network page, under **Settings**, select **Subnets** and verify the subnets **agsubnet** and **backendsubnet** which is already attached.
 
     ![](../images/waf067.png)
     
@@ -121,7 +121,7 @@ In this task, you will view the backend pool with application gateway attached a
 
 In this task, you can view the Application gateway and its Components
 
-1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway-<inject key="DeploymentID"></inject>**.
+1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf050.png)
      
@@ -186,7 +186,7 @@ In this task, you can view the Application gateway and its Components
 
 In this task you have viewed and verified the resources of the resource group **waf-<inject key="DeploymentID"></inject>** and learnt about application gateway and its components
 
-Click on Next to continue to the next section of the lab.
+Continue to the next section of the lab.
 
 # 04: Create and link a Web Application Firewall policy
 
@@ -204,7 +204,7 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
 1. On Create a WAF policy page, Basics tab, provide the following information :
 
-    * Policy for : **Regional WAF**
+    * Policy for : **Regional WAF (Application Gateway)**
     
     * Subscription : Select the default subscription
 
@@ -232,11 +232,11 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
       ![](../images/waf043.png)
 
-1. On the **Associate an application gateway** page, select the gateway with the **gatewayDID** and click on **Add**.
+1. On the **Associate an application gateway** page, select the gateway with the **gateway<inject key="DeploymentID"></inject>** and click on **Add**.
 
      ![](../images/waf061.png)
 
-1. On the **Association** page, review the settings and select Review + create and then select Create.
+1. On the **Association** page, review the settings and select **Review + create** and then select **Create**.
 
      ![](../images/waf062.png)
 
