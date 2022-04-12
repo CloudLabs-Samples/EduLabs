@@ -16,9 +16,9 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 ## Architecture Diagram 
 
-   ![](../images/waf100.png)
+   ![](../images/waf101.png)
    
-Click on **Next** to continue to the next section of the lab.
+Continue to the next section of the lab.
 
 # 01: Login to Azure Portal
 
@@ -53,11 +53,11 @@ In this task you will login to Microsoft Azure using your credentials and access
     
 1. Now will now see the Azure Portal Dashboard.
 
-# Summary
+### Summary
 
 In this task, you logged into Microsoft Azure using your credentials and accessed the Azure Portal dashboard.
 
-Click on **Next** to continue to the next section of the lab.
+Continue to the next section of the lab.
 
 # 02: View the Azure Portal deployments
 
@@ -81,10 +81,11 @@ In this task, you will navigate to your resource group and view the pre-deployed
 
      ![](../images/waf053.png)
      
-# Summary
+### Summary
+
 In this task you navigated to your resource group, and viewed the pre-deployed resources.
 
-Click on **Next** to continue to the next section of the lab.
+Continue to the next section of the lab.
 
 # 03: Verify the Application gateway with WAF Enabled
 
@@ -181,7 +182,8 @@ In this task, you can view the Application gateway and its Components
       ![](../images/waf060.png)
 
 
-# Summary
+### Summary
+
 In this task you have viewed and verified the resources of the resource group **waf-<inject key="DeploymentID"></inject>** and learnt about application gateway and its components
 
 Click on Next to continue to the next section of the lab.
@@ -238,10 +240,11 @@ In this task, you will be creating a Web Application Firewall policy with the as
 
      ![](../images/waf062.png)
 
-# Summary
+### Summary
+
 In this task you created and linked a Web Application Firewall policy
 
-Click on **Next** to continue to the next section of the lab.
+Continue to the next section of the lab.
 
 # 05: Test the Application Gateway
 
@@ -262,9 +265,9 @@ In this task, you will have pre-installed IIS server on the virtual machines to 
    ![](../images/waf046.png)
    
 
-# Summary
+### Summary
 
- In this task, you verified that the application gateway was successfully created and connected to the backend.
+In this task, you verified that the application gateway was successfully created and connected to the backend.
 
 # Congratulations! You have successfully completed the lab
 
