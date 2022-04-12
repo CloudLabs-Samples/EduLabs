@@ -4,7 +4,7 @@
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. With Azure Application Gateway, you direct your application web traffic to specific resources by assigning listeners to ports, creating rules, and adding resources to a backend pool.
 
-### Task 1 : Verify the Virtual Network within the Resource Group waf-DID 
+### Task 1 : Verify the Virtual Network within the Resource Group waf-<inject key="DeploymentID"></inject>
 
 In this task, you will view the backend pool with application gateway attached and then backend targets attached to the backend pool.
 
@@ -16,11 +16,11 @@ In this task, you will view the backend pool with application gateway attached a
 
      ![](../images/waf021.png)
 
-1. Under the resource group tab, select the resource group **waf-DID**.
+1. Under the resource group tab, select the resource group **waf-<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf051.png)
      
-1. On the resource group page of **Waf-DID**, select the virtual network **vnetDID**.
+1. On the resource group page of **Waf-<inject key="DeploymentID"></inject>**, select the virtual network **vnet<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf066.png)
 
@@ -32,7 +32,7 @@ In this task, you will view the backend pool with application gateway attached a
 
 In this task, you can view the Application gateway and its Components
 
-1. On the resource group page of **waf-DID**, select the application gateway with the name **gateway-DID**.
+1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway-<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf050.png)
      
@@ -94,13 +94,6 @@ In this task, you can view the Application gateway and its Components
 
 
 # Summary
-In this task you have verified the resources with the resource group **waf-DID** and learnt about application gateway and its components
+In this task you have viewed and verified the resources of the resource group **waf-<inject key="DeploymentID"></inject>** and learnt about application gateway and its components
 
 Click on Next to continue to the next section of the lab.
-
-
-
-
-
-
-

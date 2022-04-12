@@ -5,12 +5,10 @@
 In this hands-on lab you will perform the following tasks:
  
 - **01: Login to Azure Portal**
-- **02: Getting started with the Azure Portal**
+- **02: View the Azure Portal Deployments**
 - **03: Verify the Application gateway with WAF Enabled**
 - **04: Create and link a Web Application Firewall policy**
 - **05: Test the application gateway**
-
-
 
 ## Overview
 
@@ -18,6 +16,6 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 ## Architecture Diagram 
 
-   ![](../images/waf069.png)
+   ![](../images/waf101.png)
    
-Click on Next to continue to the next section of the lab.
+Click on **Next** to continue to the next section of the lab.

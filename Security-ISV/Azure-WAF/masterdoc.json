@@ -1,0 +1,17 @@
+[
+ {
+    "Name": "Getting started with Application Gateway Firewall using the Azure portal",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Security-ISV/Fortinet",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Azure-WAF/00-getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Sanket-ST/EduLabs/main/Security-ISV/Azure-WAF/WAF_Azure_merged.md",
+        "Order": 2
+      }
+    ] 
+  }
+]  

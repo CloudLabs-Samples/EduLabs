@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "labuser"
+    },
+    "adminPassword": {
+      "value": "Password.1!!"
+    },
+    "AzureUserName": {
+      "value": "GET-AZUSER-UPN"
+    },
+    "AzurePassword": {
+      "value": "GET-AZUSER-PASSWORD"
+    },
+    "ODLID": {
+      "value": "GET-ODL-ID"
+    },
+    "DeploymentID": {
+      "value": "GET-DEPLOYMENT-ID"
+    },
+    "InstallCloudLabsShadow": {
+      "value": "yes"
+    },
+    "trainerUserName": {
+      "value": "trainer"
+    },
+    "trainerUserPassword": {
+      "value": "Password.!!1"
+    },
+    "JuniperNamePrefix": {
+      "value": "jnp"
+    },
+    "JuniperImageSKU": {
+      "value": "vsrx-azure-image-payg-b1"
+    },
+    "JuniperImageVersion": {
+       "value": "latest"
+    },
+    "instanceType": {
+      "value": "Standard_F2s"
+    },
+    "acceleratedNetworking": {
+      "value": "false"
+    },
+    "vnetNewOrExisting": {
+      "value": "new"
+    },
+    "vnetName": {
+      "value": ""
+    },
+    "vnetResourceGroup": {
+      "value": ""
+    },
+    "vnetAddressPrefix": {
+      "value": "10.0.0.0/22"
+    },
+    "subnet1Name": {
+      "value": "ExternalSubnet"
+    },
+    "subnet1Prefix": {
+      "value": "10.0.1.0/24"
+    },
+    "subnet1StartAddress": {
+      "value": "10.0.1.4"
+    },
+    "subnet2Name": {
+      "value": "InternalSubnet"
+    },
+    "subnet2Prefix": {
+      "value": "10.0.2.0/24"
+    },
+    "subnet2StartAddress": {
+      "value": "10.10.2.4"
+    },
+    "subnet3Name": {
+      "value": "ProtectedASubnet"
+    },
+    "subnet3Prefix":{
+      "value": "10.0.3.0/24"
+    },
+    "serialConsole": {
+      "value": "yes"
+    },
+    "location": {
+      "value": "West US"
+    },
+    "vmName": {
+      "value": "apache-vm"
+    },
+    "virtualMachineComputerName": {
+      "value": "apache-vm"
+    },
+    "osDiskType": {
+      "value": "Standard_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_B1s"
+    }
+  }
+}

@@ -19,6 +19,6 @@ In this task, you will have pre-installed IIS server on the virtual machines to 
 
 # Summary
 
- In this task, you have verified the application gateway was successfully created and it is successfully connected with the backend.
+ In this task, you verified that the application gateway was successfully created and connected to the backend.
 
-# Congraluations! you have successfully completed the lab
+# Congratulations! You have successfully completed the lab

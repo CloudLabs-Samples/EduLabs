@@ -1,4 +1,4 @@
-## 02: Getting started with the Azure Portal
+## 02: View the Azure Portal deployments
 
 ## Overview
 
@@ -12,18 +12,18 @@ In this task, you will navigate to your resource group and view the pre-deployed
 
      ![](../images/Picture2.jpg)
 
-1. On the Resource group blade, select the resource group with **waf-DID**.
+1. On the Resource group blade, select the resource group with **waf-<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf054.png)
 
-1. You can view the deployed resources in that resource group **waf-DID**.
+1. You can view the deployed resources in that resource group **waf-<inject key="DeploymentID"></inject>**.
 
-     ![](../images/waf055.png)
+     ![](../images/waf053.png)
      
 
 
 
 # Summary
-In this task you navigated to your resource group, and viewed the pre-deployed resourced
+In this task you navigated to your resource group, and viewed the pre-deployed resources.
 
 Click on **Next** to continue to the next section of the lab.
