@@ -8,6 +8,8 @@ The agenda defined for the lab is as follows:
 
 ## What is Infrastructure as Code with Terraform?
 
+[Getting Started with Terraform](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Getting%20Started%20with%20Terraform.md)
+
 ## Install Terraform
 
 ## Build Infrastructure - Terraform Azure Example
