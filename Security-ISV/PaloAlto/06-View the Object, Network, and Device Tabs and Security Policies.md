@@ -8,17 +8,17 @@ In this task, you will learn about the various management capabilities such as t
 
 1. Select the **Object** tab and verify the various options.
 
-    ![](../images/image010.png)
+    ![](../images/Palo07.png)
 
 1. The Network tab allows for to creation and management of interfaces, security zones, VLANs, and other elements that are related to enabling connectivity.
 
 1. Click on the **Network** tab and explore the options.
 
-    ![](../images/image011.png)
+    ![](../images/Palo08.png)
 
 1. The interface(Ethernet 1/1) is called as **Untrust Zone**. This is the interface that is exposed to the outside world. All the traffic enters through this interface.
 
-    ![](../images/image022.png)
+    ![](../images/Palo09.png)
 
 1. The interface(Ethernet 2/2) is called as **Trust Zone**.  This is the interface where assets need to be protected. For example, the web and data servers.
 
@@ -26,11 +26,11 @@ In this task, you will learn about the various management capabilities such as t
 
 1. Select the **Device** tab, to view the options.
 
-    ![](../images/image09.png)
+    ![](../images/Palo010.png)
       
 1. Now select the **Policies** tab, where you will define all of your policies. The default view will be the security policies for all, which is the application based and the content.
 
-    ![](../images/image012.png)
+    ![](../images/Palo011.png)
 
 1. You can also add the policies such as NAT, Decryption, and Qos to the existing policies.
 
