@@ -269,11 +269,11 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
 1. On the **PaloAlto Networks** dashboard Page, Click on the ACC tab to view the data.
 
-    ![](../images/palo023.png)
+    ![](../images/Palo023.png)
 
 1. By clicking on the arrow towards the right of the filter, which will force all other widgets to be updated based on the context.
 
-    ![](../images/Palo24.png)
+    ![](../images/Palo024.png)
     
 # Summary
 In this task you have verified the static content of the web server and the status of the link state for the interfaces will be UP
