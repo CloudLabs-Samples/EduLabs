@@ -8,19 +8,19 @@ The default view of **ACC** will show the network, threat, blocked, and tunnel a
 
 1. Switch back to the PaloAlto VMseries Firewall dashboard Page, Click on the **ACC** tab.
 
-    ![](../images/image06.png)
+    ![](../images/Palo03.png)
 
 1. Since this is a new firewall, so you cannot able to view the data.
 
-    ![](../images/image07.png)
+    ![](../images/palo04.png)
 
    >Note: You can come back to this page at the end of the lab to see the data.
 
 1. You can explore each of the widgets, by selecting the relevant data point. Clicking on the arrow towards the right of the filter will force all other widgets to be updated based on the context.
 
-    ![](../images/image020.png)
+    ![](../images/Palo05.png)
 
-    ![](../images/image021.png)
+    ![](../images/Palo06.png)
 
 >Note: Since this is a new firewall, you cannot see much data for now.
 
