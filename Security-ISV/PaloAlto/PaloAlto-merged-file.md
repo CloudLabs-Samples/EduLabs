@@ -1,10 +1,10 @@
-# Getting started with PaloAlto VMseries Firewall
+# Getting started with PaloAlto Networks  
 
 ## Tasks Included
 
 In this hands-on lab you will perform the following tasks:
 
-- **Task 1: Accessing the PaloAlto VMseries Firewall Dashboard**
+- **Task 1: Accessing the PaloAlto Networks Dashboard**
 - **Task 2: Login to Azure Portal**
 - **Task 3: Getting Started with Azure Portal**
 - **Task 4: The Application Command Center(ACC)**
@@ -22,13 +22,13 @@ The Palo Alto Networks firewall allows you to specify security policies based on
    ![](../images/image042.png)
    
 
-# Task 1: Access the PaloAlto VMseries Firewall Dashboard
+# Task 1: Access the PaloAlto Networks Dashboard
 
 ## Overview
 
 In this lab, you will be able to access the paloAlto Network Dashboard and explore various options in it.
 
-1. Let us start by logging into the **PaloAlto VMseries Firewall** page. Copy the link for **PaloAltoVMseriesURL** : <inject key="VMseriesURL"></inject>, open it in a new tab in your browser.
+1. Let us start by logging into the **PaloAlto Networks** page. Copy the link for **PaloAltoVMseriesURL** : <inject key="VMseriesURL"></inject>, open it in a new tab in your browser.
 
 1. If the page is showing like **Your connection isn't private**, on that page click on **Advanced**.
     
@@ -40,11 +40,13 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
    
 1. On the page that loads up, enter the **PaloaltoUsername** : <inject key="PaloaltoUsername"></inject>, **PaloaltoPassword** : <inject key="PaloaltoPassword"></inject>  and click on Log in.
 
-1. Now, you will be redirected to the dashboard to the **PaloAlto VMseries Firewall**.
+     ![](../images/Palo01.png)
+
+1. Now, you will be redirected to the dashboard to the **PaloAlto Networks**.
 
 1. The dashboard provides a detailed visual summary of the device status.
 
-     ![](../images/image05.png)
+     ![](../images/Palo02.png)
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
@@ -141,21 +143,21 @@ In this task, you can view the Application Command Center(ACC). This provides a 
 
 The default view of **ACC** will show the network, threat, blocked, and tunnel activity in four separate tabs. The time frame and each tab can be customized to display the relevant application, and threat, and can view the user activity depending upon the user role.
 
-1. Switch back to the PaloAlto VMseries Firewall dashboard Page, Click on the **ACC** tab.
+1. Switch back to the PaloAlto Networks dashboard Page, Click on the **ACC** tab.
 
-    ![](../images/image06.png)
+    ![](../images/Palo03.png)
 
 1. Since this is a new firewall, so you cannot able to view the data.
 
-    ![](../images/image07.png)
+    ![](../images/Palo04.png)
 
    >Note: You can come back to this page at the end of the lab to see the data.
 
 1. You can explore each of the widgets, by selecting the relevant data point. Clicking on the arrow towards the right of the filter will force all other widgets to be updated based on the context.
 
-    ![](../images/image020.png)
+    ![](../images/Palo05.png)
 
-    ![](../images/image021.png)
+    ![](../images/Palo06.png)
 
 >Note: Since this is a new firewall, you cannot see much data for now.
 
@@ -171,17 +173,17 @@ In this task, you will learn about the various management capabilities such as t
 
 1. Select the **Object** tab and verify the various options.
 
-    ![](../images/image010.png)
+    ![](../images/Palo07.png)
 
 1. The Network tab allows for to creation and management of interfaces, security zones, VLANs, and other elements that are related to enabling connectivity.
 
 1. Click on the **Network** tab and explore the options.
 
-    ![](../images/image011.png)
+    ![](../images/Palo08.png)
 
 1. The interface(Ethernet 1/1) is called as **Untrust Zone**. This is the interface that is exposed to the outside world. All the traffic enters through this interface.
 
-    ![](../images/image022.png)
+    ![](../images/Palo09.png)
 
 1. The interface(Ethernet 2/2) is called as **Trust Zone**.  This is the interface where assets need to be protected. For example, the web and data servers.
 
@@ -189,11 +191,11 @@ In this task, you will learn about the various management capabilities such as t
 
 1. Select the **Device** tab, to view the options.
 
-    ![](../images/image09.png)
+    ![](../images/Palo010.png)
       
 1. Now select the **Policies** tab, where you will define all of your policies. The default view will be the security policies for all, which is the application based and the content.
 
-    ![](../images/image012.png)
+    ![](../images/Palo011.png)
 
 1. You can also add the policies such as NAT, Decryption, and Qos to the existing policies.
 
@@ -207,21 +209,21 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 
 1. On the dashboard, select **Monitor** tab.
 
-    ![](../images/image013.png)
+    ![](../images/Palo012.png)
     
 >Note : Since the firewall is new, you cannot see any data for now, you can return to this step at the end of the lab and can verify the data.
 
 2. The below screenshot refers to different option to **view and analyze logs** within the **Monitor** tab.
 
-    ![](../images/image014.png)
+    ![](../images/Palo013.png)
      
 3. The screenshot represents the various items  related to **compare the activity over the time period**.
 
-    ![](../images/image015.png)
+    ![](../images/Palo014.png)
 
 4. You can view the various option for **Fully customizable reporting** under the **Monitor** tab.
 
-    ![](../images/image016.png)
+    ![](../images/Palo015.png)
     
 
 
@@ -231,9 +233,9 @@ In this lab, you can view the log analysis and generate reports on all traffic f
 
 In this task, you will see that link state for the interfaces will be **OFF** and the static content of the webserver page will be showing an error at this moment. You will resolve that error and can able to view the static content of the web server and also verify the status of the link state for the interfaces will be **UP**
 
-1. On the **PaloAlto VMseries Firewall** dashboard page, select the **Network** tab and select **Interfaces** and verify the **Link State** is **OFF** for the interface type **Layer 3**.
+1. On the **PaloAlto Networks** dashboard page, select the **Network** tab and select **Interfaces** and verify the **Link State** is **OFF** for the interface type **Layer 3**.
 
-    ![](../images/image028.png)
+    ![](../images/Palo016.png)
 
 1. Navigate to the **Environment Details** tab, copy the URL of **WebServer URL** and open it in the browser. You can verify the page showing error that is attached below.
 
@@ -241,17 +243,17 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
 1. In the Firewall dashboard, on the top right corner, click on **Commit**.
 
-    ![](../images/image018.png)
+    ![](../images/Palo017.png)
 
 1. If a pop-up appears, click on **Commit** and wait till the process completes. On the commit status page, verify the status as **Completed** and result should be **Successful**.
 
-    ![](../images/image024.png)
+    ![](../images/Palo018.png)
 
-    ![](../images/image025.png)
+    ![](../images/Palo019.png)
 
-1. Now on the **PaloAlto VMseries Firewall** dashboard, navigate to the **Network** tab and select the **Interfaces** and verify the **Link Status** is **UP**. The Interfaces should turn into the **Green** color.
+1. Now on the **PaloAlto Networks** dashboard, navigate to the **Network** tab and select the **Interfaces** and verify the **Link Status** is **UP**. The Interfaces should turn into the **Green** color.
 
-    ![](../images/image026.png)
+    ![](../images/Palo020.png)
 
 1. To verify the static content of the webserver. Navigate to the **Environment Details** tab and copy the URL of **WebServerURL**: <inject key="WebServerURL"></inject> and open it in the new browser.
 
@@ -259,19 +261,19 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
 1. To verify the traffic, click on the **Monitor** tab and then select **Traffic**. You can view the related **Traffic**
 
-   ![](../images/image019.png)
+   ![](../images/Palo021.png)
 
 1. Navigate to the **Dashbord** and you can see the data for **Config Logs** and **System Logs**.
 
-    ![](../images/image027.png)
+    ![](../images/Palo022.png)
 
-1. On the **PaloAlto VMseries Firewall** dashboard Page, Click on the ACC tab to view the data.
+1. On the **PaloAlto Networks** dashboard Page, Click on the ACC tab to view the data.
 
-    ![](../images/image033.png)
+    ![](../images/palo023.png)
 
 1. By clicking on the arrow towards the right of the filter, which will force all other widgets to be updated based on the context.
 
-    ![](../images/image034.png)
+    ![](../images/Palo24.png)
     
 # Summary
 In this task you have verified the static content of the web server and the status of the link state for the interfaces will be UP
