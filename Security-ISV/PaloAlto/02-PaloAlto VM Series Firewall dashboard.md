@@ -16,11 +16,13 @@ In this lab, you will be able to access the paloAlto Network Dashboard and explo
    
 1. On the page that loads up, enter the **PaloaltoUsername** : <inject key="PaloaltoUsername"></inject>, **PaloaltoPassword** : <inject key="PaloaltoPassword"></inject>  and click on Log in.
 
+    ![](../images/Palo01.png)
+
 1. Now, you will be redirected to the dashboard to the **PaloAlto VMseries Firewall**.
 
 1. The dashboard provides a detailed visual summary of the device status.
 
-     ![](../images/image05.png)
+     ![](../images/Palo02.png)
      
 > Note: Since it is a new firewall, it doesn't have any traffic yet and can view the dashboard at the end.
 
