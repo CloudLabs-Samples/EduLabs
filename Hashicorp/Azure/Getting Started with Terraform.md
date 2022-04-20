@@ -24,7 +24,7 @@ Providers define individual units of infrastructure, for example compute instanc
 
 Terraform's configuration language is declarative, meaning that it describes the desired end-state for your infrastructure, in contrast to procedural programming languages that require step-by-step instructions to perform tasks. Terraform providers automatically calculate dependencies between resources to create or destroy them in the correct order.
 
-![Infrastructure](../Hashicorp/Azure/Images/Infrastructure.png)
+![Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Infrastructure.png)
 
 To deploy infrastructure with Terraform:
 
