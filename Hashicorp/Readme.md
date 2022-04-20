@@ -12,6 +12,8 @@ The agenda defined for the lab is as follows:
 
 ## Install Terraform
 
+[Install Terraform](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%202:%20Install%20Terraform.md)
+
 ## Build Infrastructure - Terraform Azure Example
 
 ## Change Infrastructure
