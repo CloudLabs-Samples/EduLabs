@@ -1,6 +1,6 @@
 # Module 1: Getting Started with Terraform
 
-In this module, the user will learn about what are Infrastructure as Code(IaC) tools, and how Terraform can be used as an IaC tool.
+In this module, you will learn about what are Infrastructure as Code(IaC) tools, and how Terraform can be used as an IaC tool.
 
 ## What is Infrastructure as Code with Terraform?
 
@@ -43,3 +43,11 @@ Terraform keeps track of your real infrastructure in a state file, which acts as
 Terraform allows you to collaborate on your infrastructure with its remote state backends. When you use Terraform Cloud (free for up to five users), you can securely share your state with your teammates, provide a stable environment for Terraform to run in, and prevent race conditions when multiple people make configuration changes at once.
 
 You can also connect Terraform Cloud to version control systems (VCSs) like `GitHub, GitLab,` and others, allowing it to automatically propose infrastructure changes when you commit configuration changes to VCS. This lets you manage changes to your infrastructure through version control, as you would with application code.
+
+## Summary
+
+In this module, you have learnt about: 
+
+   - **IaC** tools and Terraform as one such tool.
+   - Terraform can be used to manage, design, track and collaborate
+
