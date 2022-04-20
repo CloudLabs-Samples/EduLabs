@@ -241,7 +241,7 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
     ![](../images/image023.png)
 
-1. In the Firewall dashboard, on the top right corner, click on **Commit**.
+1. In the PaloAlto Networks dashboard, on the top right corner, click on **Commit**.
 
     ![](../images/Palo017.png)
 
