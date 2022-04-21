@@ -56,7 +56,7 @@ Before you run `terraform apply` and query the `output`, you must import the cre
 
 ## Summary
 
-In this module, you learnt to:
+In this module, you learned to:
 
    - Define an output variable
    - Query the output file to receive the output
