@@ -68,13 +68,8 @@ Run the below command to get the updated list of resources managed in your works
 
 ## Summary
 
-In this module, you learnt how to:
+In this module, you have covered the following:
 
    - Create a new resource
    - Modify an existing resources
    - Apply changes to the infrastructure and review it
-   
-
-   
-   
-
