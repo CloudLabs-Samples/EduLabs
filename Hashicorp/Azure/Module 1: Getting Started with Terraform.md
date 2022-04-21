@@ -46,8 +46,8 @@ You can also connect Terraform Cloud to version control systems (VCSs) like `Git
 
 ## Summary
 
-In this module, you have learnt about: 
+In this module, you have covered the following: 
 
-   - **IaC** tools and Terraform as one such tool.
-   - Terraform can be used to manage, design, track and collaborate.
+   - **IaC** tools and Terraform as one such tool
+   - Terraform can be used to manage, design, track and collaborate
 
