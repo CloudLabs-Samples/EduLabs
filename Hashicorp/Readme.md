@@ -24,18 +24,18 @@ The agenda defined for the lab is as follows:
 
 ## Define Input Variables
 
-[Define Input Variables](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%206:%20Define%20Input%20Variables.md)
+[Define Input Variables](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%205:%20Define%20Input%20Variables.md)
 
 ## Query Data with Output Variables
 
-[Query Data with Output Variables](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%207:%20Query%20Data%20with%20Output%20Variables.md)
+[Query Data with Output Variables](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%206:%20Query%20Data%20with%20Output%20Variables.md)
 
 ## Store Remote State
 
-[Store Remote State](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%208:%20Store%20Remote%20State.md)
+[Store Remote State](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%207:%20Store%20Remote%20State.md)
 
 ## Destroy Infrastructure
 
-[Destroy Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%205:%20Destroy%20Infrastructure.md)
+[Destroy Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%208:%20Destroy%20Infrastructure.md)
 
 
