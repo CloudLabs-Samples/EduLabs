@@ -51,5 +51,5 @@ Now apply the configuration again, this time overriding the default resource gro
 In this module, you learnt about:
 
    - Input Variables
-   - Define those variables in the main configuration
+   - How to Define those variables in the main configuration
 
