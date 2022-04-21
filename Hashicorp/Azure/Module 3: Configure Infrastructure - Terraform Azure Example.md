@@ -224,7 +224,7 @@ Terraform must authenticate to Azure to create infrastructure.
 
 ## Summary
 
-In this exercise, you have covered the following:
+In this module, you have covered the following:
 
  - Initialized the Terraform configuration
  - Imported the pre-created resource group into Terraform state
