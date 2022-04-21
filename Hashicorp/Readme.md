@@ -36,4 +36,6 @@ The agenda defined for the lab is as follows:
 
 ## Store Remote State
 
+[Store Remote State](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%208:%20Store%20Remote%20State.md)
+
 
