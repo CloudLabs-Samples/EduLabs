@@ -1,4 +1,4 @@
-# Change Infrastructure
+# Module 4: Change Infrastructure
 
 In the previous module, you configured your infrastructure with Terraform: a resource group. Now you will modify your configuration by defining an additional resource that references your resource group and adding tags to your resource group.
 
