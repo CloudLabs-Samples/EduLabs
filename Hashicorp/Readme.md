@@ -24,6 +24,8 @@ The agenda defined for the lab is as follows:
 
 ## Destroy Infrastructure
 
+[Destroy Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%205:%20Destroy%20Infrastructure.md)
+
 ## Define Input Variables
 
 ## Query Data with Output Variables
