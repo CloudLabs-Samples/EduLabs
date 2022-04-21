@@ -150,18 +150,19 @@ Terraform must authenticate to Azure to create infrastructure.
     
 6. Run the below command to initialize your `learn-terraform-azure` directory in your terminal.
 
-     ```
-        terraform init
-     ```
-      > **Info**: The above command will initialize the working directory containing Terraform configuration files and install any required plugins.
+   ```
+      terraform init
+   ```
+   
+   > **Info**: The above command will initialize the working directory containing Terraform configuration files and install any required plugins.
 
 ![IMG15](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img15.png)
 
 7. Run the below command to automatically update configurations in the current directory for readability and consistency.
 
-     ```
-       terraform fmt
-     ```
+   ```
+      terraform fmt
+   ```
      
 8. Terraform will print out the names of the files it modified if any. In this case, your configuration file was already formatted correctly, so Terraform will display the name of the newly created file.
 
@@ -169,54 +170,53 @@ Terraform must authenticate to Azure to create infrastructure.
 
 9. You can also make sure your configuration is syntactically valid and internally consistent by running the below command.
 
-     ```
-       terraform validate
-     ```
+   ```
+      terraform validate
+   ```
      
 ![IMG17](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img17.png)
 
 10. Run the below command to apply the changes to your infrastructure. Enter **yes** to the prompt to confirm the changes.
 
-     ```
-       terraform apply
-     ```
+   ```
+      terraform apply
+   ```
 
 ![IMG18](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img18.png)
 
 >**Note**: As it is a pre-created resource group, you will get an error as the resource group already exists. You can ignore the error and continue with the next step.
 
 11. Now, run the below command in **Windows PowerShell (Admin)** to import the created resource group into Terraform state.
- 
- > **Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
+>**Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
 
-       ```
-          terraform import azurerm_resource_group.rg /subscriptions/{subscription-id}/resourceGroups/lab-rg-{DID}
-       ```
-       
-       > **Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
+   ```
+      terraform import azurerm_resource_group.rg /subscriptions/{subscription-id}/resourceGroups/lab-rg-{DID}
+   ```
+   
+      > **Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
        
 ![IMG19](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img19.png)
 
 12. You can inspect the current state of the resource group by running the following command.
 
-     ```
+   ```
       terraform show
-     ```
+   ```
 ![IMG20](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img20.png)
 
 13. To review the information in your state file, use the **state** command. If you have a long state file, you can see a list of the resources you created with Terraform by using the **list** subcommand.
 
-     ```
-        terraform state list
-     ```
+   ```
+      terraform state list
+   ```
      
 ![IMG21](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img21.png)
 
 14. Use the following command, to see a full list of available commands to view and manipulate the configuration's state.
 
-     ```
+   ```
       terraform state
-     ```
+   ```
      
 ![IMG22](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img22.png)
 
