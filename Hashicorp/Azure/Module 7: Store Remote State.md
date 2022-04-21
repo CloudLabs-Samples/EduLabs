@@ -40,16 +40,16 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
 
 2. After signing up, you will be asked to setup your workfloe, select **Start from scratch**.
 
-![IMG29](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img29.png?raw=true)
+   ![IMG29](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img29.png?raw=true)
 
 3. Provide a name for your **Organization**, and make a note of it, and proceed to create the **Organization**.
 
-![IMG30](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img30.png?raw=true)
+   ![IMG30](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img30.png?raw=true)
 
 4. You will be asked to create a **New Workspace**, select **CLI Driven Workflow** and provide a name for your workspace.
 
-![IMG31](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img31.png?raw=true)
- >**Note:** In my case, I have named the workspace `learn-terraform-azure`
+   ![IMG31](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img31.png?raw=true)
+   >**Note:** In my case, I have named the workspace `learn-terraform-azure`
 
 5. Open your `main.tf` file, make respective changes and configure the `cloud` block with your organization name and the workspace name, as shown below:
 
@@ -85,15 +85,15 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
 
 4. Click on **Create API Token** to generate authentication token.
 
-![IMG32](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img32.png?raw=true)
+   ![IMG32](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img32.png?raw=true)
 
-![IMG33](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img33.png?raw=true)
+   ![IMG33](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img33.png?raw=true)
 
 5. Copy the token, and paste it into the **CLI**( Terraform will hide the token for security when you paste it into the terminal).
 
 6. Press **Enter** to complete the authentication process.
 
-![IMG34](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img34.png?raw=true)
+   ![IMG34](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img34.png?raw=true)
 
 ## Migrate the state file
 
@@ -102,11 +102,11 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
    ```
       terraform init
    ```
- ![IMG35](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img35.png?raw=true)  
+    ![IMG35](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img35.png?raw=true)  
   
 2. During reinitialization, Terraform presents a prompt saying that it will copy the state file to your Terraform Cloud workspace. Enter `yes` so Terraform will migrate the state from your local machine to Terraform Cloud.
 
-![IMG36](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img36.png?raw=true)
+    ![IMG36](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img36.png?raw=true)
 
 >**Note:** When using Terraform Cloud with the CLI-driven workflow, you can choose to have Terraform run remotely, or on your local machine. he default option is remote execution — Terraform Cloud will perform Terraform operations remotely. When using local execution, Terraform Cloud will execute Terraform on your local machine and remotely store your state file in Terraform Cloud. For this tutorial, you will use the default remote execution option for the workspace.
 
