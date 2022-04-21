@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Terraform",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%201%3A%20Getting%20Started%20with%20Terraform.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%202%3A%20Install%20Terraform.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%203%3A%20Configure%20Infrastructure%20-%20Terraform%20Azure%20Example.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%204%3A%20Change%20Infrastructure.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%205%3A%20Define%20Input%20Variables.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%206%3A%20Query%20Data%20with%20Output%20Variables.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%207%3A%20Store%20Remote%20State.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/SD-14/EduLabs/SD/Hashicorp/Azure/Module%208%3A%20Destroy%20Infrastructure.md",
+        "Order": 8
+      }
+    ]
+  }
+]
