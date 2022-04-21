@@ -1,4 +1,4 @@
-# Module 8: Store Remote State
+# Module 7: Store Remote State
 
 Now you have built, changed, and destroyed infrastructure from your local machine. In this module, you are going to run Terraform in a remote environment with a shared access state. This way, your teammates can access and collaborate on  the infrastructure.
 
@@ -115,14 +115,7 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
    ```
       rm terraform.tfstate
    ```
-## Destroy the Infrastructure
-
-Destroy your infrastructure, and remember to confirm with a `yes`.
-
-   ```
-      terraform destroy
-   ```
-
+   
 ## Summary
 
 In this module, you learned how to:
