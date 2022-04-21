@@ -108,7 +108,7 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
 
     ![IMG36](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img36.png?raw=true)
 
->**Note:** When using Terraform Cloud with the CLI-driven workflow, you can choose to have Terraform run remotely, or on your local machine. he default option is remote execution — Terraform Cloud will perform Terraform operations remotely. When using local execution, Terraform Cloud will execute Terraform on your local machine and remotely store your state file in Terraform Cloud. For this tutorial, you will use the default remote execution option for the workspace.
+    >**Note:** When using Terraform Cloud with the CLI-driven workflow, you can choose to have Terraform run remotely, or on your local machine. he default option is remote execution — Terraform Cloud will perform Terraform operations remotely. When using local execution, Terraform Cloud will execute Terraform on your local machine and remotely store your state file in Terraform Cloud. For this tutorial, you will use the default remote execution option for the workspace.
 
 3. Now that Terraform has migrated the state file to Terraform Cloud, delete the local state file.
 
