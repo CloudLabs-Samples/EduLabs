@@ -16,7 +16,7 @@ The agenda defined for the lab is as follows:
 
 ## Configure Infrastructure - Terraform Azure Example
 
-[Configure Infrastructure - Terraform Azure Example](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%203:%20Build%20Infrastructure%20-%20Terraform%20Azure%20Example.md)
+[Configure Infrastructure - Terraform Azure Example](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%203:%20Configure%20Infrastructure%20-%20Terraform%20Azure%20Example.md)
 
 ## Change Infrastructure
 
