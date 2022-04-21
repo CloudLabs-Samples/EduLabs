@@ -25,7 +25,7 @@ You can define multiple `output` blocks to specify multiple output variables.
 Before you run `terraform apply` and query the `output`, you must import the created resource group into Terraform state.
 
 1. Run the below command in **Windows PowerShell (Admin)** to import the created resource group into Terraform state.
->**Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
+    >**Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
 
    ```
       terraform import azurerm_resource_group.rg /subscriptions/{subscription-id}/resourceGroups/lab-rg-{DID}
@@ -33,7 +33,7 @@ Before you run `terraform apply` and query the `output`, you must import the cre
    
    > **Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
        
-![IMG19](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img19.png?raw=true)
+    ![IMG19](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img19.png?raw=true)
 
 2. When you add an output to a previously applied configuration, you must re-run `terraform apply` to observe the new output.
 
@@ -43,8 +43,8 @@ Before you run `terraform apply` and query the `output`, you must import the cre
       terraform apply
    ```
    
-![IMG26](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img26.png?raw=true)
-![IMG27](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img27.png?raw=true)
+    ![IMG26](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img26.png?raw=true)
+    ![IMG27](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img27.png?raw=true)
 
 4. Notice that the `apply` run returns the outputs. Query the `output` using the output command with the output ID.
 
@@ -52,7 +52,7 @@ Before you run `terraform apply` and query the `output`, you must import the cre
       terraform output resource_group_id
    ```
    
-![IMG28](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img28.png?raw=true)
+    ![IMG28](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img28.png?raw=true)
 
 ## Summary
 
