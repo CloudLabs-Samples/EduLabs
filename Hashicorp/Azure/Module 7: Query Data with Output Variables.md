@@ -43,7 +43,8 @@ Before you run `terraform apply` and query the `output`, you must import the cre
       terraform apply
    ```
    
-(Insert picture)
+![IMG26](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img26.png)
+![IMG27](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img27.png)
 
 4. Notice that the `apply` run returns the outputs. Query the `output` using the output command with the output ID.
 
@@ -51,7 +52,7 @@ Before you run `terraform apply` and query the `output`, you must import the cre
       terraform output resource_group_id
    ```
    
-(Insert Picture)
+![IMG28](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img28.png)
 
 ## Summary
 
