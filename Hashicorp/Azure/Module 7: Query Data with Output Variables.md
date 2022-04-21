@@ -14,6 +14,8 @@ Create a file called `outputs.tf` in your `learn-terraform-azure` directory. Add
       }
    ```
    
+   >**Note:** Make sure to select the **File Type** as **All Files** and **Save it**.
+   
 This defines an output variable named `resource_group_id`. The name of the variable must conform to Terraform variable naming conventions if it is to be used as an input to other modules. The `value` field specifies the value, the `id` attribute of your resource group.
 
 You can define multiple `output` blocks to specify multiple output variables.
