@@ -14,11 +14,13 @@ The agenda defined for the lab is as follows:
 
 [Install Terraform](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%202:%20Install%20Terraform.md)
 
-## Build Infrastructure - Terraform Azure Example
+## Configure Infrastructure - Terraform Azure Example
 
-[Build Infrastructure - Terraform Azure Example](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%203:%20Build%20Infrastructure%20-%20Terraform%20Azure%20Example.md)
+[Configure Infrastructure - Terraform Azure Example](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%203:%20Build%20Infrastructure%20-%20Terraform%20Azure%20Example.md)
 
 ## Change Infrastructure
+
+[Change Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%204:%20Change%20Infrastructure.md)
 
 ## Destroy Infrastructure
 
