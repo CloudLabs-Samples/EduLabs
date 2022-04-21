@@ -1,4 +1,4 @@
-# Module 7: Query Data with Output Variables
+# Module 6: Query Data with Output Variables
 
 In this module, you will use output values to organize data to be easily queried and displayed to the Terraform user.
 
