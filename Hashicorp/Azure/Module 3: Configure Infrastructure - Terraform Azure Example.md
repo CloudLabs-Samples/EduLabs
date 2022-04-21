@@ -183,11 +183,11 @@ Terraform must authenticate to Azure to create infrastructure.
 
 ![IMG18](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img18.png)
 
-        >**Note**: As it is a pre-created resource group, you will get an error as the resource group already exists. You can ignore the error and continue with the next step.
+>**Note**: As it is a pre-created resource group, you will get an error as the resource group already exists. You can ignore the error and continue with the next step.
 
 11. Now, run the below command in **Windows PowerShell (Admin)** to import the created resource group into Terraform state.
  
-        > **Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
+ > **Note:** Make sure you replace the **{subscription-id}** and **{DID}** before running the command. You can find the values on the **Environment details** page.
 
        ```
           terraform import azurerm_resource_group.rg /subscriptions/{subscription-id}/resourceGroups/lab-rg-{DID}
