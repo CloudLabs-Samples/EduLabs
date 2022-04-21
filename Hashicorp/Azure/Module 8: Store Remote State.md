@@ -125,14 +125,7 @@ Destroy your infrastructure, and remember to confirm with a `yes`.
 
 ## Summary
 
-In this module, you learnt how to:
+In this module, you learnt to:
 
    - run Terraform in a remote environment.
    - migrate your local terraform state file to Terraform cloud.
-
-   
-   
-
-
-
-
