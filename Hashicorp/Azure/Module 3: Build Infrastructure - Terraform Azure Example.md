@@ -1,6 +1,6 @@
 # Module 3: Build Infrastructure - Terraform Azure Example
 
-In this module, you will create a Terraform configuration to deploy an Azure resource group. This resource group is the foundation for the infrastructure you will build in the subsequent modules.
+In this module, you will learn about the basics of Terraform and initialize the Terraform configuration using Windows PowerShell.
 
 ## Install the Azure CLI tool
 
