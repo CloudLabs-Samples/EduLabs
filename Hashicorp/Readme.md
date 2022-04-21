@@ -22,10 +22,6 @@ The agenda defined for the lab is as follows:
 
 [Change Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%204:%20Change%20Infrastructure.md)
 
-## Destroy Infrastructure
-
-[Destroy Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%205:%20Destroy%20Infrastructure.md)
-
 ## Define Input Variables
 
 [Define Input Variables](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%206:%20Define%20Input%20Variables.md)
@@ -37,5 +33,9 @@ The agenda defined for the lab is as follows:
 ## Store Remote State
 
 [Store Remote State](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%208:%20Store%20Remote%20State.md)
+
+## Destroy Infrastructure
+
+[Destroy Infrastructure](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Module%205:%20Destroy%20Infrastructure.md)
 
 
