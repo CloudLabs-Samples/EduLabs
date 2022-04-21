@@ -193,7 +193,7 @@ Terraform must authenticate to Azure to create infrastructure.
       terraform import azurerm_resource_group.rg /subscriptions/{subscription-id}/resourceGroups/lab-rg-{DID}
    ```
    
-      > **Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
+   > **Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
        
 ![IMG19](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img19.png)
 
