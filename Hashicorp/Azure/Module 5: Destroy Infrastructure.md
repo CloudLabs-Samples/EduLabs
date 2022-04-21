@@ -18,6 +18,6 @@ Run the below command to destroy the infrastructure you created, type `yes` to e
 
 ## Summary
 
-In this module, you learnt to:
+In this module, you learned to:
    
    - Terminate the resources specified in the Terraform state.
