@@ -67,5 +67,12 @@ In this module, you will download and install Terraform manually on a Windows vi
 
 If you get an error that `terraform` could not be found, your `PATH` environment variable was not set up properly. Please go back and ensure that your `PATH` variable contains the directory where Terraform was installed.
 
+## Summary
+
+In this module, you learnt how to:
+
+   - Install Terraform.
+   - Verify if Terraform is installed correctly.
+
 
 
