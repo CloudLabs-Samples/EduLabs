@@ -48,7 +48,7 @@ Now apply the configuration again, this time overriding the default resource gro
    
 ## Summary
 
-In this module, you learnt how to define:
+In this module, you have covered the following:
 
    - Input Variables
    - Define those variables in the main configuration
