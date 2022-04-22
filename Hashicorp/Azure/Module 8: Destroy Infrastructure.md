@@ -15,6 +15,7 @@ Run the below command to destroy the infrastructure you created, type `yes` to e
    ```
    
    >**Note:** Just like with apply, Terraform determines the order in which things must be destroyed. In more complicated cases with multiple resources, Terraform will destroy them in a suitable order to respect dependencies.
+   
    >**Note: DO NOT EXECUTE THIS COMMAND AS THIS WILL DELETE YOUR LAB ENVIRONMENT**.
 
 ## Summary
