@@ -1,0 +1,49 @@
+[
+  {
+    "Name": "Terraform Cloud with Azure",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Hashicorp/Terraform%20Cloud%20with%20Azure",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/01-%20Terraform%20Cloud%20Setup.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/02-%20Safekeeping%20Your%20Terraform%20State.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/03-Securing%20Cloud%20Credentials.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/04-Working%20with%20Teams%20in%20Terraform%20Cloud.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/05-Version%20Controlled%20Infrastructure.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/06-Collaborating%20with%20VCS.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/07-Controlling%20Costs%20with%20Cost%20Estimation.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/08-Terraform%20Compliance%20with%20Sentinel.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/09-Private%20Module%20Registry.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Hashicorp/Terraform%20Cloud%20with%20Azure/10-API%20Driven%20Workflows.md",
+        "Order": 10
+      }
+    ]
+  }
+]
