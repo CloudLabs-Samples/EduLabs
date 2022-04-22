@@ -108,7 +108,7 @@ Terraform must authenticate to Azure to create infrastructure.
    
 2. Your browser will open and prompt you to enter your Azure login credentials. After successful authentication, your terminal will display your subscription information.
 
-   ![IMG12](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img12.png?raw=true)
+   ![IMG12](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img12.png?raw=true)
 
 3. Now copy and paste the below command in the PowerShell terminal to create a new folder called `learn-terraform-azure` and minimize the terminal.
 
@@ -156,7 +156,7 @@ Terraform must authenticate to Azure to create infrastructure.
    
    > **Info**: The above command will initialize the working directory containing Terraform configuration files and install any required plugins.
 
-   ![IMG15](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img15.png?raw=true)
+   ![IMG15](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img15.png?raw=true)
 
 7. Run the below command to automatically update configurations in the current directory for readability and consistency.
 
@@ -166,7 +166,7 @@ Terraform must authenticate to Azure to create infrastructure.
      
 8. Terraform will print out the names of the files it modified if any. In this case, your configuration file was already formatted correctly, so Terraform will display the name of the newly created file.
 
-   ![IMG16](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img16.png?raw=true)
+   ![IMG16](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img16.png?raw=true)
 
 9. You can also make sure your configuration is syntactically valid and internally consistent by running the below command.
 
@@ -174,7 +174,7 @@ Terraform must authenticate to Azure to create infrastructure.
       terraform validate
    ```
      
-   ![IMG17](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img17.png?raw=true)
+   ![IMG17](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img17.png?raw=true)
 
 10. Run the below command to apply the changes to your infrastructure. Enter **yes** to the prompt to confirm the changes.
 
@@ -182,7 +182,7 @@ Terraform must authenticate to Azure to create infrastructure.
       terraform apply
     ```
 
-     ![IMG18](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img18.png?raw=true)
+     ![IMG18](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img18.png?raw=true)
 
      >**Note**: As it is a pre-created resource group, you will get an error as the resource group already exists. You can ignore the error and continue with the next step.
 
@@ -195,7 +195,7 @@ Terraform must authenticate to Azure to create infrastructure.
   
      >**Info:** The above command will find the existing resource from subscription ID and import it into your Terraform state.
        
-     ![IMG19](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img19.png?raw=true)
+     ![IMG19](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img19.png?raw=true)
 
 12. You can inspect the current state of the resource group by running the following command.
 
@@ -203,7 +203,7 @@ Terraform must authenticate to Azure to create infrastructure.
        terraform show
      ```
      
-      ![IMG20](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img20.png?raw=true)
+      ![IMG20](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img20.png?raw=true)
 
 13. To review the information in your state file, use the **state** command. If you have a long state file, you can see a list of the resources you created with Terraform by using the **list** subcommand.
 
@@ -211,7 +211,7 @@ Terraform must authenticate to Azure to create infrastructure.
        terraform state list
      ```
      
-      ![IMG21](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img21.png?raw=true)
+      ![IMG21](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img21.png?raw=true)
 
 14. Use the following command, to see a full list of available commands to view and manipulate the configuration's state.
 
@@ -219,7 +219,7 @@ Terraform must authenticate to Azure to create infrastructure.
        terraform state
      ```
      
-      ![IMG22](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img22.png?raw=true)
+      ![IMG22](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img22.png?raw=true)
 
 15. Now you have successfully imported the resource group `lab-rg-{DID}` using Terraform configuration.
 
