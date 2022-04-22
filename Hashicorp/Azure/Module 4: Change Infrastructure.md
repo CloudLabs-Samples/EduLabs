@@ -44,7 +44,7 @@ Open your `main.tf` file. Update the `azurerm_resource_group` resource in your c
       }
    ```
    
-   ![IMG23](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img23.png?raw=true)
+   ![IMG23](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img23.png?raw=true)
    
    >**Note:** Run `Terraform apply` to modify your infrastructure. Respond `yes` to the prompt to confirm the operation.
 
@@ -56,7 +56,7 @@ Use the below command to see the new values associated with this resource group.
       terraform show
    ```
    
-   ![IMG24](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img24.png?raw=true)
+   ![IMG24](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img24.png?raw=true)
 
 Run the below command to get the updated list of resources managed in your workspace.
 
@@ -64,7 +64,7 @@ Run the below command to get the updated list of resources managed in your works
       terraform state list
    ```
    
-   ![IMG25](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img25.png?raw=true)
+   ![IMG25](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img25.png?raw=true)
 
 ## Summary
 
