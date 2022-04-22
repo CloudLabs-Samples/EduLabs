@@ -1,4 +1,4 @@
-# Getting Started with Lab
+# Getting Started with Terraform on Azure
 
 ## Overview
 
