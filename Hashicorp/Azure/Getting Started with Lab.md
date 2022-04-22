@@ -12,7 +12,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 2. To get the lab environment details, you can select the Environment Details tab. Additionally, the credentials will also be emailed to your email address provided at registration.
 
-     ![IMG38](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img38.png?raw=true)
+     ![IMG48](https://github.com/SD-14/EduLabs/blob/SD/Hashicorp/Azure/Images/Img48.png?raw=true)
 
 3. You can also open the Lab Guide in a separate full window by selecting the Split Window icon at the bottom right corner.
 
