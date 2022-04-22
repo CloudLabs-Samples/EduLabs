@@ -39,13 +39,6 @@ Run the below command to recreate your infrastructure using input variables. Res
       terraform apply
    ```
    
-Now apply the configuration again, utilizing the same resource group name by passing in a variable using the `-var` flag.
->**Note:** Updating the resource group name is a destructive update that forces Terraform to recreate the resource, and in turn the virtual network that depends on it( Which is why we will be utilizing the same pre-created RG). Respond to the confirmation prompt with `yes` to rename the resource group and create the new resources.
-
-   ```
-      terraform apply -var "resource_group_name=lab-rg-{DID}"
-   ```
-   
 ## Summary
 
 In this module, you learnt about:
