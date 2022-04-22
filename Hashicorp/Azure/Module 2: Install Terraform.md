@@ -68,6 +68,16 @@ In this module, you will download and install Terraform manually on a Windows vi
 
 If you get an error that `terraform` could not be found, your `PATH` environment variable was not set up properly. Please go back and ensure that your `PATH` variable contains the directory where Terraform was installed.
 
+## Quick Start Tutorial
+
+Now that you've installed Terraform, you can provision an NGINX server in less than a minute using **Docker** on Windows.
+
+1. Download [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/).
+
+2. After you install Terraform and Docker on your local machine, start Docker Desktop by searching for Docker from your Start Menu and select Docker Desktop in the search results. When the whale icon in the status bar stays steady, Docker Desktop is up-and-running, and is accessible from any terminal window.
+
+
+
 ## Summary
 
 In this module, you learnt how to:
