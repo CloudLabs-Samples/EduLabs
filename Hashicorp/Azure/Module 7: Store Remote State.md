@@ -120,5 +120,5 @@ First, you will configure Terraform Cloud. Terraform Cloud offers free remote st
 
 In this module, you learned how to:
 
-   - run Terraform in a remote environment.
-   - migrate your local terraform state file to Terraform cloud.
+   - Run Terraform in a remote environment.
+   - Migrate your local terraform state file to Terraform cloud.
