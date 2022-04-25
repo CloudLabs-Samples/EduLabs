@@ -70,8 +70,8 @@ catapp_url = http://sean-carolan-meow.centralus.cloudapp.azure.com
 To see a valid value for the catapp_ip output, you sometimes might first need to run terraform refresh.
 Additionally, you should see a new state file on the "States" tab of your Terraform Cloud workspace.
 
- Note: If you ran terraform locally before configuring the remote backend, you might have a local state file called terraform.tfstate. If so, please delete it by running rm terraform.tfstate.
-
+Note: If you ran terraform locally before configuring the remote backend, you might have a local state file called terraform.tfstate. If so, please delete it by running rm terraform.tfstate.
 
 11. If you'd like to see the hashicat application in your web browser, simply copy the link from the output of your Terraform run, and paste it into the URL bar in another tab or window.
+
 Click on Next once you've successfully deployed the hashicat application with remote state enabled.
