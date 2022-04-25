@@ -1,4 +1,4 @@
-# Module 8: Destroy Infrastructure( Read Only Exercise)
+# Module 8: Destroy Infrastructure[READ ONLY]
 
 You have now used Terraform to configure and update Azure resources. In this module, you will use Terraform to destroy your infrastructure.
 
