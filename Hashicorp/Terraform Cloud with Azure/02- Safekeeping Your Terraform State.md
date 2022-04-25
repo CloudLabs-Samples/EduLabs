@@ -1,11 +1,18 @@
+##Safekeeping Your Terraform State
+
 An unexpected outage has taken down one of the production websites. It took longer than expected to recover because the Terraform state file was stored on someone's laptop. Terraform Cloud's remote state feature is here to help.
 
 Your task is to configure remote state using your Terraform Cloud account. In order to complete this challenge you'll need the following:
-1.	A free Terraform Cloud account - log in at https://app.terraform.io
-2.	A Terraform Cloud organization. You just created this in the previous exercise.
-3.	A workspace named hashicat-azure with its Execution Mode set to Local (not Remote)
-4.	A user token for authentication
-5.	A remote_backend config stored in your workspace
+>A free Terraform Cloud account - log in at https://app.terraform.io
+
+>A Terraform Cloud organization. You just created this in the previous exercise.
+
+>A workspace named hashicat-azure with its Execution Mode set to Local (not Remote)
+
+>A token for authentication
+
+>A  remote_backend config stored in your workspace
+
 Let's generate a new user token for use on your workstation. Visit the User Settings > Tokens page in Terraform Cloud:
 https://app.terraform.io/app/settings/tokens
 Click on the Create an API token button. You can name the token whatever you like. Copy the entire token using your mouse or the small copy-paste icon.
