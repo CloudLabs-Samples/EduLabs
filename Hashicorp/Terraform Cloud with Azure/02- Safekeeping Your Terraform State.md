@@ -24,25 +24,33 @@ https://app.terraform.io/app/settings/tokens
  cd hashicat-azure
  ```
 
-4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder <YOURTOKEN> with what you copied from Terraform Cloud. Your token is now safely stored in the "credentials.tfrc.json" file.
+4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder **YOURTOKEN** with what you copied from Terraform Cloud. Run the below command, your token is now safely stored in the "credentials.tfrc.json" file.
 ```
   sed -i 's/REPLACE-YOUR-TOKEN/<YOURTOKEN>/g' credentials.trfc.json
 ```
 
-5. Next, edit the "remote_backend.tf" file, replacing the YOURORG placeholder with your organization name
+5. Next, edit the "remote_backend.tf" file,replacing the YOURORG placeholder with your organization name
 ```
   sed -i 's/YOURORGANIZATION/<YOURORG>/g' remote_backend.tf
 ```
   
-6. Also, please edit the "terraform.tfvars" file.
-First, set prefix to your name (first and last with or without a hyphen between them and all lower case).
-Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
+6. Also, please edit the "terraform.tfvars" file, replacing the YOURNAME placeholder with your name and run the command.
+ ```
+  sed -i 's/yourname/<YOURNAME>/g' remote_backend.tf
+ ```
+
+>First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
 The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
 
-7. Then set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
+ 
+7. 6. Also, please edit the "terraform.tfvars" file, replacing the **YOURLOCATION** placeholder with your name and run the command.
+ ```
+  sed -i 's/yourlocation/<YOURLOCATION>/g' remote_backend.tf
+ ```
+>Then set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
 
 8. The variables are actually declared in the "variables.tf" file. The "terraform.tfvars" file is just being used to set values for them.
-Once you've got all the pieces in place, try running a terraform init and then terraform apply command on the "Shell" tab.
+Once you've got all the pieces in place, try running a terraform init and then terraform apply command.
 
  ```
 terraform init
