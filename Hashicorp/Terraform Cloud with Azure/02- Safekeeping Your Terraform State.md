@@ -1,4 +1,4 @@
-##Safekeeping Your Terraform State
+## Safekeeping Your Terraform State
 
 An unexpected outage has taken down one of the production websites. It took longer than expected to recover because the Terraform state file was stored on someone's laptop. Terraform Cloud's remote state feature is here to help.
 
@@ -13,13 +13,27 @@ Your task is to configure remote state using your Terraform Cloud account. In or
 
 >A  remote_backend config stored in your workspace
 
-Let's generate a new user token for use on your workstation. Visit the User Settings > Tokens page in Terraform Cloud:
+
+1. Let's generate a new user token for use on your workstation. Visit the User Settings > Tokens page in Terraform Cloud:
 https://app.terraform.io/app/settings/tokens
-Click on the Create an API token button. You can name the token whatever you like. Copy the entire token using your mouse or the small copy-paste icon.
-Back in the Instruqt track, you need to add your API token to a file called "credentials.tfrc.json". Select the "Credentials File" tab and open the /root/.terraform.d/credentials.tfrc.json file directly.
-Replace the part that says YOURTOKEN with what you copied from Terraform Cloud. Be sure to save the file.
-Your token is now safely stored in the "credentials.tfrc.json" file.
-Return to your Code Editor tab and edit the "remote_backend.tf" file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
+
+2. Click on the Create an API token button. You can name the token whatever you like. Copy the entire token using your mouse or the small copy-paste icon.
+
+3. Now navigate back to your cloudlabs environment , run the below command
+ ```
+ cd hashicat-azure
+ ```
+
+4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder <YOURTOKEN> with what you copied from Terraform Cloud. Your token is now safely stored in the "credentials.tfrc.json" file.
+```
+  sed -i 's/REPLACE-YOUR-TOKEN/<YOURTOKEN>/g' credentials.trfc.json
+```
+
+5. Next, edit the "remote_backend.tf" file, replacing the YOURORG placeholder with your organization name
+```
+  sed -i 's/YOURORGANIZATION/<YOURORG>/g' credentials.trfc.json
+```
+  
 Also, please edit the "terraform.tfvars" file.
 First, set prefix to your name (first and last with or without a hyphen between them and all lower case).
 Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
