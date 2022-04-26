@@ -17,7 +17,11 @@
 
 IMPORTANT: DO NOT SKIP THIS NEXT STEP:
 
-7. Run **terraform version** on the command prompt  and then set the Terraform Version to match on the workspace's Settings >> General settings page.
+7 Naviagate back to Azure portal and click on **Cloud shell** and ensure that Powershell is selected.
+
+8. All the required files for the lab are already provisioned within the environment.
+ 
+9. Now run **terraform version** from the cloud shell and then set the Terraform Version to match on the workspace's **Settings >> General settings** page.
 Also, change the Execution Mode to **Local**.
 
 8. Ensure to save your settings by clicking the **Save settings** button at the bottom of the page! This will allow us to run Terraform commands from our workstation with local variables.
