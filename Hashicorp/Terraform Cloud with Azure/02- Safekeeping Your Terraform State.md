@@ -24,11 +24,11 @@ https://app.terraform.io/app/settings/tokens
  cd hashicat-azure
  ```
 
-4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder **REPLACE-YOUR-TOKEN** with what you copied from Terraform Cloud. Ensure to **save** the file your token is now safely stored in the "credentials.tfrc.json" file.
+4. You need to add your API token to a file called **credentials.tfrc.json**  by replacing the placeholder **REPLACE-YOUR-TOKEN** with what you copied from Terraform Cloud. Ensure to **save** the file your token is now safely stored in the "credentials.tfrc.json" file.
 
-5. Return to your **Editor** tab in the cloud shell and edit the "remote_backend.tf" file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
+5. Return to your **Editor** tab in the cloud shell and edit the **remote_backend.tf** file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
   
-6. Next, edit the "terraform.tfvars" file, replacing the **yourname** placeholder with your name
+6. Next, edit the **terraform.tfvars** file, replacing the **yourname** placeholder with your name
 
 >First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
 The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
