@@ -24,30 +24,19 @@ https://app.terraform.io/app/settings/tokens
  cd hashicat-azure
  ```
 
-4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder **YOURTOKEN** with what you copied from Terraform Cloud. Run the below command, your token is now safely stored in the "credentials.tfrc.json" file.
-```
-  sed -i 's/REPLACE-YOUR-TOKEN/<YOURTOKEN>/g' credentials.trfc.json
-```
+4. You need to add your API token to a file called "credentials.tfrc.json"  by replacing the placeholder **REPLACE-YOUR-TOKEN** with what you copied from Terraform Cloud. Ensure to **save** the file your token is now safely stored in the "credentials.tfrc.json" file.
 
-5. Next, edit the "remote_backend.tf" file,replacing the YOURORG placeholder with your organization name
-```
-  sed -i 's/YOURORGANIZATION/<YOURORG>/g' remote_backend.tf
-```
+5. Return to your **Editor** tab in the cloud shell and edit the "remote_backend.tf" file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
   
-6. Also, please edit the "terraform.tfvars" file, replacing the YOURNAME placeholder with your name and run the command.
- ```
-  sed -i 's/yourname/<YOURNAME>/g' remote_backend.tf
- ```
+6. Next, edit the "terraform.tfvars" file, replacing the **yourname** placeholder with your name
 
 >First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
 The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
 
  
-7. 6. Also, please edit the "terraform.tfvars" file, replacing the **YOURLOCATION** placeholder with your name and run the command.
- ```
-  sed -i 's/yourlocation/<YOURLOCATION>/g' remote_backend.tf
- ```
->Then set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
+7. In the same file, replace the **YOURLOCATION** placeholder with your location, ensure to save the file
+ 
+>Set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
 
 8. The variables are actually declared in the "variables.tf" file. The "terraform.tfvars" file is just being used to set values for them.
 Once you've got all the pieces in place, try running a terraform init and then terraform apply command.
@@ -57,7 +46,7 @@ terraform init
 terraform apply
 ```
  
-Remember to type yes on the command prompt when you are prompted by Terraform to confirm the apply.
+**Remember to type yes on the prompt when you are prompted by Terraform to confirm the apply**
 
 9. When the terraform apply finishes, you should see output like this:
 Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
@@ -67,11 +56,11 @@ catapp_ip = "http://"
 catapp_url = http://sean-carolan-meow.centralus.cloudapp.azure.com
 
 10. Please click on the second URL to test that your application is working.
-To see a valid value for the catapp_ip output, you sometimes might first need to run terraform refresh.
+To see a valid value for the catapp_ip output, you sometimes might first need to run **terraform refresh**.
 Additionally, you should see a new state file on the "States" tab of your Terraform Cloud workspace.
 
-Note: If you ran terraform locally before configuring the remote backend, you might have a local state file called terraform.tfstate. If so, please delete it by running rm terraform.tfstate.
+Note: If you ran terraform locally before configuring the remote backend, you might have a local state file called terraform.tfstate. If so, please delete it by running **rm terraform.tfstate**.
 
 11. If you'd like to see the hashicat application in your web browser, simply copy the link from the output of your Terraform run, and paste it into the URL bar in another tab or window.
 
-Click on Next once you've successfully deployed the hashicat application with remote state enabled.
+Click on **Next** once you've successfully deployed the hashicat application with remote state enabled.
