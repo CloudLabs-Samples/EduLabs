@@ -17,7 +17,7 @@
 
 IMPORTANT: DO NOT SKIP THIS NEXT STEP:
 
-7 Naviagate back to Azure portal and click on **Cloud shell** and ensure that Powershell is selected.
+7. Navigate back to Azure portal and click on **Cloud shell** and ensure that Powershell is selected.
 
 8. All the required files for the lab are already provisioned within the environment.
  
