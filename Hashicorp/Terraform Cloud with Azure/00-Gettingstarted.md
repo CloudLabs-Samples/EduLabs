@@ -58,7 +58,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
     ![IMG46](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img46.png?raw=true)
 
-12. On the **Resource groups** page, you can view the pre-deployed resource group **lab-rg-<inject key="DeploymentID" />**.
+12. On the **Resource groups** page, you can view the pre-deployed resource group **terraform-<inject key="DeploymentID" />**.
 
     ![IMG47](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Hashicorp/Azure/Images/Img47.png?raw=true)   
     
