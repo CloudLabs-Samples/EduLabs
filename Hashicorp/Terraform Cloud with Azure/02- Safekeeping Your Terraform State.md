@@ -26,12 +26,12 @@ https://app.terraform.io/app/settings/tokens
  
 4. Return to your **Editor** tab in the cloud shell and edit the **remote_backend.tf** file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
   
-5. Next, edit the **terraform.tfvars** file, replacing the **yourname** placeholder with your name
+5. Next, edit the **terraform.tfvars** file, replacing the **rgname** with your name
 
 >First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
 The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
 
-6. In the same file, replace the **YOURLOCATION** placeholder with your location, ensure to save the file
+6. In the same file, replace the **location** with your location, ensure to save the file
  
 >Set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
 
