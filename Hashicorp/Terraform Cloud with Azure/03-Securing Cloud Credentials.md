@@ -22,14 +22,14 @@ In order to complete this challenge you'll need to do the following:
 6. Test your work by running **terraform init**. Your backend configuration will be updated for remote execution.
 
 7. Next try running **terraform plan**. This will trigger what's known as a speculative plan. You can view this plan by copying the link from your Cloud Shell tab. This plan will not show up in your ordinary terraform runs that are triggered via the UI or API. A copy of the plan output will be streamed back to your Cloud Shell tab.
-```
-terrafrom plan
-```
+ ```
+ terrafrom plan
+ ```
 8. Run a **terraform apply**. This apply will show up if you navigate to the runs page in the Terraform Cloud UI.
 terraform apply
-```
-terrafrom apply
-```
+ ```
+ terrafrom apply
+ ```
 Congratulations, your Azure credentials are now safely encrypted and stored in your Terraform Cloud workspace.
 
 9. You can continue to run terraform plan and terraform apply in your Cloud Shell tab, but the execution is now done in Terraform Cloud.
