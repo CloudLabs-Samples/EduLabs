@@ -10,7 +10,7 @@ In order to complete this challenge you'll need to do the following:
 1.	The four environment variables you need are ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID, and ARM_SUBSCRIPTION_ID.
     >You can get the details from the environment details tab
     
-    <inject key="Application Id" />
+    ARM_Client_ID: <inject key="Application Id" />
 
 2.	Update the **Execution Mode** settings in your terraform workspace to **Remote** on the **Settings > General** tab.
 
