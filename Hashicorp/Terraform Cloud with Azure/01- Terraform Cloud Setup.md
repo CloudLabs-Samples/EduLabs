@@ -9,7 +9,7 @@
 
 4. You will be redirected to **Welcome to Terraform Cloud!** page, select **Start from scratch** from choose your setup workflow options.
 
-5. Next you'll be prompted to create a organization. Provide the organization name as **demo-orgXXXXXX** or any other unique name.
+5. Next you'll be prompted to create a organization. Provide the organization name as **demo-org<inject key="DeploymentID" />*** or any other unique name.
 
 6. Next you'll be prompted to create a workspace. Select the **CLI-driven workflow** panel, type **hashicat-azure**, enter a description such as **HashiCat for Azure**, and click the **Create workspace** button. You must name your workspace hashicat-azure. If you don't, the exercises will break. Do not attempt to name it something else.
 
