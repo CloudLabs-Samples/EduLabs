@@ -42,9 +42,10 @@ The prefix will become part of your application hostname, and therefore must be 
 >Set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
 
 9. Run the below command
-   ```
+  ```
   terraform init
   ```
+  
 10. Now, run the below command in the powershell (Cloud shell) to import the pre-created resource group into Terraform state.
 
 Note: Make sure you replace the {subscription-id} and {DID} before running the command. You can find the values on the Environment details page.
@@ -60,7 +61,7 @@ terraform init
 terraform apply
 ```
  
-**Remember to type yes on the prompt when you are prompted by Terraform to confirm the apply**
+ **Remember to type yes on the prompt when you are prompted by Terraform to confirm the apply**
 
 12. When the terraform apply finishes, you should see output like this:
 Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
