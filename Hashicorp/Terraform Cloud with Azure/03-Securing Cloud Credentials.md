@@ -15,7 +15,7 @@ In order to complete this challenge you'll need to do the following:
 3.	Change the **Apply** Method to **Auto apply** on the same page. This will save you the trouble of having to approve every Terraform run manually. Remember to click the **Save settings** button at the bottom of the page!
 
 4.	Set Environment Variables for your Azure credentials on the **Variables** tab and mark the ARM_CLIENT_SECRET as Sensitive. The other three environment variables may remain in plaintext.
-
+   
 5.	Set Terraform Variables for your prefix and location. Learn more about these variables by looking in the variables.tf file. Set the same values you used in your terraform.tfvars file to avoid all the resources being destroyed and re-created (unless you like waiting longer).
    NOTE: You must configure these variables on the remote workspace, as they will no longer be read from your local terraform.tfvars file.
 
