@@ -12,13 +12,13 @@ After the Azure credentials issue, the security team is tightening down access t
 
 3.	The four environment variables you need are ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID, and ARM_SUBSCRIPTION_ID.
     
-    >ARM_Client_ID: <inject key="Application Id" />
+    >ARM_Client_ID:<inject key="Application Id" />
     
-    >ARM_CLIENT_SECRET: <inject key="Secret Key" />
+    >ARM_CLIENT_SECRET:<inject key="Secret Key" />
     
-    >ARM_TENANT_ID: <inject key="Tenant Id (Directory Id)" />
+    >ARM_TENANT_ID:<inject key="Tenant Id (Directory Id)" />
     
-    >ARM_SUBSCRIPTION_ID: <inject key="Subscription Id" />
+    >ARM_SUBSCRIPTION_ID:<inject key="Subscription Id" />
 
     NOTE: You can also get these values from the **Environment details-> Service Prinicipal** details
 
