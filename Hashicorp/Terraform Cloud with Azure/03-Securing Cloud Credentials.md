@@ -38,7 +38,7 @@ After the Azure credentials issue, the security team is tightening down access t
 8. Run a **terraform apply**. This apply will show up if you navigate to the runs page in the Terraform Cloud UI.
 terraform apply
  ```
- terrafrom apply
+ terraform apply
  ```
 Congratulations, your Azure credentials are now safely encrypted and stored in your Terraform Cloud workspace.
 
