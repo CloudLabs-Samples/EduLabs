@@ -1,4 +1,4 @@
-## Private Module Registry.
+## Private Module Registry
 
 Some of your users want a simple way to deploy databases and network configurations. Enter the Private Module Registry, in which you can store standard, re-usable Terraform code that others can use in their own workspaces.
 
