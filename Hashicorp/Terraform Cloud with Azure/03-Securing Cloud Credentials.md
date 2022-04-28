@@ -41,5 +41,6 @@ terraform apply
  terraform apply
  ```
 Congratulations, your Azure credentials are now safely encrypted and stored in your Terraform Cloud workspace.
+You can wait till the run is completed before you move to the next exercise
 
 9. You can continue to run terraform plan and terraform apply in your Cloud Shell tab, but the execution is now done in Terraform Cloud.
