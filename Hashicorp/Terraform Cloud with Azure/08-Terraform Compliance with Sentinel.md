@@ -1,4 +1,4 @@
-##Terraform Compliance with Sentinel
+## Terraform Compliance with Sentinel
 
 Developers in your organization are building cloud resources without tagging them properly. You need a way to enforce tagging on all your Azure instances that are built with Terraform. Meet Sentinel, the governance engine for Terraform.
 
