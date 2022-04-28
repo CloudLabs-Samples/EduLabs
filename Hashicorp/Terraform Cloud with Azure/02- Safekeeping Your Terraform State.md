@@ -13,35 +13,33 @@ Your task is to configure remote state using your Terraform Cloud account. In or
 
 >A  remote_backend config stored in your workspace
 
-
 1. Let's generate a new user token for use on your workstation. Visit the User Settings > Tokens page in Terraform Cloud:
 https://app.terraform.io/app/settings/tokens
 
 2. Click on the Create an API token button. You can name the token whatever you like. Copy the entire token using your mouse or the small copy-paste icon.
 
 3. Now navigate back to your cloudlabs environment , run the below command
- ```
- cd hashicat-azure
- ```
- 
-4. Return to your **Editor** tab in the cloud shell and edit the **remote_backend.tf** file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
-  
-5. Next, edit the **terraform.tfvars** file, replacing the **rgname** with your resource group name **terraform-<inject key="DeploymentID" />**
-
->First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
-The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
-
-6. In the same file, replace the **location** with your resource group location, ensure to save the file
- 
->Set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
-
-7. Now navigate back to your cloudlabs environment , run the below command
+   ```
+   cd hashicat-azure
+   ```
+4. Run the below command for logging in to the terraform cloud
     ```
     terraform login
    ```
  **Remember to type yes on the prompt when you are prompted by Terraform to proceed with the authentication**
 
-8. Paste the api token that you copied in step 2 and press **Enter**
+5. Paste the api token that you copied in step 2 and press **Enter**
+
+6. Return to your **Editor** tab in the cloud shell and edit the **remote_backend.tf** file, replacing the YOURORGANIZATION placeholder with your organization name. Save the file.
+  
+7. Next, edit the **terraform.tfvars** file, replacing the **rgname** with your resource group name **terraform-<inject key="DeploymentID" />**
+
+>First, set prefix to your name (first and last with or without a hyphen between them and all lower case).Keep your prefix string all lower case, and between 5-12 characters long. Do not use an underscore in your prefix.
+The prefix will become part of your application hostname, and therefore must be DNS-compliant. Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.
+
+8. In the same file, replace the **location** with your resource group location, ensure to save the file
+ 
+>Set location to a valid Azure location near you such as "East US", "Central US", "UK South", or "Southeast Asia". You can also use shorter names like "eastus", "centralus", "uksouth", or "southeastasia"; in fact, Terraform will convert the longer names with spaces to the shorter names without them.
 
 9. Run the below command
    ```
