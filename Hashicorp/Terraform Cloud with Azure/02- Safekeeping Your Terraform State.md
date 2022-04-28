@@ -72,7 +72,6 @@ catapp_url = http://sean-carolan-meow.centralus.cloudapp.azure.com
 
 13. Please click on the second URL to test that your application is working.
 To see a valid value for the catapp_ip output, you sometimes might first need to run **terraform refresh**.
-Additionally, you should see a new state file on the "States" tab of your Terraform Cloud workspace.
 
 Note: If you ran terraform locally before configuring the remote backend, you might have a local state file called terraform.tfstate. If so, please delete it by running **rm terraform.tfstate**.
 
