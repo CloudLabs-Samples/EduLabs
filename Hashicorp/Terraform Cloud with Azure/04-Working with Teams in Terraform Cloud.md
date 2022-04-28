@@ -4,7 +4,7 @@ As your Terraform usage increases more team members want to collaborate. Let's a
 
 Teams and role-based access controls are a paid feature of Terraform Cloud. You will need to ensure your free trial has been activated from the earlier steps in order to complete this challenge.
 
-In this challenge you'll create teams with different levels of access to your workspace. You can then invite other users to collaborate on code changes, approvals, and Terraform runs.
+In this exercise you'll create teams with different levels of access to your workspace. You can then invite other users to collaborate on code changes, approvals, and Terraform runs.
 
 1.	Go into your organization's General Settings and click on the Teams link.
 
