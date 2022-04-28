@@ -69,14 +69,14 @@ https://www.terraform.io/docs/cloud/vcs/github.html
 
 18. Select **Github(Custom)** from the **Connect to a version control provider** tab
 
-Make sure you configure an OAuth connection for your organization and not the GitHub App for a single workspace! Once you've configured GitHub access for your organization, you can update your workspace to use your hashicat-azure repository as the source for all Terraform runs. Go into the Settings > Version Control settings page for your workspace. Connect your workspace to the fork of your hashicat-azure repository on GitHub.
+19. **Choose a repository** from the list 
+ >Make sure you configure an OAuth connection for your organization and not the GitHub App for a single workspace! Once you've configured GitHub access for your organization, you can update your workspace to use your hashicat-azure repository as the source for all Terraform runs. Go into the Settings > Version Control settings page for your workspace. Connect your workspace to the fork of your hashicat-azure repository on GitHub.
 
-11. Be sure to expand the "Advanced options" section of the "Version Control" page and enable the "Automatic speculative plans" feature before clicking the "Update VCS settings" button.
+20. Enable the **Automatic speculative plans** feature and then  click on **Update VCS settings** from the **version Control** page 
 
-12. The first VCS-backed apply should trigger immediately. Click on the Runs tab to view the run in action.
+21. The first VCS-backed apply should trigger immediately. Click on the **Runs** tab to view the run in action.
 
 Congratulations, all Terraform changes must now go through version control before they are used in your workspace. This enables you to do code reviews before any changes are pushed to production. It also provides a valuable record of any and all changes made to the code that built your infrastructure. This can prevent configuration drift and undocumented changes.
-
 
 Click the Next button to let Jane know she can clone the hashicat-azure repo for QA testing.
 
