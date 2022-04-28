@@ -11,16 +11,15 @@ After the Azure credentials issue, the security team is tightening down access t
 2.	Change the **Apply** Method to **Auto apply** on the same page. This will save you the trouble of having to approve every Terraform run manually. Remember to click the **Save settings** button at the bottom of the page!
 
 3.	The four environment variables you need are ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID, and ARM_SUBSCRIPTION_ID.
+    i. ARM_Client_ID:<inject key="Application Id" />
     
-    >ARM_Client_ID:<inject key="Application Id" />
+    ii. ARM_CLIENT_SECRET:<inject key="Secret Key" />
     
-    >ARM_CLIENT_SECRET:<inject key="Secret Key" />
+    iii. ARM_TENANT_ID:<inject key="Tenant Id (Directory Id)" />
     
-    >ARM_TENANT_ID:<inject key="Tenant Id (Directory Id)" />
-    
-    >ARM_SUBSCRIPTION_ID:<inject key="Subscription Id" />
+    iv. ARM_SUBSCRIPTION_ID:<inject key="Subscription Id" />
 
-    NOTE: You can also get these values from the **Environment details-> Service Prinicipal** details
+   NOTE: You can also get these values from the **Environment details-> Service Prinicipal** details
 
 4.	Set **Environment Variables** for your Azure credentials on the **Variables** tab and mark the ARM_CLIENT_SECRET as Sensitive. The other three environment variables  ARM_CLIENT_ID, ARM_TENANT_ID, and ARM_SUBSCRIPTION_ID may remain in plaintext.
    
