@@ -206,9 +206,9 @@ In this task, you will be creating a Web Application Firewall policy with the as
     
     * Subscription : Select the default subscription
 
-    * Resource Group : **Waf-DID**
+    * Resource Group : **waf-<inject key="DeploymentID"></inject>**
 
-    * Policy Name : **PolicyDID**
+    * Policy Name : **Policy<inject key="DeploymentID"></inject>**
 
 1. Select **Next : Managed rules**.
 
