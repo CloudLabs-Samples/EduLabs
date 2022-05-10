@@ -16,7 +16,7 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 ## Architecture Diagram 
 
-   ![](../images/waf100.png)
+   ![](../images/waf101.png)
    
 Click on **Next** to continue to the next section of the lab.
 
