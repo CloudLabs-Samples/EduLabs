@@ -5,7 +5,7 @@
 In this hands-on lab you will perform the following tasks:
  
 - **01: Login to Azure Portal**
-- **02: View the Azure Portal Deployments**
+- **02: Review the predeployed resources in Azure**
 - **03: Verify the Application gateway with WAF Enabled**
 - **04: Create and link a Web Application Firewall policy**
 - **05: Test the application gateway**
