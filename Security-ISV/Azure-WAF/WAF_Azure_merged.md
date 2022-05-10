@@ -55,7 +55,7 @@ In this task you will login to Microsoft Azure using your credentials and access
 
 In this task, you logged into Microsoft Azure using your credentials and accessed the Azure Portal dashboard.
 
-# 02: View the Azure Portal deployments
+# 02: Verify the pre-deployed resources
 
 ## Overview
 
@@ -109,7 +109,7 @@ In this task, you will view the backend pool with application gateway attached a
 
     ![](../images/waf067.png)
     
-### Task 2 : Application gateway and its Components
+### Task 2 : Review Application gateway and its Components
 
 In this task, you can view the Application gateway and its Components
 
