@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Getting Started with Adobe Creative Cloud",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Media/AdobeCC/00-getting-started.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Media/AdobeCC/01.md",
+        "Order": 2
+      }
+     ]
+  }
+]  
+  
