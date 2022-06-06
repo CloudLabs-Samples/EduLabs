@@ -1,5 +1,5 @@
 
-# Getting Started with Docker
+# Getting Started with the Lab Environment
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab. You can see the number on lab guide bottom area to switch on different exercises of lab guide.
 
@@ -23,18 +23,6 @@
 
     ![](./images/ges5.png)
  
-  
-1. In the environment click on ok if you recevie a prompt regarding windows deprecation.
-
-   ![](./images/ges6.png)
-
-1. On the service agrement page check ** I accept the terms** and click on **Accept**.
-
-   ![](./images/ges7.png)
-   
-1. Now start the **Docker Desktop** by click on **Start**.
-
-   ![](./images/ges8.png)
 
 
 You can see the page number on lab guide at the bottom area to switch on different exercises of the lab guide.
