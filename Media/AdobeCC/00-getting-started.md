@@ -3,7 +3,6 @@
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab. You can see the number on lab guide bottom area to switch on different exercises of lab guide.
 
-
 1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration. 
 
     > You will see DeploymentId value on **Environment Details** tab, use it whereever you see SUFFIX or DeploymentID in lab steps.
