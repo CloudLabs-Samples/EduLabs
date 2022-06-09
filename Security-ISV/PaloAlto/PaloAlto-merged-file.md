@@ -185,7 +185,7 @@ In this task, you will learn about the various management capabilities such as t
 
     ![](../images/Palo09.png)
 
-1. The interface(Ethernet 2/2) is called as **Trust Zone**.  This is the interface where assets need to be protected. For example, the web and data servers.
+1. The interface(Ethernet 1/2) is called as **Trust Zone**.  This is the interface where assets need to be protected. For example, the web and data servers.
 
 1. The Device tab manages the configuration items such as DNS, and service routes and also allows you to manage high availability, users, software, and content updates.
 
