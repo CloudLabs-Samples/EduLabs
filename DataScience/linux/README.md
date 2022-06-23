@@ -65,7 +65,7 @@ After completing this, you will learn how to:
 
 Here, When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.To compute those gradients, PyTorch has a built-in differentiation engine called torch.autograd. It supports automatic computation of gradient for any computational graph. 
 
-1. In the Jupyter lab, in the left pane, select to **Pytorch** folder and double-click on it to open.
+1. In the Jupyter lab, in the left pane, select any folder, we select **Pytorch** folder and double-click on it to open.
 
    ![](../images/pytorch.png)
 
