@@ -12,9 +12,9 @@ In this task, you will navigate to your resource group and view the pre-deployed
 
      ![](../images/Picture2.jpg)
 
-1. On the Resource group blade, select the resource group with **paloalto-DID**.
+1. On the Resource group blade, select the resource group with **paloalto-<inject key="DeploymentID"></inject>**.
 
-1. You can view the deployed resources in that resource group **paloalto-DID**.
+1. You can view the deployed resources in that resource group **paloalto-<inject key="DeploymentID"></inject>**.
 
      ![](../images/image035.png)
      
