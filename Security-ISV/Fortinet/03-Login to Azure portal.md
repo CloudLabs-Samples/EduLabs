@@ -23,7 +23,7 @@ In this task, you will log in to Microsoft Azure using your credentials and acce
     
 4. If you see the pop-up **Stay signed in?** Click **No**.
 
-    ![](../images/image-006.jpg)
+    ![](../images/image-0006.png)
     
 5. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab.
 
