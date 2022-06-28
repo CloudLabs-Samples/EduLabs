@@ -32,7 +32,7 @@ In this task, you will view the backend pool with application gateway attached a
 
 In this task, you can view the Application gateway and its Components
 
-1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway-<inject key="DeploymentID"></inject>**.
+1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf050.png)
      
