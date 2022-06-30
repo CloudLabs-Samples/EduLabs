@@ -8,7 +8,7 @@ In this task, you will see that link state for the interfaces will be **OFF** an
 
     ![](../images/Palo016.png)
 
-1. Navigate to the **Environment Details** tab, copy the URL of **WebServer URL** and open it in the browser. You can verify the page showing error that is attached below.
+1. Navigate to the **Environment Details** tab, copy the URL of **WebServer URL**: <inject key="WebServerURL"> and open it in the browser. You can verify the page showing error that is attached below.
 
     ![](../images/image023.png)
 

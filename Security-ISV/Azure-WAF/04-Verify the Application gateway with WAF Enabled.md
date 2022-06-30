@@ -32,7 +32,7 @@ In this task, you will view the backend pool with application gateway attached a
 
 In this task, you can view the Application gateway and its Components
 
-1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway-<inject key="DeploymentID"></inject>**.
+1. On the resource group page of **waf-<inject key="DeploymentID"></inject>**, select the application gateway with the name **gateway<inject key="DeploymentID"></inject>**.
 
      ![](../images/waf050.png)
      
@@ -64,11 +64,11 @@ In this task, you can view the Application gateway and its Components
 
      ![](../images/waf058.png)
 
-1. On the application gatway overview page, under **settings**, select the **HTTP Settings** and select **httpsetting**.
+1. On the application gatway overview page, under **settings**, select the **Backend settings** and select **httpsetting**.
 
-      * **HTTP Setting** : The port and protocol used in the HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted or unencrypted.
+      * **Backend settings** : The port and protocol used in the HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted or unencrypted.
 
-     ![](../images/waf052.png)
+     ![](../images/waff052.png)
 
 1. On the **Add HTTP setting**, review the settings and click on **Cancel**.
 

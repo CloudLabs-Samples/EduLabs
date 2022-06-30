@@ -229,6 +229,12 @@ We will use **UPDATE**, **DELETE** and **REPLACE** commands in this task for per
    ```
    UPDATE Course SET CourseId = 1001 WHERE CourseId = 101;
    ```
+   Execute the following query and observe the course ID is update.
+  
+   ```
+   SELECT * FROM Course;
+   ```
+
    ![](media/mysql-updatenew.png)
    
 1. Run following query and observe that the Name Bhaskar is replced with **John**. **REPLACE** command replaces all occurrences of a substring within a string, with a new substring. 
@@ -244,6 +250,10 @@ We will use **UPDATE**, **DELETE** and **REPLACE** commands in this task for per
    DELETE FROM Course WHERE Teacher = 'Neelima';
    ```
    Execute the following query and observe the data inside the **Course** table after deleting fields with name **Neelima**.
+   
+    ```
+   SELECT * FROM Course;
+   ```
    
    ![](media/mysql-delete.png)
 

@@ -25,7 +25,7 @@ In this task, you will view the pre-deployed F5 Advanced WAF VM and web servers.
 
 1. If you see the pop-up **Stay Signed in?** click **No**.
 
-    ![](../images/image-006.jpg)
+    ![](../images/image-0006.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
 
