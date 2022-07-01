@@ -63,23 +63,32 @@ After completing this, you will learn how to:
 
 ## Task 2: Execute Notebooks
 
-  Here, you are Setting up Azure Machine Learning services workspace and configuring the notebook library
+Here, you will learn some features and capabilities of Spark's MLlib toolkit for ML problems using the NYC taxi trip and fare data set from 2013. Here you will address two machine learning problems:
+- Binary classification: Prediction of tip or no-tip (1/0) for a taxi trip [Using regularized regression]
+- Regression problem: Prediction of the tip amount ($) [Using random forest]
 
-1. In the Jupyter lab, in the left pane, select **AzureML** folder and double-click on it to open.
+Spark.ml is a new package introduced in Spark 1.2, which aims to provide a uniform set of high-level APIs that help users create and tune practical machine learning pipelines
 
-   ![](../images/azureML.png)
+1. In the Jupyter lab, in the left pane, select **SparkML** folder and double-click on it to open.
 
-1. In the **Basics** folder, Select **configuration.ipynb** file and double-click to open it on the right side of the Jupyter lab portal. In this file you will learn about:
-   - Azure Machine Learning workspace
-   - Azure Subscription
-   - Azure ML SDK and other library installation process
-   - Azure Container Instance registration
-   - Configure your Azure ML workspace
-   - Access your workspace
-   - Create a new workspace
-   - Create compute resources for your training experiments
+   ![](../images/SparkML.png)
 
-   ![](../images/configuration.png)
+1. In the **SparkML** folder, Select **pySpark** folder, then Select **pySpark2.0modeling.ipynb** file and double-click to open it on the right side of the Jupyter lab portal. In this file you will learn about:
+
+
+   - Set spark context and import necessary libraries
+   - Data exploration & visualization
+   - Feature engineering, transformation and data prep for modeling
+   - Indexing and one-hot encoding of categorical features
+   - Binary classification model training
+   - Regression model training
+   - Load a pipeline model and evaluate it test data
+   - Hyper-parameter tuning: Train a random forest model using hyper-parameter tuning and cross-validation
+   - Load independent validation data-set and evaluate a model
+
+   ![](../images/pySpark.png)
+
+   ![](../images/pySpark2.0modeling.png)
 
 1. Execute each cell one at a time by clicking on it and selecting the execute button.
 
