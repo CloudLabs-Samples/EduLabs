@@ -67,7 +67,7 @@ Here, you will learn some features and capabilities of Spark's MLlib toolkit for
 - Binary classification: Prediction of tip or no-tip (1/0) for a taxi trip [Using regularized regression]
 - Regression problem: Prediction of the tip amount ($) [Using random forest]
 
-Spark.ml is a new package introduced in Spark 1.2, which aims to provide a uniform set of high-level APIs that help users create and tune practical machine learning pipelines
+Spark.ml is a new package introduced in Spark 1.2, which aims to provide a uniform set of high-level APIs that help users to create and tune practical machine learning pipelines.
 
 1. In the Jupyter lab, in the left pane, select **SparkML** folder and double-click on it to open.
 
