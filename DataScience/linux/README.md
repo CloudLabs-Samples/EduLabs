@@ -73,9 +73,12 @@ Spark.ml is a new package introduced in Spark 1.2, which aims to provide a unifo
 
    ![](../images/SparkML.png)
 
-1. In the **SparkML** folder, Select **pySpark** folder, then Select **pySpark2.0modeling.ipynb** file and double-click to open it on the right side of the Jupyter lab portal. In this file you will learn about:
+1. In the **SparkML** folder, Select **pySpark** folder and double-click on it to open. 
 
+   ![](../images/pySpark.png)
 
+1. In the **pySpark** folder, Select **pySpark2.0modeling.ipynb** Notebook and double-click to open it on the right side of the Jupyter lab portal. In this Notebook you will learn about:
+ 
    - Set spark context and import necessary libraries
    - Data exploration & visualization
    - Feature engineering, transformation and data prep for modeling
@@ -86,8 +89,7 @@ Spark.ml is a new package introduced in Spark 1.2, which aims to provide a unifo
    - Hyper-parameter tuning: Train a random forest model using hyper-parameter tuning and cross-validation
    - Load independent validation data-set and evaluate a model
 
-   ![](../images/pySpark.png)
-
+  
    ![](../images/pySpark2.0modeling.png)
 
 1. Execute each cell one at a time by clicking on it and selecting the execute button.
