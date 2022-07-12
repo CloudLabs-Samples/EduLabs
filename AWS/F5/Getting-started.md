@@ -51,52 +51,97 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
  
 1. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
 
-1. Naviage to the https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
+1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it is used in further steps
+
+1. Navigate to the https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
 1. Select the Marketplace image and click on **Continue to subscribe**
 
-1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions,
+1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions
 
-3. Now search for **Cloud Formation** select **stacks**
+1. Now search for **Cloud Formation** select **stacks**
 
 1. Select **Create stack**
 
       ![](../images/f5-06.jpg)
       
-1. On the virtual machine blade, scroll down to the **Settings** section, click on **Networking**
+1. On the **Create stack** blade, provide the **Amazon S3 URL** and click on **Next**
 
       ![](../images/Picture11.png)
       
-1. Select the **web-vm-nic1** Network Interfaces.
+1. On the **Specify stack details** section. Provide the following details and click on **Next**
+   - Stack name : **f5deployment**
+   - Select the existing **VPC ID** 
+   - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID and BIGIP management interface Subnet ID
 
       ![](../images/f5-07.jpg)
  
-1. In the Network Interfaces blade, you can see the **Private IP address** of **web-vm1**. Copy the value of the Private IP address. You will need it for the next task.
-
+1. On the **Review f5deployment** blade, review the configurations and scroll down to the bottom
       ![](../images/f5-08.jpg)
 
-1. Navigate back to the Resource groups and select your Resource Group
+1. Now, under the **Capabilities** section check both the boxes and accept the terms
 
       ![](../images/f5-09.jpg)
     
-1. On the Resource group blade, click on Overview.
+1. Click on **Create stack** and wait for 3 minutes for the deployment to be completed.
 
       ![](../images/f5-05.jpg)
 
-1. Explore the pre-deployed resources
-   
+1. On the **Stacks** page ensure the status shows as **CREATE_COMPLETE**
+
+1. Search for **EC2** and select **Instances** to view the F5 instance and web server instance
+
+1. On the instances page , click on each of the instance and review the configurations.
+
+1. Click on the Web server instance , from the **Security** tab select the security group 
+
+1. Now from the security group page select **Edit inbound rules** 
+
+1. Click on **add rule** and add the port 80 
+
+1. Click **Save rules**
+
+1. Click on the F5 instance scroll down to the bottom and select the security group 
+
+1. Now from the security group page select **Edit inbound rules** 
+
+1. Click on **add rule** and add the port 8443 and 443 if it's not added already
+
+1. Click **Save rules** 
 
 ## Overview 
 
-In this task, you will access the F5 Advanced WAF dashboard by using the Public Ip address.
+In this task, you will access the F5 Big IP dashboard by using the Public Ip address.
 
 ## Task 2: Accessing the F5 Dashboard
 
-1. In the LabVM desktop, select the **Microsoft Edge** icon.
-  
-1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Advanced WAF Public IP**: <inject key="F5IP"></inject>. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
+1. Navigate to the Cloudformation->stacks and copy the public ip address of F5 instance from the output section
+
+1. Open **Putty** from your machine
+
+   NOTE: If you don't have putty installed, you can download putty from this link : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+1. Provide the F5 Public ip under **Hostname**
+
+1. Navigate to the **Auth** option and click on **Browse** under **Private key file for authentication**
+
+1. Select the downloaded key pair file and click on **Open**
+
+1. If a pop window of **Putty Security Alert** appears, click on **Yes**
+
+1. Login as admin
+
+1. Run the following commands to set a password for F5 instance
+   ```
+   modify auth user admin password <yourpasswordhere>
+   save sys config
+   ```
+ 
+1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
     ![](../images/f5-01.jpg)
+   
+   NOTE: You can also get it by navigating to the Cloudformation->stacks and copy the management portal URL of F5 instance from the output section
     
 1. A page shown below will apear. Click on **Advanced** on the web page.
 
