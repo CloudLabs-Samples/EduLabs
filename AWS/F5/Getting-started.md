@@ -1,4 +1,4 @@
-# Getting started with BIG-IP Virtual Edition on AWS
+# Getting started with F5 BIG-IP Virtual Edition on AWS
 
 ## Tasks Included
 
@@ -22,7 +22,6 @@ F5 Advanced WAF is an application-layer security platform protecting against app
 ## Architecture Diagram
    ![](../images/f5-archdiag.png)
 
-
 # 01: Getting started with the AWS console
 
 ## Overview
@@ -43,10 +42,24 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
     ![](../images/image-004.jpg)
   
     ![](../images/image-005.jpg)
+
+1. Now you will be able to view the home page of AWS console
  
-1. Ensure to switch to **Ohio** region
-     
-3. Select the **web-vm1** virtual machine from the resource list.
+1. Ensure to switch to **Ohio** region at the top right corner.
+
+1. Search for **key pairs** and select **Key Pairs** from EC2 feature
+ 
+1. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
+
+1. Naviage to the https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
+
+1. Select the Marketplace image and click on **Continue to subscribe**
+
+1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions,
+
+3. Now search for **Cloud Formation** select **stacks**
+
+1. Select **Create stack**
 
       ![](../images/f5-06.jpg)
       
