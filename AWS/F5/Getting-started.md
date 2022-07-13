@@ -151,16 +151,12 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 
     ![](../images/f5-cont.png)
     
-1. You will be redirected to the **F5 Advanced WAF** Login page.
+1. You will be redirected to the **F5 BIG-IP** Login page.
 
     ![](../images/f5-02.jpg)
     
-1. Enter the following F5 Portal username and password and then click on **Log in**.  
+1. Enter the username as **admin** and the password you have set in the previous steps and then click on **Log in**.  
 
-   * **F5 Portal Username**:  <inject key="F5 Portal Username"></inject> 
-   * **F5 Portal Password**:  <inject key="F5 Portal Password"></inject>
-
-        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
     ![](../images/f5-03.jpg)
  
@@ -168,7 +164,6 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
  
     ![](../images/f5-10.jpg)
    
-
 
 # 03: Configuring F5 Advanced Web Application firewall
 
@@ -178,10 +173,14 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 ## Task 1: Access the Webserver
 
-1. Open a new tab in the browser and attempt to access the webserver via http to the same IP address as the F5.
-   * <inject key="f5_httpURL"></inject>
+1. Open a new tab in the browser and attempt to access the webserver via http to the same IP address as the F5 
+   ```
+   http://<f5publicip>
+   ```
 
     ![](../images/accesswebserver.png)
+    
+    NOTE: Replace the public ip of F5 in the placeholder <f5publicip>
     
 2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
@@ -199,11 +198,13 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
         
     ![](../images/f5-12.jpg)
 
-1. In the **Name** field, type **web_pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **http_head_f5** from the **Available** to the **Active** list by clicking on <<.
+1. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **http** from the **Available** to the **Active** list by clicking on <<.
 
     ![](../images/f5-13.jpg)  
 
-1. In the **New Members** section, in the **Address** field, type the Private IP address which you copied in the previous task **(1)**. In the **Service Port** field, type **80** as service port **(2)** and Click **Add** **(3)**.
+1. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
+   
+1. In the **Service Port** field, select **http** as service port **(2)** and Click **Add** **(3)**.
 
       **Note**: The list now contains the member **(4)**
         
@@ -229,7 +230,7 @@ In this exercise, A virtual server listens for packets destined for the external
     
 1. In the **General Properties** section, configure as below:
 
-   - Name: **Demo-Websites** (Or your custom service name)
+   - Name: **Demo-Website** (Or your custom service name)
    - Destination Address/Mask: **0.0.0.0/0**
    - Service port: **80**
    - State: Leave the default
@@ -253,7 +254,9 @@ In this exercise, A virtual server listens for packets destined for the external
    ![](../images/f5-vsstatus.png)
     
 1.  Open a new tab in the browser and copy-paste the following to access the webserver.
-    * <inject key="f5_httpURL"></inject>
+    ```
+     http://<f5publicip>
+     ```
     
 1. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
     
