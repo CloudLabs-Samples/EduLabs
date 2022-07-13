@@ -20,7 +20,8 @@ Network Firewall (AFM)
 F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic, all OWASP top 10 threats and API protocol vulnerabilities.The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
 
 ## Architecture Diagram
-   ![](../images/f5-archdiag.png)
+   
+   ![](../images/f5archdiag.png)
 
 # 01: Getting started with the AWS console
 
@@ -30,24 +31,30 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 ## Task 1: Getting started with the AWS
 
-1. In the browser that you already opened, open a new tab, and sign in to the **AWS Console** https://.signin.aws.amazon.com/console/.
+1. In a browser, open a new tab, and sign in to the **AWS Console** using the signin link provided in the **Environment details** tab 
+   
+  ![](../images/awssigninlink.png)
 
-1. On the **Sign in as IAM User** blade, you will see a login screen, in which enter the following email/username and then click on **Sign in**.  
+1. On the **Sign in as IAM User** blade, you will see a Sign in screen, in which enter the following email/username and then click on **Sign in**.  
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+   **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
-    ![](../images/image-004.jpg)
-  
-    ![](../images/image-005.jpg)
+   ![](../images/awsconsolecreds.png)
 
 1. Now you will be able to view the home page of AWS console
- 
+   
+    ![](../images/consolehome.png)
+
 1. Ensure to switch to **Ohio** region at the top right corner.
+   
+    ![](../images/ohioregion.png)
 
 1. Search for **key pairs** and select **Key Pairs** from EC2 feature
+
+    ![](../images/keypair.png)
  
 1. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
 
