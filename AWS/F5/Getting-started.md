@@ -17,7 +17,7 @@ Access Policy Manager (APM)
 Advanced WAF
 Network Firewall (AFM)
 
-F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic, all OWASP top 10 threats and API protocol vulnerabilities.The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
+F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic, all OWASP top 10 threats, and API protocol vulnerabilities. The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
 
 ## Architecture Diagram
    
@@ -27,15 +27,15 @@ F5 Advanced WAF is an application-layer security platform protecting against app
 
 ## Overview
 
-In this task, you will deploy F5 BIG-IP Virtual Edition and web server. 
+In this task, you will deploy F5 BIG-IP Virtual Edition and a web server. 
 
 ## Task 1: Getting started with the AWS
 
-1. In a browser, open a new tab, and sign in to the **AWS Console** using the signin link provided in the **Environment details** tab 
+1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
   ![](images/awssigninlink.png)
 
-1. On the **Sign in as IAM User** blade, you will see a Sign in screen, in which enter the following email/username and then click on **Sign in**.  
+1. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
@@ -44,15 +44,15 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
         
    ![](images/awsconsolecreds.png)
 
-1. Now you will be able to view the home page of AWS console
+1. Now you will be able to view the home page of the AWS console
    
     ![](images/consolehome.png)
 
-1. Ensure to switch to **Ohio** region at the top right corner.
+1. Ensure to switch to the **Ohio** region at the top right corner.
    
     ![](images/ohioregion.png)
 
-1. Search for **key pairs** and select **Key Pairs** from EC2 feature
+1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
     ![](images/keypair.png)
  
@@ -62,13 +62,13 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
     
 1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
-1. Navigate to the https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
+1. Navigate to https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
 1. Select the Marketplace image and click on **Continue to subscribe**
    
    ![](images/bigipsubscribe.png)
     
-1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions
+1. Under the **Subscribe to this software** section click on **Accept Terms** and accept the terms and conditions
    
    ![](images/f5bigipterms.png)
    
@@ -90,7 +90,7 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 1. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
-   - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID and BIGIP management interface Subnet ID
+   - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID, and BIGIP management interface Subnet ID
 
    ![](images/specifystackdetails1.png)
  
@@ -114,11 +114,11 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
    
    ![](images/ec2.png)
 
-1. On the instances page , click on each of the instance and review the configurations.
+1. On the instances page, click on each instance and review the configurations.
    
    ![](images/ec2.png)
 
-1. Click on the Web server instance , from the **Security** tab select the security group 
+1. Click on the Web server instance, from the **Security** tab select the security group 
  
    ![](images/wsinstancesummary.png)
 
@@ -138,7 +138,7 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 1. Now from the security group page select **Edit inbound rules** 
 
-1. Click on **add rule** and add the port 8443 and 443 if it's not added already
+1. Click on **add rule** and add the ports 8443 and 443 if it's not been added already
 
 1. Click **Save rules** 
 
@@ -151,40 +151,40 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 1. Open **Putty** from your machine
    ![](images/putty-0.png)
    
-   NOTE: If you don't have putty installed, you can download putty from this link : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+   NOTE: If you don't have putty installed, you can download putty from this link: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-1. Navigate to the **Cloudformation->stacks** and copy the public ip address of F5 instance from the output section
+1. Navigate to the **Cloudformation->stacks** and copy the public IP address of the F5 instance from the output section
    
    ![](images/f5outputs.png)
 
 1. Provide the F5 Public ip under **Hostname** and expand **SSH** by clicking on **+**
    ![](images/putty-1.png)
 
-1. Click on **Auth** option and click on **Browse** under **Private key file for authentication**
+1. Click on the **Auth** option and click on **Browse** under **Private key file for authentication**
    - Select the downloaded key pair file and click on **Open**
 
    ![](images/putty-2.png)
     
 1. If a pop window of **Putty Security Alert** appears, click on **Yes** to open a command prompt
 
-1. From the command prompt, login as **admin**
+1. From the command prompt, log in as **admin**
    
    ![](images/putty-3.png)
 
-1. Run the following commands to set a password for F5 instance
+1. Run the following commands to set a password for the F5 instance
    ```
    modify auth user admin password <yourpasswordhere>
    save sys config
    ```
    Note: Replace <yourpasswordhere> placeholder with the password value that you would want to set
  
-1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
+1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **HTTPS** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-01.jpg)
    
-   NOTE: You can also get it by navigating to the Cloudformation->stacks and copy the management portal URL of F5 instance from the output section
+   NOTE: You can also get it by navigating to the Cloudformation->stacks and copying the management portal URL of the F5 instance from the output section
     
-1. A page shown below will apear. Click on **Advanced** on the web page.
+1. A page shown below will appear. Click on **Advanced** on the web page.
 
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-adv.png)
      
@@ -209,18 +209,18 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 
 ## Overview
 
-In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure for publishing IIS Based websites.
+In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure to publish IIS-based websites.
 
 ## Task 1: Access the Webserver
 
-1. Open a new tab in the browser and attempt to access the webserver via http to the same IP address as the F5 
+1. Open a new tab in the browser and attempt to access the web server via HTTP to the same IP address as the F5 
    ```
    http://<f5publicip>
    ```
 
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/accesswebserver.png)
     
-    NOTE: Replace the public ip of F5 in the placeholder <f5publicip>
+    NOTE: Replace the public IP of F5 in the placeholder <f5publicip>
     
 2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
@@ -238,7 +238,7 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
         
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-12.jpg)
 
-1. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **http** from the **Available** to the **Active** list by clicking on <<.
+1. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-13.jpg)  
 
@@ -304,4 +304,4 @@ In this exercise, A virtual server listens for packets destined for the external
 
 # Conclusion
 
-Congratulations, You have successfully completed this lab. In this lab, you were able to publish a Web Application hosted behind F5 advanced Web application firewall   
+Congratulations, You have completed this lab. In this lab, you were able to publish a Web Application hosted behind an F5 advanced Web application firewall   
