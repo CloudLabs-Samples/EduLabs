@@ -149,6 +149,7 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 ## Task 2: Accessing the F5 Dashboard
 
 1. Open **Putty** from your machine
+   
    ![](images/putty-0.png)
    
    NOTE: If you don't have putty installed, you can download putty from this link: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
@@ -158,6 +159,7 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
    ![](images/f5outputs.png)
 
 1. Provide the F5 Public ip under **Hostname** and expand **SSH** by clicking on **+**
+   
    ![](images/putty-1.png)
 
 1. Click on the **Auth** option and click on **Browse** under **Private key file for authentication**
@@ -180,21 +182,21 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
  
 1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **HTTPS** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-01.jpg)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-01.jpg)
    
    NOTE: You can also get it by navigating to the Cloudformation->stacks and copying the management portal URL of the F5 instance from the output section
     
 1. A page shown below will appear. Click on **Advanced** on the web page.
 
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-adv.png)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-adv.png)
      
 1. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
 
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-cont.png)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-cont.png)
     
 1. You will be redirected to the **F5 BIG-IP** Login page.
 
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-02.jpg)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-02.jpg)
     
 1. Enter the username as **admin** and the password you have set in the previous steps and then click on **Log in**.  
     
