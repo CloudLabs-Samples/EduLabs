@@ -302,7 +302,7 @@ In this exercise, A virtual server listens for packets destined for the external
     
 1. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
     
-    ![](../images/iisonf5.png)
+    ![](images/iisonf5.png)
 
 # Conclusion
 
