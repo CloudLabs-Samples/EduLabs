@@ -58,44 +58,58 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
  
 1. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
 
-1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it is used in further steps
+   ![](../images/createkeypair.png)
+    
+1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
 1. Navigate to the https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
 1. Select the Marketplace image and click on **Continue to subscribe**
-
+   
+   ![](../images/bigipsubscribe.png)
+    
 1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions
+   
+   ![](../images/f5bigipterms.png)
+   
+1. Now search for **Cloud Formation** and select **stacks**
 
-1. Now search for **Cloud Formation** select **stacks**
+     ![](../images/stack.png)
 
 1. Select **Create stack**
 
-      ![](../images/f5-06.jpg)
+   ![](../images/createstack.png)
       
-1. On the **Create stack** blade, provide the **Amazon S3 URL** and click on **Next**
+1. On the **Create stack** blade, provide the **Amazon S3 URL** as https://bigipf5good.s3.amazonaws.com/Testing-BigIP.yml and click on **Next**
 
-      ![](../images/Picture11.png)
+   ![](../images/createstack2.png)
       
-1. On the **Specify stack details** section. Provide the following details and click on **Next**
-   - Stack name : **f5deployment**
+1. In the **Specify stack details** section enter the stack name as **f5deployment** and leave other parameters as default
+   
+   ![](../images/specifystackdetails1.png)
+
+1. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
    - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID and BIGIP management interface Subnet ID
 
-      ![](../images/f5-07.jpg)
+   ![](../images/specifystackdetails1.png)
  
-1. On the **Review f5deployment** blade, review the configurations and scroll down to the bottom
-      ![](../images/f5-08.jpg)
+1. Leave the other configurations to be set to default values and click on **Next**
 
-1. Now, under the **Capabilities** section check both the boxes and accept the terms
+1. Click on **Next** again
 
-      ![](../images/f5-09.jpg)
-    
-1. Click on **Create stack** and wait for 3 minutes for the deployment to be completed.
+1. On the review stack page, scroll down to the bottom and check the two options and click on **Create stack**
+   
+   ![](../images/termsstack.png)
 
-      ![](../images/f5-05.jpg)
+1. Wait for 3 minutes for the deployment to be completed.
 
-1. On the **Stacks** page ensure the status shows as **CREATE_COMPLETE**
+1. Now on the **Stacks** page ensure the status shows as **CREATE_COMPLETE** for all the stacks.
+   ![](../images/stackprogress.png)
 
+1. You can also view the stack progress of the main deployment only by turning the toggle off of the **view nested** option
+   ![](../images/stackprogresswonested.png)
+  
 1. Search for **EC2** and select **Instances** to view the F5 instance and web server instance
 
 1. On the instances page , click on each of the instance and review the configurations.
