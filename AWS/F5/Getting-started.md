@@ -110,19 +110,31 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 1. You can also view the stack progress of the main deployment only by turning the toggle off of the **view nested** option
    ![](../images/stackprogresswonested.png)
   
-1. Search for **EC2** and select **Instances** to view the F5 instance and web server instance
+1. Search for **EC2** and select **Instances** to view the deployed F5 instance and web server instance
+   
+   ![](../images/ec2.png)
 
 1. On the instances page , click on each of the instance and review the configurations.
+   
+   ![](../images/ec2.png)
 
 1. Click on the Web server instance , from the **Security** tab select the security group 
+ 
+   ![](../images/wsinstancesummary.png)
 
 1. Now from the security group page select **Edit inbound rules** 
+   
+   ![](../images/wssecuritygroup.png)
 
 1. Click on **add rule** and add the port 80 
 
-1. Click **Save rules**
+   ![](../images/wssecuritygroup.png)
+
+1. Click on **Save rules**
 
 1. Click on the F5 instance scroll down to the bottom and select the security group 
+   
+   ![](../images/f5securitygroup.png)
 
 1. Now from the security group page select **Edit inbound rules** 
 
@@ -136,27 +148,35 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 
 ## Task 2: Accessing the F5 Dashboard
 
-1. Navigate to the Cloudformation->stacks and copy the public ip address of F5 instance from the output section
-
 1. Open **Putty** from your machine
-
+   ![](../images/putty-0.png)
+   
    NOTE: If you don't have putty installed, you can download putty from this link : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-1. Provide the F5 Public ip under **Hostname**
+1. Navigate to the **Cloudformation->stacks** and copy the public ip address of F5 instance from the output section
+   
+   ![](../images/f5outputs.png)
 
-1. Navigate to the **Auth** option and click on **Browse** under **Private key file for authentication**
+1. Provide the F5 Public ip under **Hostname** and expand **SSH** by clicking on **+**
+   ![](../images/putty-1.png)
 
-1. Select the downloaded key pair file and click on **Open**
+1. Click on **Auth** option and click on **Browse** under **Private key file for authentication**
+   - Select the downloaded key pair file and click on **Open**
 
-1. If a pop window of **Putty Security Alert** appears, click on **Yes**
+   ![](../images/putty-2.png)
+    
+1. If a pop window of **Putty Security Alert** appears, click on **Yes** to open a command prompt
 
-1. Login as admin
+1. From the command prompt, login as **admin**
+   
+   ![](../images/putty-3.png)
 
 1. Run the following commands to set a password for F5 instance
    ```
    modify auth user admin password <yourpasswordhere>
    save sys config
    ```
+   Note: Replace <yourpasswordhere> placeholder with the password value that you would want to set
  
 1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
