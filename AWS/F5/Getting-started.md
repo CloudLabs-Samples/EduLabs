@@ -21,7 +21,7 @@ F5 Advanced WAF is an application-layer security platform protecting against app
 
 ## Architecture Diagram
    
-   ![](../images/f5archdiag.png)
+   ![](images/f5archdiag.png)
 
 # 01: Getting started with the AWS console
 
@@ -33,7 +33,7 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 1. In a browser, open a new tab, and sign in to the **AWS Console** using the signin link provided in the **Environment details** tab 
    
-  ![](../images/awssigninlink.png)
+  ![](images/awssigninlink.png)
 
 1. On the **Sign in as IAM User** blade, you will see a Sign in screen, in which enter the following email/username and then click on **Sign in**.  
 
@@ -42,23 +42,23 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
-   ![](../images/awsconsolecreds.png)
+   ![](images/awsconsolecreds.png)
 
 1. Now you will be able to view the home page of AWS console
    
-    ![](../images/consolehome.png)
+    ![](images/consolehome.png)
 
 1. Ensure to switch to **Ohio** region at the top right corner.
    
-    ![](../images/ohioregion.png)
+    ![](images/ohioregion.png)
 
 1. Search for **key pairs** and select **Key Pairs** from EC2 feature
 
-    ![](../images/keypair.png)
+    ![](images/keypair.png)
  
 1. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
 
-   ![](../images/createkeypair.png)
+   ![](images/createkeypair.png)
     
 1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
@@ -66,33 +66,33 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 1. Select the Marketplace image and click on **Continue to subscribe**
    
-   ![](../images/bigipsubscribe.png)
+   ![](images/bigipsubscribe.png)
     
 1. Under the **Subscribe to this software** section click on **Accept Terms** and to accept the terms and conditions
    
-   ![](../images/f5bigipterms.png)
+   ![](images/f5bigipterms.png)
    
 1. Now search for **Cloud Formation** and select **stacks**
 
-     ![](../images/stack.png)
+     ![](images/stack.png)
 
 1. Select **Create stack**
 
-   ![](../images/createstack.png)
+   ![](images/createstack.png)
       
 1. On the **Create stack** blade, provide the **Amazon S3 URL** as https://bigipf5good.s3.amazonaws.com/Testing-BigIP.yml and click on **Next**
 
-   ![](../images/createstack2.png)
+   ![](images/createstack2.png)
       
 1. In the **Specify stack details** section enter the stack name as **f5deployment** and leave other parameters as default
    
-   ![](../images/specifystackdetails1.png)
+   ![](images/specifystackdetails1.png)
 
 1. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
    - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID and BIGIP management interface Subnet ID
 
-   ![](../images/specifystackdetails1.png)
+   ![](images/specifystackdetails1.png)
  
 1. Leave the other configurations to be set to default values and click on **Next**
 
@@ -100,41 +100,41 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and web server.
 
 1. On the review stack page, scroll down to the bottom and check the two options and click on **Create stack**
    
-   ![](../images/termsstack.png)
+   ![](images/termsstack.png)
 
 1. Wait for 3 minutes for the deployment to be completed.
 
 1. Now on the **Stacks** page ensure the status shows as **CREATE_COMPLETE** for all the stacks.
-   ![](../images/stackprogress.png)
+   ![](images/stackprogress.png)
 
 1. You can also view the stack progress of the main deployment only by turning the toggle off of the **view nested** option
-   ![](../images/stackprogresswonested.png)
+   ![](images/stackprogresswonested.png)
   
 1. Search for **EC2** and select **Instances** to view the deployed F5 instance and web server instance
    
-   ![](../images/ec2.png)
+   ![](images/ec2.png)
 
 1. On the instances page , click on each of the instance and review the configurations.
    
-   ![](../images/ec2.png)
+   ![](images/ec2.png)
 
 1. Click on the Web server instance , from the **Security** tab select the security group 
  
-   ![](../images/wsinstancesummary.png)
+   ![](images/wsinstancesummary.png)
 
 1. Now from the security group page select **Edit inbound rules** 
    
-   ![](../images/wssecuritygroup.png)
+   ![](images/wssecuritygroup.png)
 
 1. Click on **add rule** and add the port 80 
 
-   ![](../images/wssecuritygroup.png)
+   ![](images/wssecuritygroup.png)
 
 1. Click on **Save rules**
 
 1. Click on the F5 instance scroll down to the bottom and select the security group 
    
-   ![](../images/f5securitygroup.png)
+   ![](images/f5securitygroup.png)
 
 1. Now from the security group page select **Edit inbound rules** 
 
@@ -149,27 +149,27 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 ## Task 2: Accessing the F5 Dashboard
 
 1. Open **Putty** from your machine
-   ![](../images/putty-0.png)
+   ![](images/putty-0.png)
    
    NOTE: If you don't have putty installed, you can download putty from this link : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 1. Navigate to the **Cloudformation->stacks** and copy the public ip address of F5 instance from the output section
    
-   ![](../images/f5outputs.png)
+   ![](images/f5outputs.png)
 
 1. Provide the F5 Public ip under **Hostname** and expand **SSH** by clicking on **+**
-   ![](../images/putty-1.png)
+   ![](images/putty-1.png)
 
 1. Click on **Auth** option and click on **Browse** under **Private key file for authentication**
    - Select the downloaded key pair file and click on **Open**
 
-   ![](../images/putty-2.png)
+   ![](images/putty-2.png)
     
 1. If a pop window of **Putty Security Alert** appears, click on **Yes** to open a command prompt
 
 1. From the command prompt, login as **admin**
    
-   ![](../images/putty-3.png)
+   ![](images/putty-3.png)
 
 1. Run the following commands to set a password for F5 instance
    ```
