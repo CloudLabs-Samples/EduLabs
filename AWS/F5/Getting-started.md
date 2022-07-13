@@ -60,15 +60,15 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and a web server.
 
    ![](images/createkeypair.png)
     
-1. After the keypair is created successfully, it will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
+1. After the keypair is created successfully, an .ppk file will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
-1. Navigate to https://aws.amazon.com/marketplace/ and search for **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
+1. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
 1. Select the Marketplace image and click on **Continue to subscribe**
    
    ![](images/bigipsubscribe.png)
     
-1. Under the **Subscribe to this software** section click on **Accept Terms** and accept the terms and conditions
+1. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/f5bigipterms.png)
    
@@ -92,13 +92,13 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and a web server.
    - Select the existing **VPC ID** 
    - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID, and BIGIP management interface Subnet ID
 
-   ![](images/specifystackdetails1.png)
+   ![](images/specifystackdetails2.png)
  
 1. Leave the other configurations to be set to default values and click on **Next**
 
 1. Click on **Next** again
 
-1. On the review stack page, scroll down to the bottom and check the two options and click on **Create stack**
+1. On the review stack page, scroll down to the bottom and **check** the two options and click on **Create stack**
    
    ![](images/termsstack.png)
 
@@ -116,7 +116,7 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and a web server.
 
 1. On the instances page, click on each instance and review the configurations.
    
-   ![](images/ec2.png)
+   ![](images/Instancespage.png)
 
 1. Click on the Web server instance, from the **Security** tab select the security group 
  
@@ -128,7 +128,7 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and a web server.
 
 1. Click on **add rule** and add the port 80 
 
-   ![](images/wssecuritygroup.png)
+   ![](images/wssecuritygroup2.png)
 
 1. Click on **Save rules**
 
