@@ -182,12 +182,14 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
  
 1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **HTTPS** with the **F5 Public IP**. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
+   
    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-01.jpg)
    
    NOTE: You can also get it by navigating to the Cloudformation->stacks and copying the management portal URL of the F5 instance from the output section
     
 1. A page shown below will appear. Click on **Advanced** on the web page.
 
+   
    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-adv.png)
      
 1. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
@@ -264,7 +266,7 @@ In this exercise, A virtual server listens for packets destined for the external
 
 1. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-15.jpg)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/Security-ISV/images/f5-15.jpg)
     
 1. Click **Create** to create the Virtual Server.  
 
