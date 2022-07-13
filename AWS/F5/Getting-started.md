@@ -198,7 +198,7 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
     
 1. Enter the username as **admin** and the password you have set in the previous steps and then click on **Log in**.  
     
-    ![](../images/f5loginpage.jpg)
+    ![](../images/f5loginpage.png)
  
 1. Now, you will be able to see the F5 dashboard. 
  
@@ -300,7 +300,7 @@ In this exercise, A virtual server listens for packets destined for the external
     
 1. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
     
-    ![](../images/iisonf5.jpg)
+    ![](../images/iisonf5.png)
 
 # Conclusion
 
