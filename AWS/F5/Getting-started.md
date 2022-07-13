@@ -202,7 +202,7 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
     
 1. Enter the username as **admin** and the password you have set in the previous steps and then click on **Log in**.  
     
-    ![](../images/f5loginpage.png)
+    ![](images/f5loginpage.png)
  
 1. Now, you will be able to see the F5 dashboard. 
  
