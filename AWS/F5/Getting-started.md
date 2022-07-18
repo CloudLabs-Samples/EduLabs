@@ -1,5 +1,20 @@
 # Getting started with F5 BIG-IP Virtual Edition on AWS
 
+## F5 BIG-IP Virtual Edition
+
+The BIG-IP Virtual Edition (VE) is the industry’s most trusted and comprehensive app delivery and security solution. Providing everything from intelligent traffic management and visibility to app security access and optimization, BIG-IP VE ensures your apps are fast available and secure wherever they are deployed.
+BIG-IP Virtual Edition includes:
+Local Traffic Manager (LTM)
+Access Policy Manager (APM)
+Advanced WAF
+Network Firewall (AFM)
+
+F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic all OWASP top 10 threats and API protocol vulnerabilities. The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
+
+## Architecture Diagram
+   
+   ![](images/f5archdiag.png)
+
 ## Tasks Included
 
 In this hands-on lab you will perform the following tasks:
@@ -7,22 +22,6 @@ In this hands-on lab you will perform the following tasks:
 - **Task 1: Getting started with the AWS Console**
 - **Task 2: Accessing the F5 Dashboard**
 - **Task 3: Configuring F5 Advanced Web Application firewall**
-
-## F5 BIG-IP Virtual Edition
-
-The BIG-IP Virtual Edition (VE) is the industry’s most trusted and comprehensive app delivery and security solution. Providing everything from intelligent traffic management and visibility, to app security, access, and optimization, BIG-IP VE ensures your apps are fast, available, and secure wherever they are deployed.
-BIG-IP Virtual Edition includes:
-Local Traffic Manager (LTM)
-Access Policy Manager (APM)
-Advanced WAF
-Network Firewall (AFM)
-
-F5 Advanced WAF is an application-layer security platform protecting against application attacks. The industry-leading F5 Advanced WAF provides robust web application firewall protection by securing applications against threats including layer 7 DDoS attacks, malicious bot traffic, all OWASP top 10 threats, and API protocol vulnerabilities. The F5 Advanced WAF leverages behavioral analytics, automated learning capabilities, and risk-based policies to secure your website, mobile apps, and APIs—whether in a native or hybrid Azure environment
-
-## Architecture Diagram
-   
-   ![](images/f5archdiag.png)
-
 # 01: Getting started with the AWS console
 
 ## Overview
