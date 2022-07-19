@@ -27,7 +27,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
-  ![](images/awssigninlink.png)
+   ![](images/awssigninlink.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
@@ -92,11 +92,11 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 10. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
 
-   ![](images/apachelts3.png) 
+    ![](images/apachelts3.png) 
    
 11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
-   ![](images/apachelts3.png) 
+    ![](images/apachelts3.png) 
 
 12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
     
@@ -110,7 +110,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
 15. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
-   ![](images/apachestatus.png) 
+    ![](images/apachestatus.png) 
    
 16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
     
