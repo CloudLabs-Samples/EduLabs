@@ -102,9 +102,9 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
     ![](images/apachemsg.png) 
 
-13. You will be naviagated to the **Instances** Page
+13. You will be navigated to the **Instances** Page
 
-14. On the instances page, name the instance you just created as **Web Server** 
+14. On the instances page, name the instance you just created as **Web Server** and click on **Save**
 
     ![](images/apachename.png) 
     
@@ -112,7 +112,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/apachestatus.png) 
    
-16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
+16. Select the webserver and copy the Public ip address in a notepad as it will be required in the further tasks.
     
     ![](images/apachepip.png)
 
@@ -124,21 +124,21 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
    ![](images/fortinetsubscribe.png)
     
-5. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+19. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/fortinetterms.png)
    
   >NOTE: Your subscription to this product will be pending and may take a few minutes.
 
-6. After the subscription process is complete, click on **Continue to Configuration**
+20. After the subscription process is complete, click on **Continue to Configuration**
    
    ![](images/fortinetctc.png)
    
-7. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
+21. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
    
    ![](images/fortinetectl.png)  
  
-8. Next, on the **Launch this Software** blade, select the following :
+22. Next, on the **Launch this Software** blade, select the following :
     - Choose Action : Launch from Website
     - EC2 instance type: Leave the option set to default
     - VPC Settings : Leave the option set to default VPC
@@ -146,32 +146,32 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
    ![](images/fortinetlts.png)  
 
-9. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+23. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
    
    ![](images/apachelts2.png)  
 
-10. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+24. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
 
     ![](images/fortinetlts3.png) 
    
-11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
+25. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
-    ![](images/apachelts3.png) 
+    ![](images/apachelts4.png) 
 
-12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+26. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
     
-    ![](images/apachemsg.png) 
+    ![](images/fortinetmsg.png) 
 
-13. You will be naviagated to the **Instances** Page
+27. You will be navigated to the **Instances** Page
 
-14. On the instances page, name the instance you just created as **Web Server** 
+28. On the instances page, name the instance you just created as **Fortinet instance** and click on **Save**
 
-    ![](images/apachename.png) 
+    ![](images/fortinetname.png) 
     
-15. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
+29. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
-    ![](images/apachestatus.png) 
+    ![](images/fortinetstatus.png) 
    
-16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
+30. Select the instance and copy the Public ip address of the Fortinet instance in a notepad as it will be required in the further tasks.
     
-    ![](images/apachepip.png)
+    ![](images/fortinetpip.png)
