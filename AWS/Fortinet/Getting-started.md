@@ -42,22 +42,50 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/consolehome.png)
     
-4. Ensure to switch to the **N Virginia** region at the top right corner.
+4. Ensure to use the **N.Virginia** region at the top right corner for performing the lab.
    
-    ![](images/ohioregion.png)
-
-    
+    ![](images/region.png)
+  
 ## Task 2: Deploying the FortiGate Next-Generation Firewall solution and Web server**
 
-1. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **Apache Web Server on Ubuntu 21.04**
+1. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Apache Web Server on Ubuntu 21.04**
+   
+   ![](images/awsmp.png)
 
-2. Select the Marketplace image and click on **Continue to subscribe**
+2. Click on **Continue to subscribe**
    
    ![](images/apachesubscribe.png)
     
 3. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
-   ![](images/apachebigipterms.png)
+   ![](images/apacheterms.png)
    
-4. 
+  >NOTE: Your subscription to this product will be pending and may take a few minutes.
+
+4. After the subscription process is complete, click on **Continue to Configuration**
    
+   ![](images/apachectc.png)
+   
+5. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
+   
+   ![](images/apachectl.png)  
+ 
+6. Next, on the **Launch this Software** blade, select the following :
+    - Choose Action : Launch from Website
+    - EC2 instance type: Leave the option set to default
+    - VPC Settings : Leave the option set to default VPC
+    - Subnet Settings : Leave the option set to default
+    
+   ![](images/apachelts.png)  
+
+7. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+   
+   ![](images/apachelts2.png)  
+
+8. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+
+   ![](images/apachelts3.png) 
+   
+9. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
+   
+   ![](images/apachelts3.png) 
