@@ -112,9 +112,9 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/apachestatus.png) 
    
-16. Select the webserver and copy the Public ip address in a notepad as it will be required in the further tasks.
+16. Select the webserver and copy the Private ip address in a notepad as it will be required in the further tasks.
     
-    ![](images/apachepip.png)
+    ![](images/apacheprivateip.png)
 
 17. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
    
@@ -171,7 +171,56 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 29. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
     ![](images/fortinetstatus.png) 
-   
-30. Select the instance and copy the Public ip address of the Fortinet instance in a notepad as it will be required in the further tasks.
     
-    ![](images/fortinetpip.png)
+30. Select the instance and copy the Private ip address of the Fortinet instance in a notepad as it will be required in the further tasks.
+   
+    ![](images/fortinetprivateip.png)
+
+31. Ensure that you have the private ip address information of both Apache web server and Fortinet instance noted in a notepad
+    
+    ![](images/notepad.png)
+
+#   Task 03 - Accessing the FortiGate Dashboard 
+
+## Overview 
+
+In this task, you will access the FortiGate dashboard through the internet by using the FortiGate Public IP and connect to the Apache webserver via the CLI Console.
+
+## Task 1: Accessing the FortiGate Dashboard 
+
+1. Select the Fortinet instance and copy the Public ip address of the Fortinet instance
+    
+   ![](images/fortinetpip.png)
+     
+2. A page shown below will appear. Click on **Advanced** on the web page.
+
+    ![](images/advanced.png)
+     
+3. Click on the link **Continue to fortigatevm-XXXXX** on the page as shown below. 
+
+    ![](../images/image_702.png)
+     
+4. You will be redirected to the page shown below with empty **Username** and **Password** text boxes. Enter the following username/password and then click on **Login**.
+     
+    * **Username**:  <inject key="AdminUsername"></inject>
+    * **Password**:  <inject key="AdminPassword"></inject>
+
+    ![](../images/image_703.png)
+     
+5. A **FortiGate Setup** page appears as shown below. Click on **Begin**
+
+    ![](../images/image_705.png)
+     
+6. A **Dashboard Setup** page appears as shown below. Keep the **Optimal** option as default and click on **OK**
+
+    ![](../images/image_706.png)
+    
+7. Click on **OK** to bypass “What’s New in FortiOS 7.0".
+
+     ![](../images/image_709.png)
+
+8. The **FortiGate** dashboard will appear as shown below.
+
+    ![](../images/image_708.png)
+     
+
