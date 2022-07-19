@@ -23,7 +23,7 @@ FortiGuard Labs security services, help to create and automate policies driving 
 
 In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a Apache web server. 
 
-## Task 1: Login to AWS console
+## 01: Login to AWS console
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
@@ -46,7 +46,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/region.png)
   
-## Task 2: Deploying the FortiGate Next-Generation Firewall solution and Web server**
+## 02: Deploying the FortiGate Next-Generation Firewall solution and Web server**
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
@@ -180,7 +180,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
     ![](images/notepad.png)
 
-#   Task 03 - Accessing the FortiGate Dashboard 
+# 03 - Accessing the FortiGate Dashboard 
 
 ## Overview 
 
@@ -246,7 +246,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
 ## Overview
 
-In this task, you will try to access the webserver via FortiGate's Public IP address on port 80, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard, and then add Virtual IPs to provide secured access from your device to the webserver hosted in AWS and protected by the FortiGate.
+In this task, you will try to access the webserver via FortiGate's Public IP address on port 8080, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard, and then add Virtual IPs to provide secured access from your device to the webserver hosted in AWS and protected by the FortiGate.
 
 ## Task 1: Access the Webserver
 
@@ -257,14 +257,15 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     
     ![](images/expired.png)
 
-2. Open a new tab in the browser and attempt to access the webserver via http (or Port 80) from the Public IP of the Fortinet instance.
+2. Open a new tab in the browser and attempt to access the webserver on Port 8080 from the Public IP of the Fortinet instance.
 
    ```
-   http://fortinetinstancepublicip
+   https://fortinetinstancepublicip:8080
    ``` 
-   ![](../images/image123.png)
+   
+   ![](images/webservererror.png)
     
-2. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
+3. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 8080.
 
 ## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
@@ -275,34 +276,30 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     
      ![](images/expired.png)
     
-2. Click on **OK** to bypass “What’s New in FortiOS 7.0".
-
-    ![](../images/image_709.png)
-
-3. On the FortiGate dashboard click on the **Policy & Objects** drop-down and select **Virtual IPs**.
+2. On the FortiGate dashboard click on the **Policy & Objects** drop-down and select **Virtual IPs**.
     
-    ![](../images/image_402.png)
+    ![](images/vips.png)
     
-2. Click on the  **Create New** button and select **Virtual IP** from the drop-down.
+3. Click on the **Create New** button and select **Virtual IP** from the drop-down.
 
-    ![](../images/image_403.png)
+    ![](images/createvip.png)
     
 3. Create a new virtual IP to forward traffic for interface **port1** by entering the following values and then click on **OK**.
     
     * Name:  **WebTraffictoWebserver**
     * Interface:  **port1**
-    * External IP Address/Range:  **10.0.1.4**
-    * Map to IPv4 Address/Range:  **10.0.3.4**
+    * External IP Address/Range:  **Fortinet instance's Private IP**
+    * Map to IPv4 Address/Range:  **Apache web server's Private IP**
     * Enable **Port Forwarding**
     * Protocol:  **TCP**
-    * External service port:  **80**
-    * Map to IPv4 port:  **80**
+    * External service port:  **8080**
+    * Map to IPv4 port:  **8080**
 
-    ![](../images/image_404.png)
+    ![](images/vipconfig.png)
     
 4. Under **Policy & Objects** on the dashboard, click on **Firewall Policy** and then **Create New**.
 
-    ![](../images/image_406.png)
+    ![](images/firewallpolicy.png)
 
 5. Create a new Firewall policy to access the webserver by entering the following values and then click **OK**. 
     
@@ -322,7 +319,7 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
 
 ## Overview 
 
-In this task, you will access the Apache webserver hosted in Azure via the internet using the FQDN which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
+In this task, you will access the Apache webserver hosted in AWS via the internet using the Public IP of Fortinet instance which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
 
 ## Task: Connect to the Webserver
 
