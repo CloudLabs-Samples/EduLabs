@@ -97,3 +97,21 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
    ![](images/apachelts3.png) 
+
+12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+    
+    ![](images/apachemsg.png) 
+
+13. You will be naviagated to the **Instances** Page
+
+14. On the instances page, name the instance you just created as **Web Server** 
+
+    ![](images/apachename.png) 
+    
+15. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
+   
+   ![](images/apachestatus.png) 
+   
+16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
+    
+    ![](images/apachepip.png)
