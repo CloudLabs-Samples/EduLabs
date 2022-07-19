@@ -233,12 +233,12 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
     ![](images/DashboardSetup.png)
     
-12. Click on **OK** to bypass “What’s New in FortiOS 7.0".
+12. Click on **OK** to bypass**What’s New in FortiOS 7.0** and switch the toggle on for **Don't show again**
 
-     ![](../images/image_709.png)
+     ![](images/Whatsnew.png)
 
 13. The **FortiGate** dashboard will appear as shown below.
 
-    ![](../images/image_708.png)
+    ![](images/fortigatedashboard.png)
      
 
