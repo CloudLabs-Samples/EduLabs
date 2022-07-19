@@ -96,7 +96,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
 11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
-    ![](images/apachelts3.png) 
+    ![](images/apachelts4.png) 
 
 12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
     
