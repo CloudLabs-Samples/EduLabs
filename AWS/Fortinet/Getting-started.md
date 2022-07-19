@@ -48,3 +48,16 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
     
 ## Task 2: Deploying the FortiGate Next-Generation Firewall solution and Web server**
+
+1. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **Apache Web Server on Ubuntu 21.04**
+
+2. Select the Marketplace image and click on **Continue to subscribe**
+   
+   ![](images/apachesubscribe.png)
+    
+3. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+   
+   ![](images/apachebigipterms.png)
+   
+4. 
+   
