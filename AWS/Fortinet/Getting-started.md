@@ -188,7 +188,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
 ## Task 1: Accessing the FortiGate Dashboard 
 
-1. Select the Fortinet instance and copy the Public ip address of the Fortinet instance
+1. Select the Fortinet instance and copy the Public ip address and paste it in a browser tab
     
    ![](images/fortinetpip.png)
      
@@ -198,28 +198,46 @@ In this task, you will access the FortiGate dashboard through the internet by us
      
 3. Click on the link **Continue to fortigatevm-XXXXX** on the page as shown below. 
 
-    ![](../images/image_702.png)
-     
-4. You will be redirected to the page shown below with empty **Username** and **Password** text boxes. Enter the following username/password and then click on **Login**.
-     
-    * **Username**:  <inject key="AdminUsername"></inject>
-    * **Password**:  <inject key="AdminPassword"></inject>
-
-    ![](../images/image_703.png)
-     
-5. A **FortiGate Setup** page appears as shown below. Click on **Begin**
-
-    ![](../images/image_705.png)
-     
-6. A **Dashboard Setup** page appears as shown below. Keep the **Optimal** option as default and click on **OK**
-
-    ![](../images/image_706.png)
+    ![](images/continue.png)
     
-7. Click on **OK** to bypass “What’s New in FortiOS 7.0".
+4. You will be redirected to the page with login disclaimer pop up window, Click on **Accept**
+   
+   ![](images/accept.png)
+
+5. Navigate back to the instances page and copy the Instance id of the Fortinet instance
+   
+   ![](images/instances.png)
+
+6. You will be redirected to the page shown below with  **Username** and **Password** text boxes. Enter the following username/password and then click on **Login**.
+     
+    * **Username**: admin
+    * **Password**: Paste the instance id of the Fortinet instance
+
+    ![](images/dashboardlogin.png)
+     
+7. A **Change Password** dialog box appears to update the default password to a new password. Once you update your Password click on **OK**
+   
+   ![](images/changepswd.png)
+ 
+8. You may have to login again to the FortiGate dashboard
+
+9. A **FortiGate Setup** page appears as shown below. Click on **Begin**
+
+    ![](images/FortiGateSetup.png)
+
+10. A **Setup Progress** box appears as shown below. Leave the default value and click on **OK**
+    
+    ![](images/hostname.png)
+
+11. A **Dashboard Setup** page appears as shown below. Keep the **Optimal** option as default and click on **OK**
+
+    ![](images/DashboardSetup.png)
+    
+12. Click on **OK** to bypass “What’s New in FortiOS 7.0".
 
      ![](../images/image_709.png)
 
-8. The **FortiGate** dashboard will appear as shown below.
+13. The **FortiGate** dashboard will appear as shown below.
 
     ![](../images/image_708.png)
      
