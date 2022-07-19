@@ -115,3 +115,63 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
     
     ![](images/apachepip.png)
+
+17. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
+   
+   ![](images/awsmp2.png)
+
+18. Click on **Continue to subscribe**
+   
+   ![](images/fortinetsubscribe.png)
+    
+5. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+   
+   ![](images/fortinetterms.png)
+   
+  >NOTE: Your subscription to this product will be pending and may take a few minutes.
+
+6. After the subscription process is complete, click on **Continue to Configuration**
+   
+   ![](images/fortinetctc.png)
+   
+7. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
+   
+   ![](images/fortinetectl.png)  
+ 
+8. Next, on the **Launch this Software** blade, select the following :
+    - Choose Action : Launch from Website
+    - EC2 instance type: Leave the option set to default
+    - VPC Settings : Leave the option set to default VPC
+    - Subnet Settings : Leave the option set to default
+    
+   ![](images/fortinetlts.png)  
+
+9. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+   
+   ![](images/apachelts2.png)  
+
+10. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+
+    ![](images/fortinetlts3.png) 
+   
+11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
+   
+    ![](images/apachelts3.png) 
+
+12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+    
+    ![](images/apachemsg.png) 
+
+13. You will be naviagated to the **Instances** Page
+
+14. On the instances page, name the instance you just created as **Web Server** 
+
+    ![](images/apachename.png) 
+    
+15. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
+   
+    ![](images/apachestatus.png) 
+   
+16. Copy the Public ip address of the Apache web server in a notepad as it will be required in the further tasks.
+    
+    ![](images/apachepip.png)
