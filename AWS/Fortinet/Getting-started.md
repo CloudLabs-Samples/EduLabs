@@ -124,15 +124,15 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 18. Navigate back to AWS Marketplace  https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
    
-   ![](images/awsmp2.png)
+    ![](images/awsmp2.png)
 
 19. Click on **Continue to subscribe**
    
-   ![](images/fortinetsubscribe.png)
+    ![](images/fortinetsubscribe.png)
     
 20. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
-   ![](images/fortinetterms.png)
+    ![](images/fortinetterms.png)
    
   >NOTE: Your subscription to this product will be pending and may take a few minutes.
 
