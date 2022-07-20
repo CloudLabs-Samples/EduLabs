@@ -94,7 +94,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 10. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
    
-   ![](images/apachelts2.png)  
+    ![](images/apachelts2.png)  
 
 11. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
 
