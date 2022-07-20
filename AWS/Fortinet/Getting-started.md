@@ -56,7 +56,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
    >A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon EC2 instance. Amazon EC2 stores the public key on your instance, and you store the private key
    
-  ![](images/kp.png)
+   ![](images/kp.png)
 
 3. On the **Create key pair** blade provide the name as **keypair-XXXXXX** and click on **Create key pair**
 
