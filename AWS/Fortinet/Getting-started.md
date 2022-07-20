@@ -333,7 +333,7 @@ In this task, you will access the Apache webserver hosted in AWS via the interne
    ```     
 2. You should be able to see the Apache webserver in the browser.
 
-    ![](images/apachewebserver.png)   
+    ![](images/webserveraccess.png)   
     
 ## Summary
 
