@@ -225,7 +225,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
    
    ![](images/changepswd.png)
  
-8. You may have to login again to the FortiGate dashboard
+8. You have to login again to the FortiGate dashboard with the new password
 
 9. A **FortiGate Setup** page appears as shown below. Click on **Begin**
 
