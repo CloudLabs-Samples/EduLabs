@@ -335,6 +335,5 @@ In this task, you will access the Apache webserver hosted in AWS via the interne
 
     ![](images/webserveraccess.png)   
     
-## Summary
-
-In this task, you accessed the Apache webserver through the internet using the Fortinet VM's Public IP. 
+## Conclusion 
+In this hands on lab, you accessed the Apache webserver through the internet using the Fortinet VM's Public IP. 
