@@ -240,13 +240,17 @@ In this task, you will access the FortiGate dashboard through the internet by us
 13. The **FortiGate** dashboard will appear as shown below.
 
     ![](images/fortigatedashboard.png)
-     
+
+14. Navigate to **System->Settings**, under the Administration settings turn the toggle off for **Redirect to HTTPS** and click on **Apply**
+    
+    ![](images/redirect.png)
+
     
 # 04 - Configuring FortiGate for Web Traffic
 
 ## Overview
 
-In this task, you will try to access the webserver via FortiGate's Public IP address on port 8080, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard, and then add Virtual IPs to provide secured access from your device to the webserver hosted in AWS and protected by the FortiGate.
+In this task, you will try to access the webserver via FortiGate's Public IP address on port 80, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard, and then add Virtual IPs to provide secured access from your device to the webserver hosted in AWS and protected by the FortiGate.
 
 ## Task 1: Access the Webserver
 
@@ -257,15 +261,15 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     
     ![](images/expired.png)
 
-2. Open a new tab in the browser and attempt to access the webserver on Port 8080 from the Public IP of the Fortinet instance.
+2. Open a new tab in the browser and attempt to access the webserver on Port 80 from the Public IP of the Fortinet instance.
 
    ```
-   https://fortinetinstancepublicip:8080
+   http://fortinetinstancepublicip
    ``` 
    
-   ![](images/webservererror.png)
+   ![](images/webserver-error.png)
     
-3. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 8080.
+3. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
 
 ## Task 2: Configuring an Apache webserver through FortiGate dashboard
 
@@ -292,8 +296,8 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     * Map to IPv4 Address/Range:  **Apache web server's Private IP**
     * Enable **Port Forwarding**
     * Protocol:  **TCP**
-    * External service port:  **8080**
-    * Map to IPv4 port:  **8080**
+    * External service port:  **80**
+    * Map to IPv4 port:  **80**
 
     ![](images/vipconfig.png)
     
@@ -307,30 +311,30 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
 
     * Name:  **WebTraffictoWebserverVIP**
     * Incoming Interface:  **port1**
-    * Outgoing Interface:  **port2**
+    * Outgoing Interface:  **port1**
     * Source:  **all**
     * Destination: **WebTrafficToWebserver**
     * Service: **HTTP**
     
-    ![](../images/image_409.png)
-
+    ![](images/fpconfig.png)
 
 # 05 - Access the Webserver
 
 ## Overview 
 
-In this task, you will access the Apache webserver hosted in AWS via the internet using the Public IP of Fortinet instance which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
+In this task, you will access the Apache webserver hosted in AWS via the internet using the Public IP of Fortinet instance on port 80 which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
 
 ## Task: Connect to the Webserver
 
-1. Open a new tab in the browser and copy-paste the following FQDN to access the Apache webserver.
+1. Open a new tab in the browser and attempt to access the webserver on Port 80 from the Public IP of the Fortinet instance.
 
-    * <inject key="ApacheFQDN"></inject>
-    
+   ```
+   http://fortinetinstancepublicip
+   ```     
 2. You should be able to see the Apache webserver in the browser.
 
-    ![](../images/image_410.png)   
+    ![](images/apachewebserver.png)   
     
 ## Summary
 
-In this task, you accessed the Apache webserver through the internet using the Fortinet VM's FQDN.
+In this task, you accessed the Apache webserver through the internet using the Fortinet VM's Public IP. 
