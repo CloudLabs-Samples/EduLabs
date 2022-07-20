@@ -210,7 +210,7 @@ In this task, you will access the FortiGate dashboard through the internet by us
    
    ![](images/accept.png)
 
-5. Navigate back to the instances page and copy the Instance id of the Fortinet instance
+5. Navigate back to the instances page and copy the **Instance ID** of the Fortinet instance
    
    ![](images/instances.png)
 
