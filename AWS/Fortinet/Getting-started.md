@@ -62,7 +62,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
    ![](images/createkeypair.png)
  
-4. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Apache Web Server on Ubuntu 21.04**  
+4. Navigate to the AWS Marketplace https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Apache Web Server on Ubuntu 21.04**  
    
    ![](images/awsmp.png)
 
@@ -122,7 +122,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
     ![](images/apacheprivateip.png)
 
-18. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
+18. Navigate back to AWS Marketplace  https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
    
    ![](images/awsmp2.png)
 
