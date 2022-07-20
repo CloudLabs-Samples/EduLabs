@@ -50,35 +50,41 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
-    ![](images/keypair.png)
- 
-2. On the **Create key pair** blade provide the name as **keypair-XXXXXX** and click on **Create key pair**
+   ![](images/keypair.png)
+
+2. Select **Create key pair** to create a new key pair
+   
+   >A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon EC2 instance. Amazon EC2 stores the public key on your instance, and you store the private key
+   
+  ![](images/kp.png)
+
+3. On the **Create key pair** blade provide the name as **keypair-XXXXXX** and click on **Create key pair**
 
    ![](images/createkeypair.png)
  
-3. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Apache Web Server on Ubuntu 21.04**  
+4. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Apache Web Server on Ubuntu 21.04**  
    
    ![](images/awsmp.png)
 
-4. Click on **Continue to subscribe**
+5. Click on **Continue to subscribe**
    
    ![](images/apachesubscribe.png)
     
-5. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+6. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/apacheterms.png)
    
   >NOTE: Your subscription to this product will be pending and may take a few minutes.
 
-6. After the subscription process is complete, click on **Continue to Configuration**
+7. After the subscription process is complete, click on **Continue to Configuration**
    
    ![](images/apachectc.png)
    
-7. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
+8. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
    
    ![](images/apachectl.png)  
  
-8. Next, on the **Launch this Software** blade, select the following :
+9. Next, on the **Launch this Software** blade, select the following :
     - Choose Action : Launch from Website
     - EC2 instance type: Leave the option set to default
     - VPC Settings : Leave the option set to default VPC
@@ -86,59 +92,59 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
    ![](images/apachelts.png)  
 
-9. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+10. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
    
    ![](images/apachelts2.png)  
 
-10. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+11. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
 
     ![](images/apachelts3.png) 
    
-11. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
+12. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
     ![](images/apachelts4.png) 
 
-12. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+13. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
     
     ![](images/apachemsg.png) 
 
-13. You will be navigated to the **Instances** Page
+14. You will be navigated to the **Instances** Page
 
-14. On the instances page, name the instance you just created as **Web Server** and click on **Save**
+15. On the instances page, name the instance you just created as **Web Server** and click on **Save**
 
     ![](images/apachename.png) 
     
-15. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
+16. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
     ![](images/apachestatus.png) 
    
-16. Select the webserver and copy the Private ip address in a notepad as it will be required in the further tasks.
+17. Select the webserver and copy the Private ip address in a notepad as it will be required in the further tasks.
     
     ![](images/apacheprivateip.png)
 
-17. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
+18. Navigate to https://aws.amazon.com/marketplace/ , search and select the Marketplace image **Fortinet FortiGate Next-Generation Firewall**  
    
    ![](images/awsmp2.png)
 
-18. Click on **Continue to subscribe**
+19. Click on **Continue to subscribe**
    
    ![](images/fortinetsubscribe.png)
     
-19. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+20. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/fortinetterms.png)
    
   >NOTE: Your subscription to this product will be pending and may take a few minutes.
 
-20. After the subscription process is complete, click on **Continue to Configuration**
+21. After the subscription process is complete, click on **Continue to Configuration**
    
    ![](images/fortinetctc.png)
    
-21. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
+22. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
    
    ![](images/fortinetectl.png)  
  
-22. Next, on the **Launch this Software** blade, select the following :
+23. Next, on the **Launch this Software** blade, select the following :
     - Choose Action : Launch from Website
     - EC2 instance type: Leave the option set to default
     - VPC Settings : Leave the option set to default VPC
@@ -146,37 +152,37 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     
    ![](images/fortinetlts.png)  
 
-23. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+24. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
    
    ![](images/apachelts2.png)  
 
-24. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+25. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
 
     ![](images/fortinetlts3.png) 
    
-25. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
+26. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
    
     ![](images/apachelts4.png) 
 
-26. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+27. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
     
     ![](images/fortinetmsg.png) 
 
-27. You will be navigated to the **Instances** Page
+28. You will be navigated to the **Instances** Page
 
-28. On the instances page, name the instance you just created as **Fortinet instance** and click on **Save**
+29. On the instances page, name the instance you just created as **Fortinet instance** and click on **Save**
 
     ![](images/fortinetname.png) 
     
-29. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
+30. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
     ![](images/fortinetstatus.png) 
     
-30. Select the instance and copy the Private ip address of the Fortinet instance in a notepad as it will be required in the further tasks.
+31. Select the instance and copy the Private ip address of the Fortinet instance in a notepad as it will be required in the further tasks.
    
     ![](images/fortinetprivateip.png)
 
-31. Ensure that you have the private ip address information of both Apache web server and Fortinet instance noted in a notepad
+32. Ensure that you have the private ip address information of both Apache web server and Fortinet instance noted in a notepad
     
     ![](images/notepad.png)
 
