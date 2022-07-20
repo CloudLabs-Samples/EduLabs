@@ -27,7 +27,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
-   ![](images/awssigninlink.png)
+   ![](images/envdetails.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
