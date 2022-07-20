@@ -138,11 +138,11 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 21. After the subscription process is complete, click on **Continue to Configuration**
    
-   ![](images/fortinetctc.png)
+    ![](images/fortinetctc.png)
    
 22. On the **Configure this software** blade review the configurations and click **Continue to Launch** to launch the software
    
-   ![](images/fortinetectl.png)  
+    ![](images/fortinetectl.png)  
  
 23. Next, on the **Launch this Software** blade, select the following :
     - Choose Action : Launch from Website
@@ -150,7 +150,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     - VPC Settings : Leave the option set to default VPC
     - Subnet Settings : Leave the option set to default
     
-   ![](images/fortinetlts.png)  
+      ![](images/fortinetlts.png)  
 
 24. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
    
