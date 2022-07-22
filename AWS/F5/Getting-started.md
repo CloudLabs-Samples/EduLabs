@@ -26,9 +26,7 @@ In this hands-on lab you will perform the following exercises:
 
 # 01: Getting started with the AWS console
 
-In this task, you will deploy F5 BIG-IP Virtual Edition and a web server. 
-
-## Task 1: Getting started with the AWS Console
+In this task, you will login to the AWS Console
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
