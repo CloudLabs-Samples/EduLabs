@@ -20,7 +20,7 @@ FortiGuard Labs security services, help to create and automate policies driving 
 * **04 - Configure FortiGate for Web Traffic**
 * **05 - Access the Webserver**
 
-**IMPORTANT NOTE** : The lab should be performed in N.Virginia region
+**IMPORTANT NOTE** : The lab should be performed in **N.Virginia** region
 
 ## 01: Login to AWS console
    In this task, you will login to the AWS Console
