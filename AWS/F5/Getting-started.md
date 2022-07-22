@@ -127,26 +127,30 @@ In this task, you will login to the AWS Console
  
     ![](images/wsinstancesummary.png)
 
-21. Now from the security group page select **Edit inbound rules** 
+21. Copy the Public ip address of the web server, this will be used in later steps.
+
+    ![](images/wspip.png)
+
+22. Now from the security group page select **Edit inbound rules** 
    
     ![](images/wssecuritygroup.png)
 
-22. Click on **add rule** and add the port **80** under **Port range**
+23. Click on **add rule** and add the port **80** under **Port range**
 
     ![](images/wssecuritygroup2.png)
 
-23. Click on **Save rules**
+24. Click on **Save rules**
 
-24. Click on the F5 instance scroll down to the bottom and select the security group 
+25. Click on the F5 instance scroll down to the bottom and select the security group 
     
     ![](images/f5instance.png)
     ![](images/f5securitygroup.png)
 
-25. Now from the security group page select **Edit inbound rules** 
+26. Now from the security group page select **Edit inbound rules** 
 
-26. Click on **add rule** and add the ports 8443 and 443 if it's not been added already
+27. Click on **add rule** and add the ports 8443 and 443 if it's not been added already
 
-27. Click **Save rules** 
+28. Click **Save rules** 
 
 ## 03: Accessing the F5 Dashboard
    
