@@ -53,7 +53,7 @@ In this task, you will login to the AWS Console
 
 # 02: Deploying the F5 Big IP Virtual edition solution and a Web server
   
-  In this task, you will deploy F5 BIG-IP Virtual Edition and a web server. 
+  In this task, you will deploy F5 BIG-IP Virtual Edition solution and a web server. 
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
