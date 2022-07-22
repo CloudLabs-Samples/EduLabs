@@ -217,25 +217,25 @@ In this task, you will login to the AWS Console
    http://<f5publicip>
    ```
 
-    ![](images/accesswebserver.png)
+   ![](images/accesswebserver.png)
     
-    NOTE: Replace the public IP of F5 in the placeholder <f5publicip>
+   NOTE: Replace the public IP of F5 in the placeholder <f5publicip>
     
 2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
 3. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
-    ![](images/f5-11.jpg)
+   ![](images/f5-11.jpg)
     
 4. Click **Create** to create the Pool.    
         
-    ![](images/f5-12.jpg)
+   ![](images/f5-12.jpg)
    
  >BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
 5. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
-    ![](images/f5-13.jpg)  
+  ![](images/f5-13.jpg)  
 
 6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
    
@@ -284,7 +284,7 @@ In this task, you will login to the AWS Console
   
 14. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
-   ![](images/f5-vsstatus.png)
+    ![](images/f5-vsstatus.png)
     
 15.  Open a new tab in the browser and copy-paste the following to access the webserver.
     ```
@@ -293,7 +293,7 @@ In this task, you will login to the AWS Console
     
 16. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
     
-   ![](images/iisonf5.png)
+    ![](images/iisonf5.png)
 
 # Conclusion
 
