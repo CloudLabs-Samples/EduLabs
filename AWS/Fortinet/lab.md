@@ -45,7 +45,6 @@ FortiGuard Labs security services, help to create and automate policies driving 
     ![](images/region.png)
   
 ## 02: Deploying the FortiGate Next-Generation Firewall solution and Web server
-   
    In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a Apache web server. 
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
