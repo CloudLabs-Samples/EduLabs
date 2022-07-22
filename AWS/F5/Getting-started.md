@@ -50,6 +50,8 @@ In this task, you will login to the AWS Console
     ![](images/ohioregion.png)
 
 # 02: Deploying the F5 Big IP Virtual edition solution and a Web server
+  
+  In this task, you will deploy F5 BIG-IP Virtual Edition and a web server. 
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
@@ -85,7 +87,7 @@ In this task, you will login to the AWS Console
       
 10. In the **Specify stack details** section enter the stack name as **f5deployment** and leave other parameters as default
    
-   ![](images/specifystackdetails1.png)
+    ![](images/specifystackdetails1.png)
 
 11. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
@@ -99,7 +101,7 @@ In this task, you will login to the AWS Console
 
 14. On the review stack page, scroll down to the bottom and **check** the two options and click on **Create stack**
    
-   ![](images/termsstack.png)
+    ![](images/termsstack.png)
 
 15. Wait for 3 minutes for the deployment to be completed.
 
@@ -111,29 +113,29 @@ In this task, you will login to the AWS Console
   
 18. Search for **EC2** and select **Instances** to view the deployed F5 instance and web server instance
    
-   ![](images/ec2.png)
+    ![](images/ec2.png)
 
 19. On the instances page, click on each instance and review the configurations.
    
-   ![](images/Instancespage.png)
+    ![](images/Instancespage.png)
 
 20. Click on the Web server instance, from the **Security** tab select the security group 
  
-   ![](images/wsinstancesummary.png)
+    ![](images/wsinstancesummary.png)
 
 21. Now from the security group page select **Edit inbound rules** 
    
-   ![](images/wssecuritygroup.png)
+    ![](images/wssecuritygroup.png)
 
 22. Click on **add rule** and add the port 80 
 
-   ![](images/wssecuritygroup2.png)
+    ![](images/wssecuritygroup2.png)
 
 23. Click on **Save rules**
 
 24. Click on the F5 instance scroll down to the bottom and select the security group 
    
-   ![](images/f5securitygroup.png)
+    ![](images/f5securitygroup.png)
 
 25. Now from the security group page select **Edit inbound rules** 
 
@@ -141,7 +143,7 @@ In this task, you will login to the AWS Console
 
 27. Click **Save rules** 
 
-## Task 2: Accessing the F5 Dashboard
+## 03: Accessing the F5 Dashboard
    
    In this task, you will access the F5 Big IP dashboard by using the Public Ip address.
 
@@ -191,11 +193,11 @@ In this task, you will login to the AWS Console
      
 10. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
 
-   ![](images/f5-cont.png)
+    ![](images/f5-cont.png)
     
 11. You will be redirected to the **F5 BIG-IP** Login page.
 
-   ![](images/f5-02.jpg)
+    ![](images/f5-02.jpg)
     
 12. Enter the username as **admin** and the password you have set in the previous steps and then click on **Log in**.  
     
@@ -206,7 +208,7 @@ In this task, you will login to the AWS Console
     ![](images/f5-10.jpg)
    
 
-# 03: Configuring F5 Advanced Web Application firewall
+# 04: Configuring F5 Advanced Web Application firewall
 
   In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure to publish IIS-based websites.
 
@@ -223,15 +225,13 @@ In this task, you will login to the AWS Console
     
 2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
-## Task 2: Configuring F5 Advanced Web Application firewall  
-
 ### Subtask 1: Creating a pool and adding members to it
 
 In this subtask, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
 1. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
-    ![]images/f5-11.jpg)
+    ![](images/f5-11.jpg)
     
 2. Click **Create** to create the Pool.    
         
