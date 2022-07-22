@@ -119,7 +119,7 @@ In this task, you will login to the AWS Console
    
     ![](images/ec2.png)
 
-19. On the instances page, click on each instance and review the configurations.
+19. On the instances page, ensure the status shows as **2/2 checks passed** and click on each instance to review the configurations.
    
     ![](images/Instancespage.png)
 
