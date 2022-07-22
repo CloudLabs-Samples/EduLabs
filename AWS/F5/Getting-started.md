@@ -22,7 +22,7 @@ In this hands-on lab you will perform the following exercises:
 - **01: Getting started with the AWS Console**
 - **02: Deploying the F5 Big IP Virtual edition solution and a Web server**
 - **03: Accessing the F5 Dashboard**
-- **04: Configuring F5 Advanced Web Application firewall**
+- **04: Configuring F5 BIG-IP Virtual Edition **
 
 # 01: Getting started with the AWS console
 
@@ -208,9 +208,9 @@ In this task, you will login to the AWS Console
     ![](images/f5-10.jpg)
    
 
-# 04: Configuring F5 Advanced Web Application firewall
+# 04: Configuring the F5 BIG-IP Virtual Edition
 
-  In this task, you will configure the F5 Advanced Web Application firewall hosted on AWS to publish IIS-based websites.
+  In this task, you will configure the F5 BIG-IP Virtual Edition hosted on AWS to publish IIS-based websites.
 
 1. Open a new tab in the browser and attempt to access the web server via HTTP to the same IP address as the F5 
    ```
