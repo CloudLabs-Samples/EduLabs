@@ -127,7 +127,7 @@ In this task, you will login to the AWS Console
  
     ![](images/wsinstancesummary.png)
 
-21. Copy the Public ip address of the web server, this will be used in later steps.
+21. Copy the **Public IP address of the web server**, this will be used in later steps.
 
     ![](images/wspip.png)
 
