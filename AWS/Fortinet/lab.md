@@ -266,6 +266,8 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
    ``` 
    
    ![](images/webserver-error.png)
+   
+   NOTE: You may be navigated to fortigate dashboard login page since you turned off the Redirect to HTTPS option in the previous task. It may take few minutes for the settings to be applied.
     
 3. You won't be able to access the webserver because the FortiGate is not yet configured to respond to port 80.
 
@@ -304,9 +306,7 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     ![](images/firewallpolicy.png)
 
 5. Create a new Firewall policy to access the webserver by entering the following values and then click **OK**. 
-    
-    >**NOTE**: This new policy will allow all traffic in port1 and out port2.
-
+   
     * Name:  **WebTraffictoWebserverVIP**
     * Incoming Interface:  **port1**
     * Outgoing Interface:  **port1**
