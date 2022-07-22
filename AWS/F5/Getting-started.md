@@ -95,9 +95,9 @@ In this task, you will login to the AWS Console
 
 11. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
-   - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID, and BIGIP management interface Subnet ID
+   - Select the existing subnets for **BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID, and BIGIP management interface Subnet ID**
 
-   ![](images/specifystackdetails2.png)
+     ![](images/specifystackdetails2.png)
  
 12. Leave the other configurations to be set to default values and click on **Next**
 
