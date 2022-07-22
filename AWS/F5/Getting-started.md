@@ -277,7 +277,7 @@ In this task, you will login to the AWS Console
    - Service port: **80**
    - State: Leave the default
 
-   ![](images/f5-17.jpg)
+     ![](images/f5-17.jpg)
  
 13. Scroll down to the **Configuration** section and select **Auto Map** for **Source Address Translation** option
 
