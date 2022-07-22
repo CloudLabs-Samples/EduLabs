@@ -262,7 +262,7 @@ In this task, you will login to the AWS Console
 
 10. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
-   ![](images/f5-15.jpg)
+     ![](images/f5-15.jpg)
     
 11. Click **Create** to create the Virtual Server.  
 
