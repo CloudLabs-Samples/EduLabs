@@ -235,7 +235,7 @@ In this task, you will login to the AWS Console
 
 5. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
-  ![](images/f5-13.jpg)  
+   ![](images/f5-13.jpg)  
 
 6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
    
@@ -274,13 +274,13 @@ In this task, you will login to the AWS Console
 
    - Source Address Translation: Select **Auto Map**
 
-   ![](images/f5-18.jpg)
+     ![](images/f5-18.jpg)
 
 13. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
 
    - Default Pool: Select the Pool which you created in the previous exercise
     
-   ![](images/f5-19.jpg)
+     ![](images/f5-19.jpg)
   
 14. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
