@@ -74,6 +74,8 @@ In this task, you will login to the AWS Console
 6. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/f5bigipterms.png)
+
+   NOTE : You need to wait till the subscription process is completed
    
 7. Now search for **Cloud Formation** and select **stacks**
 
