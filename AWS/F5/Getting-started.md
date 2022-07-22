@@ -303,4 +303,4 @@ In this task, you will login to the AWS Console
 
 # Conclusion
 
-Congratulations, You have completed this lab. In this lab, you were able to publish a Web Application hosted behind an F5 advanced Web application firewall using F5 Big IP Virtual Edition
+Congratulations! you have completed this lab. In this lab, you were able to publish a Web Application hosted behind an F5 advanced Web application firewall using F5 Big IP Virtual Edition
