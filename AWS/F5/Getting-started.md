@@ -154,7 +154,7 @@ In this task, you will login to the AWS Console
 
 ## 03: Accessing the F5 Dashboard
    
-   In this task, you will access the F5 Big IP dashboard by using the Public Ip address.
+   In this task, you will access the F5 Big IP dashboard by using the Public Ip address of F5 instance
 
 1. Open **Putty** from your machine
    
