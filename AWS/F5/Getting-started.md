@@ -131,7 +131,7 @@ In this task, you will login to the AWS Console
    
     ![](images/wssecuritygroup.png)
 
-22. Click on **add rule** and add the port 80 
+22. Click on **add rule** and add the port **80** under **Port range**
 
     ![](images/wssecuritygroup2.png)
 
