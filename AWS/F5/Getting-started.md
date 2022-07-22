@@ -242,9 +242,9 @@ In this task, you will login to the AWS Console
    
    >BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
-5. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
+5. In the **Name** field provide the name as **f5pool**. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
-   ![](images/f5-13.jpg)  
+   ![](images/f5-13u.jpg)  
 
 6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task
    
@@ -258,7 +258,7 @@ In this task, you will login to the AWS Console
     
 8. Refresh the page and verify if the created pool's status is shown as **Available** (indicated in green) 
    
-   ![](images/f5-poolstatus.png)
+   ![](images/f5-poolstatusu.png)
 
 9. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
@@ -279,17 +279,13 @@ In this task, you will login to the AWS Console
 
    ![](images/f5-17.jpg)
  
-12. Scroll down to the **Configuration** section, configure as below:
+12. Scroll down to the **Configuration** section and select **Auto Map** for **Source Address Translation** option
 
-   - Source Address Translation: Select **Auto Map**
+    ![](images/f5-18.jpg)
 
-     ![](images/f5-18.jpg)
-
-13. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
-
-   - Default Pool: Select the Pool which you created in the previous exercise
-    
-     ![](images/f5-19.jpg)
+13. Scroll down to the **Resources** section, configure **Default Pool** by selecting the pool which you created and click on **Finished**.
+   
+    ![](images/f5-19u.jpg)
   
 14. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
@@ -307,4 +303,4 @@ In this task, you will login to the AWS Console
 
 # Conclusion
 
-Congratulations, You have completed this lab. In this lab, you were able to publish a Web Application hosted behind an F5 advanced Web application firewall   
+Congratulations, You have completed this lab. In this lab, you were able to publish a Web Application hosted behind an F5 advanced Web application firewall using F5 Big IP Virtual Edition
