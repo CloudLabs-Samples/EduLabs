@@ -141,7 +141,7 @@ In this task, you will login to the AWS Console
 
 24. Click on **Save rules**
 
-25. Click on the F5 instance scroll down to the bottom and select the security group 
+25. Click on the **F5 instance** and select the security group from the **Security** tab
     
     ![](images/f5instance.png)
     ![](images/f5securitygroup.png)
