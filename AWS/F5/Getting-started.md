@@ -138,7 +138,8 @@ In this task, you will login to the AWS Console
 23. Click on **Save rules**
 
 24. Click on the F5 instance scroll down to the bottom and select the security group 
-   
+    
+    ![](images/f5instance.png)
     ![](images/f5securitygroup.png)
 
 25. Now from the security group page select **Edit inbound rules** 
