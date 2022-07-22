@@ -244,17 +244,17 @@ In this task, you will login to the AWS Console
 
 5. In the **Name** field provide the name as **f5pool**. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
-   ![](images/f5-13u.jpg)  
+   ![](images/f5-13u.png)  
 
 6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task
    
 7. In the **Service Port** field, select **http** as service port and Click **Add**
    
-   ![](images/f5-14u.jpg)
+   ![](images/f5-14u.png)
  
 8. Review the configurations and  Click on **Finished**
   
-   ![](images/f5.jpg)
+   ![](images/f5.png)
    
 9. Refresh the page and verify if the created pool's status is shown as **Available** (indicated in green) 
    
@@ -285,7 +285,7 @@ In this task, you will login to the AWS Console
 
 14. Scroll down to the **Resources** section, configure **Default Pool** by selecting the pool which you created and click on **Finished**.
    
-    ![](images/f5-19u.jpg)
+    ![](images/f5-19u.png)
   
 15. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
