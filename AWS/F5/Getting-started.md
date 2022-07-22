@@ -63,7 +63,7 @@ In this task, you will login to the AWS Console
 
    ![](images/createkeypair.png)
     
-3. After the keypair is created successfully, an .ppk file will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
+3. After the keypair is created successfully, an **.ppk file** will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
 4. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
