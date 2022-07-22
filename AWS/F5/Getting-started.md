@@ -17,7 +17,7 @@ F5 Advanced WAF is an application-layer security platform protecting against app
 
 ## Tasks Included
 
-In this hands-on lab you will perform the following exercises:
+In this hands-on lab you will perform the following tasks:
 
 - **01: Getting started with the AWS Console**
 - **02: Deploying the F5 Big IP Virtual edition solution and a Web server**
