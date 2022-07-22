@@ -29,8 +29,8 @@ FortiGuard Labs security services, help to create and automate policies driving 
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
-   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
-   * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+   * **AWS Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **AWS Password**:  <inject key="AzureAdUserPassword"></inject>
 
    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
