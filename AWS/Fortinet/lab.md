@@ -140,36 +140,32 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/fortinetectl.png)  
  
-23. Next, on the **Launch this Software** blade, select the following :
-    - Choose Action : Launch from Website
-    - EC2 instance type: Leave the option set to default
-    - VPC Settings : Leave the option set to default VPC
-    - Subnet Settings : Leave the option set to default
+23. On the **Launch this Software** blade , select **Launch through EC2** under **Choose Action** and click on **Launch**
     
-      ![](images/fortinetlts.png)  
+    ![](images/fortinetltsu.png)  
 
-24. Scroll down and under **Security Group Settings** select **Create New Based on Seller Settings**
+24. On the **Launch an instance** blade, provide the name as **fortinet instance** under the **Name and tags** and ensure the right AMI image is selected.
    
-    ![](images/apachelts2.png)  
+    ![](images/fortinetnameu.png)  
 
-25. Under the **Create New Based on Seller Settings** provide the Security group name, description and Click on **Save** 
+25. Scroll down and leave the default value for the **instance type** and select the existing key pair that you created
 
-    ![](images/fortinetlts3.png) 
+    ![](images/fortinetlts3u.png) 
    
-26. Under the **Key Pair Settings** section select the existing key pair and click on **Launch**
-   
-    ![](images/apachelts4.png) 
-
-27. Once the instance is deployed successfully you will get a message as follows, Click on **EC2 Console**
+26. Under the **Network Settings** section select the **Create security group** 
     
-    ![](images/fortinetmsg.png) 
+    ![](images/networksettingsfortinet.png) 
 
-28. You will be navigated to the **Instances** Page
+27. Click on **Launch instance** from **Summary** tab
+   
+    ![](images/summaryfortinet.png) 
 
-29. On the instances page, name the instance you just created as **Fortinet instance** and click on **Save**
-
-    ![](images/fortinetname.png) 
+28. Once the instance is deployed successfully you will get a message as follows, Click on **Instance ID**
     
+    ![](images/fortinetmsgu.png) 
+
+29. You will be navigated to the **Instances** Page
+
 30. Ensure the instance is **Running** and the status shows as **2/2 checks passed**
    
     ![](images/fortinetstatus.png) 
