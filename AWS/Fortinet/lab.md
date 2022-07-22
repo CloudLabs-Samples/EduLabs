@@ -19,11 +19,8 @@ FortiGuard Labs security services, help to create and automate policies driving 
 * **04 - Configure FortiGate for Web Traffic**
 * **05 - Access the Webserver**
 
-## Overview
-
-In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a Apache web server. 
-
 ## 01: Login to AWS console
+   In this task, you will login to the AWS Console
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
@@ -47,6 +44,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
     ![](images/region.png)
   
 ## 02: Deploying the FortiGate Next-Generation Firewall solution and Web server
+       In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a Apache web server. 
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
@@ -180,8 +178,6 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
 # 03 - Accessing the FortiGate Dashboard 
 
-## Overview 
-
 In this task, you will access the FortiGate dashboard through the internet by using the FortiGate Public IP and connect to the Apache webserver via the CLI Console.
 
 ## Task 1: Accessing the FortiGate Dashboard 
@@ -245,8 +241,6 @@ In this task, you will access the FortiGate dashboard through the internet by us
 
     
 # 04 - Configuring FortiGate for Web Traffic
-
-## Overview
 
 In this task, you will try to access the webserver via FortiGate's Public IP address on port 80, configure Firewall policies on the FortiGate-VM firewall via the FortiGate dashboard, and then add Virtual IPs to provide secured access from your device to the webserver hosted in AWS and protected by the FortiGate.
 
@@ -317,8 +311,6 @@ In this task, you will try to access the webserver via FortiGate's Public IP add
     ![](images/fpconfig.png)
 
 # 05 - Access the Webserver
-
-## Overview 
 
 In this task, you will access the Apache webserver hosted in AWS via the internet using the Public IP of Fortinet instance on port 80 which was configured in the previous exercise by providing the Virtual IPs of the webserver.  
 
