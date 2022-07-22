@@ -24,6 +24,8 @@ In this hands-on lab you will perform the following exercises:
 - **03: Accessing the F5 Dashboard**
 - **04: Configuring F5 BIG-IP Virtual Edition**
 
+**IMPORTANT NOTE** : The lab should be performed in **Ohio** region
+
 # 01: Getting started with the AWS console
 
 In this task, you will login to the AWS Console
