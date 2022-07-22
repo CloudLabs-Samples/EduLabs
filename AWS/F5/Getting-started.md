@@ -196,7 +196,7 @@ In this task, you will login to the AWS Console
    
    ![](images/f5-adv.png)
      
-10. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
+10. Click on the link **Proceed to XXXXXX(unsafe)** on the page as shown below. 
 
     ![](images/f5-cont.png)
     
@@ -236,13 +236,13 @@ In this task, you will login to the AWS Console
         
    ![](images/f5-12.jpg)
    
- >BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
+   >BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
 5. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
    ![](images/f5-13.jpg)  
 
-6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
+6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task
    
 7. In the **Service Port** field, select **http** as service port **(2)** and Click **Add** **(3)**.
 
