@@ -268,26 +268,27 @@ In this task, you will login to the AWS Console
    - Service port: **80**
    - State: Leave the default
 
-    ![](images/f5-17.jpg)
+   ![](images/f5-17.jpg)
  
 12. Scroll down to the **Configuration** section, configure as below:
 
    - Source Address Translation: Select **Auto Map**
 
-    ![](images/f5-18.jpg)
+   ![](images/f5-18.jpg)
 
 13. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
 
    - Default Pool: Select the Pool which you created in the previous exercise
     
-    ![](images/f5-19.jpg)
+   ![](images/f5-19.jpg)
   
 14. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
     ![](images/f5-vsstatus.png)
     
 15.  Open a new tab in the browser and copy-paste the following to access the webserver.
-    ```
+     
+     ```
      http://<f5publicip>
      ```
     
