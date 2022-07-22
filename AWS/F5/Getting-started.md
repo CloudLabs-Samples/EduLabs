@@ -1,6 +1,6 @@
 # Getting started with F5 BIG-IP Virtual Edition on AWS
 
-## F5 BIG-IP Virtual Edition
+## Overview
 
 The BIG-IP Virtual Edition (VE) is the industry’s most trusted and comprehensive app delivery and security solution. Providing everything from intelligent traffic management and visibility to app security access and optimization, BIG-IP VE ensures your apps are fast available and secure wherever they are deployed.
 BIG-IP Virtual Edition includes:
@@ -17,22 +17,22 @@ F5 Advanced WAF is an application-layer security platform protecting against app
 
 ## Tasks Included
 
-In this hands-on lab you will perform the following tasks:
+In this hands-on lab you will perform the following exercises:
 
-- **Task 1: Getting started with the AWS Console**
-- **Task 2: Accessing the F5 Dashboard**
-- **Task 3: Configuring F5 Advanced Web Application firewall**
+- **01: Getting started with the AWS Console**
+- **02: Deploying the F5 Big IP Virtual edition solution and a Web server
+- **03: Accessing the F5 Dashboard**
+- **04: Configuring F5 Advanced Web Application firewall**
+
 # 01: Getting started with the AWS console
-
-## Overview
 
 In this task, you will deploy F5 BIG-IP Virtual Edition and a web server. 
 
-## Task 1: Getting started with the AWS
+## Task 1: Getting started with the AWS Console
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
-  ![](images/awssigninlink.png)
+   ![](images/awssigninlink.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
@@ -51,101 +51,101 @@ In this task, you will deploy F5 BIG-IP Virtual Edition and a web server.
    
     ![](images/ohioregion.png)
 
-5. Search for **key pairs** and select **Key Pairs** from the EC2 feature
+# 02: Deploying the F5 Big IP Virtual edition solution and a Web server
+
+1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
     ![](images/keypair.png)
  
-6. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
+2. On the **Create key pair** blade provide the name as **F5-Server-test** and click on **Create key pair**
 
    ![](images/createkeypair.png)
     
-7. After the keypair is created successfully, an .ppk file will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
+3. After the keypair is created successfully, an .ppk file will be downloaded to your machine. Ensure to save it safely as it will be used in further steps
 
-8. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
+4. Navigate to https://aws.amazon.com/marketplace/ , search for the Marketplace image **F5 BIG-IP Virtual Edition - GOOD (PAYG, 25Mbps)**
 
-9. Select the Marketplace image and click on **Continue to subscribe**
+5. Select the Marketplace image and click on **Continue to subscribe**
    
    ![](images/bigipsubscribe.png)
     
-10. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
+6. Under the **Subscribe to this software** section click on **Accept Terms** to accept the terms and conditions
    
    ![](images/f5bigipterms.png)
    
-11. Now search for **Cloud Formation** and select **stacks**
+7. Now search for **Cloud Formation** and select **stacks**
 
      ![](images/stack.png)
 
-12. Select **Create stack**
+8. Select **Create stack**
 
    ![](images/createstack.png)
       
-13. On the **Create stack** blade, provide the **Amazon S3 URL** as https://bigipf5good.s3.amazonaws.com/Testing-BigIP.yml and click on **Next**
+9. On the **Create stack** blade, provide the **Amazon S3 URL** as https://bigipf5good.s3.amazonaws.com/Testing-BigIP.yml and click on **Next**
 
    ![](images/createstack2.png)
       
-14. In the **Specify stack details** section enter the stack name as **f5deployment** and leave other parameters as default
+10. In the **Specify stack details** section enter the stack name as **f5deployment** and leave other parameters as default
    
    ![](images/specifystackdetails1.png)
 
-15. In the **Network Configuration** section, select the option as follows: 
+11. In the **Network Configuration** section, select the option as follows: 
    - Select the existing **VPC ID** 
    - Select the existing subnets for BIGIP external interface Subnet ID, BIGIP internal interface Subnet ID, and BIGIP management interface Subnet ID
 
    ![](images/specifystackdetails2.png)
  
-16. Leave the other configurations to be set to default values and click on **Next**
+12. Leave the other configurations to be set to default values and click on **Next**
 
-17. Click on **Next** again
+13. Click on **Next** again
 
-18. On the review stack page, scroll down to the bottom and **check** the two options and click on **Create stack**
+14. On the review stack page, scroll down to the bottom and **check** the two options and click on **Create stack**
    
    ![](images/termsstack.png)
 
-19. Wait for 3 minutes for the deployment to be completed.
+15. Wait for 3 minutes for the deployment to be completed.
 
-20. Now on the **Stacks** page ensure the status shows as **CREATE_COMPLETE** for all the stacks.
+16. Now on the **Stacks** page ensure the status shows as **CREATE_COMPLETE** for all the stacks.
    ![](images/stackprogress.png)
 
-21. You can also view the stack progress of the main deployment only by turning the toggle off of the **view nested** option
+17. You can also view the stack progress of the main deployment only by turning the toggle off of the **view nested** option
    ![](images/stackprogresswonested.png)
   
-22. Search for **EC2** and select **Instances** to view the deployed F5 instance and web server instance
+18. Search for **EC2** and select **Instances** to view the deployed F5 instance and web server instance
    
    ![](images/ec2.png)
 
-23. On the instances page, click on each instance and review the configurations.
+19. On the instances page, click on each instance and review the configurations.
    
    ![](images/Instancespage.png)
 
-24. Click on the Web server instance, from the **Security** tab select the security group 
+20. Click on the Web server instance, from the **Security** tab select the security group 
  
    ![](images/wsinstancesummary.png)
 
-25. Now from the security group page select **Edit inbound rules** 
+21. Now from the security group page select **Edit inbound rules** 
    
    ![](images/wssecuritygroup.png)
 
-26. Click on **add rule** and add the port 80 
+22. Click on **add rule** and add the port 80 
 
    ![](images/wssecuritygroup2.png)
 
-27. Click on **Save rules**
+23. Click on **Save rules**
 
-28. Click on the F5 instance scroll down to the bottom and select the security group 
+24. Click on the F5 instance scroll down to the bottom and select the security group 
    
    ![](images/f5securitygroup.png)
 
-29. Now from the security group page select **Edit inbound rules** 
+25. Now from the security group page select **Edit inbound rules** 
 
-30. Click on **add rule** and add the ports 8443 and 443 if it's not been added already
+26. Click on **add rule** and add the ports 8443 and 443 if it's not been added already
 
-31. Click **Save rules** 
-
-## Overview 
-
-In this task, you will access the F5 Big IP dashboard by using the Public Ip address.
+27. Click **Save rules** 
 
 ## Task 2: Accessing the F5 Dashboard
+   
+   In this task, you will access the F5 Big IP dashboard by using the Public Ip address.
 
 1. Open **Putty** from your machine
    
@@ -210,9 +210,7 @@ In this task, you will access the F5 Big IP dashboard by using the Public Ip add
 
 # 03: Configuring F5 Advanced Web Application firewall
 
-## Overview
-
-In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure to publish IIS-based websites.
+  In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure to publish IIS-based websites.
 
 ## Task 1: Access the Webserver
 
@@ -229,9 +227,9 @@ In this task, you will configure the F5 Advanced Web Application firewall hosted
 
 ## Task 2: Configuring F5 Advanced Web Application firewall  
 
-### Exercise 1: Creating a pool and adding members to it
+### Subtask 1: Creating a pool and adding members to it
 
-In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
+In this subtask, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
 1. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
@@ -259,9 +257,9 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
    
    ![](images/f5-poolstatus.png)
     
-### Exercise 2: Creating a virtual server
+### Subtask 2: Creating a virtual server
 
-In this exercise, A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
+In this subtask, A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
 
 1. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
