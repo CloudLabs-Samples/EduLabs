@@ -200,7 +200,7 @@ In this task, you will login to the AWS Console
    
    ![](images/f5-adv.png)
      
-10. Click on the link **Proceed to XXXXXX(unsafe)** on the page as shown below. 
+10. Click on the link **Continue to XXXXXX(unsafe)** on the page as shown below. 
 
     ![](images/f5-cont.png)
     
