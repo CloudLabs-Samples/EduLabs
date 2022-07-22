@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/AWS/Fortinet",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/Fortinet/Getting-started.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/Fortinet/lab.md",
         "Order": 1
       }
     ]
