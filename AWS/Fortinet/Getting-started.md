@@ -46,7 +46,7 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
    
     ![](images/region.png)
   
-## 02: Deploying the FortiGate Next-Generation Firewall solution and Web server**
+## 02: Deploying the FortiGate Next-Generation Firewall solution and Web server
 
 1. Search for **key pairs** and select **Key Pairs** from the EC2 feature
 
