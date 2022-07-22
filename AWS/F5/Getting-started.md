@@ -22,7 +22,7 @@ In this hands-on lab you will perform the following exercises:
 - **01: Getting started with the AWS Console**
 - **02: Deploying the F5 Big IP Virtual edition solution and a Web server**
 - **03: Accessing the F5 Dashboard**
-- **04: Configuring F5 BIG-IP Virtual Edition **
+- **04: Configuring F5 BIG-IP Virtual Edition**
 
 # 01: Getting started with the AWS console
 
