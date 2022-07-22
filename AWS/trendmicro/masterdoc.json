@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "S3 Bucket malware scanning with Trend Micro",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/AWS/trendmicro",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/trendmicro/Getting-started.md",
+        "Order": 1
+      }
+    ]
+  }
+]
