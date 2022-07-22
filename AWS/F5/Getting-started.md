@@ -210,9 +210,7 @@ In this task, you will login to the AWS Console
 
 # 04: Configuring F5 Advanced Web Application firewall
 
-  In this task, you will configure the F5 Advanced Web Application firewall hosted on Azure to publish IIS-based websites.
-
-## Task 1: Access the Webserver
+  In this task, you will configure the F5 Advanced Web Application firewall hosted on AWS to publish IIS-based websites.
 
 1. Open a new tab in the browser and attempt to access the web server via HTTP to the same IP address as the F5 
    ```
@@ -225,25 +223,23 @@ In this task, you will login to the AWS Console
     
 2. You won't be able to access the webserver because the F5 is not yet configured to respond to port 80.
 
-### Subtask 1: Creating a pool and adding members to it
-
-In this subtask, BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
-
-1. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
+3. Switch back to F5 dashboard tab, On the **Main** tab, click **Local Traffic -> Pools -> Pool List**.
 
     ![](images/f5-11.jpg)
     
-2. Click **Create** to create the Pool.    
+4. Click **Create** to create the Pool.    
         
     ![](images/f5-12.jpg)
+   
+ >BIG-IP VE routes traffic to a pool. This pool should contain your application servers.
 
-3. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
+5. In the **Name** field, type **f5pool**. Names must begin with a letter, be fewer than 63 characters, and can contain only letters, numbers, and the underscore (_) character. For **Health Monitors**, move **HTTP** from the **Available** to the **Active** list by clicking on <<.
 
     ![](images/f5-13.jpg)  
 
-4. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
+6. In the **New Members** section, in the **Address** field, type the Public IP address of the Web server which you copied in the previous task **(1)**.
    
-5. In the **Service Port** field, select **http** as service port **(2)** and Click **Add** **(3)**.
+7. In the **Service Port** field, select **http** as service port **(2)** and Click **Add** **(3)**.
 
       **Note**: The list now contains the member **(4)**
         
@@ -251,23 +247,21 @@ In this subtask, BIG-IP VE routes traffic to a pool. This pool should contain yo
    
     ![](images/f5-14.jpg)
     
-6. Refresh the page and verify if the created pool's status is shown as **Available** (indicated in green) 
+8. Refresh the page and verify if the created pool's status is shown as **Available** (indicated in green) 
    
    ![](images/f5-poolstatus.png)
-    
-### Subtask 2: Creating a virtual server
 
-In this subtask, A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
-
-1. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
+9. On the **Main** tab, click **Local Traffic -> Virtual Servers-> Virtual Server List**
 
    ![](images/f5-15.jpg)
     
-2. Click **Create** to create the Virtual Server.  
+10. Click **Create** to create the Virtual Server.  
 
     ![](images/f5-16.jpg)
-    
-3. In the **General Properties** section, configure as below:
+  
+   >A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
+
+11. In the **General Properties** section, configure as below:
 
    - Name: **Demo-Website** (Or your custom service name)
    - Destination Address/Mask: **0.0.0.0/0**
@@ -276,28 +270,28 @@ In this subtask, A virtual server listens for packets destined for the external 
 
     ![](images/f5-17.jpg)
  
-4. Scroll down to the **Configuration** section, configure as below:
+12. Scroll down to the **Configuration** section, configure as below:
 
    - Source Address Translation: Select **Auto Map**
 
     ![](images/f5-18.jpg)
 
-5. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
+13. Again, scroll down to the **Resource** section, configure it as below and click on **Finished**.
 
    - Default Pool: Select the Pool which you created in the previous exercise
     
     ![](images/f5-19.jpg)
   
-6. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
+14. Verify if the created Virtual server's status is shown as **Available** (indicated in green) 
     
    ![](images/f5-vsstatus.png)
     
-7.  Open a new tab in the browser and copy-paste the following to access the webserver.
+15.  Open a new tab in the browser and copy-paste the following to access the webserver.
     ```
      http://<f5publicip>
      ```
     
-8. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
+16. The request will be forwarded to the backend web server as configured and You should be able to see the webserver in the browser.
     
    ![](images/iisonf5.png)
 
