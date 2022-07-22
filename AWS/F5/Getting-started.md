@@ -268,7 +268,7 @@ In this task, you will login to the AWS Console
 
     ![](images/f5-16.jpg)
   
-   >A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
+    >A virtual server listens for packets destined for the external IP address. You must create a virtual server that points to the pool you created.
 
 12. In the **General Properties** section, configure as below:
 
