@@ -1,3 +1,8 @@
+# S3 Bucket malware scanning with Trend Micro
+
+## Overview
+In this hands-on lab, you will learn how to scan your objects that are being uploaded to Amazon S3 buckets for malware and integrate into your custom workflows, by automating with your current resources, directly in your AWS environment
+
 ## Login to AWS console
    
    In this task, you will login to the AWS Console
