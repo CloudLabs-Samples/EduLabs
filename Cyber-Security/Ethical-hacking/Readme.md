@@ -68,7 +68,7 @@ In this exercise you will update/upgrade kali linux system and explore some of t
 1. In the labvm provided, click on **Hyper-V Manager** and select **Kali-linux** under the Virtual machines and click on **Start** to start the virtual machine.
    ![](images/hyper-v.png)
 
-2. Once the kali linux is turned on oe in Running state, click on **Connect**
+2. Once the kali linux is turned on or in Running state, wait for the machine to boot up and click on **Connect**
    
 3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
    * **Username:** <inject key="Kali VM Username" />
@@ -126,7 +126,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 1. In the labvm provided, click on **Hyper-V Manager** and select **Metasploitable** under the Virtual machines and click on **Start** to start the virtual machine.
    ![](images/mfstart.png)
 
-2. Once the  Metasploitable OS is turned on oe in Running state, click on **Connect**
+2. Once the  Metasploitable OS is on or in Running state, wait for the machine to boot up and click on **Connect**
    
 3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
    * **Username:** <inject key="Metasploitable VM Username" />
