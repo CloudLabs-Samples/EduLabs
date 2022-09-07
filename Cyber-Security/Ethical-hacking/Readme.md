@@ -102,7 +102,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 - Nmap
 - Metasploit framework
 - Hydra
-1. From the top left corner of the kali linux, select **Applications** adn search for pre-installed tools like nmap. Similarly you can check for other pre-installed tools.
+1. From the top left corner of the kali linux, select **Applications** and search for pre-installed tools like nmap. Similarly you can check for other pre-installed tools.
    ![](images/nmap.png)
    **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes: 
 - Real time information of a network
