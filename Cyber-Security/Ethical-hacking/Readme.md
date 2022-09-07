@@ -67,31 +67,33 @@ In this exercise you will update/upgrade kali linux system and explore some of t
 
 1. In the labvm provided, click on **Hyper-V Manager** and select **Kali-linux** under the Virtual machines and click on **Start** to start the virtual machine.
    ![](images/hyper-v.png)
+
+2. Once the kali linux is turned on oe in Running state, click on **Connect**
    
-2. Once the kali linux is turned on, you will be prompted to login to the Virtual machine. Use the below credentials and login to the VM.
+3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
    * **Username:** <inject key="Kali VM Username" />
    * **Password:** <inject key="Kali VM Password" />
 
-3. Open the **Root terminal emulator** from top left corner of the kali linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user
+4. Open the **Root terminal emulator** from top left corner of the kali linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user
    ![](images/root-terminal.png)
    
-4. In the terminal, run the following command to verify if the repository is correctly defined in the sources.  
+5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.  
    ```
    more /etc/apt/sources.list
    ```
    ![](images/kali-sourceslist.png)
   
-4. Next, run the below command to update the list of available packages.
+6. Next, run the below command to update the list of available packages.
    ```
    apt-get update
    ```
    ![](images/kali-updatecmd.png)
   
-5. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
+7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
    ```
    apt-get upgrade
    ```
-6. Now the system is updated with latest packages or updates from the repository.
+8. Now the system is updated with latest packages or updates from the repository.
 
 ## Task 2 : Essential Kali tools
 
@@ -123,8 +125,10 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
 1. In the labvm provided, click on **Hyper-V Manager** and select **Metasploitable** under the Virtual machines and click on **Start** to start the virtual machine.
    ![](images/mfstart.png)
+
+2. Once the  Metasploitable OS is turned on oe in Running state, click on **Connect**
    
-2. Once the kali linux is turned on, you will be prompted to login to the Virtual machine. Use the below credentials and login to the VM.
+3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
    * **Username:** <inject key="Metasploitable VM Username" />
    * **Password:** <inject key="Metasploitable VM Password" />
 
