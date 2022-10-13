@@ -2,7 +2,7 @@
 
 ## Overview
 
-Alert Logic MDR is a fully managed cloud-based suite of security and compliance solutions, delivered as-a-service for AWS, on-premises and hybrid infrastructures. We make it easy for any organization to secure their assets and data.
+Alert Logic MDR is a fully managed cloud-based suite of security and compliance solutions, delivered as-a-service for AWS, on-premises and hybrid infrastructures. AlertLogic makes it easy for any organization to secure their assets and data.
 - Protect sensitive data on AWS, on-premises and hybrid infrastructures with a single solution 
 - Integration of network, application and system protection to deliver deeper insight into threats 
 - Managed and monitored 24/7 by our 150 + security experts (SOC)
@@ -12,8 +12,8 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 
 1. Access to required subscription of Alert Logic and a AlertLogic account
 2. An AWS account with necessary permissions
-3. Role assignment to protect your AWS deployment that is an AWS cross-account role to allow Alert Logic access to your AWS account
-4. Deployment of AWS resources using CloudFormation template (CFT)
+3. Deployment of AWS resources using CloudFormation template (CFT)
+4. Role assignment to protect the AWS deployment that is an AWS cross-account role to allow Alert Logic access to your AWS account
 
 ## Tasks Included
   
@@ -42,7 +42,6 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 4. Ensure to use the **N.Virginia** region at the top right corner for performing the lab.
    
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/region.png)
-      
       
 ## 02 - Identify different threats, alerts in Alertlogic console
 
