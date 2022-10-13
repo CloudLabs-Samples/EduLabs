@@ -24,7 +24,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
-   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/envdetails.png)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicenvdetails.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
@@ -33,7 +33,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 
    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
-   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/awsconsolecreds.png)
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicawsconsolecreds.png)
 
 3. Now you will be able to view the home page of the AWS console
    
