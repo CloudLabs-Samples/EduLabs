@@ -18,7 +18,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 ## Tasks Included
   
 * **01 - Login to AWS console**
-* **02 - Identify different threats, alerts in Alertlogic console**
+* **02 - Identify different threats, alerts in AlertLogic console**
 
 ## 01: Login to AWS console
 
