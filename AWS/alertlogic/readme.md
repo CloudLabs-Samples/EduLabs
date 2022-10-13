@@ -58,4 +58,4 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicdashboard.png)
       
 ## Conclusion 
-In this hands on lab, you learned how to use AlertLogic's MDR solution to identify and protect AWS workloads. 
+In this hands on lab, you learned how to use AlertLogic's MDR solution to identify threats and protect AWS workloads. 
