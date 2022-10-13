@@ -20,10 +20,6 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 * **01 - Login to AWS console**
 * **02 - Identify different threats, alerts in Alertlogic console**
 
-## Overview
-
-In this task, you will use AlertLogic MDR to identify the threats and manage the sensitive data in a AWS infrastructure . 
-
 ## 01: Login to AWS console
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
