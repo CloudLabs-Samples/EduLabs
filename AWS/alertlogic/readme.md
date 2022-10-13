@@ -46,4 +46,4 @@ In this task, you will deploy Fortinet FortiGate Next-Generation Firewall and a 
 
     
 ## Conclusion 
-In this hands on lab, you accessed the Apache webserver through the internet using the Fortinet VM's Public IP. 
+In this hands on lab, you used AlertLogic's MDR solution to protect AWS workloads. 
