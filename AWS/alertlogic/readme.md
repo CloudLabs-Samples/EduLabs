@@ -43,5 +43,20 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
    
     ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/region.png)
       
+      
+## 02 - Identify different threats, alerts in Alertlogic console
+
+1. In a browser, open a new tab and sign in to the **AlertLogic Console** using the sign-in link https://console.alertlogic.com/#/login
+   
+   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicconsole.png)
+
+2. On the **Login** blade, you will see a Log in screen,  enter the email address and Password then click on **Log in**.  
+
+3. Now you will be able to view the home page of the Alert Logic console
+   
+4. In the dashboard, Threat Summary provides graphical information on incidents, including data points such as Open Incident Count, Incidents Count by Source Location, Incidents by MITRE Tactic, and Top Attackers
+   
+    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicdashboard.png)
+      
 ## Conclusion 
 In this hands on lab, you learned how to use AlertLogic's MDR solution to protect AWS workloads. 
