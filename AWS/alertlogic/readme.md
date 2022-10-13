@@ -13,16 +13,16 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 1. Access to required subscription of Alert Logic and a AlertLogic account
 2. An AWS account with necessary permissions
 3. Role assignment to protect your AWS deployment that is an AWS cross-account role to allow Alert Logic access to your AWS account
-4. Deployment of AWS resources using CloudFormation template (CFT) 
+4. Deployment of AWS resources using CloudFormation template (CFT)
 
 ## Tasks Included
   
 * **01 - Login to AWS console**
-* **02 - Identify different threats, alerts in Alertlogic console
+* **02 - Identify different threats, alerts in Alertlogic console**
 
 ## Overview
 
-In this task, you will use AlertLogic MDR to identify the threats and manage the sensitive data in a AWS environment . 
+In this task, you will use AlertLogic MDR to identify the threats and manage the sensitive data in a AWS infrastructure . 
 
 ## 01: Login to AWS console
 
