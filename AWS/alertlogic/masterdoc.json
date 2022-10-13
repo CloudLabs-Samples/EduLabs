@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Getting started with Fortinet FortiGate Next-Generation Firewall on AWS",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/AWS/alertlogic",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/alertlogic/lab.md",
+        "Order": 1
+      }
+    ]
+  }
+]
