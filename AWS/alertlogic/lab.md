@@ -3,10 +3,10 @@
 ## Overview
 
 Alert Logic MDR is a fully managed cloud-based suite of security and compliance solutions, delivered as-a-service for AWS, on-premises and hybrid infrastructures. AlertLogic makes it easy for any organization to secure their assets and data.
-- Protect sensitive data on AWS, on-premises and hybrid infrastructures with a single solution 
+- Protects sensitive data on AWS, on-premises and hybrid infrastructures with a single solution 
 - Integration of network, application and system protection to deliver deeper insight into threats 
-- Managed and monitored 24/7 by our 150 + security experts (SOC)
-- Subscription model pricing custom fit based on your needs
+- Managed and monitored 24/7 by 150 + security experts (SOC)
+- Subscription model pricing custom fit based on the needs
 
 ## Pre-requisites
 
@@ -18,7 +18,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 ## Tasks Included
   
 * **01 - Login to AWS console**
-* **02 - Identify different threats, alerts in AlertLogic console**
+* **02 - Identify different threats, incidents in AlertLogic console**
 
 ## 01: Login to AWS console
 
@@ -43,7 +43,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
    
     ![](images/region.png)
       
-## 02 - Identify different threats, alerts in Alertlogic console
+## 02 - Identify different threats, incidents in Alertlogic console
 
 1. In a browser, open a new tab and sign in to the **AlertLogic Console** using the sign-in link https://console.alertlogic.com/#/login
    
