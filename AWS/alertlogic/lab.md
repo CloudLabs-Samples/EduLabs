@@ -15,7 +15,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 3. Deployment of AWS resources using CloudFormation template (CFT)
 4. Role assignment to protect the AWS deployment that is an AWS cross-account role to allow Alert Logic access to your AWS account
 
-NOTE: The Pre-requisites will be preprovisioned with the CloudLabs lab environment 
+NOTE: The Pre-requisites will be pre-provisioned with the CloudLabs lab environment 
 
 ## Tasks Included
   
