@@ -56,6 +56,8 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 4. In the dashboard, Threat Summary provides graphical information on incidents, including data points such as Open Incident Count, Incidents Count by Source Location, Incidents by MITRE Tactic, and Top Attackers
    
     ![](images/alertlogicdashboard.png)
+    
+ NOTE: The Reports tab provides access to data related to exposures and incidents Alert Logic found within your deployments. Report data is cached and refreshed every 30 minutes. As a result, reports can take up to 30 minutes to reflect the latest data seen in the console
       
 ## Conclusion 
 In this hands on lab, you learned how to use AlertLogic's MDR solution to identify threats and protect AWS workloads. 
