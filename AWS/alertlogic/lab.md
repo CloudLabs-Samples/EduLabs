@@ -24,7 +24,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
    
-   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicenvdetails.png)
+   ![](images/alertlogicenvdetails.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
@@ -33,21 +33,21 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
 
    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
         
-   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicawsconsolecreds.png)
+   ![](images/alertlogicawsconsolecreds.png)
 
 3. Now you will be able to view the home page of the AWS console
    
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/consolehome.png)
+    ![](images/consolehome.png)
     
 4. Ensure to use the **N.Virginia** region at the top right corner for performing the lab.
    
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/region.png)
+    ![](images/region.png)
       
 ## 02 - Identify different threats, alerts in Alertlogic console
 
 1. In a browser, open a new tab and sign in to the **AlertLogic Console** using the sign-in link https://console.alertlogic.com/#/login
    
-   ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicconsole.png)
+   ![](images/alertlogicconsole.png)
 
 2. On the **Login** blade, you will see a Log in screen,  enter the email address and Password then click on **Log in**.  
 
@@ -55,7 +55,7 @@ Alert Logic MDR is a fully managed cloud-based suite of security and compliance 
    
 4. In the dashboard, Threat Summary provides graphical information on incidents, including data points such as Open Incident Count, Incidents Count by Source Location, Incidents by MITRE Tactic, and Top Attackers
    
-    ![](https://github.com/CloudLabs-Samples/EduLabs/blob/main/AWS/Fortinet/images/alertlogicdashboard.png)
+    ![](images/alertlogicdashboard.png)
       
 ## Conclusion 
 In this hands on lab, you learned how to use AlertLogic's MDR solution to identify threats and protect AWS workloads. 
