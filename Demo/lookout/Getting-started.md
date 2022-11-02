@@ -19,6 +19,6 @@ In this hands-on lab, you will explore and learn about the **LOOKOUT MOBILE SECU
  
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
-   ![](images/resourcestab.png)
+   ![](images/resources.png)
     
 5. Follow the instructions provided here : https://www.lookout.com/documents/brochure/us/lookout-platform-brochure-mobile-security-platform-us.pdf to perform the lab
