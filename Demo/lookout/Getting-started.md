@@ -1,1 +1,27 @@
+# CloudLabs Demo : Lookout
 
+## Overview
+In this hands-on lab, you will learn how to scan your objects that are being uploaded to Amazon S3 buckets for malware and integrate into your custom workflows, by automating with your current resources, directly in your AWS environment
+
+## Login to AWS console
+   
+   In this task, you will login to the AWS Console
+
+1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
+   
+   ![](images/envdetails.png)
+
+2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
+
+   * **AWS Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **AWS Password**:  <inject key="AzureAdUserPassword"></inject>
+
+   **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+        
+   ![](images/awsconsolecreds.png)
+
+3. Now you will be able to view the home page of the AWS console
+   
+    ![](images/consolehome.png)
+    
+4. Follow the instructions provided here : https://www.lookout.com/documents/brochure/us/lookout-platform-brochure-mobile-security-platform-us.pdf to perform the lab
