@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo : Lookout",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/lookout",
+    "Files": [
+      {
+        "RawFilePath": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/lookout/Getting-started.md",
+        "Order": 1
+      }
+    ]
+  }
+]
