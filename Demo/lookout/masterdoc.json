@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/lookout",
     "Files": [
       {
-        "RawFilePath": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/lookout/Getting-started.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/lookout/Getting-started.md",
         "Order": 1
       }
     ]
