@@ -11,11 +11,11 @@ In this hands-on lab, you will explore and learn about the **LOOKOUT MOBILE SECU
 
 2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
    
-   ![](images/envdetails.png)
+   ![](images/env-details.png)
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
    
-   ![](images/splitwindow.png)
+   ![](images/split-window.png)
  
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
