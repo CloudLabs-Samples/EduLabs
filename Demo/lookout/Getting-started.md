@@ -15,7 +15,7 @@ In this hands-on lab, you will explore and learn about the **LOOKOUT MOBILE SECU
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
    
-   ![](images/split-window.png)
+   ![](images/splitwindow.png)
  
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
