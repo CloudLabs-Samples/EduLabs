@@ -24,15 +24,17 @@ In this lab environment, you will be able to access the windows VM which has sev
    
 ## Access the JupyterLab Application
 
-1. In the virtual machine, double click on the **Jupyter** shortcut on the desktop.
+1. In the virtual machine, double click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
 
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
    ![](../images/jupyteronvm.png)
    
-3. Once the Jupyter Lab loads up, you will see the File System on the left and Launcher on the right. There are a lot of samples loaded up for the various technologies. You can navigate through the lab and perform any exercise with the environment.
+3. Once the Jupyter Lab loads up, you will see the File System on the left and Launcher on the right. 
 
    ![](../images/jupyterlab-browser.png)
+
+4. Navigate to the /notebooks directory for example notebooks that are pre-packaged into the DSVM. There are a lot of samples loaded up for the various technologies. You can navigate through the lab and perform any exercise with the environment.
    
  ## Summary
  
