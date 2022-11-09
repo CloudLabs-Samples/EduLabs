@@ -34,7 +34,7 @@ In this lab environment, you will be able to access the windows VM which has sev
 
    ![](../images/jupyterlab-browser.png)
 
-4. Navigate to the /notebooks directory for example notebooks that are pre-packaged into the DSVM. There are a lot of samples loaded up for the various technologies. You can navigate through the lab and perform any exercise with the environment.
+4. Navigate to the /notebooks directory for example notebooks that are pre-packaged. There are a lot of samples loaded up for the various technologies. You can navigate through the notebooks and perform any exercise with the environment.
    
  ## Summary
  
