@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Challenge Lab",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/new/main/Challengelabs/AZ104",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/alertlogic/lab.md",
+        "Order": 1
+      }
+    ]
+  }
+]
