@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/new/main/Challengelabs/AZ104",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/AWS/alertlogic/lab.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Challengelabs/AZ104/Scenario1.md",
         "Order": 1
       }
     ]
