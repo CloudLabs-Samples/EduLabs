@@ -3,5 +3,7 @@ You are given a web app deployed in Azure and accessible over Public Internet. 
 
 ### Skills tested: 
 Private Endpoint
+  
 Web App
+  
 Networking
