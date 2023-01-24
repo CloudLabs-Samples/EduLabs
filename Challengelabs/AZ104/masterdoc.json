@@ -7,6 +7,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Challengelabs/AZ104/Scenario1.md",
         "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Challengelabs/AZ104/Scenario1-solution.md",
+        "Order": 2
       }
     ]
   }
