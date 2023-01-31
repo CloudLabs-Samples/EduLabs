@@ -118,9 +118,10 @@ In this task, you can view the Application gateway and its Components
      ![](../images/waf050.png)
      
 1. On the application gateway page, under **settings**, select the **Frontend IP configurations**
-   * **Frontend IP configuration Tab** - In this, the application gateway uses its frontend public IP to reach the server and observe that the private frontend IP configuration is currently not enabled.
+   * **Frontend IP configurations Tab** - In this, the application gateway uses its frontend public IP to reach the server and observe that the private frontend IP is currently not configured.
      ![](../images/waf050-u.png)
-     
+
+
 1. On the application gateway overview page, verify the **Frontend IP Address** is set to **Public**.
 
 1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
@@ -167,15 +168,13 @@ In this task, you can view the Application gateway and its Components
 
       ![](../images/waf059.png)
       
-1. On the routingrule page, verify the settings and click on **Backend Target**.
+1. On the routingrule page, verify the settings and click on **Backend targets**.
 
 1. Review the details of the backend target and click on **Cancel**.
 
       ![](../images/waf060.png)
 
-
 In this task you have viewed and verified the resources of the resource group **waf-<inject key="DeploymentID"></inject>** and learnt about application gateway and its components
-
 
 # 04: Create and link a Web Application Firewall policy
 
