@@ -138,6 +138,7 @@ In this task, you can view the Application gateway and its Components
       * **Listener** : A listener is a logical object that monitors connection requests for new ones. A listener accepts a request if the request's protocol, port, hostname, and IP address match the listener's configuration components.
 
       *  **Routing Rule** : The key component of the application gateway is **Routing Rule**, because it determines how to route traffic on the listener. The rule binds the listener, the back-end server pool, and the backend HTTP settings.
+ >You will review these in the further steps
  
 1. On the application gatway overview page, under **settings**, select the **Backend Settings** and select **httpsetting**.
 
