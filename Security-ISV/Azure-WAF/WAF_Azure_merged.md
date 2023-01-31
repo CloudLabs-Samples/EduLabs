@@ -117,15 +117,15 @@ In this task, you can view the Application gateway and its Components
 
      ![](../images/waf050.png)
      
-   * **Frontend Tab** - In this task, the application gateway uses its frontend public IP to reach the server.
-
+1. On the application gateway page, under **settings**, select the **Frontend IP configurations**
+   * **Frontend IP configuration Tab** - In this, the application gateway uses its frontend public IP to reach the server and observe that the private frontend IP configuration is currently not enabled.
+     ![](../images/waf050-u.png)
+     
 1. On the application gateway overview page, verify the **Frontend IP Address** is set to **Public**.
-
-    >Note : For the Application Gateway v2 SKU, private frontend IP configuration is currently not enabled.
 
 1. On the application gateway page, under **settings**, select the **Backend pools** and select the **backendpool**.
 
-     * **Backends Tab** - The backend pool is used to route requests to the backend servers that serve the request. Backend pools can be composed of NICs, virtual machine scale sets, public IPs, internal IPs, fully qualified domain names (FQDN), and multi-tenant back-ends like Azure App Service. 
+     * **Backendpools Tab** - The backend pool is used to route requests to the backend servers that serve the request. Backend pools can be composed of NICs, virtual machine scale sets, public IPs, internal IPs, fully qualified domain names (FQDN), and multi-tenant back-ends like Azure App Service. 
 
       ![](../images/waf032.png)
 
