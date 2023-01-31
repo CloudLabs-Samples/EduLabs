@@ -130,7 +130,7 @@ In this task, you can view the Application gateway and its Components
 
       ![](../images/waf032.png)
 
-1. On that page, review the **Backend targets** aand click on **Cancel**.
+1. On that page, review the **Backend targets** and click on **Cancel**.
 
       ![](../images/waf033.png)
       
