@@ -14,7 +14,7 @@ In this task, You will access Web VMs via RDP
 
       ![](../images/Picture37.jpg)
 
-1. Select the **barracuda-DeploymentID** resource group in the resource groups blade.
+1. Select the **barracuda-<inject key="DeploymentID"></inject>** resource group in the resource groups blade.
 
       ![](../images/image-904.jpg)
  
