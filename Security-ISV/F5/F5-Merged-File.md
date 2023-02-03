@@ -164,8 +164,8 @@ In this exercise, BIG-IP VE routes traffic to a pool. This pool should contain y
 
     ![](../images/f5-13.jpg)  
 
-1. In the **New Members** section, in the **Address** field, type the Private IP address which you copied in the previous task **(1)**. In the **Service Port** field, type **80** as service port **(2)** and Click **Add** **(3)**.
-
+1. In the **New Members** section, in the **Address** field, type the Private IP address <inject key="Web server Private IP"></inject>  which you copied in the previous task **(1)**. In the **Service Port** field, type **80** as service port **(2)** and Click **Add** **(3)**.
+    
       **Note**: The list now contains the member **(4)**
         
     Click **Finished** **(5)**.
