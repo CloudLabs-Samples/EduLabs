@@ -127,7 +127,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
     ![](../images/Picture2.jpg)
     
-3. Select the **fortiGate-XXXX** resource group in the resource groups blade.
+3. Select the **fortiGate-<inject key="DeploymentID"></inject>** resource group in the resource groups blade.
 
     ![](../images/image_800.png)
     
@@ -135,7 +135,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
     ![](../images/image_801.png)
 
-5. Select the **fortigatevm-XXXX** virtual machine from the resource list.
+5. Select the **fortigatevm-<inject key="DeploymentID"></inject>** virtual machine from the resource list.
 
     ![](../images/image_803.png)
     
