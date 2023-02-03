@@ -24,9 +24,11 @@ In this task, you will access the Barracuda Cloudgen WAF dashboard by using the 
 
 1. In the LabVM desktop, select the **Microsoft Edge** icon.
   
-1. Open a new tab in the browser and navigate to <inject key="Barracuda CloudGen WAF URL"></inject> OR copy-paste the **Barracuda WAF Public IP** : <inject key="bwafIP"></inject> . Append a **colon** and the port number **8000** to the IP address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
-
-    ![](../images/image-907.png)
+1. Open a new tab in the browser copy-paste the **Barracuda WAF Public IP** : <inject key="bwafIP"></inject> . Append a **colon** and the port number **8000** to the IP address as shown below. This port is used by the **BWAF** management web interface. Press **Enter** key.
+    
+   OR You can get the Barracuda CloudGen WAF URL <inject key="Barracuda CloudGen WAF URL"></inject> from the Environment details page
+   
+   ![](../images/image-907.png)
 
 1. A page as shown below will appear.
 
