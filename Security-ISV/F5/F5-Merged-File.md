@@ -25,7 +25,8 @@ In this task, you will access the F5 Advanced WAF dashboard by using the Public 
 1. Open a new tab in the browser and log in to the BIG-IP Configuration utility by using **https** with the **F5 Advanced WAF Public IP**: <inject key="F5IP"></inject>. Append a **colon** and the port number **8443** to the IP address as shown below. This port 8443 allows management traffic to reach BIG-IP VE. Press **Enter** key.
 
    > OR You can get the F5 Portal URL **<inject key="F5 Portal URL"></inject>** from the Environment details page
-    ![](../images/f5-01.jpg)
+    
+   ![](../images/f5-01.jpg)
     
 1. A page shown below will apear. Click on **Advanced** on the web page.
 
