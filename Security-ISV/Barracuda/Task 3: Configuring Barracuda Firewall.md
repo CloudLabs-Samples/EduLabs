@@ -57,7 +57,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
     ![](../images/Picture24.jpg)
  
-1. The page will be refreshed, and the webserver **Server_10.0.1.5_80** will be renamed as `web-vm1`. Now, click on Server against the **Demo-Websites** service.
+1. The page will be refreshed, and the webserver **Server_10.0.1.5_80** will be renamed as `web-vm1`. Now, click on **Server** against the **Demo-Websites** service.
   
     ![](../images/Picture25.png)
 
@@ -86,7 +86,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
 
 1. Click on **Save** after any configuration change.
 
-1. Again click on **+** to open a New tab. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this use port **80**.
+1. Again click on **+** to open a New tab. Copy **Barracuda WAF Public IP**: <inject key="bwafIP"></inject> and paste it. Press **Enter** key. By default, this uses port **80**.
 
     ![](../images/image-908.png)
 
