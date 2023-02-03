@@ -143,7 +143,7 @@ In this task, you will navigate to your resource group, note down the Private IP
 
     ![](../images/image_804.png)
     
-7. Select the **fortigatevm-xxxx-Nic1** Network Interfaces.
+7. Select the ****fortigatevm-<inject key="DeploymentID"></inject>**-Nic1** Network Interfaces.
 
     ![](../images/image_805.png)
     
