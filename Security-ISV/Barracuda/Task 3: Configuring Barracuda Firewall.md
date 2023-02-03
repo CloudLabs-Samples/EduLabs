@@ -43,7 +43,7 @@ In this task, you will configure the Barracuda Web Application firewall hosted o
    - Username : <inject key="Barracuda Username"></inject> 
    - Password : <inject key="Barracuda Password"></inject>
 
-        **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-XXXX**.
+        **Note**: Refer the Environment Details tab for **Barracuda Username** and **Barracuda Password** under **Resource Group : barracuda-<inject key="DeploymentID"></inject>**.
 
     Click on **Sign in**.
  
