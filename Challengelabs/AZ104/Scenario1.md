@@ -1,4 +1,4 @@
-## Scenario 1:
+## Challenge Labs Scenario 1:
 You are provided with two Azure Virtual Networks Vnet1 and Vnet2 in a resource group, these virtual networks can be in the same region or different regions.
 
 i. A web server is deployed in the virtual network Vnet1
@@ -13,3 +13,5 @@ ii. Establish the communication between the two virtual machines.
 
 ### Skills tested: 
 Azure Networking
+
+**You can check for Solution in the next page**
