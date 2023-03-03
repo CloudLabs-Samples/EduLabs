@@ -1,9 +1,11 @@
-## Scenario 2:
+## Challenge Labs Scenario 2:
 You are given a web app deployed in Azure and accessible over Public Internet. You must enable it to be accessible only from the subnet the VM-<depID> is deployed with minimal cost?
 
 ### Skills tested: 
-Private Endpoint
+- Private Endpoint
   
-Web App
+- Web App
   
-Networking
+- Networking
+  
+  **You can check for the solution in the next page**
