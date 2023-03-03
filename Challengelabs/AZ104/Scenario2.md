@@ -8,4 +8,3 @@ You are given a web app deployed in Azure and accessible over Public Internet. 
   
 - Networking
   
-**Note:** If required, the solution has been provided in the next page
