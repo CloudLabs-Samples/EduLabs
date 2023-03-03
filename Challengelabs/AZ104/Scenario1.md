@@ -14,4 +14,3 @@ ii. Establish the communication between the two virtual machines.
 ### Skills tested: 
 Azure Networking
 
-**Note:** If required, the solution has been provided in the next page
