@@ -1,6 +1,6 @@
 ## Challenge Labs : AZ-104
 
-### **Challenge description:**
+### **Challenge Description:**
 
 You are provided with two Azure Virtual Networks Vnet1 and Vnet2 in a resource group, these virtual networks can be in the same region or different regions.
 
