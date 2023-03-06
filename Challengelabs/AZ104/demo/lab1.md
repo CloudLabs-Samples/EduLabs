@@ -2,7 +2,7 @@
 
 ### **Challenge Description:**
 
-You are provided with two Azure Virtual Networks Vnet1 and Vnet2 in a resource group, these virtual networks can be in the same region or different regions.
+In this challenge you are provided with two Azure Virtual Networks Vnet1 and Vnet2 in a resource group, these virtual networks can be in the same region or different regions.
 
 i. A web server is deployed in the virtual network Vnet1
 
