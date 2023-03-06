@@ -15,4 +15,4 @@ i. Access the web server deployed in the virtual network Vnet1 over a browser
 ii. Establish the communication between the two virtual machines.
 
 ### Skills tested: 
-Azure Networking
+Azure Networking and Compute
