@@ -1,4 +1,4 @@
-## Challenge Labs : AZ-104
+## Challenge Lab2 : AZ-104
 
 ### **Challenge Description:**
 In this challenge you are provided with a Azure tenant and an Azure subscription to test your Azure Governance skills.
