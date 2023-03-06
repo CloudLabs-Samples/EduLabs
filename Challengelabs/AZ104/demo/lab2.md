@@ -1,9 +1,11 @@
 ## Challenge Labs : AZ-104
 
 ### **Challenge Description:**
-You are provided with a Azure tenant and an Azure subscription:
+In this challenge you are provided with a Azure tenant and an Azure subscription to test your Azure Governance skills.
 
-i. You need to create a user "cl-labuser" and ensure that the created user has permission to deploy virtual machines and manage virtual networks in the provided resource group. The solution must use the principle of least privilege.
+**At the end of the challenge you should be able to**:
+
+i. Create a user "cl-labuser" and ensure that the created user has permission to deploy virtual machines and manage virtual networks in the provided resource group. The solution must use the principle of least privilege.
 
 ii. Ensure mandatory tagging of all the resources within the subscription, without tags any resource creation should fail.
 
