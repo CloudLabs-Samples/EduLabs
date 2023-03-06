@@ -9,7 +9,7 @@ i. Create a user "cl-labuser" and ensure that the created user has permission to
 
 ii. Ensure mandatory tagging of all the resources within the subscription, without tags any resource creation should fail.
 
-iii. Create a Windows virtual machine with size "Standard_DS1v2" with disk size of 128 GB, ensure to select the disk type with minimal cost
+iii. Create a Windows virtual machine with size "Standard_DS1v2" with disk size of 128 GB, ensure to select the disk type with minimal cost.
 
 iv. Prevent any user from deleting the Virtual Machine that you have deployed.
 
