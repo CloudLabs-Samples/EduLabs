@@ -1,4 +1,4 @@
-## Challenge Labs : AZ-104
+## Challenge Lab1 : AZ-104
 
 ### **Challenge Description:**
 
