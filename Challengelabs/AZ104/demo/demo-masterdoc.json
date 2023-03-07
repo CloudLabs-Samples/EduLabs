@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "AZ-104 Challenge Labs",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/new/main/Challengelabs/AZ104",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Challengelabs/AZ104/demo/demo.md",
+        "Order": 1
+      }
+    ]
+  }
+]
