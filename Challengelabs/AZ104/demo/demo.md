@@ -1,4 +1,4 @@
-### AZ-104 Challenge Lab : Lab
+### AZ-104 Challenge Lab : Demo
 
 ## Challenge Description:
 
