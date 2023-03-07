@@ -6,10 +6,13 @@ In this challenge you are provided with two resource groups to test your Azure N
 
 **At the end of the challenge you should be able to:**
 
-Task 1: Establish the communication between the two windows virtual machines deployed in different virtual networks present in regions East US and West US.
+Task 1: Create two windows virtual machines and establish the communication between them. The VM's should be deployed in different virtual networks.
 
 Task 2: Create two windows virtual machines and distribute the incoming traffic among the virtual machines with outbound Internet access.
 
 ## Skills tested:
-
 Azure networking
+
+## Lab Validation
+
+Click on Validate from the **Lab Validation** tab to check if you have completed the challenge successfully.
