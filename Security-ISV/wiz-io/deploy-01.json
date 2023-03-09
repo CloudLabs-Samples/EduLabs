@@ -10,7 +10,7 @@
     "variables": {
 
       "location": "[resourceGroup().location]",
-      "virtualNetworkName": "[concat('contosotraders', '-vnet')]",
+      "virtualNetworkName": "[concat('wiz', '-vnet')]",
       "virtualNetworAddressPrefixes": [
         "172.16.0.0/16"
       ],
