@@ -23,7 +23,8 @@
                     "Microsoft.Portal/dashboards/*",
                     "Microsoft.Resources/deployments/*",
                     "Microsoft.Resources/subscriptions/resourceGroups/*",
-                    "Microsoft.Storage/storageAccounts/*"
+                    "Microsoft.Storage/storageAccounts/*",
+                    "Microsoft.Compute/sshPublicKeys/*"
                 ],
     "NotActions":  [
 
