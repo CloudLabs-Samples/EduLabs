@@ -24,7 +24,10 @@
                     "Microsoft.Resources/deployments/*",
                     "Microsoft.Resources/subscriptions/resourceGroups/*",
                     "Microsoft.Storage/storageAccounts/*",
-                    "Microsoft.Compute/sshPublicKeys/*"
+                    "Microsoft.Compute/sshPublicKeys/*",
+                    "Microsoft.Web/*",
+                    "Microsoft.Insights/*",
+                    "microsoft.alertsManagement/*"
                 ],
     "NotActions":  [
 
