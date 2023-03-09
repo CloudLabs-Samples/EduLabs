@@ -37,6 +37,18 @@
 				    "field": "type",
 				    "like": "Microsoft.Network/virtualNetworks/*"
 				    },
+		                 {
+              "field": "type",
+              "like": "Microsoft.Web/serverFarms/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/sites/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/sites/slots/*"
+            },
                                  
                    {
                    "field": "type",
@@ -172,7 +184,21 @@
            "notIn": ["Basic"]
            }
            ]
-         }
+         },
+	       {
+        "allof": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Web/serverfarms"
+          },
+          {
+            "not": {
+              "field": "Microsoft.Web/serverfarms/sku.name",
+              "in": [ "P1v2", "Y1" ]
+            }
+          }
+        ]
+      }
 
      ]
    },
