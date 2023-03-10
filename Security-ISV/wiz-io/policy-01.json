@@ -168,7 +168,7 @@
 			{
 			  "not": {
 				"field": "Microsoft.Compute/virtualMachineScaleSets/Sku.Name",
-				"in": ["standard_d2s_v3"]
+				"in": ["standard_d2s_v3", "Standard_DS2_v2"]
 				}
 			  }
 			]
