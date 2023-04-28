@@ -58,22 +58,22 @@ After completing this lab, you will learn how to:
 
    ![](../images/AzureMLfolder.png)
 
-6. Select the notebook named **configuration.ipynb** using which you will set up your Azure Machine Learning services workspace and configuring the notebook library.
+6. Select the notebook named **configuration.ipynb** using which you will set up your Azure Machine Learning services workspace and configure the notebook library.
 
    ![](../images/configuration.png)
 
-7. Execute the notebook while ensuring the Kernel is **Python 3.6 - AzureML - AutoML** (1) , select the cell (2) and click on **Run > (3)** icon.
+7. Set the Kernel as **Python 3.6 - AzureML - AutoML** (1) , select the cell (2) and click on **Run > (3)** icon to execute the notebook.
    You will see the output(3) as shown in the screenshot.
 
    ![](../images/notebookexample.png)
    
-8. Before executing the next cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password and ensure to use the resource group **dslab-<inject key="DeploymentID"></inject>** for performing the lab
+8. Before executing the remaining cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password and ensure to use the resource group **dslab-<inject key="DeploymentID"></inject>** for performing the lab.
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
 9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
-   You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) and resource group  **dslab-<inject key="DeploymentID"></inject>** overview page.
+   >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) and resource group  **dslab-<inject key="DeploymentID"></inject>** overview page.
 
 10. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
    ![](../images/resources.png)
@@ -81,7 +81,7 @@ After completing this lab, you will learn how to:
 11. Also, ensure if the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
     ![](../images/compute.png)
 
-11. Similarly, you can navigate to the **/notebooks** directory which has the notebooks that are pre-packaged with a lot of samples loaded up for the various technologies. You can explore through the notebooks and perform any exercise with the environment.
+11. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
    
  ## Summary
  
