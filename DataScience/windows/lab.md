@@ -73,7 +73,7 @@ After completing this lab, you will learn how to:
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
 9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
-   >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) and resource group  **dslab-<inject key="DeploymentID"></inject>** overview page.
+   >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) from the resource group **dslab-<inject key="DeploymentID"></inject>** overview->Essentials tab.
 
 10. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
    ![](../images/resources.png)
