@@ -2,7 +2,23 @@
 
 ## Overview
 
-In this lab environment, you will be able to access the windows VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+In this lab environment, you will be able to access the Windows Data Sciemce VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+
+The Windows Data Science Virtual Machine (DSVM) is a virtual machine image available in Azure that's preinstalled with a collection of tools commonly used for data analytics and machine learning.
+
+The DSVM image makes it easy to get started doing data science in minutes, without having to install and configure each of the tools individually. You can easily stop it when it's not in use. The DSVM resource is both elastic and cost-efficient.
+
+### JupyterLab
+JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
+
+### Jupyter Notebook
+The Jupyter Notebook is the original web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.
+
+After completing this lab, you will learn how to:
+
+- Log in to JupyterLab Portal
+- Execute Notebooks
+- Verify the notebook execution output
 
 ## Instructions
 
@@ -51,16 +67,21 @@ In this lab environment, you will be able to access the windows VM which has sev
 
    ![](../images/notebookexample.png)
    
-8. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required.
-   >You can get the values by logging to the Azure Portal using the credentials provided in the Environment details tab of the environment page.
+8. Before executing the next cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password and ensure to use the resource group **dslab-<inject key="DeploymentID"></inject>** for performing the lab
 
-9. To check if you have successfully executed the notebook, navigate to the **Azure Portal** (<http://portal.azure.com>) and resource group **dslab-<inject key="DeploymentID"></inject>** and verify if all the resources are created.
+   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+
+9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
+   You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) and resource group  **dslab-<inject key="DeploymentID"></inject>** overview page.
+
+10. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
    ![](../images/resources.png)
     
-10. Ensure if the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and Compute tab.
+11. Also, ensure if the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
     ![](../images/compute.png)
 
-11. Similarly, you can navigate to the /notebooks directory which has the notebooks that are pre-packaged with a lot of samples loaded up for the various technologies. You can explore through the notebooks and perform any exercise with the environment.
+11. Similarly, you can navigate to the **/notebooks** directory which has the notebooks that are pre-packaged with a lot of samples loaded up for the various technologies. You can explore through the notebooks and perform any exercise with the environment.
    
  ## Summary
  
