@@ -21,4 +21,3 @@ This lab environment has Ubuntu Virtual machine with UI and AKS cluster
 
    ![](images/resources.png)
     
-5. To proceed further, follow the instructions provided here : https://www.lookout.com/documents/brochure/us/lookout-platform-brochure-mobile-security-platform-us.pdf to perform the lab
