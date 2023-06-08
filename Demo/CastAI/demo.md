@@ -9,7 +9,7 @@ This lab environment has a Ubuntu Virtual machine with a GUI (Graphical User Int
 
    ![](images/vmandguide.png)
    
-2. Within the Ubuntu VM, you can use the firefox browser and terminal for your tasks.
+2. Within the Ubuntu VM, you can launch the firefox browser and terminal for your tasks.
 
    ![](images/ubuntu.png)
 
