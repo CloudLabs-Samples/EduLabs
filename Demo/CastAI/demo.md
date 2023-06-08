@@ -1,7 +1,7 @@
 # CloudLabs Demo : Cast AI
 
 ## Overview
-This lab environment has Ubuntu Virtual machine with UI and AKS cluster
+This lab environment has Ubuntu VM with a GUI (Graphical User Interface)
 
 ## Instructions
 
