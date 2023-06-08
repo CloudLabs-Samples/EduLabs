@@ -11,7 +11,7 @@ This lab environment has a Ubuntu Virtual machine with a GUI (Graphical User Int
    
 2. Within the Ubuntu VM, you can launch the firefox browser and terminal for your tasks.
 
-   ![](images/ubuntu.png)
+   ![](images/ubuntuvm.png)
 
 3. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
    
