@@ -42,7 +42,7 @@ This lab environment has a Ubuntu Virtual machine with a GUI (Graphical User Int
 
     ![](images/image004.png)
 
-1. If you see the pop-up **Stay Signed in?** click **No**.
+1. If you see the pop-up **Stay Signed in?** click ** Yes or No** based on your choice.
 
     ![](images/image-006.jpg)
 
