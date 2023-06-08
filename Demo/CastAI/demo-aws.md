@@ -25,3 +25,7 @@ This lab environment has a Ubuntu EC2 instance along with Elastic Kubernetes Ser
 4. Ensure to switch to the **N.Virginia** region at the top right corner.
   
 5. You can search for the services you need like EKS and EC2 instances and perform the tasks.
+
+6. You can also get the EC2 instance login details from the **Environment details** page.
+
+   ![](images/envdetails.png)
