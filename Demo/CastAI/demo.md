@@ -64,7 +64,7 @@ This lab environment has a Ubuntu Virtual machine with a GUI (Graphical User Int
  
       ![](images/Picture2.jpg)
       
-1. Select the **castai-demo-DeploymentID** resource group in the resource groups blade.
+1. Select the **castai-demo-<inject key="DeploymentID"></inject>** resource group in the resource groups blade.
 
       ![](images/rg.png)
     
