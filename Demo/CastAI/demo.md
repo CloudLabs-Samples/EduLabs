@@ -7,7 +7,7 @@ This lab environment has a Ubuntu Virtual machine with a GUI (Graphical User Int
 
 1. Once the environment is provisioned, a virtual machine (VM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab.
 
-   ![](images/vmandguide.png)
+   ![](images/vmandguideu.png)
    
 2. Within the Ubuntu VM, you can launch the firefox browser and terminal for your tasks.
 
