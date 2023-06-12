@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo for Queen's university: AWS",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/CastAI",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/CastAI/demo-queensuniveristy.md",
+        "Order": 1
+      }
+    ]
+  }
+]
