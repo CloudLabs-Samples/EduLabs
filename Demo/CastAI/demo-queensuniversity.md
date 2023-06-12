@@ -27,5 +27,3 @@ This lab environment has a Windows EC2 instance with PowerBI desktop pre-deploye
 5. You can search for the services you need like EC2 instance and perform the task.
 
 6. You can also get the EC2 instance login details from the **Environment details** page.
-
-   ![](images/envdetails.png)
