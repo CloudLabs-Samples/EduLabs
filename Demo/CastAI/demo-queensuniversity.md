@@ -49,7 +49,6 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
     ![](images/RDP.png)
 
 12. Provide the EC2 instance credentials as mentioned in the **Environment details** page and click on **OK**
-    **Note**: Refer to the **Environment Details** tab for the credentials
 
     ![](images/vmcreds.png)
 
