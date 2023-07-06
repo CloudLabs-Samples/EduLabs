@@ -46,10 +46,11 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
 
 11. From your local computer, search for **RDP** and paste the copied **IP address or DNS** from the above step and Click on **Connect**
 
-    ![](images/rdp.png)
+    ![](images/RDP.png)
 
 12. Provide the EC2 instance credentials as mentioned in the **Environment details** page and click on **OK**
     **Note**: Refer to the **Environment Details** tab for the credentials
+
     ![](images/vmcreds.png)
 
     ![](images/vm-credsconsole.png)
