@@ -7,7 +7,7 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
 
 1. In a browser, open a new tab and sign in to the **AWS Console** using the **Sign-in link** provided in the **Environment details** tab 
    
-   ![](images/awssigninlink1.png)
+   ![](images/awssigninlinku.png)
 
 2. On the **Sign in as IAM User** blade, you will see a Sign-in screen,  enter the following email/username and then click on **Sign in**.  
 
