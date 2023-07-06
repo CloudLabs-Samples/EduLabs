@@ -5,7 +5,7 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
 
 ## Getting started
 
-1. In a browser, open a new tab and sign in to the **AWS Console** using the sign-in link provided in the **Environment details** tab 
+1. In a browser, open a new tab and sign in to the **AWS Console** using the **Sign-in link** provided in the **Environment details** tab 
    
    ![](images/awssigninlink1.png)
 
