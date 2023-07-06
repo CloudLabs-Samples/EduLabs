@@ -5,7 +5,7 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
 
 ## Getting started
 
-1. In a browser, open a new tab and sign in to the **AWS Console** using the **Sign-in link** provided in the **Environment details** tab 
+1. In a browser, open a new tab and sign in to the **AWS Console** using the **Sign-in link** provided in the **Environment details** tab of the CloudLabs environment page
    
    ![](images/awssigninlinku.png)
 
@@ -63,6 +63,6 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
 
 17. Perform the tasks within the EC2 instance as required.
 
-18. You can **Start(1)** **Stop(3)** and **Restart(2)** the EC2 instance based on your usage.
+18. You can **Start(1)** **Stop(3)** and **Restart(2)** the EC2 instance whenever required
 
     ![](images/resourcestab.png)
