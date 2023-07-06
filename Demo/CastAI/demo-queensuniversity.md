@@ -62,3 +62,7 @@ This lab environment has a Windows EC2 instance with a PowerBI desktop pre-deplo
     ![](images/ec2-ui.png)
 
 17. Perform the tasks within the EC2 instance as required.
+
+18. You can **Start(1)** **Stop(3)** and **Restart(2)** the EC2 instance based on your usage.
+
+    ![](images/resourcestab.png)
