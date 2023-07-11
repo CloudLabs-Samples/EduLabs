@@ -1,7 +1,7 @@
 # CloudLabs Demo : Cybervance
 
 ## Overview
-In this hands-on lab, you are provided with FLARE VM with REMnux virtual machine in a Hyper-v environment
+In this hands-on lab, you are provided with FLARE VM with REMnux virtual machine in a Hyper-V environment
 
 ## Instructions
 
