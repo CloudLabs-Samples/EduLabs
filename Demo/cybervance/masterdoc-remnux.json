@@ -7,6 +7,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/cybervance/demo-remnux.md",
         "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/HuskyHacks/PMAT-labs/main/labs/2-3.Challenge-SikoMode/README.md",
+        "Order": 2
       }
     ]
   }
