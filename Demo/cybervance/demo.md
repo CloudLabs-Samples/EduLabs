@@ -21,4 +21,4 @@ In this hands-on lab, you are provided with FLARE VM - a collection of software 
 
    ![](images/resources.png)
     
-5. You can perform the tasks using the provided virtual machine 
+5. Click on **Next** to perform the Challenge or the lab
