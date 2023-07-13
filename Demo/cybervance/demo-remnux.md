@@ -21,4 +21,4 @@ In this hands-on lab, you are provided with FLARE VM with REMnux virtual machine
 
    ![](images/resources.png)
     
-5. You can perform the tasks using the virtual machine 
+5. Click on **Next** to perform the Challenge or the lab
