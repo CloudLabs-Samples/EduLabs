@@ -11,7 +11,7 @@
 
    Provide the Email id if prompted * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
 
-   >Note: Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
+   >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
 
 4. From the Fabric homepage and select **Account Manager** from the top-right corner.
    ![](images/fabric-home-page.png)
