@@ -98,6 +98,48 @@ From the previous tasks, we have raw data ingested from the source to the Files 
     ```
 
     In this cell, you join these tables using the dataframes created earlier, do group by to generate aggregation, rename a few of the columns, and finally write it as a delta table in the **Tables** section of the lakehouse.
+    ```
+    sale_by_date_city = df_fact_sale.alias("sale") \
+    .join(df_dimension_date.alias("date"), df_fact_sale.InvoiceDateKey == df_dimension_date.Date, "inner") \
+    .join(df_dimension_city.alias("city"), df_fact_sale.CityKey == df_dimension_city.CityKey, "inner") \
+    .select("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", "city.SalesTerritory", 
+    "sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
+    .groupBy("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", "city.SalesTerritory")\
+    .sum("sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
+    .withColumnRenamed("sum(TotalExcludingTax)", "SumOfTotalExcludingTax")\
+    .withColumnRenamed("sum(TaxAmount)", "SumOfTaxAmount")\
+    .withColumnRenamed("sum(TotalIncludingTax)", "SumOfTotalIncludingTax")\
+    .withColumnRenamed("sum(Profit)", "SumOfProfit")\
+    .orderBy("date.Date", "city.StateProvince", "city.City")
+    sale_by_date_city.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_city")
+    ```
+
+21. **Approach #2 (sale_by_date_employee)** - Use Spark SQL to join and aggregate data for generating business aggregates. With the following code, you create a temporary Spark view by joining three tables, do group by to generate aggregation, and rename a few of the columns. Finally, you read from the temporary Spark view and finally write it as a delta table in the **Tables** section of the lakehouse to persist with the data.
+
+    In this cell, you create a temporary Spark view by joining three tables, do group by to generate aggregation, and rename a few of the columns.
+    ```
+    %%sql
+    CREATE OR REPLACE TEMPORARY VIEW sale_by_date_employee
+    AS
+    SELECT
+    DD.Date, DD.CalendarMonthLabel
+    ,DD.Day, DD.ShortMonth Month, CalendarYear Year
+    ,DE.PreferredName, DE.Employee
+    ,SUM(FS.TotalExcludingTax) SumOfTotalExcludingTax
+    ,SUM(FS.TaxAmount) SumOfTaxAmount
+    ,SUM(FS.TotalIncludingTax) SumOfTotalIncludingTax
+    ,SUM(Profit) SumOfProfit 
+    FROM wwilakehouse.fact_sale FS
+    INNER JOIN wwilakehouse.dimension_date DD ON FS.InvoiceDateKey = DD.Date
+    INNER JOIN wwilakehouse.dimension_Employee DE ON FS.SalespersonKey = DE.EmployeeKey
+    GROUP BY DD.Date, DD.CalendarMonthLabel, DD.Day, DD.ShortMonth, DD.CalendarYear, DE.PreferredName, DE.Employee
+    ORDER BY DD.Date ASC, DE.PreferredName ASC, DE.Employee ASC
+    ```
+    In this cell, you read from the temporary Spark view created in the previous cell and finally write it as a delta table in the **Tables** section of the lakehouse.
+    ```
+    sale_by_date_employee = spark.sql("SELECT * FROM sale_by_date_employee")
+    sale_by_date_employee.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_employee")
+    ```
 
 22.To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
 
