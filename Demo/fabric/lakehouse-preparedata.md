@@ -39,7 +39,7 @@ From the previous tasks, we have raw data ingested from the source to the Files 
 
     ![](images/spark-session-run-execution.png)
 
-   >Note: When running a cell, you didn't have to specify the underlying Spark pool or cluster details because Fabric provides them through Live Pool. Every Fabric workspace comes with a default Spark pool, called Live Pool. This means when you create notebooks, you don't have to worry about specifying any Spark configurations or cluster details. When you execute the first notebook command, the live pool is up and running in a few seconds. And the Spark session is established and it starts executing the code. Subsequent code execution is almost instantaneous in this notebook while the Spark session is active.
+    >Note: When running a cell, you didn't have to specify the underlying Spark pool or cluster details because Fabric provides them through Live Pool. Every Fabric workspace comes with a default Spark pool, called Live Pool. This means when you create notebooks, you don't have to worry about specifying any Spark configurations or cluster details. When you execute the first notebook command, the live pool is up and running in a few seconds. And the Spark session is established and it starts executing the code. Subsequent code execution is almost instantaneous in this notebook while the Spark session is active.
 
 12. Next, you read raw data from the **Files** section of the lakehouse, and add more columns for different date parts as part of the transformation. Finally, you use partitionBy Spark API to partition the data before writing it as delta table based on the newly created data part columns (Year and Quarter).
 
@@ -143,7 +143,7 @@ From the previous tasks, we have raw data ingested from the source to the Files 
 
 22.To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
 
-   ![](images/validate-tables.png)
+    ![](images/validate-tables.png)
     
    Both the approaches produce a similar outcome. You can choose based on your background and preference, to minimize the need for you to learn a new technology or compromise on the performance.
 
