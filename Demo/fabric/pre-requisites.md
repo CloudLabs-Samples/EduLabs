@@ -26,6 +26,7 @@
    ![](images/start-trial-click.png)
    
 6. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+
    ![](images/start-trial-success.png)
    
 7. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
