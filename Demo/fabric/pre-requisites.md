@@ -2,8 +2,8 @@
 
 1. Sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Next**.  
 
-   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
-   * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
    **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
 
