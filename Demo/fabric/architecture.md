@@ -47,6 +47,7 @@ While the WWI dimensional model contains numerous fact tables, for this tutorial
 As described earlier, we're using the sample data from Wide World Importers (WWI) sample data to build this end-to-end lakehouse. In this implementation, the sample data is stored in an Azure Data storage account in Parquet file format for all the tables. However, in real-world scenarios, data would typically originate from various sources and in diverse formats.
 
 The following image shows the source, destination, and data transformation:
+
 ![](images/data-transformation-flow.png)
 
 **Data Source:** The source data is in Parquet file format and in an unpartitioned structure. It's stored in a folder for each table. In this tutorial, we set up a pipeline to ingest the complete historical or one-time data to the lakehouse.
