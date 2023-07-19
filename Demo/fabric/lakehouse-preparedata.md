@@ -143,7 +143,7 @@ From the previous tasks, we have raw data ingested from the source to the Files 
 
 22. To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
    
-   ![](images/validate-tables.png)
+    ![](images/validate-tables.png)
    
    Both the approaches produce a similar outcome. You can choose based on your background and preference, to minimize the need for you to learn a new technology or compromise on the performance.
 
