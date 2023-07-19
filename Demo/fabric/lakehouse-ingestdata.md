@@ -43,7 +43,7 @@ Here, you will use the **Copy data activity** of the Data Factory pipeline to in
 - Recursively	: Check this field
 - File Format	: **Binary**
 
- ![](images/source-tab-details.png)
+  ![](images/source-tab-details.png)
 
 10. Under the Destination tab of the selected copy data activity, specify the following properties:
 
@@ -54,7 +54,7 @@ Here, you will use the **Copy data activity** of the Data Factory pipeline to in
 - File path	Directory name (first text box): **wwi-raw-data**
 - File Format: **Binary**
 
- ![](images/destination-tab-details.png)
+  ![](images/destination-tab-details.png)
 
 11. You have finished configuring the copy data activity. Select the **Save** button on the top ribbon (under **Home**) to save your changes, and select **Run** to execute your pipeline and its activity. You can also schedule pipelines to refresh data at defined intervals to meet your business requirements. For this lab, we run the pipeline only once by clicking on **Run** button.
 
