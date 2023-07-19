@@ -29,6 +29,7 @@
    ![](images/start-trial-success.png)
    
 7. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+
    ![](images/trial-status-me-control.png)
 
-    You now have a Fabric (Preview) trial that includes a Power BI individual trial and a Fabric (Preview) trial capacity.
+   You now have a Fabric (Preview) trial that includes a Power BI individual trial and a Fabric (Preview) trial capacity.
