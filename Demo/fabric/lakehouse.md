@@ -67,13 +67,13 @@ In this task, you will build a **lakehouse**, ingest sample data into the delta 
     
 17. The following sample query aggregates the row count based on the *BuyingGroup* column of the *dimension_customer* table. SQL query files are saved automatically for future reference, and you can rename or delete these files based on your need.
 
-To run the script, select the **Run** icon at the top of the script file.
+    To run the script, select the **Run** icon at the top of the script file.
 
-```
-SELECT BuyingGroup, Count(*) AS Total
-FROM dimension_customer
-GROUP BY BuyingGroup
-```
+     ```
+    SELECT BuyingGroup, Count(*) AS Total
+    FROM dimension_customer
+    GROUP BY BuyingGroup
+    ```
 
 ## Build a report
 
