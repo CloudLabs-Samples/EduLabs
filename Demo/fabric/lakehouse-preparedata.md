@@ -141,10 +141,10 @@ From the previous tasks, we have raw data ingested from the source to the Files 
     sale_by_date_employee.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_employee")
     ```
 
-22.To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
-
-    ![](images/validate-tables.png)
-    
+22. To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
+   
+   ![](images/validate-tables.png)
+   
    Both the approaches produce a similar outcome. You can choose based on your background and preference, to minimize the need for you to learn a new technology or compromise on the performance.
 
    Also you may notice that you're writing data as delta lake files. The automatic table discovery and registration feature of Fabric picks up and registers them in the metastore. You don't need to explicitly call CREATE TABLE statements to create tables to use with SQL.
