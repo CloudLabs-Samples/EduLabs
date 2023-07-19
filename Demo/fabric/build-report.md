@@ -85,38 +85,38 @@ Power BI is natively integrated in the whole Fabric experience. This native inte
 
 11. Build a stacked area chart visual:
 
-On the Visualizations pane, select the Stacked area chart visual.
+- On the **Visualizations** pane, select the **Stacked area chart** visual.
 
-Screenshot of the visualizations pane, showing where to select Stacked area chart.
+  ![](images/stacked-area-chart.png)
 
-Reposition and resize the stacked area chart to the right of the card and bar chart visuals created in the previous steps.
+- Reposition and resize the stacked area chart to the right of the card and bar chart visuals created in the previous steps.
 
-On the Data pane, expand fact_sales and check the box next to Profit. Expand dimension_date and check the box next to FiscalMonthNumber. This selection creates a filled line chart showing profit by fiscal month.
+- On the **Data** pane, expand **fact_sales** and check the box next to **Profit**. Expand dimension_date and check the box next to **FiscalMonthNumber**. This selection creates a filled line chart showing profit by fiscal month.
 
-On the Data pane, expand dimension_stock_item and drag BuyingPackage into the Legend field well. This selection adds a line for each of the Buying Packages.
+- On the **Data** pane, expand **dimension_stock_item** and drag **BuyingPackage** into the Legend field well. This selection adds a line for each of the Buying Packages.
 
-Screenshot of the data pane showing how to add lines to the chart.
+ ![](images/data-pane-change-chart.png)
 
-Click anywhere on the blank canvas (or press the Esc key) so the stacked area chart is no longer selected.
+12. Click anywhere on the blank canvas (or press the Esc key) so the stacked area chart is no longer selected.
 
-Build a column chart:
+13. Build a column chart:
 
-On the Visualizations pane, select the Stacked column chart visual.
+- On the **Visualizations** pane, select the **Stacked column chart** visual.
 
-Screenshot showing where to select Stacked column chart.
+  ![](images/select-stacked-column-chart.png)
 
-On the Data pane, expand fact_sales and check the box next to Profit. This selection adds the field to the Y-axis.
+- On the **Data** pane, expand **fact_sales** and check the box next to **Profit**. This selection adds the field to the Y-axis.
 
-On the Data pane, expand dimension_employee and check the box next to Employee. This selection adds the field to the X-axis.
+- On the **Data** pane, expand **dimension_employee** and check the box next to **Employee**. This selection adds the field to the X-axis.
 
-Screenshot showing how to add a field to the x axis.
+  ![](images/add-field-x-axis.png)
 
-Click anywhere on the blank canvas (or press the Esc key) so the chart is no longer selected.
+14. Click anywhere on the blank canvas (or press the Esc key) so the chart is no longer selected.
 
-From the ribbon, select File > Save.
+15. From the ribbon, select **File > Save**.
 
-Enter the name of your report as Profit Reporting.
+16. Enter the name of your report as **Profit Reporting**.
 
-Select Save.
+17. Select **Save**.
 
-Screenshot showing the Save your report dialog.
+    ![](images/save-your-report.png)
