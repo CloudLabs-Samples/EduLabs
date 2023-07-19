@@ -17,7 +17,7 @@ This hands-on lab explains how a developer at the fictional Wide World Importers
 - Connect to your lakehouse using TDS/SQL endpoint and Create a Power BI report using DirectLake to analyze sales data across different dimensions.
 - Optionally, you can orchestrate and schedule data ingestion and transformation flow with a pipeline.
 
-# Architecture 
+## Architecture 
 
 The following image shows the **lakehouse end-to-end architecture**. The components involved are described in the following list.
 
@@ -31,19 +31,19 @@ The following image shows the **lakehouse end-to-end architecture**. The compone
 
 **Consume:** Power BI can consume data from the Lakehouse for reporting and visualization. Each Lakehouse has a built-in TDS/SQL endpoint, for easy connectivity and querying of data in the Lakehouse tables from other reporting tools. Additionally, when a Lakehouse is created, a corresponding secondary item called a Warehouse is automatically generated with the same name as the Lakehouse. It provides users with the TDS/SQL endpoint functionality.
 
-# Sample Dataset
+## Sample Dataset
 This lab uses the [**Wide World Importers (WWI)**](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-ver16&preserve-view=true) sample database. For the lakehouse end-to-end scenario, we have generated sufficient data to explore the scale and performance capabilities of the Fabric platform.
 
 Wide World Importers (WWI) is a wholesale novelty goods importer and distributor operating from the San Francisco Bay area. As a wholesaler, WWI's customers mostly include companies who resell to individuals. WWI sells to retail customers across the United States including specialty stores, supermarkets, computing stores, tourist attraction shops, and some individuals. WWI also sells to other wholesalers via a network of agents who promote the products on WWI's behalf. To learn more about their company profile and operation, see Wide World Importers' sample databases for Microsoft SQL.
 
 In general, data is brought from transactional systems or line-of-business applications into a lakehouse. However, for the sake of simplicity in this tutorial, we use the dimensional model provided by WWI as our initial data source. We use it as the source to ingest the data into a lakehouse and transform it through different stages (Bronze, Silver, and Gold) of a medallion architecture.
 
-# Data model
+## Data model
 While the WWI dimensional model contains numerous fact tables, for this tutorial, we use the Sale fact table and its correlated dimensions. The following example illustrates the WWI data model:
 
 ![](images/model-sale-fact-table.png)
 
-# Data and transformation flow
+## Data and transformation flow
 As described earlier, we're using the sample data from Wide World Importers (WWI) sample data to build this end-to-end lakehouse. In this implementation, the sample data is stored in an Azure Data storage account in Parquet file format for all the tables. However, in real-world scenarios, data would typically originate from various sources and in diverse formats.
 
 The following image shows the source, destination, and data transformation:
