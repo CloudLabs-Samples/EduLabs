@@ -19,6 +19,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/workspace.md",
         "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/lakehouse.md",
+        "Order": 5
       }
     ]
   }
