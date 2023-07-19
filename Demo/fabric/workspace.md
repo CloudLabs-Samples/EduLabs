@@ -1,4 +1,4 @@
-# Create a workspace
+# Create a Fabric workspace
 
 In this task, you will create a Fabric workspace. 
 The workspace contains all the items needed for this lakehouse lab, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
