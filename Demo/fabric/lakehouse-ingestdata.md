@@ -64,7 +64,7 @@ Here, you will use the **Copy data activity** of the Data Factory pipeline to in
 
 12. Once the data is copied, go to the items view of the workspace and select your new lakehouse (**wwilakehouse**) to launch the **Lakehouse explorer**
 
-    ![](images/item-view-select-lakehousepng)
+    ![](images/item-view-select-lakehouse.png)
 
 13. Validate that in the **Lakehouse explorer** view, a new folder **wwi-raw-data** has been created and data for all the tables have been copied there.
 
