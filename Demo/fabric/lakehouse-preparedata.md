@@ -9,7 +9,7 @@ From the previous tasks, we have raw data ingested from the source to the Files 
    
 2. From the experience switcher located at the bottom left of the screen, select **Data engineering**.
 
- ![](images/workload-switch-data-engineering.png)
+   ![](images/workload-switch-data-engineering.png)
 
 3. Select **Import notebook** from the **New** section at the top of the landing page.
 
