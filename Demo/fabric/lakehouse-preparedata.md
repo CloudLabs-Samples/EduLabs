@@ -71,3 +71,39 @@ From the previous tasks, we have raw data ingested from the source to the Files 
 14. To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The tables appear.
 
      ![](images/tutorial-lakehouse-explorer-tables.png)
+
+15. Go the items view of the workspace again and select the **wwilakehouse** lakehouse to open it.
+
+16. Now, open the second notebook. In the lakehouse view, select **Open notebook > Existing notebook** from the ribbon.
+
+17. From the list of existing notebooks, select the **02 - Data Transformation - Business** notebook to open it.
+
+    ![](images/existing-second-notebook.png)
+
+18. In the open notebook in **Lakehouse explorer**, you see the notebook is already linked to your opened lakehouse.
+
+19. An organization might have data engineers working with Scala/Python and other data engineers working with SQL (Spark SQL or T-SQL), all working on the same copy of the data. Fabric makes it possible for these different groups, with varied experience and preference, to work and collaborate. The two different approaches transform and generate business aggregates. You can pick the one suitable for you or mix and match these approaches based on your preference without compromising on the performance:
+
+- **Approach #1** - Use PySpark to join and aggregates data for generating business aggregates. This approach is preferable to someone with a programming (Python or PySpark) background.
+
+- **Approach #2** - Use Spark SQL to join and aggregates data for generating business aggregates. This approach is preferable to someone with SQL background, transitioning to Spark.
+
+20. **Approach #1 (sale_by_date_city)** - Use PySpark to join and aggregate data for generating business aggregates. With the following code, you create three different Spark dataframes, each referencing an existing delta table. Then you join these tables using the dataframes, do group by to generate aggregation, rename a few of the columns, and finally write it as a delta table in the **Tables** section of the lakehouse to persist with the data.
+
+    In this cell, you create three different Spark dataframes, each referencing an existing delta table.
+    ```
+    df_fact_sale = spark.read.table("wwilakehouse.fact_sale") 
+    df_dimension_date = spark.read.table("wwilakehouse.dimension_date")
+    df_dimension_city = spark.read.table("wwilakehouse.dimension_city")
+    ```
+
+    In this cell, you join these tables using the dataframes created earlier, do group by to generate aggregation, rename a few of the columns, and finally write it as a delta table in the **Tables** section of the lakehouse.
+
+22.To validate the created tables, right click and select refresh on the **wwilakehouse** lakehouse. The aggregate tables appear. 
+
+   ![](images/validate-tables.png)
+    
+   Both the approaches produce a similar outcome. You can choose based on your background and preference, to minimize the need for you to learn a new technology or compromise on the performance.
+
+   Also you may notice that you're writing data as delta lake files. The automatic table discovery and registration feature of Fabric picks up and registers them in the metastore. You don't need to explicitly call CREATE TABLE statements to create tables to use with SQL.
+
