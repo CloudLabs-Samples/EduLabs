@@ -1,4 +1,4 @@
-# Pre-requisites
+# Getting-started
 
 1. Sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Next**.  
 
