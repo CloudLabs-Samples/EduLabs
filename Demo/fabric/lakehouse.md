@@ -69,10 +69,21 @@ In this task, you will build a **lakehouse**, ingest sample data into the delta 
 
 To run the script, select the **Run** icon at the top of the script file.
 
-## Build a report
-
 ```
 SELECT BuyingGroup, Count(*) AS Total
 FROM dimension_customer
 GROUP BY BuyingGroup
 ```
+
+## Build a report
+
+1. In the item view of the workspace, select the **wwilakehouse** default dataset. This dataset is automatically created and has the same name as the lakehouse.
+   ![](images/workspace-default-dataset.png)
+
+2. From the dataset pane, you can view all the tables. You have options to create reports either from scratch, paginated report, or let Power BI automatically create a report based on your data. Select **Auto-create** under **Create a report**.
+  ![](images/dataset-details-create-report.png)
+
+3. Since the table is a dimension and there are no measures in it, Power BI creates a measure for the row count and aggregates it across different columns, and creates different charts as shown in the following image. You can save this report for the future by selecting **Save** from the top ribbon. You can make more changes to this report to meet your requirement by including or excluding other tables or columns.
+ 
+  ![](images/quick-summary-reportt.png)
+   
