@@ -7,11 +7,15 @@ The workspace contains all the items needed for this lakehouse lab, which includ
 
 2. Select **Workspaces** and **New workspace**.
 
+   ![](images/create-new-workspace.png)
+
 3. Fill out the **Create a workspace** form with the following details:
 
 - **Name:** Enter *Fabric Lakehouse Tutorial*, and any extra characters to make the name unique.
 
 - **Description:** Enter an optional description for your workspace.
+
+   ![](images/create-workspace-details.png)
 
 - **Advanced:** Under **License mode**, select **Trial** for now that you have access to.
 
