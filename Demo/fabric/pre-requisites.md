@@ -13,13 +13,18 @@
    >Note: Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
 
 4. From the Fabric homepage and select **Account Manager** from the top-right corner.
+   ![](images/fabric-home-page.png)
    
 5. In the Account Manager, select **Start Trial**.
-
-6. If prompted, agree to the terms and then select **Start trial**
+   ![](images/me-control.png)
+   
+6. If prompted, agree to the terms and then select **Start trial**. 
+   ![](images/start-trial-click.png)
    
 7. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
-  
-8. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
-
+   ![](images/start-trial-success.png)
    
+8. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+   ![](images/trial-status-me-control.png)
+
+    You now have a Fabric (Preview) trial that includes a Power BI individual trial (if you didn't already have a Power BI paid license) and a Fabric (Preview) trial capacity.
