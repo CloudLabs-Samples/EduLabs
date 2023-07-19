@@ -1,6 +1,7 @@
-# Create a lakehouse
-
+# Create a lakehouse, ingest sample data, and build a report
 In this task, you will build a **lakehouse**, ingest sample data into the delta table, apply transformation where required, and then create reports.
+
+## Create a lakehouse
 
 1. In the **[Power BI Service](https://app.powerbi.com/)**, select **Workspaces** from the left-hand menu.
 
@@ -16,7 +17,7 @@ In this task, you will build a **lakehouse**, ingest sample data into the delta 
 
 6. Select **Create** to create and open the new lakehouse.
 
-# Ingest sample data
+## Ingest sample data
 
 1. Download the **dimension_customer.csv** file from the **[Fabric samples repo.](https://github.com/microsoft/fabric-samples/blob/689e78676174d4627fc3855165bde9100cb4d19e/docs-samples/data-engineering/dimension_customer.csv/)**
    
@@ -67,6 +68,8 @@ In this task, you will build a **lakehouse**, ingest sample data into the delta 
 17. The following sample query aggregates the row count based on the *BuyingGroup* column of the *dimension_customer* table. SQL query files are saved automatically for future reference, and you can rename or delete these files based on your need.
 
 To run the script, select the **Run** icon at the top of the script file.
+
+## Build a report
 
 ```
 SELECT BuyingGroup, Count(*) AS Total
