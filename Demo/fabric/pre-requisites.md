@@ -8,7 +8,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 
    ![](images/pbi-home-page.png)
 
-3. Now, enter the following password and click on **Sign in**
+2. Now, enter the following password and click on **Sign in**
 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
    
@@ -16,41 +16,41 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 
    **Note**: Refer to the **Environment** tab for any other lab credentials/details.
 
-4. If you get a **Stay signed in?** prompt, click on **yes**
+3. If you get a **Stay signed in?** prompt, click on **yes**
 
    ![](images/pbi-prompt.png)
 
-5. Next, click on **Continue**
+4. Next, click on **Continue**
 
    ![](images/pbi-continue.png)
 
-6. Enter the details required and click on **Get started**
+5. Enter the details required and click on **Get started**
 
    ![](images/getstarted-pbi.png)
 
-7. Wait for a couple of minutes till your PowerBI environment gets ready.
+6. Wait for a couple of minutes till your PowerBI environment gets ready.
 
     ![](images/prepare-pbi.png)
 
-8. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+7. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
     
     ![](images/pbi-accountmanager.png)
   
     >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
    
-9. In the Account Manager, select **Start Trial**.
+8. In the Account Manager, select **Start Trial**.
 
    ![](images/fabric-start-trial.png)
    
-10. If prompted, agree to the terms and then select **Start trial**. 
+9. If prompted, agree to the terms and then select **Start trial**. 
 
    ![](images/start-trial-click.png)
    
-11. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
+10. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
 
     ![](images/gotit.png)
    
-12. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+11. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
     ![](images/trial-status.png)
 
