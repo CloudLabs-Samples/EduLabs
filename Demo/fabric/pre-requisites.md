@@ -57,6 +57,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
    >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
    
 ## Create resources in Fabric
+
 After you've created your Fabric-enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
 ![](images/fabric-create.png)
