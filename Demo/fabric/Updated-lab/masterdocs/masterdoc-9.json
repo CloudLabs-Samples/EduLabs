@@ -9,7 +9,7 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://github.com/MicrosoftLearning/mslearn-fabric/blob/main/Instructions/Labs/08-data-science.md",
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-fabric/blob/main/Instructions/Labs/08-data-science.md",
         "Order": 2
       }
     ]
