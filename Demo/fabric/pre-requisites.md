@@ -5,7 +5,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 1. Sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Submit**.  
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
-     ![](images/pbi-home-page.png)
+   ![](images/pbi-home-page.png)
 
 2. Now, enter the following password and click on **Sign in**
 
