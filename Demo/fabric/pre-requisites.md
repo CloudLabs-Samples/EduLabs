@@ -1,6 +1,4 @@
-# Getting-started
-
-## Enable and use Microsoft Fabric
+# Enable and use Microsoft Fabric
 
 Before you can explore the end-to-end capabilities of Microsoft Fabric, you must enable the Microsoft Fabric:
 
