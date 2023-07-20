@@ -36,8 +36,6 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
     
     ![](images/pbi-accountmanager.png)
   
-    >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
-   
 8. In the Account Manager, select **Start Trial**.
 
    ![](images/fabric-start-trial.png)
@@ -55,7 +53,9 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
     ![](images/trial-status.png)
 
    You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
-
+   
+   >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
+   
 ## Create resources in Fabric
 After you've created your Fabric-enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
@@ -63,7 +63,7 @@ After you've created your Fabric-enabled workspace, you can start creating resou
 
 ## Explore Fabric experiences
 
-Fabric experiences refer to the different capabilities included in Fabric. You can switch between experiences using the experience switcher in the bottom left corner of the navigation pane.
+Fabric experiences refer to the different capabilities included in Fabric. You can switch between experiences using the **experience switcher** in the **bottom left corner** of the navigation pane.
 
 ![](images/check-fabric-access.png)
 
