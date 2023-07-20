@@ -27,15 +27,15 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 
    ![](images/getstarted-pbi.png)
 
- 6. Wait for a couple of minutes till your PowerBI environment gets ready.
+6. Wait for a couple of minutes till your PowerBI environment gets ready.
 
     ![](images/prepare-pbi.png)
 
- 7. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
+7. From the PowerBI home page, select **Account Manager** from the top-right corner to start the free **Microsoft Fabric trial**.
     
     ![](images/pbi-accountmanager.png)
   
-   >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
+    >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
    
 8. In the Account Manager, select **Start Trial**.
 
@@ -47,13 +47,13 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
    
 10. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
 
-   ![](images/gotit.png)
+    ![](images/gotit.png)
    
-12. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
+11. Open your **Account manager** again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial.
 
    ![](images/trial-status.png)
 
-   You now have a Fabric (Preview) trial that includes a Power BI trial and a Fabric (Preview) trial capacity.
+   You now have a **Fabric (Preview) trial** that includes a **Power BI trial** and a **Fabric (Preview) trial capacity**.
 
 ## Create resources in Fabric
 After you've created your Fabric-enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
