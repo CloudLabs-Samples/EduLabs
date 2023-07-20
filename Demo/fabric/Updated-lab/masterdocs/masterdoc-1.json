@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Hands-on Lab 1: Microsoft Fabric",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/pre-requisites.md",
+        "Order": 1
+      }
+    ]
+  }
+]
