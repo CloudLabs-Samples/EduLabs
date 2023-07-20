@@ -42,7 +42,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
    
 9. If prompted, agree to the terms and then select **Start trial**. 
 
-   ![](images/start-trial-click.png)
+   ![](images/start-trial2.png)
    
 10. Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
 
