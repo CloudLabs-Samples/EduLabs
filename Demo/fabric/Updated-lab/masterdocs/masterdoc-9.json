@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Hands-on Lab 9: Microsoft Fabric",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/pre-requisites.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://github.com/MicrosoftLearning/mslearn-fabric/blob/main/Instructions/Labs/08-data-science.md,
+        "Order": 2
+      }
+    ]
+  }
+]
