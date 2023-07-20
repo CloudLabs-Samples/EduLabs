@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Hands-on Lab 5: Microsoft Fabric",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/fabric",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/fabric/pre-requisites.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-fabric/main/Instructions/Labs/04-ingest-pipeline.md",
+        "Order": 2
+      }
+    ]
+  }
+]
