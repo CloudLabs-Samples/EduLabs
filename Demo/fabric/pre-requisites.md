@@ -58,17 +58,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
    
 ## Create resources in Fabric
 
-1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com) at `https://app.fabric.microsoft.com`, enter the following email/username, and then click on **Submit**.  
-
-   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
-
-   ![](images/fabric-submit.png)
-
-2. From the Microsoft Fabric home page, select **PowerBI**
-
-   ![](images/fabric-pbi.png)
-
-   You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
+   After you've created your Fabric enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the Create menu in the upper left corner of the Power BI service.
 
    ![](images/fabric-create.png)
 
