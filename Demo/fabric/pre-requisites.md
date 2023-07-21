@@ -68,9 +68,9 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 
    ![](./Images/fabric-pbi.png)
 
-You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
+   You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
-![](images/fabric-create.png)
+   ![](images/fabric-create.png)
 
 ## Explore Fabric experiences
 
