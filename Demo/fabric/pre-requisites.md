@@ -62,11 +62,11 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, you must
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
-   ![](./Images/fabric-submit.png)
+   ![](images/fabric-submit.png)
 
 2. From the Microsoft Fabric home page, select **PowerBI**
 
-   ![](./Images/fabric-pbi.png)
+   ![](images/fabric-pbi.png)
 
    You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
