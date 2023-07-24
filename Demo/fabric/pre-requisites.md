@@ -2,7 +2,7 @@
 
 Before you explore the end-to-end capabilities of Microsoft Fabric and perform the lab, you must enable the Microsoft Fabric:
 
-1. Sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Submit**.  
+1. In a new browser tab, sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Submit**.  
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
