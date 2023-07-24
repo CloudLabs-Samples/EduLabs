@@ -1,6 +1,6 @@
 # Enable and use Microsoft Fabric
 
-Before you can explore the end-to-end capabilities of Microsoft Fabric, you must enable the Microsoft Fabric:
+Before you explore the end-to-end capabilities of Microsoft Fabric and perform the lab, you must enable the Microsoft Fabric:
 
 1. Sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Submit**.  
 
