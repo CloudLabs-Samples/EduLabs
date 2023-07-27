@@ -7,7 +7,7 @@ In this hands-on lab, you are provided with a Windows Virtual machine that has V
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
 
-   ![](images/vmandguide.png)
+   ![](images/vm.png)
 
 2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
    
