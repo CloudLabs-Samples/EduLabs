@@ -5,7 +5,7 @@ In this hands-on lab, you are provided with a Windows Virtual machine that has V
 
 ## Instructions
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
+1. Once the environment is provisioned, a **virtual machine** (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
 
    ![](images/vm.png)
 
@@ -15,7 +15,7 @@ In this hands-on lab, you are provided with a Windows Virtual machine that has V
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
    
-4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
+4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM
 
    ![](images/resources.png)
     
