@@ -1,7 +1,7 @@
 # CloudLabs Demo: Duval schools
 
 ## Overview
-In this hands-on lab, you are provided with a Windows Virtual machine that has Visual Studio code, Eclipse, Java Development kit, Python, Browsers like Google Chrome and Microsoft Edge, OneDrive and Postgre SQL pre-installed.
+In this hands-on lab, you are provided with a **Windows Virtual machine** that has Visual Studio code, Eclipse, Java Development kit, Python, Browsers like Google Chrome and Microsoft Edge, OneDrive and Postgre SQL pre-installed.
 
 ## Instructions
 
@@ -15,7 +15,7 @@ In this hands-on lab, you are provided with a Windows Virtual machine that has V
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
    
-4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM
+4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM from here.
 
    ![](images/resources.png)
     
