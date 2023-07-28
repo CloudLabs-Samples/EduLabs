@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab environment, you will access the Windows Data Sciemce VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+In this lab environment, you will access the Windows Data Science VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
 
 The Windows Data Science Virtual Machine (DSVM) is a virtual machine image available in Azure that's preinstalled with a collection of tools commonly used for data analytics and machine learning.
 
