@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo : Environment with Windows EC2 instance ",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/PAN",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/aws/demo.md",
+        "Order": 1
+      }
+    ]
+  }
+]
