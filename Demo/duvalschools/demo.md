@@ -1,7 +1,7 @@
 # CloudLabs Demo: Duval schools
 
 ## Overview
-In this hands-on lab, you are provided with a **Windows Virtual machine** that has Visual Studio code, Eclipse, Java Development kit, Python, Browsers like Google Chrome and Microsoft Edge, OneDrive and Postgre SQL pre-installed.
+In this hands-on lab, you are provided with a **Windows Virtual machine** that has Visual studio code with extensions MagicPython3.10 and Python Extension Pack, Eclipse, Java Development kit, Python 3.10, Browsers like Google Chrome and Microsoft Edge, OneDrive, Notepad ++ , Android studio with Emulator Blue stacks and Postgre SQL with pgAdmin 4 pre-installed.
 
 ## Instructions
 
