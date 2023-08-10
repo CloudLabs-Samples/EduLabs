@@ -1,0 +1,12 @@
+[
+ {
+    "Name": "Datascience on Windows-Jupyter and R",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/DataScience/windows/lab-aws.md",
+        "Order": 1
+      }
+    ]
+  }
+]
