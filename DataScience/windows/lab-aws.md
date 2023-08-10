@@ -2,9 +2,9 @@
 
 ## Overview
 
-In this lab environment, you will access the Windows Data Science VM which has several popular tools for data exploration, analysis, modeling & development pre-installed.
+In this lab environment, you will access the Windows EC2 instance which has several popular tools for data exploration, analysis, modeling & development pre-installed.
 
-This Windows VM is preinstalled with a collection of tools commonly used for data analytics and machine learning.
+This Windows instance is preinstalled with a collection of tools commonly used for data analytics and machine learning.
 
 The VM image makes it easy to get started doing data science in minutes, without having to install and configure each of the tools individually. You can easily stop it when it's not in use. The DSVM resource is both elastic and cost-efficient.
 
@@ -22,25 +22,19 @@ After completing this lab, you will learn how to:
 
 ## Instructions
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
-
-   ![](../images/vmandguide.png)
+1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
 2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
-   
-   ![](../images/envdetails.png)
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
-   
-   ![](../images/splitwindow.png)
- 
+    
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
    ![](../images/resourcestab.png)
    
 ## Access the JupyterLab Application
 
-1. In the virtual machine, double click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
+1. In the virtual machine, double-click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
 
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
@@ -57,7 +51,7 @@ After completing this lab, you will learn how to:
   
  ## Summary
  
- In this lab environment, you have accessed the JupyterLab application and explored many notebooks.
+ In this lab environment, you have accessed the JupyterLab application and explored several notebooks.
 
 
    
