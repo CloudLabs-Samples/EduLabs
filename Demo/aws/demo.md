@@ -9,7 +9,9 @@ To connect to the provided EC2 instance, follow the below steps:
 
 1. Copy the **IP address or DNS** from the Resources tab.
 
-2. From your local computer, search for **RDP** and paste the copied **IP address or DNS** from previous step. Click on **Connect**
+   ![](images/DNS-copy.png)
+
+3. From your local computer, search for **RDP** and paste the copied **IP address or DNS** from previous step. Click on **Connect**
 
     ![](images/RDP.png)
 
