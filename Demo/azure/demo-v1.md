@@ -1,7 +1,7 @@
 # CloudLabs Demo : Azure environment with Windows machine
 
 ## Overview
-This lab environment has a Windows Virtual machine along with PowerBI Desktop pre-installed. And Global admin access to Azure environment with dedicated tenant
+This lab environment has a Windows Virtual machine along with PowerBI Desktop pre-installed. And Global admin access to the Azure environment with a dedicated tenant where you can deploy the resources.
 
 ## Getting started
 
