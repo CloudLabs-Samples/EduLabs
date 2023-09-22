@@ -17,6 +17,6 @@ This lab environment has a Windows EC2 instance pre-deployed in AWS.
    
 4.  You can **Start(1)** **Stop(3)** and **Restart(2)** the EC2 instance whenever required
 
-   ![](images/resourcestab.png)
+    ![](images/resourcestab.png)
     
 5.  Perform the tasks within the EC2 instance as required.
