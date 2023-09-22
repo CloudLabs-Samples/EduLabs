@@ -42,7 +42,7 @@ In this task, you will log in to the AWS Console
    
     ![](images/consolehome.png)
 
-4. Ensure to switch to the **N virginia** region at the top right corner
+4. Ensure to switch to the **Ohio** region at the top right corner
    
     ![](images/ohioregion.png)
 
