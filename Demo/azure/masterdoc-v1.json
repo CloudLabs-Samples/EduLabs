@@ -1,6 +1,6 @@
 [
   {
-    "Name": "CloudLabs Demo: Azure environment with Windows machine",
+    "Name": "CloudLabs Demo: Azure sandbox environment with Windows virtual machine",
     "Language": "English",
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
     "Files": [
