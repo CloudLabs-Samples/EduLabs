@@ -46,4 +46,4 @@ In this task, you will log in to the AWS Console
    
     ![](images/ohioregion.png)
 
-5. Now, you can deploy the resources that you want for the lab tasks.
+5. Now, you can deploy the resources that are required for the lab tasks.
