@@ -52,3 +52,5 @@ This lab environment has a Windows Virtual machine along with PowerBI Desktop pr
 
     ![](images/image-007.jpg)
 
+1. You can now deploy the azure resources required for your lab
+
