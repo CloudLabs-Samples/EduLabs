@@ -1,5 +1,11 @@
 # Enable and use Microsoft Fabric
 
+## Overview
+
+OneLake is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneLake is built on top of Azure Data Lake Storage (ADLS) and data can be stored in any format, including Delta, Parquet, CSV, JSON, and more. Fabric's data warehousing, data engineering (Lakehouses and Notebooks), data integration (pipelines and dataflows), real-time analytics, and Power BI all use OneLake as their native store without needing any extra configuration.
+
+![Onelake](images/Onelake.png)
+
 Before you explore the end-to-end capabilities of Microsoft Fabric and perform the lab, you must enable the Microsoft Fabric:
 
 1. In a new browser tab, sign in to your **[Power BI](https://app.powerbi.com/)** account at `https://app.powerbi.com`, enter the following email/username, and then click on **Submit**.  
