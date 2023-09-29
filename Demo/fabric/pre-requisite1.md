@@ -2,9 +2,15 @@
 
 ## Overview
 
-OneLake is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneLake is built on top of Azure Data Lake Storage (ADLS) and data can be stored in any format, including Delta, Parquet, CSV, JSON, and more. Fabric's data warehousing, data engineering (Lakehouses and Notebooks), data integration (pipelines and dataflows), real-time analytics, and Power BI all use OneLake as their native store without needing any extra configuration.
+Microsoft Fabric is an end-to-end analytics platform that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric provides a set of integrated services that enable you to ingest, store, process, and analyze data in a single environment. Microsoft Fabric's unified management and governance make it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
+Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You may need to work with your IT department to enable Fabric for your organization.
 
-![Onelake](images/Onelake.png)
+### **_Architecture Diagram_**
+
+![Architecture Diagram](images/Introduction-to-end-to-end-analytics.png)
+
+
+## Task 1 : Enable Microsoft Fabric
 
 Before you explore the end-to-end capabilities of Microsoft Fabric and perform the lab, you must enable the Microsoft Fabric:
 
@@ -62,13 +68,13 @@ Before you explore the end-to-end capabilities of Microsoft Fabric and perform t
    
    >**Note:** Microsoft Fabric has launched as a public preview and is temporarily provided free of charge when you sign up for the Microsoft Fabric (Preview) trial. Your use of the Microsoft Fabric (Preview) trial includes access to the Fabric product experiences and the resources to create and host Fabric items. The Fabric (Preview) trial lasts for a period of 60 days but may be extended by Microsoft, at our discretion.
    
-## Create resources in Fabric
+## Task 2 : Create resources in Microsoft Fabric
 
    After you've created your Fabric enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the Create menu in the upper left corner of the Power BI service.
 
    ![](images/fabric-create.png)
 
-## Explore Fabric experiences
+## Task 3 : Explore Fabric experiences
 
 Fabric experiences refer to the different capabilities included in Fabric. You can switch between experiences using the **experience switcher** in the **bottom left corner** of the navigation pane.
 
