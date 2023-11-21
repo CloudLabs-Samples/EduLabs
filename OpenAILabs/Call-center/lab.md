@@ -5,7 +5,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Architecture diagram
 
- ![](images/architecturediagram.png)
+ ![](images/archdiag.png)
 
 ## Getting started
 
