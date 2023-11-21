@@ -190,7 +190,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
    ![](images/26.png)
 
-5. The audio file or the call recording uploaded to the **audio-input** will be proceeded and trascribed in JSON format to another container **json-result-output**
+5. The audio file or the call recording uploaded to the **audio-input** will be proceeded and transcribed in JSON format to another container **json-result-output**
 
 When a file lands in a storage container **audio-input**, the Grid event indicates the completed upload of a file. The file is filtered and pushed to a Service bus topic. Code in Azure Functions **StartTranscriptionFunction** is triggered by a timer picks up the event and creates a transmission request using the Azure Speech services batch pipeline. When the transmission request is complete, an event is placed in another queue in the same service bus resource. A different Azure Function **FetchTranscriptionFunction** triggered by the completion event starts monitoring transcription completion status. When transcription completes, the Azure Function copies the transcript into the **json-result-output** container.
 
