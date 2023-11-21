@@ -102,7 +102,78 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 11. Ensure all the application settings are aded and click on **Save** to save the settings
 
     ![](images/09.png)
-   
-## Task 2: Upload audio file 
 
+12. Now open **Visual studio code** from the virtual machine's Desktop
+
+13. Select **Azure** and **Sign in to Azure**, click on **Allow** if you get a pop up notification
+
+    ![](images/10.png)
+
+    ![](images/11.png)
+
+14. A sign in window is opened in the browser , sign in using the credentials
+
+    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+
+15. Once the sign to Azure is successful, you should to able to see the resources and function app you created in the previous steps.
+
+    ![](images/12.png)
+
+16. Now, from the **File** menu select **Open Folder** and browse to the path **C:\LabFiles\AnalyzeTranscriptOpenAI\AnalyzeTranscriptOpenAI-main**
+
+    ![](images/13.png)
+
+17. The project files should be as shown below:
+
+    ![](images/14.png)
+
+18. Check for any notifications and select **Create Virtual environment**.
+
+     ![](images/15.png)
+
+20. Select the Python Interpreter as 3.11.6 and wait till the virtual environment is created.
+
+    ![](images/16.png)
+
+21. Next, Create a folder as **AnalyzeTranscription** for deploying a function to the function app on Azure
+
+    ![](images/17.png)
+
+22. Move all the files to the created folder
+
+    ![](images/18.png)
+
+23. Ensure **AnalyzeTranscription** as *azureFunctions.deploySubpath* in **settings.json** file else you might get some warnings if this is not set correctly
+
+    ![](images/20.png)
+
+24. Review the file **function_app.py** and understand how the function is configured to use Open AI, Storage account and SQL Database for transcribing ,analyzing the data and to summarize.
+
+25. Now select **AnalyzeTranscription** and right click to select the option **Deploy to Function App**
+
+    ![](images/19.png)
+
+26. Select the function app you created in previous steps
+
+27. If you get any pop up notification click on **Yes**
+
+28. Select your project's language as **Python** if you are asked to select a language
+
+29. If you get a notification as **Are you sure you want to deploy to function app?**, select **Deploy**
+
+    ![](images/21.png)
+
+30. Wait until the function app is deployed successfully, check output section for logs.
+
+    ![](images/22.png)
+
+31. Navigate to **Azure Portal** and select the **funcapp-<inject key="DeploymentID"></inject>** you created in previous steps.
+
+32. From the Overview, you should now see the function **ProcessBlobTrigger** that you deployed from **Visual studio code**
+
+    ![](images/23.png)
+
+## Task 2: Upload audio file 
+1. Upload any audio file from the VM Path:**C:\LabFiles\Recordings** to the Storage account call
 ## Task 3 : Visualization
