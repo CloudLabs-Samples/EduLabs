@@ -175,5 +175,26 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
     ![](images/23.png)
 
 ## Task 2: Upload audio file 
-1. Upload any audio file from the VM Path:**C:\LabFiles\Recordings** to the Storage account call
+
+1. Ensure all the three functions are **Running**
+
+   ![](images/24.png)
+
+2. Navigate to the **Storage account** **callcenterstore<inject key="DeploymentID"></inject>**
+
+3. Select **Containers** from the **Data Storage** section, select the **audio-input** container
+
+   ![](images/25.png)
+
+4. Next, upload any audio file from the VM Path:**C:\LabFiles\Recordings** to the **audio-input** container
+
+   ![](images/26.png)
+
+5. The audio file or the call recording uploaded to the **audio-input** will be proceeded and trascribed in JSON format to another container **json-result-output**
+
+When a file lands in a storage container **audio-input**, the Grid event indicates the completed upload of a file. The file is filtered and pushed to a Service bus topic. Code in Azure Functions **StartTranscriptionFunction** is triggered by a timer picks up the event and creates a transmission request using the Azure Speech services batch pipeline. When the transmission request is complete, an event is placed in another queue in the same service bus resource. A different Azure Function **FetchTranscriptionFunction** triggered by the completion event starts monitoring transcription completion status. When transcription completes, the Azure Function copies the transcript into the **json-result-output** container.
+
+Next, the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and loads the **Conversation summary** and the sentiment analysis whether it is **Positive or Negative** to a **SQL Database**
+
 ## Task 3 : Visualization
+
