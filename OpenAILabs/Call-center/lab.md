@@ -228,6 +228,33 @@ In this task, you will learn how to create a comprehensive Power BI dashboard to
 
    ![](images/31.png)
 
+8. Select **Table** from **Visualizations** and **Sentiment** and **FileName** from Data section inorder to see the sentiment based on the transcribed file
+
+   ![](images/32.png)
+
+9. Select **File** menu and **Publish-> Publish to PowerBI** to publish the PowerBI report that you created.
+
+   ![](images/33.png)
+
+10. Select the **Workspace** where you want the PowerBI report to be published.(Login if prompted)
+
+11. Navigate to **https://app.powerbi.com/** and sign in using the credentials
+
+    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
+    
+12. You should see the published report
+
+     ![](images/34.png)
+
+13. Select and Open the **Report** and select **Pin to a Dashboard**
+
+    ![](images/35.png)
+
+15. On the **Pin to Dashboard** pane, select **New Dashboard**, provide the Dashboard Name and click **Pin Live**
+    
+    ![](images/36.png)
+
 ## Summary
 
 In this lab you learned how to :
