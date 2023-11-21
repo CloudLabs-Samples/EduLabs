@@ -178,7 +178,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 In this task , you will upload a audio file which will be converted to text transcription and then further analysed using Azure Open AI and Function App
 
-1. Ensure all the three functions are **Running**
+1. Ensure all the three function apps are **Running**
 
    ![](images/24.png)
 
