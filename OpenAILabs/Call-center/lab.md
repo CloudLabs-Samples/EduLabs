@@ -54,7 +54,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
     ![](images/image-007.jpg)
 
-## Task 1 : Create a function App and function using VS Code
+## Task 1 : Create a Function App and Function using VS Code
 
 1. Search and select the **Function App** from the search bar
 
