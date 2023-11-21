@@ -180,7 +180,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
    ![](images/24.png)
 
-2. Navigate to the **Storage account** **callcenterstore<inject key="DeploymentID"></inject>**
+2. Navigate to the Storage account **callcenterstore<inject key="DeploymentID"></inject>**
 
 3. Select **Containers** from the **Data Storage** section, select the **audio-input** container
 
