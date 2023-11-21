@@ -56,6 +56,53 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Task 1 : Create a function App and function using VS Code
 
+1. Search and select the **Function App** from the search bar
+
+   ![](images/01.png)
+
+2. Select **+Create**
+
+   ![](images/02.png)
+
+3. On the **Create Function App** blade select the subscription and the provided resource group
+
+   - Function App Name: funcapp-<inject key="DeploymentID"></inject>
+   - Runtime stack : Python
+   - Version : 3.11
+   - Region : East US
+   - Hosting options and plans : App service Plan
+   - Pricing Plan: Basic
+
+    ![](images/03.png)
+
+4. Leave the other option set to Default and select **Review+Create**, **Create**
+
+   ![](images/04.png)
+
+5. Once the deployment is successful, Open the created function app and select **Configuration** under **Settings**
+
+   ![](images/05.png)
+
+6. Select **+New application setting** from the **Application settings** tab
+
+   ![](images/06.png)
+
+7. In **Add/Edit application setting**, Add **AzureWebJobsFeatureFlags** under **Name** field and provide its value as **EnableWorkerIndexing** in **Value** field and click **OK**
+
+   ![](images/07.png)
+
+8. Next, Add **AZURE_OPENAI_ENDPOINT** under **Name** field and provide its value in **Value** field and click **OK**
+
+   ![](images/08.png)
+   
+9. Similarly do it for AZURE_OPENAI_KEY , BlobStorageConnectionString , SqlConnectionString in **Name** fields.
+
+   >Get the values from **Envrionment details** tab of the lab environment page.
+
+11. Ensure all the application settings are aded and click on **Save** to save the settings
+
+    ![](images/09.png)
+   
 ## Task 2: Upload audio file 
 
 ## Task 3 : Visualization
