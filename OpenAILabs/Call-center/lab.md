@@ -231,7 +231,6 @@ In this task, you will learn how to create a comprehensive Power BI dashboard to
 ## Summary
 
 In this lab you learned how to :
-- Data Collection and Storage with Azure Storage
 - Create a Function App and Function
 - Audio Transcription with Azure AI Speech
 - Personal Data Detection, Extracting Insights with Azure OpenAI
