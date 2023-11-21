@@ -176,6 +176,8 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Task 2: Upload audio file 
 
+In this task , you will upload a audio file which will be converted to text transcription and then further analysed using Azure Open AI and Function App
+
 1. Ensure all the three functions are **Running**
 
    ![](images/24.png)
@@ -198,3 +200,41 @@ Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript
 
 ## Task 3 : Visualization
 
+In this task, you will learn how to create a comprehensive Power BI dashboard to visualize key metrics and insights for a call center, enabling data-driven decision-making and performance analysis.
+
+1. Open **PowerBI Desktop** from the Virtual machine
+
+2. In the Home group of the Power BI Desktop ribbon, select **Get data**, and select **SQL server Database** as the data source.Click on **Connect** to connect to the SQL server database where the data is present.
+
+   ![](images/27.png)
+
+3. In the dialog box for the connection, under Data connectivity mode, select **DirectQuery**. Provide the **SQL server name** and **Database Name**
+
+   ![](images/28.png)
+
+   DirectQuery reports always use current data. Seeing underlying data changes requires you to refresh the data, and reimporting large semantic models to refresh data could be unfeasible.
+
+4. Select **Output** table where the data of the transcription and analysis is stored and Click on **Load**
+
+   ![](images/29.png)
+
+5. Once the data is loaded you should now see the empty report canvas and **Output** Table and it's columns **ID**, **Sentiment** and **Summary**
+
+  ![](images/30.png)
+
+6. Select the **Guage** Visualization from **Visualizations** section and check **Sentiment** under **Data** section
+
+7. Move **Sentiments** to **Value** and select **Count** for visualizing the number of sentiments
+
+   ![](images/31.png)
+
+## Summary
+
+In this lab you learned how to :
+- Data Collection and Storage with Azure Storage
+- Create a Function App and Function
+- Audio Transcription with Azure AI Speech
+- Personal Data Detection, Extracting Insights with Azure OpenAI
+- Data Visualization with Power BI
+
+   
