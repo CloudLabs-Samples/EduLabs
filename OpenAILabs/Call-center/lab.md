@@ -194,7 +194,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 When a file lands in a storage container **audio-input**, the Grid event indicates the completed upload of a file. The file is filtered and pushed to a Service bus topic. Code in Azure Functions **StartTranscriptionFunction** is triggered by a timer picks up the event and creates a transmission request using the Azure Speech services batch pipeline. When the transmission request is complete, an event is placed in another queue in the same service bus resource. A different Azure Function **FetchTranscriptionFunction** triggered by the completion event starts monitoring transcription completion status. When transcription completes, the Azure Function copies the transcript into the **json-result-output** container.
 
-Next, the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and loads the **Conversation summary** and the sentiment analysis whether it is **Positive or Negative** to a **SQL Database**
+Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource where the **Conversation summary** and the sentiment analysis whether it is **Positive or Negative** is loaded to a **SQL Database**
 
 ## Task 3 : Visualization
 
