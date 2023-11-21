@@ -111,7 +111,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
     ![](images/11.png)
 
-14. A sign in window is opened in the browser , sign in using the credentials
+14. A sign in window will be opened in the browser , sign in using the below credentials
 
     * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
     * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
@@ -194,7 +194,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 When a file lands in a storage container **audio-input**, the Grid event indicates the completed upload of a file. The file is filtered and pushed to a Service bus topic. Code in Azure Functions **StartTranscriptionFunction** is triggered by a timer picks up the event and creates a transmission request using the Azure Speech services batch pipeline. When the transmission request is complete, an event is placed in another queue in the same service bus resource. A different Azure Function **FetchTranscriptionFunction** triggered by the completion event starts monitoring transcription completion status. When transcription completes, the Azure Function copies the transcript into the **json-result-output** container.
 
-Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and the **Conversation summary** ,sentiment analysis whether it is **Positive or Negative** is loaded to a **SQL Database** 
+Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and the **Conversation summary** ,sentiment analysis whether it is **Positive or Negative** is further loaded to a **SQL Database** which will be used for Visualization in the next task
 
 ## Task 3 : Visualization
 
