@@ -54,7 +54,61 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
     ![](images/image-007.jpg)
 
-## Task 1 : Create a Function App and Function using VS Code
+### Task 1: Provision an Azure OpenAI resource
+
+Before you can use Azure OpenAI models, you must provision an Azure OpenAI resource in your Azure subscription.
+
+1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+
+2. On **Azure AI Services | Azure OpenAI** blade, click on **Create**.
+
+3. Create an **Azure OpenAI** resource with the following settings:
+   
+    - **Subscription**: Default - Pre-assigned subscription.
+    - **Resource group**: openai-<inject key="Deployment-id" enableCopy="false"></inject>
+    - **Region**: Select <inject key="Region" enableCopy="false" />
+    - **Name**: OpenAI-Lab01-<inject key="Deployment-id" enableCopy="false"></inject>
+    - **Pricing tier**: Standard S0
+  
+4. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
+
+  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you can use to deploy, manage, and explore models. You'll start your exploration of Azure OpenAI by using Azure OpenAI Studio to deploy a model.
+
+5. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+
+6. On **Azure AI Services | Azure OpenAI** blade, select **OpenAI-Lab01-<inject key="Deployment-id" enableCopy="false"></inject>**
+
+7. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navaigate to **Azure AI Studio**.
+
+8. In **Welcome to Azure OpenAI Service** page, click on **Create new deployment**.
+
+9. In the **Deployments** page, click on **+ Create new deployment**.
+
+10. Within the **Deploy model** pop-up interface, enter the following details and then click on **Advanced options (3)** followed by scaling down the **Tokens per Minute Rate Limit (thousands) (4)**:
+    - **Select a Model**: gpt-35-turbo
+    - **Model version**: Auto-update to default
+    - **Deployment name**: my-gpt-model
+    - **Tokens per Minute Rate Limit (thousands)**: 10K
+
+11. Click on the **Create** button to deploy a model which you will be playing around with as you proceed.
+
+> **Note**: Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
+
+  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
+## Task 2 : Create a Function App and Function using VS Code
 
 1. Search and select the **Function App** from the search bar
 
@@ -174,7 +228,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
     ![](images/23.png)
 
-## Task 2: Upload audio file 
+## Task 3: Upload audio file 
 
 In this task , you will upload a audio file which will be converted to text transcription and then further it will be analysed using Azure Open AI and Function App
 
@@ -198,7 +252,7 @@ When a file lands in a storage container **audio-input**, the Grid event indicat
 
 Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and the **Conversation summary** ,sentiment analysis whether it is **Positive or Negative** is further loaded to a **SQL Database** which will be used for Visualization in the next task
 
-## Task 3 : Visualization using PowerBI Report and Dashboard
+## Task 4 : Visualization using PowerBI Report and Dashboard
 
 In this task, you will learn how to create a comprehensive Power BI report and dashboard to visualize key metrics and insights for a call center, enabling data-driven decision-making and performance analysis.
 
