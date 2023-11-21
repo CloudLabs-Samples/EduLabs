@@ -27,7 +27,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Getting started with the Azure Portal
 
-1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. In the VM, open the **Microsoft Edge** browser, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.  
 
@@ -176,7 +176,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Task 2: Upload audio file 
 
-In this task , you will upload a audio file which will be converted to text transcription and then further analysed using Azure Open AI and Function App
+In this task , you will upload a audio file which will be converted to text transcription and then further it will be analysed using Azure Open AI and Function App
 
 1. Ensure all the three function apps are **Running**
 
@@ -222,7 +222,7 @@ In this task, you will learn how to create a comprehensive Power BI report and d
 
    ![](images/30.png)
 
-6. Select the **Guage** Visualization from **Visualizations** section and check **Sentiment** under **Data** section
+6. Select the **Gauge** Visualization from **Visualizations** section and check **Sentiment** under **Data** section
 
 7. Move **Sentiments** to **Value** and select **Count** for visualizing the number of sentiments
 
