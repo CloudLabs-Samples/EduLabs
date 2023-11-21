@@ -198,9 +198,9 @@ When a file lands in a storage container **audio-input**, the Grid event indicat
 
 Next, using the code of **ProcessBlobTrigger** function the JSON file(transcript) from the **json-result-output** container is further analyzed using **Azure OpenAI** resource and the **Conversation summary** ,sentiment analysis whether it is **Positive or Negative** is further loaded to a **SQL Database** which will be used for Visualization in the next task
 
-## Task 3 : Visualization
+## Task 3 : Visualization using PowerBI Report and Dashboard
 
-In this task, you will learn how to create a comprehensive Power BI dashboard to visualize key metrics and insights for a call center, enabling data-driven decision-making and performance analysis.
+In this task, you will learn how to create a comprehensive Power BI report and dashboard to visualize key metrics and insights for a call center, enabling data-driven decision-making and performance analysis.
 
 1. Open **PowerBI Desktop** from the Virtual machine
 
@@ -254,6 +254,8 @@ In this task, you will learn how to create a comprehensive Power BI dashboard to
 15. On the **Pin to Dashboard** pane, select **New Dashboard**, provide the Dashboard Name and click **Pin Live**
     
     ![](images/36.png)
+
+16. You can just refresh whenever a new audio file is uploaded to the Storage account and see the result in the **PowerBI Dashboard**
 
 ## Summary
 
