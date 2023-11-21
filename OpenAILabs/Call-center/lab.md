@@ -99,11 +99,11 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
    >Get the values from **Envrionment details** tab of the lab environment page.
 
-11. Ensure all the application settings are aded and click on **Save** to save the settings
+11. Ensure all the application settings are added and click on **Save** to save the settings
 
     ![](images/09.png)
 
-12. Now open **Visual studio code** from the virtual machine's Desktop
+12. Now open **Visual studio code** from the Virtual machine's Desktop
 
 13. Select **Azure** and **Sign in to Azure**, click on **Allow** if you get a pop up notification
 
