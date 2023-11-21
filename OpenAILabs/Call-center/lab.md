@@ -220,7 +220,7 @@ In this task, you will learn how to create a comprehensive Power BI dashboard to
 
 5. Once the data is loaded you should now see the empty report canvas and **Output** Table and it's columns **ID**, **Sentiment** and **Summary**
 
-  ![](images/30.png)
+   ![](images/30.png)
 
 6. Select the **Guage** Visualization from **Visualizations** section and check **Sentiment** under **Data** section
 
