@@ -1,4 +1,4 @@
-Task 1: Provision Azure resources
+# Task 1: Provision Azure resources
 
 1. In the **Azure portal**, search for **deploy** and select **Deploy a custom template** from the services list.
 
@@ -28,4 +28,8 @@ Task 1: Provision Azure resources
 
    ![](images/s7.png)
    
-1. Wait for deployment to be completed.
+1. Wait for deployment to be completed.It might take around 5-7 mins.
+
+## END OF Task-1
+
+## Proceed to Next Task
