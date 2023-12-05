@@ -1,4 +1,4 @@
-# Task 1: Provision Azure resources
+## Task 1: Provision Azure resources
 
 1. In the **Azure portal**, search for **deploy** and select **Deploy a custom template** from the services list.
 
