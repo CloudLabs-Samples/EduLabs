@@ -1,33 +1,34 @@
-# Call Center data analysis using Azure AI services and Azure OpenAI 
+## Getting started with your Call Center Data Analysis using Azure AI services and Azure Open AI Workshop
 
-## Overview
-In this hands-on lab, you will learn how to effectively extract insights from customer conversations within a call center using Azure AI services and Azure OpenAI Service. You'll get the opportunity to apply real-time and post-call analytics to enhance call center efficiency and elevate customer satisfaction. This immersive experience will guide you through a diverse range of topics related to data processing, audio transcription, sentiment analysis, and data visualization, allowing you to master real-time and post-call analytics.
+Welcome to your Call Center Data Analysis using Azure AI services and Azure Open AI workshop! We've prepared a seamless environment for you to explore and learn about extracting insights from customer conversations within a call center using Azure AI services and Azure OpenAI Service. Let's begin by making the most of this experience:
 
-## Architecture diagram
-
- ![](images/archdiag.png)
-
-## Getting started
-
-## Instructions
-
-1. Once the environment is provisioned, a **virtual machine** (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
    ![](images/vmandguidev2.png)
 
-2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
    
    ![](images/env-details.png)
 
-3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
    
-4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM from here.
-
+   ![](images/spl.png)
+   
+## Managing Your Virtual Machine
+ 
+1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+ 
    ![](images/resources.png)
 
-## Getting started with the Azure Portal
+## Let's Get Started with Azure Portal
 
-1. In the VM, click on the **Azure Portal** desktop icon, and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. On your virtual machine, click on the Azure Portal icon and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.  
 
@@ -54,4 +55,4 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
     ![](images/image-007.jpg)
    
-1. Click on **Next** to get started with the tasks.
+1. Click **Next** from the bottom right corner to embark on your Lab journey!
