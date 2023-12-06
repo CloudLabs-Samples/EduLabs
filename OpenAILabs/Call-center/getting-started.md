@@ -56,3 +56,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
     ![](images/image-007.jpg)
    
 1. Click **Next** from the bottom right corner to embark on your Lab journey!
+
+   ![](images/s36.png)
+    
+Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
