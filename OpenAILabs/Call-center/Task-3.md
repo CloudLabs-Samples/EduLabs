@@ -113,7 +113,7 @@ In this task, you will use the existing comprehensive Power BI report and make c
 
 1. Select **Go to Dashboard**
 
-1. To get the specific results based on any sentiment or conversation files, you can further filter it by selecting the checkbox under required .
+1. To get the specific results based on any sentiment or conversation files, you can further filter it by selecting the checkbox under required filter options.
 
    ![](images/s35.png)
 
