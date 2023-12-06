@@ -6,7 +6,7 @@ In this task , you will upload a audio file which will be converted to text tran
 
    ![](images/s8.png)
 
-2. Navigate to the Storage account **callcenterstore<inject key="DeploymentID"></inject>**
+2. Navigate to the Storage account **callcenterstore<inject key="Deployment-id" enableCopy="false"></inject>**
 
 3. Select **Containers** from the **Data Storage** section, select the **audio-input** container
 
