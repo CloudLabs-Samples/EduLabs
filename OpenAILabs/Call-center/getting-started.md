@@ -27,7 +27,7 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
 
 ## Getting started with the Azure Portal
 
-1. In the VM, open the **Microsoft Edge** browser, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
+1. In the VM, click on the **Azure Portal** desktop icon, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
 1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.  
 
