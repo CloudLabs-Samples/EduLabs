@@ -10,10 +10,12 @@ In this task, you will use the existing comprehensive Power BI report and make c
 
    ![](images/s10.png)
    
-  **Note** : The callcenter-dataanalysis.pbix contains the prebuild models and report which can be utilised for our lab by changing the data source settings.
+    **Note** : The callcenter-dataanalysis.pbix contains the prebuild models and report which can be utilised for our lab by changing the data source settings.
   
-1. Click on **Cancel** each time when there is a pop up for **connect to the sqlserver**.
+1. Click on **Cancel** each time when there is a pop up for **SQL Server database** connection.
 
+   ![](images/s33.png)
+   
 1. Later click on **Transform data** and select **Data source settings**
 
    ![](images/s11.png)
@@ -26,10 +28,11 @@ In this task, you will use the existing comprehensive Power BI report and make c
 
 1. Click on **Edit Permissions**, under **Credentials** click on **Edit** and select **Database** under SQL Server database popup and provide the below values:
 
-   User name : **sqluser**
-   Password  : **password.1!!**
+     * **User name** : sqluser
+     * **Password**  : password.1!!
 
     ![](images/s14.png)
+   
     ![](images/s15.png)
    
 1. Click on **Save** and click on **OK**.
@@ -59,39 +62,40 @@ In this task, you will use the existing comprehensive Power BI report and make c
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Stay signed in to all your apps** page, select **No,signin to this app only** and click on **OK**
+1. On the **Stay signed in to all your apps** page, select **No,signin to this app only**
 
-   ![](images/s21.png)
+   ![](images/s34.png)
 
 1. Click on **OK** for Power BI free license assigned pop-up.
 
-  ![](images/s22.png)   
+   ![](images/s22.png)   
 
 1. On the **Publish to PowerBI** page, select **my workspace** from the list and click on **Select**
 
-  ![](images/s23.png)    
+   ![](images/s23.png)    
 
 1. On the **Publishing to Power BI** dialog box, click on **Open 'callcenter-dataanalysis.pbix' in Power BI** and it will redirect to the powerbi service in the browser. 
 
-  ![](images/s24.png)      
+   ![](images/s24.png)      
 
 1. On the PowerBI app service in the browser, select **Settings** icon from the top right corner and select **Manage connections and gateways**
 
-  ![](images/s25.png)        
+    ![](images/s25.png)        
 
 1. On the Data(Preview) page, select the existing sqlserver and click on settings icon and provide the authentication details as below and click on **Save** and **close**
-**Under Authentication settings**
-   Authentication Method : Basic
-   Username : sqluser
-   Password : password.1!1
-**Under General setting**
-   Privacy level : None
+   
+   * **Under Authentication settings**
+        * *Authentication Method* : Basic
+        * *Username* : sqluser
+        * *Password* : password.1!1
+   * **Under General setting**
+        * *Privacy level* : None
 
-   ![](images/s27.png)
+    ![](images/s27.png)
 
 1. Select **my workspace** from the left side menu.
 
-   ![](images/s28.png)
+    ![](images/s28.png)
 
 1. Select the callcenter-dataanalysis which is of report type, it will load the report.
 
