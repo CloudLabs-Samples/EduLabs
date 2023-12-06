@@ -40,6 +40,6 @@ In this hands-on lab, you will learn how to effectively extract insights from cu
    
 1. Wait for deployment to be completed.It might take around 5-7 mins.
 
-## End OF Task-1
+### End of Task-1
 
 ## Proceed to Next Task
