@@ -119,6 +119,6 @@ In this task, you will use the existing comprehensive Power BI report and make c
 
 1. You can just refresh whenever a new audio file is uploaded to the Storage account and see the result in the **PowerBI Dashboard**
    
-## End of Task-3
+### End of Task-3
 
 ## Congratulations! You have successfully completed the lab.
