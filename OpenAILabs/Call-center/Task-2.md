@@ -2,7 +2,7 @@
 
 In this task , you will upload a audio file which will be converted to text transcription and then further it will be analysed using Azure Open AI and Function App
 
-1. Ensure all the three function apps are **Running**
+1. **Restart** all the three function apps and make sure all are **Running**
 
    ![](images/s8.png)
 
