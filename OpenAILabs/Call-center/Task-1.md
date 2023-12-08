@@ -1,6 +1,7 @@
 ## Task 1: Provision Azure resources
 
-In this task , you will deploy an ARM Template which provisions the resources required to perform the lab.
+In this task, you will deploy an ARM Template to provision the necessary resources for the lab
+
    * **Storage Account**: Used for uploading audio files and storing transcribed files.
 
    * **Service Bus**: Manages queues and sets up authorization rules for the function apps.
@@ -18,6 +19,8 @@ In this task , you will deploy an ARM Template which provisions the resources re
    * **FetchTranscription Function App**: Code triggered by the completion event monitors transcription completion status. When complete, the Azure Function copies the transcript into the json-result-output container.
 
    * **AnalyzeTranscription Function App**: Code triggered when a blob (JSON file transcript) is added to the json-result-output container. It further analyzes using Azure OpenAI resources, extracting conversation summaries and performing sentiment analysis (Positive or Negative). The results are then loaded into a SQL Database for visualization purposes.
+     
+   * **SQL Database**: Used for storing the data which will be used for Visualization. 
 
 1. In the **Azure portal**, search for **deploy** and select **Deploy a custom template** from the services list.
 
@@ -47,7 +50,7 @@ In this task , you will deploy an ARM Template which provisions the resources re
 
    ![](images/s7.png)
    
-1. Wait for deployment to be completed.It might take around 5-7 mins.
+1. Wait for deployment to be completed.It might take around 6-7 mins.
 
 ### End of Task-1
 
