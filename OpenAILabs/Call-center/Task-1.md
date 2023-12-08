@@ -1,5 +1,24 @@
 ## Task 1: Provision Azure resources
 
+In this task , you will deploy an ARM Template which provisions the resources required to perform the lab.
+   * **Storage Account**: Used for uploading audio files and storing transcribed files.
+
+   * **Service Bus**: Manages queues and sets up authorization rules for the function apps.
+
+   * **Event Grid**: Creates an event subscription (BlobCreatedEvent) associated with the storage account. This triggers when a blob is created under specific conditions and pushes the event to the Service Bus queue.
+
+   * **Key Vault**: Stores secrets such as keys and connection string values securely.
+
+   * **Speech Service**: Utilized for transcribing audio files.
+
+   * **OpenAI Service**: Performs sentiment analysis on the conversation summary.
+
+   * **StartTranscription Function App**: Contains code triggered by a timer, initiating a transcription request using Azure Speech Services batch pipeline. Upon completion, an event is placed in another queue within the same Service Bus resource.
+
+   * **FetchTranscription Function App**: Code triggered by the completion event monitors transcription completion status. When complete, the Azure Function copies the transcript into the json-result-output container.
+
+   * **AnalyzeTranscription Function App**: Code triggered when a blob (JSON file transcript) is added to the json-result-output container. It further analyzes using Azure OpenAI resources, extracting conversation summaries and performing sentiment analysis (Positive or Negative). The results are then loaded into a SQL Database for visualization purposes.
+
 1. In the **Azure portal**, search for **deploy** and select **Deploy a custom template** from the services list.
 
    ![](images/s1.png)
