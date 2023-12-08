@@ -1,6 +1,6 @@
 ## Task 3 : Visualization using PowerBI Report and Dashboard
 
-In this task, you will use the existing comprehensive Power BI report and make changes on the data source settings and create a dashboard to visualize key metrics and insights for a call center, enabling data-driven decision-making and performance analysis.
+In this task, you will utilize the existing comprehensive Power BI report. Your objective is to make necessary changes to the data source settings and craft a dashboard that effectively visualizes key metrics and insights pertinent to a call center. Be prepared to configure the data source settings and create a dashboard that aligns with the specific requirements and objectives of the call center analysis
 
 1. Open **PowerBI Desktop** from the Virtual machine
 
@@ -117,7 +117,19 @@ In this task, you will use the existing comprehensive Power BI report and make c
 
    ![](images/s35.png)
 
-1. You can just refresh whenever a new audio file is uploaded to the Storage account and see the result in the **PowerBI Dashboard**
+1. Upload a new audio file to the storage account **callcenterstore<inject key="Deployment-id" enableCopy="false"></inject>**
+
+1. Select **Containers** from the **Data Storage** section, select the **audio-input** container
+
+   ![](images/25.png)
+
+1. Next, upload audio files from the VM Path:**C:\LabFiles\Recordings** to the **audio-input** container.
+
+    ![](images/s41.png)
+
+1. After uploading a new audio file to the Storage account, wait for 5-6 mins and initiate a refresh to witness the updated results in the **PowerBI Dashboard**
+   
+   ![](images/s39.png)
    
 ### End of Task-3
 
