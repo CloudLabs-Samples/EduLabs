@@ -1,13 +1,3 @@
-# Call Center data analysis using Azure AI services and Azure OpenAI 
-
-## Overview
-In this hands-on lab, you will learn how to effectively extract insights from customer conversations within a call center using Azure AI services and Azure OpenAI Service. You'll get the opportunity to apply real-time and post-call analytics to enhance call center efficiency and elevate customer satisfaction. This immersive experience will guide you through a diverse range of topics related to data processing, audio transcription, sentiment analysis, and data visualization, allowing you to master real-time and post-call analytics.
-
-## Architecture diagram
-
- ![](images/archdiag.png)
-
-
 ## Task 1: Provision Azure resources
 
 1. In the **Azure portal**, search for **deploy** and select **Deploy a custom template** from the services list.
