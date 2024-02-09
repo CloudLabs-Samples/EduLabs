@@ -72,29 +72,39 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 2. Once the Kali-Linux is turned on or in Running state, wait for the machine to boot up and click on **Connect**
    
 3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
+
+   > **Note:** The Below commands need to be entered manually. 
+
    * **Username:** <inject key="Kali VM Username" />
    * **Password:** <inject key="Kali VM Password" />
 
 4. Open the **Root terminal emulator** from top left corner of the Kali-Linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user.
 
    ![](images/root-terminal.png)
-   
+  
 5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.  
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+
+
    more /etc/apt/sources.list
-   ```
+   
    ![](images/kali-sourceslist.png)
   
 6. Next, run the below command to update the list of available packages.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    apt-get update
-   ```
+   
    ![](images/kali-updatecmd.png)
   
 7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+
    apt-get upgrade
-   ```
+   
 8. Now the system is updated with latest packages or updates from the repository.
 
 ## Task 2 : Essential Kali tools
@@ -137,26 +147,35 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 2. Once the  Metasploitable OS is on or in Running state, wait for the machine to boot up and click on **Connect**.
    
 3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
+
+   > **Note:** The Below commands need to be entered manually. 
+
    * **Username:** <inject key="Metasploitable VM Username" />
    * **Password:** <inject key="Metasploitable VM Password" />
 
 
 4. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address as you will be using it in the next step.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    ifconfig
-   ```
+   
    ![](images/mip.png)
 
 5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the <ip_address of metasploitable vm> with the ip address value you noted in the previous step.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    ping <ip_address of metasploitable vm>
-   ```
+   
    ![](images/ping-m.png)
  
 5. Also, run the below command to note down the ip address of Kali-Linux as you will be using it in the further tasks.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    ifconfig
-   ```
+   
    ![](images/kip.png)
    
 ## Exercise 2 : Scanning with Nmap to find the vulnerable machines
@@ -167,35 +186,41 @@ Nmap mainly aims at protecting the network by performing a sniffing which leads 
 In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing network** is an important skill and tools for the same is without a doubt the absolute necessity so that we can uncover the potential attacks possible in the weak points in the network and fix them to safeguard our system. And in this exercise you will use nmap commands for network sniffing.
 
 1. Open the Terminal on Kali-Linux and run the below command **nmap**, to list the options of target specification or host discovery and the nmap manual.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    nmap
-   ```
+   
   
      💡 **nmap** helps in network discovery that it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
 
 2. To scan the specific ip address's ports and services, run the below command. In this example, we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
-    
-    ```
+
+   > **Note:** The Below command need to be entered manually. 
+      
     nmap <ip_addresss of metasploitable vm>
-    ```
+    
    
    ![](images/nmap-sip.png)
    
 Using this, the “threat sniffer” who is noticing some unfamiliar activities from a single IP can scan so that the false positives and false negatives can be distinguished and hit the target if the IP is a notorious one. False positives trigger alert unnecessarily, which might hide any attack. Using the utility to distinguish false positives and false negatives will allow false positives to come out in the open and keep the network analyst on toes to respond to any true positive attack without worrying about the false positives.
 
 3. Run the below command to scan all the ip addresses available, virtual machines connected in a specific ip address range. In our case the 192.168.100 is the address range(For Kali-Linux and Metasploitable), you can see all the virtual machines connected in this address range as shown below indicates all results to be considered.
-  
-    ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
     nmap -sP 192.168.100.*
-    ```
+    
     ![](images/nmap-sp.png)
     
    💡 In an extended scenario of scanning an IP address, a user also has the flexibility to use Nmap to scan a range of IP addresses to look for instances or loopholes through which an attack might be possible.
     
 5. Run the below command to scan a host.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    nmap www.yahoo.com
-   ```
+   
    💡 The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
 
 **Note:** Using the details printed on the console, one can take a copy of the same into a text editor perform required analytics. Along with this, Kali Linux provides utility to get the entire result of the Nmap on a file and utilize it later for its numerous other uses. With just its one base command with multiple other options, Nmap helps users with loads of information to protect machines from unwanted attacks.
@@ -205,36 +230,46 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 Metasploit is used for hacking into systems for testing purposes.The Metasploit Framework is an open source platform and a Kali Linux tool that supports vulnerability research, exploit development, and the creation of custom security tools. 
 
 1. In the Kali Linux, open the terminal and run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
+
+   > **Note:** The Below command need to be entered manually. 
    
-   ```
    service postgresql start
-   ```
-2. Verify if the PostgreSQL database's status **active** by running the below command.
    
-   ```
+2. Verify if the PostgreSQL database's status **active** by running the below command.
+
+   > **Note:** The Below command need to be entered manually. 
+   
    service postgresql status
-   ```
+   
    ![](images/msp-1.png)
    
 3. Run the below command to start the PostgreSQL server everytime Kali Linux is rebooted.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    update-rc.d postgresql enable
-   ```
+   
    
 4. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    ss -ant
-   ```
+   
    ![](images/msp-2.png)
 
 5. Run the below command to open the Metasploit Framework console.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    msfconsole
-   ```
+   
    ![](images/msp-3.png)
    
 6. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
-   ```
+
+   > **Note:** The Below command need to be entered manually. 
+   
    db_status
-   ```
+   
    ![](images/msp-4.png)
