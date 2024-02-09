@@ -86,8 +86,8 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
    > **Note:** The Below command need to be entered manually. 
 
+          more /etc/apt/sources.list
 
-   more /etc/apt/sources.list
    
    ![](images/kali-sourceslist.png)
   
