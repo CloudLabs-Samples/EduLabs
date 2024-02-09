@@ -84,12 +84,11 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
   
 5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.  
 
-   > **Note:** The Below command need to be entered manually. 
+   > **Note:** The Below command need to be entered manually.
 
-   more /etc/apt/sources.list
+    more /etc/apt/sources.list
 
    
-
    ![](images/kali-sourceslist.png)
   
 6. Next, run the below command to update the list of available packages.
