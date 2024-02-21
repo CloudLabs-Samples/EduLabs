@@ -1,7 +1,7 @@
 # CloudLabs Demo : Azure environment with Windows machine
 
 ## Overview
-This lab environment has a Windows Virtual machine along with PowerBI Desktop, Visual studio code and Visual studio pre-installed.
+This lab environment has a Windows Virtual machine along with PowerBI Desktop, Visual studio code pre-installed.
 
 ## Getting started
 
