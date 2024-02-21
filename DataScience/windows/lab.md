@@ -45,6 +45,7 @@ After completing this lab, you will learn how to:
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
    ![](../images/jupyteronvm.png)
+   **Note:** If you see the page Welcome to Microsoft Edge, then click on Start without your data and continue. 
    
 3. Once the Jupyter Lab loads up, you will see the File System on the left and **Launcher** on the right. 
 
