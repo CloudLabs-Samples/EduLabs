@@ -1,7 +1,7 @@
-# CloudLabs Demo : Azure environment with Windows machine
+# Custom Lab : 2U
 
 ## Overview
-This lab environment has a Windows Virtual machine along with Hyper-V manager and the Guest VM's created using Custom VM image
+This lab environment has a Windows 10 Virtual machine along with Hyper-V manager and the Guest VM's created using Custom VM image
 
 ## Getting started
 
