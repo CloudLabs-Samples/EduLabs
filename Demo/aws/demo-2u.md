@@ -5,7 +5,7 @@ This lab environment has a Windows 10 EC2 instance with Hyper-V manager and gues
 
 ## Getting started
 
-To connect to the provided EC2 instance, follow the below steps:
+To connect to the provided EC2 instance through Remote Desktop Connection (RDP), follow the below steps:
 
 1. Copy the **IP address or DNS** from the Resources tab.
 
