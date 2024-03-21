@@ -32,5 +32,9 @@ This lab environment has a Azure account and a resource group assigned with requ
 
     ![](images/image-007.jpg)
 
-1. You can now deploy the azure resources required for your lab
+1. Navigate to the **Resource groups** and click on the provided resource group.
+
+       ![](images/rg.png)
+
+1. You can now deploy the azure resources required for your lab in the provided resource group
 
