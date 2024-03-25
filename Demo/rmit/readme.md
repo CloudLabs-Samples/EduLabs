@@ -7,7 +7,7 @@ This lab environment has a license Microsoft 365 Business standard assigned to t
 
 ## Instructions
 
-1. In the browser open a new tab, and sign in to the **Bing chat** (<https://www.bing.com/chat>).
+1. In the browser open a new tab, and navigate to **Bing chat** (<https://www.bing.com/chat>) and click on **Sign in**.
 
    ![](images/bingchat.png)
 
