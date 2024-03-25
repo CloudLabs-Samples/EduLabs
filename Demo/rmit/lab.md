@@ -15,7 +15,7 @@ This lab environment has a license Microsoft 365 Business standard assigned to t
 
    ![](images/bingchat1.png)
    
-1. Now, you will see a login screen, in which enter the following email/username and then click on **Next**.  
+1. Now, you will see a login screen, in which enter the following email/username and then click on **Sign in**.  
 
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
@@ -28,9 +28,9 @@ This lab environment has a license Microsoft 365 Business standard assigned to t
 
 1.  If you see the pop-up **Stay Signed in?** click **Yes**.
 
-   ![](images/bingchat4.png)
+    ![](images/bingchat4.png)
 
 1. You can now use Bing chat as required
      
-   ![](images/bingchat4.png)
+   ![](images/bingchat5.png)
 
