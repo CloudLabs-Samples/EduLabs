@@ -1,4 +1,4 @@
-# CloudLabs Demo for RMIT : Artificial Intelligence in Marketing	
+#  Artificial Intelligence in Marketing	
 
 ## Overview
 This lab environment has a license Microsoft 365 Business standard assigned to the Azure Account.
