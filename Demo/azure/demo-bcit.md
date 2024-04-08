@@ -46,10 +46,8 @@
 1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-1. Use the provided resource group as required.
-
+   
     ![](images/image-007.jpg)
 
-1. You can now access the Azure Portal as required.
+1. You can now access the Azure Portal and provided resource group as required.
 
