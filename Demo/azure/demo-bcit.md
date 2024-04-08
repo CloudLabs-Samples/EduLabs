@@ -1,8 +1,5 @@
 # CloudLabs Demo : BCIT
 
-## Overview
-This lab environment has a SQL server 2019 on Windows server 2019 Virtual machine. And Contributor access to the Azure environment's provided resource group.
-
 ## Getting started
 
 ## Instructions
@@ -49,6 +46,8 @@ This lab environment has a SQL server 2019 on Windows server 2019 Virtual machin
 1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+1. Use the provided resource group as required.
 
     ![](images/image-007.jpg)
 
