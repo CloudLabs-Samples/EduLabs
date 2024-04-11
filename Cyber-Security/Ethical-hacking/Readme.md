@@ -161,11 +161,11 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    
    ![](images/mip.png)
 
-5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the <ip_address of metasploitable vm> with the ip address value you noted in the previous step.
+5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the [ip_address of metasploitable vm] with the ip address value you noted in the previous step.
 
    > **Note:** The Below command need to be entered manually in terminal.
    
-   ping <ip_address of metasploitable vm>
+   ping [ip_address of metasploitable vm]
    
    ![](images/ping-m.png)
  
@@ -197,7 +197,7 @@ In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing n
 
    > **Note:** The Below command need to be entered manually in terminal.
       
-    nmap <ip_addresss of metasploitable vm>
+    nmap [ip_addresss of metasploitable vm]
     
    
    ![](images/nmap-sip.png)
