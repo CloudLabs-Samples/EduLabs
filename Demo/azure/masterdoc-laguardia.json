@@ -1,0 +1,14 @@
+
+[
+  {
+    "Name": "Custom Lab: LaGuardia Community College",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/laguardiacommunitycollege.md",
+        "Order": 1
+      }
+    ]
+  }
+]
