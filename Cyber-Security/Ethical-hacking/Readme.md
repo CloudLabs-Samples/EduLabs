@@ -86,25 +86,31 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
    > **Note:** The Below command need to be entered manually in Terminal.
 
-   more /etc/apt/sources.list
+   **more /etc/apt/sources.list**
 
    ![](images/kali-sourceslist.png)
+
+6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
+
+  Run the below command to update the GPG keys
+
+  **sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com**
   
-6. Next, run the below command to update the list of available packages.
+7. Next, run the below command to update the list of available packages.
 
    > **Note:** The Below command need to be entered manually in terminal.
    
-   apt-get update
+   **apt-get update**
    
    ![](images/kali-updatecmd.png)
   
-7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
+8. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
 
    > **Note:** The Below command need to be entered manually in terminal.
 
-   apt-get upgrade
+   **apt-get upgrade**
    
-8. Now the system is updated with latest packages or updates from the repository.
+9. Now the system is updated with latest packages or updates from the repository.
 
 ## Task 2 : Essential Kali tools
 
