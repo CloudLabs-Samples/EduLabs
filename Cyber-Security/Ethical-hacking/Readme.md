@@ -92,9 +92,9 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
 6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
 
-  Run the below command to update the GPG keys
+   Run the below command to update the GPG keys
 
-  **sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com**
+   **sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com**
   
 7. Next, run the below command to update the list of available packages.
 
