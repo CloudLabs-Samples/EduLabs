@@ -280,3 +280,5 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    ![](images/msp-4.png)
 
 Note : After running the above command, you should see the status of the PostgreSQL database connection. If you don't get the desired result immediately, don't worry! Sometimes, it takes a time to establish the connection successfully
+
+## Congratulations for completing the lab successfully!
