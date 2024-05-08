@@ -22,7 +22,7 @@ This lab environment includes a Windows Virtual machine
 
    ![](images/vmandguide.png)
 
-2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
+2. To get the lab environment details, you can select the **Environment** tab, you can locate the Environment tab in the upper right corner.
    
    ![](images/environment.png)
 
