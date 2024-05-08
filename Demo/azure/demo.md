@@ -24,7 +24,7 @@ This lab environment includes a Windows Virtual machine
 
 2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
    
-   ![](images/env-details.png)
+   ![](images/environment.png)
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
    
