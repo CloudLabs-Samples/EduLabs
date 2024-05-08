@@ -1,4 +1,4 @@
-# CloudLabs Demo : Azure environment with Windows machine
+# Demo Windows Lab for Trumpf
 
 ## Overview
 Azure virtual machines are one of several types of on-demand, scalable computing resourcesLinks to an external site. that Azure offers. Typically, you choose a virtual machine when you need more control over the computing environment than the other choices offer. This article gives you information about what you should consider before you create a virtual machine, how you create it, and how you manage it.
