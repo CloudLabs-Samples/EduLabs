@@ -1,4 +1,4 @@
-# Custom Lab : epoch
+# Custom Lab : Epoch IT
 
 ## Overview
 This lab environment has a Windows 10 Virtual machine with Visio and Excel pre-installed.
