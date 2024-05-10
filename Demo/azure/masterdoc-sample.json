@@ -1,0 +1,18 @@
+
+[
+  {
+    "Name": "CloudLabs Demo: Azure environment with Windows machine",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/demo.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/demo-v1.md",
+        "Order": 2
+      }
+    ]
+  }
+]
