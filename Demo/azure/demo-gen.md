@@ -28,4 +28,4 @@ After provisioning, you'll find a virtual machine (JumpVM) loaded on the left an
 
    ![Split Window](images/split-win.png)
 
-5. **Tool Utilization**: Utilize the Virtual Machine and associated tools as required for completing the lab tasks.
+5. Utilize the Virtual Machine and associated tools as required for completing the lab tasks.
