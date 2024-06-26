@@ -42,8 +42,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
    • **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
 
-   • **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure 
-it as shown in the demo.
+   • **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure it as shown in the demo.
 
    • **Writing to a Destination:** Add a *Database Destination* object and configure the connection to the sample database then map the fields from cleanse transformation to it.
 
@@ -80,8 +79,7 @@ it as shown in the demo.
 
      *Note: You can use the following credentials to establish connection with Northwind database: [insert database credentials here]*
 
-   - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
-will select the Orders table from the database that you previously connected to. 
+   - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you will select the Orders table from the database that you previously connected to. 
 
      ![](images/image-007.jpg)
 
@@ -91,7 +89,7 @@ will select the Orders table from the database that you previously connected to.
 
      ![](images/image-008.png)
 
-   - Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
+   - Connect the *Delimited Source* and *Database Source* to the *Join* transformation.
 
      ![](images/image-009.jpg)
 
