@@ -62,8 +62,8 @@ it as shown in the demo.
 
    • Double click on its header to specify the file path for the customer data file.
 
-*Note: you can find the customer file at “[insert file path here]”*
-img
+    *Note: you can find the customer file at “[insert file path here]”*
+     img
 
    • Drag and Drop a *Database Table Source* object on to the canvas.
     img
