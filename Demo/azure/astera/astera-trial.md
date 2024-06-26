@@ -153,7 +153,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
 *To learn more about Expression Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/expression-transformation
 
- - **Sort Transformation:**
+- **Sort Transformation:**
   
   - Drag and drop a Sort transformation.
    
