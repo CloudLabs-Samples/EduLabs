@@ -72,32 +72,35 @@ img
 
    • To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
 
-    img
+ img
 
-• Provide the required credentials.
+  • Provide the required credentials.
 
 *Note: You can use the following credentials to establish connection with Northwind database: [insert 
 database credentials here]
 
-• Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
+  • Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
 will select the Orders table from the database that you previously connected to. 
 
 img
 
 3. **Join Data Sources:**
-• Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with 
+
+   • Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with 
 customer details and their corresponding orders.
 
 img
 
-• Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
+   • Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
 img
 
-• Open properties
+   • Open properties
 img
 
 • Set the Join Type to Inner.
+
 • Ensure Sort Left Input and Sort Right Input are checked.
+
 • Match the fields to join on:
    ▪ Left Field: CustomerID
    ▪ Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
