@@ -135,21 +135,21 @@ We have structured this guide to help you accomplish these objectives step by st
 
      ![](images/image-014.jpg)
    
-    - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
+      - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-    - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
+      - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
 
-    ![](images/image-015.jpg)
+        ![](images/image-015.jpg)
 
-   - You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ![](images/image-016.png) option. An Expression Builder window will open.
+      - You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ![](images/image-016.png) option. An Expression Builder window will open.
 
-   - In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
+      - In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
 
-     ![](images/image-017.png)
+        ![](images/image-017.png)
 
-   - You can now see your expression appear in the Expression field.
+      - You can now see your expression appear in the Expression field.
 
-     ![](images/image-018.jpg)
+        ![](images/image-018.jpg)
 
 *To learn more about Expression Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/expression-transformation
 
