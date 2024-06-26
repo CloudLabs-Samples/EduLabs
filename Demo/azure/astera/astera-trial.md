@@ -74,7 +74,7 @@ it as shown in the demo.
 
    • To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
 
-    ![](images/image-006.jpg)
+     ![](images/image-006.png)
 
   • Provide the required credentials.
 
@@ -91,7 +91,7 @@ will select the Orders table from the database that you previously connected to.
    • Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with 
 customer details and their corresponding orders.
 
- ![](images/image-008.jpg)
+ ![](images/image-008.png)
 
    • Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
 
@@ -111,7 +111,7 @@ customer details and their corresponding orders.
    
      - Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
 
-![](images/image-011.jpg)
+![](images/image-011.png)
    
 *To learn more about Join Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/join-transformation
 
