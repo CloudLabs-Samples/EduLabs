@@ -1,4 +1,4 @@
-# Custom Lab: Windows Virtual Machine
+# Astera's Free Trial
 
 ## Overview
 
@@ -29,3 +29,5 @@ After provisioning, you'll find a virtual machine (JumpVM) loaded on the left an
    ![Split Window](images/split-win.png)
 
 5. Utilize the Virtual Machine and associated tools as required for completing the lab tasks.
+
+6. Click on **Next** to proceed with Free trial!
