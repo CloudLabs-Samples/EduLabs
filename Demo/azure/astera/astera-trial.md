@@ -125,7 +125,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
      ![](images/image-013.png)
 
-*To learn more about Filter Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/filter-transformation
+*To learn more about Filter Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/filter-transformation
 
  - **Expression Transformation:**
 
@@ -141,7 +141,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
    ![](images/image-015.jpg)
 
-- You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... ![](images/image-016.png) option. An Expression Builder window will open.
+- You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ![](images/image-016.png) option. An Expression Builder window will open.
 
 - In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
 
@@ -151,7 +151,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
   ![](images/image-018.jpg)
 
-*To learn more about Expression Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/expression-transformation
+*To learn more about Expression Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/expression-transformation
 
 - **Sort Transformation:**
   
