@@ -53,11 +53,14 @@ it as shown in the demo.
 ### Step 1: Advanced Dataflow
 
 1. **Create a New Dataflow:**
+
    • Right-click on the project name "Astera Trial."
+
    • Select *Add > Add New Item > Dataflow*.
 
 2. **Connect to Data Sources:**
   • Drag and Drop a *Delimited Source object* on the canvas.
+
   • Double click on its header to specify the file path for the customer data file.
 
 *Note: you can find the customer file at “[insert file path here]”*
