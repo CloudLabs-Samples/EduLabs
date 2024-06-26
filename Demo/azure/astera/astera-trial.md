@@ -167,7 +167,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
     ![](images/image-020.png)
 
-*To learn more about Sort Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/sort-transformation
+*To learn more about Sort Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/sort-transformation
 
 5. **Write to a Destination:**
    - Add an *Excel Destination* object.
@@ -200,7 +200,7 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 
   ![](images/image-024.jpg) 
 
-*To learn more about Workflows, please visit:*https://documentation.astera.com/workflows/creating-workflows-in-astera
+*To learn more about Workflows, please visit:* https://documentation.astera.com/workflows/creating-workflows-in-astera
 
 ### Step 3: Scheduling the Workflow
 Now that we have configured our dataflows and workflow for DataTech, let's schedule this on a weekly basis to automate the process and minimize manual intervention, ensuring smooth data processing.
@@ -234,4 +234,4 @@ Now that we have configured our dataflows and workflow for DataTech, let's sched
 
      ![](images/image-029.jpg) 
 
-*To learn more about Scheduling, please visit:*https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
+*To learn more about Scheduling, please visit:* https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
