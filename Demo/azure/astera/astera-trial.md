@@ -78,13 +78,12 @@ it as shown in the demo.
 
    - Provide the required credentials.
 
-*Note: You can use the following credentials to establish connection with Northwind database: [insert 
-database credentials here]*
+     *Note: You can use the following credentials to establish connection with Northwind database: [insert database credentials here]*
 
    - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
 will select the Orders table from the database that you previously connected to. 
 
- ![](images/image-007.jpg)
+     ![](images/image-007.jpg)
 
 3. **Join Data Sources:**
 
