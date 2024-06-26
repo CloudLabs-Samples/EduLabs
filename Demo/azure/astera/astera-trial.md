@@ -127,7 +127,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
 *To learn more about Filter Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/filter-transformation
 
-   - **Expression Transformation:**
+  - **Expression Transformation:**
 
       - Drag and drop an *Expression* transformation.
      
@@ -147,7 +147,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
     ![](images/image-017.png)
 
-  - You can now see your expression appear in the Expression field.
+   - You can now see your expression appear in the Expression field.
 
     ![](images/image-018.jpg)
 
