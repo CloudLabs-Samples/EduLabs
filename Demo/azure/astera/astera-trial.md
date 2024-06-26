@@ -87,30 +87,29 @@ will select the Orders table from the database that you previously connected to.
 
 3. **Join Data Sources:**
 
-   • Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with 
-customer details and their corresponding orders.
+   - Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with customer details and their corresponding orders.
 
- ![](images/image-008.png)
+     ![](images/image-008.png)
 
-   • Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
+   - Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
 
- ![](images/image-009.jpg)
+     ![](images/image-009.jpg)
 
-   • Open properties
+   - Open properties
 
- ![](images/image-010.jpg)
+     ![](images/image-010.jpg)
 
-• Set the Join Type to Inner.
+   - Set the Join Type to Inner.
 
-• Ensure Sort Left Input and Sort Right Input are checked.
+   - Ensure Sort Left Input and Sort Right Input are checked.
 
-• Match the fields to join on:
+   - Match the fields to join on:
    
-     - Left Field: CustomerID
+       - Left Field: CustomerID
    
-     - Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
+       - Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
 
-![](images/image-011.png)
+     ![](images/image-011.png)
    
 *To learn more about Join Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/join-transformation
 
