@@ -103,38 +103,43 @@ img
 
 • Match the fields to join on:
    
-     ▪ Left Field: CustomerID
+     - Left Field: CustomerID
    
-     ▪ Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
+     - Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
 
    img
    
 *To learn more about Join Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/join-transformation
 
 4. **Add Transformations:**
+
    • **Filter Transformation:**
-     ▪ Drag and drop the *Filter* transformation.
-     ▪ Map all the fields from the Join Transformation to the Filter Transformation.
+      - Drag and drop the *Filter* transformation.
+      - Map all the fields from the Join Transformation to the Filter Transformation.
 
     img
    
-▪ To configure the *Filter* transformation, right-click on its header and select Properties 
+  ▪ To configure the *Filter* transformation, right-click on its header and select Properties 
 from the context menu.
-▪ Under the *Expression* section in the *Filter* transformation properties window define the 
+
+  ▪ Under the *Expression* section in the *Filter* transformation properties window define the 
 criteria to filter those record which have a Freight value greater than 5 and an 
 OrderDate in the year 1997.
+
 img
 
 *To learn more about Filter Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/filter-transformation
 
 • **Expression Transformation:**
-   ▪ Drag and drop an *Expression* transformation.
-   ▪ Map all the fields from *Filter* transformation to Expression transformation.
+     ▪ Drag and drop an *Expression* transformation.
+     
+     ▪ Map all the fields from *Filter* transformation to Expression transformation.
    img
    
 ▪ To configure the *Filter* transformation, right-click on its header and select 
 Properties from the context menu.
+
 ▪ Since we want to write the address details from multiple fields into a single field, 
 let’s create a new field named *Full_Address*, and specify the *Data Type* as String 
 and check the *Output* option.
@@ -142,6 +147,7 @@ and check the *Output* option.
 img
 
 ▪ You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... option. An Expression Builder window will open.
+
 ▪ In this example, we can either use a concatenate function from the built-in 
 functions or write an expression of our own to return the complete address 
 information in a single field.
@@ -155,13 +161,16 @@ img
 https://documentation.astera.com/dataflows/transformations/expression-transformation
 
 • **Sort Transformation:**
+  
    ▪ Drag and drop a Sort transformation.
+   
    ▪ Map the fields from Expression transformation. (Map the full address field instead of mapping the four fields separately)
    img
    
-▪ To configure the *Sort* transformation, right-click on its header and select 
+  ▪ To configure the *Sort* transformation, right-click on its header and select 
 Properties from the context menu
-▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
+
+  ▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
 ascending order.
 img
 
@@ -170,6 +179,7 @@ https://documentation.astera.com/dataflows/transformations/sort-transformation
 
 5. **Write to a Destination:**
    • Add an *Excel Destination* object.
+
    • Connect it to the *Sort* transformation.
    img
    
