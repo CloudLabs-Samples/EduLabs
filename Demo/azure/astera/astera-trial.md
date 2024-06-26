@@ -32,11 +32,11 @@ We have structured this guide to help you accomplish these objectives step by st
 
     ![](images/image-002.jpg)
 
-  - Select Dataflow in the *Add new item* wizard.
+   - Select Dataflow in the *Add new item* wizard.
 
     ![](images/image-003.jpg)
    
-5. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
+4. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
 
    • **Creating a New Dataflow**: As described in step 3.
 
