@@ -1,9 +1,5 @@
 # Astera's Free Trial
 
-## Overview
-
-This lab environment features a Windows Virtual Machine equipped with SQL Server and SQL Server Management Studio (SSMS), configured with both Windows and SQL authentication enabled.
-
 ## Getting Started
 
 After provisioning, you'll find a virtual machine (JumpVM) loaded on the left and a comprehensive lab guide on the right within your browser.
