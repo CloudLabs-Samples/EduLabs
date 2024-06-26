@@ -127,7 +127,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
 *To learn more about Filter Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/filter-transformation
 
-  - **Expression Transformation:**
+   - **Expression Transformation:**
 
       - Drag and drop an *Expression* transformation.
      
@@ -135,15 +135,15 @@ We have structured this guide to help you accomplish these objectives step by st
 
      ![](images/image-014.jpg)
    
-  - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
+   - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-  - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
+   - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
 
     ![](images/image-015.jpg)
 
-  - You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ![](images/image-016.png) option. An Expression Builder window will open.
+   - You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ![](images/image-016.png) option. An Expression Builder window will open.
 
-  - In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
+   - In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
 
     ![](images/image-017.png)
 
@@ -153,7 +153,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
 *To learn more about Expression Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/expression-transformation
 
-- **Sort Transformation:**
+ - **Sort Transformation:**
   
   - Drag and drop a Sort transformation.
    
@@ -196,9 +196,9 @@ Now to organize multiple dataflows sequentially to streamline data processing le
    ![](images/image-023.png) 
 
 4. **Run the Workflow:**
-  - Click the execute button to execute the workflow.
+   - Click the execute button to execute the workflow.
 
-  ![](images/image-024.jpg) 
+     ![](images/image-024.jpg) 
 
 *To learn more about Workflows, please visit:* https://documentation.astera.com/workflows/creating-workflows-in-astera
 
@@ -208,7 +208,7 @@ Now that we have configured our dataflows and workflow for DataTech, let's sched
 1. **Access the Job Scheduler:**
    - Navigate to *Server > Jobs > Job Schedules*.
 
-    ![](images/image-025.jpg) 
+     ![](images/image-025.jpg) 
 
 2. **Create a New Schedule:**
    - Click on *Add Scheduler Task* icon to create a new schedule.
