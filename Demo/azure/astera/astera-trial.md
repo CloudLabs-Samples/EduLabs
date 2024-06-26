@@ -103,9 +103,9 @@ img
 
 • Match the fields to join on:
    
-   ▪ Left Field: CustomerID
+     ▪ Left Field: CustomerID
    
-   ▪ Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
+     ▪ Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
 
    img
    
