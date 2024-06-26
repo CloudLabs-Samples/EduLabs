@@ -29,13 +29,14 @@ We have structured this guide to help you accomplish these objectives step by st
 3. **Add a Dataflow:**
 
    • In Project Explorer, right-click on the project "Astera Trial."
-   • Select *Add > Add New Item *
+
+   • Select *Add > Add New Item*
         img
 
    • Select Dataflow in the *Add new item* wizard.
    img
    
-4. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
+5. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
    • **Creating a New Dataflow**: As described in step 3.
    • **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
    • **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure 
