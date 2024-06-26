@@ -38,13 +38,13 @@ We have structured this guide to help you accomplish these objectives step by st
    
 4. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
 
-   • **Creating a New Dataflow**: As described in step 3.
+   - **Creating a New Dataflow**: As described in step 3.
 
-   • **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
+   - **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
 
-   • **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure it as shown in the demo.
+   - **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure it as shown in the demo.
 
-   • **Writing to a Destination:** Add a *Database Destination* object and configure the connection to the sample database then map the fields from cleanse transformation to it.
+   - **Writing to a Destination:** Add a *Database Destination* object and configure the connection to the sample database then map the fields from cleanse transformation to it.
 
 ## Task 3: End to End Use Case
 **Objective:** We have already familiarized ourselves with the basic features and interface of Astera Data Pipeline Builder and applied these skills to create a simple dataflow. Now let’s develop a more advanced dataflow and workflow to combine related information into a single dataset and transforming it to generate accurate insights for business analysis and decision making at DataTech.
