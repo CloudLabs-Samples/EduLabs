@@ -54,34 +54,34 @@ it as shown in the demo.
 
 1. **Create a New Dataflow:**
 
-   • Right-click on the project name "Astera Trial."
+   - Right-click on the project name "Astera Trial."
 
-   • Select *Add > Add New Item > Dataflow*.
+   - Select *Add > Add New Item > Dataflow*.
 
 2. **Connect to Data Sources:**
 
-   • Drag and Drop a *Delimited Source object* on the canvas.
+   - Drag and Drop a *Delimited Source object* on the canvas.
 
-   • Double click on its header to specify the file path for the customer data file.
+   - Double click on its header to specify the file path for the customer data file.
 
     *Note: you can find the customer file at “[insert file path here]”*
 
     ![](images/image-004.jpg)
 
-   • Drag and Drop a *Database Table Source* object on to the canvas.
+   - Drag and Drop a *Database Table Source* object on to the canvas.
 
      ![](images/image-005.jpg)
 
-   • To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
+   - To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
 
      ![](images/image-006.png)
 
-  • Provide the required credentials.
+   - Provide the required credentials.
 
 *Note: You can use the following credentials to establish connection with Northwind database: [insert 
 database credentials here]*
 
-  • Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
+   - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
 will select the Orders table from the database that you previously connected to. 
 
  ![](images/image-007.jpg)
