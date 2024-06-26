@@ -18,7 +18,7 @@ We have structured this guide to help you accomplish these objectives step by st
 
 1. **Launch Astera Data Pipeline Builder client:** Double-click the Astera client icon on your desktop or by click the icon on the taskbar.
 
-    ![](images/Astera Trial Lab Guide-image-000.jpg)
+    ![](images/image-000.jpg)
 
 2. **Create a New Project:** Go to *Project > New > Integration Project*, and name your project "Astera Trial"
 
