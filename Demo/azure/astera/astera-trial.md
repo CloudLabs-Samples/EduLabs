@@ -59,19 +59,20 @@ it as shown in the demo.
    • Select *Add > Add New Item > Dataflow*.
 
 2. **Connect to Data Sources:**
-  • Drag and Drop a *Delimited Source object* on the canvas.
 
-  • Double click on its header to specify the file path for the customer data file.
+   • Drag and Drop a *Delimited Source object* on the canvas.
+
+   • Double click on its header to specify the file path for the customer data file.
 
 *Note: you can find the customer file at “[insert file path here]”*
 img
 
- • Drag and Drop a *Database Table Source* object on to the canvas.
-  img
+   • Drag and Drop a *Database Table Source* object on to the canvas.
+    img
 
-• To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
+   • To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
 
-img
+    img
 
 • Provide the required credentials.
 
