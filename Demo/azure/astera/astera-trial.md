@@ -161,7 +161,7 @@ information in a single field.
 
 ▪ You can now see your expression appear in the Expression field.
 
-![](images/image-018.png)
+![](images/image-018.jpg)
 
 *To learn more about Expression Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/expression-transformation
@@ -180,7 +180,7 @@ Properties from the context menu
   ▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
 ascending order.
 
-![](images/image-020.jpg)
+![](images/image-020.png)
 
 *To learn more about Sort Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/sort-transformation
@@ -190,7 +190,7 @@ https://documentation.astera.com/dataflows/transformations/sort-transformation
 
    • Connect it to the *Sort* transformation.
  
-     ![](images/image-021.png)
+     ![](images/image-021.jpg)
    
    • Configure the output settings to write the data to an Excel file.
 
@@ -209,12 +209,12 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 3. **Configure Sequence:**
    • Connect the dataflows to run sequentially.
 
-   ![](images/image-023.jpg) 
+   ![](images/image-023.png) 
 
 4. **Run the Workflow:**
 • Click the execute button to execute the workflow.
 
-  ![](images/image-024.png) 
+  ![](images/image-024.jpg) 
 
 *To learn more about Workflows, please visit:*
 https://documentation.astera.com/workflows/creating-workflows-in-astera
@@ -245,12 +245,12 @@ basis to automate the process and minimize manual intervention, ensuring smooth 
 • Specify the Start Time for the scheduled execution.
 • Select the specific Day of the Week you want the workflow to execute.
 
-     ![](images/image-028.jpg) 
+     ![](images/image-028.png) 
 
 5. **Save the Schedule:**
 • Save your schedule configuration.
 
-     ![](images/image-029.png) 
+     ![](images/image-029.jpg) 
 
 *To learn more about Scheduling, please visit:*
 https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
