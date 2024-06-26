@@ -37,10 +37,14 @@ We have structured this guide to help you accomplish these objectives step by st
    img
    
 5. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
+
    • **Creating a New Dataflow**: As described in step 3.
+
    • **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
+
    • **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure 
 it as shown in the demo.
+
    • **Writing to a Destination:** Add a *Database Destination* object and configure the connection to the sample database then map the fields from cleanse transformation to it.
 
 ## Task 3: End to End Use Case
