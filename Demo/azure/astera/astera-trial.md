@@ -79,7 +79,7 @@ it as shown in the demo.
   • Provide the required credentials.
 
 *Note: You can use the following credentials to establish connection with Northwind database: [insert 
-database credentials here]
+database credentials here]*
 
   • Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
 will select the Orders table from the database that you previously connected to. 
@@ -151,17 +151,17 @@ and check the *Output* option.
 
 ![](images/image-015.jpg)
 
-▪ You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... option. An Expression Builder window will open.
+▪ You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... ![](images/image-016.png) option. An Expression Builder window will open.
 
 ▪ In this example, we can either use a concatenate function from the built-in 
 functions or write an expression of our own to return the complete address 
 information in a single field.
 
-![](images/image-016.png)
+![](images/image-017.png)
 
 ▪ You can now see your expression appear in the Expression field.
 
-![](images/image-017.png)
+![](images/image-018.png)
 
 *To learn more about Expression Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/expression-transformation
@@ -172,7 +172,7 @@ https://documentation.astera.com/dataflows/transformations/expression-transforma
    
    ▪ Map the fields from Expression transformation. (Map the full address field instead of mapping the four fields separately)
 
-   ![](images/image-018.jpg)
+   ![](images/image-019.jpg)
    
   ▪ To configure the *Sort* transformation, right-click on its header and select 
 Properties from the context menu
@@ -180,7 +180,7 @@ Properties from the context menu
   ▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
 ascending order.
 
-![](images/image-019.jpg)
+![](images/image-020.jpg)
 
 *To learn more about Sort Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/sort-transformation
@@ -190,7 +190,7 @@ https://documentation.astera.com/dataflows/transformations/sort-transformation
 
    • Connect it to the *Sort* transformation.
  
-     ![](images/image-020.png)
+     ![](images/image-021.png)
    
    • Configure the output settings to write the data to an Excel file.
 
@@ -204,17 +204,17 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 2. **Add Dataflows to Workflow:**
    • Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
 
-   ![](images/image-021.jpg)
+   ![](images/image-022.jpg)
 
 3. **Configure Sequence:**
    • Connect the dataflows to run sequentially.
 
-   ![](images/image-022.jpg) 
+   ![](images/image-023.jpg) 
 
 4. **Run the Workflow:**
 • Click the execute button to execute the workflow.
 
-  ![](images/image-023.png) 
+  ![](images/image-024.png) 
 
 *To learn more about Workflows, please visit:*
 https://documentation.astera.com/workflows/creating-workflows-in-astera
@@ -226,31 +226,31 @@ basis to automate the process and minimize manual intervention, ensuring smooth 
 1. **Access the Job Scheduler:**
    • Navigate to *Server > Jobs > Job Schedules*.
 
-    ![](images/image-024.jpg) 
+    ![](images/image-025.jpg) 
 
 2. **Create a New Schedule:**
 • Click on *Add Scheduler Task* icon to create a new schedule.
 
-   ![](images/image-025.jpg) 
+   ![](images/image-026.jpg) 
 
 3. **Configure Schedule Details:**
   • Name your schedule to easily identify it later.
   • Choose File as the schedule type as we want to create a schedule for a workflow.
   • In the File Location section, provide the File Path to the file that you want to schedule. (In our case the file path of where our workflow is saved)
 
-  ![](images/image-026.jpg) 
+  ![](images/image-027.jpg) 
 
 4. **Set Execution Frequency:**
 • Set the Frequency to Weekly.
 • Specify the Start Time for the scheduled execution.
 • Select the specific Day of the Week you want the workflow to execute.
 
-     ![](images/image-027.jpg) 
+     ![](images/image-028.jpg) 
 
 5. **Save the Schedule:**
 • Save your schedule configuration.
 
-     ![](images/image-028.png) 
+     ![](images/image-029.png) 
 
 *To learn more about Scheduling, please visit:*
 https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
