@@ -130,7 +130,7 @@ from the context menu.
 criteria to filter those record which have a Freight value greater than 5 and an 
 OrderDate in the year 1997.
 
-![](images/image-013.jpg)
+![](images/image-013.png)
 
 *To learn more about Filter Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/filter-transformation
@@ -157,11 +157,11 @@ and check the *Output* option.
 functions or write an expression of our own to return the complete address 
 information in a single field.
 
-![](images/image-016.jpg)
+![](images/image-016.png)
 
 ▪ You can now see your expression appear in the Expression field.
 
-![](images/image-017.jpg)
+![](images/image-017.png)
 
 *To learn more about Expression Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/expression-transformation
@@ -190,7 +190,7 @@ https://documentation.astera.com/dataflows/transformations/sort-transformation
 
    • Connect it to the *Sort* transformation.
  
-     ![](images/image-020.jpg)
+     ![](images/image-020.png)
    
    • Configure the output settings to write the data to an Excel file.
 
@@ -214,7 +214,7 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 4. **Run the Workflow:**
 • Click the execute button to execute the workflow.
 
-  ![](images/image-023.jpg) 
+  ![](images/image-023.png) 
 
 *To learn more about Workflows, please visit:*
 https://documentation.astera.com/workflows/creating-workflows-in-astera
@@ -250,7 +250,7 @@ basis to automate the process and minimize manual intervention, ensuring smooth 
 5. **Save the Schedule:**
 • Save your schedule configuration.
 
-     ![](images/image-028.jpg) 
+     ![](images/image-028.png) 
 
 *To learn more about Scheduling, please visit:*
 https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
