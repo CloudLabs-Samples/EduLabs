@@ -211,21 +211,21 @@ Now that we have configured our dataflows and workflow for DataTech, let's sched
     ![](images/image-025.jpg) 
 
 2. **Create a New Schedule:**
-  - Click on *Add Scheduler Task* icon to create a new schedule.
+   - Click on *Add Scheduler Task* icon to create a new schedule.
 
-   ![](images/image-026.jpg) 
+     ![](images/image-026.jpg) 
 
 3. **Configure Schedule Details:**
    - Name your schedule to easily identify it later.
    - Choose File as the schedule type as we want to create a schedule for a workflow.
    - In the File Location section, provide the File Path to the file that you want to schedule. (In our case the file path of where our workflow is saved)
 
-  ![](images/image-027.jpg) 
+     ![](images/image-027.jpg) 
 
 4. **Set Execution Frequency:**
-  - Set the Frequency to Weekly.
-  - Specify the Start Time for the scheduled execution.
-  - Select the specific Day of the Week you want the workflow to execute.
+   - Set the Frequency to Weekly.
+   - Specify the Start Time for the scheduled execution.
+   - Select the specific Day of the Week you want the workflow to execute.
 
      ![](images/image-028.png) 
 
