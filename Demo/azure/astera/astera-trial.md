@@ -26,13 +26,13 @@ We have structured this guide to help you accomplish these objectives step by st
 
 3. **Add a Dataflow:**
 
-   • In Project Explorer, right-click on the project "Astera Trial."
+   - In Project Explorer, right-click on the project "Astera Trial."
 
-   • Select *Add > Add New Item*
+   - Select *Add > Add New Item*
 
     ![](images/image-002.jpg)
 
-   • Select Dataflow in the *Add new item* wizard.
+  - Select Dataflow in the *Add new item* wizard.
 
     ![](images/image-003.jpg)
    
