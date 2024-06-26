@@ -22,17 +22,19 @@ We have structured this guide to help you accomplish these objectives step by st
 
 2. **Create a New Project:** Go to *Project > New > Integration Project*, and name your project "Astera Trial"
 
-   img
+   ![](images/image-001.jpg)
 
 3. **Add a Dataflow:**
 
    • In Project Explorer, right-click on the project "Astera Trial."
 
    • Select *Add > Add New Item*
-        img
+
+    ![](images/image-002.jpg)
 
    • Select Dataflow in the *Add new item* wizard.
-   img
+
+    ![](images/image-003.jpg)
    
 5. **Replicate Steps:** Using what you learned in the interactive demo, replicate the steps. This includes:
 
@@ -63,14 +65,16 @@ it as shown in the demo.
    • Double click on its header to specify the file path for the customer data file.
 
     *Note: you can find the customer file at “[insert file path here]”*
-     img
+
+    ![](images/image-004.jpg)
 
    • Drag and Drop a *Database Table Source* object on to the canvas.
-    img
+
+     ![](images/image-005.jpg)
 
    • To configure the *Database Table Source* object, right-click on its header and select Properties from the context menu.
 
- img
+    ![](images/image-006.jpg)
 
   • Provide the required credentials.
 
@@ -80,20 +84,22 @@ database credentials here]
   • Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you 
 will select the Orders table from the database that you previously connected to. 
 
-img
+ ![](images/image-007.jpg)
 
 3. **Join Data Sources:**
 
    • Drag and drop the *Join* transformation from the toolbox, to create a unified dataset with 
 customer details and their corresponding orders.
 
-img
+ ![](images/image-008.jpg)
 
    • Connect the *Delimited Source* and *Database Source* to the *Join *transformation.
-img
+
+ ![](images/image-009.jpg)
 
    • Open properties
-img
+
+ ![](images/image-010.jpg)
 
 • Set the Join Type to Inner.
 
@@ -105,7 +111,7 @@ img
    
      - Right Field: CustomerID (or CustomerID_1 if the source data has a different name for this field)
 
-   img
+![](images/image-011.jpg)
    
 *To learn more about Join Transformation, please visit:* https://documentation.astera.com/dataflows/transformations/join-transformation
 
@@ -115,7 +121,7 @@ img
       - Drag and drop the *Filter* transformation.
       - Map all the fields from the Join Transformation to the Filter Transformation.
 
-    img
+    ![](images/image-012.jpg)
    
   ▪ To configure the *Filter* transformation, right-click on its header and select Properties 
 from the context menu.
@@ -124,7 +130,7 @@ from the context menu.
 criteria to filter those record which have a Freight value greater than 5 and an 
 OrderDate in the year 1997.
 
-img
+![](images/image-013.jpg)
 
 *To learn more about Filter Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/filter-transformation
@@ -133,7 +139,8 @@ https://documentation.astera.com/dataflows/transformations/filter-transformation
      ▪ Drag and drop an *Expression* transformation.
      
      ▪ Map all the fields from *Filter* transformation to Expression transformation.
-   img
+
+   ![](images/image-014.jpg)
    
 ▪ To configure the *Filter* transformation, right-click on its header and select 
 Properties from the context menu.
@@ -142,7 +149,7 @@ Properties from the context menu.
 let’s create a new field named *Full_Address*, and specify the *Data Type* as String 
 and check the *Output* option.
 
-img
+![](images/image-015.jpg)
 
 ▪ You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... option. An Expression Builder window will open.
 
@@ -150,10 +157,11 @@ img
 functions or write an expression of our own to return the complete address 
 information in a single field.
 
-img
+![](images/image-016.jpg)
 
 ▪ You can now see your expression appear in the Expression field.
-img
+
+![](images/image-017.jpg)
 
 *To learn more about Expression Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/expression-transformation
@@ -163,14 +171,16 @@ https://documentation.astera.com/dataflows/transformations/expression-transforma
    ▪ Drag and drop a Sort transformation.
    
    ▪ Map the fields from Expression transformation. (Map the full address field instead of mapping the four fields separately)
-   img
+
+   ![](images/image-018.jpg)
    
   ▪ To configure the *Sort* transformation, right-click on its header and select 
 Properties from the context menu
 
   ▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
 ascending order.
-img
+
+![](images/image-019.jpg)
 
 *To learn more about Sort Transformation, please visit:*
 https://documentation.astera.com/dataflows/transformations/sort-transformation
@@ -179,7 +189,8 @@ https://documentation.astera.com/dataflows/transformations/sort-transformation
    • Add an *Excel Destination* object.
 
    • Connect it to the *Sort* transformation.
-   img
+ 
+     ![](images/image-020.jpg)
    
    • Configure the output settings to write the data to an Excel file.
 
@@ -193,16 +204,17 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 2. **Add Dataflows to Workflow:**
    • Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
 
-img
+   ![](images/image-021.jpg)
 
 3. **Configure Sequence:**
    • Connect the dataflows to run sequentially.
-img 
+
+   ![](images/image-022.jpg) 
 
 4. **Run the Workflow:**
 • Click the execute button to execute the workflow.
 
-img
+  ![](images/image-023.jpg) 
 
 *To learn more about Workflows, please visit:*
 https://documentation.astera.com/workflows/creating-workflows-in-astera
@@ -213,28 +225,32 @@ basis to automate the process and minimize manual intervention, ensuring smooth 
 
 1. **Access the Job Scheduler:**
    • Navigate to *Server > Jobs > Job Schedules*.
-img
+
+    ![](images/image-024.jpg) 
 
 2. **Create a New Schedule:**
 • Click on *Add Scheduler Task* icon to create a new schedule.
-img
+
+   ![](images/image-025.jpg) 
 
 3. **Configure Schedule Details:**
   • Name your schedule to easily identify it later.
   • Choose File as the schedule type as we want to create a schedule for a workflow.
   • In the File Location section, provide the File Path to the file that you want to schedule. (In our case the file path of where our workflow is saved)
-img
+
+  ![](images/image-026.jpg) 
 
 4. **Set Execution Frequency:**
 • Set the Frequency to Weekly.
 • Specify the Start Time for the scheduled execution.
 • Select the specific Day of the Week you want the workflow to execute.
 
-img
+     ![](images/image-027.jpg) 
 
 5. **Save the Schedule:**
 • Save your schedule configuration.
 
-img
+     ![](images/image-028.jpg) 
+
 *To learn more about Scheduling, please visit:*
 https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
