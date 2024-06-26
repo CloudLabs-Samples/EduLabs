@@ -113,140 +113,125 @@ We have structured this guide to help you accomplish these objectives step by st
 
 4. **Add Transformations:**
 
-   • **Filter Transformation:**
-      - Drag and drop the *Filter* transformation.
-      - Map all the fields from the Join Transformation to the Filter Transformation.
+   - **Filter Transformation:**
+        - Drag and drop the *Filter* transformation.
+        - Map all the fields from the Join Transformation to the Filter Transformation.
 
-    ![](images/image-012.jpg)
+     ![](images/image-012.jpg)
    
-  ▪ To configure the *Filter* transformation, right-click on its header and select Properties 
-from the context menu.
+   - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-  ▪ Under the *Expression* section in the *Filter* transformation properties window define the 
-criteria to filter those record which have a Freight value greater than 5 and an 
-OrderDate in the year 1997.
+   - Under the *Expression* section in the *Filter* transformation properties window define the criteria to filter those record which have a Freight value greater than 5 and an OrderDate in the year 1997.
 
-![](images/image-013.png)
+     ![](images/image-013.png)
 
-*To learn more about Filter Transformation, please visit:*
-https://documentation.astera.com/dataflows/transformations/filter-transformation
+*To learn more about Filter Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/filter-transformation
 
-• **Expression Transformation:**
-     ▪ Drag and drop an *Expression* transformation.
+ - **Expression Transformation:**
+
+      - Drag and drop an *Expression* transformation.
      
-     ▪ Map all the fields from *Filter* transformation to Expression transformation.
+      - Map all the fields from *Filter* transformation to Expression transformation.
 
-   ![](images/image-014.jpg)
+     ![](images/image-014.jpg)
    
-▪ To configure the *Filter* transformation, right-click on its header and select 
-Properties from the context menu.
+ - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-▪ Since we want to write the address details from multiple fields into a single field, 
-let’s create a new field named *Full_Address*, and specify the *Data Type* as String 
-and check the *Output* option.
+ - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
 
-![](images/image-015.jpg)
+   ![](images/image-015.jpg)
 
-▪ You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... ![](images/image-016.png) option. An Expression Builder window will open.
+- You can either write an expression directly in the Expression box in the Layout Builder window, or you can build an expression in the Expression Builder. To access the Expression Builder, click on ... ![](images/image-016.png) option. An Expression Builder window will open.
 
-▪ In this example, we can either use a concatenate function from the built-in 
-functions or write an expression of our own to return the complete address 
-information in a single field.
+- In this example, we can either use a concatenate function from the built-in functions or write an expression of our own to return the complete address information in a single field.
 
-![](images/image-017.png)
+  ![](images/image-017.png)
 
-▪ You can now see your expression appear in the Expression field.
+- You can now see your expression appear in the Expression field.
 
-![](images/image-018.jpg)
+  ![](images/image-018.jpg)
 
-*To learn more about Expression Transformation, please visit:*
-https://documentation.astera.com/dataflows/transformations/expression-transformation
+*To learn more about Expression Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/expression-transformation
 
-• **Sort Transformation:**
+- **Sort Transformation:**
   
-   ▪ Drag and drop a Sort transformation.
+  - Drag and drop a Sort transformation.
    
-   ▪ Map the fields from Expression transformation. (Map the full address field instead of mapping the four fields separately)
+  - Map the fields from Expression transformation. (Map the full address field instead of mapping the four fields separately)
 
-   ![](images/image-019.jpg)
+    ![](images/image-019.jpg)
    
-  ▪ To configure the *Sort* transformation, right-click on its header and select 
-Properties from the context menu
+  - To configure the *Sort* transformation, right-click on its header and select Properties from the context menu
 
-  ▪ In the *Sort Transformation* Properties window, set the Sort field to OrderDate in 
-ascending order.
+  - In the *Sort Transformation* Properties window, set the Sort field to OrderDate in ascending order.
 
-![](images/image-020.png)
+    ![](images/image-020.png)
 
-*To learn more about Sort Transformation, please visit:*
-https://documentation.astera.com/dataflows/transformations/sort-transformation
+*To learn more about Sort Transformation, please visit:*https://documentation.astera.com/dataflows/transformations/sort-transformation
 
 5. **Write to a Destination:**
-   • Add an *Excel Destination* object.
+   - Add an *Excel Destination* object.
 
-   • Connect it to the *Sort* transformation.
+   - Connect it to the *Sort* transformation.
  
      ![](images/image-021.jpg)
    
-   • Configure the output settings to write the data to an Excel file.
+   - Configure the output settings to write the data to an Excel file.
 
 ### Step 2: Workflow Creation
 Now to organize multiple dataflows sequentially to streamline data processing let’s create a workflow.
 
 1. **Create a New Workflow:**
-    • Right-click on the project name "Astera Trial."
-    • Select *Add > Add New Item > Workflow*.
+    - Right-click on the project name "Astera Trial."
+    - Select *Add > Add New Item > Workflow*.
 
 2. **Add Dataflows to Workflow:**
-   • Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
+   - Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
 
-   ![](images/image-022.jpg)
+     ![](images/image-022.jpg)
 
 3. **Configure Sequence:**
-   • Connect the dataflows to run sequentially.
+   - Connect the dataflows to run sequentially.
 
    ![](images/image-023.png) 
 
 4. **Run the Workflow:**
-• Click the execute button to execute the workflow.
+  - Click the execute button to execute the workflow.
 
   ![](images/image-024.jpg) 
 
-*To learn more about Workflows, please visit:*
-https://documentation.astera.com/workflows/creating-workflows-in-astera
+*To learn more about Workflows, please visit:*https://documentation.astera.com/workflows/creating-workflows-in-astera
 
 ### Step 3: Scheduling the Workflow
-Now that we have configured our dataflows and workflow for DataTech, let's schedule this on a weekly 
-basis to automate the process and minimize manual intervention, ensuring smooth data processing.
+Now that we have configured our dataflows and workflow for DataTech, let's schedule this on a weekly basis to automate the process and minimize manual intervention, ensuring smooth data processing.
 
 1. **Access the Job Scheduler:**
-   • Navigate to *Server > Jobs > Job Schedules*.
+   - Navigate to *Server > Jobs > Job Schedules*.
 
     ![](images/image-025.jpg) 
 
 2. **Create a New Schedule:**
-• Click on *Add Scheduler Task* icon to create a new schedule.
+  - Click on *Add Scheduler Task* icon to create a new schedule.
 
    ![](images/image-026.jpg) 
 
 3. **Configure Schedule Details:**
-  • Name your schedule to easily identify it later.
-  • Choose File as the schedule type as we want to create a schedule for a workflow.
-  • In the File Location section, provide the File Path to the file that you want to schedule. (In our case the file path of where our workflow is saved)
+   - Name your schedule to easily identify it later.
+   - Choose File as the schedule type as we want to create a schedule for a workflow.
+   - In the File Location section, provide the File Path to the file that you want to schedule. (In our case the file path of where our workflow is saved)
 
   ![](images/image-027.jpg) 
 
 4. **Set Execution Frequency:**
-• Set the Frequency to Weekly.
-• Specify the Start Time for the scheduled execution.
-• Select the specific Day of the Week you want the workflow to execute.
+  - Set the Frequency to Weekly.
+  - Specify the Start Time for the scheduled execution.
+  - Select the specific Day of the Week you want the workflow to execute.
 
      ![](images/image-028.png) 
 
 5. **Save the Schedule:**
-• Save your schedule configuration.
+   - Save your schedule configuration.
 
      ![](images/image-029.jpg) 
 
-*To learn more about Scheduling, please visit:*
-https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
+*To learn more about Scheduling, please visit:*https://documentation.astera.com/project-management-and-scheduling/job-scheduling/scheduling-jobson-the-server
