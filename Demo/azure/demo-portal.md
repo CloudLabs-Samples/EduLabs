@@ -16,7 +16,7 @@ CloudLabs supports native authentication with an email ID and password or using 
 3. You can use any of the available options, including work, school, LinkedIn, or Gmail account for login/signup.
     ![](images/signup-2.png)
  
-**If you do not have one of the above accounts, you can sign up with CloudLabs in order to continue.**
+   **If you do not have one of the above accounts, you can sign up with CloudLabs in order to continue.**
 
 4. Click on the **Sign up now** option available in the end of the login page to get account   created.
    ![](images/signup-3.png)                                   
@@ -36,7 +36,7 @@ CloudLabs supports native authentication with an email ID and password or using 
 
     ![](images/signup-7.png)
  
-   You will be now able to access CloudLabs Portal
+    You will be now able to access CloudLabs Portal
 
  
 
