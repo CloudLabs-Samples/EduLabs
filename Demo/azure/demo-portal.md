@@ -1,5 +1,5 @@
 #  How to access CloudLabs? 
-The CloudLabs portal is accessible at https://portal.cloudlabs.aiand is your one-stop destination for accessing your VM Labs or managing or creating new labs. The same portal is used by all roles, such as learners, end users, administrators, instructors, etc.
+The CloudLabs portal is accessible at https://portal.cloudlabs.ai and it is your one-stop destination for accessing your VM Labs or managing or creating new labs. The same portal is used by all roles, such as learners, end users, administrators, instructors, etc.
 
 CloudLabs supports native authentication with an email ID and password or using SSO providers (Single Sign On) listed below:
 1.	Azure AD (also known as Entra ID/O365/Work or School Account)
