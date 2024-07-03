@@ -11,14 +11,17 @@ CloudLabs supports native authentication with an email ID and password or using 
 1.	Visit https://portal.cloudlabs.ai
 
 2.	Click on **Sign up or log in** button.
-    ![](images/signup-1.png)
+
+  	![](images/signup-1.png)
 
 3. You can use any of the available options, including work, school, LinkedIn, or Gmail account for login/signup.
-    ![](images/signup-2.png)
+
+   ![](images/signup-2.png)
  
    **If you do not have one of the above accounts, you can sign up with CloudLabs in order to continue.**
 
 4. Click on the **Sign up now** option available in the end of the login page to get account   created.
+
    ![](images/signup-3.png)                                   
 
 5.	Enter an **Email Address** now, click **Send verification code**. Other fields are not required to be filled in; they will be filled after you receive the verification code.
@@ -26,7 +29,8 @@ CloudLabs supports native authentication with an email ID and password or using 
     ![](images/signup-4.png)
  
 6.	Provide the verification code you received over the email and click **Verify code**.
-    ![](images/signup-5.png)
+
+  	![](images/signup-5.png)
  
 7.	After the verification process is successful, you can create this account by entering the necessary details, choosing a password, and clicking the **Create** button.
 
