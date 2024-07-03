@@ -1,4 +1,5 @@
 #  How to access CloudLabs? 
+
 The CloudLabs portal is accessible at https://portal.cloudlabs.ai and it is your one-stop destination for accessing your VM Labs or managing or creating new labs. The same portal is used by all roles, such as learners, end users, administrators, instructors, etc.
 
 CloudLabs supports native authentication with an email ID and password or using SSO providers (Single Sign On) listed below:
@@ -8,6 +9,7 @@ CloudLabs supports native authentication with an email ID and password or using 
 4.	Microsoft Account (also known as Live ID)
 
 ## Steps to login/signup:
+
 1.	Visit https://portal.cloudlabs.ai
 
 2.	Click on **Sign up or log in** button.
