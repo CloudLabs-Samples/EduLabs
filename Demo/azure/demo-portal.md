@@ -30,14 +30,17 @@ CloudLabs supports native authentication with an email ID and password or using 
 
     ![](images/signup-4.png)
  
+
 6.	Provide the verification code you received over the email and click **Verify code**.
 
   	![](images/signup-5.png)
  
+
 7.	After the verification process is successful, you can create this account by entering the necessary details, choosing a password, and clicking the **Create** button.
 
     ![](images/signup-6.png)
  
+
 8.	Sign in with the email address and password you created in the previous step and click **Sign in**.
 
     ![](images/signup-7.png)
