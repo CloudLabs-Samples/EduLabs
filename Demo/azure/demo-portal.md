@@ -23,7 +23,7 @@ CloudLabs supports native authentication with an email ID and password or using 
 
 5.	Enter an **Email Address** now, click **Send verification code**. Other fields are not required to be filled in; they will be filled after you receive the verification code.
 
-   ![](images/signup-4.png)
+    ![](images/signup-4.png)
  
 6.	Provide the verification code you received over the email and click **Verify code**.
     ![](images/signup-5.png)
