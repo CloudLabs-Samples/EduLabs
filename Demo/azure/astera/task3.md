@@ -77,7 +77,7 @@ Now let’s develop a more advanced dataflow and workflow to provide you with pr
    
    - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-   - Under the *Expression* section of the *Filter* transformation properties window, **define the criteria to filter records where the** Region **is not null.**
+   - Under the *Expression* **section of the** *Filter* **transformation properties window, define the criteria to filter records where the** Region **is not null.**
 
      ![](images/image-013.png)
 
