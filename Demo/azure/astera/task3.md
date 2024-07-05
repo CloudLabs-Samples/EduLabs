@@ -15,7 +15,7 @@
 
    - Double click on its header to specify the file path for the customer data file.
 
-    *Note: you can find the customer file at “[insert file path here]”*
+    *Note: you can find the customers.csv file at* “C:\Users\labuser\Documents\Resources”
 
     ![](images/image-004.jpg)
 
@@ -27,9 +27,9 @@
 
      ![](images/image-006.png)
 
-   - Provide the required credentials.
-
-     *Note: You can use the following credentials to establish connection with Northwind database: [insert database credentials here]*
+   - Please use the credentials listed in the environment tab to connect to the 'NorthWind' database. The required details are:
+      ▪ User ID: SQL Server username from the environment file
+      ▪ Password: SQL Server password from the environment file
 
    - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you will select the Orders table from the database that you previously connected to. 
 
@@ -73,7 +73,7 @@
    
    - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
 
-   - Under the *Expression* section in the *Filter* transformation properties window define the criteria to filter those record which have a Freight value greater than 5 and an OrderDate in the year 1997.
+   - Under the *Expression* section of the *Filter* transformation properties window, **define the criteria to filter records where the** Region **is not null.**
 
      ![](images/image-013.png)
 
@@ -87,7 +87,7 @@
 
      ![](images/image-014.jpg)
    
-      - To configure the *Filter* transformation, right-click on its header and select Properties from the context menu.
+      - To configure the *Expression* transformation, right-click on its header and select Properties from the context menu.
 
       - Since we want to write the address details from multiple fields into a single field, let’s create a new field named *Full_Address*, and specify the *Data Type* as String and check the *Output* option.
 
@@ -113,7 +113,7 @@
 
     ![](images/image-019.jpg)
    
-  - To configure the *Sort* transformation, right-click on its header and select Properties from the context menu
+  - To configure the *Sort* transformation, right-click on its header and select Properties from the context menu.
 
   - In the *Sort Transformation* Properties window, set the Sort field to OrderDate in ascending order.
 
@@ -130,6 +130,8 @@
    
    - Configure the output settings to write the data to an Excel file.
 
+   - To verify that your data flow is working fine, preview the output by right clicking on the excel destination object and selecting preview output.
+
 ### Step 2: Workflow Creation
 Now to organize multiple dataflows sequentially to streamline data processing let’s create a workflow.
 
@@ -141,6 +143,8 @@ Now to organize multiple dataflows sequentially to streamline data processing le
    - Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
 
      ![](images/image-022.jpg)
+
+  *Note: Please ensure that you have saved all changes to your dataflows before proceeding.*
 
 3. **Configure Sequence:**
    - Connect the dataflows to run sequentially.
