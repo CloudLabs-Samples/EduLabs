@@ -30,8 +30,10 @@ Now let’s develop a more advanced dataflow and workflow to provide you with pr
      ![](images/image-006.png)
 
    - Please use the credentials listed in the environment tab to connect to the 'NorthWind' database. The required details are:
-      ▪ User ID: SQL Server username from the environment file
-      ▪ Password: SQL Server password from the environment file
+
+      ▪ **User ID: SQL Server username from the environment file**
+
+      ▪ **Password: SQL Server password from the environment file**
 
    - Next, you will see a *Pick Source Table* and *Reading Options* window. On this window, you will select the Orders table from the database that you previously connected to. 
 
