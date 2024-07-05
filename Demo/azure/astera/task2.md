@@ -27,10 +27,11 @@
 
    - **Add an Excel Source:** Drag and Drop an *Excel Source* object from the toolbox. Open properties to configure the object as shown in the demo.
 
+     *Note: you can find the customers.xls file at* “C:\Users\labuser\Documents\Resources”
+
    - **Adding and Configuring Transformations:** Drag and drop *Cleanse* transformation and configure it as shown in the demo.
 
    - **Writing to a Destination:** Drag and Drop a *Database Destination* object.
-
 
    - **Database Destination Configuration:**
 
