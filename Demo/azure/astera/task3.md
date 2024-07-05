@@ -1,5 +1,5 @@
 ## Task 3: End to End Use Case
-**Objective:** We have already familiarized ourselves with the basic features and interface of Astera Data Pipeline Builder and applied these skills to create a simple dataflow. Now let’s develop a more advanced dataflow and workflow to combine related information into a single dataset and transforming it to generate accurate insights for business analysis and decision making at DataTech.
+**Objective:**Objective: We have already familiarized ourselves with the basic features and interface of Astera Data Pipeline Builder and applied these skills to create a simple dataflow.Now let’s develop a more advanced dataflow and workflow to provide you with practical experience, we'll explore a scenario where DataTech Solutions aims to enhance customer insights, optimize marketing efforts, and improve operational efficiency through the integration and transformation of data. Additionally, they seek to automate these processes to ensure accurate, up-to-date data for strategic business analysis and informed decision-making. Let’s achieve this using Astera Data Pipeline Builder.
 
 ### Step 1: Advanced Dataflow
 
