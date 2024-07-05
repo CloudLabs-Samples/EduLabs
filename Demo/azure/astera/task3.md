@@ -146,9 +146,9 @@ Now to organize multiple dataflows sequentially to streamline data processing le
 2. **Add Dataflows to Workflow:**
    - Drag and drop the two dataflows created in Tasks 3 and 4 onto the workflow canvas from the project explorer.
 
-     ![](images/image-022.jpg)
-
   *Note: Please ensure that you have saved all changes to your dataflows before proceeding.*
+
+  ![](images/image-022.jpg)
 
 3. **Configure Sequence:**
    - Connect the dataflows to run sequentially.
