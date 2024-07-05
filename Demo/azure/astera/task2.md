@@ -38,8 +38,8 @@
 
        o Please use the credentials listed in the environment tab to connect to the 'ADPTest' database. The required details are:
 
-             ▪ User ID: SQL Server username from the environment file
-             ▪ Password: SQL Server password from the environment file
+          ▪ User ID: SQL Server username from the environment file
+          ▪ Password: SQL Server password from the environment file
 
        o On the next screen select the customers table in the *Pick* table dropdown
 
