@@ -34,8 +34,10 @@
 
    - **Database Destination Configuration:**
        o Double click on the header to configure its properties.
+
        o Please use the credentials listed in the environment tab to connect to the 'ADPTest' database. The required details are:
              ▪ User ID: SQL Server username from the environment file
              ▪ Password: SQL Server password from the environment file
-     o On the next screen select the customers table in the *Pick* table dropdown
+
+       o On the next screen select the customers table in the *Pick* table dropdown
 
