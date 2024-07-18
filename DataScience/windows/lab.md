@@ -76,17 +76,19 @@ After completing this lab, you will learn how to:
 9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
    >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) from the resource group **dslab-<inject key="DeploymentID"></inject>** overview->Essentials tab.
 
-10. While creating the **GPU Cluster**, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+10. While creating the **CPU Cluster** and **GPU Cluster**, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+
+    ![image](https://github.com/user-attachments/assets/ed3d7b2e-b880-41ab-a83e-71bf5eeacceb)
 
     ![](../images/gpu.png)
 
-11. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
+12. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
    ![](../images/resources.png)
     
-12. Also, ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
+13. Also, ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
     ![](../images/compute.png)
 
-13. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
+14. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
    
  ## Summary
  
