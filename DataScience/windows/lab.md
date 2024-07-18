@@ -82,13 +82,13 @@ After completing this lab, you will learn how to:
 
     ![](../images/gpu.png)
 
-12. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
+11. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
    ![](../images/resources.png)
     
-13. Also, ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
+12. Also, ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
     ![](../images/compute.png)
 
-14. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
+13. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
    
  ## Summary
  
