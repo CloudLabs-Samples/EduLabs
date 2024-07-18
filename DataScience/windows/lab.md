@@ -76,7 +76,9 @@ After completing this lab, you will learn how to:
 9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
    >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) from the resource group **dslab-<inject key="DeploymentID"></inject>** overview->Essentials tab.
 
-10. While creating the **GPU Cluster**, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+10. While creating the **CPU Cluster** and **GPU Cluster**, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+
+    ![image](https://github.com/user-attachments/assets/ed3d7b2e-b880-41ab-a83e-71bf5eeacceb)
 
     ![](../images/gpu.png)
 
