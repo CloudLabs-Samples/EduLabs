@@ -9,7 +9,7 @@
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
+        **Note**: Refer to the **Environment** tab for any other lab credentials/details.
         
     ![](images/image-004.jpg)
   
