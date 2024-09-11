@@ -1,5 +1,6 @@
 # Azure Sandbox environment 
 
+
 ## Getting started with the Azure Portal
 
 1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
