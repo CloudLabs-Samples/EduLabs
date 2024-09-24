@@ -13,11 +13,10 @@ an organization to find vulnerabilities that an attacker might be able to exploi
 
 2. **Black hat hacker**- Also known as a cracker, this kind of hacker is referred to as a bad guy, who uses his or her knowledge for negative purposes. They are often referred as **hackers**.
 
-3. **Gray hat hacker**- This kind of hacker is an **intermediate between a white hat and a black hat hacker**. For instance, a gray hat hacker would work as a security professional for an 
-organization and responsibly disclose everything to them; however, he or she might leave a backdoor to access it later and might also sell the confidential information, obtained after 
+3. **Gray hat hacker**- This kind of hacker is an **intermediate between a white hat and a black hat hacker**. For instance, a gray hat hacker would work as a security professional for an organization and responsibly disclose everything to them; however, he or she might leave a backdoor to access it later and might also sell the confidential information, obtained after 
 the compromise of a company’s target server, to competitors.
 
-The sole difference between the terms “hacking” and “ethical hacking” is the permission. Now, let us know what is ethical hacking in the next section.
+The sole difference between the terms “**hacking**” and “**ethical hacking**” is the permission. Now, let us know what is ethical hacking in the next section.
 
 ## Ethical hacking and Penetration testing(Pen-testing)
 
@@ -73,7 +72,7 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
    
 3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
 
-   > **Note:** The Below commands need to be entered manually in terminal.
+   > **Note:** The below credentials need to be entered manually in terminal.
 
    * **Username:** <inject key="Kali VM Username" />
    * **Password:** <inject key="Kali VM Password" />
@@ -84,7 +83,7 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
   
 5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.
 
-   > **Note:** The Below command need to be entered manually in Terminal.
+   > **Note:** The below command need to be entered manually in Terminal.
 
    **more /etc/apt/sources.list**
 
@@ -92,13 +91,13 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
 6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
 
-   Run the below command to update the GPG keys
+   Run the below command need to be entered manually in terminal to update the GPG keys
 
    **sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com**
   
 7. Next, run the below command to update the list of available packages.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    **apt-get update**
    
@@ -106,7 +105,7 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
   
 8. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
 
    **apt-get upgrade**
    
@@ -120,7 +119,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 - Metasploit framework
 - Hydra
 
-1. From the top left corner of the Kali-Linux, select **Applications** and search for pre-installed tools like nmap. Similarly you can check for other pre-installed tools.
+1. From the top left corner of the Kali-Linux, select **Applications** and search for pre-installed tools like **nmap**. Similarly you can check for other pre-installed tools.
 
    ![](images/nmap.png)
 
@@ -153,7 +152,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    
 3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
 
-   > **Note:** The Below commands need to be entered manually in terminal.
+   > **Note:** The below commands need to be entered manually in terminal.
 
    * **Username:** <inject key="Metasploitable VM Username" />
    * **Password:** <inject key="Metasploitable VM Password" />
@@ -161,7 +160,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
 4. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address as you will be using it in the next step.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    ifconfig
    
@@ -169,7 +168,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
 5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the [ip_address of metasploitable vm] with the ip address value you noted in the previous step.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    ping [ip_address of metasploitable vm]
    
@@ -177,7 +176,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
  
 5. Also, run the below command to note down the ip address of Kali-Linux as you will be using it in the further tasks.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    ifconfig
    
@@ -190,20 +189,20 @@ Nmap mainly aims at protecting the network by performing a sniffing which leads 
 
 In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing network** is an important skill and tools for the same is without a doubt the absolute necessity so that we can uncover the potential attacks possible in the weak points in the network and fix them to safeguard our system. And in this exercise you will use nmap commands for network sniffing.
 
-1. Open the Terminal on Kali-Linux and run the below command **nmap**, to list the options of target specification or host discovery and the nmap manual.
+1. Open the Terminal on **Kali-Linux** and run the below command **nmap**, to list the options of target specification or host discovery and the nmap manual.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
-   nmap
+   **nmap**
    
   
      💡 **nmap** helps in network discovery that it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
 
 2. To scan the specific ip address's ports and services, run the below command. In this example, we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
       
-    nmap [ip_addresss of metasploitable vm]
+    **nmap [ip_addresss of metasploitable vm]**
     
    
    ![](images/nmap-sip.png)
@@ -212,7 +211,7 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
 3. Run the below command to scan all the ip addresses available, virtual machines connected in a specific ip address range. In our case the 192.168.100 is the address range(For Kali-Linux and Metasploitable), you can see all the virtual machines connected in this address range as shown below indicates all results to be considered.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
     nmap -sP 192.168.100.*
     
@@ -222,7 +221,7 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
     
 5. Run the below command to scan a host.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    nmap www.yahoo.com
    
@@ -236,13 +235,13 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 
 1. In the Kali Linux, open the terminal and run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    service postgresql start
    
 2. Verify if the PostgreSQL database's status **active** by running the below command.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    service postgresql status
    
@@ -250,14 +249,14 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    
 3. Run the below command to start the PostgreSQL server everytime Kali Linux is rebooted.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    update-rc.d postgresql enable
    
    
 4. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    ss -ant
    
@@ -265,7 +264,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 
 5. Run the below command to open the Metasploit Framework console.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    msfconsole
    
@@ -273,7 +272,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    
 6. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
 
-   > **Note:** The Below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually in terminal.
    
    db_status
    
