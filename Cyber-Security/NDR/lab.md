@@ -53,6 +53,7 @@ Suspicious Network Activities Include:
 ## Lab Activities
 
 **Update GPG Keys and Package Lists**
+
 Update GPG Keys: Run the following command in the Kali terminal:
 
 ```
