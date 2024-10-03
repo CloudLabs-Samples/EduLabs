@@ -43,29 +43,35 @@ In today’s threat landscape, traditional perimeter defenses are insufficient. 
 
 ## Lab Activities
 
-PG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
-
-Run the below command need to be entered manually in terminal to update the GPG keys
+**Update GPG Keys and Package Lists**
+Update GPG Keys: Run the following command in the Kali terminal:
 
 ```
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
 ```
 Next, run the below command to update the list of available packages.
 
-Note: The below command need to be entered manually in terminal.
 ```
 sudo apt-get update
 ```
+GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
 
-**Activity 1: Reconnaissance**
+**Activity 1: Generating Traffic and Reconnaissance**
 
-Objective: Identify open ports and services on the Metasploitable VM.
+Objective: Generate network traffic and identify open ports and services on the Metasploitable VM.
 
-1. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
+1. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
+```
+ping <Metasploitable_IP>
+```
+
+This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
+
+2. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
 ```
 nmap -sS -sV -p- <Metasploitable_IP>
 ```
-2. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
+3. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
 Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
@@ -92,7 +98,7 @@ set RHOST <Metasploitable_IP>
 exploit
 ```
 
-4. Verify access by interacting with the session.
+4. Verify Access: Interact with the session created after exploitation.
 
 **Activity 3: Post-Exploitation Actions**
 
@@ -103,8 +109,7 @@ Objective: Simulate actions an attacker might take after gaining access.
    sudo -l
    ```
    
-3. Data Gathering:
-Run commands to gather system information on Metasploitable VM
+2. Data Gathering: Run commands to gather system information on Metasploitable VM
 ```
 uname -a
 whoami
@@ -125,9 +130,17 @@ Objective: Simulate monitoring and analyze alerts related to the activities perf
 sudo apt update
 sudo apt install suricata
 ```
+2. Start Suricata: Check the status of Suricata to ensure it's running:
+```
+sudo systemctl status suricata
+```
+
+3. If it's not running, start Suricata:
+```
+sudo systemctl start suricata
+```
 
 2. Configure Suricata to monitor the appropriate network interface.
-   Start Suricata:
 ```
 sudo suricata -c /etc/suricata/suricata.yaml -i eth0
 ```
