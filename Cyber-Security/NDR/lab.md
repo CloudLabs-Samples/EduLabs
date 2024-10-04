@@ -96,7 +96,7 @@ Objective: Generate network traffic and identify open ports and services on the 
    ```
    sudo apt install suricata
    ```
-   This command installs Suricata, the open-source NDR tool that will be used to monitor traffic.
+    This command installs Suricata, the open-source NDR tool that will be used to monitor traffic.
    
 7. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
    ```
