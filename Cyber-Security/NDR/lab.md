@@ -91,26 +91,26 @@ Objective: Generate network traffic and identify open ports and services on the 
 
    This command displays the network configuration, including the IP address, which you will use in Kali Linux for reconnaissance
 
-6. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
+5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
    Install Suricata:
    ```
    sudo apt install suricata
    ```
     This command installs Suricata, the open-source NDR tool that will be used to monitor traffic.
    
-7. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
+6. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
    ```
    ping <Metasploitable_IP>
    ```
-  This sends ICMP echo requests to the Metasploitable VM, generating traffic that will be logged by Suricata.
+   This sends ICMP echo requests to the Metasploitable VM, generating traffic that will be logged by Suricata.
 
-8. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
+7. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
    ```
    nmap -sS -sV -p- <Metasploitable_IP>
    ```
    This command scans the Metasploitable VM for open ports and services, helping you gather reconnaissance data.
    
-9. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
+8. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
     Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
