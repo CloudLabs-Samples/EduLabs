@@ -1,0 +1,12 @@
+[
+ {
+    "Name": "Exploring Network Detection and Response (NDR) with Kali Linux and Metasploitable",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Cyber-Security/NDR/lab.md",
+        "Order": 1
+      }
+    ]
+  }
+]
