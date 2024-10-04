@@ -72,8 +72,6 @@ Objective: Generate network traffic and identify open ports and services on the 
 
 1. In the labvm provided, click on **Hyper-V Manager** and select **Metasploitable** under the Virtual machines and click on **Start** to start the virtual machine.
 
-   ![](images/mfstart.png)
-
 2. Once the  Metasploitable OS is on or in Running state, wait for the machine to boot up and click on **Connect**.
    
 3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
@@ -88,8 +86,6 @@ Objective: Generate network traffic and identify open ports and services on the 
    > **Note:** The below command need to be entered manually in terminal.
    
    ifconfig
-   
-   ![](images/mip.png)
 
 5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
    Install Suricata:
