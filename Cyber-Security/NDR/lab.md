@@ -59,12 +59,14 @@ Update GPG Keys: Run the following command in the Kali terminal:
 ```
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
 ```
+GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
+
 Next, run the below command to update the list of available packages.
 
 ```
 sudo apt-get update
 ```
-GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
+This command refreshes the list of available packages on Kali Linux, making sure you can install the latest versions.
 
 **Activity 1: Generating Traffic and Reconnaissance**
 
@@ -87,24 +89,28 @@ Objective: Generate network traffic and identify open ports and services on the 
    
    ifconfig
 
-5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
+   This command displays the network configuration, including the IP address, which you will use in Kali Linux for reconnaissance
+
+6. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
    Install Suricata:
    ```
    sudo apt install suricata
    ```
-
-6. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
+   This command installs Suricata, the open-source NDR tool that will be used to monitor traffic.
+   
+8. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
    ```
    ping <Metasploitable_IP>
    ```
+  This sends ICMP echo requests to the Metasploitable VM, generating traffic that will be logged by Suricata.
 
-   This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
-
-7. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
+9. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
    ```
    nmap -sS -sV -p- <Metasploitable_IP>
    ```
-8. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
+   This command scans the Metasploitable VM for open ports and services, helping you gather reconnaissance data.
+   
+11. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
    Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
@@ -112,18 +118,17 @@ Objective: Generate network traffic and identify open ports and services on the 
 
 Objective: Exploit vulnerabilities in Metasploitable to simulate an attack,observing how NDR detects these actions.
 
-1.  Open a terminal in Kali Linux.
-
-2.  Launch Metasploit:
+1.  Open a terminal in Kali Linux and launch Metasploit by running the below command
     ``` 
     msfconsole
     ```
-
+   This command starts the Metasploit Framework, a powerful tool for exploiting vulnerabilities.
+   
 2. Search for available exploits for Metasploitable services (e.g., vsftpd):
    ```
    search vsftpd
    ```
-   vsFTPd (Very Secure FTP Daemon) is a popular FTP server for Unix-like systems. It is known for its simplicity and security features.
+   vsFTPd (Very Secure FTP Daemon) is a popular FTP server for Unix-like systems.This command searches for available exploits targeting the vsFTPd service, which has known vulnerabilities.
 
 3. Select and configure the exploit:
     ```
@@ -131,7 +136,11 @@ Objective: Exploit vulnerabilities in Metasploitable to simulate an attack,obser
     set RHOST <Metasploitable_IP>
     exploit
     ```
-4. Verify Access: Interact with the session created after exploitation.
+    This configures the selected exploit against the Metasploitable VM and attempts to execute it.
+   
+5. Verify Access: After successfully exploiting, interact with the session created to confirm access to Metasploitable.
+
+   Note: This step verifies that the exploit worked and that you have control over the Metasploitable VM
 
 **Activity 3: Post-Exploitation Actions**
 
@@ -141,45 +150,68 @@ Objective: Simulate actions an attacker might take after gaining access.
    ```
    sudo -l
    ```
+   This command lists the commands that can be run with elevated privileges, providing insight into potential privilege escalation paths.
    
-2. Data Gathering: Run commands to gather system information on Metasploitable VM
+3. Data Gathering: Run commands to gather system information on Metasploitable VM
    ```
    uname -a
    whoami
    ```
-3. Network Information: Check network configuration:
+   These commands help identify the operating system and current user, crucial for planning further exploitation.
+   
+5. Network Information: Check network configuration:
    ```
    ifconfig
    ```
-4. Open Ports and Services: Check for open ports and services:
+   This command provides details about the network interfaces on the Metasploitable VM, which may be useful for lateral movement.
+   
+7. Open Ports and Services: Check for open ports and services:
    ```
    netstat -tuln
    ```
+   This command displays active connections and listening ports, helping you identify potential targets for further exploitation.
+   
 **Activity 4: Monitoring and Analysis**
 
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
 
 1. Start Suricata: Check the status of Suricata to ensure it's running:
-```
-sudo systemctl status suricata
-```
+   ```
+   sudo systemctl status suricata
+   ```
+   This command verifies that Suricata is running and monitoring network traffic.
 
 2. If it's not running, start Suricata:
-```
-sudo systemctl start suricata
-```
+   ```
+   sudo systemctl start suricata
+    ```
+    This command starts Suricata to begin monitoring for suspicious activities.
 
 3. Configure Suricata to monitor the appropriate network interface.
-```
-sudo suricata -c /etc/suricata/suricata.yaml -i eth0
-```
+   ```
+   sudo suricata -c /etc/suricata/suricata.yaml -i eth0
+   ```
+   This command configures Suricata to monitor the specified network interface for traffic.
 
-4. Review Logs:
+4. Review Logs: Check logs for alerts generated during the reconnaissance, exploitation, and post-exploitation activities:
+   ```
+   cat /var/log/suricata/fast.log
+   ```
+   This command displays the fast log where Suricata records detected anomalies, allowing you to analyze how it responds to the simulated attack.
 
-Check logs for alerts generated during the reconnaissance, exploitation, and post-exploitation activities:
-```
-cat /var/log/suricata/fast.log
-```
+5. Review eve.json for Detailed Logs:
+   You can also examine the eve.json file for comprehensive event logs:
+   ```
+   cat /var/log/suricata/eve.json
+   ```
+   This file contains detailed information about alerts, HTTP requests, and other events in JSON format, which is useful for deeper analysis.
+
+6. Check suricata.log:
+   Finally, check the general Suricata logs for operational details:
+   ```
+   cat /var/log/suricata/suricata.log
+   ```
+   This log captures information about Suricata's startup, errors, and warnings, which can help troubleshoot any issues.
 
 ## Discussion and Analysis
 - Review the types of attacks conducted and how they might be detected by an NDR solution.
