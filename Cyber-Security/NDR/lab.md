@@ -152,20 +152,20 @@ Objective: Simulate actions an attacker might take after gaining access.
    ```
    This command lists the commands that can be run with elevated privileges, providing insight into potential privilege escalation paths.
    
-3. Data Gathering: Run commands to gather system information on Metasploitable VM
+2. Data Gathering: Run commands to gather system information on Metasploitable VM
    ```
    uname -a
    whoami
    ```
    These commands help identify the operating system and current user, crucial for planning further exploitation.
    
-5. Network Information: Check network configuration:
+3. Network Information: Check network configuration:
    ```
    ifconfig
    ```
    This command provides details about the network interfaces on the Metasploitable VM, which may be useful for lateral movement.
    
-7. Open Ports and Services: Check for open ports and services:
+4. Open Ports and Services: Check for open ports and services:
    ```
    netstat -tuln
    ```
