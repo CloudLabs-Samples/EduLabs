@@ -70,22 +70,45 @@ GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux dist
 
 Objective: Generate network traffic and identify open ports and services on the Metasploitable VM.
 
-1. Install and Run an Open-Source NDR Tool: Install Suricata:
+1. In the labvm provided, click on **Hyper-V Manager** and select **Metasploitable** under the Virtual machines and click on **Start** to start the virtual machine.
+
+   ![](images/mfstart.png)
+
+2. Once the  Metasploitable OS is on or in Running state, wait for the machine to boot up and click on **Connect**.
+   
+3. You will be prompted to login to the guest OS. Use the below credentials and login to the guest OS.
+
+   > **Note:** The below commands need to be entered manually in terminal.
+
+   * **Username:** <inject key="Metasploitable VM Username" />
+   * **Password:** <inject key="Metasploitable VM Password" />
+
+4. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address as you will be using it in the next step.
+
+   > **Note:** The below command need to be entered manually in terminal.
+   
+   ifconfig
+   
+   ![](images/mip.png)
+
+5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to install and run an Open-Source NDR Tool:
+   Install Suricata:
    ```
    sudo apt install suricata
    ```
-2. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
+
+6. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
   ```
   ping <Metasploitable_IP>
   ```
 
   This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
 
-2. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
+7. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
    ```
    nmap -sS -sV -p- <Metasploitable_IP>
    ```
-3. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
+8. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
    Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
