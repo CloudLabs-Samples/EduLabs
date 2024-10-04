@@ -151,6 +151,14 @@ Objective: Simulate actions an attacker might take after gaining access.
    uname -a
    whoami
    ```
+3. Network Information: Check network configuration:
+   ```
+   ifconfig
+   ```
+4. Open Ports and Services: Check for open ports and services:
+   ```
+   netstat -tuln
+   ```
 **Activity 4: Monitoring and Analysis**
 
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
