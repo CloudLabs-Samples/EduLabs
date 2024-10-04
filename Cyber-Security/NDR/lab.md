@@ -122,7 +122,7 @@ Objective: Exploit vulnerabilities in Metasploitable to simulate an attack,obser
     ``` 
     msfconsole
     ```
-   This command starts the Metasploit Framework, a powerful tool for exploiting vulnerabilities.
+     This command starts the Metasploit Framework, a powerful tool for exploiting vulnerabilities.
    
 2. Search for available exploits for Metasploitable services (e.g., vsftpd):
    ```
