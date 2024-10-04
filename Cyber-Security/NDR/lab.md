@@ -72,8 +72,8 @@ Objective: Generate network traffic and identify open ports and services on the 
 
 1. Install and Run an Open-Source NDR Tool: Install Suricata:
    ```
-  sudo apt install suricata
-  ```
+   sudo apt install suricata
+   ```
 2. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
   ```
   ping <Metasploitable_IP>
