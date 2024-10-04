@@ -175,7 +175,7 @@ Objective: Simulate actions an attacker might take after gaining access.
 
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
 
-1. Start Suricata: Check the status of Suricata to ensure it's running:
+1. Check the status of Suricata to ensure it's running:
    ```
    sudo systemctl status suricata
    ```
