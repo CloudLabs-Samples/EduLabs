@@ -160,17 +160,17 @@ Objective: Simulate monitoring and analyze alerts related to the activities perf
 sudo systemctl status suricata
 ```
 
-3. If it's not running, start Suricata:
+2. If it's not running, start Suricata:
 ```
 sudo systemctl start suricata
 ```
 
-2. Configure Suricata to monitor the appropriate network interface.
+3. Configure Suricata to monitor the appropriate network interface.
 ```
 sudo suricata -c /etc/suricata/suricata.yaml -i eth0
 ```
 
-3. Review Logs:
+4. Review Logs:
 
 Check logs for alerts generated during the reconnaissance, exploitation, and post-exploitation activities:
 ```
