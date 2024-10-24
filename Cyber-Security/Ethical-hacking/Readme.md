@@ -162,7 +162,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   ifconfig
+   **ifconfig**
    
    ![](images/mip.png)
 
@@ -170,7 +170,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   ping [ip_address of metasploitable vm]
+   **ping [ip_address of metasploitable vm]**
    
    ![](images/ping-m.png)
  
@@ -178,7 +178,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   ifconfig
+   **ifconfig**
    
    ![](images/kip.png)
    
@@ -213,7 +213,7 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
    > **Note:** The below command need to be entered manually in terminal.
    
-    nmap -sP 192.168.100.*
+    **nmap -sP 192.168.100.***
     
     ![](images/nmap-sp.png)
     
@@ -223,7 +223,7 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   nmap www.yahoo.com
+   **nmap www.yahoo.com**
    
    💡 The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
 
@@ -231,50 +231,52 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
 ## Exercise 3 - Basics of Exploitation using Metasploit
 
-Metasploit is used for hacking into systems for testing purposes.The Metasploit Framework is an open source platform and a Kali Linux tool that supports vulnerability research, exploit development, and the creation of custom security tools. 
+Metasploit is used for hacking into systems for testing purposes.The Metasploit Framework is an open source platform and a Kali Linux tool that supports vulnerability research, exploit development, and the creation of custom security tools.
 
 1. In the Kali Linux, open the terminal and run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
 
-   > **Note:** The below command need to be entered manually in terminal.
+   > **Note:** The below command need to be entered manually **one by one** in terminal.
+
+   **msfdb init**
    
-   service postgresql start
+   **service postgresql start**
    
-2. Verify if the PostgreSQL database's status **active** by running the below command.
+1. Verify if the PostgreSQL database's status **active** by running the below command.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   service postgresql status
+   **service postgresql status**
    
    ![](images/msp-1.png)
    
-3. Run the below command to start the PostgreSQL server everytime Kali Linux is rebooted.
+2. Run the below command to start the PostgreSQL server everytime Kali Linux is rebooted.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   update-rc.d postgresql enable
+   **update-rc.d postgresql enable**
    
    
-4. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
+3. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   ss -ant
+   **ss -ant**
    
    ![](images/msp-2.png)
 
-5. Run the below command to open the Metasploit Framework console.
+4. Run the below command to open the Metasploit Framework console.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   msfconsole
+   **msfconsole**
    
    ![](images/msp-3.png)
    
-6. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
+5. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   db_status
+   **db_status**
    
    ![](images/msp-4.png)
 
