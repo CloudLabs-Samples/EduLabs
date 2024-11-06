@@ -15,18 +15,22 @@ This lab environment has two Windows Virtual machines with PowerBI Desktop and V
    
    ![](images/environment-tab.png)
 
-3. 5. You can view the **duration** for the lab evironment from the top right corner
+3. You can switch between the virtual machines from top right corner.
+
+   ![](images/switch.png)
+
+4. You can view the **duration** for the lab evironment from the top right corner
 
    ![](images/duration.png)
 
-4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the **uptime(3)** for your VM from here.
+5. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the **uptime(3)** for your VM from here.
 
    ![](images/resources-tab.png)
 
-5. You can also open the Lab Guide on a separate full window by selecting the **+** button on the top right corner.
+6. You can also open the Lab Guide on a separate full window by selecting the **+** button on the top right corner.
 
     ![](images/split-win.png)
 
-6. You can further use the Virtual machine and tools as required.
+7. You can further use the Virtual machine and tools as required.
 
    
