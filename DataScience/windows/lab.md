@@ -32,7 +32,7 @@ After completing this lab, you will learn how to:
    
    ![](../images/gp2.png)
 
-3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
+3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the top right corner.
    
    ![](../images/gp3.png)
  
@@ -42,7 +42,7 @@ After completing this lab, you will learn how to:
    
 ## Access the JupyterLab Application
 
-1. In the virtual machine, double click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
+1. In the virtual machine, double click on the **Jupyter**icon on the desktop to start the Jupyter Notebook.
 
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
@@ -75,13 +75,13 @@ After completing this lab, you will learn how to:
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-10. In the Azure portal click on the Subscriptions option. Copy the Subscription ID and paste it in a notepad file as we will need in the next step.
+10. In the Azure portal click on the Subscriptions option. Copy the Subscription ID and paste it in a notepad file as we will need it in the next step.
 
     ![](../images/gp7.png)
 
     ![](../images/gp8.png)
 
-11. Scroll down and under the **Configure your Azure ML Workspace** provide the following details, leave the region as default, and run the cell.
+11. Scroll down and under the **Configure your Azure ML Workspace** section provide the following details, leave the region as default, and run the cell.
 
     - Subscription ID: Paste the Subscription ID you had copied in the previous step.
     - Resource Group: **dslab-<inject key="DeploymentID"></inject>**
@@ -93,19 +93,19 @@ After completing this lab, you will learn how to:
 
 13. Scroll down and run the cell under **Create a new workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
 
-11. Scroll down,while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+11. Scroll down, and while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
 
     ![image](https://github.com/user-attachments/assets/ed3d7b2e-b880-41ab-a83e-71bf5eeacceb)
 
     ![](../images/gpu.png)
 
-   >**Note**: While creating the CPU cluster or GPU cluster if you get a message stating that **Found existing gpu cluster** in the output section, kindly rename the cluster and run the cell again.
+     >**Note**: While creating the CPU cluster or GPU cluster if you get a message stating that **Found existing cluster** in the output section, kindly rename the cluster and run the cell again.
 
 12. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** in the Azure portal.
 
    ![](../images/gp10.png)
     
-   >**Note** You might have to refresh the page periodically until all the resources appear in the Resource Group.
+   >**Note** You might have to click on refresh periodically until all the resources appear in the Resource Group.
 
 13. To ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created click on the  **ML-<inject key="DeploymentID"></inject>** resource.
 
