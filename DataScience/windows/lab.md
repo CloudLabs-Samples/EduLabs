@@ -1,4 +1,6 @@
-# Getting started with Datascience
+# Hosting Machine Learning Labs with Jupyter on Azure
+
+## Getting started with Datascience
 
 ## Overview
 
@@ -24,76 +26,105 @@ After completing this lab, you will learn how to:
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
-   ![](../images/vmandguide.png)
+   ![](../images/gp1.1.png)
 
-2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
+2. To get the lab environment details, you can select the **Environment** tab.
    
-   ![](../images/envdetails.png)
+   ![](../images/gp2.png)
 
-3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
+3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the top right corner.
    
-   ![](../images/splitwindow.png)
+   ![](../images/gp3.png)
  
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
-   ![](../images/resourcestab.png)
+   ![](../images/gp4.png)
    
 ## Access the JupyterLab Application
 
-1. In the virtual machine, double click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
+1. In the virtual machine, double click on the **Jupyter**icon on the desktop to start the Jupyter Notebook.
 
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
    ![](../images/jupyteronvm.png)
-   **Note:** If you see the page Welcome to Microsoft Edge, then click on Start without your data and continue. 
+
+   >**Note:** If you see the page Welcome to Microsoft Edge, then click on Start without your data and continue. 
    
-3. Once the Jupyter Lab loads up, you will see the File System on the left and **Launcher** on the right. 
+4. Once the Jupyter Lab loads up, you will see the File System on the left and **Launcher** on the right. 
 
    ![](../images/jupyterlab-browser.png)
    
-4. Navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment.
+5. Navigate to the **notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment.
 
    ![](../images/notebooks.png)
    
-5. For this lab demonstration, select the **AzureML** folder.
+6. For this lab demonstration, select the **AzureML** folder.
 
    ![](../images/AzureMLfolder.png)
 
-6. Select the notebook named **configuration.ipynb** using which you will set up your Azure Machine Learning services workspace and configure the notebook library.
+7. Select the notebook named **configuration.ipynb** using which you will set up your Azure Machine Learning services workspace and configure the notebook library.
 
-   ![](../images/configuration.png)
+   ![](../images/gp5.png)
 
-7. Set the Kernel as **Python 3.6 - AzureML - AutoML** (1) , select the cell (2) and click on **Run > (3)** icon to execute the notebook.
-   You will see the output(3) as shown in the screenshot.
+8. Set the Kernel as **Python 3.6 - AzureML - AutoML** (1), scroll down and select the cell under **Azure ML SDK and other Library Installation** (2) and click on **Run > (3)** icon to execute the notebook. You will see the output(4) as shown in the screenshot.
 
-   ![](../images/notebookexample.png)
+   ![](../images/gp6.png)
    
-8. Before executing the remaining cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password and ensure to use the resource group **dslab-<inject key="DeploymentID"></inject>** for performing the lab.
+9. Before executing the remaining cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password 
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
 
-9. Continue to run the remaining cells and provide the necessary values of Subscription ID, Resource Group, Workspace name whereever required. 
-   >You can get the values by logging to the **Azure Portal** (<http://portal.azure.com>) from the resource group **dslab-<inject key="DeploymentID"></inject>** overview->Essentials tab.
+10. In the Azure portal click on the Subscriptions option. Copy the Subscription ID and paste it in a notepad file as we will need it in the next step.
 
-10. While creating the **CPU Cluster** and **GPU Cluster**, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
+    ![](../images/gp7.png)
+
+    ![](../images/gp8.png)
+
+11. Scroll down and under the **Configure your Azure ML Workspace** section provide the following details, leave the region as default, and run the cell.
+
+    - Subscription ID: Paste the Subscription ID you had copied in the previous step.
+    - Resource Group: **dslab-<inject key="DeploymentID"></inject>**
+    - Workspace Name: **ML-<inject key="DeploymentID"></inject>**
+
+     ![](../images/gp9.png)
+    
+12. Now, run the cell under **Access your Workspace** section.
+
+13. Scroll down and run the cell under **Create a new workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
+
+11. Scroll down, and while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
 
     ![image](https://github.com/user-attachments/assets/ed3d7b2e-b880-41ab-a83e-71bf5eeacceb)
 
     ![](../images/gpu.png)
 
-11. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** .
-   ![](../images/resources.png)
+     >**Note**: While creating the CPU cluster or GPU cluster if you get a message stating that **Found existing cluster** in the output section, kindly rename the cluster and run the cell again.
+
+12. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** in the Azure portal.
+
+   ![](../images/gp10.png)
     
-12. Also, ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created by navigating to the Machine Learning studio and **Compute** tab.
+   >**Note** You might have to click on refresh periodically until all the resources appear in the Resource Group.
+
+13. To ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created click on the  **ML-<inject key="DeploymentID"></inject>** resource.
+
+    ![](../images/gp11.png)
+
+14. In the ML workspace Overview page, click on the Studio Web URL which will direct you to the Machine learning Studio window.
+
+    ![](../images/gp12.png)
+
+15. In the Machine Learning studio window, from the left navigation pane click on **Compute** option and navigate to the **Compute Clusters** tab to view the compute resources created.
+
     ![](../images/compute.png)
 
-13. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
+16. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
    
  ## Summary
  
  In this lab environment, you have accessed the JupyterLab application, executed a notebook to configure the Azure Machine learning workspace, and explored other notebooks.
 
-
+## You have successfully completed the workshop.
    
 
