@@ -238,11 +238,30 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 1. In Kali Linux, open Terminal and run the below command to install the latest version of postgresql.
 
    ```
-   apt-get install postgresql-17
+   apt-get install postgresql-17 -y
    ```
+
+1. On the **Configuring libc6:amd64** pane, select **<No\>** option.
+
+   ![](./images/kalisetup2.png)
+
+1. In the next pane, select **<OK\>**.
+
+   ![](./images/kalisetup3.png)
+
    >**Note:** It may take upto 10 minutes to get installed. If you are logged out of Kali Linux vm, please shut down and start it back and use it.
 
-1. In the same terminal, run the following command to stop the postgresql service.
+1. Run the below command to configure the package manager.
+
+   ```
+   dpkg --configure -a
+   ```
+
+1. Now in the **Configuring postgresql-common**, select **<Ok\>**.
+
+   ![](./images/kalisetup4.png)
+
+1. Once the installation is successfull. In the same terminal, run the following command to stop the postgresql service.
 
    ```
    systemctl stop postgresql
