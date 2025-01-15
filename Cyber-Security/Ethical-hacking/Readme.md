@@ -233,28 +233,54 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
 Metasploit is used for hacking into systems for testing purposes.The Metasploit Framework is an open source platform and a Kali Linux tool that supports vulnerability research, exploit development, and the creation of custom security tools.
 
-1. In the Kali Linux, open the terminal and run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
+  > **Note:** The below commands need to be entered manually in terminal.
+
+1. In Kali Linux, open Terminal and run the below command to install the latest version of postgresql.
+
+   ```
+   apt-get install postgresql-17
+   ```
+   >**Note:** It may take upto 10 minutes to get installed.
+
+1. In the same terminal, run the following command to stop the postgresql service.
+
+   ```
+   systemctl stop postgresql
+   ```
+
+1. Once stopped, now you need to change the `PORT` configuration in `postgresql.conf` file for PostgreSQL, run the following command to open that file.
+
+   ```
+   vim /etc/postgresql/17/main/postgresql.conf
+   ```
+
+1. Once the file is opened in the vim editor, press **I** to go to edit mode, change the `PORT` from **5433** to **5432**, which will the default port for postgresql.
+
+   ![](./images/kalisetup1.png)
+
+1. Once the changes are made, press **Esc** and type `:wq` to **Save and Exit**.
+
+1. Once the changes are saved, run the following command to restart and enable the postgresql service.
+
+   ```
+   systemctl restart postgresql@17-main
+   
+   systemctl enable postgresql@17-main
+   ```
+
+1. Once done run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
 
    > **Note:** The below command need to be entered manually **one by one** in terminal.
 
    **msfdb init**
    
-   **service postgresql start**
-   
 1. Verify if the PostgreSQL database's status **active** by running the below command.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **service postgresql status**
+   **service postgresql@17-main status**
    
    ![](images/msp-1.png)
-   
-2. Run the below command to start the PostgreSQL server everytime Kali Linux is rebooted.
-
-   > **Note:** The below command need to be entered manually in terminal.
-   
-   **update-rc.d postgresql enable**
-   
    
 3. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
 
