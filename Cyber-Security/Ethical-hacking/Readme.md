@@ -282,7 +282,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 1. Once the changes are saved, run the following command to restart and enable the postgresql service.
 
    ```
-   systemctl restart postgresql@17-main
+   systemctl start postgresql@17-main
    
    systemctl enable postgresql@17-main
    ```
