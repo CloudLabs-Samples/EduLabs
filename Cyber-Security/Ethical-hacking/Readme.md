@@ -240,7 +240,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    ```
    apt-get install postgresql-17
    ```
-   >**Note:** It may take upto 10 minutes to get installed.
+   >**Note:** It may take upto 10 minutes to get installed. If you are logged out of Kali Linux vm, please shut down and start it back and use it.
 
 1. In the same terminal, run the following command to stop the postgresql service.
 
