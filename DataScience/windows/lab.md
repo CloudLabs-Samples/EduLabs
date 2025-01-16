@@ -26,15 +26,15 @@ After completing this lab, you will learn how to:
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
-   ![](../images/gp1.1.png)
+   ![](../images/gp1.1a.png)
 
 2. To get the lab environment details, you can select the **Environment** tab.
    
-   ![](../images/gp2.png)
+   ![](../images/gp2n.png)
 
 3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the top right corner.
    
-   ![](../images/gp3.png)
+   ![](../images/gp3n.png)
  
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab.
 
@@ -89,13 +89,11 @@ After completing this lab, you will learn how to:
 
      ![](../images/gp9.png)
     
-12. Now, run the cell under **Access your Workspace** section.
+12. Now, run the cell under **Access your Workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
 
-13. Scroll down and run the cell under **Create a new workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
+13. Scroll down and run the cell under **Create a new workspace** section.
 
 11. Scroll down, and while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
-
-    ![image](https://github.com/user-attachments/assets/ed3d7b2e-b880-41ab-a83e-71bf5eeacceb)
 
     ![](../images/gpu.png)
 
@@ -103,9 +101,9 @@ After completing this lab, you will learn how to:
 
 12. After executing the notebook to check if you have successfully executed the notebook, verify if all the resources are created in the resource group **dslab-<inject key="DeploymentID"></inject>** in the Azure portal.
 
-   ![](../images/gp10.png)
+    ![](../images/gp10.png)
     
-   >**Note** You might have to click on refresh periodically until all the resources appear in the Resource Group.
+    >**Note** You might have to click on refresh periodically until all the resources appear in the Resource Group.
 
 13. To ensure that the compute resources **cpu-cluster and gpu-cluster** as mentioned in the notebook are created click on the  **ML-<inject key="DeploymentID"></inject>** resource.
 
