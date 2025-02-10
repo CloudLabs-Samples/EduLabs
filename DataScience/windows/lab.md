@@ -91,8 +91,8 @@ After completing this lab, you will learn how to:
     
 12. Now, run the cell under **Access your Workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
 
-    >**Note:** You will see an error message stating that the workspace is not accessible.
-
+    >**Note:** You will encounter an error message indicating that the workspace is not accessible. Proceed to the next step.
+    
 13. Scroll down and run the cell under **Create a new workspace** section.
 
 11. Scroll down, and while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
