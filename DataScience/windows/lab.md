@@ -84,13 +84,15 @@ After completing this lab, you will learn how to:
 11. Scroll down and under the **Configure your Azure ML Workspace** section provide the following details, leave the region as default, and run the cell.
 
     - Subscription ID: Paste the Subscription ID you had copied in the previous step.
-    - Resource Group: **dslab-<inject key="DeploymentID"></inject>**
-    - Workspace Name: **ML-<inject key="DeploymentID"></inject>**
+    - Resource Group: **dslab-<inject key="Deployment ID" enableCopy="false" />**
+    - Workspace Name: **ML-<inject key="Deployment ID" enableCopy="false" />**
 
      ![](../images/gp9.png)
     
 12. Now, run the cell under **Access your Workspace** section. Once you run this cell a new browser window will open up to sign into the Azure portal. Select the **<inject key="AzureAdUserEmail"></inject>** account and complete the authentication process.
 
+    >**Note:** You will encounter an error message indicating that the workspace is not accessible. Proceed to the next step.
+    
 13. Scroll down and run the cell under **Create a new workspace** section.
 
 11. Scroll down, and while creating the **CPU Cluster** and **GPU Cluster** under the **Create compute resources for your training experiments** section, update the size to **STANDARD_NC4AS_T4_V3** in the cell and then click Run.
@@ -115,7 +117,7 @@ After completing this lab, you will learn how to:
 
 15. In the Machine Learning studio window, from the left navigation pane click on **Compute** option and navigate to the **Compute Clusters** tab to view the compute resources created.
 
-    ![](../images/compute.png)
+    ![](../images/computeupd.png)
 
 16. Similarly, you can navigate to the **/notebooks** directory which has a lot of sample notebooks loaded up for the various technologies and are pre-provisioned within the lab environment. You can explore through the notebooks and perform any exercise with the datascience virtual machine (DSVM).
    
