@@ -69,6 +69,8 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
    ![](images/hyper-v.png)
 
 2. Once the Kali-Linux is turned on or in **Running (1)** state, wait for the machine to boot up and click on **Connect (2)**.
+
+   ![](images/eth1.png)
    
 3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
 
@@ -77,9 +79,11 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
    * **Username:** <inject key="Kali VM Username" />
    * **Password:** <inject key="Kali VM Password" />
 
-4. Open the **Root terminal emulator** from top left corner of the Kali-Linux and if prompted to authenticate provide the password as **kali** and click on **Authenticate**.  This will ensure that you are using the terminal as a root user.
+4. Open the **Root terminal emulator (1)** from top left corner of the Kali-Linux and if prompted to authenticate provide the password as **kali (2)** and click on **Authenticate (3)**.  This will ensure that you are using the terminal as a root user.
 
-   ![](images/root-terminal.png)
+      ![](images/eth2.png)
+
+      ![](images/root-terminal-1.png)
   
 5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.
 
