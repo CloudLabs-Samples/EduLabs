@@ -113,7 +113,9 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
  
       ![](images/kali-updatecmd.png)
   
-7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
+7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**.
+
+   > **Note:** It may take some time to complete.
 
    > **Note:** The below command need to be entered manually in terminal.
 
