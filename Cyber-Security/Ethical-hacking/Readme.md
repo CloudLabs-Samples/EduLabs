@@ -135,7 +135,7 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
 1. From the top left corner of the Kali-Linux, select **Applications** and search for pre-installed tools like **nmap**. Similarly you can check for other pre-installed tools.
 
-   ![](images/nmap.png)
+      ![](images/nmap.png)
 
    💡 **Nmap**, also known as Network mapper is Linux command-line tool for network exploration and security auditing. This tool is generally used by hackers and cybersecurity enthusiasts and even by network and system administrators. It is used for the following purposes:
 
@@ -147,9 +147,9 @@ Some of the pre-installed Kali tools you will explore in this lab are :
 
 2. The **Metasploit framework** is a very powerful tool which can be used by cybercriminals as well as ethical hackers to probe systematic vulnerabilities on networks and servers. Because it's an open-source framework, it can be easily customized and used with most operating systems.
 
-  - Click on **Applications** from the top-left corner and select **Metasploit framework**. This will open up a terminal if prompted provide the Kali-Linux password **kali**.
+     - Click on **Applications** from the top-left corner and select **Metasploit framework**. This will open up a terminal if prompted provide the Kali-Linux password **kali**.
 
-    ![](images/mf.png)
+          ![](images/mf.png)
    
 3. **Hydra** is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
    This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.
@@ -306,37 +306,53 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 
    > **Note:** The below command need to be entered manually **one by one** in terminal.
 
-   **msfdb init**
+      ```
+      msfdb init
+      ```
    
 1. Verify if the PostgreSQL database's status **active** by running the below command.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **service postgresql@17-main status**
+      ```
+      service postgresql@17-main status
+      ```
    
    ![](images/msp-1.png)
    
-3. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
+1. Run the below command to verify if sockets are listening to the incoming connections and to ensure PostgreSQL server is running.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **ss -ant**
+      ```
+      ss -ant
+      ```
    
    ![](images/msp-2.png)
 
-4. Run the below command to open the Metasploit Framework console.
+1. Run the below command to install the latest Metasploit Framework version
+
+   ```
+   apt install metasploit-framework
+   ```   
+
+1. Run the below command to open the Metasploit Framework console.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **msfconsole**
+   ```
+   msfconsole
+   ```
    
    ![](images/msp-3.png)
    
-5. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
+1. Run the below command to ensure that the PostgreSQL database is connected to Metasploitable Framework.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **db_status**
+   ```
+   db_status
+   ```
    
    ![](images/msp-4.png)
 
