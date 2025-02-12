@@ -64,11 +64,11 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
 ## Task 1 : Updating and Upgrading Kali Linux
 
-1. In the labvm provided, click on **Hyper-V Manager** and select **Kali-Linux** under the Virtual machines and click on **Start** to start the virtual machine.
+1. In the labvm provided, click on **Hyper-V Manager (1)** and select **Kali-Linux (2)** under the Virtual machines and click on **Start (3)** to start the virtual machine.
 
    ![](images/hyper-v.png)
 
-2. Once the Kali-Linux is turned on or in Running state, wait for the machine to boot up and click on **Connect**
+2. Once the Kali-Linux is turned on or in **Running (1)** state, wait for the machine to boot up and click on **Connect (2)**.
    
 3. You will be prompted to login to the Kali Linux guest operating system. Use the below credentials and login to the Guest OS.
 
@@ -85,31 +85,39 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
    > **Note:** The below command need to be entered manually in Terminal.
 
-   **more /etc/apt/sources.list**
+      ```
+      more /etc/apt/sources.list
+      ```
 
    ![](images/kali-sourceslist.png)
 
-6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.
+6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.Run the below command to update the GPG keys
 
-   Run the below command need to be entered manually in terminal to update the GPG keys
+      ```
+      apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+      ```
 
-   **sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com**
+   > **Note:** Enter the password when prompted.
   
 7. Next, run the below command to update the list of available packages.
 
    > **Note:** The below command need to be entered manually in terminal.
-   
-   **apt-get update**
-   
-   ![](images/kali-updatecmd.png)
+
+      ```
+      apt-get update
+      ```
+ 
+      ![](images/kali-updatecmd.png)
   
-8. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
+7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**. Note that this may take some time to complete.
 
    > **Note:** The below command need to be entered manually in terminal.
 
-   **apt-get upgrade**
+      ```
+      apt-get upgrade
+      ```
    
-9. Now the system is updated with latest packages or updates from the repository.
+8. Now the system is updated with latest packages or updates from the repository.
 
 ## Task 2 : Essential Kali tools
 
@@ -158,29 +166,25 @@ Some of the pre-installed Kali tools you will explore in this lab are :
    * **Password:** <inject key="Metasploitable VM Password" />
 
 
-4. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address as you will be using it in the next step.
+4. After you are logged in, run the below command to get the IP address of the Metasploitable Virtual machine. Note down the IP address in a notepad.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **ifconfig**
+      ```
+      ifconfig
+      ```
    
-   ![](images/mip.png)
+      ![](images/mip.png)
 
 5. Now, navigate back to Kali-Linux VM and run the below command in the terminal window to connect to Metasploitable VM and verify if the output is similar as shown in the below screenshot. Ensure to replace the [ip_address of metasploitable vm] with the ip address value you noted in the previous step.
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **ping [ip_address of metasploitable vm]**
+      ```
+      ping [ip_address of metasploitable vm]
+      ```
    
-   ![](images/ping-m.png)
- 
-5. Also, run the below command to note down the ip address of Kali-Linux as you will be using it in the further tasks.
-
-   > **Note:** The below command need to be entered manually in terminal.
-   
-   **ifconfig**
-   
-   ![](images/kip.png)
+      ![](images/ping-m.png)
    
 ## Exercise 2 : Scanning with Nmap to find the vulnerable machines
 
@@ -198,14 +202,15 @@ In Kali Linux, analyzing network or in hacking terms, we call it as **sniffing n
   
      💡 **nmap** helps in network discovery that it sends the packets to ip addresses, ip segments and ports inorder to find the running machines and services.
 
-2. To scan the specific ip address's ports and services, run the below command. In this example, we are scanning the ip address of Metasploitable VM that you noted in the previous tasks.
+2. To scan the specific ip address's ports and services, run the below command. In this example, we are scanning the ip address of Metasploitable VM that you noted in the previous task.
 
    > **Note:** The below command need to be entered manually in terminal.
       
-    **nmap [ip_addresss of metasploitable vm]**
-    
-   
-   ![](images/nmap-sip.png)
+    ```
+    nmap [ip_addresss of metasploitable vm]
+    ```   
+
+      ![](images/nmap-sip.png)
    
 Using this, the “threat sniffer” who is noticing some unfamiliar activities from a single IP can scan so that the false positives and false negatives can be distinguished and hit the target if the IP is a notorious one. False positives trigger alert unnecessarily, which might hide any attack. Using the utility to distinguish false positives and false negatives will allow false positives to come out in the open and keep the network analyst on toes to respond to any true positive attack without worrying about the false positives.
 
@@ -213,7 +218,9 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
    > **Note:** The below command need to be entered manually in terminal.
    
-    **nmap -sP 192.168.100.***
+    ```
+    nmap -sP 192.168.100.
+    ```
     
     ![](images/nmap-sp.png)
     
@@ -223,7 +230,9 @@ Using this, the “threat sniffer” who is noticing some unfamiliar activities 
 
    > **Note:** The below command need to be entered manually in terminal.
    
-   **nmap www.yahoo.com**
+   ```
+   nmap www.yahoo.com
+   ```
    
    💡 The next way to use Nmap is by scanning a host for information that might make it a high-value target on a network that the hacker is on the lookout for. For example, attackers prey on the specific host containing financial information.
 
@@ -325,6 +334,6 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    
    ![](images/msp-4.png)
 
-Note : After running the above command, you should see the status of the PostgreSQL database connection. If you don't get the desired result immediately, don't worry! Sometimes, it takes a time to establish the connection successfully
+> **Note:** After running the above command, you should see the status of the PostgreSQL database connection. If you don't get the desired result immediately, don't worry! Sometimes, it takes a time to establish the connection successfully
 
 ## Congratulations for completing the lab successfully!
