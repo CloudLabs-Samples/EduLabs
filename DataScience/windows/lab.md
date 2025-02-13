@@ -42,7 +42,7 @@ After completing this lab, you will learn how to:
    
 ## Access the JupyterLab Application
 
-1. In the virtual machine, double click on the **Jupyter**icon on the desktop to start the Jupyter Notebook.
+1. In the virtual machine, double click on the **Jupyter** icon on the desktop to start the Jupyter Notebook.
 
 2. This will open up a command prompt and a browser will automatically load and navigate you to the JupyterLab application.
 
@@ -70,7 +70,7 @@ After completing this lab, you will learn how to:
 
    ![](../images/gp6.png)
    
-9. Before executing the remaining cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password 
+9. Before executing the remaining cells, login to the **Azure Portal** (<http://portal.azure.com>) using the following email/username and Password.
 
    * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
@@ -86,6 +86,7 @@ After completing this lab, you will learn how to:
     - Subscription ID: Paste the Subscription ID you had copied in the previous step.
     - Resource Group: **dslab-<inject key="Deployment ID" enableCopy="false" />**
     - Workspace Name: **ML-<inject key="Deployment ID" enableCopy="false" />**
+
 
      ![](../images/gp9.png)
     
