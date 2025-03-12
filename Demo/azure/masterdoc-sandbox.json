@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Azure Sanbox environment",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/demo-azuresandbox.md",
+        "Order": 1
+      }
+    ]
+  }
+]
