@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-After provisioning, you'll find a virtual machine (JumpVM) with Android studio and Visual Studio loaded on the left and a comprehensive lab guide on the right within your browser.
+After provisioning, you'll find a **virtual machine (JumpVM)** with **Android studio** and **Visual Studio** loaded on the left and a comprehensive lab guide on the right within your browser.
 
 ![Virtual Machine and Guide](images/vmandguide-u.png)
 
