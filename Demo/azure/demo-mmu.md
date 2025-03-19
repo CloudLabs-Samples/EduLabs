@@ -26,4 +26,3 @@ After provisioning, you'll find a virtual machine (JumpVM) loaded on the left an
 
 5. Utilize the Virtual Machine and associated tools as required for completing the lab tasks.
 
-6. Click on **Next** to proceed with Free trial!
