@@ -256,6 +256,8 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    apt-get install postgresql-17 -y
    ```
 
+   > **Note:**If you encounter an error stating that the at-spi2-core package can't be installed, try running the command `sudo apt install at-spi2-core`. After running the command when asked manually type **Yes,do as I say**.
+
 1. On the **Configuring libc6:amd64** pane, select **<No\>** option.
 
    ![](./images/kalisetup2.png)
