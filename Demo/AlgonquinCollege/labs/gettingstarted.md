@@ -10,7 +10,7 @@
    
    ![Environment Details](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/env-details.png)
 
-3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the bottom right corner.
+3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the top right corner.
    
 4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM from here.
 
