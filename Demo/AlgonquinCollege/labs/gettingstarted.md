@@ -45,4 +45,6 @@
 
    ![Image 007](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image-007.jpg)
 
-1. You can now deploy the azure resources required for your lab
+1. **Click Next** to start the lab.
+
+   Follow the instructions on the next page to proceed with the lab steps.
