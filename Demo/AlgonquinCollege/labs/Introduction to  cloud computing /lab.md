@@ -1,4 +1,4 @@
-# Lab 5: Introduction to Cloud Computing - SQL Databases
+# Lab 5: Introduction to Cloud Computing
 
 ## Prerequisites:
 Before beginning this lab, make sure you have the following tools installed:
@@ -9,6 +9,8 @@ Before beginning this lab, make sure you have the following tools installed:
 Ensure that these tools are installed and working correctly before proceeding with the lab.
 
 ## Lab Steps:
+
+## SQL Databases
 
 ### Step 1: Create a SQL Database
 1. **Create a new SQL Database** on Azure for a development workload environment:
