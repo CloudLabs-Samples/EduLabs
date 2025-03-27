@@ -49,7 +49,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 4. If prompted to stay signed in, you can click "No."
 
-    ![](media/15.png)
+    ![](images/15.png)
  
 5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
  
