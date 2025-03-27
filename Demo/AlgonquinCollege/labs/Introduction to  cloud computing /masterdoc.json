@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Introduction to cloud computing",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/AlgonquinCollege/labs/gettingstarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/AlgonquinCollege/labs/Introduction%20to%20%20cloud%20computing%20/lab.md",
+        "Order": 2
+      }
+    ]
+  }
+]
