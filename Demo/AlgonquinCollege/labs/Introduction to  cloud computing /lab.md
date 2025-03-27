@@ -3,8 +3,6 @@
 ## Prerequisites:
 A VM with **Azure Data Studio** and **SQL Server Management Studio (SSMS)** pre-installed has been provided to you; please use these tools for the lab.
 
-## Lab Steps:
-
 ## SQL Databases
 
 A **SQL Database** is a type of database that uses **Structured Query Language (SQL)** to manage and manipulate relational data. SQL databases store data in **tables** (rows and columns), where each table represents a different entity, and relationships between entities are defined using keys (e.g., primary and foreign keys).
@@ -19,32 +17,66 @@ Examples of SQL databases include **Microsoft SQL Server**, **MySQL**, **Postgre
 
 In cloud computing, services like **Azure SQL Database** allow users to manage relational data in the cloud without the need for physical infrastructure management.
 
-### Task 1: Create a SQL Database
+In this lab, we will create a SQL database in Azure and then query the data in that database.
+
+### Task 1: Create a SQL Database on Azure
 
 1. Log into your **Azure Portal** if you haven't already.
    
 2. In the left sidebar, click **Create a resource**, then search for **SQL Database**.
+
    ![Create a Resource](images/1.png)
 
 3. Click on **SQL Database** and then click **Create**.
 
-4. Fill in the necessary details:
-   1. **Subscription**: Choose your active subscription.
-   2. **Resource Group**: Select or create a new resource group.
-   3. **Database Name**: Choose a name for your SQL Database.
-   4. **Server**: Either select an existing server or create a new one.
-   5. **Subscription**: Choose your subscription.
-5. Select **Locally Redundant Storage (LRS)** for backup options.
-6. In the **Authentication Method** section, select both **SQL Authentication** and **Microsoft Entra authentication**.
-8. For SQL Authentication, you will need to specify the SQL admin username and password.
-9. For Microsoft Entra Authentication, ensure your Azure Active Directory (AAD) credentials are ready to use.
-10. Under the **Backup** section, choose **Locally redundant** as the backup storage redundancy option. This ensures that backups are stored in the same region for high availability.
-11. Take screenshots:
-   1. Screenshot showing the configuration of the **SQL database** creation form.
-   2. Screenshot focusing on the settings where you enable both **SQL Authentication** and **Microsoft Entra Authentication**.
-   3. Screenshot of the backup configuration where you select **Locally Redundant Storage**.
+   ![Create a Resource2](images/2.png)
 
----
+4. **On the Basics tab of the Create SQL Database form**, under **Project details**, select the existing **Azure Subscription** and **Resource group**  **cloudcomputing-<inject key="DeploymentID" enableCopy="false"/>** 
+
+   ![Create SQL DB](images/3.png)
+
+5. For **Database name**, enter **mydb-<inject key="DeploymentID" enableCopy="false"/>** 
+
+7. For **Server**, select **Create new**, and fill out the **New server** form with the following values:
+   - **Server name**: Enter `mysqlserver`, and add some characters for uniqueness. Server names must be globally unique for all servers in Azure, not just unique within a subscription. So, enter something like `mysqlserver12345`, and the portal will let you know if it's available.
+   - **Location**: Select a location from the dropdown list.
+   - **Authentication method**: Select **Use SQL authentication**.
+   - **Server admin login**: Enter `azureuser`.
+   - **Password**: Enter a password that meets the requirements, and enter it again in the **Confirm password** field.
+
+8. Select **OK**.
+6. Leave **Want to use SQL elastic pool** set to **No**.
+7. For **Workload environment**, specify **Development** for this exercise.
+   - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be overridden.
+   - The **Development** workload environment sets the following options:
+     - **Backup storage redundancy** is **locally redundant storage**.
+     - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
+   - Choosing the **Production** workload environment sets:
+     - **Backup storage redundancy** is **geo-redundant storage**.
+     - **Compute + storage** is **General Purpose, Provisioned** with 2 vCores and 32 GB of storage.
+8. Under **Compute + storage**, select **Configure database**.
+   - This quickstart uses a **serverless database**, so leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)** and set **Compute tier** to **Serverless**.
+   - Select **Apply**.
+9. Under **Backup storage redundancy**, choose a redundancy option for the storage account where your backups will be saved. 
+   - To learn more, see **backup storage redundancy**.
+10. Select **Next: Networking** at the bottom of the page.
+    - **Screenshot** of the **Create SQL Database** page, **Basic** tab from the Azure portal.
+11. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
+12. For **Firewall rules**, set **Add current client IP address** to **Yes**.
+13. Leave **Allow Azure services and resources to access this server** set to **No**.
+    - **Screenshot** of the **Azure portal** showing the **Networking** tab for **firewall rules**.
+14. Under **Connection policy**, choose the **Default connection policy**, and leave the **Minimum TLS version** at the default of **TLS 1.2**.
+15. Select **Next: Security** at the bottom of the page.
+    - **Screenshot** that shows the **Networking** tab for **policy** and **encryption**.
+16. On the **Security** page, you can choose to start a free trial of **Microsoft Defender for SQL**, as well as configure **Ledger**, **Managed identities**, and **Azure SQL transparent data encryption with customer-managed key** if desired.
+17. Select **Next: Additional settings** at the bottom of the page.
+18. On the **Additional settings** tab, in the **Data source** section, for **Use existing data**, select **Sample**.
+    - This creates an **AdventureWorksLT sample database** so there are some tables and data to query and experiment with, as opposed to an empty blank database.
+    - You can also configure **database collation** and a **maintenance window**.
+19. Select **Review + create** at the bottom of the page:
+    - **Screenshot** of the **Azure portal** showing the **Additional settings** tab.
+20. On the **Review + create** page, after reviewing, select **Create**.
+
 
 ### Step 2: Login to the Database
 
