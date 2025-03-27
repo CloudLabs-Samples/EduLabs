@@ -52,13 +52,7 @@ Ensure that these tools are installed and working correctly before proceeding wi
    - Take a screenshot showing the credentials being entered and confirm the successful sign-in with Microsoft Entra authentication.
 
 ### Step 3: Delete Resources
-1. **Delete the SQL Database**:
-   - After completing the lab, go back to the **Azure Portal**.
-   - Locate the SQL Database and SQL Server resources you created.
-   - Click on the SQL Database, then click **Delete** to remove the database.
-   - Confirm the deletion and wait for the resources to be deleted.
-
-2. **Delete any other resources** (e.g., resource groups, servers, etc.) that were created during the lab to ensure clean-up of all resources.
+All the resources will be deleted automatically once the lab duration is exhausted.
 
 **Note**: Make sure to follow the lab instructions carefully and ensure that the necessary configurations and settings are applied during each step.
 
