@@ -21,21 +21,25 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
 ### Task 1: Create a SQL Database on Azure
 
-1. Log into your **Azure Portal** if you haven't already.
+1. Log into your **Azure Portal** if you haven't already using the credentials
    
-2. In the left sidebar, click **Create a resource**, then search for **SQL Database**.
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   
+3. In the left sidebar, click **Create a resource**, then search for **SQL Database**.
 
    ![Create a Resource](images/1.png)
 
-3. Click on **SQL Database** and then click **Create**.
+4. Click on **SQL Database** and then click **Create**.
 
    ![Create a Resource2](images/2.png)
 
-4. **On the Basics tab of the Create SQL Database form**, under **Project details**, select the existing **Azure Subscription** and **Resource group**  **cloudcomputing-<inject key="DeploymentID" enableCopy="false"/>** 
+5. **On the Basics tab of the Create SQL Database form**, under **Project details**, select the existing **Azure Subscription** and **Resource group**  **cloudcomputing-<inject key="DeploymentID" enableCopy="false"/>** 
 
    ![Create SQL DB](images/3.png)
 
-5. For **Database name**, enter **mydb-<inject key="DeploymentID" enableCopy="false"/>** 
+6. For **Database name**, enter **mydb-<inject key="DeploymentID" enableCopy="false"/>** 
 
 7. For **Server**, select **Create new**, and fill out the **New server** form with the following values:
    - **Server name**: Enter `mysqlserver`, and add some characters for uniqueness. Server names must be globally unique for all servers in Azure, not just unique within a subscription. So, enter something like `mysqlserver12345`, and the portal will let you know if it's available.
