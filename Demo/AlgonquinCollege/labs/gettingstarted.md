@@ -6,7 +6,7 @@
 
    ![VM and Guide](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/vmandguide.png)
 
-2. To get the lab environment details, you can select the **Environment details** tab, you can locate the **Environment details** tab in the upper right corner.
+2. To get the lab environment details, you can select the **Environment** tab, you can locate the **Environment** tab in the upper right corner.
    
    ![Environment Details](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/env-details.png)
 
