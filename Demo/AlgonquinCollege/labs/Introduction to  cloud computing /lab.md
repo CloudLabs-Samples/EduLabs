@@ -60,32 +60,5 @@ Ensure that these tools are installed and working correctly before proceeding wi
 
 2. **Delete any other resources** (e.g., resource groups, servers, etc.) that were created during the lab to ensure clean-up of all resources.
 
-3. Take a **screenshot** showing the deletion process of the SQL Database and other related resources.
-
-## Screenshots:
-
-### Step 1: Create a SQL Database
-- **Screenshot 1**: The creation of the SQL Database and Server in the Azure Portal.
-  - Ensure this screenshot captures the selections for the **workload environment**, **SQL Authentication**, and **Microsoft Entra Authentication**.
-- **Screenshot 2**: Enable both **SQL Authentication** and **Microsoft Entra Authentication** for login.
-- **Screenshot 3**: Select the **Locally Redundant Backup Storage** option during the database creation.
-
-### Step 2: Login to the Database
-- **Screenshot 1**: Input of **SQL Authentication** credentials and the successful sign-in result.
-- **Screenshot 2**: Input of **Microsoft Entra Authentication** credentials and the successful sign-in result.
-
-### Step 3: Delete Resources
-- **Screenshot 1**: Deleting the SQL Database and other resources in Azure.
-  - This screenshot should show the process of deleting the resources (SQL Database, SQL Server, and possibly the resource group).
-
----
-
-## Submission:
-
-- Please ensure all screenshots are clearly visible and appropriately annotated to show each step performed during the lab.
-- Submit the markdown file along with the screenshots to complete your lab submission.
-
----
-
 **Note**: Make sure to follow the lab instructions carefully and ensure that the necessary configurations and settings are applied during each step.
 
