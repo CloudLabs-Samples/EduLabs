@@ -1,50 +1,59 @@
-## Getting started
+# Getting Started 
+ 
+## Accessing Your Lab Environment
+ 
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+ 
+![Access Your VM and Lab Guide](media/GettingStarted/labguide.png)
 
-## Instructions
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+![Explore Lab Resources](media/env.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+ 
+![Use the Split Window Feature](media/GettingStarted/spl.png)
+ 
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+ 
+   ![Manage Your Virtual Machine](media/GettingStarted/res.png)
+ 
+## Let's Get Started with Azure Portal
+ 
+1. On your virtual machine, click on the Azure Portal icon as shown below:
+ 
+   ![Launch Azure Portal](media/GettingStarted/sc900-image(1).png)
 
-1. Once the environment is provisioned, a **virtual machine** (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
+ 
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+   ![Enter Your Username](media/GettingStarted/sc900-image-1.png)
+ 
+3. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+   ![Enter Your Password](media/GettingStarted/sc900-image-2.png)
+ 
+4. If prompted to stay signed in, you can click "No."
 
-   ![VM and Guide](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/vmandguide.png)
-
-2. To get the lab environment details, you can select the **Environment** tab, you can locate the **Environment** tab in the upper right corner.
-   
-   ![Environment Details](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/env-details.png)
-
-3. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button on the top right corner.
-   
-4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the uptime remaining for your VM from here.
-
-   ![Resources](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/resources.png)
-
-## Getting started with the Azure Portal
-
-1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
-
-1. On the **Sign in to Microsoft Azure** blade, you will see a login screen, in which enter the following email/username and then click on **Next**.  
-
-   * **Azure Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
-   * **Azure Password**:  <inject key="AzureAdUserPassword"></inject>
-
-        **Note**: Refer to the **Environment Details** tab for any other lab credentials/details.
-        
-   ![Image 004](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image-004.jpg)
-  
-   ![Image 005](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image-005.jpg)
-  
-1. If you see the pop-up like below, click **Skip for now(14 days until this is required)**.
-
-   ![Image 004](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image004.png)
-
-1. If you see the pop-up **Stay Signed in?** click **No**.
-
-   ![Image 006](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image-006.jpg)
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
-
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-   ![Image 007](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/azure/images/image-007.jpg)
-
-1. **Click Next** to start the lab.
-
-   Follow the instructions on the next page to proceed with the lab steps.
+    ![](media/15.png)
+ 
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
+ 
+6. Click "Next" from the bottom right corner to embark on your Lab journey!
+ 
+   ![Start Your Azure Journey](media/GettingStarted/sc900-image(3).png)
+ 
