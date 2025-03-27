@@ -12,6 +12,19 @@ Ensure that these tools are installed and working correctly before proceeding wi
 
 ## SQL Databases
 
+A **SQL Database** is a type of database that uses **Structured Query Language (SQL)** to manage and manipulate relational data. SQL databases store data in **tables** (rows and columns), where each table represents a different entity, and relationships between entities are defined using keys (e.g., primary and foreign keys).
+
+Key features of SQL databases include:
+- **Structured Data**: Data is stored in tables with predefined structures.
+- **Relational Model**: Data is linked across tables using relationships such as primary and foreign keys.
+- **SQL**: The language used to interact with the database, including querying, inserting, updating, and deleting data.
+- **ACID Properties**: Ensures that database transactions are processed reliably and maintain data integrity (Atomicity, Consistency, Isolation, Durability).
+  
+Examples of SQL databases include **Microsoft SQL Server**, **MySQL**, **PostgreSQL**, and **Oracle Database**. These databases are widely used in various applications, including business systems, e-commerce, and financial applications.
+
+In cloud computing, services like **Azure SQL Database** allow users to manage relational data in the cloud without the need for physical infrastructure management.
+
+
 ### Step 1: Create a SQL Database
 1. **Create a new SQL Database** on Azure for a development workload environment:
    - Log into your [Azure Portal](https://portal.azure.com/).
