@@ -1,12 +1,7 @@
 # Lab 5: Introduction to Cloud Computing
 
 ## Prerequisites:
-Before beginning this lab, make sure you have the following tools installed:
-- **SQL Server Management Studio (SSMS)** or **Azure Data Studio**.
-  - **Download SSMS** from [here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16).
-  - **Download Azure Data Studio** from [here](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall#download-azure-data-studio).
-
-Ensure that these tools are installed and working correctly before proceeding with the lab.
+A VM with **Azure Data Studio** and **SQL Server Management Studio (SSMS)** pre-installed has been provided to you; please use these tools for the lab.
 
 ## Lab Steps:
 
@@ -23,7 +18,6 @@ Key features of SQL databases include:
 Examples of SQL databases include **Microsoft SQL Server**, **MySQL**, **PostgreSQL**, and **Oracle Database**. These databases are widely used in various applications, including business systems, e-commerce, and financial applications.
 
 In cloud computing, services like **Azure SQL Database** allow users to manage relational data in the cloud without the need for physical infrastructure management.
-
 
 ### Step 1: Create a SQL Database
 1. **Create a new SQL Database** on Azure for a development workload environment:
