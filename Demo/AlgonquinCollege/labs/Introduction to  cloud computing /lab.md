@@ -57,21 +57,24 @@ In this lab, we will create a SQL database in Azure and then query the data in t
    
 10. Leave **Want to use SQL elastic pool** set to **No**.
 
-11. For **Workload environment**, specify **Development** for this exercise.
+11. For **Workload environment**, specify **Development** for this task.
    - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be overridden.
    - The **Development** workload environment sets the following options:
      - **Backup storage redundancy** is **locally redundant storage**.
      - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
+
+        Leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)
+
+     ![SQL DB env](images/6.png)
+   
    - Choosing the **Production** workload environment sets:
      - **Backup storage redundancy** is **geo-redundant storage**.
      - **Compute + storage** is **General Purpose, Provisioned** with 2 vCores and 32 GB of storage.
-8. Under **Compute + storage**, select **Configure database**.
-   - This quickstart uses a **serverless database**, so leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)** and set **Compute tier** to **Serverless**.
-   - Select **Apply**.
-9. Under **Backup storage redundancy**, choose a redundancy option for the storage account where your backups will be saved. 
-   - To learn more, see **backup storage redundancy**.
-10. Select **Next: Networking** at the bottom of the page.
-    - **Screenshot** of the **Create SQL Database** page, **Basic** tab from the Azure portal.
+        Leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)
+
+12. Select **Next: Networking** at the bottom of the page.
+
+
 11. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
 12. For **Firewall rules**, set **Add current client IP address** to **Yes**.
 13. Leave **Allow Azure services and resources to access this server** set to **No**.
