@@ -17,7 +17,7 @@ Examples of SQL databases include **Microsoft SQL Server**, **MySQL**, **Postgre
 
 In cloud computing, services like **Azure SQL Database** allow users to manage relational data in the cloud without the need for physical infrastructure management.
 
-In this lab, we will create a SQL database in Azure and then query the data in that database.
+In this lab, we will create a **SQL database** in Azure and login to the database using SQL Server Management Studio (SSMS).
 
 ### Task 1: Create a SQL Database on Azure
 
@@ -116,26 +116,45 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
 ### Task 2: Login to the Database
 
-1. Open SSMS or Azure Data Studio and connect to the SQL Database server created in Task 1.
+1. Open SSMS or Azure Data Studio to connect to the SQL Database server created in Task 1.
 
-2. Enter the **SQL login** credentials that you set during the database creation in Task 1 (SQL admin username and password).
+   ![SSMS ](images/15.png)
 
-3. Click **Connect**.
+2. Start SQL Server Management Studio. The first time you run SSMS, the **Connect to Server** window opens. If it doesn't open, you can open it manually by selecting **Object Explorer > Connect > Database Engine**.
 
-4. Take a screenshot showing the credentials being entered in SSMS/Azure Data Studio and confirm the successful sign-in.
+   ![SSMS ](images/connect-object-explorer.png)
+   
+3.In the **Connect to Server** window:
 
-5. In SSMS or Azure Data Studio, select **Azure Active Directory – Password** as the authentication method.
+  **Server name:** Enter the **Azure SQL Database server name**. It typically follows the format: ** **mysqlserver-<inject key="DeploymentID" enableCopy="false"/>**.database.windows.net**.
+
+  **Authentication:** Select SQL Server Authentication.
+
+  **Login:** Enter the SQL Server login username (e.g., sqluser) you set during the database creation in Task 1 (SQL admin username).
+
+  **Password:** Enter the password you set during the database creation in Task 1 (SQL admin password).
+
+  **Encrypted**: Check the box for Trust server certificate
+
+   ![SSMS ](images/16.png)
+
+4. Click **Connect**.
+
+5. In SSMS or Azure Data Studio, select **Microsoft Entra Password** as the authentication method for login to Microsoft Entra authentication.
 
 6. Enter your **Microsoft Entra** credentials (username and password).
 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+    ![SSMS ](images/17.png)
+
 7. Click **Connect**.
-
-8. Take a screenshot showing the credentials being entered and confirm the successful sign-in with Microsoft Entra authentication.
-
 
 ### Delete Resources
 
-1. All the resources will be deleted automatically once the lab duration is exhausted.
+All the resources will be deleted automatically once the lab duration is exhausted.
    
 **Note**: Make sure to follow the lab instructions carefully and ensure that the necessary configurations and settings are applied during each step.
 
