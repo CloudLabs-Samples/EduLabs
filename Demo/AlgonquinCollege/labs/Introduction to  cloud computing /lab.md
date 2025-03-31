@@ -58,57 +58,71 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 10. Leave **Want to use SQL elastic pool** set to **No**.
 
 11. For **Workload environment**, specify **Development** for this task.
-   - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be overridden.
+
+   ![SQL DB env](images/6-u.png)
+
+   - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be however overridden.
    - The **Development** workload environment sets the following options:
      - **Backup storage redundancy** is **locally redundant storage**.
      - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
 
-        Leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)
-
      ![SQL DB env](images/6.png)
-   
-   - Choosing the **Production** workload environment sets:
-     - **Backup storage redundancy** is **geo-redundant storage**.
-     - **Compute + storage** is **General Purpose, Provisioned** with 2 vCores and 32 GB of storage.
 
-12. Select **Next: Networking** at the bottom of the page.
+12. Under **Compute + storage**, select **Configure database**.
 
+13. This lab uses a serverless database, so leave Service tier set to **General Purpose** (Most budget-friendly, serverless compute) and set Compute tier to **Serverless**. Select **Apply**.
 
-11. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
-12. For **Firewall rules**, set **Add current client IP address** to **Yes**.
-13. Leave **Allow Azure services and resources to access this server** set to **No**.
+14. Under **Backup storage redundancy**, choose a redundancy option for the storage account where your backups will be saved. Ensure to select **Locally redundant backup storage**.
+
+15. Select **Next: Networking** at the bottom of the page.
+
+16. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
+
+17. For **Firewall rules**, set **Add current client IP address** to **Yes**.
+
+18. Leave **Allow Azure services and resources to access this server** set to **No**.
     - **Screenshot** of the **Azure portal** showing the **Networking** tab for **firewall rules**.
-14. Under **Connection policy**, choose the **Default connection policy**, and leave the **Minimum TLS version** at the default of **TLS 1.2**.
-15. Select **Next: Security** at the bottom of the page.
+
+19. Under **Connection policy**, choose the **Default connection policy**, and leave the **Minimum TLS version** at the default of **TLS 1.2**.
+
+20 . Select **Next: Security** at the bottom of the page.
     - **Screenshot** that shows the **Networking** tab for **policy** and **encryption**.
-16. On the **Security** page, you can choose to start a free trial of **Microsoft Defender for SQL**, as well as configure **Ledger**, **Managed identities**, and **Azure SQL transparent data encryption with customer-managed key** if desired.
-17. Select **Next: Additional settings** at the bottom of the page.
-18. On the **Additional settings** tab, in the **Data source** section, for **Use existing data**, select **Sample**.
+
+21. On the **Security** page, you can choose to start a free trial of **Microsoft Defender for SQL**, as well as configure **Ledger**, **Managed identities**, and **Azure SQL transparent data encryption with customer-managed key** if desired.
+
+22. Select **Next: Additional settings** at the bottom of the page.
+
+23. On the **Additional settings** tab, in the **Data source** section, for **Use existing data**, select **Sample**.
     - This creates an **AdventureWorksLT sample database** so there are some tables and data to query and experiment with, as opposed to an empty blank database.
     - You can also configure **database collation** and a **maintenance window**.
-19. Select **Review + create** at the bottom of the page:
+
+24. Select **Review + create** at the bottom of the page:
     - **Screenshot** of the **Azure portal** showing the **Additional settings** tab.
-20. On the **Review + create** page, after reviewing, select **Create**.
 
+25. On the **Review + create** page, after reviewing, select **Create**.
 
-### Step 2: Login to the Database
+### Task 2: Login to the Database
 
-1. Open SSMS or Azure Data Studio and connect to the SQL Database server created in Step 1.
-2. Enter the **SQL login** credentials that you set during the database creation in Step 1 (SQL admin username and password).
+1. Open SSMS or Azure Data Studio and connect to the SQL Database server created in Task 1.
+
+2. Enter the **SQL login** credentials that you set during the database creation in Task 1 (SQL admin username and password).
+
 3. Click **Connect**.
+
 4. Take a screenshot showing the credentials being entered in SSMS/Azure Data Studio and confirm the successful sign-in.
+
 5. In SSMS or Azure Data Studio, select **Azure Active Directory – Password** as the authentication method.
+
 6. Enter your **Microsoft Entra** credentials (username and password).
+
 7. Click **Connect**.
+
 8. Take a screenshot showing the credentials being entered and confirm the successful sign-in with Microsoft Entra authentication.
 
----
 
-### Step 3: Delete Resources
+### Delete Resources
 
 1. All the resources will be deleted automatically once the lab duration is exhausted.
-
----
-
+   
 **Note**: Make sure to follow the lab instructions carefully and ensure that the necessary configurations and settings are applied during each step.
 
