@@ -63,32 +63,42 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
    - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be however overridden.
    - The **Development** workload environment sets the following options:
-     - **Backup storage redundancy** is **locally redundant storage**.
+     - **Backup storage redundancy** is **Geo redundant backup storage**.
      - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
 
      ![SQL DB environ](images/06.png)
 
 10. Under **Compute + storage**, select **Configure database**.
 
-11. This lab uses a serverless database, so leave Service tier set to **General Purpose** (Most budget-friendly, serverless compute) and set Compute tier to **Serverless**. Select **Apply**.
+    ![SQL DB compute](images/7.png)
+
+11. This lab uses a serverless database, so leave Service tier set to **General Purpose** (Most budget-friendly, serverless compute) and set Compute tier to **Serverless**.
+
+     ![SQL DB compute configure](images/8.png)
 
 12. Under **Backup storage redundancy**, choose a redundancy option for the storage account where your backups will be saved. Ensure to select **Locally redundant backup storage**.
 
-13. Select **Next: Networking** at the bottom of the page.
+    ![SQL DB compute configure lrs](images/9.png)
 
-14. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
+13.  Select **Apply**.
+  
+14. Select **Next: Networking** at the bottom of the page.
 
-15. For **Firewall rules**, set **Add current client IP address** to **Yes**.
+    ![SQL DB networking](images/10.png)
 
-16. Leave **Allow Azure services and resources to access this server** set to **No**.
-    - **Screenshot** of the **Azure portal** showing the **Networking** tab for **firewall rules**.
+15. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
+
+16. For **Firewall rules**, set **Add current client IP address** to **Yes**.Leave **Allow Azure services and resources to access this server** set to **No**.
+
+    ![SQL DB networking firewall](images/11.png)
 
 17. Under **Connection policy**, choose the **Default connection policy**, and leave the **Minimum TLS version** at the default of **TLS 1.2**.
 
-18 . Select **Next: Security** at the bottom of the page.
-    - **Screenshot** that shows the **Networking** tab for **policy** and **encryption**.
+    ![SQL DB networking conn](images/12.png)
 
-19. On the **Security** page, you can choose to start a free trial of **Microsoft Defender for SQL**, as well as configure **Ledger**, **Managed identities**, and **Azure SQL transparent data encryption with customer-managed key** if desired.
+18 . Select **Next: Security** at the bottom of the page.
+
+19. On the **Security** page, review the settings and retain the default configurations
 
 20. Select **Next: Additional settings** at the bottom of the page.
 
@@ -96,10 +106,13 @@ In this lab, we will create a SQL database in Azure and then query the data in t
     - This creates an **AdventureWorksLT sample database** so there are some tables and data to query and experiment with, as opposed to an empty blank database.
     - You can also configure **database collation** and a **maintenance window**.
 
-22. Select **Review + create** at the bottom of the page:
-    - **Screenshot** of the **Azure portal** showing the **Additional settings** tab.
+    ![SQL DB networking additional settings](images/13.png)
 
+22. Select **Review + create** at the bottom of the page:
+   
 23. On the **Review + create** page, after reviewing, select **Create**.
+
+   ![SQL DB create](images/14.png)
 
 ### Task 2: Login to the Database
 
