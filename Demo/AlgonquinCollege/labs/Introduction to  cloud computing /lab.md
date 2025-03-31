@@ -59,14 +59,14 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
 11. For **Workload environment**, specify **Development** for this task.
 
-   ![SQL DB env](images/6-u.png)
+   ![SQL DB env updated](images/6-u.png)
 
    - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be however overridden.
    - The **Development** workload environment sets the following options:
      - **Backup storage redundancy** is **locally redundant storage**.
      - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
 
-     ![SQL DB env](images/6.png)
+     ![SQL DB environ](images/6.png)
 
 12. Under **Compute + storage**, select **Configure database**.
 
