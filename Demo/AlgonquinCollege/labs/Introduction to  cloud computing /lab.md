@@ -1,7 +1,7 @@
 # Lab 5: Introduction to Cloud Computing
 
 ## Prerequisites:
-A VM with **Azure Data Studio** and **SQL Server Management Studio (SSMS)** pre-installed has been provided to you; please use these tools for the lab.
+A VM with **Azure Data Studio** and **SQL Server Management Studio (SSMS)** pre-installed has been provided to you; you can use these tools for the lab tasks.
 
 ## SQL Databases
 
