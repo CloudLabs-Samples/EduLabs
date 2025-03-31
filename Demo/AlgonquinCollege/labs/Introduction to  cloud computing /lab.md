@@ -70,7 +70,6 @@ In this lab, we will create a SQL database in Azure and then query the data in t
    - Choosing the **Production** workload environment sets:
      - **Backup storage redundancy** is **geo-redundant storage**.
      - **Compute + storage** is **General Purpose, Provisioned** with 2 vCores and 32 GB of storage.
-        Leave the **Service tier** set to **General Purpose (Most budget-friendly, serverless compute)
 
 12. Select **Next: Networking** at the bottom of the page.
 
