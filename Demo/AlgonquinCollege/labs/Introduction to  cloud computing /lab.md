@@ -66,7 +66,7 @@ In this lab, we will create a SQL database in Azure and then query the data in t
      - **Backup storage redundancy** is **locally redundant storage**.
      - **Compute + storage** is **General Purpose, Serverless** with a single vCore. By default, there is a one-hour auto-pause delay.
 
-     ![SQL DB environ](images/6.png)
+     ![SQL DB environ](images/06.png)
 
 10. Under **Compute + storage**, select **Configure database**.
 
