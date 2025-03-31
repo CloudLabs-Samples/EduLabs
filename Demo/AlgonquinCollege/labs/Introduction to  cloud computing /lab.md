@@ -96,7 +96,7 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
     ![SQL DB networking conn](images/12.png)
 
-18 . Select **Next: Security** at the bottom of the page.
+18. Select **Next: Security** at the bottom of the page.
 
 19. On the **Security** page, review the settings and retain the default configurations
 
@@ -112,7 +112,7 @@ In this lab, we will create a SQL database in Azure and then query the data in t
    
 23. On the **Review + create** page, after reviewing, select **Create**.
 
-   ![SQL DB create](images/14.png)
+    ![SQL DB create](images/14.png)
 
 ### Task 2: Login to the Database
 
