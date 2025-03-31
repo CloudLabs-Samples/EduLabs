@@ -39,19 +39,25 @@ In this lab, we will create a SQL database in Azure and then query the data in t
 
    ![Create SQL DB](images/3.png)
 
-6. For **Database name**, enter **mydb-<inject key="DeploymentID" enableCopy="false"/>** 
+6. For **Database name**, enter **mydb-<inject key="DeploymentID" enableCopy="false"/>**. For **Server**, select **Create new**
 
-7. For **Server**, select **Create new**, and fill out the **New server** form with the following values:
+   ![SQL DB name](images/4.png)
+
+8. Fill out the **New server** form with the following values:
    - **Server name**: Enter **mysqlserver-<inject key="DeploymentID" enableCopy="false"/>** 
    - **Location**: Select a location from the dropdown list.
    - **Authentication method**: Select **Use both SQL and Microsoft Entra authentication**.
+   - **Set Microsoft Entra admin**: Click Set admin and search for **Email/Username:** <inject key="AzureAdUserEmail"></inject> and select it
    - **Server admin login**: Enter `sqluser`.
    - **Password**: Enter a password that meets the requirements, and enter it again in the **Confirm password** field.
-
-8. Select **OK**.
    
-9. Leave **Want to use SQL elastic pool** set to **No**.
-7. For **Workload environment**, specify **Development** for this exercise.
+   ![SQL DB name](images/5.png)
+
+9. Select **OK**.
+   
+10. Leave **Want to use SQL elastic pool** set to **No**.
+
+11. For **Workload environment**, specify **Development** for this exercise.
    - The **Azure portal** provides a **Workload environment** option that helps preset some configuration settings. These settings can be overridden.
    - The **Development** workload environment sets the following options:
      - **Backup storage redundancy** is **locally redundant storage**.
