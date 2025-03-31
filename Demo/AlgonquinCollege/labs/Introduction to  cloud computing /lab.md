@@ -47,7 +47,7 @@ In this lab, we will create a SQL database in Azure and then query the data in t
    - **Server name**: Enter **mysqlserver-<inject key="DeploymentID" enableCopy="false"/>** 
    - **Location**: Select a location from the dropdown list.
    - **Authentication method**: Select **Use both SQL and Microsoft Entra authentication**.
-   - **Set Microsoft Entra admin**: Click Set admin and search for **Email/Username:** <inject key="AzureAdUserEmail"></inject> and select it
+   - **Set Microsoft Entra admin**: Click on **Set admin** and search for **Username:** <inject key="AzureAdUserEmail"></inject> and select it
    - **Server admin login**: Enter `sqluser`.
    - **Password**: Enter a password that meets the requirements, and enter it again in the **Confirm password** field.
    
