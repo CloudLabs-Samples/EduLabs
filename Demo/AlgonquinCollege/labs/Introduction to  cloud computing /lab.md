@@ -134,7 +134,7 @@ In this lab, we will create a **SQL database** in Azure and login to the databas
 
   **Password:** Enter the password you set during the database creation in Task 1 (SQL admin password).
 
-  **Encrypted**: Check the box for Trust server certificate
+  **Encrypted**: Ensure you check the box for Trust server certificate
 
    ![SSMS ](images/16.png)
 
@@ -151,6 +151,10 @@ In this lab, we will create a **SQL database** in Azure and login to the databas
     ![SSMS ](images/17.png)
 
 7. Click **Connect**.
+
+8. Once you're connected, you’ll see the server and database listed in Object Explorer, with a query window open for executing SQL commands, and a status bar indicating your connection status.
+
+   ![SSMS CONNECT ](images/18.png)
 
 ### Delete Resources
 
