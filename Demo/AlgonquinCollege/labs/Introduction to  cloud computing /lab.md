@@ -126,7 +126,7 @@ In this lab, we will create a **SQL database** in Azure and login to the databas
    
 3.In the **Connect to Server** window:
 
-  **Server name:** Enter the **Azure SQL Database server name**. It typically follows the format: ** **mysqlserver-<inject key="DeploymentID" enableCopy="false"/>**.database.windows.net**.
+  **Server name:** Enter the **Azure SQL Database server name**. It typically follows the format: **mysqlserver-<inject key="DeploymentID" enableCopy="false"/>**.database.windows.net**.
 
   **Authentication:** Select SQL Server Authentication.
 
