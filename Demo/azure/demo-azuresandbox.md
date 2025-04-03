@@ -24,14 +24,11 @@
 
     ![](images/image004.png)
 
-OR
-
-Follow these steps to secure your Microsoft Azure account using multi-factor authentication via phone.  
-These steps are applicable **only if you are prompted** to set up additional security information during login.
-
-1. If prompted with **"More information required"**, click **`Next`**.
+1. If you are prompted with **"More information required"**, click **`Next`**.
 
     ![Step 1](images/2025-04-03_17-45-50.png)
+
+    Follow these steps to secure your Microsoft Azure account using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
 
 2. You may be asked to set up the **Microsoft Authenticator**.
 
@@ -57,18 +54,20 @@ These steps are applicable **only if you are prompted** to set up additional sec
 
 10. Enter the code and click **`Next`**.
 
-   ![Step 5](images/2025-04-03_17-47-15.png)
+   ![Step 5](images/2025-04-03_18-35-37.png)
 
-11. You will see a **Success** message confirming that your MFA method is now configured.  
+11. Once the verification is complete and your phone has been registered, click **Next** to proceed.
 
-12. Click **`Done`** to complete the setup.
+    ![Step 5-u](images/verificationcomplete.png)
 
-    ![Step 6](images/2025-04-03_17-47-27.png)
+12. You will see a **Success** message confirming that your MFA method is now configured.  
 
-13. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
+13. Click **`Done`** to complete the setup.
 
-14. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+    ![Step 6](images/2025-04-03_18-36-21.png)
+
+14. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
     ![](images/image-007.jpg)
 
-
+15. Once you're logged into Azure, you can start creating the required resources.
