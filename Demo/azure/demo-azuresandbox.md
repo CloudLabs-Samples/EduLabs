@@ -54,7 +54,7 @@
 
 10. Enter the code and click **`Next`**.
 
-   ![Step 5](images/2025-04-03_18-35-37.png)
+    ![Step 5](images/2025-04-03_18-35-37.png)
 
 11. Once the verification is complete and your phone has been registered, click **Next** to proceed.
 
@@ -67,7 +67,5 @@
     ![Step 6](images/2025-04-03_18-36-21.png)
 
 14. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
-
-    ![](images/image-007.jpg)
 
 15. Once you're logged into Azure, you can start creating the required resources.
