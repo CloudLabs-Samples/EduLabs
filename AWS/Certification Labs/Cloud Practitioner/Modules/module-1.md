@@ -1,4 +1,4 @@
-# 🟢 Module 1: Introduction to the AWS Console and Global Infrastructure
+#  Module 1: Introduction to the AWS Console and Global Infrastructure
 
 ---
 
