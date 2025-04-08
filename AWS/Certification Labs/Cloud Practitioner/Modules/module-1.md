@@ -25,14 +25,6 @@ By the end of this module, you will be able to:
 
 ---
 
-## 🧰 What You Need Before You Start
-
-1. A computer with internet access  
-2. A supported browser (Chrome or Firefox preferred)  
-3. An AWS account (free-tier is fine)  
-
----
-
 ## 🧪 Lab Steps
 
 ---
