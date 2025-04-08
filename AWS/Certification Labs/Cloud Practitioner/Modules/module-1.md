@@ -1,93 +1,134 @@
-# Module 1: Introduction to the AWS Console and Global Infrastructure
-
-## 📖 Scenario
-You are a new cloud practitioner at a startup exploring AWS for the first time. Your team wants you to understand how to access AWS services, what global infrastructure looks like, and how to navigate the AWS Management Console.
+# 🟢 Module 1: Introduction to the AWS Console and Global Infrastructure
 
 ---
 
-## 🎯 Learning Objectives
-By the end of this lab, you will be able to:
-- Sign in to the AWS Management Console
-- Identify AWS global infrastructure components: Regions, Availability Zones, and Edge Locations
-- Use the region selector
-- Explore the "Global Infrastructure" page and related services
+## 🎯 Objective
+
+In this lab, you'll get familiar with the **AWS Management Console** and understand how AWS is distributed across the globe. You'll explore **Regions**, **Availability Zones (AZs)**, and **Edge Locations**, and learn how AWS delivers fast, reliable services to users worldwide.
 
 ---
 
-## 🧰 Prerequisites
-- An active AWS Free Tier account ([Sign up here](https://aws.amazon.com/free/))
-- Basic internet access and browser
+## 🧠 What You Will Learn
 
----
-
-## 📝 Instructions
-
-### Step 1: Sign In to the AWS Console
-1. Go to [https://console.aws.amazon.com](https://console.aws.amazon.com)
-2. Log in with your credentials (root user or IAM user)
-
-> 💡 Tip: Bookmark the AWS Console for easier access later.
-
-### Step 2: Explore the Console Layout
-- Note the **search bar** at the top where you can find any AWS service
-- Explore the **recently visited services** section
-- Hover over your name (top-right) to view account settings, billing, and sign-out options
-
-### Step 3: Select a Region
-1. In the upper-right corner, click the **Region selector** (e.g., US East (N. Virginia))
-2. Browse the list of Regions and note the naming conventions
-
-> 📌 Example: `us-east-1` = US East (N. Virginia)
-
-### Step 4: View the Global Infrastructure Map
-1. Visit [https://aws.amazon.com/about-aws/global-infrastructure/](https://aws.amazon.com/about-aws/global-infrastructure/)
-2. Scroll through the interactive map
-3. Learn the difference between:
-   - **Region**: A physical location with multiple Availability Zones
-   - **Availability Zone (AZ)**: One or more discrete data centers
-   - **Edge Locations**: CDN endpoints via Amazon CloudFront
-
-### Step 5: Open and Pin Services
-1. Open the **Services Menu** (top-left of the console)
-2. Locate and open the following services:
-   - EC2
-   - S3
-   - IAM
-3. Pin them to the top for quick access
-
----
-
-## ✅ Validation Steps
-- You should be logged into the AWS Console
-- You should be able to identify at least one Region and Availability Zone
-- You should have pinned 2–3 services to the console
-
----
-
-## 📘 Summary
-In this lab, you learned how to:
+By the end of this module, you will be able to:
 - Log into the AWS Management Console
-- Identify global infrastructure components (Regions, AZs, Edge Locations)
-- Navigate the interface and pin frequently used services
-
-This foundational understanding will help you explore core AWS services more efficiently in the following labs.
-
----
-
-## ❓ Knowledge Check
-1. What is the difference between a Region and an Availability Zone?
-2. Why are edge locations important in AWS?
-3. How can you quickly access a service like S3 from anywhere in the console?
+- Navigate and change between different AWS Regions
+- Find Availability Zones (AZs) in your region
+- Understand the role of Edge Locations in content delivery
+- Use the AWS Global Infrastructure map to visualize AWS's reach
 
 ---
 
-## 🧹 Clean-Up
-No resources were created in this lab. Nothing to delete!
+## ⏱️ Estimated Duration
+
+30–40 minutes
 
 ---
 
-## 🔗 Resources
-- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
-- [AWS Management Console](https://console.aws.amazon.com/)
-- [What is AWS? - Official Docs](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
+## 🧰 What You Need Before You Start
 
+1. A computer with internet access  
+2. A supported browser (Chrome or Firefox preferred)  
+3. An AWS account (free-tier is fine)  
+
+---
+
+## 🧪 Lab Steps
+
+---
+
+### ✅ Step 1: Sign in to the AWS Management Console
+
+1. Open your web browser and go to:  
+   👉 **https://console.aws.amazon.com/**
+2. You'll see a sign-in screen with two options:
+   - **Root user** (for the main account owner)
+   - **IAM user** (for users under an AWS organization)
+3. Enter the correct email or account alias based on your access.
+4. Enter your **IAM username** and **password** to log in.
+
+> 💡 **Tip:** If you're unsure whether you're a root or IAM user, check with your instructor or lab administrator.
+
+---
+
+### ✅ Step 2: Locate and Change the AWS Region
+
+1. After logging in, you will land on the AWS **Console Home**.
+2. On the **top-right corner**, you’ll see the current **Region name** (e.g., `N. Virginia`, `Mumbai`, `Frankfurt`).
+3. Click the Region dropdown to see the list of available **AWS Regions**.
+4. Choose **Asia Pacific (Mumbai)** or any region close to you.
+
+> 🌍 Each Region is a separate geographic area with multiple isolated locations called Availability Zones.
+
+---
+
+### ✅ Step 3: Open the EC2 Dashboard and View Availability Zones
+
+1. In the search bar at the top of the Console, type **"EC2"**.
+2. Click on **EC2** under **Services**.
+3. On the EC2 Dashboard, in the left sidebar, click **Limits** (or "Account attributes" in some versions).
+4. Scroll down until you find the **Availability Zones** table.  
+   - It will list AZs like `ap-south-1a`, `ap-south-1b`, etc.
+
+> 🧠 These are your **Availability Zones** – isolated data centers within the selected Region.
+
+---
+
+### ✅ Step 4: Understand Edge Locations Using CloudFront
+
+1. In the AWS Console search bar, type **"CloudFront"** and click the result.
+2. If you don't have a distribution created, that’s okay — we’re only here to **observe**.
+3. On the **left sidebar**, click **Distributions**.
+4. Look at the list (or sample data) — CloudFront distributions use **Edge Locations** to cache content close to users.
+
+> 📦 **Edge Locations** are used by services like CloudFront and Route 53 to deliver content with **low latency**.
+
+---
+
+### ✅ Step 5: Explore the AWS Global Infrastructure Map
+
+1. Open a new browser tab and go to:  
+   👉 **https://infrastructure.aws**
+2. Hover over different parts of the world.
+3. Notice the **Regions**, **Availability Zones**, **Local Zones**, and **Wavelength Zones**.
+4. Explore:
+   - How many AZs exist in your region?
+   - Where are most edge locations concentrated?
+   - Which regions are upcoming (in gray)?
+
+> 🌐 This site is helpful for understanding how AWS distributes its services for performance, redundancy, and compliance.
+
+---
+
+### ✅ Step 6: Recap What You Learned
+
+Take a few minutes to reflect:
+- What’s the difference between a Region and an AZ?
+- What’s the purpose of an Edge Location?
+- Why is AWS’s global footprint important for your app or users?
+
+📝 **(Optional)**: Write down your thoughts or discuss with your lab partner.
+
+---
+
+## 🧼 Cleanup Instructions
+
+This lab does **not create any resources**, so no cleanup is needed.
+
+---
+
+## 📸 Recommended Screenshots
+
+If your instructor or assignment requires a screenshot:
+- Region dropdown in Console
+- EC2 AZs list
+- CloudFront Distributions page
+- AWS Global Infrastructure map
+
+---
+
+## 🎉 Congratulations!
+
+You’ve now completed your first AWS hands-on module. You explored the Console and learned how AWS connects the world with its global infrastructure.
+
+👉 Ready for the next lab? Jump to **Module 2: Deploy a Simple Web Server Using EC2**.
