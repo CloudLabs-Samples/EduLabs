@@ -1,7 +1,7 @@
 # Custom Lab : Windows Virtual machine
 
 ## Overview
-This lab environment has a Windows Virtual machine along with SQL Server and SQL Server Management Studio (SSMS) is installed with both Windows and SQL authentication enabled.
+This lab environment has a Windows Virtual machine
 
 ## Getting started
 
