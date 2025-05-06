@@ -1,4 +1,4 @@
-# Demo : Two VM's
+# Demo : Multi VM's
 
 ## Overview
 This lab environment has multiple Windows Virtual machines.
