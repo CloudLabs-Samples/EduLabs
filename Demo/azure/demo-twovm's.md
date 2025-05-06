@@ -1,7 +1,7 @@
 # Demo : Two VM's
 
 ## Overview
-This lab environment has two Windows Virtual machines with PowerBI Desktop and Visual Studio Code installed.
+This lab environment has multiple Windows Virtual machines.
 
 ## Getting started
 
