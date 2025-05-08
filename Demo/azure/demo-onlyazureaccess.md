@@ -28,9 +28,9 @@ This lab environment has a Azure account and a resource group assigned with requ
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab. 
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-    ![](images/image-007.jpg)
+    ![](images/cancel.jpg)
 
 1. Navigate to the **Resource groups** and click on the provided resource group.
 
