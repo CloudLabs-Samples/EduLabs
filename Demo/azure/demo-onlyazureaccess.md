@@ -30,7 +30,7 @@ This lab environment has a Azure account and a resource group assigned with requ
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-    ![](images/cancel.jpg)
+    ![](images/cancel.png)
 
 1. Navigate to the **Resource groups** and click on the provided resource group.
 
