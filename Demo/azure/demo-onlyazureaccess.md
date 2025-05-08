@@ -22,7 +22,7 @@ This lab environment has a Azure account and a resource group assigned with requ
 
     ![](images/image004.png)
 
-1. If you see the pop-up **Stay Signed in?** click **No**.
+1. If you see the pop-up **Stay Signed in?** click **Yes**.
 
     ![](images/image-006.jpg)
 
