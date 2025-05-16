@@ -38,8 +38,9 @@ This lab environment includes a Windows Virtual Machine, an M365 tenant with Glo
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
-
 3. Once logged in, you’ll have access to the M365 Admin Center, where you can manage users, licenses, and other M365 services.
+
+   ![](images/m365.png)
 
 ## Getting started with the Azure Portal (Optional)
 
