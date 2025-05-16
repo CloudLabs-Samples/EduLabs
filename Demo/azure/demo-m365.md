@@ -1,7 +1,7 @@
 # Demo : M365 Labs
 
 ## Overview
-This lab environment has a Windows Virtual machine, M365 tenant with Global admin privileges and Microsoft 365 E5 license assigned to the lab user.
+This lab environment includes a Windows Virtual Machine, an M365 tenant with Global admin privileges, and a Microsoft 365 E5 license assigned to the lab user.
 
 ## Getting started
 
@@ -29,8 +29,18 @@ This lab environment has a Windows Virtual machine, M365 tenant with Global admi
 
 6. You can further use the Virtual machine and tools as required.
 
+## Accessing Microsoft 365 Admin Center
 
-## Getting started with the Azure Portal
+1. You can directly access the Microsoft 365 Admin Center by navigating to: https://admin.microsoft.com
+
+2. Sign in with your Global admin credentials:
+
+   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
+   * **Password**:  <inject key="AzureAdUserPassword"></inject>
+
+3. Once logged in, you’ll have access to the M365 Admin Center, where you can manage users, licenses, and other M365 services.
+
+## Getting started with the Azure Portal (Optional)
 
 1. In the browser that you already opened, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
 
