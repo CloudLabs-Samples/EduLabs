@@ -23,3 +23,5 @@ Follow the steps below to get started with the lab.
 2. After signing in to the AWS Management Console, choose the region **US-EAST-1 (N. Virginia)** from the drop-down menu in the top right hand corner.
 
     ![](./images/region.png)
+
+3. You can start deploying the resources that are needed for the lab 
