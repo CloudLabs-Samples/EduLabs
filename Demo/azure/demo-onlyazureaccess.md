@@ -3,6 +3,10 @@
 ## Overview
 This lab environment has a Azure account and a resource group assigned with required permissions.
 
+Before starting the hands-on lab, kindly note that the lab duration will be shown at the top right corner of your lab environment page once the lab is launched by clicking the **Launch Lab** button. The time will be ticking automatically, so it's important to keep an eye on it while performing your lab tasks.
+
+![](./images/timer.png)
+
 ## Getting started with the Azure Portal
 
 1. In the browser, open a new tab, and sign in to the **Azure Portal** (<http://portal.azure.com>).
