@@ -1,4 +1,4 @@
-# CloudLabs Demo : Azure environment 
+# Azure environment 
 
 ## Overview
 This lab environment has a Azure account and a resource group assigned with required permissions.
