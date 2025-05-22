@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "AWS Environment",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/aws",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/aws/awsaccessonly.md",
+        "Order": 1
+      }
+    ]
+  }
+]
