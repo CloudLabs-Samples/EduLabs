@@ -7,7 +7,7 @@ Before starting the hands-on lab, kindly note that the lab duration will be show
 Follow the steps below to get started with the lab.
 
 1. Sign in to the AWS Management Console by copying the **Sign-in link, Username, and Password** provided below.
-    
+
     * **Sign-in Link**: **<inject key="SignInUrl" enableCopy="true" />**
 
     * **IAM Username**: **<inject key="UserName" enableCopy="true" />**
