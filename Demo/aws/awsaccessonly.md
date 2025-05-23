@@ -8,9 +8,9 @@ Follow the steps below to get started with the lab.
 
 1. Sign in to the AWS Management Console by copying the **Sign-in link, Username, and Password** provided below.
 
-    * **Sign-in Link**: **<inject key="SignInUrl" enableCopy="true" />**
+    * **Sign-in Link**: **<inject key="Sign-in link" enableCopy="true" />**
 
-    * **IAM Username**: **<inject key="UserName" enableCopy="true" />**
+    * **IAM Username**: **<inject key="Username" enableCopy="true" />**
 
     * **Password**: **<inject key="Password" enableCopy="true" />**
 
