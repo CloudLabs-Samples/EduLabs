@@ -3,8 +3,6 @@
 ## Overview
 This lab environment includes an M365 tenant with Global admin privileges, and a Microsoft 365 E5 license assigned to the lab user.
 
-## Getting started
-
 ## Instructions
 
 1. To get the lab environment details, you can select the **Environment** tab, you can locate the **Environment** tab in the upper right corner.
