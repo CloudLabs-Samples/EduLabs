@@ -1,7 +1,7 @@
 # Demo : Multi VM's
 
 ## Overview
-This lab environment has multiple Windows Virtual machines.
+This lab environment has multiple Virtual machines.
 
 ## Getting started
 
