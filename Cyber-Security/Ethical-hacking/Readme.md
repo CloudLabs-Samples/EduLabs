@@ -85,40 +85,49 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
       ![](images/root-terminal-1.png)
   
-5. In the terminal, run the following command to verify if the repository is correctly defined in the sources.
+5. In the terminal, we will be entering below mentioned commands manually to securely import, refresh, and store the Kali Linux APT (Advanced Package Tool) archive signing key into a system so that packages from the Kali Linux repositories can be verified and trusted by the system's package manager.
 
-   > **Note:** The below command need to be entered manually in Terminal.
-
+   - Run the below command to create a temporary directory for GnuPG (GPG) operations and assigns it to GNUPGHOME.
+     
       ```
       export GNUPGHOME=$(mktemp -d)
- 
-      # Import Kali Linux archive signing key
-      curl -fsSL https://archive.kali.org/archive-key.asc | gpg --import
- 
-      # Refresh the imported key
-      gpg --keyserver keyserver.ubuntu.com --refresh-keys
- 
-      # Export and store the refreshed key in trusted.gpg.d
-      mkdir -p /etc/apt/trusted.gpg.d/
-      gpg --export | gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
- 
-      # Clean up temp GPG home
-      unset GNUPGHOME
 
+      ```
+   - Below command will import the Kali Linux official signing key from their archive URL.
+     
+      ```
+      curl -fsSL https://archive.kali.org/archive-key.asc | gpg --import
+
+      ```
+   - Run the below command to contact the Ubuntu keyserver to refresh the imported key, and fetch any updates like expiration changes or revocations.
+
+      ```
+      gpg --keyserver keyserver.ubuntu.com --refresh-keys
+
+      ```
+   - Below comamnds are used to ensure that the directory named /etc/apt/trusted.gpg.d/ exists and exports the refreshed GPG key and converts it into a binary format. Then stores it as kali-archive-keyring.gpg so that APT can trust packages signed with this key. 
+
+     ```
+      mkdir -p /etc/apt/trusted.gpg.d/
+     
+      gpg --export | gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+     ```
+     
+   - Run the below command to remove the temporary environment variable, effectively cleaning up and restoring the normal GPG environment.
+     
+     ```
+      unset GNUPGHOME
+     ```
+     
+   - Run the following command to verify if the repository is correctly defined in the sources.
+      
+      ```
       more /etc/apt/sources.list
       ```
 
    ![](images/edusources.png)
-
-6. GPG (GNU Privacy Guard) keys are used to digitally sign packages in a Linux distribution's package repository, updating GPG keys is a security best practice that helps ensure the authenticity and integrity of the software packages you download and install on your system.Run the below command to update the GPG keys
-
-      ```
-      apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
-      ```
-
-   > **Note:** Enter the password when prompted.
   
-7. Next, run the below command to update the list of available packages.
+6. Next, run the below command to update the list of available packages.
 
    > **Note:** The below command need to be entered manually in terminal.
 
