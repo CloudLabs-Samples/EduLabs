@@ -33,6 +33,7 @@ SentinelOne agent deployed on a Windows Virtual Machine
 
 - Activity – Historical logs of actions taken, detections, and responses.
 
+  **SentinelOne Console – Dashboard View**:
   ![](images/sentinel-one-dashboard.png)
 
 ## Step 2: Verify Endpoint Agent Status
@@ -57,18 +58,16 @@ Once inside the SentinelOne console:
 
 3. Simulate reviewing or editing:
 
-4. Behavioral AI Engine (enabled/disabled)
+- Behavioral AI Engine (enabled/disabled)
+- Mitigation Actions (quarantine, kill process)
+- Device Control / USB Control (optional features)
 
-5. Mitigation Actions (quarantine, kill process)
-
-6. Device Control / USB Control (optional features)
-
-7. Save any changes and note that policies are auto-applied to endpoints in the assigned group.
+4. Save any changes and note that policies are auto-applied to endpoints in the assigned group.
 
 >Policies govern how the agent behaves on the endpoint—what threats are detected and how they’re handled.
 
 ## Step 4: Simulate Threat Detection
-simulate a detection event:
+Simulate a Detection Event:
 
 1. Navigate to the Threats tab.
 
@@ -82,6 +81,7 @@ simulate a detection event:
 
 - Detection timestamp and agent name
 
+ **Simulated Threat Detection View**:
   ![](images/sentinelonethreatdetection.jpeg)
 
 ## Conclusion
