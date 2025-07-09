@@ -35,4 +35,51 @@ SentinelOne agent deployed on a Windows Virtual Machine
 
   ![](images/sentinel-one-dashboard.png)
 
+## Step 2: Verify Endpoint Agent Status
+Once inside the SentinelOne console:
+
+1. Navigate to the Endpoints tab.
+
+2. Locate your Windows VM in the list.
+
+3. Verify the following:
+
+- Agent is in a "Connected" or "Healthy" state.
+
+- Operating System and IP address are populated.
+
+- Assigned Policy Group and Site are correctly shown.
+
+## Step 3: Review and Edit Security Policies
+1. Go to the Policies tab.
+
+2. Select the default policy or one assigned to your endpoint.
+
+3. Simulate reviewing or editing:
+
+4. Behavioral AI Engine (enabled/disabled)
+
+5. Mitigation Actions (quarantine, kill process)
+
+6. Device Control / USB Control (optional features)
+
+7. Save any changes and note that policies are auto-applied to endpoints in the assigned group.
+
+>Policies govern how the agent behaves on the endpoint—what threats are detected and how they’re handled.
+
+## Step 4: Simulate Threat Detection
+simulate a detection event:
+
+1. Navigate to the Threats tab.
+
+2. Locate a pre-seeded dummy threat or simulate adding one (e.g., EICAR_Test_File, Simulated_Malware.exe).
+
+3. View details like:
+
+- Threat Name and Classification (Malware, PUP, Exploit)
+
+- Source file path and hash
+
+- Detection timestamp and agent name
+
   ![](images/sentinelonethreatdetection.jpeg)
