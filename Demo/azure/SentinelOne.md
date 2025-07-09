@@ -14,7 +14,7 @@ SentinelOne agent deployed on a Windows Virtual Machine
 
 ## SentinelOne 
 
-1. On the SentinelOne Console login screen, enter the following dummy username and password, then click Sign In:
+1. On the SentinelOne Console login screen, enter the following username and password, then click Sign In:
 
     * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
