@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "CloudLabs Demo: Getting Started with Endpoint Threat Detection Using SentinelOne",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/Sentinelone-intro.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/SentinelOne.md",
+        "Order": 2
+      }
+    ]
+  }
+]
