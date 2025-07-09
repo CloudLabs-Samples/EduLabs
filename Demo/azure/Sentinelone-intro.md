@@ -1,5 +1,3 @@
-# Demo: SentinelOne
-
 ## Overview
 This lab environment has a Windows Virtual machine with SentinelOne agent installed.
 
