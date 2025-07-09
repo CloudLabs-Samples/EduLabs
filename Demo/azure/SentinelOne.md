@@ -1,5 +1,7 @@
 # Getting Started with Endpoint Threat Detection Using SentinelOne
 
+> **Disclaimer:** This guide is for demonstration purposes only
+
 ## Lab Overview
 In a time when cyber threats are increasingly sophisticated, protecting endpoints is a critical part of any organization’s security strategy. SentinelOne is a widely adopted solution that offers intelligent, real-time protection for endpoints through automated threat detection and response.
 
