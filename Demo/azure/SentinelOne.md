@@ -12,7 +12,7 @@ You don’t need any prior exposure to SentinelOne to get started. The content i
 ## Pre-requisites
 SentinelOne agent deployed on a Windows Virtual Machine
 
-## Explore the SentinelOne Console
+## Step 1: Explore the SentinelOne Console
 
 1. On the SentinelOne Console login screen, enter the following username and password, then click Sign In:
 
