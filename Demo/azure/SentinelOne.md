@@ -21,6 +21,9 @@ By the end of this lab, you will be able to:
 - Understand how policies control threat detection and mitigation
 - Identify and analyze threats detected by the agent
 
+## What is Sentinelone agent?
+Every endpoint, such as a desktop, laptop, server, or virtual environment, has a SentinelOne agent installed that works independently without the need for an internet connection. The agent monitors all processes in real time while residing at the kernel level. Our Dynamic Behavioral Tracking engine handles this process, which enables users to view precisely what transpired on an endpoint at each level of execution. Included in this are the following: origin, patient zero, processes and files, registry events, network connections, and forensic data.
+
 ## Step 1: Explore the SentinelOne Console
 
 1. On the SentinelOne Console login screen, enter the following username and password, then click Sign In:
