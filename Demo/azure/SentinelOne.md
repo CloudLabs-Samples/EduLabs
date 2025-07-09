@@ -34,3 +34,5 @@ SentinelOne agent deployed on a Windows Virtual Machine
 - Activity – Historical logs of actions taken, detections, and responses.
 
   ![](images/sentinel-one-dashboard.png)
+
+  ![](images/sentinelonethreatdetection.jpeg)
