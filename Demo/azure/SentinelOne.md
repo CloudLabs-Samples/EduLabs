@@ -12,8 +12,6 @@ You don’t need any prior exposure to SentinelOne to get started. The content i
 ##  Lab Environment
 You’ve been provided with a **Windows Virtual Machine that already has the SentinelOne agent installed and configured**. This setup allows you to jump directly into exploring the SentinelOne console and simulating threat detection without needing to perform any manual installations.
 
-SentinelOne agent deployed on a Windows Virtual Machine
-
 ## Learning Objectives
 
 By the end of this lab, you will be able to:
