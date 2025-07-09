@@ -28,6 +28,7 @@ By the end of this lab, you will be able to:
     * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
+
 2. After logging into the SentinelOne Management Console, proceed with the following steps to simulate endpoint visibility, policy configuration, and threat detection workflows.
 
 3. Navigate through the main sections of the console to understand its layout:
