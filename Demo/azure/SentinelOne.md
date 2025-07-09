@@ -12,9 +12,23 @@ You don’t need any prior exposure to SentinelOne to get started. The content i
 ## Pre-requisites
 SentinelOne agent deployed on a Windows Virtual Machine
 
-## SentinelOne 
+## Explore the SentinelOne Console
 
 1. On the SentinelOne Console login screen, enter the following username and password, then click Sign In:
 
     * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
+
+2. After logging into the SentinelOne Management Console, proceed with the following steps to simulate endpoint visibility, policy configuration, and threat detection workflows.
+
+3. Navigate through the main sections of the console to understand its layout:
+
+- Dashboard – View high-level security summaries, active threats, and system status.
+
+- Endpoints – Displays all devices where the SentinelOne agent is installed and reporting.
+
+- Threats – Lists detected threats, including details like severity, attack chain, and status.
+
+- Policies – Controls the behavioral and protection settings for groups of endpoints.
+
+- Activity – Historical logs of actions taken, detections, and responses.
