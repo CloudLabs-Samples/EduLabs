@@ -9,7 +9,9 @@ Whether you're exploring cybersecurity for the first time or expanding your IT s
 
 You don’t need any prior exposure to SentinelOne to get started. The content is simple, scenario-based, and aimed at helping you build confidence in securing your organization's devices effectively. By the end, you'll be familiar with the core workflows and capabilities that make SentinelOne a strong tool in the endpoint protection space.
 
-## Pre-requisites
+##  Lab Environment Overview
+You’ve been provided with a Windows Virtual Machine that already has the SentinelOne agent installed and configured. This setup allows you to jump directly into exploring the SentinelOne console and simulating threat detection—without needing to perform any manual installations.
+
 SentinelOne agent deployed on a Windows Virtual Machine
 
 ## Step 1: Explore the SentinelOne Console
