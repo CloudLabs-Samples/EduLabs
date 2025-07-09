@@ -32,3 +32,5 @@ SentinelOne agent deployed on a Windows Virtual Machine
 - Policies – Controls the behavioral and protection settings for groups of endpoints.
 
 - Activity – Historical logs of actions taken, detections, and responses.
+
+  ![](images/sentinel-one-dashboard.png)
