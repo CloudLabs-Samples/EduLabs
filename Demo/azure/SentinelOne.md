@@ -83,3 +83,14 @@ simulate a detection event:
 - Detection timestamp and agent name
 
   ![](images/sentinelonethreatdetection.jpeg)
+
+## Conclusion
+In this lab, you explored the SentinelOne console and simulated key aspects of endpoint protection in a controlled environment. Starting from agent visibility on a Windows VM, you walked through reviewing endpoint status, configuring policies, and simulating a threat detection scenario.
+
+While this guide used dummy data and placeholder steps, it reflects the actual workflow used by security teams to monitor, detect, and respond to endpoint threats with SentinelOne.
+
+By completing this lab, you should now have a basic understanding of:
+- Navigating the SentinelOne console
+- Verifying agent connectivity and health
+- Understanding how policies affect threat response behavior
+- Identifying and analyzing detected threats
