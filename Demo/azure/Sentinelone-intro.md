@@ -3,6 +3,10 @@
 ## Overview
 This lab environment has a Windows Virtual machine with SentinelOne agent installed.
 
+## Disclaimer: 
+This is a dummy lab created for demonstration purposes only.
+It does not use real SentinelOne credentials or live threat data. 
+
 ## Getting started
 
 ## Instructions
