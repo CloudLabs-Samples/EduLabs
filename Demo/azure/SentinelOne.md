@@ -31,7 +31,6 @@ Every endpoint, such as a desktop, laptop, server, or virtual environment, has a
     * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
-
 2. After logging into the SentinelOne Management Console, proceed with the following steps to simulate endpoint visibility, policy configuration, and threat detection workflows.
 
 3. Navigate through the main sections of the console to understand its layout:
@@ -63,6 +62,8 @@ Once inside the SentinelOne console:
 - Operating System and IP address are populated.
 
 - Assigned Policy Group and Site are correctly shown.
+
+  ![](images/device.png)
 
 ## Step 3: Review and Edit Security Policies
 1. Go to the Policies tab.
