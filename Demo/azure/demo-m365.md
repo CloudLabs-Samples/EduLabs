@@ -100,7 +100,7 @@ This lab environment includes a Windows Virtual Machine, an M365 tenant with Glo
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. Once you're logged into Azure, you can start creating the required resources.
+1. Once you're logged into Azure, you can start creating the required resources in the provided resource group.
 
 
 
