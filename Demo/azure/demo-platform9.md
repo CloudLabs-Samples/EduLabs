@@ -29,4 +29,14 @@ This lab environment has a Windows Virtual machine and Platform 9 installed.
 
 6. You can further use the Virtual machine and tools as required.
 
-   
+## Login to the Platform 9's User Interface
+
+1. Navigate to the UI FQDN https://pcd-community.pf9.io in a web browser from the Windows Host Machine.
+
+   ![](images/platform9login.png)
+
+2. Login using the credentials
+
+   * **Username/Email**: admin@airctl.localnet
+   * **Password**: qEkzDDGCaHFRsOBJ
+
