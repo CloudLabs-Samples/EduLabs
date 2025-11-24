@@ -15,7 +15,7 @@ This lab environment includes a Windows host virtual machine with two Ubuntu VMs
    
    ![](images/environment-tab.png)
 
-3. 5. You can view the **duration** for the lab evironment from the top right corner
+3. You can view the **duration** for the lab evironment from the top right corner
 
    ![](images/duration.png)
 
@@ -32,13 +32,15 @@ This lab environment includes a Windows host virtual machine with two Ubuntu VMs
 ## Login to the Platform 9's User Interface
 
 1. Before accessing Platform9, open Hyper-V Manager on the Windows VM.
-   Power on both Ubuntu virtual machines:
+   Turn on both Ubuntu virtual machines:
    **Ubuntu** (hypervisor host)
    **Ubuntu-PCD** (PCD controller node)
 
 2. Navigate to the UI FQDN https://pcd-community.pf9.io in a web browser from the Windows Host Machine.
 
    ![](images/platform9login.png)
+
+   Note: Once both machines are up and running, the pcd.community portal may take up to 20 minutes to fully load
 
 3. Login using the credentials
 
