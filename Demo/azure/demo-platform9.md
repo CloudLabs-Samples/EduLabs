@@ -1,7 +1,7 @@
 # Demo Lab : Platform9
 
 ## Overview
-This lab environment has a Windows Virtual machine and Platform 9 installed.
+This lab environment includes a Windows host virtual machine with two Ubuntu VMs running on Hyper-V: Ubuntu-PCD, where Platform9 Private Cloud Director (PCD) is deployed, and Ubuntu, which is onboarded as the hypervisor host
 
 ## Getting started
 
@@ -31,12 +31,18 @@ This lab environment has a Windows Virtual machine and Platform 9 installed.
 
 ## Login to the Platform 9's User Interface
 
-1. Navigate to the UI FQDN https://pcd-community.pf9.io in a web browser from the Windows Host Machine.
+1. Before accessing Platform9, open Hyper-V Manager on the Windows VM.
+   Power on both Ubuntu virtual machines:
+   **Ubuntu** (hypervisor host)
+   **Ubuntu-PCD** (PCD controller node)
+
+2. Navigate to the UI FQDN https://pcd-community.pf9.io in a web browser from the Windows Host Machine.
 
    ![](images/platform9login.png)
 
-2. Login using the credentials
+3. Login using the credentials
 
    * **Username/Email**: admin@airctl.localnet
    * **Password**: qEkzDDGCaHFRsOBJ
 
+4. After logging in, navigate through the Platform9 dashboard to explore key components such as Clusters, Hosts, Images, and VM provisioning options
