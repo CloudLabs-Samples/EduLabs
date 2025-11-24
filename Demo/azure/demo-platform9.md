@@ -47,4 +47,6 @@ This lab environment includes a Windows host virtual machine with two Ubuntu VMs
    * **Username/Email**: admin@airctl.localnet
    * **Password**: qEkzDDGCaHFRsOBJ
 
+   Note: Use the given credentials to sign in. If login fails or errors appear, keep trying after short intervals—this usually happens while the PCD services are still starting up
+
 4. After logging in, navigate through the Platform9 dashboard to explore key components such as Clusters, Hosts, Images, and VM provisioning options
