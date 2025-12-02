@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo: Windows VM with VS Code",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/demo-vmaas.md",
+        "Order": 1
+      }
+    ]
+  }
+]
