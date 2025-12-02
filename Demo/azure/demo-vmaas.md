@@ -1,7 +1,7 @@
-# Custom Lab : Windows Virtual machine
+# Demo Lab : Windows Virtual machine with Visual Studio Code
 
 ## Overview
-This lab environment has a Windows Virtual machine
+This lab environment has a Windows Virtual machine with Visual Studio Code
 
 ## Getting started
 
@@ -15,7 +15,7 @@ This lab environment has a Windows Virtual machine
    
    ![](images/environment-tab.png)
 
-3. 5. You can view the **duration** for the lab evironment from the top right corner
+3. You can view the **duration** for the lab evironment from the top right corner
 
    ![](images/duration.png)
 
