@@ -10,9 +10,6 @@ This lab environment has a Kali Linux Virtual machine with all the necessary too
 - GIMP
 - Visual Studio Code
 
-## Overview
-This lab environment has a Kali Linux Virtual machine with Visual Studio Code
-
 ## Getting started
 
 ## Instructions
