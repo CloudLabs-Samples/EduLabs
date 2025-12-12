@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo for CCU: Student Desktop",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/ccu-studentdesktop.md",
+        "Order": 1
+      }
+    ]
+  }
+]
