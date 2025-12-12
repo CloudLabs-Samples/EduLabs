@@ -1,4 +1,14 @@
-# Demo Lab : Kali Linux Virtual machine with Visual Studio Code
+# CloudLabs Demo for CCU: Kali Linux
+
+## Overview
+This lab environment has a Kali Linux Virtual machine with all the necessary tools pre-installed.
+
+**Tools Pre-installed**:
+- LibreOffice
+- Docker
+- Git
+- GIMP
+- Visual Studio Code
 
 ## Overview
 This lab environment has a Kali Linux Virtual machine with Visual Studio Code
