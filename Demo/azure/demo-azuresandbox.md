@@ -24,7 +24,6 @@
     ![](images/image004.png)
 
 1. If you are prompted with **"Action required"**, click **`Next`**.
-
     ![Step 1](images/actionreq.png)
 
     Follow these steps to secure your Microsoft Azure account using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
