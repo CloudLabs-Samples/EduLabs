@@ -24,7 +24,7 @@
     ![](images/image004.png)
 
 1. If you are prompted with **"Action required"**, click **`Next`**.
-    ![Step 1](images/actionreq.png)
+    ![Step 1](images/actionrequest.png)
 
     Follow these steps to secure your Microsoft Azure account using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
 
@@ -38,7 +38,7 @@
 
    ![Step 3](images/phone.png)
 
-1. Choose your country code (e.g., India +91), enter your mobile number, then select **Text a code** and click **Next**.
+1. Choose your country code (e.g., United States +1), enter your mobile number, then select **Text a code** and click **Next**.
 
    ![Step 4](images/phone2.png)
 
