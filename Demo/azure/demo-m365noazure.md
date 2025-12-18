@@ -22,7 +22,7 @@ This lab environment includes an M365 tenant with Global admin privileges, and a
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
-Follow these steps to secure your Microsoftaccount using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
+Follow these steps to secure your Microsoft account using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
 
 1. You may be asked to set up the **Microsoft Authenticator**.
 
