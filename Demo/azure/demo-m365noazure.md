@@ -1,7 +1,7 @@
 # Demo : M365 Labs
 
 ## Overview
-This lab environment includes an M365 tenant with Global admin privileges, and a Microsoft 365 E5 license assigned to the lab user.
+This lab environment includes an M365 tenant with Global admin privileges, and a Microsoft 365 Business Premium license assigned to the lab user.
 
 ## Instructions
 
@@ -22,33 +22,33 @@ This lab environment includes an M365 tenant with Global admin privileges, and a
    * **Username/Email**:  <inject key="AzureAdUserEmail"></inject> 
    * **Password**:  <inject key="AzureAdUserPassword"></inject>
 
-Follow these steps to secure your Microsoft Azure account using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
+Follow these steps to secure your Microsoftaccount using multi-factor authentication via phone. These steps are applicable **only if you are prompted** to set up additional security information during login.
 
 1. You may be asked to set up the **Microsoft Authenticator**.
 
-1. Click **"I want to set up a different method"** at the bottom of the screen.
+1. Click **"Set up a different way to sign in"** at the bottom of the screen.
 
-   ![Step 2](images/2025-04-03_17-46-15.png)
+   ![Step 2](images/setup-signin.png)
 
-1. In the popup, select **Phone** from the list.
+1. In the Add a sign-in method popup, select **Phone** from the list.
 
-   ![Step 3](images/2025-04-03_17-46-25.png)
+   ![Step 3](images/phone.png)
 
-1. Choose your country code (e.g., India +91), enter your mobile number, then select **Receive a code** and click **Next**.
+1. Choose your country code (e.g., United States +1), enter your mobile number, then select **Text a code** and click **Next**.
 
-   ![Step 4](images/2025-04-03_17-46-44.png)
+   ![Step 4](images/phone2.png)
 
 1. A 6-digit verification code will be sent to your phone. Enter the code and click **Next**.
 
     ![Step 5](images/2025-04-03_18-35-37.png)
 
-1. Once verification is complete and your phone number is registered, click **Next** to continue.
+1. Once verification is complete and your phone number is registered, click **Done** to continue.
 
-    ![Step 5-u](images/verificationcomplete.png)
+    ![Step 5-u](images/phone3.png)
 
-1. You will see a **Success** message confirming that your MFA method is configured. Click **Done**.
+1. If you see the pop-up **Stay Signed in?** click **Yes**.
 
-    ![Step 6](images/2025-04-03_18-36-21.png)
+    ![](images/image-006.jpg)
    
 3. Once logged in, you’ll have access to the M365 Admin Center, where you can manage users, licenses, and other M365 services.
 
