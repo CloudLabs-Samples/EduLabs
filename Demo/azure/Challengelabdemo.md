@@ -40,7 +40,7 @@ No commands or step-by-step instructions are provided.
 
 Using the Technician VM:
 
-Identify why CONTOSO\enduser1 is unable to authenticate
+Login to Client Identify why CONTOSO\enduser1 is unable to authenticate
 
 Verify the current status of the user account in Active Directory
 
