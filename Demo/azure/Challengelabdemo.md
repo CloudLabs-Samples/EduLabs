@@ -2,15 +2,15 @@
 
 ## Objective
 
-Diagnose and resolve a domain user account lockout and validate successful authentication from the Technician VM.
+Diagnose and resolve a domain user account lockout and validate successful authentication by signing in to the Client VM using the affected domain user.
 
 ## Scenario
 
 The user CONTOSO\enduser1 is locked out of the domain after multiple failed sign-in attempts.
 
-As a helpdesk technician, you must investigate the issue, restore access to the account, and confirm that the user can successfully sign in using the CloudLabs-provisioned environment.
+As a helpdesk technician, you must investigate the issue from the Technician VM, restore access to the account, and confirm that the user can successfully sign in using the Client VM.
 
-## Lab Environment (Provisioned by CloudLabs)
+## Lab Environment
 
 When the lab is launched, CloudLabs automatically provisions:
 
@@ -82,6 +82,6 @@ The challenge is considered successfully completed when:
 
 - The account remains enabled
 
-- Successful sign-in as CONTOSO\enduser1 is confirmed on the Technician VM
+- Successful RDP sign-in to the Client VM as CONTOSO\enduser1 is confirmed
 
 - No password reset was performed
