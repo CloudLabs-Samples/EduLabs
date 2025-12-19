@@ -88,6 +88,11 @@ The challenge is considered successfully completed when:
 
 - No password reset was performed
 
+
+## Validation 1: Resolving a Windows Domain Account Lockout
+
+<validation step="c517bcfb-307d-4474-839d-64fcdf435944" />
+
 **Congratulations on completing this challenge!**
 
 Now, click Next to continue to Challenge 02.
