@@ -63,6 +63,14 @@ Attempt to sign in as CONTOSO\enduser1
 
 Confirm successful authentication without lockout errors
 
+## User Credentials (For Validation)
+
+Use the following credentials only for validation after remediation:
+
+User Name: CONTOSO\enduser1
+
+Password: Summer!2025
+
 ## Success Criteria
 
 The challenge is considered successfully completed when:
