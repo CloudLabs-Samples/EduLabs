@@ -62,6 +62,20 @@ When the lab is launched, CloudLabs automatically provisions:
 
 **Note:** A firewall misconfiguration is preventing access to the application
 
+## Lab Credentials
+
+**Client VM**
+- User Name: Client
+- Password: Password.1!!
+
+**Technician VM**
+- User Name: Technician
+- Password: Password.1!!
+
+**APP01 Server (via RDP from Technician VM)**
+- User Name: CONTOSO\helpdesk1
+- Password: Password.1!!
+  
 ## Challenge Workflow
 Learners must complete the following tasks using the CloudLabs environment. No commands or step-by-step instructions are provided.
 
@@ -107,20 +121,6 @@ From the Client VM:
 
 - Verify the "Lab App" welcome page is displayed
 
-## Lab Credentials
-
-**Client VM**
-- User Name: Client
-- Password: Password.1!!
-
-**Technician VM**
-- User Name: Technician
-- Password: Password.1!!
-
-**APP01 Server (via RDP from Technician VM)**
-- User Name: CONTOSO\helpdesk1
-- Password: Password.1!!
-
 ## Success Criteria
 The challenge is considered successfully completed when:
 
@@ -137,3 +137,5 @@ No unnecessary firewall rules were disabled (only the specific blocking rule was
 # Validation 2: Resolving a Network Resource Access Error
 
 <validation step="42901dba-f89a-4da6-b0a5-56252e881f62" />
+
+**Congratulations on completing this challenge!**
