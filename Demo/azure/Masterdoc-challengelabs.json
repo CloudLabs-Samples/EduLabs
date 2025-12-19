@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Challenge Labs Demo",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/Challengelabdemo.md",
+        "Order": 1
+      }
+    ]
+  }
+]
