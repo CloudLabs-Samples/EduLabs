@@ -88,6 +88,8 @@ The challenge is considered successfully completed when:
 
 - No password reset was performed
 
+**Congratulations on completing this challenge!**
+
 Now, click Next to continue to Challenge 02.
 
 
