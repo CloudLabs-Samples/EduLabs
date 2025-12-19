@@ -128,8 +128,11 @@ The challenge is considered successfully completed when:
 
 No unnecessary firewall rules were disabled (only the specific blocking rule was addressed)
 
+Congratulations on completing the Challenge! Now, it's time to validate it. Here are the steps:
+
+Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge.
+If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
 # Validation 2: Resolving a Network Resource Access Error
 
 <validation step="42901dba-f89a-4da6-b0a5-56252e881f62" />
-
-**Congratulations on completing this challenge!**
