@@ -64,14 +64,6 @@ When the lab is launched, CloudLabs automatically provisions:
 
 ## Lab Credentials
 
-**Client VM**
-- User Name: Client
-- Password: Password.1!!
-
-**Technician VM**
-- User Name: Technician
-- Password: Password.1!!
-
 **APP01 Server (via RDP from Technician VM)**
 - User Name: CONTOSO\helpdesk1
 - Password: Password.1!!
