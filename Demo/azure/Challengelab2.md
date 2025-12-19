@@ -1,14 +1,18 @@
 # Challenge 2: Resolving a Network Resource Access Error
 
 ## Objective
+
 Diagnose and resolve a network connectivity issue preventing access to an internal web application, and validate successful access from the Client VM.
 
 ## Scenario
-HELPDESK TICKET #HD-2851 | Priority: CRITICAL | Status: ASSIGNED TO YOU
 
-From: enduser1 (enduser1@contoso.local)
-Subject: CRITICAL - Cannot access internal application for order processing
-Time Reported: Monday, 9:30 AM
+**HELPDESK TICKET #HD-2851 | Priority: CRITICAL | Status: ASSIGNED TO YOU**
+
+---
+**From:** enduser1 (enduser1@contoso.local)  
+**Subject:** CRITICAL - Cannot access internal application for order processing  
+**Time Reported:** Monday, 9:30 AM
+---
 
 **Issue Description:**
 
@@ -129,3 +133,7 @@ The challenge is considered successfully completed when:
 - The "Lab App" welcome page loads successfully in a browser
 
 No unnecessary firewall rules were disabled (only the specific blocking rule was addressed)
+
+# Validation 2: Resolving a Network Resource Access Error
+
+<validation step="42901dba-f89a-4da6-b0a5-56252e881f62" />
