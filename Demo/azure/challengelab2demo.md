@@ -2,11 +2,13 @@
 
 ## Objective
 
-Diagnose and resolve a network connectivity issue preventing access to an internal web application and validate successful access from the Client VM.
+Diagnose and resolve a network connectivity issue preventing access to an internal web application over both HTTP and HTTPS, and validate successful access from the Client VM.
 
 ## Scenario
 
 A user reports that they are unable to access the internal application hosted at:
+
+http://app.contoso.local
 
 https://app.contoso.local
 
@@ -19,31 +21,33 @@ When the lab is launched, CloudLabs automatically provisions the following resou
 
 Technician VM
 
-Domain-joined to CONTOSO
+- Domain-joined to CONTOSO
 
-Logged in using a helpdesk-level account
+- Logged in using a helpdesk-level account
 
-Used only for investigation and remediation
+- Used only for investigation and remediation
 
 Client VM
 
-Domain-joined end-user workstation
+- Domain-joined end-user workstation
 
-Used only to validate application access
+- Used only to validate application access
 
 Application Server (APP01)
 
-Hosts the internal web application
+- Hosts the internal web application
 
-Domain-joined to CONTOSO
+- Domain-joined to CONTOSO
 
-Accessible only through internal network connectivity
+- Accessible only through internal network connectivity
 
 Internal Application
 
-URL: https://app.contoso.local
+- URLs:
 
-Uses HTTPS for secure access
+http://app.contoso.local
+
+https://app.contoso.local
 
 ## Challenge Workflow
 
@@ -54,56 +58,58 @@ No commands, scripts, or step-by-step instructions are provided.
 
 Using the Client VM:
 
-Attempt to access the internal application
+- Attempt to access the internal application over both HTTP and HTTPS
 
-Use appropriate diagnostic tools to determine:
+- Use appropriate diagnostic tools to determine:
 
-Whether name resolution is working
+- Whether name resolution is working
 
-Whether basic network connectivity exists
+- Whether basic network connectivity exists
 
-Whether the issue is related to a specific service or port
+- Whether access is being blocked on specific ports
 
 ## Task 2: Investigate the Application Server
 
 Using the Technician VM:
 
-Access the application server (APP01) using approved administrative methods
+- Access the application server (APP01) using approved administrative methods
 
-Review relevant system and network configurations
+- Review relevant system and network configurations
 
-Identify any security controls or rules that may be blocking access to the application
+- Identify any security controls or rules affecting inbound web traffic
 
 ## Task 3: Remediate the Connectivity Issue
 
 On the application server:
 
-Correct the configuration preventing access to the application
+- Correct the configuration preventing access on both ports 80 and 443
 
-Ensure the change restores secure HTTPS connectivity
+- Ensure secure and functional web access is restored
 
-Avoid making unnecessary or unrelated configuration changes
+- Avoid making unnecessary or unrelated configuration changes
 
 ## Task 4: Validate Application Access
 
 Using the Client VM:
 
-Reattempt access to https://app.contoso.local
+- Reattempt access to:
 
-Confirm that the application loads successfully
+   - http://app.contoso.local
 
-Validate that access is restored without connectivity errors
+  - https://app.contoso.local
+
+- Confirm that the application loads successfully
+
+- Validate that access is restored without connectivity errors
 
 ## Success Criteria
 
 The challenge is considered successfully completed when:
 
-The internal application at https://app.contoso.local is reachable
+- The internal application is reachable over HTTP (80) and HTTPS (443)
 
-HTTPS connectivity is successfully established
+- The application loads correctly from the Client VM
 
-The application loads correctly from the Client VM
-
-No access or connectivity errors are observed
+- No access or connectivity errors are observed
 
 **Congratulations on completing this challenge!**
