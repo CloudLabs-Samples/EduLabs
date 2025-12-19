@@ -6,9 +6,30 @@ Diagnose and resolve a domain user account lockout and validate successful authe
 
 ## Scenario
 
-The user CONTOSO\enduser1 is locked out of the domain after multiple failed sign-in attempts.
+**HELPDESK TICKET #HD-2847 | Priority: HIGH | Status: ASSIGNED TO YOU**
 
-As a helpdesk technician, you must investigate the issue from the Technician VM, restore access to the account, and confirm that the user can successfully sign in using the Client VM.
+---
+From: enduser1 (enduser1@contoso.local)
+Subject: URGENT - Cannot access my computer before client presentation
+Time Reported: Monday, 8:15 AM
+---
+
+**Issue Description:**
+
+"I can't log into my computer this morning! I've tried entering my password several times, but now it won't even let me attempt to sign in anymore. I keep getting an error message about my account.
+
+This is urgent - I have a critical client presentation at 10:00 AM and all my presentation files are on my work computer. I haven't had any issues before, and I'm certain I'm using the correct password. Please help me get back into my system as soon as possible!"
+
+**Your Mission:**
+
+As the on-call helpdesk technician at Contoso Corporation, you have less than 2 hours to resolve this issue. You must:
+
+- Investigate why CONTOSO\enduser1 (enduser1) cannot authenticate
+- Diagnose the root cause using the Technician VM
+- Restore access to her account following proper security protocols
+- Validate that she can successfully sign in without further issues
+
+**Important:** enduser1 is a sales manager who needs immediate access to prepare for a high-stakes client meeting. Time is critical, but security protocols must still be followed.
 
  ![](images/enduser1lock.png)
 
@@ -42,31 +63,31 @@ No commands or step-by-step instructions are provided.
 
 Using the Technician VM:
 
-Login to Client Identify why CONTOSO\enduser1 is unable to authenticate
+- Login to Client VM and identify why CONTOSO\enduser1 is unable to authenticate
 
-Verify the current status of the user account in Active Directory
+- Verify the current status of the user account in Active Directory
 
-Confirm that the issue is related to an account lockout
+- Confirm that the issue is related to an account lockout
 
 ## Task 2: Remediate the Issue
 
 If the account is confirmed to be locked:
 
-Restore access using appropriate domain administrative actions
+- Restore access using appropriate domain administrative actions
 
-Ensure the account remains enabled
+- Ensure the account remains enabled
 
-Do not reset or change the user’s password
+- Do not reset or change the user’s password
 
 ## Task 3: Validate User Sign-In
 
 From the Technician VM:
 
-Sign out of the current session or switch user
+- Sign out of the current session or switch user
 
-Attempt to sign in as CONTOSO\enduser1
+- Attempt to sign in as CONTOSO\enduser1
 
-Confirm successful authentication without lockout errors
+- Confirm successful authentication without lockout errors
 
 ## User Credentials (For Validation)
 
@@ -88,12 +109,14 @@ The challenge is considered successfully completed when:
 
 - No password reset was performed
 
+**Congratulations on completing the Challenge!** Now, it's time to validate it. Here are the steps:
+
+Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge.
+If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
 ## Validation 1: Resolving a Windows Domain Account Lockout
 
 <validation step="c517bcfb-307d-4474-839d-64fcdf435944" />
-
-**Congratulations on completing this challenge!**
 
 Now, click Next to continue to Challenge 02.
 
