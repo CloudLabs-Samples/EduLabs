@@ -22,6 +22,8 @@ This is blocking my entire team from processing customer orders! We have dozens 
 
 I can access other websites and internal resources just fine, so my internet connection is working. It's specifically this application that won't load. Please help urgently!"
 
+ ![](images/webaccessissue.png)
+
 **Your Mission:**
 
 As the on-call network support technician at Contoso Corporation, you must immediately investigate this critical service disruption. You need to:
