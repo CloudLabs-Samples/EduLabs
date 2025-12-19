@@ -28,6 +28,9 @@ When the lab is launched, CloudLabs automatically provisions:
 
    - Affected user: CONTOSO\enduser1 (pre-locked)
  
+   - Note: CONTOSO\enduser1 is a standard domain user associated with the Client VM.
+For this challenge, authentication is intentionally validated by signing in as the user from the Technician VM to demonstrate identity troubleshooting capabilities.
+ 
 ## Challenge Workflow
 
 Learners must complete the following tasks using the CloudLabs environment.
