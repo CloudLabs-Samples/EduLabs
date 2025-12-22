@@ -91,14 +91,14 @@ Using the Technician VM:
 
 - Check the Windows Firewall configuration on APP01
 
-- Identify any firewall rules that might be blocking HTTPS traffic (port 443)
+- Identify any firewall rules that might be blocking HTTP/HTTPS traffic (ports 80,443)
 
 - Determine the specific rule or configuration causing the connectivity failure
 
 ## Task 3: Remediate the Issue
 On the APP01 server:
 
-- Resolve the firewall configuration issue preventing access to port 443
+- Resolve the firewall configuration issue preventing access to ports 80,443
 
 - Ensure the application remains accessible without compromising security
 
@@ -107,7 +107,7 @@ On the APP01 server:
 ## Task 4: Validate Application Access
 From the Client VM:
 
-- Re-test network connectivity to confirm port 443 is now accessible
+- Re-test network connectivity to confirm port 80,443 is now accessible
 
 - Open a web browser and navigate to https://app.contoso.local
 
@@ -118,7 +118,7 @@ From the Client VM:
 ## Success Criteria
 The challenge is considered successfully completed when:
 
-- Network connectivity to app.contoso.local on port 443 is confirmed (TcpTestSucceeded = True)
+- Network connectivity to app.contoso.local on port 80,443 is confirmed (TcpTestSucceeded = True)
 
 - The firewall blocking rule has been properly disabled
 
