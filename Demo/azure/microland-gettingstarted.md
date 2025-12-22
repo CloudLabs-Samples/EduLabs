@@ -1,4 +1,4 @@
-# Challenge Labs demo
+# Challenge Labs Demo
 
 ## Overview
 This lab provides a set of real-world troubleshooting challenges designed to simulate common IT support and administration scenarios. Participants will investigate issues, identify root causes, and apply fixes using a controlled lab environment.
