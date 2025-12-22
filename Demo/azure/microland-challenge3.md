@@ -138,3 +138,7 @@ The challenge is considered successfully completed when:
 - The network printer is accessible via the UNC path \\printerhost\OfficePrinter from the Client VM
 
 - No unnecessary DNS records or configurations were added
+
+## Validation 3: Resolve a Network Printer Access Issue
+
+<validation step='1fe8bbf2-464d-4423-9d85-6469433caa5e' />
