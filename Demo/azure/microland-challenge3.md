@@ -143,4 +143,4 @@ The challenge is considered successfully completed when:
 
 <validation step="1fe8bbf2-464d-4423-9d85-6469433caa5e" />
 
-Now, click Next to continue to Challenge 03.
+Now, click Next to continue to Challenge 04.
