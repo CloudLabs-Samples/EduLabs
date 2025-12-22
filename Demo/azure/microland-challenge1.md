@@ -9,7 +9,7 @@ Diagnose and resolve a domain user account lockout and validate successful authe
 **HELPDESK TICKET #HD-2847 | Priority: HIGH | Status: ASSIGNED TO YOU**
 
 ---
-**From:** enduser1 (enduser1@contoso.local)
+**From:** enduser1 (enduser1@contoso.local)<br>
 **Subject:** URGENT - Cannot access my computer before client presentation
 **Time Reported:** Monday, 8:15 AM
 ---
