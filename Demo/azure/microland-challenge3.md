@@ -142,3 +142,5 @@ The challenge is considered successfully completed when:
 ## Validation 3: Resolve a Network Printer Access Issue
 
 <validation step="1fe8bbf2-464d-4423-9d85-6469433caa5e" />
+
+Click on next for the challege 4
