@@ -1,7 +1,7 @@
 # Challenge labs demo
 
 ## Overview
-This lab provides a set of real-world troubleshooting challenges designed to simulate common IT support and cloud administration scenarios. Participants will investigate issues, identify root causes, and apply fixes using a controlled lab environment.
+This lab provides a set of real-world troubleshooting challenges designed to simulate common IT support and administration scenarios. Participants will investigate issues, identify root causes, and apply fixes using a controlled lab environment.
 
 The lab includes the following challenges:
 - Challenge 1: Resolving a Windows Domain Account Lockout
