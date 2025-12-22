@@ -141,6 +141,6 @@ From the Client VM:
 
 ## Validation 4: Resolving Azure Portal Access Failure
 
-<validation step='bd58855c-b8b7-4d93-9296-bf537eb65ee3' />
+<validation step="bd58855c-b8b7-4d93-9296-bf537eb65ee3" />
 
 ## Congratulations! You have successfully completed all the challenges.
