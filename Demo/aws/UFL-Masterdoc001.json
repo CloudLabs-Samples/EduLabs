@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo for : Windows",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/new/main/Demo/aws",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/aws/UFL-Demo.md",
+        "Order": 1
+      }
+    ]
+  }
+]
