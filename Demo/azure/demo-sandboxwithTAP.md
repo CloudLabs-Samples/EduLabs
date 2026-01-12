@@ -29,7 +29,9 @@
 
 1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-1. Confirm you have a resource group **Sandbox** present as shown in the below screenshot. You need to use the **Sandbox** resource group throughout the learning.
-
    ![](images/rg-main.png)
+
+1. Confirm you have a resource group **Sandbox** present. You need to use the **Sandbox** resource group throughout the learning.
+
+
 
