@@ -45,19 +45,23 @@ EOF
 ```
 sudo tee /etc/nginx/sites-available/demoapp <<EOF
 server {
-    listen 80;
-    listen 443;
+    listen 80 default_server;
+    server_name _;
     root /var/www/demoapp/html;
     index index.html;
     access_log /var/www/demoapp/logs/access.log;
 }
 EOF
 ```
-Enable site:
+Disable default site and enable demo site:
+sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/demoapp /etc/nginx/sites-enabled/
+
+Validate and reload:
+```
 sudo nginx -t
 sudo systemctl reload nginx
-
+```
 7. Verify Web Application
 ```
 curl http://localhost
