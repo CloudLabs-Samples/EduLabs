@@ -46,6 +46,7 @@ EOF
 sudo tee /etc/nginx/sites-available/demoapp <<EOF
 server {
     listen 80;
+    listen 443;
     root /var/www/demoapp/html;
     index index.html;
     access_log /var/www/demoapp/logs/access.log;
@@ -64,5 +65,5 @@ curl http://localhost
 
 8. Monitor Logs and Health
 ```
-tail -f /var/www/demoapp/logs/access.log
+sudo tail -f /var/www/demoapp/logs/access.log
 ```
