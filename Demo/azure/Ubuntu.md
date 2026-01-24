@@ -75,7 +75,7 @@ sudo rm -f /etc/nginx/conf.d/*
 
 10. Configure Web Server Access Permissions.
 
-    Grant the Nginx service user (www-data) access to the application files.
+   Grant the Nginx service user (www-data) access to the application files.
    ```
    sudo usermod -aG webops www-data
    
