@@ -8,6 +8,30 @@ The team requires a secure and reliable environment to host their application an
 Your task is to configure the server by creating a dedicated application user and group, setting up the required directory structure with proper permissions, deploying a web service, and enabling access logging.
 You will also validate that the application is accessible and perform basic system health checks to ensure the server is ready for operational use.
 
+## Getting started
+
+## Instructions
+
+1. Once the environment is provisioned, a **virtual machine** (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
+
+   ![](images/vmandguide-linux.png)
+
+2. To get the lab environment details, you can select the **Environment** tab, you can locate the **Environment** tab in the upper right corner.
+   
+   ![](images/environment-tab.png)
+
+3. 5. You can view the **duration** for the lab evironment from the top right corner
+
+   ![](images/duration.png)
+
+4. You can **start(1)** or **stop(2)** the Virtual Machine from the **Resources** tab. You can also monitor the **uptime(3)** for your VM from here.
+
+   ![](images/resources-tab.png)
+
+5. You can also open the Lab Guide on a separate full window by selecting the **+** button on the top right corner.
+
+    ![](images/split-win.png)
+   
 ## Lab Steps
 
 1. From the Virtual machine, Open a Terminal to run the commands.
