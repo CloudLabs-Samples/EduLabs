@@ -78,7 +78,8 @@ sudo rm -f /etc/nginx/conf.d/*
    sudo usermod -aG webops www-data
    
    sudo systemctl restart nginx
-    ```
+   ```
+
 10. Verify Web Application
     ```
     curl http://localhost
