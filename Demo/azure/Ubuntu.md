@@ -66,7 +66,9 @@ sudo rm -f /etc/nginx/conf.d/*
 8. Enable Demo Site and Reload Nginx
    ```
    sudo ln -sf /etc/nginx/sites-available/demoapp /etc/nginx/sites-enabled/demoapp
+   
    sudo nginx -t
+   
    sudo systemctl reload nginx
    ```
 
@@ -74,6 +76,7 @@ sudo rm -f /etc/nginx/conf.d/*
    Grant the Nginx service user (www-data) access to the application files.
    ```
    sudo usermod -aG webops www-data
+   
    sudo systemctl restart nginx
     ```
 10. Verify Web Application
