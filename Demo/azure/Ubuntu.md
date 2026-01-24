@@ -1,10 +1,14 @@
-# Demo Lab : Linux Virtual machine
+# Demo Lab :Linux Web Application Deployment and Server Configuration 
 
-# Scenario
+## Scenario
 
-You are a Linux System Administrator onboarding a new production web application server for an internal business team.
-Your task is to prepare the server with a secure user, deploy a simple web service, configure logging, verify access, and perform health checks — all using the terminal.
+You are a Linux System Administrator responsible for preparing a new production web application server for an internal business team.
+The team requires a secure and reliable environment to host their application and monitor basic system activity.
 
+Your task is to configure the server by creating a dedicated application user and group, setting up the required directory structure with proper permissions, deploying a web service, and enabling access logging.
+You will also validate that the application is accessible and perform basic system health checks to ensure the server is ready for operational use.
+
+## Lab Steps
 1.Verify Server Identity
 
 ```
@@ -45,7 +49,7 @@ EOF
 ```
 sudo tee /etc/nginx/sites-available/demoapp <<EOF
 server {
-    listen 80 default_server;
+    listen 80;
     server_name _;
     root /var/www/demoapp/html;
     index index.html;
@@ -53,21 +57,34 @@ server {
 }
 EOF
 ```
-Disable default site and enable demo site:
-sudo rm /etc/nginx/sites-enabled/default
-sudo ln -s /etc/nginx/sites-available/demoapp /etc/nginx/sites-enabled/
+7.Remove Default Nginx Configuration
+```
+sudo rm -f /etc/nginx/sites-enabled/default
+sudo rm -f /etc/nginx/conf.d/*
+``
 
-Validate and reload:
-```
-sudo nginx -t
-sudo systemctl reload nginx
-```
-7. Verify Web Application
-```
-curl http://localhost
-```
+8. Enable Demo Site and Reload Nginx
+   ```
+   sudo ln -sf /etc/nginx/sites-available/demoapp /etc/nginx/sites-enabled/demoapp
+   sudo nginx -t
+   sudo systemctl reload nginx
+   ```
 
-8. Monitor Logs and Health
-```
-sudo tail -f /var/www/demoapp/logs/access.log
-```
+9. Configure Web Server Access Permissions
+   Grant the Nginx service user (www-data) access to the application files.
+   ```
+   sudo usermod -aG webops www-data
+   sudo systemctl restart nginx
+    ```
+10. Verify Web Application
+    ```
+    curl http://localhost
+    ```
+
+or check in any browser : http:localhost
+
+## Conclusion
+In this lab, a Linux web application server was successfully configured using core system administration commands.
+The application was deployed, permissions were secured, and the web service was verified through both command-line and browser access.
+
+This lab demonstrates essential Linux skills required for real-world server setup and management.
