@@ -12,7 +12,7 @@ You will also validate that the application is accessible and perform basic syst
 
 1. From the Virtual machine, Open a Terminal to run the commands.
 
-2.Verify Server Identity
+2. Verify Server Identity
 
 ```
 whoami
@@ -61,10 +61,11 @@ server {
 EOF
 ```
 8.Remove Default Nginx Configuration
+
 ```
 sudo rm -f /etc/nginx/sites-enabled/default
 sudo rm -f /etc/nginx/conf.d/*
-``
+```
 
 9. Enable Demo Site and Reload Nginx
    ```
@@ -76,6 +77,7 @@ sudo rm -f /etc/nginx/conf.d/*
    ```
 
 10. Configure Web Server Access Permissions
+  
    Grant the Nginx service user (www-data) access to the application files.
    ```
    sudo usermod -aG webops www-data
