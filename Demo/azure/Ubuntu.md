@@ -14,7 +14,7 @@ You will also validate that the application is accessible and perform basic syst
 
 1. Once the environment is provisioned, a **virtual machine** (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout to perform the lab tasks.
 
-   ![](images/vmandguide-linux.png)
+   ![](images/vmandguide-guilinux.png)
 
 2. To get the lab environment details, you can select the **Environment** tab, you can locate the **Environment** tab in the upper right corner.
    
@@ -110,6 +110,8 @@ sudo rm -f /etc/nginx/conf.d/*
    curl http://localhost
    ```
    or check in any browser : http://localhost
+
+   ![](images/webserver.png)
 
 ## Conclusion
 In this lab, a Linux web application server was successfully configured using core system administration commands.
