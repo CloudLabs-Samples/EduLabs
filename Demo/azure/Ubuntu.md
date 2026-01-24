@@ -13,7 +13,6 @@ You will also validate that the application is accessible and perform basic syst
 1. From the Virtual machine, Open a Terminal to run the commands.
 
 2. Verify Server Identity
-
 ```
 whoami
 hostname
@@ -21,7 +20,6 @@ hostname -I
 uptime
 ```
 3. Create Application User and Group
-
 ```
 sudo groupadd webops
 sudo useradd -m -G webops webadmin
@@ -61,7 +59,6 @@ server {
 EOF
 ```
 8.Remove Default Nginx Configuration
-
 ```
 sudo rm -f /etc/nginx/sites-enabled/default
 sudo rm -f /etc/nginx/conf.d/*
