@@ -73,9 +73,7 @@ sudo rm -f /etc/nginx/conf.d/*
    sudo systemctl reload nginx
    ```
 
-10. Configure Web Server Access Permissions
-  
-   Grant the Nginx service user (www-data) access to the application files.
+10. Configure Web Server Access Permissions. Grant the Nginx service user (www-data) access to the application files.
    ```
    sudo usermod -aG webops www-data
    
@@ -86,8 +84,7 @@ sudo rm -f /etc/nginx/conf.d/*
    ```
    curl http://localhost
    ```
-
-or check in any browser : http:localhost
+   or check in any browser : http:localhost
 
 ## Conclusion
 In this lab, a Linux web application server was successfully configured using core system administration commands.
