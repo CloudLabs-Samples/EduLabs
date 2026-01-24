@@ -81,9 +81,9 @@ sudo rm -f /etc/nginx/conf.d/*
    ```
 
 10. Verify Web Application
-    ```
-    curl http://localhost
-    ```
+   ```
+   curl http://localhost
+   ```
 
 or check in any browser : http:localhost
 
