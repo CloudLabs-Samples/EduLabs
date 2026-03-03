@@ -235,7 +235,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
       msfdb init
       ```
    
-1. Verify if the PostgreSQL database's status **active** by running the below command.
+1. Verify if the PostgreSQL database's status **active** by running the below command. You may need to press CTRL+C to exit the console.
 
    > **Note:** The below command need to be entered manually in terminal.
    
