@@ -222,9 +222,9 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 1. Once the installation is completed, run the following command to restart and enable the postgresql service.
 
    ```
-   systemctl start postgresql@17-main
+   systemctl start postgresql@18-main
    
-   systemctl enable postgresql@17-main
+   systemctl enable postgresql@18-main
    ```
 
 1. Once done run the below command to start the PostgreSQL database server. PostgreSQL is the backend database support for Metasploit, which you can use to store your penetration-testing results.
