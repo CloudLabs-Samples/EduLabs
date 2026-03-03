@@ -60,9 +60,9 @@ In this lab environment you are provided with a lab virtual machine with Hyper-V
 
 ## Exercise 1 : Working with Kali
 
-In this exercise you will update/upgrade Kali Linux system and explore some of the essential tools used in ethical hacking.
+In this exercise you will use Kali Linux system and explore some of the essential tools used in ethical hacking.
 
-## Task 1 : Updating and Upgrading Kali Linux
+## Task 1 : Connect to Kali Linux system
 
 1. In the labvm provided, click on **Hyper-V Manager (1)** and select **Kali-Linux (2)** under the Virtual machines and click on **Start (3)** to start the virtual machine.
 
@@ -85,69 +85,6 @@ In this exercise you will update/upgrade Kali Linux system and explore some of t
 
       ![](images/root-terminal-1.png)
   
-5. In the terminal, we will be entering below mentioned commands manually to securely import, refresh, and store the Kali Linux APT (Advanced Package Tool) archive signing key into a system so that packages from the Kali Linux repositories can be verified and trusted by the system's package manager.
-
-   - Run the below command to create a temporary directory for GnuPG (GPG) operations and assigns it to GNUPGHOME.
-     
-      ```
-      export GNUPGHOME=$(mktemp -d)
-
-      ```
-   - Below command will import the Kali Linux official signing key from their archive URL.
-     
-      ```
-      curl -fsSL https://archive.kali.org/archive-key.asc | gpg --import
-
-      ```
-   - Run the below command to contact the Ubuntu keyserver to refresh the imported key, and fetch any updates like expiration changes or revocations.
-
-      ```
-      gpg --keyserver keyserver.ubuntu.com --refresh-keys
-
-      ```
-   - Below comamnds are used to ensure that the directory named /etc/apt/trusted.gpg.d/ exists and exports the refreshed GPG key and converts it into a binary format. Then stores it as kali-archive-keyring.gpg so that APT can trust packages signed with this key. 
-
-     ```
-      mkdir -p /etc/apt/trusted.gpg.d/
-     
-      gpg --export | gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
-     ```
-     
-   - Run the below command to remove the temporary environment variable, effectively cleaning up and restoring the normal GPG environment.
-     
-     ```
-      unset GNUPGHOME
-     ```
-     
-   - Run the following command to verify if the repository is correctly defined in the sources.
-      
-      ```
-      more /etc/apt/sources.list
-      ```
-
-   ![](images/edusources.png)
-  
-6. Next, run the below command to update the list of available packages.
-
-   > **Note:** The below command need to be entered manually in terminal.
-
-      ```
-      apt-get update
-      ```
- 
-      ![](images/kali-updatecmd.png)
-  
-7. Run the below command to install new version of the packages, if prompted with **Do you want to continue (Y/N), type Y**.
-
-   > **Note:** It may take some time to complete.
-
-   > **Note:** The below command need to be entered manually in terminal.
-
-      ```
-      apt-get upgrade
-      ```
-   
-8. Now the system is updated with latest packages or updates from the repository.
 
 ## Task 2 : Essential Kali tools
 
@@ -277,50 +214,12 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
 1. In Kali Linux, open Terminal and run the below command to install the latest version of postgresql.
 
    ```
-   apt-get install postgresql-17 -y
+   apt-get install postgresql-18 -y
    ```
 
    > **Note:**If you encounter an error stating that the at-spi2-core package can't be installed, try running the command `sudo apt install at-spi2-core`. After running the command when asked manually type **Yes,do as I say**.
 
-1. On the **Configuring libc6:amd64** pane, select **<No\>** option.
-
-   ![](./images/kalisetup2.png)
-
-1. In the next pane, select **<OK\>**.
-
-   ![](./images/kalisetup3.png)
-
-   >**Note:** It may take upto 10 minutes to get installed. If you are logged out of Kali Linux vm, please shut down and start it back and use it.
-
-1. Run the below command to configure the package manager.
-
-   ```
-   dpkg --configure -a
-   ```
-
-1. Now in the **Configuring postgresql-common**, select **<Ok\>**.
-
-   ![](./images/kalisetup4.png)
-
-1. Once the installation is successfull. In the same terminal, run the following command to stop the postgresql service.
-
-   ```
-   systemctl stop postgresql
-   ```
-
-1. Once stopped, now you need to change the `PORT` configuration in `postgresql.conf` file for PostgreSQL, run the following command to open that file.
-
-   ```
-   vim /etc/postgresql/17/main/postgresql.conf
-   ```
-
-1. Once the file is opened in the vim editor, press **I** to go to edit mode, change the `PORT` from **5433** to **5432**, which will the default port for postgresql.
-
-   ![](./images/kalisetup1.png)
-
-1. Once the changes are made, press **Esc** and type `:wq` to **Save and Exit**.
-
-1. Once the changes are saved, run the following command to restart and enable the postgresql service.
+1. Once the installation is completed, run the following command to restart and enable the postgresql service.
 
    ```
    systemctl start postgresql@17-main
@@ -341,7 +240,7 @@ Metasploit is used for hacking into systems for testing purposes.The Metasploit 
    > **Note:** The below command need to be entered manually in terminal.
    
       ```
-      service postgresql@17-main status
+      service postgresql@18-main status
       ```
    
    ![](images/msp-1.png)
