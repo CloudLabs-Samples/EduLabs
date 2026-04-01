@@ -4,8 +4,6 @@ Before starting the hands-on lab, kindly note that the lab duration will be show
 
 ![](./images/gh-81.png)
 
-Follow the steps below to get started with the lab.
-
 ## Sign-in Instructions
 
 1. Sign in to the AWS Management Console by copying the **Sign-in link, Username, and Password** provided below.
