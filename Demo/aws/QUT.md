@@ -73,5 +73,4 @@ Follow the steps below to get started with the lab.
     - Cannot customize restricted RDS configurations
 
 ##  Start the Lab
-
 You can now start deploying the resources required for the lab using the above constraints.
