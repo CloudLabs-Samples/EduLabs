@@ -51,6 +51,7 @@ Follow the steps below to get started with the lab.
     - AMI ID: **ami-073e5bc3ae6e46156**
     - Region: **ap-southeast-2 (Sydney)**
 
+
 - **RDS:** Create RDS instance with:
 
   - Instance Type: **db.t3.micro**
