@@ -30,6 +30,7 @@ Follow the steps below to get started with the lab.
 ## Allowed Services & Constraints
 
 1. Pre-deployed Resources (Already Available)
+
     - Virtual Private Cloud (VPC)
     - Subnets
     - Internet Gateway (IGW)
@@ -62,6 +63,7 @@ Follow the steps below to get started with the lab.
   - Uncheck additional configuration options at the final step
 
 3. Restricted Actions
+
     - Cannot create, modify, or delete:
         - VPC
         - Subnets
