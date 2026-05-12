@@ -1,7 +1,7 @@
-# Demo Lab : Windows Virtual machine with Visual Studio Code
+# Demo Lab : Windows Virtual machine
 
 ## Overview
-This lab environment has a Windows Virtual machine with Visual Studio Code
+This lab environment has a Windows Virtual machine with SQL Server Management Studio (SSMS)
 
 ## Getting started
 
