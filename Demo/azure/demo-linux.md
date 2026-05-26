@@ -15,7 +15,7 @@ This lab environment has a Linux Virtual machine
    
    ![](images/environment-tab.png)
 
-3. 5. You can view the **duration** for the lab evironment from the top right corner
+3. You can view the **duration** for the lab evironment from the top right corner
 
    ![](images/duration.png)
 
