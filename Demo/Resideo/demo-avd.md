@@ -2,7 +2,7 @@
 
 ## Overview
 
-This lab environment provides access to a remote desktop environment through Azure Virtual Desktop (AVD).
+In this lab, you will be provided with a Windows Virtual Machine with SQL Server Management Studio (SSMS) pre-installed. You can connect to the virtual machine and use the available tools to perform the required lab activities
 
 ## Getting Started
 
