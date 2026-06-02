@@ -1,1 +1,13 @@
-
+[
+  {
+    "Name": "CloudLabs Demo : Resideo",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Resideo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/Resideo/demo-avd.md",
+        "Order": 1
+      }
+    ]
+  }
+]
