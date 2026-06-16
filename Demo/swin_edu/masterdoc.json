@@ -1,17 +1,18 @@
 {
   "Name": "VM Administration Fundamentals",
   "Language": "English",
+  "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs",
   "Files": [
     {
-      "RawFilePath": "00-Overview.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/swin_edu/00-Overview.md",
       "Order": 1
     },
     {
-      "RawFilePath": "01-Getting-Started.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/swin_edu/01-Getting-Started.md",
       "Order": 2
     },
     {
-      "RawFilePath": "02-Exercise-Configure-VM.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/swin_edu/02-Exercise-Configure-VM.md",
       "Order": 3
     }
   ]
