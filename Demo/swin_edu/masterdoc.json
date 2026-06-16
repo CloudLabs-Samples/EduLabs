@@ -1,0 +1,18 @@
+{
+  "Name": "VM Administration Fundamentals",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "00-Overview.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "01-Getting-Started.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "02-Exercise-Configure-VM.md",
+      "Order": 3
+    }
+  ]
+}
