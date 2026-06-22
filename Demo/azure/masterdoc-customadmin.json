@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Demo: Custom student labs with administrator acces",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/admincloudandvm.md",
+        "Order": 1
+      }
+    ]
+  }
+]
