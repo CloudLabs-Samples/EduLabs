@@ -1,4 +1,4 @@
-# CloudLabs Demo for CCU: Kali Linux
+# CloudLabs Demo: Kali Linux
 
 ## Overview
 This lab environment has a Kali Linux Virtual machine with all the necessary tools pre-installed.
