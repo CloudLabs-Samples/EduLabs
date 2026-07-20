@@ -17,6 +17,8 @@ A self-contained Computer Security Operations Centre (CSOC) built for a **hybrid
 ## 3. Network zones at a glance
 
 ![IRTx CSOC CloudLabs Demo Architecture](NetworkArchitechture.png)
+
+
 | Zone | Subnet | Gateway | Role | Key VMs |
 |---|---|---|---|---|
 | **Blue Team** | `192.168.0.0/24` | `.1` | Monitor & respond | Debian 1, Debian 2, Security Onion, Splunk (`192.168.0.10`) |
