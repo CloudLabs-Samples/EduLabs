@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "CloudLabs Demo for Tafe Queensland: Cybersecurity IRTx",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/azure",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/azure/TafeQueensland/IRTxLab/Getting-Started.md",
+        "Order": 1
+      }
+    ]
+  }
+]
