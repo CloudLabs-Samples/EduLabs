@@ -158,7 +158,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_D4s_v4"
+                    "vmSize": "Standard_D8s_v4"
                 },
                 "storageProfile": {
                     "imageReference": {
