@@ -8,14 +8,15 @@
 
 A self-contained Computer Security Operations Centre (CSOC) built for a **hybrid Red/Blue/Purple team exercise**. It lets you run a full incident-response cycle — attack, detect, respond — inside one isolated virtual network hosted on **CloudLabs**. Security controls are intentionally relaxed so that a range of attacks succeed; the focus is on **detection, handling, and reporting**, not on defence.
 
-## 2. Architecture
+## 2. Architecture Diagram
 
-![IRTx CSOC CloudLabs Demo Architecture](Demo_Network_Architecture_Detailed.svg)
+![IRTx CSOC CloudLabs Demo Architecture](LabArchitechture.png)
 
 *All zones route through the pfSense firewall. Remote access to the team VMs is delivered by host NAT port-forwarding over a separate out-of-band `192.168.2.0/24` switch, so RDP/SSH sessions never interfere with exercise traffic. Port map is in Section 5.*
 
 ## 3. Network zones at a glance
 
+![IRTx CSOC CloudLabs Demo Architecture](NetworkArchitechture.png)
 | Zone | Subnet | Gateway | Role | Key VMs |
 |---|---|---|---|---|
 | **Blue Team** | `192.168.0.0/24` | `.1` | Monitor & respond | Debian 1, Debian 2, Security Onion, Splunk (`192.168.0.10`) |
