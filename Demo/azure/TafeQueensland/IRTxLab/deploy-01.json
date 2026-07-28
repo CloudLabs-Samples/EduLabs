@@ -20,10 +20,18 @@
                 "description": "Administrator password"
             }
         },
-        "vnetId": {
+        "vnetResourceGroup": {
             "type": "string",
+            "defaultValue": "cloudlabs-mgmt-networking",
             "metadata": {
-                "description": "Resource ID of the existing Virtual Network"
+                "description": "Resource Group where the Virtual Network is located"
+            }
+        },
+        "vnetName": {
+            "type": "string",
+            "defaultValue": "IRTx-vnet",
+            "metadata": {
+                "description": "Name of the existing Virtual Network"
             }
         },
         "subnetName": {
@@ -123,7 +131,7 @@
                         "name": "ipconfig1",
                         "properties": {
                             "subnet": {
-                                "id": "[concat(parameters('vnetId'), '/subnets/', parameters('subnetName'))]"
+                                "id": "[resourceId(parameters('vnetResourceGroup'), 'Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetName'))]"
                             },
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
