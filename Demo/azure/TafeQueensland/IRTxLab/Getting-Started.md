@@ -1,12 +1,12 @@
-# IRTx CSOC — CloudLabs Demo Lab Guide
+# IRTx CSOC — CloudLabs 
 
 **Get to know your lab** · Incident Response Team Exercise (Red / Blue / Purple) · *Demo environment*
 
 ---
 
-## 1. What this lab is
+## 1. Overview
 
-A self-contained Computer Security Operations Centre (CSOC) built for a **hybrid Red/Blue/Purple team exercise**. It lets you run a full incident-response cycle — attack, detect, respond — inside one isolated virtual network hosted on **CloudLabs**. Security controls are intentionally relaxed so that a range of attacks succeed; the focus is on **detection, handling, and reporting**, not on defence.
+This lab is a self-contained Computer Security Operations Centre (CSOC) built for a **hybrid Red/Blue/Purple team exercise**. It lets you run a full incident-response cycle — attack, detect, respond — inside one isolated virtual network hosted on **CloudLabs**. Security controls are intentionally relaxed so that a range of attacks succeed; the focus is on **detection, handling, and reporting**, not on defence.
 
 ## 2. Architecture Diagram
 
