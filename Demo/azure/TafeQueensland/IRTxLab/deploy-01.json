@@ -19,6 +19,19 @@
             "metadata": {
                 "description": "Administrator password"
             }
+        },
+        "vnetId": {
+            "type": "string",
+            "metadata": {
+                "description": "Resource ID of the existing Virtual Network"
+            }
+        },
+        "subnetName": {
+            "type": "string",
+            "defaultValue": "default",
+            "metadata": {
+                "description": "Name of the existing subnet"
+            }
         }
     },
     "variables": {
@@ -27,33 +40,10 @@
         "nicName": "[concat('LabVM', parameters('did'), '-nic')]",
         "pipName": "[concat('LabVM', parameters('did'), '-pip')]",
         "nsgName": "[concat('LabVM', parameters('did'), '-nsg')]",
-        "vnetName": "[concat('LabVM', parameters('did'), '-vnet')]",
         "dnsName": "[toLower(concat('labvm', parameters('did'), uniqueString(resourceGroup().id)))]",
-        "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetName'))]",
         "galleryImageId": "/subscriptions/5c934e5a-f0b6-4c01-aa4b-b61d3fde4599/resourceGroups/cloudlabs-mgmt/providers/Microsoft.Compute/galleries/Cert_IV_Cyber_migrated/images/68397-ImageDefinition-Specialized/versions/1.0.0"
     },
     "resources": [
-        {
-            "type": "Microsoft.Network/virtualNetworks",
-            "apiVersion": "2023-05-01",
-            "name": "[variables('vnetName')]",
-            "location": "[variables('location')]",
-            "properties": {
-                "addressSpace": {
-                    "addressPrefixes": [
-                        "10.4.0.0/16"
-                    ]
-                },
-                "subnets": [
-                    {
-                        "name": "DefaultSubnet",
-                        "properties": {
-                            "addressPrefix": "10.4.0.0/24"
-                        }
-                    }
-                ]
-            }
-        },
         {
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "2023-05-01",
@@ -124,7 +114,6 @@
             "name": "[variables('nicName')]",
             "location": "[variables('location')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('vnetName'))]",
                 "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipName'))]",
                 "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgName'))]"
             ],
@@ -134,7 +123,7 @@
                         "name": "ipconfig1",
                         "properties": {
                             "subnet": {
-                                "id": "[concat(variables('vnetId'), '/subnets/DefaultSubnet')]"
+                                "id": "[concat(parameters('vnetId'), '/subnets/', parameters('subnetName'))]"
                             },
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
