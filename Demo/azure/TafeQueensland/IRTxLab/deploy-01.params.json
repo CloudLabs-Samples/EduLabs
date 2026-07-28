@@ -10,6 +10,9 @@
         },
         "adminPassword": {
             "value": "Password.123!"
+        },
+        "vnetId": {
+            "value": "/subscriptions/5c934e5a-f0b6-4c01-aa4b-b61d3fde4599/resourceGroups/cloudlabs-mgmt-networking/providers/Microsoft.Network/virtualNetworks/IRTx-vnet"
         }
     }
 }
