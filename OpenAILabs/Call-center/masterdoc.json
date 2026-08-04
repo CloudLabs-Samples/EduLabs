@@ -5,8 +5,20 @@
     "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/blob/main/OpenAILabs/Call-center",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/OpenAILabs/Call-center/lab.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Srikanthssp/EduLabs/main/OpenAILabs/Call-center/getting-started.md",
         "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Srikanthssp/EduLabs/main/OpenAILabs/Call-center/Task-1.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Srikanthssp/EduLabs/main/OpenAILabs/Call-center/Task-2.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Srikanthssp/EduLabs/main/OpenAILabs/Call-center/Task-3.md",
+        "Order": 4
       }
     ]
   }
