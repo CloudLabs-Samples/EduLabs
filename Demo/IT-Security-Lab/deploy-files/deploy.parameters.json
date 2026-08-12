@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"azureUserName": {
+			"value": "GET-AZUSER-UPN"
+		},
+		"azurePassword": {
+			"value": "GET-AZUSER-PASSWORD"
+		},
+		"ODLID": {
+			"value": "GET-ODL-ID"
+		},
+		"DeploymentID": {
+			"value": "GET-DEPLOYMENT-ID"
+		},
+		"adminUsername": {
+			"value": "azureuser"
+		},
+		"adminPassword": {
+			"value": "GEN-PASSWORD"
+		},
+		"trainerUserName": {
+			"value": "instructor"
+		},
+		"trainerUserPassword": {
+			"value": "GEN-PASSWORD"
+		}
+	}
+}
