@@ -1,4 +1,4 @@
-# IRTx CSOC — CloudLabs 
+# IRTx CSOC — CloudLabs
 
 **Get to know your lab** · Incident Response Team Exercise (Red / Blue / Purple) · *Demo environment*
 
