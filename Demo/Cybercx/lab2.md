@@ -83,6 +83,12 @@ Admin**, authenticate with it to recover that account's NTLM hash, and use the h
 
     > **Note (time skew):** if `auth` returns `KRB_AP_ERR_SKEW`, sync the clock and retry:
     > `sudo systemctl restart systemd-timesyncd && sleep 5`
+    >
+    > **Note (`KDC_ERROR_CLIENT_NOT_TRUSTED`):** this means the DC is enforcing strong
+    > certificate binding (KB5014754). The lab DCs ship with this relaxed
+    > (`StrongCertificateBindingEnforcement=0`) so ESC1 works; if you see this error, that
+    > setting hasn't applied yet — see the trainer note in `VALIDATION-CHECKLIST` / re-run the
+    > DC fix.
 
 1. Use the recovered hash to **DCSync** the domain — replicate secrets straight from the DC.
    Here we pull the `krbtgt` account (the key to forging Golden Tickets), proving full domain
