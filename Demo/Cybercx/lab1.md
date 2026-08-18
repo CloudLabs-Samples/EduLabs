@@ -74,9 +74,11 @@ those tickets offline to recover the service accounts' plaintext passwords.
     > **Note (time skew):** if you see `KRB_AP_ERR_SKEW`, sync the clock and retry:
     > `sudo systemctl restart systemd-timesyncd && sleep 5`
 
-1. Prepare the **rockyou** wordlist (it ships gzip-compressed).
+1. Prepare the **rockyou** wordlist (installed with the `wordlists` package; it ships
+   gzip-compressed).
 
     ```bash
+    sudo apt-get install -y wordlists
     sudo gunzip -kf /usr/share/wordlists/rockyou.txt.gz
     ls -lh /usr/share/wordlists/rockyou.txt
     ```

