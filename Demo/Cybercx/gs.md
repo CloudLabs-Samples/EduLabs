@@ -34,24 +34,25 @@ To get a better understanding of your lab resources and credentials, navigate to
 
 The lab environment consists of **7 virtual machines (VMs)**. The usernames and passwords are provided in the **Environment** tab.
 
-**Windows Attacker**
-   - **Username:** <inject key="Windows Attacker Username" enableCopy="True"/>
+- **Windows Attacker:**
 
-   - **Password:** <inject key="Windows Attacker Password" enableCopy="True"/>
+   - **Username:** <inject key="Windows Attacker Username" enableCopy="true"/>
 
-**Kali Linux**
+   - **Password:** <inject key="Windows Attacker Password" enableCopy="true"/>
 
-   - **Username**: <inject key="Kali Username" enableCopy="True"/>
+- **Kali Linux:**
 
-   - **Password:** <inject key="Kali Password" enableCopy="True"/>
+   - **Username**: <inject key="Kali Username" enableCopy="true"/>
+
+   - **Password:** <inject key="Kali Password" enableCopy="true"/>
 
 ### Target Hosts
 
 All target hosts use the same credentials:
 
-   - **Username:** <inject key="Target Hosts Username" enableCopy="True"/>
+   - **Username:** <inject key="Target Hosts Username" enableCopy="true"/>
 
-   - **Password:** <inject key="Target Hosts Password" enableCopy="True"/>
+   - **Password:** <inject key="Target Hosts Password" enableCopy="true"/>
 
 ## Utilizing the Split Window Feature
 
