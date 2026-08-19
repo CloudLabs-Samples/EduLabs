@@ -28,6 +28,31 @@ To get a better understanding of your lab resources and credentials, navigate to
 
    ![](images/etvn.png)
 
+## Lab Environment Credentials
+
+### Attacker Machines
+
+The lab environment consists of **7 virtual machines (VMs)**. The usernames and passwords are provided in the **Environment** tab.
+
+**Windows Attacker**
+   - **Username:** <inject key="Windows Attacker Username" enableCopy="True"/>
+
+   - **Password:** <inject key="Windows Attacker Password" enableCopy="True"/>
+
+**Kali Linux**
+
+   - **Username**: <inject key="Kali Username" enableCopy="True"/>
+
+   - **Password:** <inject key="Kali Password" enableCopy="True"/>
+
+### Target Hosts
+
+All target hosts use the same credentials:
+
+   - **Username:** <inject key="Target Hosts Username" enableCopy="True"/>
+
+   - **Password:** <inject key="Target Hosts Password" enableCopy="True"/>
+
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
