@@ -7,14 +7,6 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Cybercx/gs.md",
         "Order": 1
-      },
-      {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Cybercx/lab1.md",
-        "Order": 2
-      },
-      {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Cybercx/lab2.md",
-        "Order": 3
       }
     ]
   }
