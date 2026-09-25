@@ -1,0 +1,26 @@
+{
+	"Name": "Azure VM Troubleshooting Lab - Learner",
+	"IsCustom": true,
+	"Description": "Learner and service principal role for the Azure VM Troubleshooting lab. Read everything in the resource group; change only the NSG rules, routes, subnet, VM identity, storage firewall and role assignments the two labs fix.",
+	"Actions": [
+		"*/read",
+		"Microsoft.Resources/deployments/*",
+		"Microsoft.Compute/virtualMachines/write",
+		"Microsoft.Compute/virtualMachines/start/action",
+		"Microsoft.Compute/virtualMachines/restart/action",
+		"Microsoft.Compute/virtualMachines/runCommand/action",
+		"Microsoft.Network/networkInterfaces/effectiveNetworkSecurityGroups/action",
+		"Microsoft.Network/networkInterfaces/effectiveRouteTable/action",
+		"Microsoft.Network/networkSecurityGroups/securityRules/*",
+		"Microsoft.Network/networkSecurityGroups/join/action",
+		"Microsoft.Network/routeTables/routes/*",
+		"Microsoft.Network/routeTables/join/action",
+		"Microsoft.Network/virtualNetworks/subnets/write",
+		"Microsoft.Network/virtualNetworks/subnets/join/action",
+		"Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+		"Microsoft.Storage/storageAccounts/write",
+		"Microsoft.Authorization/roleAssignments/write",
+		"Microsoft.Authorization/roleAssignments/delete"
+	],
+	"NotActions": []
+}
