@@ -2,7 +2,7 @@
 
 **Lab Description:** Every night, **appvm-<inject key="DeploymentID" enableCopy="false"/>** uploads the orders report to the storage account **<inject key="Storage Account Name" enableCopy="false"/>**. As part of the change window, the storage account's **access keys were disabled** (CHG-4480) and its firewall was switched to **selected networks** (CHG-4481). The job was rewritten to authenticate with the VM's **managed identity**, which means no secret is stored anywhere on the VM. It has failed ever since. In this lab you will run the job, read exactly where and why it fails, and fix the three things a VM needs before it can reach storage with a managed identity: **an identity to authenticate as, a network path the storage firewall accepts, and a data-plane role that authorizes the request**.
 
-**Estimated Duration:** **25 Minutes**
+**Estimated Duration:** **30 Minutes**
 
 **Learning Objectives:** By the end of this lab, you will be able to:
 

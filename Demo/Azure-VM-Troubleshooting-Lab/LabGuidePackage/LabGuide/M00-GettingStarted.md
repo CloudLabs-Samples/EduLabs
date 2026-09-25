@@ -16,7 +16,7 @@ Welcome to your Azure VM troubleshooting hands-on lab. This environment gives yo
 
 Your virtual machine and this **Guide** are available within your web browser.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/guide1.png)
+   ![](../Image/gdi.png)
 
 ## Environment Details
 
@@ -66,44 +66,44 @@ az account set --subscription "$AZ_SUBSCRIPTION_ID"
 
 To get a better understanding of your resources and credentials, navigate to the **Environment** tab.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/env.png)
+   ![](../Image/EV.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/split.png)
+   ![](../Image/split.png)
 
 ## Managing Your Virtual Machine
 
 Feel free to **Start, Restart,** or **Stop** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/resources.png)
+   ![](../Image/rsrs.png)
 
 ## Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the environment.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/zoom.png)
+   ![](../Image/zum2.png)
 
 ## Validation
 
 Use the **Validate** button on each task to check your work. After completing the task, hit the **Validate** button under the Validation tab integrated within your guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the guide.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/val.png)
+   ![](../Image/sql.png)
 
 ## Track Your Progress
 
 The **Progress** tab shows your validation score, it reaches 100% when all task validations pass.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/progress.png)
+   ![](../Image/prg.png)
 
 ## Lab Structure
 
 | Lab | Topic | Duration |
 |-----|-------|----------|
-| Lab 1 | Troubleshoot Azure VM Connectivity: effective routes, NSG rule priority, guest OS listener | 25 Minutes |
-| Lab 2 | Restore VM Access to Azure Storage Using Managed Identity: IMDS, storage firewall, data-plane RBAC | 25 Minutes |
+| Lab 1 | Troubleshoot Azure VM Connectivity: effective routes, NSG rule priority, guest OS listener | 30 Minutes |
+| Lab 2 | Restore VM Access to Azure Storage Using Managed Identity: IMDS, storage firewall, data-plane RBAC | 30 Minutes |
 | Lab 3 | Knowledge Check: 10 questions | 10 Minutes |
 
 >**Note:** Lab 2 depends on Lab 1. You reach the application server over SSH in Lab 2, and that only works once Lab 1's routing fix is in place. Complete the labs in order.
@@ -117,6 +117,6 @@ The CloudLabs support team is available 24/7 via email and live chat.
 
 Now, click on **Next >>** from the lower right corner to move on to the next page to begin with Lab 1.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/next1.png)
+   ![](../Image/nxt.png)
 
 ## Happy Learning !!

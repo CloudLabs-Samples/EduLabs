@@ -2,7 +2,7 @@
 
 **Lab Description:** The Orders API on **appvm-<inject key="DeploymentID" enableCopy="false"/>** has been unreachable from the operations jump host since last night's change window. Health checks time out, and so does SSH. Three changes went in during that window, and each one broke connectivity at a **different layer**. In this lab you will work through the layers in the order that packets meet them: confirm the VM is running, read the **effective routes** on its network interface, read its **network security group** rules in priority order, and finally look inside the **guest operating system** at what the web server is actually listening on. After each fix you re-test, and how the symptom changes tells you which layer to look at next.
 
-**Estimated Duration:** **25 Minutes**
+**Estimated Duration:** **30 Minutes**
 
 **Learning Objectives:** By the end of this lab, you will be able to:
 
