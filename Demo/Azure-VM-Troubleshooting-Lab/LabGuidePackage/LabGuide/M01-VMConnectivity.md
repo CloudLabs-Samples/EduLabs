@@ -352,7 +352,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 > - If not, carefully read the error message and retry the step, following the instructions in the guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="4eb65796-8985-4f91-9016-43ae28f7b8fc" />
+<validation step="c01064cb-4a5f-4407-916d-1afaf293b658" />
 
 **Lab 1 Recap:** In this lab, you:
 

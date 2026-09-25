@@ -283,7 +283,7 @@ In this task, you will enable a system-assigned managed identity on the applicat
 > - If not, carefully read the error message and retry the step, following the instructions in the guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="1514befa-558a-41b9-9400-bc0374c734e3" />
+<validation step="d2954a3e-d480-42af-ae6e-f3c1159a45e8" />
 
 **Lab 2 Recap:** In this lab, you:
 
