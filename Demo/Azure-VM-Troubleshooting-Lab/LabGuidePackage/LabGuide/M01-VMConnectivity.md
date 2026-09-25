@@ -20,10 +20,6 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
 ### Sign in and reproduce the problem
 
-1. Connect to the **Lab VM** over SSH using the **LabVM SSH Command** and **LabVM Admin Password** on the **Environment** tab.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/env.png)
-
 1. Run the following commands to sign in to the Azure CLI as the lab service principal and select the lab subscription.
 
     ```bash
