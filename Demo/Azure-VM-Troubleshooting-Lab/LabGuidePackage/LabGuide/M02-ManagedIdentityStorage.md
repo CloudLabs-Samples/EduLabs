@@ -259,4 +259,4 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
 Now, click on **Next >>** from the lower right corner to move on to the Knowledge Check.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/next1.png)
+![](../Image/nxt.png)

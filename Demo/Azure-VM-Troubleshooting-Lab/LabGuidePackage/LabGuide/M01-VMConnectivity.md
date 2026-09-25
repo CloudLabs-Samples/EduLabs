@@ -312,4 +312,4 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
 Now, click on **Next >>** from the lower right corner to move on to the next page.
 
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/next1.png)
+![](../Image/nxt.png)
