@@ -51,14 +51,7 @@ Your virtual machine and this **Guide** are available within your web browser.
 
 ## Signing in to Azure as the service principal
 
-The jump host has no Azure identity of its own. Instead, you sign in to the Azure CLI as the lab **service principal**, a non-interactive application identity whose credentials are stored in `/opt/lab/lab-env.sh`. Its values are also on the **Environment** tab:
-
-| Setting | Value |
-|---|---|
-| Application (client) ID | <inject key="ApplicationID" enableCopy="true"/> |
-| Tenant ID | <inject key="TenantID" enableCopy="true"/> |
-| Subscription ID | <inject key="SubscriptionID" enableCopy="true"/> |
-| Resource group | <inject key="Resource Group Name" enableCopy="true"/> |
+The jump host has no Azure identity of its own. Instead, you sign in to the Azure CLI as the lab **service principal**, a non-interactive application identity whose credentials are stored in `/opt/lab/lab-env.sh`. Values are on the **Environment** tab:
 
 You will run the sign-in command at the start of Lab 1. It uses the variables already in your shell, so you never have to paste the secret:
 
@@ -68,12 +61,6 @@ az account set --subscription "$AZ_SUBSCRIPTION_ID"
 ```
 
 >**Note:** `/opt/lab/lab-env.sh` is mode `600`, so only your account can read it. Treat a service principal secret like a password: source it from a protected file or a secret store and never type it into a script or a command history.
-
-## Using the Azure portal
-
-Some steps include an optional **Azure portal** checkpoint that shows the same setting in the portal. To use them, open **https://portal.azure.com** in the lab browser and sign in with the **Azure Username** and **Azure Password** on the **Environment** tab. Every portal checkpoint is read-only. You make all the changes from the CLI.
-
-   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/portal-signin.png)
 
 ## Exploring Your Resources
 

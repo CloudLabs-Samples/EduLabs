@@ -34,11 +34,9 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Subscription           SignedInAs                            Type
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Subscription           SignedInAs                            Type
     ---------------------  ------------------------------------  ----------------
-    <your subscription>    <your application ID>                 servicePrincipal
-    ```
+    &lt;your subscription&gt;    &lt;your application ID&gt;                 servicePrincipal</div>
 
     >**Note:** `Type` is **servicePrincipal**, not **user**. A service principal is an application identity with a client ID and a secret. It is how scripts and pipelines authenticate to Azure non-interactively, and it can only do what its role assignments allow, which here is scoped to your lab resource group.
 
@@ -50,9 +48,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    curl: (28) Connection timed out after 5001 milliseconds
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">curl: (28) Connection timed out after 5001 milliseconds</div>
 
 1. Run the following command to test SSH (TCP port 22) to the same server.
 
@@ -62,9 +58,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    nc: connect to 10.0.2.10 port 22 (tcp) timed out: Operation now in progress
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">nc: connect to 10.0.2.10 port 22 (tcp) timed out: Operation now in progress</div>
 
     >**Note:** Pay attention to **how** a connection fails, because it is your first diagnostic clue. A **timeout** means nothing came back at all: a packet was silently dropped somewhere, either on the way in or on the way back. A **connection refused** means the packet reached the machine and the machine actively answered "nobody is listening here". Right now both ports time out, so something in the network path is dropping traffic.
 
@@ -78,9 +72,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    VM running
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">VM running</div>
 
     >**Note:** Always check this first. A stopped or deallocated VM produces exactly the same timeouts as a network fault, and it takes five seconds to rule out.
 
@@ -95,19 +87,13 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Priority    Name                       Access    Port    Source
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Priority    Name                       Access    Port    Source
     ----------  -------------------------  --------  ------  -----------
     100         Allow-SSH-From-LabSubnet   Allow     22      10.0.1.0/24
     200         Deny-HTTP-Inbound          Deny      80      *
-    300         Allow-HTTP-From-LabSubnet  Allow     80      10.0.1.0/24
-    ```
+    300         Allow-HTTP-From-LabSubnet  Allow     80      10.0.1.0/24</div>
 
 1. Study this output before you change anything. SSH on port 22 is **allowed** from the jump host subnet (`10.0.1.0/24`) at priority 100, yet SSH still timed out. So the NSG is not the reason SSH fails, and something else in the path must be dropping traffic. Note the two port 80 rules. You will come back to them.
-
-    >**Note:** **Azure portal checkpoint:** open **appvm-<inject key="DeploymentID" enableCopy="false"/>**, select **Networking**, then **Network settings**, and review the **Inbound port rules**. The portal lists the same three custom rules followed by the default rules (65000 and above).
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m01-portal-nsg-rules.png)
 
 ### Layer 2: Check the effective routes
 
@@ -120,12 +106,10 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Source    State    Prefix       NextHop           NextHopIP
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Source    State    Prefix       NextHop           NextHopIP
     --------  -------  -----------  ----------------  -----------
     Default   Active   10.0.0.0/16  VnetLocal
-    User      Active   10.0.1.0/24  VirtualAppliance  10.0.254.4
-    ```
+    User      Active   10.0.1.0/24  VirtualAppliance  10.0.254.4</div>
 
     >**Note:** This is the fault. Azure picks a route by **longest prefix match**, so for any destination in `10.0.1.0/24` (the jump host subnet), the more specific **User** route beats the default `10.0.0.0/16` VNet route. When the application server **replies** to the jump host, the reply is sent to a firewall appliance at `10.0.254.4`. The incident brief says that appliance was decommissioned in CHG-4471. Inbound packets arrive, but every reply is dropped. That is why SSH times out even though the NSG allows it.
 
@@ -138,15 +122,9 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Name                   Prefix       NextHop           NextHopIP
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Name                   Prefix       NextHop           NextHopIP
     ---------------------  -----------  ----------------  -----------
-    to-lab-subnet-via-nva  10.0.1.0/24  VirtualAppliance  10.0.254.4
-    ```
-
-    >**Note:** **Azure portal checkpoint:** open the network interface **appvm-<inject key="DeploymentID" enableCopy="false"/>-nic**, and under **Help** select **Effective routes**. The user route for `10.0.1.0/24` appears alongside the system routes.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m01-portal-effective-routes.png)
+    to-lab-subnet-via-nva  10.0.1.0/24  VirtualAppliance  10.0.254.4</div>
 
 1. Run the following command to delete the leftover route.
 
@@ -156,10 +134,6 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     >**Note:** You delete the **route**, not the route table. The route table stays associated with `app-subnet`, ready for the next legitimate route. Removing a route the change ticket forgot to clean up is the smallest change that fixes the fault.
 
-    >**Note:** **Azure portal checkpoint:** open the route table **rt-app-<inject key="DeploymentID" enableCopy="false"/>** and select **Routes**. The list is now empty, and **Subnets** still shows `app-subnet` associated.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m01-portal-route-deleted.png)
-
 1. Run the following command to test SSH again.
 
     ```bash
@@ -168,9 +142,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Connection to 10.0.2.10 22 port [tcp/ssh] succeeded!
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Connection to 10.0.2.10 22 port [tcp/ssh] succeeded!</div>
 
     >**Note:** If you still see a timeout, wait 30 seconds and retry. Route changes take a few seconds to program into the host.
 
@@ -182,9 +154,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    curl: (28) Connection timed out after 5001 milliseconds
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">curl: (28) Connection timed out after 5001 milliseconds</div>
 
     >**Note:** SSH is fixed but HTTP still times out, so HTTP must be dropped by something that does not affect SSH. Go back to the two port 80 rules you saw in the NSG.
 
@@ -201,11 +171,9 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Name                       Priority    Access    Port    Source
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Name                       Priority    Access    Port    Source
     -------------------------  ----------  --------  ------  -----------
-    Allow-HTTP-From-LabSubnet  150         Allow     80      10.0.1.0/24
-    ```
+    Allow-HTTP-From-LabSubnet  150         Allow     80      10.0.1.0/24</div>
 
     >**Note:** You did **not** delete `Deny-HTTP-Inbound`. It still blocks HTTP from every other source, which was the intent of the hardening change CHG-4472. Reordering keeps that protection and adds back exactly one narrow exception: the jump host subnet.
 
@@ -218,17 +186,11 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Priority    Name                       Access    Port    Source
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Priority    Name                       Access    Port    Source
     ----------  -------------------------  --------  ------  -----------
     100         Allow-SSH-From-LabSubnet   Allow     22      10.0.1.0/24
     150         Allow-HTTP-From-LabSubnet  Allow     80      10.0.1.0/24
-    200         Deny-HTTP-Inbound          Deny      80      *
-    ```
-
-    >**Note:** **Azure portal checkpoint:** refresh **appvm-<inject key="DeploymentID" enableCopy="false"/>** > **Networking** > **Network settings**. `Allow-HTTP-From-LabSubnet` now appears above `Deny-HTTP-Inbound`.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m01-portal-nsg-fixed.png)
+    200         Deny-HTTP-Inbound          Deny      80      *</div>
 
 1. Run the following command to test the health endpoint again.
 
@@ -238,9 +200,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    curl: (7) Failed to connect to 10.0.2.10 port 80 after 2 ms: Connection refused
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">curl: (7) Failed to connect to 10.0.2.10 port 80 after 2 ms: Connection refused</div>
 
     >**Note:** The symptom has changed from **timed out** to **connection refused**, and it came back in milliseconds. That is progress: your packet now reaches the VM and the VM's operating system answers. There is no Azure network fault left. Nothing is listening on `10.0.2.10:80`, so the next place to look is inside the VM.
 
@@ -255,9 +215,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    Number of key(s) added: 1
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Number of key(s) added: 1</div>
 
     >**Note:** SSH to the application server only works now because you fixed the route. From here on you can run commands on it from the jump host with `ssh azureuser@$APP_VM_IP '<command>'`, which is how you will work in Lab 2 as well.
 
@@ -269,9 +227,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    orders-api: healthy
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">orders-api: healthy</div>
 
     >**Note:** The service itself is fine. It answers when you ask it from the same machine, but refuses connections from the network. This pattern almost always means a **bind address** problem.
 
@@ -283,10 +239,8 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    State  Recv-Q Send-Q Local Address:Port Peer Address:Port Process
-    LISTEN 0      511        127.0.0.1:80        0.0.0.0:*    users:(("nginx",pid=2140,fd=6),("nginx",pid=2139,fd=6))
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">State  Recv-Q Send-Q Local Address:Port Peer Address:Port Process
+    LISTEN 0      511        127.0.0.1:80        0.0.0.0:*    users:(("nginx",pid=2140,fd=6),("nginx",pid=2139,fd=6))</div>
 
     >**Note:** `127.0.0.1:80` is the loopback address, which is reachable only from processes on the same machine. A server that needs to accept connections from other hosts must listen on its private IP or on all addresses (`0.0.0.0`). Your process IDs will differ.
 
@@ -298,9 +252,7 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    2:    listen 127.0.0.1:80;
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">2:    listen 127.0.0.1:80;</div>
 
 1. Run the following command to change nginx to listen on all IPv4 addresses, test the configuration, and restart the service.
 
@@ -310,10 +262,8 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-    nginx: configuration file /etc/nginx/nginx.conf test is successful
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful</div>
 
     >**Note:** Always run `nginx -t` before restarting. If the configuration has a syntax error, `nginx -t` fails, the `&&` chain stops, and the running service is never taken down with a broken configuration.
 
@@ -325,10 +275,8 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    State  Recv-Q Send-Q Local Address:Port Peer Address:Port Process
-    LISTEN 0      511          0.0.0.0:80        0.0.0.0:*
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">State  Recv-Q Send-Q Local Address:Port Peer Address:Port Process
+    LISTEN 0      511          0.0.0.0:80        0.0.0.0:*</div>
 
 ### Confirm the fix end to end
 
@@ -340,10 +288,8 @@ In this task, you will sign in to Azure as the lab service principal, reproduce 
 
     **Expected Output:**
 
-    ```output
-    orders-api: healthy
-    HTTP 200
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">orders-api: healthy
+    HTTP 200</div>
 
     >**Note:** Look back at how the symptom changed at each step: **timeout** (route) → **timeout** on HTTP only (NSG) → **connection refused** (OS listener) → **HTTP 200**. Following the symptom layer by layer, rather than changing several things at once, is what lets you say exactly which change fixed which fault.
 

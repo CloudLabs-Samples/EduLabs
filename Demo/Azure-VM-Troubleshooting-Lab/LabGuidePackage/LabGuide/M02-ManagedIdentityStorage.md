@@ -32,11 +32,9 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    STORAGE_ACCOUNT=stapp<DeploymentID>
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">STORAGE_ACCOUNT=stapp&lt;DeploymentID&gt;
     STORAGE_CONTAINER=reports
-    REPORT_BLOB=orders-report-latest.txt
-    ```
+    REPORT_BLOB=orders-report-latest.txt</div>
 
     >**Note:** The file contains a storage account name, a container, and a blob name, and **no key, connection string, or SAS token**. The job gets its credential at run time from the VM's managed identity.
 
@@ -48,11 +46,9 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    [1/3] Requesting an access token from the Instance Metadata Service (IMDS)
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">[1/3] Requesting an access token from the Instance Metadata Service (IMDS)
           FAILED - IMDS returned HTTP 400
-          {"error":"invalid_request","error_description":"Identity not found"}
-    ```
+          {"error":"invalid_request","error_description":"Identity not found"}</div>
 
     >**Note:** The job asks the **Instance Metadata Service** for a token. IMDS is a REST endpoint at the fixed, non-routable address **`169.254.169.254`**, available only from inside an Azure VM. When the VM has a managed identity, IMDS returns an OAuth access token for it, and Azure handles the underlying credential and rotates it for you. `Identity not found` means this VM has no managed identity at all, so there is nothing for IMDS to issue a token for.
 
@@ -74,12 +70,10 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    {
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">{
       "systemAssignedIdentity": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "userAssignedIdentities": {}
-    }
-    ```
+    }</div>
 
     >**Note:** A **system-assigned** identity is created in Microsoft Entra ID and tied to the lifecycle of this one VM: when the VM is deleted, the identity is deleted with it. A **user-assigned** identity is a separate Azure resource that you create yourself, can attach to several VMs, and that survives when they are deleted.
 
@@ -100,19 +94,13 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    [1/3] Requesting an access token from the Instance Metadata Service (IMDS)
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">[1/3] Requesting an access token from the Instance Metadata Service (IMDS)
           OK - token issued to managed identity xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    [2/3] Uploading orders-report-latest.txt to https://stapp<DeploymentID>.blob.core.windows.net/reports/
+    [2/3] Uploading orders-report-latest.txt to https://stapp&lt;DeploymentID&gt;.blob.core.windows.net/reports/
           FAILED - Storage returned HTTP 403 (AuthorizationFailure)
-          This request is not authorized to perform this operation.
-    ```
+          This request is not authorized to perform this operation.</div>
 
     >**Note:** Step 1 now succeeds, and the ID in the token matches the `PRINCIPAL_ID` you just printed. Step 2 fails with **`AuthorizationFailure`**. Learn to recognize this error code: it comes from the **storage firewall**, which rejects the request based on where it came from **before it even looks at who is asking**. If IMDS still returns `Identity not found`, wait 30 seconds and retry, because a new identity can take a moment to reach the host.
-
-    >**Note:** **Azure portal checkpoint:** open **appvm-<inject key="DeploymentID" enableCopy="false"/>**, and under **Security** select **Identity**. The **System assigned** tab shows **Status: On** and the same object (principal) ID.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m02-portal-vm-identity.png)
 
 ### Fix 2: Allow the application subnet through the storage firewall
 
@@ -125,17 +113,11 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    PublicNetworkAccess    DefaultAction    VnetRules    IpRules    SharedKey
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">PublicNetworkAccess    DefaultAction    VnetRules    IpRules    SharedKey
     ---------------------  ---------------  -----------  ---------  -----------
-    Enabled                Deny             0            0          False
-    ```
+    Enabled                Deny             0            0          False</div>
 
     >**Note:** Read this as: the public endpoint is **enabled from selected networks only** (`DefaultAction: Deny`), and the list of selected networks is **empty**, so no virtual network and no IP address is allowed in. `SharedKey: False` confirms that access keys are disabled, so Microsoft Entra ID (your managed identity) is the only way in.
-
-    >**Note:** **Azure portal checkpoint:** open the storage account **<inject key="Storage Account Name" enableCopy="false"/>**, and under **Security + networking** select **Networking**. **Public network access** shows **Enabled from selected virtual networks and IP addresses**, with no virtual networks listed.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m02-portal-storage-firewall-before.png)
 
 1. Run the following command to check whether the application subnet has a service endpoint for Azure Storage.
 
@@ -154,11 +136,9 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    Service            State
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Service            State
     -----------------  ---------
-    Microsoft.Storage  Succeeded
-    ```
+    Microsoft.Storage  Succeeded</div>
 
     >**Note:** A service endpoint changes the **source identity** of the traffic. Requests from `app-subnet` to Azure Storage now travel over the Azure backbone and arrive tagged with the virtual network and subnet they came from, which is information the storage firewall can match on.
 
@@ -179,15 +159,11 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    PublicNetworkAccess    DefaultAction    VnetRules    IpRules    SharedKey
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">PublicNetworkAccess    DefaultAction    VnetRules    IpRules    SharedKey
     ---------------------  ---------------  -----------  ---------  -----------
-    Enabled                Deny             1            0          False
-    ```
+    Enabled                Deny             1            0          False</div>
 
     >**Note:** `DefaultAction` is still **Deny**. The tempting "fix" of switching the firewall to **Enabled from all networks** would also make this error disappear, but it would undo CHG-4481 and expose the account to the whole internet. Allowing exactly one subnet is the least-privilege fix.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m02-portal-storage-firewall-after.png)
 
 1. Wait about 30 seconds for the network rule to take effect, then run the report job again.
 
@@ -197,23 +173,17 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    [1/3] Requesting an access token from the Instance Metadata Service (IMDS)
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">[1/3] Requesting an access token from the Instance Metadata Service (IMDS)
           OK - token issued to managed identity xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    [2/3] Uploading orders-report-latest.txt to https://stapp<DeploymentID>.blob.core.windows.net/reports/
+    [2/3] Uploading orders-report-latest.txt to https://stapp&lt;DeploymentID&gt;.blob.core.windows.net/reports/
           FAILED - Storage returned HTTP 403 (AuthorizationPermissionMismatch)
-          This request is not authorized to perform this operation using this permission.
-    ```
+          This request is not authorized to perform this operation using this permission.</div>
 
     >**Note:** Still a 403, but the error code has changed to **`AuthorizationPermissionMismatch`**. This means the firewall let the request through and storage **authenticated** the identity successfully, but the identity is not **authorized** to write blobs. If you still see `AuthorizationFailure`, the network rule has not propagated yet. Wait another 30 seconds and retry.
 
 ### Fix 3: Grant a data-plane role on the container
 
 1. The new identity has **no role assignments at all**. Even if it had **Owner** or **Contributor** on the storage account, the upload would still fail. Those are **control-plane** roles: they allow managing the storage account resource (its settings, firewall, and tags), but they do **not** include permission to read or write the data inside it. Blob data access needs a **data-plane** role such as **Storage Blob Data Reader** or **Storage Blob Data Contributor**.
-
-    >**Note:** **Azure portal checkpoint:** on **appvm-<inject key="DeploymentID" enableCopy="false"/>** > **Security** > **Identity**, select **Azure role assignments**. The list is empty.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m02-portal-identity-no-roles.png)
 
 1. Run the following command to build the resource ID of the `reports` container. This is the narrowest scope at which you can grant blob access.
 
@@ -224,9 +194,7 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    /subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.Storage/storageAccounts/stapp<DeploymentID>/blobServices/default/containers/reports
-    ```
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">/subscriptions/&lt;subscription-id&gt;/resourceGroups/&lt;resource-group&gt;/providers/Microsoft.Storage/storageAccounts/stapp&lt;DeploymentID&gt;/blobServices/default/containers/reports</div>
 
 1. Run the following command to grant the managed identity the **Storage Blob Data Contributor** role on the `reports` container only.
 
@@ -245,11 +213,9 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    Role                           Principal
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">Role                           Principal
     -----------------------------  ------------------------------------
-    Storage Blob Data Contributor  xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    ```
+    Storage Blob Data Contributor  xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</div>
 
 1. Run the following command to run the report job, retrying every 30 seconds until the role assignment has propagated. It normally succeeds within two minutes.
 
@@ -262,21 +228,15 @@ In this task, you will enable a system-assigned managed identity on the applicat
 
     **Expected Output:**
 
-    ```output
-    [1/3] Requesting an access token from the Instance Metadata Service (IMDS)
+    <div style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.45; background-color: #f4f4f4; border: 1px solid #d4d4d4; border-radius: 4px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; user-select: none;">[1/3] Requesting an access token from the Instance Metadata Service (IMDS)
           OK - token issued to managed identity xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    [2/3] Uploading orders-report-latest.txt to https://stapp<DeploymentID>.blob.core.windows.net/reports/
+    [2/3] Uploading orders-report-latest.txt to https://stapp&lt;DeploymentID&gt;.blob.core.windows.net/reports/
           OK - HTTP 201 Created
     [3/3] Listing blobs in container 'reports'
           orders-report-latest.txt
-    Sync complete - the managed identity can reach and write to storage.
-    ```
+    Sync complete - the managed identity can reach and write to storage.</div>
 
     >**Note:** Azure RBAC changes are **eventually consistent**. A new role assignment can take a minute or two, and occasionally longer, before storage honors it. One or two `AuthorizationPermissionMismatch` retries before the success is normal. The loop exists so you do not mistake propagation delay for a wrong fix.
-
-    >**Note:** **Azure portal checkpoint:** open the storage account, select **Data storage** > **Containers** > **reports**, then **Access Control (IAM)** > **Role assignments**. The VM's identity appears with **Storage Blob Data Contributor** at **This resource** scope. You will not be able to browse the blobs themselves from the portal, because your browser is outside the allowed subnet. That is the storage firewall doing its job.
-
-    ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/m02-portal-container-iam.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
