@@ -20,7 +20,9 @@ Your virtual machine and this **Guide** are available within your web browser.
 
 ## Environment Details
 
-1. Connect to the **Lab VM** (the jump host) over SSH using the values on the **Environment** tab.
+> **Note:** This environment uses **browser-based SSH** by default. If you'd prefer, you can instead connect via SSH from your local computer's terminal.
+
+1. The details on the **Environment** tab.
 
     - **SSH command:** see the **LabVM SSH Command** output on the **Environment** tab
     - **Username:** see the **LabVM Admin Username** output on the **Environment** tab
