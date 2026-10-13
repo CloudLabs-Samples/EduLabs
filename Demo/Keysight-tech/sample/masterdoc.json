@@ -1,0 +1,25 @@
+[
+	{
+		"Name": "Troubleshooting Azure VM Connectivity and Managed Identity Access",
+		"Language": "English",
+		"BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Azure-VM-Troubleshooting-Lab",
+		"Files": [
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/LabGuide/M00-GettingStarted.md",
+				"Order": 1
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/LabGuide/M01-VMConnectivity.md",
+				"Order": 2
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/LabGuide/M02-ManagedIdentityStorage.md",
+				"Order": 3
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/LabGuide/M03-KnowledgeCheck.md",
+				"Order": 4
+			}
+		]
+	}
+]
