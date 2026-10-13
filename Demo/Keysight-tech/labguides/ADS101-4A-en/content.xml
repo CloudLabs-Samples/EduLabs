@@ -1,0 +1,1096 @@
+<Manual id='89a8a1e6-b584-4760-b7f6-37658a16b347'>
+  <name>ADS101-4A</name>
+  <defaultLanguageCode>en</defaultLanguageCode>
+  <dataFormat>default</dataFormat>
+  <contentNodes>
+    <ContentNode id='7e8be636-86b8-4fdb-8a76-c121ca0f9bda'>
+      <title>Lab 4A : RF System and Non-linear Analysis [1.5hr]</title>
+      <orderIndex>0</orderIndex>
+      <children>
+        <ContentNode id='d7d5af5f-27a1-4992-8178-9da596fa72dd'>
+          <title>Lab Overview</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Overview</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='d7d5af5f-27a1-4992-8178-9da596fa72dd'>
+              <title>Lab Overview</title>
+              <languageCode>en</languageCode>
+              <content>&lt;p&gt;This lab walks you through RF system design, single-tone HB simulation, frequency and power sweeps, and amplifier distortion modeling, culminating in the simulation of a real PDK amplifier.&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='6cc19069-2729-4ed7-a694-41aaab96a569'>
+          <title>Lab Guidance</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Guidance</tag>
+          </tags>
+          <children>
+            <ContentNode id='51add175-e4e2-40aa-b2de-8649de5fd746'>
+              <title>First Time Using Hands-on Labs?</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='51add175-e4e2-40aa-b2de-8649de5fd746'>
+                  <title>First Time Using Hands-on Labs?</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image.png' filename='image.png' width='352' height='150' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="150" src="./images/image.png" width="352" /&gt;&lt;/div&gt;
+
+&lt;p&gt;Welcome! If this is your first time taking a lab, navigate to the Appendix in the Table of Contents to review the interface and features before proceeding. For returning users, feel free to start your lab by clicking next in the manual.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='1a5bda37-0b09-4e33-88de-d3f0e86a0a24'>
+              <title>Using non-ANSI US Keyboard?</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='1a5bda37-0b09-4e33-88de-d3f0e86a0a24'>
+                  <title>Using non-ANSI US Keyboard?</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-1.png' filename='image-1.png' width='56' height='37' />
+                    <img src='./images/image-1-1.png' filename='image-1-1.png' width='618' height='179' />
+                  </images>
+                  <content>&lt;div&gt;
+&lt;p&gt;If you are using non-ANSI US Keyboard, please&amp;nbsp;click the gear icon to &lt;strong&gt;turn on&lt;/strong&gt; &lt;strong&gt;Fix non-ANSI US keyboard layouts&lt;/strong&gt; option.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="37" src="./images/image-1.png" width="56" /&gt;&lt;/div&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="179" src="./images/image-1-1.png" width="618" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='aae98def-a1d4-4875-9043-b761d25ef750'>
+              <title>Split Screen Mode</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='aae98def-a1d4-4875-9043-b761d25ef750'>
+                  <title>Split Screen Mode</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-2.png' filename='image-2.png' width='350' height='137' />
+                  </images>
+                  <content>&lt;p&gt;If you would&amp;nbsp;like to view the lab manual in new window or second device, click the 3 dots to &lt;strong&gt;Open in a new window&lt;/strong&gt; or &lt;strong&gt;Open with another device.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="137" src="./images/image-2.png" width="350" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='6cc19069-2729-4ed7-a694-41aaab96a569'>
+              <title>Lab Guidance</title>
+              <languageCode>en</languageCode>
+              <content>&lt;div class="hol-style--info"&gt;
+&lt;p&gt;It will take about 1.5hr to complete all the modules in this lab.&lt;/p&gt;
+
+&lt;p&gt;Modules are not independent, so you must go through them all to complete this lab.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Lab Modules List :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1"&gt;Module 1 - RF system design&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module2"&gt;Module 2&amp;nbsp;- Harmonic Balance 1-Tone simulation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3"&gt;Module 3&amp;nbsp;- Examine the HB data&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4"&gt;Module 4&amp;nbsp;- Variable power sweep setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5"&gt;Module 5&amp;nbsp;- Display the swept power data&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6"&gt;Module 6&amp;nbsp;- HB simulation of PDK amplifier system&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='dfb35965-3f20-41f3-8bc7-e7c2a1322240'>
+          <title>Let us Begin!</title>
+          <orderIndex>2</orderIndex>
+          <localizations>
+            <LocaleContent id='dfb35965-3f20-41f3-8bc7-e7c2a1322240'>
+              <title>Let us Begin!</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-1-1-1.png' filename='image-1-1-1.png' width='77' height='69' />
+              </images>
+              <content>&lt;p&gt;Click the shortcut icon for ADS on your screen, or use the Start &amp;gt; Programs command to find and start Advanced Designs System.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="69" src="./images/image-1-1-1.png" width="77" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='7e8be636-86b8-4fdb-8a76-c121ca0f9bda'>
+          <title>Lab 4A : RF System and Non-linear Analysis [1.5hr]</title>
+          <languageCode>en</languageCode>
+          <content>&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Overview"&gt;Lab Overview&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Guidance"&gt;Lab Guidance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='8d814a89-923f-45ce-9832-f3539a624294'>
+      <title>Module 1 - RF system design</title>
+      <orderIndex>1</orderIndex>
+      <tags>
+        <tag>Module1</tag>
+      </tags>
+      <children>
+        <ContentNode id='fb5c0a23-8bc5-4727-b154-26cb04da37bf'>
+          <title>Load workspace</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module1.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='fb5c0a23-8bc5-4727-b154-26cb04da37bf'>
+              <title>Load workspace</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-4.png' filename='image-4.png' width='198' height='176' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="176" src="./images/image-4.png" width="198" /&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;ol&gt;
+	&lt;li&gt;Click &lt;strong&gt;Open Workspace&lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;Select&amp;nbsp; &lt;span class="link"&gt;C:\ADS_Home\ADS101\Lab04\My_Sys_AMP_wrk&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='df417a8c-a0af-4b93-a697-041190db020c'>
+          <title>a3_Sys_HB</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module1.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='cbbf1d4d-bab9-49cd-ad96-6cf08fbc86f4'>
+              <title>a3_Sys_HB</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='cbbf1d4d-bab9-49cd-ad96-6cf08fbc86f4'>
+                  <title>a3_Sys_HB</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-5.png' filename='image-5.png' width='1138' height='589' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="589" src="./images/image-5.png" width="1138" /&gt;&lt;/div&gt;
+
+&lt;p&gt;The following parameters were set for the components:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;
+	&lt;p&gt;&lt;strong&gt;P_1Tone&lt;/strong&gt; source set &lt;strong&gt;Freq= 7.0 GHz&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Amplifier2 set &lt;strong&gt;S21=dbpolar (10,0)&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;&lt;strong&gt;LPF Butterworth&lt;/strong&gt; filter set &lt;strong&gt;Fpass =7 GHz&lt;/strong&gt; and &lt;strong&gt;Fstop = 8 GHz&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are equation based behavioural models and provide approximate responses based on the settings you make. See the ADS documentation for further information.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='df417a8c-a0af-4b93-a697-041190db020c'>
+              <title>a3_Sys_HB</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-3.png' filename='image-3.png' width='412' height='246' />
+              </images>
+              <content>&lt;p&gt;Open the schematic view of the cell &lt;strong&gt;&lt;code&gt;a3_Sys_HB&lt;/code&gt;&lt;/strong&gt;.&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="246" src="./images/image-3.png" width="412" /&gt;​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='1548bb65-f9b6-428a-9f83-cd4f870edcf7'>
+          <title>Place wire label</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module1.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='1548bb65-f9b6-428a-9f83-cd4f870edcf7'>
+              <title>Place wire label</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-6.png' filename='image-6.png' width='1057' height='308' />
+                <img src='./images/b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png' filename='b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="308" src="./images/image-6.png" width="1057" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Name the node &lt;img alt="" src="./images/b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png" /&gt; between the P_1Tone source and Amplifier2 as &amp;ldquo;&lt;strong&gt;Vin&lt;/strong&gt;&amp;quot;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Name the node between the LPF_Butterworth and the R as &amp;ldquo;&lt;strong&gt;Vout&lt;/strong&gt;&amp;quot;.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='8d814a89-923f-45ce-9832-f3539a624294'>
+          <title>Module 1 - RF system design</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1.1"&gt;Load workspace&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1.2"&gt;a3_Sys_HB&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1.3"&gt;Place wire label&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='afba6c11-b90d-4edc-967e-c6c47f3fd90d'>
+      <title>Module 2 - Harmonic Balance 1-Tone simulation</title>
+      <orderIndex>2</orderIndex>
+      <tags>
+        <tag>Module2</tag>
+      </tags>
+      <children>
+        <ContentNode id='859eff17-1cbc-43da-9362-c6af655bcee9'>
+          <title>Add HB controller</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module2.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='859eff17-1cbc-43da-9362-c6af655bcee9'>
+              <title>Add HB controller</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-8.png' filename='image-8.png' width='450' height='184' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="184" src="./images/image-8.png" width="450" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Select Simulation-HB palette (Harmonic Balance)&lt;/li&gt;
+	&lt;li&gt;Insert the &lt;strong&gt;HB controller&lt;/strong&gt;.&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='2a796548-e7bb-497b-b315-67528d9f02cc'>
+          <title>Set the HB frequency</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module2.2</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='2a796548-e7bb-497b-b315-67528d9f02cc'>
+              <title>Set the HB frequency</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-4-1.png' filename='image-4-1.png' width='306' height='159' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="159" src="./images/image-4-1.png" width="306" /&gt;​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Set&amp;nbsp;&amp;nbsp;&lt;strong&gt;Freq[1] = 7 GHz&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="hol-style--warning"&gt;
+&lt;p&gt;This setting is important for HB: the source frequency and simulation analysis frequencies must match.&amp;nbsp;If not, the simulation will run and report an error indicating the frequencies do not match.&amp;nbsp;If they do match, all the tones (harmonics or inter-mods) will be correctly simulated.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='68fb011e-8b73-41b3-8d3e-21ec0aa20e59'>
+          <title>Run the simulation</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module2.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='68fb011e-8b73-41b3-8d3e-21ec0aa20e59'>
+              <title>Run the simulation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/ea1bd7ae-9cf7-477c-bdf9-caa146ba5b35.png' filename='ea1bd7ae-9cf7-477c-bdf9-caa146ba5b35.png' width='' height='' />
+              </images>
+              <content>&lt;p&gt;&lt;strong&gt;Run the simulation.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/ea1bd7ae-9cf7-477c-bdf9-caa146ba5b35.png" /&gt;&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Notice in the status window that the filter order is given as a warning.&amp;nbsp;This can be ignored because the filter is behavioural.&amp;nbsp;In general, ADS simulator &lt;strong&gt;warnings&lt;/strong&gt; are easily understood or fixed.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="hol-style--alert"&gt;
+&lt;p&gt;But if there is an &lt;strong&gt;Error&lt;/strong&gt;, then it will not run and you will see the Error message.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='afba6c11-b90d-4edc-967e-c6c47f3fd90d'>
+          <title>Module 2 - Harmonic Balance 1-Tone simulation</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module2.1"&gt;Add HB controller&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module2.2"&gt;Harmonic Balance setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module2.3"&gt;Run the simulation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='f6b12993-1b39-451b-a29e-6a8d793932fb'>
+      <title>Module 3 - Examine the HB data</title>
+      <orderIndex>3</orderIndex>
+      <tags>
+        <tag>Module3</tag>
+      </tags>
+      <children>
+        <ContentNode id='00892b6c-b6a6-459c-9dbe-dede5578c618'>
+          <title>Spectrum of V_out in dbm</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module3.1</tag>
+          </tags>
+          <children>
+            <ContentNode id='975d3a52-cd42-45b8-a15e-fb91f28159f9'>
+              <title>Spectrum of V_out in dbm</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='975d3a52-cd42-45b8-a15e-fb91f28159f9'>
+                  <title>Spectrum of V_out in dbm</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-6-1.png' filename='image-6-1.png' width='621' height='428' />
+                  </images>
+                  <content>&lt;p&gt;Place your mouse pointer on the 7 GHz trace as shown here.&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="428" src="./images/image-6-1.png" width="621" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;The output power is about 7 dBm at 7 GHz which corresponds to the 0 dBm input power, plus 10 dB gain, minus the 3.01 dB attenuation at that frequency in the LPF.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='00892b6c-b6a6-459c-9dbe-dede5578c618'>
+              <title>Spectrum of V_out in dbm</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/f1c3f95e-82fd-41f4-9150-870eb6d02852.png' filename='f1c3f95e-82fd-41f4-9150-870eb6d02852.png' width='500' height='433' />
+                <img src='./images/ca19d80f-f9ef-4fc2-a47b-d557c500276b.png' filename='ca19d80f-f9ef-4fc2-a47b-d557c500276b.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" height="433" src="./images/f1c3f95e-82fd-41f4-9150-870eb6d02852.png" width="500" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;In the data display &lt;strong&gt;a3_sys_HB&lt;/strong&gt;, Insert a rectangular plot&amp;nbsp;&lt;img alt="" src="./images/ca19d80f-f9ef-4fc2-a47b-d557c500276b.png" /&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Add&amp;nbsp;&lt;strong&gt;Vout&lt;/strong&gt;​​​​​​​&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select &lt;strong&gt;Spectrum in dBm&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click&lt;strong&gt; OK&lt;/strong&gt; twice&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='1d680475-c18a-40a0-8bfd-40381dc9c021'>
+          <title>Mixing table</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module3.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='46d214a0-932f-4b1a-b259-e06bbdc672ef'>
+              <title>Mixing table</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='46d214a0-932f-4b1a-b259-e06bbdc672ef'>
+                  <title>Mixing table</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-7.png' filename='image-7.png' width='275' height='187' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="187" src="./images/image-7.png" width="275" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Each frequency has an index number and also a mixing table which for 1-tone data is identical.&amp;nbsp;But for intermodulation simulations, the mixing table makes it easy to select specific mixing terms out of the datasets.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Save&lt;/strong&gt; and &lt;strong&gt;close&lt;/strong&gt; the data display and the schematic.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='1d680475-c18a-40a0-8bfd-40381dc9c021'>
+              <title>Mixing table</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/a41320a0-41e5-4e53-bc6e-868210406ee8.png' filename='a41320a0-41e5-4e53-bc6e-868210406ee8.png' width='464' height='545' />
+                <img src='./images/image-10.png' filename='image-10.png' width='33' height='33' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="545" src="./images/a41320a0-41e5-4e53-bc6e-868210406ee8.png" width="464" /&gt;​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Insert a &lt;strong&gt;List&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="33" src="./images/image-10.png" width="33" /&gt;&amp;nbsp;&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Add&amp;nbsp;&lt;strong&gt;Mix&lt;/strong&gt;&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Click OK&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='f6b12993-1b39-451b-a29e-6a8d793932fb'>
+          <title>Module 3 - Examine the HB data</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3.1"&gt;Spectrum of V_out in dbm&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3.2"&gt;Mix table&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='29168a4c-57ca-4cd2-8161-df5560b4d2f5'>
+      <title>Module 4 - Variable power sweep setup</title>
+      <orderIndex>4</orderIndex>
+      <tags>
+        <tag>Module4</tag>
+      </tags>
+      <children>
+        <ContentNode id='7d4306b2-552b-46fa-b94e-bb34b965c5ac'>
+          <title>RF_pwr variable</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module4.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='7d4306b2-552b-46fa-b94e-bb34b965c5ac'>
+              <title>RF_pwr variable</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-11.png' filename='image-11.png' width='791' height='550' />
+              </images>
+              <content>&lt;p&gt;Open the schematic view for cell &lt;strong&gt;&lt;code&gt;a4_sys_psweep&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="550" src="./images/image-11.png" width="791" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;p&gt;There are two other changes to this schematic from the previous one.&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;
+	&lt;p&gt;Amplifier2 has been assigned a 1 dB gain compression point at 22 dBm output power.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Fpass and Fstop of the behavioral LPF model have been increased.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Notice that the variable &lt;strong&gt;RF_pwr&lt;/strong&gt; was added to the schematic.&amp;nbsp;This variable is used to set the power of the &lt;strong&gt;P_1Tone&lt;/strong&gt; source.​​​​​​​&amp;nbsp;​​​​​​​&lt;strong&gt;RF_pwr&lt;/strong&gt; is defined in dBm, but the simulator does not understand that unit, and the function dbmtow() is used to convert dBm to Watt.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='ff1e0750-9417-4494-b7b7-c0b5168e5b01'>
+          <title>HB sweep setup</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module4.2</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='ff1e0750-9417-4494-b7b7-c0b5168e5b01'>
+              <title>HB sweep setup</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/e68a421c-f3c0-4304-8ad4-999bcdd0cbd6.png' filename='e68a421c-f3c0-4304-8ad4-999bcdd0cbd6.png' width='388' height='422' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" height="422" src="./images/e68a421c-f3c0-4304-8ad4-999bcdd0cbd6.png" width="388" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Double-click on the HB controller.&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Select the &lt;strong&gt;Sweep&lt;/strong&gt; Tab. &amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;The variable &lt;strong&gt;RF_pwr&lt;/strong&gt; will be swept from &amp;ndash;30 dBm to 10 dBm in 1 dB steps.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='9e175550-8b0c-4582-9e81-9c2998ec7e60'>
+          <title>Run the simulation</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module4.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='9e175550-8b0c-4582-9e81-9c2998ec7e60'>
+              <title>Run the simulation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/9d9cc93f-73bd-4e87-a259-669fee2290c2.png' filename='9d9cc93f-73bd-4e87-a259-669fee2290c2.png' width='465' height='481' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="481" src="./images/9d9cc93f-73bd-4e87-a259-669fee2290c2.png" width="465" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click on &lt;strong&gt;Simulate &amp;gt; Simulation Settings&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Check the flag &lt;strong&gt;Use cell name&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Apply &lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click&amp;nbsp;&lt;strong&gt;Simulate&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='29168a4c-57ca-4cd2-8161-df5560b4d2f5'>
+          <title>Module 4 - Variable power sweep setup</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.1"&gt;RF_pwr variable&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.2"&gt;HB sweep setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.3"&gt;Run the simulation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='2b4b6569-59ca-439b-959e-135227665c4a'>
+      <title>Module 5 - Display the swept power data</title>
+      <orderIndex>5</orderIndex>
+      <tags>
+        <tag>Module5</tag>
+      </tags>
+      <children>
+        <ContentNode id='4d99cb75-a912-469d-aac9-6d58f530ce5b'>
+          <title>Gain equation</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module5.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='4d99cb75-a912-469d-aac9-6d58f530ce5b'>
+              <title>Gain equation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-12.png' filename='image-12.png' width='309' height='125' />
+              </images>
+              <content>&lt;p&gt;The data display &lt;strong&gt;&lt;code&gt;a4_Sys_psweep&lt;/code&gt;&lt;/strong&gt; will open once the simulation completes.&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="125" src="./images/image-12.png" width="309" /&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice there is already an equation for &lt;strong&gt;Gain &lt;/strong&gt;on the data display.&amp;nbsp;This equation is only correct when the input impedance of the amplifier and of the load is exactly 50&amp;nbsp;Ohms.&lt;span style="background-color:inherit; color:#000000; font-size:13px; font-weight:var(--clr-p1-font-weight, 400); letter-spacing:normal; text-align:center"&gt;​​​​​​​&lt;/span&gt;&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='cf1809bd-ae8d-49e3-a8ab-372a50451ac2'>
+          <title>Add Vout to the plot</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module5.2</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='cf1809bd-ae8d-49e3-a8ab-372a50451ac2'>
+              <title>Add Vout to the plot</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-14.png' filename='image-14.png' width='400' height='268' />
+                <img src='./images/image-13.png' filename='image-13.png' width='33' height='33' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="268" src="./images/image-14.png" width="400" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Insert a rectangular plot.&amp;nbsp;&lt;img alt="" height="33" src="./images/image-13.png" width="33" /&gt;​​​​​​​&lt;/li&gt;
+	&lt;li&gt;Double-click &lt;strong&gt;Vout&lt;/strong&gt;.&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Select &lt;strong&gt;Fundamental Tone in dBm over all sweep values&lt;/strong&gt;.&lt;/li&gt;
+	&lt;li&gt;Click OK&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='c122a3d9-be29-41ce-8e84-f31f9a6cafce'>
+          <title>Add Gain to the plot</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module5.3</tag>
+          </tags>
+          <children>
+            <ContentNode id='7d6f1e7f-71b9-4191-8f5f-1b208b91975d'>
+              <title>Change the Y-axis to Right Y Axis</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='7d6f1e7f-71b9-4191-8f5f-1b208b91975d'>
+                  <title>Change the Y-axis to Right Y Axis</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/22f32f37-0229-49fe-b2df-c47eb7e0cf59.png' filename='22f32f37-0229-49fe-b2df-c47eb7e0cf59.png' width='' height='' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/22f32f37-0229-49fe-b2df-c47eb7e0cf59.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Double-click on &lt;strong&gt;Gain&lt;/strong&gt; on the right side under Traces (opens Trace Options dialog).&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Select the &lt;strong&gt;Plot Axes&lt;/strong&gt; tab, change the Y-axis to &lt;strong&gt;Right Y Axis&lt;/strong&gt;.&lt;/li&gt;
+	&lt;li&gt;Click OK twice&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='c122a3d9-be29-41ce-8e84-f31f9a6cafce'>
+              <title>Add Gain to the plot</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-15.png' filename='image-15.png' width='543' height='157' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="157" src="./images/image-15.png" width="543" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Change the dataset to &lt;strong&gt;Equations &lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;Add &lt;strong&gt;Gain&lt;/strong&gt;.&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='0edc64e4-1700-4504-b4f8-c8ffc70685f0'>
+          <title>Examine the data display</title>
+          <orderIndex>3</orderIndex>
+          <tags>
+            <tag>Module5.4</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='0edc64e4-1700-4504-b4f8-c8ffc70685f0'>
+              <title>Examine the data display</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-17.png' filename='image-17.png' width='667' height='520' />
+                <img src='./images/image-18.png' filename='image-18.png' width='31' height='30' />
+                <img src='./images/image-19.png' filename='image-19.png' width='31' height='30' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="520" src="./images/image-17.png" width="667" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Place a marker m1&amp;nbsp;&amp;nbsp;&lt;img alt="" height="30" src="./images/image-18.png" width="31" /&gt;&amp;nbsp;&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Place a line marker m2&amp;nbsp;&lt;img alt="" height="30" src="./images/image-19.png" width="31" /&gt; on the Gain plot. &amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Make sure that both m1 and m2 are at the same locations as shown in the plot.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;The output power begins to flatten out as the amplifier goes into compression.&amp;nbsp;It is easier to see the Gain compression on this plot than the power compression due to the scales used.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='6e606aeb-83ef-43cc-9ea1-0003b29d7bb2'>
+          <title>lin_pwr equation</title>
+          <orderIndex>4</orderIndex>
+          <tags>
+            <tag>Module5.5</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='6e606aeb-83ef-43cc-9ea1-0003b29d7bb2'>
+              <title>lin_pwr equation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-20.png' filename='image-20.png' width='215' height='43' />
+              </images>
+              <content>&lt;p&gt;Notice there is an equation called &lt;strong&gt;lin_pwr&lt;/strong&gt; defined on the data display.&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="43" src="./images/image-20.png" width="215" /&gt;&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;This equation was red (invalid) until you added marker m1 because the value of m1 is used in the equation and while it was missing the equation could not be evaluated.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Linear power is calculated as the input power plus the linear gain.&amp;nbsp;This is why m1 must be at a power level at which the system is in the quasi-linear area of the response.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='b6a7cd87-cb28-48cf-8ef8-3fae3dbad415'>
+          <title>Add lin_pwr to the plot</title>
+          <orderIndex>5</orderIndex>
+          <tags>
+            <tag>Module5.6</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='b6a7cd87-cb28-48cf-8ef8-3fae3dbad415'>
+              <title>Add lin_pwr to the plot</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/49f506d8-b935-4731-8f33-966918a2ecc3.png' filename='49f506d8-b935-4731-8f33-966918a2ecc3.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" src="./images/49f506d8-b935-4731-8f33-966918a2ecc3.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Add &lt;strong&gt;lin_pwr&lt;/strong&gt; to the plot.&lt;/li&gt;
+	&lt;li&gt;Click OK&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='a04b2ce3-5197-4275-95a9-9eec181753f3'>
+          <title>Examine the data display</title>
+          <orderIndex>6</orderIndex>
+          <tags>
+            <tag>Module5.7</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='a04b2ce3-5197-4275-95a9-9eec181753f3'>
+              <title>Examine the data display</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-21.png' filename='image-21.png' width='710' height='540' />
+              </images>
+              <content>&lt;p&gt;Observe that it is now easier to see how the output power starts to compress.&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="540" src="./images/image-21.png" width="710" /&gt;&lt;/div&gt;
+
+&lt;p&gt;Save the data display.&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='2b4b6569-59ca-439b-959e-135227665c4a'>
+          <title>Module 5 - Display the swept power data</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.1"&gt;Gain equation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.2"&gt;Add Vout to the plot&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.3"&gt;Add Gain to the plot&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.4"&gt;Examine the data display&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.5"&gt;lin_pwr equation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.6"&gt;Add lin_pwr to the plot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tag/Module5.7"&gt;Examine the data display&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='e8e49703-657c-4182-83b6-f5e9d793b8dd'>
+      <title>Module 6 - HB simulation of PDK amplifier system</title>
+      <orderIndex>6</orderIndex>
+      <tags>
+        <tag>Module6</tag>
+      </tags>
+      <children>
+        <ContentNode id='44dfae72-7530-4d87-aab5-1da6fd5312a7'>
+          <title>Move and disconnect amplifier</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module6.1</tag>
+          </tags>
+          <children>
+            <ContentNode id='469d19fa-552e-4da7-b821-49183e034d44'>
+              <title>Deactivate amplifier</title>
+              <orderIndex>0</orderIndex>
+              <tags>
+                <tag>Module6.2</tag>
+              </tags>
+              <localizations>
+                <LocaleContent id='469d19fa-552e-4da7-b821-49183e034d44'>
+                  <title>Deactivate amplifier</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-22.png' filename='image-22.png' width='208' height='234' />
+                  </images>
+                  <content>&lt;p&gt;Then &lt;strong&gt;Deactivate &lt;/strong&gt;it.&amp;nbsp;Now it will not be netlisted but is available for use later if needed.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="234" src="./images/image-22.png" width="208" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='44dfae72-7530-4d87-aab5-1da6fd5312a7'>
+              <title>Move and disconnect amplifier</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-21-1.png' filename='image-21-1.png' width='603' height='473' />
+              </images>
+              <content>&lt;p&gt;In the schematic window, press and hold the &lt;strong&gt;Ctrl&lt;/strong&gt; key and then left-click and drag the Amplifier2 symbol away from the circuit (same as&amp;nbsp;the menu command &lt;strong&gt;Edit &amp;gt; Move &amp;gt; Move &amp;amp; Disconnect&lt;/strong&gt;).&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="473" src="./images/image-21-1.png" width="603" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='6c88d560-7737-4021-88f2-4a68e83df869'>
+          <title>Build amplifier system</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module6.3</tag>
+          </tags>
+          <children>
+            <ContentNode id='552db3c5-5fd8-4310-b88f-0827d7ef84da'>
+              <title>Add MeasEqn equation</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='552db3c5-5fd8-4310-b88f-0827d7ef84da'>
+                  <title>Add MeasEqn equation</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-26.png' filename='image-26.png' width='580' height='166' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="166" src="./images/image-26.png" width="580" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Type &lt;strong&gt;Meas,&amp;nbsp;&lt;/strong&gt;insert a MeasEqn component.&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Edit the MeasEqn to:&lt;/p&gt;
+	GAIN_db = dBm(Vout[::,1]) - 10*log( 0.5*real(Vin*conj(I_Probe1.i))[::,1]) - 30&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;&lt;strong&gt;Save&lt;/strong&gt; the design&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The syntax [::,1] picks out the values of a computed quantity for all values of RFpwr but only at the fundamental frequency.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='f8929468-0774-4675-b893-4f748114aab7'>
+              <title>It should look like this</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='f8929468-0774-4675-b893-4f748114aab7'>
+                  <title>It should look like this</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-23.png' filename='image-23.png' width='974' height='585' />
+                  </images>
+                  <content>&lt;p&gt;&lt;img alt="" height="585" src="./images/image-23.png" width="974" /&gt;​​​​​​​&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='6c88d560-7737-4021-88f2-4a68e83df869'>
+              <title>Build amplifier system</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-24.png' filename='image-24.png' width='781' height='280' />
+                <img src='./images/image-25.png' filename='image-25.png' width='779' height='354' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="280" src="./images/image-24.png" width="781" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;In the Parts search field, type &lt;strong&gt;amp_&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert &lt;strong&gt;AMP_7GHz&lt;/strong&gt; where Amplifer2 was before.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="354" src="./images/image-25.png" width="779" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Type &lt;strong&gt;i_p,&amp;nbsp;&lt;/strong&gt;​​​​​​​insert an &lt;strong&gt;I_Probe&lt;/strong&gt; symbol in front of the amplifier.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select the small wire segment between the pins of the I_Probe and delete it.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='b53a8aed-396e-4160-9699-ad9d0f72f9c0'>
+          <title>Run the simulation</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module6.4</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='b53a8aed-396e-4160-9699-ad9d0f72f9c0'>
+              <title>Run the simulation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/b80e5fe5-d0bb-49f7-a7d7-cc7c94dd7eb8.png' filename='b80e5fe5-d0bb-49f7-a7d7-cc7c94dd7eb8.png' width='' height='' />
+              </images>
+              <content>&lt;p&gt;&lt;strong&gt;Run&lt;/strong&gt; the simulation.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/b80e5fe5-d0bb-49f7-a7d7-cc7c94dd7eb8.png" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='a1f891af-4f3c-44f5-a252-1d4f9b8265ad'>
+          <title>Add Gain_db to the plot</title>
+          <orderIndex>3</orderIndex>
+          <tags>
+            <tag>Module6.5</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='a1f891af-4f3c-44f5-a252-1d4f9b8265ad'>
+              <title>Add Gain_db to the plot</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/81d9db29-bbc4-4049-9490-1361b8edc80a.png' filename='81d9db29-bbc4-4049-9490-1361b8edc80a.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/81d9db29-bbc4-4049-9490-1361b8edc80a.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Add &lt;strong&gt;GAIN_db&lt;/strong&gt; to the plot&lt;/li&gt;
+	&lt;li&gt;Choose the right y-axis under &lt;em&gt;Trace Options&lt;/em&gt;.&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='3760c9f5-4d23-4f61-9eff-6eb797c18960'>
+          <title>Examine the data display</title>
+          <orderIndex>4</orderIndex>
+          <tags>
+            <tag>Module6.6</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='3760c9f5-4d23-4f61-9eff-6eb797c18960'>
+              <title>Examine the data display</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/2a493bad-7b60-44f3-a7db-414b2265af6b.png' filename='2a493bad-7b60-44f3-a7db-414b2265af6b.png' width='' height='' />
+              </images>
+              <content>&lt;p&gt;The gains are slightly different because the amplifier&amp;rsquo;s input match is not exactly 50 Ohms.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/2a493bad-7b60-44f3-a7db-414b2265af6b.png" /&gt;​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='0e4e0474-6d9a-481e-aa41-d77f6acc38d5'>
+          <title>Close All</title>
+          <orderIndex>5</orderIndex>
+          <tags>
+            <tag>Module6.7</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='0e4e0474-6d9a-481e-aa41-d77f6acc38d5'>
+              <title>Close All</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/1e5f9ee6-8972-4522-96ac-91cff850d56e.png' filename='1e5f9ee6-8972-4522-96ac-91cff850d56e.png' width='' height='' />
+              </images>
+              <content>&lt;p&gt;From the ADS Main window, use &lt;strong&gt;File &amp;gt; Close All&lt;/strong&gt; and save your work.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/1e5f9ee6-8972-4522-96ac-91cff850d56e.png" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='e8e49703-657c-4182-83b6-f5e9d793b8dd'>
+          <title>Module 6 - HB simulation of PDK amplifier system</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.1"&gt;Move and disconnect amplifier&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.2"&gt;Deactivate amplifier&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.3"&gt;Build amplifier system&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.4"&gt;Run the simulation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.5"&gt;Add Gain_db to the plot&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.6"&gt;Examine the data display&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tag/Module6.7"&gt;Close all&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='a86e5517-76d6-40b9-a436-d815509fed02'>
+      <title>You've finished the lab!</title>
+      <orderIndex>8</orderIndex>
+      <localizations>
+        <LocaleContent id='a86e5517-76d6-40b9-a436-d815509fed02'>
+          <title>You've finished the lab!</title>
+          <languageCode>en</languageCode>
+          <images>
+            <img src='./images/image-31-1.png' filename='image-31-1.png' width='379' height='131' />
+          </images>
+          <content>&lt;p&gt;Congratulations on completing ADS101-Lab 04!&lt;/p&gt;
+
+&lt;p&gt;To complete your lab click on the END button.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="131" src="./images/image-31-1.png" width="379" /&gt;&lt;/div&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+  </contentNodes>
+</Manual>
