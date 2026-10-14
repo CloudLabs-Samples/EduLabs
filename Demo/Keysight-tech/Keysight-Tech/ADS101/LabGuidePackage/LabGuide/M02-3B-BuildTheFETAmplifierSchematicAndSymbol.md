@@ -7,55 +7,75 @@
 
 ## Task 1: Build amplifier schematic
 
-   ![](../Image/3B-544f6340-42fe-4cd8-a610-6c646ef34c3c.png)
 
-1. In the Main window, click on the ![](../Image/3B-dd5155cd-86ca-4ec8-9470-e7901675d49d.png) icon
+1. In the Main window, click on the icon.
+
+   ![](../Image/3B-dd5155cd-86ca-4ec8-9470-e7901675d49d.png) 
 
 1. Name the new cell **AMP_7GHz**
+
+   ![](../Image/3B-544f6340-42fe-4cd8-a610-6c646ef34c3c.png)
+
 
 1. Click **Create Schematic**
 
    ![](../Image/3B-4e96af77-4090-46a8-be17-bb4427e5e726.png)
 
-1. Insert **DEMO_NETLIST_INCLUDE**![](../Image/3B-image-16.png)
+1. Insert **DEMO_NETLIST_INCLUDE**
 
-1. Insert **demo_fet1**![](../Image/3B-image-17.png)
+   ![](../Image/3B-image-16.png)
+
+1. Insert **demo_fet1**
+
+   ![](../Image/3B-image-17.png)
 
    ![](../Image/3B-a98b8c01-d4eb-41af-a73a-1eba989dae8f.png)
 
 1. Change to **Lumped Components** palette
 
-1. Insert **L1, L2** components ![](../Image/3B-image-18.png).
+1. Insert **L1, L2** components
+
+   ![](../Image/3B-image-18.png).
 
     - Set **L1** = **12 nH**
 
     - Set **L2** = **1.5 nH**
 
-1. Insert **C1, C2** components ![](../Image/3B-image-19.png).
+1. Insert **C1, C2** components 
+
+   ![](../Image/3B-image-19.png).
 
     - Set **C1** = **10 pF**
 
     - Set **C2** = **10 pF**
 
-1. Insert pins (P1, P2)![](../Image/3B-image-21.png) on the input and output
+1. Insert pins (P1, P2) on the input and output.
+
+   ![](../Image/3B-image-21.png)
 
 1. Move component text using “**F5**” and clicking the symbols.
 
-### It should look like this
+1. It should look like this
 
    ![](../Image/3B-image-15-1.png)
 
 1. Change to **Sources-Freq Domain** palette
 
-1. Insert **SRC1, SRC2**![](../Image/3B-image-20.png)
+1. Insert **SRC1, SRC2**
+
+   ![](../Image/3B-image-20.png)
 
     - Set **SRC1** = -**0.5 V**
 
     - Set **SRC2** = **3.0 V**
 
-1. Insert grounds ![](../Image/3B-image-22.png) as needed.
+1. Insert grounds as needed.
 
-1. Insert wires ![](../Image/3B-image-23.png) as needed.
+   ![](../Image/3B-image-22.png)
+
+1. Insert wires as needed. 
+
+   ![](../Image/3B-image-23.png)
 
 1. **Save** the design.
 
@@ -63,15 +83,11 @@ Because ADS supports hierarchical designs, a schematic created as a sub-circuit 
 
 ## Task 2: Create amplifier symbol
 
-   ![](../Image/3B-image-16-1.png)
-
 1. Select **Window > Symbol**
 
 1. Click Create Symbol
 
-### Symbol generator
-
-   ![](../Image/3B-image-24.png)
+   ![](../Image/3B-image-16-1.png)
 
 1. Go to the Copy/Modify tab
 
@@ -81,13 +97,11 @@ Because ADS supports hierarchical designs, a schematic created as a sub-circuit 
 
 1. Click **OK**.
 
-### ADS cell AMP_7GHz is now setup
+   ![](../Image/3B-image-24.png)
 
-ADS cell `AMP_7GHz` is now setup to be used in another schematic as a subcircuit.
+1. ADS cell AMP_7GHz is now setup. ADS cell `AMP_7GHz` is now setup to be used in another schematic as a subcircuit.
 
    ![](../Image/3B-a802f72f-e927-447d-a185-b74407709f64.png)
-
-### Save and close
 
 1. **Save** and **close** the **symbol** window.
 

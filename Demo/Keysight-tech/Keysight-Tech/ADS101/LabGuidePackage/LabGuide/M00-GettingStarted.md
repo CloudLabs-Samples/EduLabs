@@ -1,6 +1,6 @@
 # ADS101: FET Amplifier Design and RF System Analysis
 
-### Estimated Duration: 210 Minutes
+### Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -22,10 +22,14 @@ Your virtual machine and this **Guide** are available within your web browser.
 
 ## Environment Details
 
-1. To access the virtual machine over RDP, use the values on the **Environment** tab.
+> **Note:** This environment uses **browser-based RDP** by default. If you'd prefer, you can instead connect via RDP from your local computer's terminal.
+
+1. You can connect to the VM directly from the assessment interface, or by using **Remote Desktop (RDP)** if needed.
 
     - **VM DNS Name:** <inject key="VM DNS Name" enableCopy="true"/>
+
     - **Username:** <inject key="VM Username" enableCopy="true"/>
+    
     - **Password:** <inject key="VM Password" enableCopy="true"/>
 
 1. Your Deployment ID for this run is **<inject key="DeploymentID" enableCopy="false"/>**. Quote it if you contact support.
