@@ -16,11 +16,11 @@ Open the schematic view for cell **a4_sys_psweep**
 
 There are two other changes to this schematic from the previous one.
 
-- Amplifier2 has been assigned a 1 dB gain compression point at 22 dBm output power.
+   - Amplifier2 has been assigned a 1 dB gain compression point at 22 dBm output power.
 
-- Fpass and Fstop of the behavioral LPF model have been increased.
+   - Fpass and Fstop of the behavioral LPF model have been increased.
 
->**Note:** Notice that the variable **RF_pwr** was added to the schematic. This variable is used to set the power of the **P_1Tone** source. **RF_pwr** is defined in dBm, but the simulator does not understand that unit, and the function dbmtow() is used to convert dBm to Watt.
+   >**Note:** Notice that the variable **RF_pwr** was added to the schematic. This variable is used to set the power of the **P_1Tone** source. **RF_pwr** is defined in dBm, but the simulator does not understand that unit, and the function dbmtow() is used to convert dBm to Watt.
 
 ## Task 2: HB sweep setup
 
@@ -30,7 +30,7 @@ There are two other changes to this schematic from the previous one.
 
 1. Select the **Sweep** Tab.
 
->**Note:** The variable **RF_pwr** will be swept from –30 dBm to 10 dBm in 1 dB steps.
+   >**Note:** The variable **RF_pwr** will be swept from –30 dBm to 10 dBm in 1 dB steps.
 
 ## Task 3: Run the simulation
 
