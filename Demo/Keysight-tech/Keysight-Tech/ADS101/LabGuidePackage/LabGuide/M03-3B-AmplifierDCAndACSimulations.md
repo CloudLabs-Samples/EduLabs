@@ -3,14 +3,16 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Create new schematic
+
 - Insert amplifier symbol
+
 - Insert V_AC source
+
 - Insert resistor
+
 - Place wire label
 
 ## Task 1: Create new schematic
-
-
 
 1. Click **New Schematic Window**
 

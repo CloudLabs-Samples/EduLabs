@@ -3,11 +3,17 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Gain equation
+
 - Add Vout to the plot
+
 - Add Gain to the plot
+
 - Examine the data display
+
 - lin_pwr equation
+
 - Add lin_pwr to the plot
+
 - Examine the data display
 
 ## Task 1: Gain equation

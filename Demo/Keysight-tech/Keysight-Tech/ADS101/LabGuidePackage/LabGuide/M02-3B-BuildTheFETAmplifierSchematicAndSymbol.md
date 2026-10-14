@@ -3,6 +3,7 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Build amplifier schematic
+
 - Create amplifier symbol
 
 ## Task 1: Build amplifier schematic

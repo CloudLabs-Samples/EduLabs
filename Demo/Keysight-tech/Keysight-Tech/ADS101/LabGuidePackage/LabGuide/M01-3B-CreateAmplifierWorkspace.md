@@ -3,7 +3,9 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Create amplifier workspace
+
 - Add library
+
 - Choose Technology for library
 
 ## Task 1: Create amplifier workspace
@@ -26,8 +28,6 @@
 
 ## Task 2: Add library
 
-
-
 1. Select **DemoKit_Non_Linear** library
 
 1. Click OK
@@ -38,13 +38,11 @@
 
 ## Task 3: Choose Technology for library
 
-
 1. Choose DemoKit_Non_Linear, 0.001 micron....
 
 1. Click **Finish**
 
    ![](../Image/3B-32ed338d-2463-4f9b-824b-880afa49171d.png)
-
 
 ## You have successfully completed Lab 3B - Module 1.
 

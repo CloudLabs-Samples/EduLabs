@@ -5,7 +5,9 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Load workspace
+
 - a3_Sys_HB
+
 - Place wire label
 
 ## Task 1: Load workspace

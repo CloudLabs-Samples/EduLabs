@@ -3,9 +3,13 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Deactivate the DC simulation controller
+
 - Use variable equation
+
 - Parameter sweep setup
+
 - Run the simulation
+
 - Notice the changes
 
 ## Task 1: Deactivate the DC simulation controller

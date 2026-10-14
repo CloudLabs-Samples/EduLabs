@@ -3,6 +3,7 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Noise result
+
 - AC data result
 
 ## Task 1: Noise result

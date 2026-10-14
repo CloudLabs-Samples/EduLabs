@@ -3,6 +3,7 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Spectrum of V_out in dbm
+
 - Mixing table
 
 ## Task 1: Spectrum of V_out in dbm

@@ -13,3 +13,5 @@ Please answer all five questions:
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/Inline-Questions/question-04.md" />
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/Inline-Questions/question-05.md" />
+
+## Congratulations on completing ADS101 Lab 3B and ADS101 Lab 4A! Click End Lab to complete the lab.

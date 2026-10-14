@@ -3,13 +3,14 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - DC controller setup
+
 - AC controller setup
 
 ## Task 1: DC controller setup
 
 1. Select the **Simulation-DC** palette
 
-      ![](../Image/3B-eba7d7f9-ea9e-41ac-bf83-323fcec160be.png)
+   ![](../Image/3B-eba7d7f9-ea9e-41ac-bf83-323fcec160be.png)
 
 1. Insert **DC** simulation controller 
 

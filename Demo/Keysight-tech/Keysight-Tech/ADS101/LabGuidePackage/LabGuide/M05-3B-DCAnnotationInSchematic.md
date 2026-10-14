@@ -3,10 +3,15 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Run the analysis
+
 - Push into hierarchy edit
+
 - Enable DC annotation
+
 - The DC node values
+
 - Clear the annotation
+
 - Pop out
 
 ## Task 1: Run the analysis

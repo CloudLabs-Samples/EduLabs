@@ -3,10 +3,15 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Move and disconnect amplifier
+
 - Build amplifier system
+
 - Run the simulation
+
 - Add Gain_db to the plot
+
 - Examine the data display
+
 - Close All
 
 ## Task 1: Move and disconnect amplifier
@@ -77,4 +82,6 @@ From the ADS Main window, use **File > Close All** and save your work.
 
    ![](../Image/4A-1e5f9ee6-8972-4522-96ac-91cff850d56e.png)
 
-## Congratulations on completing ADS101 Lab 3B and ADS101 Lab 4A!
+## Now, click on **Next >>** from the lower right corner to move on to the Knowledge Check page.
+
+   ![](../Image/nxt.png)

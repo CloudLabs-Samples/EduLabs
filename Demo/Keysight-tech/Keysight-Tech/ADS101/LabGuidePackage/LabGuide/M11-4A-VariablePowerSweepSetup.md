@@ -3,7 +3,9 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - RF_pwr variable
+
 - HB sweep setup
+
 - Run the simulation
 
 ## Task 1: RF_pwr variable

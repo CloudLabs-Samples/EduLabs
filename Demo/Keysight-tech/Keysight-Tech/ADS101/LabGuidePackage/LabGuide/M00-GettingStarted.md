@@ -18,7 +18,7 @@ Welcome to your Keysight Advanced Design System (ADS) hands-on lab. This environ
 
 Your virtual machine and this **Guide** are available within your web browser.
 
-   ![](../Image/gdi.png)
+   ![](../Image/ads.png)
 
 ## Environment Details
 
@@ -75,6 +75,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 | Lab 4A | Module 4 | Variable power sweep setup |
 | Lab 4A | Module 5 | Display the swept power data |
 | Lab 4A | Module 6 | HB simulation of PDK amplifier system |
+| Questions | All Modules | 5*2 |
 
 >**Note:** Complete Lab 3B first, then Lab 4A. Within each lab, the modules are not independent, so complete them in order.
 

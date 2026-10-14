@@ -3,7 +3,9 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Add HB controller
+
 - Set the HB frequency
+
 - Run the simulation
 
 ## Task 1: Add HB controller
