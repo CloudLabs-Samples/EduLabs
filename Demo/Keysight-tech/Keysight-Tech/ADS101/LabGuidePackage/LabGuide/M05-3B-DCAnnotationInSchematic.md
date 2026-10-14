@@ -16,11 +16,11 @@
 
 ## Task 1: Run the analysis
 
-1. Click on the simulate icon
+1. Click on the simulate icon.
  
    ![](../Image/3B-image-32.png)
 
->**Warning:** Do not close the data display.
+   >**Warning:** Do not close the data display.
 
 ## Task 2: Push into hierarchy edit
 
