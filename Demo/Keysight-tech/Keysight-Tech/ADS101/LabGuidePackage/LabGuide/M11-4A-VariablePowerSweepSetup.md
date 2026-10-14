@@ -22,9 +22,9 @@ There are two other changes to this schematic from the previous one.
 
 ## Task 2: HB sweep setup
 
-   ![](../Image/4A-e68a421c-f3c0-4304-8ad4-999bcdd0cbd6.png)
-
 1. Double-click on the HB controller.
+
+   ![](../Image/4A-e68a421c-f3c0-4304-8ad4-999bcdd0cbd6.png)
 
 1. Select the **Sweep** Tab.
 
@@ -32,13 +32,13 @@ There are two other changes to this schematic from the previous one.
 
 ## Task 3: Run the simulation
 
-   ![](../Image/4A-9d9cc93f-73bd-4e87-a259-669fee2290c2.png)
-
 1. Click on **Simulate > Simulation Settings**
 
 1. Check the flag **Use cell name**.
 
 1. Click **Apply**
+
+   ![](../Image/4A-9d9cc93f-73bd-4e87-a259-669fee2290c2.png)
 
 1. Click **Simulate**
 

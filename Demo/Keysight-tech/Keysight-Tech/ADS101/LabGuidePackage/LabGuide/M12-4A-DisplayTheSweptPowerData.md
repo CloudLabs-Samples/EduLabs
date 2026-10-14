@@ -20,25 +20,27 @@ Notice there is already an equation for **Gain** on the data display. This equat
 
 ## Task 2: Add Vout to the plot
 
-   ![](../Image/4A-image-14.png)
+1. Insert a rectangular plot. 
 
-1. Insert a rectangular plot. ![](../Image/4A-image-13.png)
+   ![](../Image/4A-image-13.png)
 
 1. Double-click **Vout**.
 
 1. Select **Fundamental Tone in dBm over all sweep values**.
 
+   ![](../Image/4A-image-14.png)
+
 1. Click OK
 
 ## Task 3: Add Gain to the plot
-
-   ![](../Image/4A-image-15.png)
 
 1. Change the dataset to **Equations**
 
 1. Add **Gain**.
 
-### Change the Y-axis to Right Y Axis
+   ![](../Image/4A-image-15.png)
+
+1. **Change the Y-axis to Right Y Axis**
 
    ![](../Image/4A-22f32f37-0229-49fe-b2df-c47eb7e0cf59.png)
 
@@ -50,13 +52,17 @@ Notice there is already an equation for **Gain** on the data display. This equat
 
 ## Task 4: Examine the data display
 
+1. Place a marker m1. 
+
+   ![](../Image/4A-image-18.png)
+
+1. Place a line marker m2  on the Gain plot.
+
+   ![](../Image/4A-image-19.png)
+
+1. Make sure that both m1 and m2 are at the same locations as shown in the plot.
+
    ![](../Image/4A-image-17.png)
-
-- Place a marker m1 ![](../Image/4A-image-18.png)
-
-- Place a line marker m2 ![](../Image/4A-image-19.png) on the Gain plot.
-
-- Make sure that both m1 and m2 are at the same locations as shown in the plot.
 
 >**Note:** The output power begins to flatten out as the amplifier goes into compression. It is easier to see the Gain compression on this plot than the power compression due to the scales used.
 
@@ -72,19 +78,19 @@ Notice there is an equation called **lin_pwr** defined on the data display.
 
 ## Task 6: Add lin_pwr to the plot
 
-   ![](../Image/4A-49f506d8-b935-4731-8f33-966918a2ecc3.png)
-
 1. Add **lin_pwr** to the plot.
 
-1. Click OK
+1. Click OK.
+
+   ![](../Image/4A-49f506d8-b935-4731-8f33-966918a2ecc3.png)
 
 ## Task 7: Examine the data display
 
-Observe that it is now easier to see how the output power starts to compress.
+1. Observe that it is now easier to see how the output power starts to compress.
 
    ![](../Image/4A-image-21.png)
 
-Save the data display.
+1. Save the data display.
 
 ## You have successfully completed Lab 4A - Module 5.
 

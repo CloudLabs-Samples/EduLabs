@@ -8,17 +8,17 @@
 
 ## Task 1: Add HB controller
 
-   ![](../Image/4A-image-8.png)
-
 1. Select Simulation-HB palette (Harmonic Balance)
+
+   ![](../Image/4A-image-8.png)
 
 1. Insert the **HB controller**.
 
 ## Task 2: Set the HB frequency
 
-   ![](../Image/4A-image-4-1.png)
-
 1. Set **Freq[1] = 7 GHz**
+
+   ![](../Image/4A-image-4-1.png)
 
 >**Important:** This setting is important for HB: the source frequency and simulation analysis frequencies must match. If not, the simulation will run and report an error indicating the frequencies do not match. If they do match, all the tones (harmonics or inter-mods) will be correctly simulated.
 

@@ -7,17 +7,19 @@
 
 ## Task 1: Spectrum of V_out in dbm
 
-   ![](../Image/4A-f1c3f95e-82fd-41f4-9150-870eb6d02852.png)
+1. In the data display **a3_sys_HB**, Insert a rectangular plot 
 
-1. In the data display **a3_sys_HB**, Insert a rectangular plot ![](../Image/4A-ca19d80f-f9ef-4fc2-a47b-d557c500276b.png)
+   ![](../Image/4A-ca19d80f-f9ef-4fc2-a47b-d557c500276b.png)
 
-1. Add **Vout**
+1. Add **Vout**.
 
 1. Select **Spectrum in dBm**.
 
-1. Click **OK** twice
+   ![](../Image/4A-f1c3f95e-82fd-41f4-9150-870eb6d02852.png)
 
-Place your mouse pointer on the 7 GHz trace as shown here.
+1. Click **OK** twice.
+
+1. Place your mouse pointer on the 7 GHz trace as shown here.
 
    ![](../Image/4A-image-6-1.png)
 
@@ -25,19 +27,21 @@ Place your mouse pointer on the 7 GHz trace as shown here.
 
 ## Task 2: Mixing table
 
+1. Insert a **List**
+
+   ![](../Image/4A-image-10.png)
+
+1. Add **Mix**.
+
    ![](../Image/4A-a41320a0-41e5-4e53-bc6e-868210406ee8.png)
-
-1. Insert a **List**![](../Image/4A-image-10.png)
-
-1. Add **Mix**
 
 1. Click OK
 
    ![](../Image/4A-image-7.png)
 
->**Note:** Each frequency has an index number and also a mixing table which for 1-tone data is identical. But for intermodulation simulations, the mixing table makes it easy to select specific mixing terms out of the datasets.
+   >**Note:** Each frequency has an index number and also a mixing table which for 1-tone data is identical. But for intermodulation simulations, the mixing table makes it easy to select specific mixing terms out of the datasets.
 
-**Save** and **close** the data display and the schematic.
+1. **Save** and **close** the data display and the schematic.
 
 ## You have successfully completed Lab 4A - Module 3.
 

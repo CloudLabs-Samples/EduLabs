@@ -10,27 +10,27 @@
 
 ## Task 1: Load workspace
 
-   ![](../Image/4A-image-4.png)
-
 1. Click **Open Workspace**
+
+   ![](../Image/4A-image-4.png)
 
 1. Select `C:\ADS_Home\ADS101\Lab04\My_Sys_AMP_wrk`
 
 ## Task 2: a3_Sys_HB
 
-Open the schematic view of the cell **a3_Sys_HB**.
+1. Open the schematic view of the cell **a3_Sys_HB**.
 
    ![](../Image/4A-image-3.png)
 
    ![](../Image/4A-image-5.png)
 
-The following parameters were set for the components:
+1. The following parameters were set for the components:
 
-- **P_1Tone** source set **Freq= 7.0 GHz**.
+   - **P_1Tone** source set **Freq= 7.0 GHz**.
 
-- Amplifier2 set **S21=dbpolar (10,0)**.
+   - Amplifier2 set **S21=dbpolar (10,0)**.
 
-- **LPF Butterworth** filter set **Fpass =7 GHz** and **Fstop = 8 GHz**.
+   - **LPF Butterworth** filter set **Fpass =7 GHz** and **Fstop = 8 GHz**.
 
 These are equation based behavioural models and provide approximate responses based on the settings you make. See the ADS documentation for further information.
 
@@ -38,7 +38,9 @@ These are equation based behavioural models and provide approximate responses ba
 
    ![](../Image/4A-image-6.png)
 
-1. Name the node ![](../Image/4A-b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png) between the P_1Tone source and Amplifier2 as “**Vin**".
+1. Name the node between the P_1Tone source and Amplifier2 as “**Vin**".
+
+   ![](../Image/4A-b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png)
 
 1. Name the node between the LPF_Butterworth and the R as “**Vout**".
 
