@@ -1,0 +1,1542 @@
+<Manual id='2881ae14-1bad-4e91-bf45-d5150654cba4'>
+  <name>ADS101-3B</name>
+  <defaultLanguageCode>en</defaultLanguageCode>
+  <dataFormat>default</dataFormat>
+  <contentNodes>
+    <ContentNode id='62490be2-635e-404e-aa65-561781415dfd'>
+      <title>Lab 3B : FET Amplifier Design and Linear Analysis [2hr]</title>
+      <orderIndex>0</orderIndex>
+      <children>
+        <ContentNode id='40e96ab0-6fcc-4758-954b-ca0caea96eb0'>
+          <title>Lab Overview</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Overview</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='40e96ab0-6fcc-4758-954b-ca0caea96eb0'>
+              <title>Lab Overview</title>
+              <languageCode>en</languageCode>
+              <content>&lt;p&gt;This lab covers FET amplifier schematic and symbol design, DC/AC simulation with bias annotation, noise and frequency analysis, and advanced parameter sweeps using variable equations.&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='43b75931-acdd-407e-8d9d-fcc828232104'>
+          <title>Lab Guidance</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Guidance</tag>
+          </tags>
+          <children>
+            <ContentNode id='9c97b357-85de-4c61-9082-82265d4087e3'>
+              <title>First Time Using Hands-on Labs?</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='9c97b357-85de-4c61-9082-82265d4087e3'>
+                  <title>First Time Using Hands-on Labs?</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image.png' filename='image.png' width='352' height='150' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="150" src="./images/image.png" width="352" /&gt;&lt;/div&gt;
+
+&lt;p&gt;Welcome! If this is your first time taking a lab, navigate to the Appendix in the Table of Contents to review the interface and features before proceeding. For returning users, feel free to start your lab by clicking next in the manual.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='bdfb3682-578c-4f22-b49f-22d7e2558798'>
+              <title>Using non-ANSI US Keyboard?</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='bdfb3682-578c-4f22-b49f-22d7e2558798'>
+                  <title>Using non-ANSI US Keyboard?</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-1.png' filename='image-1.png' width='54' height='36' />
+                    <img src='./images/image-1-1.png' filename='image-1-1.png' width='618' height='179' />
+                  </images>
+                  <content>&lt;div&gt;
+&lt;p&gt;If you are using non-ANSI US Keyboard, please&amp;nbsp;click the gear icon to &lt;strong&gt;turn on&lt;/strong&gt; &lt;strong&gt;Fix non-ANSI US keyboard layouts&lt;/strong&gt; option.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="36" src="./images/image-1.png" width="54" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="179" src="./images/image-1-1.png" width="618" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='e7e6bec4-cc88-4d20-be18-2990b042bc14'>
+              <title>Split Screen Mode</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='e7e6bec4-cc88-4d20-be18-2990b042bc14'>
+                  <title>Split Screen Mode</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-2.png' filename='image-2.png' width='350' height='137' />
+                  </images>
+                  <content>&lt;p&gt;If you would&amp;nbsp;like to view the lab manual in new window or second device, click the 3 dots to &lt;strong&gt;Open in a new window&lt;/strong&gt; or &lt;strong&gt;Open with another device.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="137" src="./images/image-2.png" width="350" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='43b75931-acdd-407e-8d9d-fcc828232104'>
+              <title>Lab Guidance</title>
+              <languageCode>en</languageCode>
+              <content>&lt;div class="hol-style--info"&gt;
+&lt;p&gt;It will take about 2hr to complete all the modules in this lab.&lt;/p&gt;
+
+&lt;p&gt;Modules are not independent, so you must go through them all to complete this lab.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Lab Module List:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1"&gt;Module 1 - Create amplifier workspace&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module2"&gt;Module 2&amp;nbsp;- DC - FET curve tracer template&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3"&gt;Module 3&amp;nbsp;- Build the FET amplifier schematic and symbol&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4"&gt;Module 4&amp;nbsp;- Amplifier DC and AC simulations&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5"&gt;Module 5&amp;nbsp;- AC and DC simulation setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6"&gt;Module 6&amp;nbsp;- DC annotation in schematic&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module7"&gt;Module 7&amp;nbsp;- AC data and noise results&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8"&gt;Module 8&amp;nbsp;- Variable equation and parameter sweep for simulation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='ba44e87e-899b-4ebb-9fd3-66ad84935eaa'>
+          <title>Let us begin!</title>
+          <orderIndex>2</orderIndex>
+          <localizations>
+            <LocaleContent id='ba44e87e-899b-4ebb-9fd3-66ad84935eaa'>
+              <title>Let us begin!</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-3.png' filename='image-3.png' width='77' height='69' />
+              </images>
+              <content>&lt;p&gt;Click the shortcut icon for ADS on your screen, or use the Start &amp;gt; Programs command to find and start Advanced Designs System.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="69" src="./images/image-3.png" width="77" /&gt;​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='62490be2-635e-404e-aa65-561781415dfd'>
+          <title>Lab 3B : FET Amplifier Design and Linear Analysis [2hr]</title>
+          <languageCode>en</languageCode>
+          <content>&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Overview"&gt;Lab Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tag/Guidance"&gt;Lab Guidance&lt;/a&gt;&lt;/li&gt;
+	
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='0dcae1f9-b328-4995-b085-014c36d03f1b'>
+      <title>Module 1 - Create amplifier workspace</title>
+      <orderIndex>1</orderIndex>
+      <tags>
+        <tag>Module1</tag>
+      </tags>
+      <children>
+        <ContentNode id='3e844fed-1bee-4b35-9f19-49582081ed21'>
+          <title>Create amplifier workspace</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module1.1</tag>
+          </tags>
+          <children>
+            <ContentNode id='016d9506-5543-4ca8-866c-b3e7ecef0723'>
+              <title>Create amplifier workspace</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='016d9506-5543-4ca8-866c-b3e7ecef0723'>
+                  <title>Create amplifier workspace</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/c9aff72c-dc9d-43e6-b2ca-3a66fb3b34e8.png' filename='c9aff72c-dc9d-43e6-b2ca-3a66fb3b34e8.png' width='' height='' />
+                    <img src='./images/4eff02e0-361c-445a-9f90-b770877e3c87.png' filename='4eff02e0-361c-445a-9f90-b770877e3c87.png' width='' height='' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/c9aff72c-dc9d-43e6-b2ca-3a66fb3b34e8.png" /&gt;​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Set &lt;strong&gt;Name &lt;/strong&gt;=&amp;nbsp;&lt;strong&gt;My_AMP_wrk&lt;/strong&gt;&amp;nbsp;​​​​&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click Show advanced&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Check&lt;strong&gt; &lt;/strong&gt;&amp;ldquo;Set up layout technology immediately...&amp;quot;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Click on&amp;nbsp;&lt;img alt="" src="./images/4eff02e0-361c-445a-9f90-b770877e3c87.png" /&gt;​​​​&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='3e844fed-1bee-4b35-9f19-49582081ed21'>
+              <title>Create amplifier workspace</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/6f96db14-e542-4346-a77b-64365b9eabef.png' filename='6f96db14-e542-4346-a77b-64365b9eabef.png' width='' height='' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;Click on the &lt;strong&gt;New Workspace&lt;/strong&gt;​​​​​​​​​​​&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/6f96db14-e542-4346-a77b-64365b9eabef.png" /&gt;​​​​​​​​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='905f800a-0b69-4997-8fc1-51ec453bd209'>
+          <title>Add library</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module1.2</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='905f800a-0b69-4997-8fc1-51ec453bd209'>
+              <title>Add library</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/30b128f6-db4a-41eb-8598-d94540bf8c43.png' filename='30b128f6-db4a-41eb-8598-d94540bf8c43.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/30b128f6-db4a-41eb-8598-d94540bf8c43.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select&amp;nbsp;&lt;strong&gt;DemoKit_Non_Linear&lt;/strong&gt;&amp;nbsp;library&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click OK&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Create Workspace&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+​​​​​​​</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='08f59479-87d1-4e73-b928-1e0ffcaf3985'>
+          <title>Choose Technology for library</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module1.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='08f59479-87d1-4e73-b928-1e0ffcaf3985'>
+              <title>Choose Technology for library</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/32ed338d-2463-4f9b-824b-880afa49171d.png' filename='32ed338d-2463-4f9b-824b-880afa49171d.png' width='479' height='416' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="416" src="./images/32ed338d-2463-4f9b-824b-880afa49171d.png" width="479" /&gt;​​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Choose DemoKit_Non_Linear, 0.001 micron....&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Click &lt;strong&gt;Finish&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='0dcae1f9-b328-4995-b085-014c36d03f1b'>
+          <title>Module 1 - Create amplifier workspace</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1.1"&gt;Create amplifier workspace&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module1.2"&gt;Add library&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#tag/Module1.3"&gt;Choose Technology for library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='b7592dd4-034f-4672-9c9f-a8a35f5d1f27'>
+      <title>Module 2 - Build the FET amplifier schematic and symbol</title>
+      <orderIndex>2</orderIndex>
+      <tags>
+        <tag>Module3</tag>
+      </tags>
+      <children>
+        <ContentNode id='a0267e0d-a7d8-4377-988c-003f764510c4'>
+          <title>Build amplifier schematic</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module3.1</tag>
+          </tags>
+          <children>
+            <ContentNode id='b069fd09-bcc0-41ab-85e2-1d8e37221566'>
+              <title>Build amplifier schematic</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='b069fd09-bcc0-41ab-85e2-1d8e37221566'>
+                  <title>Build amplifier schematic</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/4e96af77-4090-46a8-be17-bb4427e5e726.png' filename='4e96af77-4090-46a8-be17-bb4427e5e726.png' width='612' height='394' />
+                    <img src='./images/image-16.png' filename='image-16.png' width='33' height='33' />
+                    <img src='./images/image-17.png' filename='image-17.png' width='33' height='33' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="394" src="./images/4e96af77-4090-46a8-be17-bb4427e5e726.png" width="612" /&gt;​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert ​​​​​​​&lt;strong&gt;DEMO_NETLIST_INCLUDE&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="33" src="./images/image-16.png" width="33" /&gt;​​​​​​​&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert&amp;nbsp;&lt;strong&gt;demo_fet1&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="33" src="./images/image-17.png" width="33" /&gt; ​​​​​​​&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='02013c24-a607-49a1-a7b5-adb268c09f22'>
+              <title>Build amplifier schematic</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='02013c24-a607-49a1-a7b5-adb268c09f22'>
+                  <title>Build amplifier schematic</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/a98b8c01-d4eb-41af-a73a-1eba989dae8f.png' filename='a98b8c01-d4eb-41af-a73a-1eba989dae8f.png' width='708' height='437' />
+                    <img src='./images/image-18.png' filename='image-18.png' width='33' height='33' />
+                    <img src='./images/image-19.png' filename='image-19.png' width='33' height='33' />
+                    <img src='./images/image-21.png' filename='image-21.png' width='33' height='33' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="437" src="./images/a98b8c01-d4eb-41af-a73a-1eba989dae8f.png" width="708" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Change to&amp;nbsp;&lt;strong&gt;Lumped Components&lt;/strong&gt;&lt;span style="font-size:1em; letter-spacing:0.02em"&gt; palette​​​​​​​&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;Insert &lt;strong&gt;L1, L2&lt;/strong&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;components&amp;nbsp;&lt;img alt="" height="33" src="./images/image-18.png" width="33" /&gt;&lt;span id="cke_bm_7642E" style="display:none"&gt;&amp;nbsp;&lt;/span&gt;. ​​​​​​​
+	&lt;ul&gt;
+		&lt;li&gt;Set &lt;strong&gt;L1 &lt;/strong&gt;= &lt;strong&gt;12 nH&lt;/strong&gt;&lt;/li&gt;
+		&lt;li&gt;Set ​​​​​​​&lt;strong&gt;L2&lt;/strong&gt; = &lt;strong&gt;1.5 nH&lt;/strong&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Insert &lt;strong&gt;C1, C2&lt;/strong&gt; components &lt;img alt="" height="33" src="./images/image-19.png" width="33" /&gt;.&amp;nbsp;​​​​​​​
+	&lt;ul&gt;
+		&lt;li&gt;Set&amp;nbsp;​​​​​​​&lt;strong&gt;C1&lt;/strong&gt; = &lt;strong&gt;10 pF&lt;/strong&gt;&lt;/li&gt;
+		&lt;li&gt;Set​​​​​​​&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;​​​​​&lt;strong&gt;C2&lt;/strong&gt; = &lt;strong&gt;10 pF&lt;/strong&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert pins (P1, P2)&amp;nbsp;&lt;img alt="" height="33" src="./images/image-21.png" width="33" /&gt;​​​​​​​ on the input and output&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Move component text using &amp;ldquo;&lt;strong&gt;F5&lt;/strong&gt;&amp;rdquo; and clicking the symbols.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='c44f7a80-465d-4847-8021-3dea6cdac53b'>
+              <title>It should look like this</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='c44f7a80-465d-4847-8021-3dea6cdac53b'>
+                  <title>It should look like this</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-15-1.png' filename='image-15-1.png' width='896' height='703' />
+                    <img src='./images/image-20.png' filename='image-20.png' width='33' height='33' />
+                    <img src='./images/image-22.png' filename='image-22.png' width='33' height='33' />
+                    <img src='./images/image-23.png' filename='image-23.png' width='33' height='33' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="703" src="./images/image-15-1.png" width="896" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;​​​​​​​Change to&amp;nbsp;&lt;strong&gt;Sources-Freq Domain&lt;/strong&gt; palette&lt;/li&gt;
+	&lt;li&gt;Insert &lt;strong&gt;SRC1, SRC2&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="33" src="./images/image-20.png" width="33" /&gt;​​​​​​​​​​​​​
+	&lt;ul&gt;
+		&lt;li&gt;
+		&lt;p&gt;Set&amp;nbsp;&lt;strong&gt;SRC1 &lt;/strong&gt;=&amp;nbsp;-&lt;strong&gt;0.5 V&lt;/strong&gt;&lt;/p&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+		&lt;p&gt;Set&amp;nbsp;&lt;strong&gt;SRC2 &lt;/strong&gt;=&amp;nbsp;&lt;strong&gt;3.0 V&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert grounds&amp;nbsp;&lt;img alt="" height="33" src="./images/image-22.png" width="33" /&gt;&amp;nbsp;as needed.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert​​​​​&amp;nbsp;wires&amp;nbsp;&lt;img alt="" height="33" src="./images/image-23.png" width="33" /&gt; as needed.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;​​​​​​​&lt;strong&gt;Save&lt;/strong&gt; the design.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Because ADS supports hierarchical designs, a schematic created as a sub-circuit can be placed inside another schematic. The pins were added to establish connectivity for the sub-circuit schematic.&amp;nbsp;&lt;/p&gt;
+​​​​​​​</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='a0267e0d-a7d8-4377-988c-003f764510c4'>
+              <title>Build amplifier schematic</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/544f6340-42fe-4cd8-a610-6c646ef34c3c.png' filename='544f6340-42fe-4cd8-a610-6c646ef34c3c.png' width='' height='' />
+                <img src='./images/dd5155cd-86ca-4ec8-9470-e7901675d49d.png' filename='dd5155cd-86ca-4ec8-9470-e7901675d49d.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/544f6340-42fe-4cd8-a610-6c646ef34c3c.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;In the Main window, click on the&amp;nbsp;&lt;img alt="" src="./images/dd5155cd-86ca-4ec8-9470-e7901675d49d.png" /&gt; &amp;nbsp;icon&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Name the new cell &lt;strong&gt;&lt;code&gt;AMP_7GHz&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Create Schematic&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='1d1cf09e-733e-4c99-abea-553ee594d2b7'>
+          <title>Create amplifier symbol</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module3.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='e724f34a-2c86-4c29-94a0-a325c4545aa4'>
+              <title>Symbol generator</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='e724f34a-2c86-4c29-94a0-a325c4545aa4'>
+                  <title>Symbol generator</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-24.png' filename='image-24.png' width='341' height='466' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​&lt;img alt="" height="466" src="./images/image-24.png" width="341" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Go to the Copy/Modify tab&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Find &lt;strong&gt;System-Amps &amp;amp; Mixers&lt;/strong&gt; (type &amp;ldquo;&lt;strong&gt;sy&lt;/strong&gt;&amp;rdquo; in the pull-down widget).&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select the &lt;strong&gt;Amp&lt;/strong&gt; symbol&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;OK&lt;/strong&gt;.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='34ea81b4-3325-400e-aa56-86f11214332f'>
+              <title>ADS cell AMP_7GHz is now setup</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='34ea81b4-3325-400e-aa56-86f11214332f'>
+                  <title>ADS cell AMP_7GHz is now setup</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/a802f72f-e927-447d-a185-b74407709f64.png' filename='a802f72f-e927-447d-a185-b74407709f64.png' width='448' height='348' />
+                  </images>
+                  <content>&lt;p&gt;ADS cell &lt;code&gt;AMP_7GHz&lt;/code&gt; is now setup to be used in another schematic as a subcircuit.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="348" src="./images/a802f72f-e927-447d-a185-b74407709f64.png" width="448" /&gt;​​​​​​​​​​​​​&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='0d672f96-ef11-48e6-828e-1a1bd2b9e4be'>
+              <title>Save and close</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='0d672f96-ef11-48e6-828e-1a1bd2b9e4be'>
+                  <title>Save and close</title>
+                  <languageCode>en</languageCode>
+                  <content>&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;&lt;strong&gt;Save&lt;/strong&gt; and &lt;strong&gt;close&lt;/strong&gt; the &lt;strong&gt;symbol&lt;/strong&gt; window.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='1d1cf09e-733e-4c99-abea-553ee594d2b7'>
+              <title>Create amplifier symbol</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-16-1.png' filename='image-16-1.png' width='231' height='220' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​&lt;img alt="" height="220" src="./images/image-16-1.png" width="231" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Select &lt;strong&gt;Window &amp;gt; Symbol&lt;/strong&gt;&amp;nbsp;&lt;/li&gt;
+	&lt;li&gt;Click Create Symbol&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='b7592dd4-034f-4672-9c9f-a8a35f5d1f27'>
+          <title>Module 2 - Build the FET amplifier schematic and symbol</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;Now that you know how this FET performs under bias conditions, its time to build an amplifier and test it&amp;#39;s performance.&lt;/p&gt;
+
+&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3.1"&gt;Build amplifier schematic&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module3.2"&gt;Create amplifier symbol&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='bc7af8b5-307c-4696-b4b3-b958009d3126'>
+      <title>Module 3 - Amplifier DC and AC simulations</title>
+      <orderIndex>3</orderIndex>
+      <tags>
+        <tag>Module4</tag>
+      </tags>
+      <children>
+        <ContentNode id='df0ae761-22f4-4b35-a2db-12e6444eb1f8'>
+          <title>Create new schematic</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module4.0</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='df0ae761-22f4-4b35-a2db-12e6444eb1f8'>
+              <title>Create new schematic</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/b2add6fc-522a-4be4-8694-748e6fcdcef1.png' filename='b2add6fc-522a-4be4-8694-748e6fcdcef1.png' width='' height='' />
+                <img src='./images/369133d5-461e-4586-8346-d384b7bd3397.png' filename='369133d5-461e-4586-8346-d384b7bd3397.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/b2add6fc-522a-4be4-8694-748e6fcdcef1.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Click&amp;nbsp;&lt;strong&gt;New Schematic Window&amp;nbsp;&lt;/strong&gt;&lt;img alt="" src="./images/369133d5-461e-4586-8346-d384b7bd3397.png" /&gt;&amp;nbsp; ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Name the new cell &lt;strong&gt;&lt;code&gt;AMP_test_DC_AC&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Create Schematic&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='060d0716-fd1f-459a-92fd-afe1ad5b4645'>
+          <title>Insert amplifier symbol</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module4.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='060d0716-fd1f-459a-92fd-afe1ad5b4645'>
+              <title>Insert amplifier symbol</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-26.png' filename='image-26.png' width='659' height='361' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;&lt;strong&gt;Drag &amp;amp; drop &lt;/strong&gt; symbol for the amplifier from the Main window&amp;nbsp;or search for its name in the Parts search field in the schematic.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="361" src="./images/image-26.png" width="659" /&gt;​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='06762bb9-1492-47ca-b095-08276cb75d05'>
+          <title>Insert V_AC source</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module4.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='06762bb9-1492-47ca-b095-08276cb75d05'>
+              <title>Insert V_AC source</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-27.png' filename='image-27.png' width='674' height='317' />
+                <img src='./images/c46e9523-adfa-4773-81ee-99aa5c0221fb.png' filename='c46e9523-adfa-4773-81ee-99aa5c0221fb.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="317" src="./images/image-27.png" width="674" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select &lt;strong&gt;Sources-Freq Domain&lt;/strong&gt; palette&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert a &lt;strong&gt;V_AC&lt;/strong&gt; source.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Wire&amp;nbsp;on the input side of the amplifier.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Add a ground&amp;nbsp;&lt;img alt="" src="./images/c46e9523-adfa-4773-81ee-99aa5c0221fb.png" /&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='8810c016-54a4-476d-bb07-ef0125f03c2e'>
+          <title>Insert resistor</title>
+          <orderIndex>3</orderIndex>
+          <tags>
+            <tag>Module4.4</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='8810c016-54a4-476d-bb07-ef0125f03c2e'>
+              <title>Insert resistor</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-28.png' filename='image-28.png' width='688' height='341' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="341" src="./images/image-28.png" width="688" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Type the letter &amp;ldquo;&lt;strong&gt;R&lt;/strong&gt;&amp;rdquo; in the Parts search field.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert a&amp;nbsp;&lt;strong&gt;resistor &lt;/strong&gt; (CTRL R to rotate).&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Wire&amp;nbsp;it to the amplifier output&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Add a ground.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='a5f00d37-5e68-4622-9fc4-c4fdd8161048'>
+          <title>Place wire label</title>
+          <orderIndex>4</orderIndex>
+          <tags>
+            <tag>Module4.5</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='a5f00d37-5e68-4622-9fc4-c4fdd8161048'>
+              <title>Place wire label</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/7658db49-44c9-4cca-a303-49d17308cfb1.png' filename='7658db49-44c9-4cca-a303-49d17308cfb1.png' width='' height='' />
+                <img src='./images/b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png' filename='b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png' width='' height='' />
+              </images>
+              <content>&lt;p&gt;In DC and AC simulations, to obtain simulation results, you must have wire labels, current probes and/or power probes in your circuit.​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/7658db49-44c9-4cca-a303-49d17308cfb1.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click the &lt;strong&gt;NAME &lt;/strong&gt;icon&amp;nbsp;&lt;img alt="" src="./images/b6336714-e0ac-4f59-96b5-1f92f8bb0f9d.png" /&gt; (or menu command: &lt;em&gt;Insert &amp;gt; Wire/Pin Label&lt;/em&gt;).&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select&amp;nbsp;the input wire, type &lt;strong&gt;Vin.&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select the output wire and type &lt;strong&gt;Vout.&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='bc7af8b5-307c-4696-b4b3-b958009d3126'>
+          <title>Module 3 - Amplifier DC and AC simulations</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.0"&gt;AMP_test_DC_AC&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.1"&gt;Insert amplifier symbol&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.3"&gt;Insert V_AC source&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.4"&gt;Insert resistor&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module4.5"&gt;Place wire label&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='e9348008-5861-4e68-96a9-3fb542966951'>
+      <title>Module 4 - AC and DC simulation setup</title>
+      <orderIndex>4</orderIndex>
+      <tags>
+        <tag>Module5</tag>
+      </tags>
+      <children>
+        <ContentNode id='48f79cae-afb1-40fd-b608-9dc891ece8d5'>
+          <title>DC controller setup</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module5.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='48f79cae-afb1-40fd-b608-9dc891ece8d5'>
+              <title>DC controller setup</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/eba7d7f9-ea9e-41ac-bf83-323fcec160be.png' filename='eba7d7f9-ea9e-41ac-bf83-323fcec160be.png' width='619' height='424' />
+                <img src='./images/a87365d6-b38b-4989-a906-4f1c185c1307.png' filename='a87365d6-b38b-4989-a906-4f1c185c1307.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="424" src="./images/eba7d7f9-ea9e-41ac-bf83-323fcec160be.png" width="619" /&gt;​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select the &lt;strong&gt;Simulation-DC&lt;/strong&gt; palette&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert&amp;nbsp;​​​​​​​&lt;strong&gt;DC&lt;/strong&gt; simulation controller&amp;nbsp;&lt;img alt="" src="./images/a87365d6-b38b-4989-a906-4f1c185c1307.png" /&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;The&amp;nbsp;DC controller requires no further setup.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='eee0dc99-262e-4352-a33a-a7d4c58e3042'>
+          <title>AC controller setup</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module5.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='27705688-0475-4012-902d-4343c70f1d77'>
+              <title>AC controller setup</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='27705688-0475-4012-902d-4343c70f1d77'>
+                  <title>AC controller setup</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/2a977d97-6337-41f7-83a4-76f5d0784214.png' filename='2a977d97-6337-41f7-83a4-76f5d0784214.png' width='311' height='433' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="433" src="./images/2a977d97-6337-41f7-83a4-76f5d0784214.png" width="311" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Edit the AC controller (double click)&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Go to&amp;nbsp;&lt;strong&gt;Frequency tab&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Set &lt;strong&gt;Sweep type&lt;/strong&gt; =&lt;strong&gt; Single point&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Set &lt;strong&gt;Frequency&lt;/strong&gt;&amp;nbsp;= &lt;strong&gt;7 GHz&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Apply&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All ADS simulation controllers have default setup values. But you usually have to specify the settings you want.&amp;nbsp;Also, it is OK to combine different simulation controllers on one schematic as long as the sources and circuits are valid for all the controllers, as is the case here with the AC and DC controllers.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='4419b46a-2451-4520-927b-c919f3d345be'>
+              <title>Total noise at input and output</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='4419b46a-2451-4520-927b-c919f3d345be'>
+                  <title>Total noise at input and output</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/e02b595f-72c9-4142-b48d-cd580523feeb.png' filename='e02b595f-72c9-4142-b48d-cd580523feeb.png' width='338' height='472' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="472" src="./images/e02b595f-72c9-4142-b48d-cd580523feeb.png" width="338" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Go to the Noise Tab&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Check the &lt;strong&gt;Calculate noise&lt;/strong&gt; box&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Use the &lt;strong&gt;Edit &lt;/strong&gt;field to select &lt;strong&gt;Vin,&amp;nbsp;&lt;/strong&gt;click &lt;strong&gt;Add&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Use the &lt;strong&gt;Edit &lt;/strong&gt;field to select &lt;strong&gt;Vout&lt;/strong&gt;,&amp;nbsp;click &lt;strong&gt;Add&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Apply&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This will give the total noise at the input and output.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='f244ac03-dc2b-4a12-8a5f-184a5936fd22'>
+              <title>AC controller setup</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='f244ac03-dc2b-4a12-8a5f-184a5936fd22'>
+                  <title>AC controller setup</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-26-1.png' filename='image-26-1.png' width='314' height='538' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="538" src="./images/image-26-1.png" width="314" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Go to the Display tab,&amp;nbsp;Scroll down&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Turn &lt;strong&gt;off&lt;/strong&gt; the Start, Stop, and Step boxes.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Turn &lt;strong&gt;on&lt;/strong&gt; the Freq and&amp;nbsp;CalcNoise.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;Apply&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you always display the parameters you are using, you can edit them on screen. For example, Noise calculations can be easily turned ON or OFF this way.&lt;/p&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='bb906840-40f3-4d8f-9c91-11a4b6f6c29f'>
+              <title>It should look like this</title>
+              <orderIndex>3</orderIndex>
+              <localizations>
+                <LocaleContent id='bb906840-40f3-4d8f-9c91-11a4b6f6c29f'>
+                  <title>It should look like this</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/12cf7d00-b4e9-43c1-92b7-b1f9833e45d4.png' filename='12cf7d00-b4e9-43c1-92b7-b1f9833e45d4.png' width='' height='' />
+                  </images>
+                  <content>&lt;p&gt;Click OK to close the AC controller dialog when you have the correct settings.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/12cf7d00-b4e9-43c1-92b7-b1f9833e45d4.png" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='eee0dc99-262e-4352-a33a-a7d4c58e3042'>
+              <title>AC controller setup</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/82dd5066-de94-4bae-b5a5-cc0173657c90.png' filename='82dd5066-de94-4bae-b5a5-cc0173657c90.png' width='428' height='352' />
+                <img src='./images/514991a0-c3d4-4f53-9de9-12f544243ca1.png' filename='514991a0-c3d4-4f53-9de9-12f544243ca1.png' width='' height='' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="352" src="./images/82dd5066-de94-4bae-b5a5-cc0173657c90.png" width="428" /&gt;​​​​​​​​​​​​​&lt;/div&gt;
+
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select the &lt;strong&gt;Simulation-AC&lt;/strong&gt; palette&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert &lt;strong&gt;AC&lt;/strong&gt; simulation controller&amp;nbsp;&lt;img alt="" src="./images/514991a0-c3d4-4f53-9de9-12f544243ca1.png" /&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Although the simulation is set-up with a sweep by default, the next&amp;nbsp;step is to change the frequency to exactly 7 GHz and then run the simulation.&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='e9348008-5861-4e68-96a9-3fb542966951'>
+          <title>Module 4 - AC and DC simulation setup</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.1"&gt;DC controller setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module5.2"&gt;AC controller setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='da3b50b5-d524-40d2-970f-c026b7c699df'>
+      <title>Module 5 - DC annotation in schematic</title>
+      <orderIndex>5</orderIndex>
+      <tags>
+        <tag>Module6</tag>
+      </tags>
+      <children>
+        <ContentNode id='dbbada2d-cf32-490c-a82a-743db69ac1c8'>
+          <title>Run the analysis</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module6.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='dbbada2d-cf32-490c-a82a-743db69ac1c8'>
+              <title>Run the analysis</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-32.png' filename='image-32.png' width='52' height='42' />
+              </images>
+              <content>&lt;div&gt;
+&lt;ol&gt;
+	&lt;li&gt;Click on the simulate icon&amp;nbsp;&lt;img alt="" height="42" src="./images/image-32.png" width="52" /&gt;&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;div class="hol-style--alert"&gt;
+&lt;p&gt;Do not close the data display.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='9da86cf8-13cd-4ac0-9241-cb964f23544f'>
+          <title>Push into hierarchy edit</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module6.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='2ebafd63-ec00-400e-995e-4a6940efaca3'>
+              <title>AMP_7GHz subcircuit</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='2ebafd63-ec00-400e-995e-4a6940efaca3'>
+                  <title>AMP_7GHz subcircuit</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/b646e490-fc89-4b3e-afa7-1686eaced12b.png' filename='b646e490-fc89-4b3e-afa7-1686eaced12b.png' width='' height='' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/b646e490-fc89-4b3e-afa7-1686eaced12b.png" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='9da86cf8-13cd-4ac0-9241-cb964f23544f'>
+              <title>Push into hierarchy edit</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/32efc1ac-c574-4220-a001-5b66c9abb7ee.png' filename='32efc1ac-c574-4220-a001-5b66c9abb7ee.png' width='' height='' />
+                <img src='./images/image-34.png' filename='image-34.png' width='51' height='50' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" src="./images/32efc1ac-c574-4220-a001-5b66c9abb7ee.png" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Return to the schematic window&lt;/li&gt;
+	&lt;li&gt;Select&amp;nbsp;&lt;strong&gt;&lt;code&gt;AMP_7GHz&lt;/code&gt;&lt;/strong&gt; circuit.&lt;/li&gt;
+	&lt;li&gt;Click on &lt;strong&gt;Push Into Hierarchy Edit&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="50" src="./images/image-34.png" width="51" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='371476dc-0a40-4da5-8406-b25a834c8417'>
+          <title>Enable DC annotation</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module6.3</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='371476dc-0a40-4da5-8406-b25a834c8417'>
+              <title>Enable DC annotation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-31-1.png' filename='image-31-1.png' width='233' height='113' />
+                <img src='./images/image-30-1.png' filename='image-30-1.png' width='439' height='265' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;Right click the tool bar to enable the DC annotation first.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="113" src="./images/image-31-1.png" width="233" /&gt;​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+	&lt;li&gt;Click the &lt;strong&gt;Annotate DC Voltage and Annotate DC Pin Current&lt;/strong&gt; toolbar icons.&amp;nbsp;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="265" src="./images/image-30-1.png" width="439" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='f3ae38ed-3fb9-483e-bab8-8e300f238911'>
+          <title>The DC node values</title>
+          <orderIndex>3</orderIndex>
+          <tags>
+            <tag>Module6.4</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='f3ae38ed-3fb9-483e-bab8-8e300f238911'>
+              <title>The DC node values</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-32-1.png' filename='image-32-1.png' width='347' height='401' />
+              </images>
+              <content>&lt;p&gt;You should see the DC bias values (voltage and current) at each node.&amp;nbsp;The minus sign (-) for current is used only to indicate the direction (out or into a node).&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="401" src="./images/image-32-1.png" width="347" /&gt;​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='f17d4357-fd09-4184-8da5-fee8fcf2c230'>
+          <title>Clear the annotation</title>
+          <orderIndex>4</orderIndex>
+          <tags>
+            <tag>Module6.5</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='f17d4357-fd09-4184-8da5-fee8fcf2c230'>
+              <title>Clear the annotation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/cf098af8-389d-411a-8ce8-79f547d98767.png' filename='cf098af8-389d-411a-8ce8-79f547d98767.png' width='' height='' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;Click on the Annotation buttons again.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The annotation should clear.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/cf098af8-389d-411a-8ce8-79f547d98767.png" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='0f3fc53c-53cf-432f-9692-1926f53f2958'>
+          <title>Pop out</title>
+          <orderIndex>5</orderIndex>
+          <tags>
+            <tag>Module6.6</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='0f3fc53c-53cf-432f-9692-1926f53f2958'>
+              <title>Pop out</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-35.png' filename='image-35.png' width='321' height='137' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;Push back to the top level when done.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="137" src="./images/image-35.png" width="321" /&gt;​​​​​​​&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='da3b50b5-d524-40d2-970f-c026b7c699df'>
+          <title>Module 5 - DC annotation in schematic</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.1"&gt;Run the analysis&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.2"&gt;Push into the subcircuit&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.3"&gt;Enable DC annotation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.4"&gt;The DC node values&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module6.5"&gt;Clear DC annotation&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#tag/Module6.6"&gt;Pop out&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='20c3362f-597d-4faf-a00a-92300adf9f33'>
+      <title>Module 6 - Noise and AC data result</title>
+      <orderIndex>6</orderIndex>
+      <tags>
+        <tag>Module7</tag>
+      </tags>
+      <children>
+        <ContentNode id='c0b89d39-4623-4b27-a059-b4f8dde65c6f'>
+          <title>Noise result</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module7.1</tag>
+          </tags>
+          <children>
+            <ContentNode id='cfc015f6-719e-43c1-8156-cca95b6b8f04'>
+              <title>Noise result</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='cfc015f6-719e-43c1-8156-cca95b6b8f04'>
+                  <title>Noise result</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/d9b5d485-8924-4b4f-a141-1e6173a2609c.png' filename='d9b5d485-8924-4b4f-a141-1e6173a2609c.png' width='' height='' />
+                  </images>
+                  <content>&lt;p&gt;You should have these values in table below.&amp;nbsp;​​​​​​​​​​​​​​​​​​​&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/d9b5d485-8924-4b4f-a141-1e6173a2609c.png" /&gt;&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;This shows that the noise level at the output pin is about 1.8 nano volts.&amp;nbsp; It will be different at other points in the circuit.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='c0b89d39-4623-4b27-a059-b4f8dde65c6f'>
+              <title>Noise result</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/304c2aaa-efb6-4506-96d5-b7d0878e5cf1.png' filename='304c2aaa-efb6-4506-96d5-b7d0878e5cf1.png' width='397' height='470' />
+                <img src='./images/image-37.png' filename='image-37.png' width='39' height='36' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="470" src="./images/304c2aaa-efb6-4506-96d5-b7d0878e5cf1.png" width="397" /&gt;​​​​​​​​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;In the Data Display, insert a &lt;strong&gt;List&amp;nbsp;&amp;nbsp;&lt;/strong&gt;&lt;img alt="" height="36" src="./images/image-37.png" width="39" /&gt;​​​​​​​&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select both (use Ctrl key) &lt;strong&gt;Vin.noise&lt;/strong&gt; and &lt;strong&gt;Vout.noise&lt;/strong&gt;.&amp;nbsp;&lt;strong&gt;Add &lt;/strong&gt;them.&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;OK&lt;/strong&gt;&lt;span style="font-size:1em; font-weight:var(--clr-p1-font-weight, 400); letter-spacing:0.02em"&gt;.&lt;/span&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='e87f6028-7d7b-4642-9cc0-5922cbb61961'>
+          <title>AC data result</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module7.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='e3da0bf4-ee6e-4658-ac6e-26b8de6c65e9'>
+              <title>AC data result</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='e3da0bf4-ee6e-4658-ac6e-26b8de6c65e9'>
+                  <title>AC data result</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/edb3a53b-887c-46df-b7e6-702bdfa00892.png' filename='edb3a53b-887c-46df-b7e6-702bdfa00892.png' width='' height='' />
+                  </images>
+                  <content>&lt;p&gt;You should have these values in table below.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/edb3a53b-887c-46df-b7e6-702bdfa00892.png" /&gt;&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;The AC results are in magnitude/phase format by default while the noise results are in volts rms.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='e87f6028-7d7b-4642-9cc0-5922cbb61961'>
+              <title>AC data result</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/d9c59eca-586a-4ed9-9329-00401f8e584e.png' filename='d9c59eca-586a-4ed9-9329-00401f8e584e.png' width='399' height='472' />
+                <img src='./images/image-37-1.png' filename='image-37-1.png' width='39' height='36' />
+              </images>
+              <content>&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="472" src="./images/d9c59eca-586a-4ed9-9329-00401f8e584e.png" width="399" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert another List &lt;img alt="" height="36" src="./images/image-37-1.png" width="39" /&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Select both &lt;strong&gt;AC.Vin&lt;/strong&gt; and &lt;strong&gt;AC.Vout&lt;/strong&gt;.&amp;nbsp;&lt;strong&gt;Add &lt;/strong&gt;them.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;OK&lt;/strong&gt;.&amp;nbsp;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='20c3362f-597d-4faf-a00a-92300adf9f33'>
+          <title>Module 6 - Noise and AC data result</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module7.1"&gt;Noise result&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module7.2"&gt;AC data result&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='33829155-aedc-4ac2-bb0b-1a1052f7b9e7'>
+      <title>Module 7 - Variable equation and parameter sweep for simulation</title>
+      <orderIndex>7</orderIndex>
+      <tags>
+        <tag>Module8</tag>
+      </tags>
+      <children>
+        <ContentNode id='613be5e1-dde9-49a9-88db-97a744b8c32e'>
+          <title>Deactivate the DC simulation controller</title>
+          <orderIndex>0</orderIndex>
+          <tags>
+            <tag>Module8.1</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='613be5e1-dde9-49a9-88db-97a744b8c32e'>
+              <title>Deactivate the DC simulation controller</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-39.png' filename='image-39.png' width='31' height='30' />
+                <img src='./images/image-40.png' filename='image-40.png' width='126' height='123' />
+              </images>
+              <content>&lt;ol&gt;
+	&lt;li&gt;Click DC simulation controller&lt;/li&gt;
+	&lt;li&gt;​​​​​​​Click&amp;nbsp;&lt;img alt="" height="30" src="./images/image-39.png" width="31" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​&lt;img alt="" height="123" src="./images/image-40.png" width="126" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;p&gt;This is something that you can also do with components if you want them available but not used for a specific simulation.&amp;nbsp;&lt;/p&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='b92ed145-954a-4fe1-a68e-577f04363727'>
+          <title>Use variable equation</title>
+          <orderIndex>1</orderIndex>
+          <tags>
+            <tag>Module8.2</tag>
+          </tags>
+          <children>
+            <ContentNode id='e5c7516d-01a7-4c52-b04d-e197c063bc9a'>
+              <title>Push into subcircuit</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='e5c7516d-01a7-4c52-b04d-e197c063bc9a'>
+                  <title>Push into subcircuit</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-41.png' filename='image-41.png' width='51' height='50' />
+                    <img src='./images/c2c6720b-844f-42f6-859d-f95cd67bbdf6.png' filename='c2c6720b-844f-42f6-859d-f95cd67bbdf6.png' width='' height='' />
+                  </images>
+                  <content>&lt;ol&gt;
+	&lt;li&gt;Push into the &lt;strong&gt;&lt;code&gt;AMP_7GHz&lt;/code&gt; &lt;/strong&gt;amplifier subcircuit&amp;nbsp;&amp;nbsp;​​​​​​​&lt;img alt="" height="50" src="./images/image-41.png" width="51" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" src="./images/c2c6720b-844f-42f6-859d-f95cd67bbdf6.png" /&gt;&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='22f6e3a1-e6f2-4e67-80b0-a52b65462b07'>
+              <title>Use variable equation</title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='22f6e3a1-e6f2-4e67-80b0-a52b65462b07'>
+                  <title>Use variable equation</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/2e46f118-3588-4518-984d-5797286f9036.png' filename='2e46f118-3588-4518-984d-5797286f9036.png' width='' height='' />
+                  </images>
+                  <content>&lt;ol&gt;
+	&lt;li&gt;Change the drain inductor L2 from 1.5 nH to &lt;strong&gt;L_val&amp;nbsp;nH&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/2e46f118-3588-4518-984d-5797286f9036.png" /&gt;​​​​​​​​​​​​​​&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Now, the inductor initial value comes from the variable and has a value of 1.0 nH.&amp;nbsp;It is important to keep the units as nH. Otherwise, the value would be in Henrys, which are the default units for inductance.&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='c06fe651-c842-40cb-8bfc-6c7cb1adc407'>
+              <title>Pop out</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='c06fe651-c842-40cb-8bfc-6c7cb1adc407'>
+                  <title>Pop out</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/image-42.png' filename='image-42.png' width='55' height='57' />
+                  </images>
+                  <content>&lt;ol&gt;
+	&lt;li&gt;Pop out to the top level schematic.&amp;nbsp;&amp;nbsp;&lt;img alt="" height="57" src="./images/image-42.png" width="55" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='b92ed145-954a-4fe1-a68e-577f04363727'>
+              <title>Use variable equation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-41-1.png' filename='image-41-1.png' width='41' height='40' />
+                <img src='./images/abdc0721-b16c-4c5c-bd51-b8f9b7008f6c.png' filename='abdc0721-b16c-4c5c-bd51-b8f9b7008f6c.png' width='' height='' />
+              </images>
+              <content>&lt;div&gt;
+&lt;ol&gt;
+	&lt;li&gt;Insert a VAR&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;img alt="" height="40" src="./images/image-41-1.png" width="41" /&gt;&lt;/strong&gt;&amp;nbsp;into schematic&amp;nbsp;​​​​​&lt;/li&gt;
+	&lt;li&gt;Change the name (left side of the equation) to: &lt;strong&gt;L_val&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Use your cursor directly on-screen or edit (double-click) the VAR&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" src="./images/abdc0721-b16c-4c5c-bd51-b8f9b7008f6c.png" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='52d070bb-e985-443e-94e3-a88fb9f21c4f'>
+          <title>Parameter sweep setup</title>
+          <orderIndex>2</orderIndex>
+          <tags>
+            <tag>Module8.3</tag>
+          </tags>
+          <children>
+            <ContentNode id='5aace97a-1858-4c3d-bb73-6661e2e84d1c'>
+              <title>Parameter sweep setup</title>
+              <orderIndex>0</orderIndex>
+              <localizations>
+                <LocaleContent id='5aace97a-1858-4c3d-bb73-6661e2e84d1c'>
+                  <title>Parameter sweep setup</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/b9608f6f-ffb9-42e2-be7c-38dc8bb534ed.png' filename='b9608f6f-ffb9-42e2-be7c-38dc8bb534ed.png' width='368' height='464' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" height="464" src="./images/b9608f6f-ffb9-42e2-be7c-38dc8bb534ed.png" width="368" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Double click&amp;nbsp;the &lt;strong&gt;Parameter Sweep&lt;/strong&gt; component.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Go to&amp;nbsp;&lt;strong&gt;Sweep tab&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Set&amp;nbsp;&lt;strong&gt;Parameter to sweep&lt;/strong&gt; = &lt;strong&gt;L_val&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Set&amp;nbsp;&lt;strong&gt;Start&lt;/strong&gt; = &lt;strong&gt;1.5,&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;Stop&lt;/strong&gt; = &lt;strong&gt;4.5,&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;Step&lt;/strong&gt;&amp;nbsp;= &lt;strong&gt;1.5&lt;/strong&gt; increments&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='d59bf150-e70e-4429-9577-91c3a401aa99'>
+              <title>Parameter sweep setup </title>
+              <orderIndex>1</orderIndex>
+              <localizations>
+                <LocaleContent id='d59bf150-e70e-4429-9577-91c3a401aa99'>
+                  <title>Parameter sweep setup </title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/f5e481d1-418c-4898-b363-80c56a118fa6.png' filename='f5e481d1-418c-4898-b363-80c56a118fa6.png' width='349' height='442' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" height="442" src="./images/f5e481d1-418c-4898-b363-80c56a118fa6.png" width="349" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Go to the &lt;strong&gt;Simulations tab&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Set&lt;strong&gt; Simulation 1&lt;/strong&gt; = &lt;strong&gt;AC1 &lt;/strong&gt;(AC controller name)&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Click &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+            <ContentNode id='9f009578-42c1-4715-b30e-4a120e950461'>
+              <title>It should look like this</title>
+              <orderIndex>2</orderIndex>
+              <localizations>
+                <LocaleContent id='9f009578-42c1-4715-b30e-4a120e950461'>
+                  <title>It should look like this</title>
+                  <languageCode>en</languageCode>
+                  <images>
+                    <img src='./images/8c1b3505-8283-4fed-a3ff-736a5dac45fe.png' filename='8c1b3505-8283-4fed-a3ff-736a5dac45fe.png' width='349' height='327' />
+                  </images>
+                  <content>&lt;div class="img-thumbnail"&gt;​​​​​​​​​​​​​​​​​​​​​​​​​​​​&lt;img alt="" height="327" src="./images/8c1b3505-8283-4fed-a3ff-736a5dac45fe.png" width="349" /&gt;&lt;/div&gt;
+
+&lt;div class="hol-style--info"&gt;
+&lt;p&gt;Notice that the quotes are automatically applied. The parameter sweep is now ready.&amp;nbsp;If you typed in the names on screen, you would have to type quotes.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+                </LocaleContent>
+              </localizations>
+            </ContentNode>
+          </children>
+          <localizations>
+            <LocaleContent id='52d070bb-e985-443e-94e3-a88fb9f21c4f'>
+              <title>Parameter sweep setup</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-46.png' filename='image-46.png' width='843' height='334' />
+              </images>
+              <content>&lt;p&gt;To sweep a variable for AC analysis, you need a Parameter Sweep component, available in any simulation palette. &amp;nbsp;&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;​​​​​​​&lt;img alt="" height="334" src="./images/image-46.png" width="843" /&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;
+	&lt;p&gt;Choose &lt;strong&gt;Simulation-AC&lt;/strong&gt; palette&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+	&lt;p&gt;Insert a &lt;strong&gt;ParamSweep&lt;/strong&gt; component.&amp;nbsp;​​​​​​​&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='b050eda2-065c-43d7-96c7-c99b1c16f8a7'>
+          <title>Run the simulation</title>
+          <orderIndex>3</orderIndex>
+          <tags>
+            <tag>Module8.4</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='b050eda2-065c-43d7-96c7-c99b1c16f8a7'>
+              <title>Run the simulation</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-45.png' filename='image-45.png' width='52' height='42' />
+              </images>
+              <content>&lt;div&gt;
+&lt;ol&gt;
+	&lt;li&gt;Click&amp;nbsp;&lt;kbd&gt;&lt;strong&gt;F7&lt;/strong&gt;&lt;/kbd&gt; or the icon &lt;img alt="" height="42" src="./images/image-45.png" width="52" /&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+        <ContentNode id='78db20c5-0d59-440c-8ed2-8a2268bbdab0'>
+          <title>Notice the changes</title>
+          <orderIndex>4</orderIndex>
+          <tags>
+            <tag>Module8.5</tag>
+          </tags>
+          <localizations>
+            <LocaleContent id='78db20c5-0d59-440c-8ed2-8a2268bbdab0'>
+              <title>Notice the changes</title>
+              <languageCode>en</languageCode>
+              <images>
+                <img src='./images/image-50.png' filename='image-50.png' width='1422' height='107' />
+                <img src='./images/image-51.png' filename='image-51.png' width='1424' height='106' />
+              </images>
+              <content>&lt;p&gt;Your list now shows the swept&amp;nbsp;values. Select the lists and stretch the corner to make them wider.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="107" src="./images/image-50.png" width="1422" /&gt;​​​​​​​&lt;/div&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="106" src="./images/image-51.png" width="1424" /&gt;&lt;/div&gt;
+</content>
+            </LocaleContent>
+          </localizations>
+        </ContentNode>
+      </children>
+      <localizations>
+        <LocaleContent id='33829155-aedc-4ac2-bb0b-1a1052f7b9e7'>
+          <title>Module 7 - Variable equation and parameter sweep for simulation</title>
+          <languageCode>en</languageCode>
+          <content>&lt;p&gt;This module contains the following lessons:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8.1"&gt;Deactivate the DC simulation controller&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8.2"&gt;Use variable equation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8.3"&gt;Parameter sweep setup&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8.4"&gt;Run the simulation&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tag/Module8.5"&gt;Notice the changes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+    <ContentNode id='d6bb65d8-09a1-419f-a5b7-aa6e5651e791'>
+      <title>You've finished the lab!</title>
+      <orderIndex>8</orderIndex>
+      <localizations>
+        <LocaleContent id='d6bb65d8-09a1-419f-a5b7-aa6e5651e791'>
+          <title>You've finished the lab!</title>
+          <languageCode>en</languageCode>
+          <images>
+            <img src='./images/image-81.png' filename='image-81.png' width='379' height='131' />
+          </images>
+          <content>&lt;p&gt;Congratulations on completing ADS101-Lab3B!&lt;/p&gt;
+
+&lt;p&gt;To complete your lab click on the END button.&lt;/p&gt;
+
+&lt;div class="img-thumbnail"&gt;&lt;img alt="" height="131" src="./images/image-81.png" width="379" /&gt;&lt;/div&gt;
+</content>
+        </LocaleContent>
+      </localizations>
+    </ContentNode>
+  </contentNodes>
+</Manual>

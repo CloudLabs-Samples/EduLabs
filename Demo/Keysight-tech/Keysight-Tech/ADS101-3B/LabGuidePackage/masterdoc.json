@@ -1,0 +1,41 @@
+[
+	{
+		"Name": "Keysight ADS101 - Lab 3B: FET Amplifier Design and Linear Analysis",
+		"Language": "English",
+		"BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B",
+		"Files": [
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M00-GettingStarted.md",
+				"Order": 1
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M01-CreateAmplifierWorkspace.md",
+				"Order": 2
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M02-BuildTheFETAmplifierSchematicAndSymbol.md",
+				"Order": 3
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M03-AmplifierDCAndACSimulations.md",
+				"Order": 4
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M04-ACAndDCSimulationSetup.md",
+				"Order": 5
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M05-DCAnnotationInSchematic.md",
+				"Order": 6
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M06-NoiseAndACDataResult.md",
+				"Order": 7
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-3B/LabGuidePackage/LabGuide/M07-VariableEquationAndParameterSweepForSimulation.md",
+				"Order": 8
+			}
+		]
+	}
+]

@@ -1,0 +1,65 @@
+[
+	{
+		"Name": "Keysight ADS101 - FET Amplifier Design and RF System Analysis",
+		"Language": "English",
+		"BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Keysight-tech/Keysight-Tech/ADS101",
+		"Files": [
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M00-GettingStarted.md",
+				"Order": 1
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M01-3B-CreateAmplifierWorkspace.md",
+				"Order": 2
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M02-3B-BuildTheFETAmplifierSchematicAndSymbol.md",
+				"Order": 3
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M03-3B-AmplifierDCAndACSimulations.md",
+				"Order": 4
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M04-3B-ACAndDCSimulationSetup.md",
+				"Order": 5
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M05-3B-DCAnnotationInSchematic.md",
+				"Order": 6
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M06-3B-NoiseAndACDataResult.md",
+				"Order": 7
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M07-3B-VariableEquationAndParameterSweepForSimulation.md",
+				"Order": 8
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M08-4A-RFSystemDesign.md",
+				"Order": 9
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M09-4A-HarmonicBalance1ToneSimulation.md",
+				"Order": 10
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M10-4A-ExamineTheHBData.md",
+				"Order": 11
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M11-4A-VariablePowerSweepSetup.md",
+				"Order": 12
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M12-4A-DisplayTheSweptPowerData.md",
+				"Order": 13
+			},
+			{
+				"RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101/LabGuidePackage/LabGuide/M13-4A-HBSimulationOfPDKAmplifierSystem.md",
+				"Order": 14
+			}
+		]
+	}
+]

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "AzureUserName": {
+      "value": "GET-AZUSER-UPN"
+    },
+    "AzurePassword": {
+      "value": "GET-AZUSER-PASSWORD"
+    },
+    "ODLID": {
+      "value": "GET-ODL-ID"
+    },
+    "DeploymentID": {
+      "value": "GET-DEPLOYMENT-ID"
+    },
+    "trainerUserName": {
+      "value": "trainer"
+    },
+    "trainerUserPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "vmSize": {
+      "value": "Standard_D8s_v5"
+    },
+    "imageId": {
+      "value": "/subscriptions/8bcbed87-e3d3-4e77-ae21-5dc04482af35/resourcegroups/cloudlabs-mgmt-images-Keysight-Tech/providers/Microsoft.Compute/galleries/Keysight_tech_prod/images/Windows-vm/versions/0.0.1"
+    },
+    "windowsScriptUri": {
+      "value": "https://experienceazure.blob.core.windows.net/templates/Keysight-Tech/Lab-1/psscript.ps1"
+    },
+    "commonFunctionsUri": {
+      "value": "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1"
+    }
+  }
+}
