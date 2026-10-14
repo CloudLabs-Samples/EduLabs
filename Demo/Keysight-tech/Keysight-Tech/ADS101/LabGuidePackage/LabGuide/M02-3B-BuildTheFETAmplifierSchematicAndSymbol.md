@@ -7,7 +7,6 @@
 
 ## Task 1: Build amplifier schematic
 
-
 1. In the Main window, click on the icon.
 
    ![](../Image/3B-dd5155cd-86ca-4ec8-9470-e7901675d49d.png) 
@@ -15,7 +14,6 @@
 1. Name the new cell **AMP_7GHz**
 
    ![](../Image/3B-544f6340-42fe-4cd8-a610-6c646ef34c3c.png)
-
 
 1. Click **Create Schematic**
 
