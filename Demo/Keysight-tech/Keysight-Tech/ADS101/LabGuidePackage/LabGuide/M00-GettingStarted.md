@@ -79,6 +79,12 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 >**Note:** Complete Lab 3B first, then Lab 4A. Within each lab, the modules are not independent, so complete them in order.
 
+## Track Your Progress
+
+The **Progress** tab shows your validation/Questions score, it reaches 100% when all task validation/Questions pass.
+
+   ![](../Image/prg.png)
+
 ## Launch Advanced Design System
 
 Click the shortcut icon for ADS on your screen, or use the Start > Programs command to find and start Advanced Designs System.

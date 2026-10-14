@@ -70,17 +70,17 @@ Notice there is already an equation for **Gain** on the data display. This equat
 
    ![](../Image/4A-image-17.png)
 
->**Note:** The output power begins to flatten out as the amplifier goes into compression. It is easier to see the Gain compression on this plot than the power compression due to the scales used.
+   >**Note:** The output power begins to flatten out as the amplifier goes into compression. It is easier to see the Gain compression on this plot than the power compression due to the scales used.
 
 ## Task 5: lin_pwr equation
 
-Notice there is an equation called **lin_pwr** defined on the data display.
+1. Notice there is an equation called **lin_pwr** defined on the data display.
 
    ![](../Image/4A-image-20.png)
 
->**Note:** This equation was red (invalid) until you added marker m1 because the value of m1 is used in the equation and while it was missing the equation could not be evaluated.
+   >**Note:** This equation was red (invalid) until you added marker m1 because the value of m1 is used in the equation and while it was missing the equation could not be evaluated.
 
->**Note:** Linear power is calculated as the input power plus the linear gain. This is why m1 must be at a power level at which the system is in the quasi-linear area of the response.
+   >**Note:** Linear power is calculated as the input power plus the linear gain. This is why m1 must be at a power level at which the system is in the quasi-linear area of the response.
 
 ## Task 6: Add lin_pwr to the plot
 
