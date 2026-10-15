@@ -65,7 +65,7 @@ console, TENEX, the connectivity tests — happens from the Analyst VM.
 This also happens to be how real security teams operate. Nobody investigates a
 compromised machine by logging into the compromised machine.
 
-<question source="https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/questions/question-01.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/questions/question-01.md" />
 
 ---
 
@@ -235,9 +235,9 @@ any real malware on the machine.
 
    ![Screenshot: Command prompt showing the expected "not recognized" response](images/h2.png)
 
-<question source="https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/questions/question-02.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/questions/question-02.md" />
 
-<question source="https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/questions/question-05.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/questions/question-05.md" />
 
 ---
 
@@ -285,7 +285,7 @@ and what actually happened?
 
     ![Screenshot: Host details within the detection](images/3w.png)
 
-<question source="https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/questions/question-04.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/questions/question-04.md" />
 
 ## Exercise 5: Respond - contain the host
 
@@ -385,7 +385,7 @@ Two independent checks:
 
 1. Press **Ctrl + C** in the Command Prompt to stop the continuous ping.
 
-<question source="https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/questions/question-03.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/questions/question-03.md" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.

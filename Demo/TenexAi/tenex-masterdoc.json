@@ -4,11 +4,11 @@
         "Language": "Englist",
         "Files": [
             {
-                "RawFilePath": "https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/get-start.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/get-start.md",
                 "Order": 1
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/akshatv-spektra/spektra-personal/refs/heads/main/tenex-guide2.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/TenexAi/tenex-guide2.md",
                 "Order": 2
             }
         ]
