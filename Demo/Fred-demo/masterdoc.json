@@ -1,7 +1,7 @@
 [
     {
         "Name": "Fred-demo",
-        "Language": "Englist",
+        "Language": "English",
         "Files": [
             {
                 "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/labguide.md",
