@@ -2,14 +2,14 @@
 Question Type : Single Choice
 
 ## Question
-8. Will a patients ePrescription Preference be able to be updated using F8?
+13.  If the PBS Status tile is green it indicates that there are scripts that have been rejected?
 
 ## Options
 Option 1: True
 Option 2: False
 
 ## Answers
-Option 1 : 1
+Option 2 : 1
 
 ## Number of Retries
 1

@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-12. Is the POS transaction number recorded in Script Audit? 
+7. Will a patients ePrescription Preference be able to be updated using F8?
 
 ## Options
 Option 1: True

@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-4. Will typing F in the search field display linked family members? 
+3. Will typing F in the search field display linked family members? 
 
 ## Options
 Option 1: True

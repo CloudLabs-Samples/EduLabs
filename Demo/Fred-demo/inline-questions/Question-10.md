@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-10. What is the shortcut key for Final Check?
+9. What is the shortcut key for Final Check?
 
 ## Options
 Option 1: F8

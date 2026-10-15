@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-14.  If the PBS Status tile is green it indicates that there are scripts that have been rejected?
+8. Can a dispensary technican/assistant can access Final Check?
 
 ## Options
 Option 1: True

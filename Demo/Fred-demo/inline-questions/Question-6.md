@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-6. What does F4 do?
+5. What does F4 do?
 
 ## Options
 Option 1: Displays Script Number Search (RX No)

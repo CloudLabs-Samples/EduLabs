@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-13. Can external Safety Net Amounts can be added by tapping the tile outlined below?
+6. Can you defer a script after it has been dispensed from MySL?
 
 ## Options
 Option 1: True
