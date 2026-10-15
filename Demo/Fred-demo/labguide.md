@@ -1,23 +1,21 @@
-# 🧠 **Elf Knowledge Check** 🧝
+## Question & Answers
 
-Answer these short questions to check your understanding of how you woke up, grounded and securely deployed Jingle.
+Please answer all three questions before moving on:
 
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q1.md" />
 
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q2.md" />
 
-## Answer the following questions
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q3.md" />
 
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q4.md" />
 
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q5.md" />
 
-<question source="./inline-questions/Question-2.md" />
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q6.md" />
 
-<br>
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q7.md" />
 
-<question source="./inline-questions/Question-3.md" />
+<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q8.md" />
 
-<br>
-
-<question source="./inline-questions/Question-4.md" />
-
----
-
-## 🎉 Congratulations! You have successfully completed **Day 1: Jingle Awakens** and earned the 🎖️ **Elf Developer** badge. Please click **End Lab** to complete the lab. 🎄🎅
+Click **Next** from the bottom right corner to move to next page.
