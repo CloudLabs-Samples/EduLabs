@@ -1,21 +1,31 @@
 ## Question & Answers
 
-Please answer all three questions before moving on:
+Please answer all questions:
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q1.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-1.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q2.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-2.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q3.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-3.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q4.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-4.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q5.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-5.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q6.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-6.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q7.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-7.md" />
 
-<question source="https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Virtru/refs/heads/main/validations/inlinequestions/q8.md" />
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-8.md" />
 
-Click **Next** from the bottom right corner to move to next page.
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-9.md" />
+
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-10.md" />
+
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-11.md" />
+
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-12.md" />
+
+<question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-13.md" />
+
+## Good Job!!
