@@ -5,9 +5,9 @@ Question Type : Single Choice
 1. **What** will the following search for (,,123 Test)?
 
 ## Options
-Option 1: ```Search``` for all patients at address 123 Test
-Option 2: Search for patient name Test
-Option 3: Nothing
+Option 1: `Search` for all <strong>patients</strong> at address 123 Test
+Option 2: __Search__ for patient name <em>Test</em>
+Option 3: *Nothing*
 
 ## Answers
 Option 1 : 1
