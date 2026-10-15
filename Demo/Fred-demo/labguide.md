@@ -8,15 +8,15 @@ Answer these short questions to check your understanding of how you woke up, gro
 
 
 
-<question source="./Inline-Questions/question-01.md" />
+<question source="./inline-questions/Question-2.md" />
 
 <br>
 
-<question source="./Inline-Questions/question-02.md" />
+<question source="./inline-questions/Question-3.md" />
 
 <br>
 
-<question source="./Inline-Questions/question-03.md" />
+<question source="./inline-questions/Question-4.md" />
 
 ---
 
