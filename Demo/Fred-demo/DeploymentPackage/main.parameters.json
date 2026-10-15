@@ -7,7 +7,7 @@
 		},
 		"azurePassword": {
 			"value": "GET-AZUSER-PASSWORD"
-		}
+		},
 		"DeploymentID": {
 			"value": "GET-DEPLOYMENT-ID"
 		},
