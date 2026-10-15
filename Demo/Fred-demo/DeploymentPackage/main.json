@@ -1,195 +1,30 @@
 {
-	"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"azureUserName": {
-			"type": "string"
+			"value": "GET-AZUSER-UPN"
 		},
 		"azurePassword": {
-			"type": "securestring"
+			"value": "GET-AZUSER-PASSWORD"
+		},
+		"ODLID": {
+			"value": "GET-ODL-ID"
 		},
 		"DeploymentID": {
-			"type": "string"
+			"value": "GET-DEPLOYMENT-ID"
 		},
 		"adminUsername": {
-			"type": "string"
+			"value": "azureuser"
 		},
 		"adminPassword": {
-			"type": "securestring"
+			"value": "GEN-PASSWORD"
 		},
 		"trainerUserName": {
-			"type": "string"
+			"value": "instructor"
 		},
 		"trainerUserPassword": {
-			"type": "string"
-		}
-	},
-	"variables": {
-		"location": "[resourceGroup().location]",
-		"LabVMName": "[concat('labvm-',parameters('DeploymentID'))]",
-		"vmSize": "Standard D2als_v7",
-		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
-		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
-		"publicIpAddressDNSName": "[concat('lab',parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
-		"networkSecurityGroupName": "[concat(variables('LabVMName'), '-nsg')]",
-		"virtualNetworkName": "[concat(variables('LabVMName'), '-vnet')]",
-		"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
-		"subnetRef": "[concat(variables('vnetID'),'/subnets/','subnet')]"
-	},
-	"resources": [
-		{
-			"name": "[variables('LabVMName')]",
-			"type": "Microsoft.Compute/virtualMachines",
-			"apiVersion": "2023-03-01",
-			"location": "[variables('location')]",
-			"dependsOn": [
-				"[concat('Microsoft.Network/networkInterfaces/', variables('networkInterfaceName'))]"
-			],
-			"properties": {
-				"osProfile": {
-					"computerName": "[variables('LabVMName')]",
-					"adminUsername": "[parameters('adminUsername')]",
-					"adminPassword": "[parameters('adminPassword')]",
-					"windowsConfiguration": {
-						"provisionVMAgent": true
-					}
-				},
-				"hardwareProfile": {
-					"vmSize": "[variables('vmSize')]"
-				},
-				"storageProfile": {
-					"imageReference": {
-						"publisher": "MicrosoftWindowsServer",
-						"offer": "WindowsServer",
-						"sku": "2022-Datacenter",
-						"version": "latest"
-					},
-					"osDisk": {
-						"name": "[concat(variables('LabVMName'),'-osdisk')]",
-						"createOption": "fromImage",
-						"managedDisk": {
-							"storageAccountType": "Standard_LRS"
-						}
-					},
-					"dataDisks": []
-				},
-				"networkProfile": {
-					"networkInterfaces": [
-						{
-							"id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
-						}
-					]
-				}
-			}
-		},
-		{
-			"name": "[variables('virtualNetworkName')]",
-			"type": "Microsoft.Network/virtualNetworks",
-			"apiVersion": "2022-09-01",
-			"location": "[variables('location')]",
-			"properties": {
-				"addressSpace": {
-					"addressPrefixes": ["10.0.0.0/16"]
-				},
-				"subnets": [
-					{
-						"name": "subnet",
-						"properties": {
-							"addressPrefix": "10.0.0.0/24"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "[variables('networkInterfaceName')]",
-			"type": "Microsoft.Network/networkInterfaces",
-			"apiVersion": "2022-09-01",
-			"location": "[variables('location')]",
-			"dependsOn": [
-				"[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
-				"[concat('Microsoft.Network/publicIpAddresses/', variables('publicIpAddressName'))]",
-				"[concat('Microsoft.Network/networkSecurityGroups/', variables('networkSecurityGroupName'))]"
-			],
-			"properties": {
-				"ipConfigurations": [
-					{
-						"name": "ipconfig1",
-						"properties": {
-							"subnet": {
-								"id": "[variables('subnetRef')]"
-							},
-							"privateIPAllocationMethod": "Dynamic",
-							"publicIpAddress": {
-								"id": "[resourceId('Microsoft.Network/publicIpAddresses', variables('publicIpAddressName'))]"
-							}
-						}
-					}
-				],
-				"networkSecurityGroup": {
-					"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
-				}
-			}
-		},
-		{
-			"name": "[variables('publicIpAddressName')]",
-			"type": "Microsoft.Network/publicIPAddresses",
-			"apiVersion": "2022-09-01",
-			"location": "[variables('location')]",
-			"sku": {
-				"name": "Standard"
-			},
-			"properties": {
-				"publicIPAllocationMethod": "Static",
-				"dnsSettings": {
-					"domainNameLabel": "[variables('publicIpAddressDNSName')]"
-				}
-			}
-		},
-		{
-			"name": "[variables('networkSecurityGroupName')]",
-			"type": "Microsoft.Network/networkSecurityGroups",
-			"apiVersion": "2022-09-01",
-			"location": "[variables('location')]",
-			"properties": {
-				"securityRules": [
-					{
-						"name": "default-allow-rdp",
-						"properties": {
-							"priority": 1000,
-							"protocol": "TCP",
-							"access": "Allow",
-							"direction": "Inbound",
-							"sourceAddressPrefix": "*",
-							"sourcePortRange": "*",
-							"destinationAddressPrefix": "*",
-							"destinationPortRange": "3389"
-						}
-					}
-				]
-			}
-		}
-	],
-	"outputs": {
-		"DeploymentID": {
-			"type": "string",
-			"value": "[parameters('DeploymentID')]"
-		},
-		"LabVM Admin Username": {
-			"type": "string",
-			"value": "[parameters('adminUsername')]"
-		},
-		"LabVM Admin Password": {
-			"type": "string",
-			"value": "[parameters('adminPassword')]"
-		},
-		"LabVM DNS Name": {
-			"type": "string",
-			"value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpAddressName'))).dnsSettings.fqdn]"
-		},
-		"LabVM RDP Command": {
-			"type": "string",
-			"value": "[concat('mstsc /v:', reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpAddressName'))).dnsSettings.fqdn)]"
+			"value": "GEN-PASSWORD"
 		}
 	}
 }
