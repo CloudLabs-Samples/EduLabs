@@ -43,57 +43,17 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 A short quiz covering Fred Dispense Plus fundamentals. Answer all questions below.
 
-<question source="Question-2.md" />
+<question source="./inline-questions/Question-2.md" />
 
 <br>
 
-<question source="Question-3.md" />
+<question source="./inline-questions/Question-3.md" />
 
 <br>
 
-<question source="Question-4.md" />
+<question source="./inline-questions/Question-4.md" />
 
-<br>
-
-<question source="Question-5.md" />
-
-<br>
-
-<question source="Question-6.md" />
-
-<br>
-
-<question source="Question-7.md" />
-
-<br>
-
-<question source="Question-8.md" />
-
-<br>
-
-<question source="Question-9.md" />
-
-<br>
-
-<question source="Question-10.md" />
-
-<br>
-
-<question source="Question-11.md" />
-
-<br>
-
-<question source="Question-12.md" />
-
-<br>
-
-<question source="Question-13.md" />
-
-<br>
-
-<question source="Question-14.md" />
-
-<br>
+---
 
 
 ## Success Criteria
