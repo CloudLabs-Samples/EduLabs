@@ -49,51 +49,27 @@ A short quiz covering Fred Dispense Plus fundamentals. Answer all questions belo
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-2.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-3.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-4.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-5.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-6.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-7.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-8.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-9.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-10.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-11.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-12.md" />
 
-<br>
-
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-13.md" />
-
-<br>
 
 <question source="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/inline-questions/Question-14.md" />
 
