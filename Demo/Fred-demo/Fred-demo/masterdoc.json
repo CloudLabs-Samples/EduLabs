@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "TenexAi",
+        "Language": "Englist",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Fred-demo/labguide.md",
+                "Order": 1
+            }
+        ]
+    }
+]
