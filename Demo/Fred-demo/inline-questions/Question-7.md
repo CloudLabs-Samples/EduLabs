@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-6. Can you defer a script after it has been dispensed from MySL?
+7. Will a patients ePrescription Preference be able to be updated using F8?
 
 ## Options
 Option 1: True

@@ -2,13 +2,11 @@
 Question Type : Single Choice
 
 ## Question
-5. What does F4 do?
+6. Can you defer a script after it has been dispensed from MySL?
 
 ## Options
-Option 1: Displays Script Number Search (RX No)
-Option 2: Nothing
-Option 3: Prints Delivery Label
-Option 4: Price Lookup
+Option 1: True
+Option 2: False
 
 ## Answers
 Option 1 : 1

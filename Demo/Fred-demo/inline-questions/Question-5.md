@@ -2,16 +2,16 @@
 Question Type : Single Choice
 
 ## Question
-4. What keyboard shortcut do you use to dispense the next script in the Medview Flow basket?
+5. What does F4 do?
 
 ## Options
-Option 1: N
-Option 2: D
-Option 3: Q
-Option 4: S
+Option 1: Displays Script Number Search (RX No)
+Option 2: Nothing
+Option 3: Prints Delivery Label
+Option 4: Price Lookup
 
 ## Answers
-Option 3 : 1
+Option 1 : 1
 
 ## Number of Retries
 1

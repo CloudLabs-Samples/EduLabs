@@ -2,15 +2,14 @@
 Question Type : Single Choice
 
 ## Question
-10. What is the shortcut key to display Script Audit? *
+11. Is the POS transaction number recorded in Script Audit? 
 
 ## Options
-Option 1: Ctrl+Shift+X
-Option 2: Ctrl+A 
-Option 3: Ctrl+Shift+U
+Option 1: True
+Option 2: False
 
 ## Answers
-Option 3 : 1
+Option 1 : 1
 
 ## Number of Retries
 1

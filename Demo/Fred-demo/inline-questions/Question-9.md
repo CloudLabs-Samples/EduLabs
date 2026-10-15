@@ -2,11 +2,13 @@
 Question Type : Single Choice
 
 ## Question
-8. Can a dispensary technican/assistant can access Final Check?
+9. What is the shortcut key for Final Check?
 
 ## Options
-Option 1: True
-Option 2: False
+Option 1: F8
+Option 2: F10
+Option 3: F7
+Option 4: F2
 
 ## Answers
 Option 2 : 1

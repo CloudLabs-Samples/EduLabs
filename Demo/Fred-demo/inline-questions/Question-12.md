@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-11. Is the POS transaction number recorded in Script Audit? 
+12. Can external Safety Net Amounts can be added by tapping the tile outlined below?
 
 ## Options
 Option 1: True

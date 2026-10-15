@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-2. What will the following search for (,,123 Test)?
+3. Will typing F in the search field display linked family members? 
 
 ## Options
 Option 1: True

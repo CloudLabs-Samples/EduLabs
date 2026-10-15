@@ -2,14 +2,14 @@
 Question Type : Single Choice
 
 ## Question
-7. Will a patients ePrescription Preference be able to be updated using F8?
+8. Can a dispensary technican/assistant can access Final Check?
 
 ## Options
 Option 1: True
 Option 2: False
 
 ## Answers
-Option 1 : 1
+Option 2 : 1
 
 ## Number of Retries
 1
