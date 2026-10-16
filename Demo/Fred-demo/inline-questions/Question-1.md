@@ -4,6 +4,8 @@ Question Type : Single Choice
 ## Question
 1. What will the following search for (,,123 Test)?
 
+    <img src="https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/main/Demo/Fred-demo/media/1.png" />
+
 ## Options
 Option 1: Search for all patients at address 123 Test
 Option 2: Search for patient name Test
