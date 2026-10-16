@@ -9,7 +9,13 @@ Option 1: True
 Option 2: False
 
 ## Answers
-Option 1 : 1
+Option 1 : 2
+
+## Correct Answer Feedback
+Correct! External Safety Net Amounts can be added by tapping the outlined tile.
+ 
+## Incorrect Answer Feedback
+Not quite. The correct answer is True. External Safety Net Amounts can be added by tapping the outlined tile.
 
 ## Number of Retries
 1

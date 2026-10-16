@@ -11,7 +11,13 @@ Option 3: F7
 Option 4: F2
 
 ## Answers
-Option 2 : 1
+Option 2 : 2
+
+## Correct Answer Feedback
+Correct! `F10` is the shortcut key for Final Check.
+ 
+## Incorrect Answer Feedback
+Not quite. The shortcut key for Final Check is `F10`.
 
 ## Number of Retries
 1

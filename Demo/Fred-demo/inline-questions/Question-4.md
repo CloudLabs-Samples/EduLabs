@@ -11,7 +11,13 @@ Option 3: Q
 Option 4: S
 
 ## Answers
-Option 3 : 1
+Option 3 : 2
+
+## Correct Answer Feedback
+Correct! Pressing `Q` dispenses the next script in the Medview Flow basket.
+ 
+## Incorrect Answer Feedback
+Not quite. The shortcut to dispense the next script in the Medview Flow basket is `Q`.
 
 ## Number of Retries
 1

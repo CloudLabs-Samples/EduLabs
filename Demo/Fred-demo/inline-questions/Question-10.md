@@ -10,7 +10,13 @@ Option 2: Ctrl+A
 Option 3: Ctrl+Shift+U
 
 ## Answers
-Option 3 : 1
+Option 3 : 2
+
+## Correct Answer Feedback
+Correct! `Ctrl+Shift+U` displays Script Audit.
+ 
+## Incorrect Answer Feedback
+Not quite. The shortcut key to display Script Audit is `Ctrl+Shift+U`.
 
 ## Number of Retries
 1
