@@ -2,7 +2,7 @@
 Question Type : Single Choice
 
 ## Question
-10. What is the shortcut key to display Script Audit? *
+10. What is the shortcut key to display Script Audit?
 
 ## Options
 Option 1: Ctrl+Shift+X
