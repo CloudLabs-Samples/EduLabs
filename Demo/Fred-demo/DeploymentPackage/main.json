@@ -67,6 +67,7 @@
 					"osDisk": {
 						"name": "[concat(variables('LabVMName'),'-osdisk')]",
 						"createOption": "fromImage",
+						"diskSizeGB": 512,
 						"managedDisk": {
 							"storageAccountType": "Standard_LRS"
 						}
