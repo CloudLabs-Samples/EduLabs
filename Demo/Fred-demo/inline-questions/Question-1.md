@@ -10,7 +10,7 @@ Option 2: Search for patient name Test
 Option 3: Nothing
 
 ## Answers
-Option 1 : 1
+Option 1 : 2
 
 ## Correct Answer Feedback
 Correct! In the search `,,123 Test`, the two leading commas skip the first two search fields, so the text after them is matched against the address. The search returns all patients at address 123 Test.
