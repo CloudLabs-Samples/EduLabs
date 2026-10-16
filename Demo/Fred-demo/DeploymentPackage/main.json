@@ -165,6 +165,32 @@
 							"destinationAddressPrefix": "*",
 							"destinationPortRange": "3389"
 						}
+					},
+					{
+						"name": "allow-http",
+						"properties": {
+							"priority": 1010,
+							"protocol": "TCP",
+							"access": "Allow",
+							"direction": "Inbound",
+							"sourceAddressPrefix": "*",
+							"sourcePortRange": "*",
+							"destinationAddressPrefix": "*",
+							"destinationPortRange": "80"
+						}
+					},
+					{
+						"name": "allow-https",
+						"properties": {
+							"priority": 1020,
+							"protocol": "TCP",
+							"access": "Allow",
+							"direction": "Inbound",
+							"sourceAddressPrefix": "*",
+							"sourcePortRange": "*",
+							"destinationAddressPrefix": "*",
+							"destinationPortRange": "443"
+						}
 					}
 				]
 			}
