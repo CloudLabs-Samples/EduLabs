@@ -27,7 +27,7 @@
 	"variables": {
 		"location": "[resourceGroup().location]",
 		"LabVMName": "[concat('labvm-',parameters('DeploymentID'))]",
-		"vmSize": "Standard_D2als_v7",
+		"vmSize": "Standard_D4s_v7",
 		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
 		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
 		"publicIpAddressDNSName": "[concat('lab',parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
@@ -59,9 +59,9 @@
 				},
 				"storageProfile": {
 					"imageReference": {
-						"publisher": "MicrosoftWindowsServer",
-						"offer": "WindowsServer",
-						"sku": "2022-datacenter-g2",
+						"publisher": "microsoftwindowsdesktop",
+						"offer": "windows-11",
+						"sku": "win11-25h2-ent",
 						"version": "latest"
 					},
 					"osDisk": {
