@@ -60,9 +60,9 @@
 				"storageProfile": {
 					"imageReference": {
 						"publisher": "microsoftwindowsdesktop",
-						"offer": "windows-11",
-						"sku": "win11-25h2-ent",
-						"version": "latest"
+                        "offer": "windows-11",
+                        "sku": "win11-25h2-avd",
+                        "version": "latest"
 					},
 					"osDisk": {
 						"name": "[concat(variables('LabVMName'),'-osdisk')]",
