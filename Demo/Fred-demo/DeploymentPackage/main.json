@@ -30,6 +30,7 @@
 		"vmSize": "Standard_D4s_v7",
 		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
 		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
+		"bootstrapScriptUri": "https://fredtest123.blob.core.windows.net/task/psscript.ps1",
 		"publicIpAddressDNSName": "[concat('lab',parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
 		"networkSecurityGroupName": "[concat(variables('LabVMName'), '-nsg')]",
 		"virtualNetworkName": "[concat(variables('LabVMName'), '-vnet')]",
@@ -83,6 +84,33 @@
 				}
 			}
 		},
+		{
+	      "type": "Microsoft.Compute/virtualMachines/extensions",
+	      "name": "[concat(variables('LabVMName'), '/', 'windowsExtension')]",
+	      "apiVersion": "2019-07-01",
+	      "location": "[variables('location')]",
+	      "comments": "Custom Script Extension - installs the candidate tooling (Microsoft.Graph PowerShell SDK, ExchangeOnlineManagement, Az PowerShell module) used to configure Microsoft 365 tenant policies against the lab tenant; validators query the tenant directly via Graph / Exchange Online / Security & Compliance PowerShell.",
+	      "tags": {
+	        "displayName": "VM Extension"
+	      },
+	      "dependsOn": [
+	        "[concat('Microsoft.Compute/virtualMachines/', variables('LabVMName'))]"
+	      ],
+	      "properties": {
+	        "publisher": "Microsoft.Compute",
+	        "type": "CustomScriptExtension",
+	        "typeHandlerVersion": "1.10",
+	        "autoUpgradeMinorVersion": true,
+	        "settings": {
+	          "fileUris": [
+	            "[variables('bootstrapScriptUri')]"
+	          ]
+	        },
+	        "protectedSettings": {
+	          "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File psscript.ps1', variables('cloudlabsCommon'))]"
+	        }
+	      }
+	    },
 		{
 			"name": "[variables('virtualNetworkName')]",
 			"type": "Microsoft.Network/virtualNetworks",
