@@ -30,7 +30,7 @@
 		"vmSize": "Standard_D4as_v7",
 		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
 		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
-		"bootstrapScriptUri": "https://fredtest123.blob.core.windows.net/task/psscript.ps1",
+		"bootstrapScriptUri": "https://freddemo.blob.core.windows.net/task/psscript.ps1",
 		"publicIpAddressDNSName": "[concat('lab',parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
 		"networkSecurityGroupName": "[concat(variables('LabVMName'), '-nsg')]",
 		"virtualNetworkName": "[concat(variables('LabVMName'), '-vnet')]",
