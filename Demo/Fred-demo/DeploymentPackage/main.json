@@ -107,7 +107,7 @@
 	          ]
 	        },
 	        "protectedSettings": {
-	          "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File psscript.ps1', variables('cloudlabsCommon'))]"
+	          "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File psscript.ps1"
 	        }
 	      }
 	    },
