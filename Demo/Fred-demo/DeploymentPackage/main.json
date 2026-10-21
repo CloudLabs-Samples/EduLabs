@@ -27,7 +27,7 @@
 	"variables": {
 		"location": "[resourceGroup().location]",
 		"LabVMName": "[concat('labvm-',parameters('DeploymentID'))]",
-		"vmSize": "Standard_D4s_v7",
+		"vmSize": "Standard_D4as_v7",
 		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
 		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
 		"bootstrapScriptUri": "https://fredtest123.blob.core.windows.net/task/psscript.ps1",
