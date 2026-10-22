@@ -56,20 +56,12 @@
 			],
 			"properties": {
 				"hardwareProfile": {
-					"vmSize": "[variables('vmSize')]"
-				},
-				"osProfile": {
-					"computerName": "[take(variables('LabVMName'), 15)]",
-					"adminUsername": "[parameters('adminUsername')]",
-					"adminPassword": "[parameters('adminPassword')]",
-					"windowsConfiguration": {
-						"provisionVMAgent": true
-					}
-				},
-				"storageProfile": {
-					"imageReference": {
-						"id": "[parameters('imgid')]"
-					},
+			        "vmSize": "[variables('vmSize')]"
+			    },
+			    "storageProfile": {
+			        "imageReference": {
+			            "id": "[parameters('imgid')]"
+			        },
 					"osDisk": {
 						"name": "[concat(variables('LabVMName'), '-osdisk')]",
 						"createOption": "FromImage",
