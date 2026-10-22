@@ -1,0 +1,25 @@
+[
+  {
+    "Name": "Keysight ADS101 Lab 3A - DC FET curve tracer template",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M00-3A-GettingStarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M16-3A-CreateAmplifierWorkspace.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M17-3A-DCFETCurveTracerTemplate.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M18-3A-ExperimentWithMarkers.md",
+        "Order": 4
+      }
+    ]
+  }
+]

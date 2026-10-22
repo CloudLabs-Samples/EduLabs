@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Keysight ADS101 Lab 2B - Filter design guide",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M00-2B-GettingStarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Keysight-tech/Keysight-Tech/ADS101-Labs/LabGuidePackage/LabGuide/M15-2B-FilterDesignGuide.md",
+        "Order": 2
+      }
+    ]
+  }
+]
