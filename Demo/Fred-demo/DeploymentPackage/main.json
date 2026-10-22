@@ -56,19 +56,19 @@
 			],
 			"properties": {
 				"hardwareProfile": {
-			        "vmSize": "[variables('vmSize')]"
-			    },
-			    "storageProfile": {
-			        "imageReference": {
-			            "id": "[parameters('imgid')]"
-			        },
+					"vmSize": "[variables('vmSize')]"
+				},
+				"storageProfile": {
+					"imageReference": {
+						"id": "[parameters('imgid')]"
+					},
 					"osDisk": {
 						"name": "[concat(variables('LabVMName'), '-osdisk')]",
 						"createOption": "FromImage",
 						"caching": "ReadWrite",
 						"diskSizeGB": 128,
 						"managedDisk": {
-							"storageAccountType": "Standard_LRS"
+							"storageAccountType": "StandardSSD_LRS"
 						}
 					},
 					"dataDisks": []
@@ -79,33 +79,6 @@
 							"id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
 						}
 					]
-				}
-			}
-		},
-		{
-			"type": "Microsoft.Compute/virtualMachines/extensions",
-			"name": "[concat(variables('LabVMName'), '/', 'windowsExtension')]",
-			"apiVersion": "2023-03-01",
-			"location": "[variables('location')]",
-			"comments": "Custom Script Extension - installs the candidate tooling (Microsoft.Graph PowerShell SDK, ExchangeOnlineManagement, Az PowerShell module) used to configure Microsoft 365 tenant policies against the lab tenant; validators query the tenant directly via Graph / Exchange Online / Security & Compliance PowerShell.",
-			"tags": {
-				"displayName": "VM Extension"
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Compute/virtualMachines', variables('LabVMName'))]"
-			],
-			"properties": {
-				"publisher": "Microsoft.Compute",
-				"type": "CustomScriptExtension",
-				"typeHandlerVersion": "1.10",
-				"autoUpgradeMinorVersion": true,
-				"settings": {
-					"fileUris": [
-						"[variables('bootstrapScriptUri')]"
-					]
-				},
-				"protectedSettings": {
-					"commandToExecute": "powershell -ExecutionPolicy Unrestricted -File psscript.ps1"
 				}
 			}
 		},
