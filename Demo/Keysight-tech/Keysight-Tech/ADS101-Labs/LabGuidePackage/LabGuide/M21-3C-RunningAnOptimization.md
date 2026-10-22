@@ -3,7 +3,9 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Run the optimization
+
 - Optimization cockpit
+
 - Notice all goals were achieved
 
 ## Task 1: Run the optimization
@@ -12,7 +14,7 @@
 
    ![](../Image/3C-image-101-1.png)
 
-Immediately, you will see the **Optimization Cockpit**, Status window and Data Display appear.
+   >**Note:** Immediately, you will see the **Optimization Cockpit**, Status window and Data Display appear.
 
 ## Task 2: Optimization cockpit
 
@@ -26,7 +28,7 @@ The cockpit shows all the information you need.
 
 1. On the Smith chart, set the markers to **7 GHz**.
 
-Notice that, all goals were achieved, i.e. S11 &lt; -15 dB, S22 &lt; -15 dB and S21 > 15 dB.
+   >**Note:** Notice that, all goals were achieved, i.e. S11 &lt; -15 dB, S22 &lt; -15 dB and S21 > 15 dB.
 
    ![](../Image/3C-7905f903-d6c9-4684-9f5b-56c9f4b6167f.png)
 

@@ -68,7 +68,6 @@ This step introduces the ADS tuning feature that allows you to tune parameter va
 
    ![](../Image/01-429d6c10-d121-4537-aecd-0c6166881738.png)
 
-
 1. Take a few moments to experiment with the Tuner and watch the data display and schematic as you do. After experimenting with the tuner, click **Close**.
 
 1. In the schematic, use **Ctrl+Z** to undo the component parameter updates.

@@ -3,6 +3,7 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Enable single component to be optimized
+
 - Enable multiple variables to be optimized
 
 ## Task 1: Enable single component to be optimized
@@ -15,11 +16,11 @@
 
    ![](../Image/3C-6e645693-2201-423b-992a-4e37a05cd331.png)
 
-   ![](../Image/3C-5c73b03b-d6d5-4fea-a3ac-83efe76f853c.png)
-
 1. Select the **Optimization tab**
 
 1. Set Optimization Status = **Enabled**.
+
+   ![](../Image/3C-5c73b03b-d6d5-4fea-a3ac-83efe76f853c.png)
 
 1. Type in the continuous range: **0.5 pF** to **20 pF**.
 
@@ -29,7 +30,7 @@
 
    ![](../Image/3C-image-98.png)
 
-> **Note:** The component text will show the ***opt*** function {o} next to the capacitance value.
+>**Note:** The component text will show the ***opt*** function {o} next to the capacitance value.
 
 ## Task 2: Enable multiple variables to be optimized
 
@@ -41,7 +42,7 @@ Now you know how to enable and display the values for a single component. There 
 
 1. Select the **Optimization** tab.
 
-Notice that your enabled capacitor C1 and values appear. This setup makes it easy to set multiple parameters or variables (VARs).
+   >**Note:** Notice that your enabled capacitor C1 and values appear. This setup makes it easy to set multiple parameters or variables (VARs).
 
    ![](../Image/3C-640f7f3b-15a4-489e-bfba-063392f5f32b.png)
 
