@@ -12,10 +12,18 @@
 			"type": "string"
 		},
 		"adminUsername": {
-			"type": "string"
+			"type": "string",
+			"defaultValue": "azureuser"
 		},
 		"adminPassword": {
-			"type": "securestring"
+			"type": "string",
+			"defaultValue": "fzfv39CKM*op"
+		},
+		"imgid": {
+			"type": "string",
+			"metadata": {
+				"description": "Resource ID of the Compute Gallery image version, e.g. /subscriptions/<sub>/resourceGroups/<rg>/providers/Microsoft.Compute/galleries/<gallery>/images/<image>/versions/<version> (or omit /versions/... for the latest)."
+			}
 		},
 		"trainerUserName": {
 			"type": "string"
@@ -26,16 +34,16 @@
 	},
 	"variables": {
 		"location": "[resourceGroup().location]",
-		"LabVMName": "[concat('labvm-',parameters('DeploymentID'))]",
+		"LabVMName": "[concat('labvm-', parameters('DeploymentID'))]",
 		"vmSize": "Standard_D4as_v7",
 		"networkInterfaceName": "[concat(variables('LabVMName'), '-nic')]",
 		"publicIpAddressName": "[concat(variables('LabVMName'), '-pip')]",
 		"bootstrapScriptUri": "https://freddemo.blob.core.windows.net/task/psscript.ps1",
-		"publicIpAddressDNSName": "[concat('lab',parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
+		"publicIpAddressDNSName": "[concat('lab', parameters('DeploymentID'), 'vm', uniqueString(resourceGroup().id))]",
 		"networkSecurityGroupName": "[concat(variables('LabVMName'), '-nsg')]",
 		"virtualNetworkName": "[concat(variables('LabVMName'), '-vnet')]",
-		"vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
-		"subnetRef": "[concat(variables('vnetID'),'/subnets/','subnet')]"
+		"vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+		"subnetRef": "[concat(variables('vnetID'), '/subnets/', 'subnet')]"
 	},
 	"resources": [
 		{
@@ -44,31 +52,29 @@
 			"apiVersion": "2023-03-01",
 			"location": "[variables('location')]",
 			"dependsOn": [
-				"[concat('Microsoft.Network/networkInterfaces/', variables('networkInterfaceName'))]"
+				"[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
 			],
 			"properties": {
+				"hardwareProfile": {
+					"vmSize": "[variables('vmSize')]"
+				},
 				"osProfile": {
-					"computerName": "[variables('LabVMName')]",
+					"computerName": "[take(variables('LabVMName'), 15)]",
 					"adminUsername": "[parameters('adminUsername')]",
 					"adminPassword": "[parameters('adminPassword')]",
 					"windowsConfiguration": {
 						"provisionVMAgent": true
 					}
 				},
-				"hardwareProfile": {
-					"vmSize": "[variables('vmSize')]"
-				},
 				"storageProfile": {
 					"imageReference": {
-						"publisher": "microsoftwindowsdesktop",
-                        "offer": "windows-11",
-                        "sku": "win11-25h2-avd",
-                        "version": "latest"
+						"id": "[parameters('imgid')]"
 					},
 					"osDisk": {
-						"name": "[concat(variables('LabVMName'),'-osdisk')]",
-						"createOption": "fromImage",
-						"diskSizeGB": 512,
+						"name": "[concat(variables('LabVMName'), '-osdisk')]",
+						"createOption": "FromImage",
+						"caching": "ReadWrite",
+						"diskSizeGB": 128,
 						"managedDisk": {
 							"storageAccountType": "Standard_LRS"
 						}
@@ -85,32 +91,32 @@
 			}
 		},
 		{
-	      "type": "Microsoft.Compute/virtualMachines/extensions",
-	      "name": "[concat(variables('LabVMName'), '/', 'windowsExtension')]",
-	      "apiVersion": "2019-07-01",
-	      "location": "[variables('location')]",
-	      "comments": "Custom Script Extension - installs the candidate tooling (Microsoft.Graph PowerShell SDK, ExchangeOnlineManagement, Az PowerShell module) used to configure Microsoft 365 tenant policies against the lab tenant; validators query the tenant directly via Graph / Exchange Online / Security & Compliance PowerShell.",
-	      "tags": {
-	        "displayName": "VM Extension"
-	      },
-	      "dependsOn": [
-	        "[concat('Microsoft.Compute/virtualMachines/', variables('LabVMName'))]"
-	      ],
-	      "properties": {
-	        "publisher": "Microsoft.Compute",
-	        "type": "CustomScriptExtension",
-	        "typeHandlerVersion": "1.10",
-	        "autoUpgradeMinorVersion": true,
-	        "settings": {
-	          "fileUris": [
-	            "[variables('bootstrapScriptUri')]"
-	          ]
-	        },
-	        "protectedSettings": {
-	          "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File psscript.ps1"
-	        }
-	      }
-	    },
+			"type": "Microsoft.Compute/virtualMachines/extensions",
+			"name": "[concat(variables('LabVMName'), '/', 'windowsExtension')]",
+			"apiVersion": "2023-03-01",
+			"location": "[variables('location')]",
+			"comments": "Custom Script Extension - installs the candidate tooling (Microsoft.Graph PowerShell SDK, ExchangeOnlineManagement, Az PowerShell module) used to configure Microsoft 365 tenant policies against the lab tenant; validators query the tenant directly via Graph / Exchange Online / Security & Compliance PowerShell.",
+			"tags": {
+				"displayName": "VM Extension"
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Compute/virtualMachines', variables('LabVMName'))]"
+			],
+			"properties": {
+				"publisher": "Microsoft.Compute",
+				"type": "CustomScriptExtension",
+				"typeHandlerVersion": "1.10",
+				"autoUpgradeMinorVersion": true,
+				"settings": {
+					"fileUris": [
+						"[variables('bootstrapScriptUri')]"
+					]
+				},
+				"protectedSettings": {
+					"commandToExecute": "powershell -ExecutionPolicy Unrestricted -File psscript.ps1"
+				}
+			}
+		},
 		{
 			"name": "[variables('virtualNetworkName')]",
 			"type": "Microsoft.Network/virtualNetworks",
@@ -118,7 +124,9 @@
 			"location": "[variables('location')]",
 			"properties": {
 				"addressSpace": {
-					"addressPrefixes": ["10.0.0.0/16"]
+					"addressPrefixes": [
+						"10.0.0.0/16"
+					]
 				},
 				"subnets": [
 					{
@@ -136,9 +144,9 @@
 			"apiVersion": "2022-09-01",
 			"location": "[variables('location')]",
 			"dependsOn": [
-				"[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
-				"[concat('Microsoft.Network/publicIpAddresses/', variables('publicIpAddressName'))]",
-				"[concat('Microsoft.Network/networkSecurityGroups/', variables('networkSecurityGroupName'))]"
+				"[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+				"[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpAddressName'))]",
+				"[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
 			],
 			"properties": {
 				"ipConfigurations": [
@@ -149,8 +157,8 @@
 								"id": "[variables('subnetRef')]"
 							},
 							"privateIPAllocationMethod": "Dynamic",
-							"publicIpAddress": {
-								"id": "[resourceId('Microsoft.Network/publicIpAddresses', variables('publicIpAddressName'))]"
+							"publicIPAddress": {
+								"id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpAddressName'))]"
 							}
 						}
 					}
@@ -240,11 +248,11 @@
 		},
 		"LabVM DNS Name": {
 			"type": "string",
-			"value": "[reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpAddressName'))).dnsSettings.fqdn]"
+			"value": "[reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpAddressName'))).dnsSettings.fqdn]"
 		},
 		"LabVM RDP Command": {
 			"type": "string",
-			"value": "[concat('mstsc /v:', reference(resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpAddressName'))).dnsSettings.fqdn)]"
+			"value": "[concat('mstsc /v:', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpAddressName'))).dnsSettings.fqdn)]"
 		}
 	}
 }
