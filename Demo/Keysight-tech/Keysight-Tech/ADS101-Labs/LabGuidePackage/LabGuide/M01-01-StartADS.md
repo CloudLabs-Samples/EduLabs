@@ -3,8 +3,11 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Start ADS
+
 - ADS main window
+
 - ADS home directory
+
 - Get Started window
 
 ## Task 1: Start ADS

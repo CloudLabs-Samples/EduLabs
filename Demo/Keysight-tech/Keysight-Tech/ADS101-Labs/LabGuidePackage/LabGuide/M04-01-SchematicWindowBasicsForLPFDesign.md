@@ -6,9 +6,9 @@
 
 ## Task 1: Familiarize with the schematic window
 
-   ![](../Image/01-image-9.png)
-
 1. Quickly locating the commands, icons, palette, and cursor location values shown here.
+
+   ![](../Image/01-image-9.png)
 
 1. Click the **Palette selection** to see other palettes.
 
