@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "Splunk Lesson 1",
+        "Language": "English",
+        "Files": [
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/1109akshatverma/USF/refs/heads/main/malcolm/Malcolm.md",
+            "Order": 1
+          }
+        ]
+    }
+]
