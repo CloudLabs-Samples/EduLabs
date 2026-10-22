@@ -3,29 +3,38 @@
 **Learning Objectives:** In this module, you will complete the following tasks:
 
 - Start the tuner
+
 - Enable parameter for tuning
+
 - Tune the response
+
 - Component parameter update
+
 - Undo the parameter updates
+
 - Run the simulation
+
 - Folder view
+
 - Library view
 
 This step introduces the ADS tuning feature that allows you to tune parameter values and see the simulation results in the data display in real time.
 
 ## Task 1: Start the tuner
 
-   ![](../Image/01-d60b44b0-a2da-451c-940e-a960290e29f0.png)
-
 1. Position and resize the data display and schematic windows, so you can see them both on the screen easily.
 
-1. Use **View All** (“**F**” hotkey) to show all contents.
+   ![](../Image/01-d60b44b0-a2da-451c-940e-a960290e29f0.png)
+
+1. Use **View All** (**F** hotkey) to show all contents.
 
 1. Make the schematic window active.
 
-1. Click the **Tuning** icon ![](../Image/01-23bc5815-2e87-48d4-aa87-62a36c77f137.png)
+1. Click the **Tuning** icon 
 
-The status window will appear along with the Tune Parameters dialog.
+   ![](../Image/01-23bc5815-2e87-48d4-aa87-62a36c77f137.png)
+
+1. The status window will appear along with the Tune Parameters dialog.
 
 ## Task 2: Enable parameter for tuning
 
@@ -33,7 +42,7 @@ The status window will appear along with the Tune Parameters dialog.
 
    ![](../Image/01-5bf2397f-0264-441e-b0d3-d94bac2cf47c.png)
 
-> **Note:** When you do, the tunable parameter will appear in the Tuner and you will see the string {**t**} next to the parameter value that indicates it is enabled for tuning.
+   >**Note:** When you do, the tunable parameter will appear in the Tuner and you will see the string {**t**} next to the parameter value that indicates it is enabled for tuning.
 
 1. Add the other capacitor value
 
@@ -43,31 +52,34 @@ The status window will appear along with the Tune Parameters dialog.
 
 ## Task 3: Tune the response
 
-   ![](../Image/01-9df0d828-ed85-4c02-a4d8-1a739f7409b6.png)
-
 1. Shift the marker to **9 GHz**
+
+   ![](../Image/01-9df0d828-ed85-4c02-a4d8-1a739f7409b6.png)
 
 1. Tune the response to get -3 dB @ 9 GHz
 
-1. In Tune Parameter window, click ![](../Image/01-80ff5e2f-03a3-4fe4-9919-932cf97c6788.png)
+1. In Tune Parameter window, click 
 
-## Task 4: Component parameter update
+   ![](../Image/01-80ff5e2f-03a3-4fe4-9919-932cf97c6788.png)
 
-Those values will appear on the schematic components.
+## Task 4: Component parameter update and Undo the parameter updates
+
+1. Those values will appear on the schematic components.
 
    ![](../Image/01-429d6c10-d121-4537-aecd-0c6166881738.png)
 
-## Task 5: Undo the parameter updates
 
-Take a few moments to experiment with the Tuner and watch the data display and schematic as you do. After experimenting with the tuner, click **Close**.
+1. Take a few moments to experiment with the Tuner and watch the data display and schematic as you do. After experimenting with the tuner, click **Close**.
 
-In the schematic, use **Ctrl+Z** to undo the component parameter updates.
+1. In the schematic, use **Ctrl+Z** to undo the component parameter updates.
 
-## Task 6: Run the simulation
+## Task 5: Run the simulation
 
 1. Change **C1** = **0.5 pF**
 
-1. Simulate ![](../Image/01-40f84716-fcc2-4418-85e9-04addb659c89.png)
+1. Simulate 
+
+   ![](../Image/01-40f84716-fcc2-4418-85e9-04addb659c89.png)
 
    ![](../Image/01-96aa0561-4f03-48fc-a58c-8d60ed393df1.png)
 
