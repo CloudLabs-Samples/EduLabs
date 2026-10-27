@@ -22,6 +22,12 @@ Three modules, one per page. Work through them in order.
 
 Comfort with the Linux command line, SSH, `curl`, and reading JSON output. Working knowledge of Azure virtual networks, network security groups, managed identities and Azure RBAC. You do not need to memorise Azure CLI syntax - `az --help` and `az <group> --help` are available throughout.
 
+## Accessing Your Environment
+
+Your virtual machine and this assessment **Guide** are available within your web browser.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/guide1.png)
+
 ## How you will work
 
 Everything happens on the **Lab VM** (the jump host) over SSH, and every Azure action is an Azure CLI call you write. Connect using the **LabVM SSH Command**, **LabVM Admin Username** and **LabVM Admin Password** on the **Environment** tab, then sign in as the lab service principal:
@@ -68,6 +74,42 @@ Both VMs use the same admin username and password.
 | Lab identity | A service principal scoped to your resource group |
 
 > **The validators check outcomes and side effects, not commands.** There is more than one correct way to fix most faults here, and any of them passes. What fails is a fix that works by widening exposure - opening a port to the internet, switching a firewall to allow all networks, or granting a broader role than the job needs.
+
+## Exploring Your Resources
+
+To review your resources and credentials, navigate to the **Environment** tab.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/env.png)
+
+## Utilizing the Split Window Feature
+
+For convenience, you can open the assessment guide in a separate window by selecting the **Split Window** button from the top right corner.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/split.png)
+
+## Managing Your Virtual Machine
+
+You can **Start, Restart,** or **Stop** your virtual machine as needed from the **Resources** tab.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/resources.png)
+
+## Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the environment.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/zoom.png)
+
+## Validation
+
+Modules 1 and 2 each end with a **Validate** button. When you have met every required outcome for the task, hit **Validate** under the Validation tab integrated within your guide. If you receive a success message, proceed to the next module; if not, read the error message carefully - it names the layer that is still failing - and revisit the required outcomes.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/val.png)
+
+## Track Your Progress
+
+The **Progress** tab shows your validation score. It reaches 100% when both task validations pass.
+
+   ![](https://raw.githubusercontent.com/CloudLabs-Samples/EduLabs/refs/heads/main/Demo/Azure-VM-Troubleshooting-Lab/LabGuidePackage/Image/progress.png)
 
 ## Support Contact
 
