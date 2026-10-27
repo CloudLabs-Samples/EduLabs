@@ -60,7 +60,7 @@ HTTP 200
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="c01064cb-4a5f-4407-916d-1afaf293b658" />
+<validation step="35677a15-065b-4d83-9067-9f345b23d7a2" />
 
 ## Module Summary
 

@@ -58,7 +58,7 @@ The blob `reports/orders-report-latest.txt` must exist, because the validator re
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="d2954a3e-d480-42af-ae6e-f3c1159a45e8" />
+<validation step="f507c1ad-2e2c-47ef-b2eb-a1f6d3e6d41c" />
 
 ## Module Summary
 
