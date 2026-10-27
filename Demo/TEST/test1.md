@@ -48,16 +48,23 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
    ![](./images/testak.png)
 
 ### Phase 1 Proposal (Encryption Algorithm)
+
 - **Encryption Algorithm:** 
+
     - Algorithm: AES
+
     - Key Length: 256
+
     - Hash: SHA256
+
     - DH Group: 14 (2048 bit)
 
-   ![](./images/testak.png)
+        ![](./images/testak.png)
 
 ### Expiration and Replacement
+
 - **Life Time:** 86400
+
 - **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
  
    ![](./images/testak.png)
@@ -73,37 +80,53 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
    ![](./images/testak.png)
 
 ### General Information
+
 - **Mode:** Routed (VTI)
 
    ![](./images/testak.png)
 
 ### Networks
+
 - **Local Network:**
+
     - Type: Address
+
     - Address: 10.255.3.1
+
 - **Remote Network:**
+
     - Type: Address
+
     - Address: 10.255.3.2
 
-   ![](./images/testak.png)
+        ![](./images/testak.png)
 
 ### Phase 2 Proposal (SA/Key Exchange)
+
 - **Protocol:** ESP
+
 - **Encryption Algorithms:**
+
     - AES128-GCM / Auto
+
     - AES192-GCM / Auto
+
     - AES256-GCM / Auto
+
 - **PFS key group:** 14
 
    ![](./images/testak.png)
 
 ### Expiration and Replacement
+
 - **Life Time:** 7200
+
 - **Rekey Time:** 6600 (10 minutes less than the Life Time is recommended)
 
    ![](./images/testak.png)
 
 ### Keep Alive
+
 - **Keep Alive:** Enabled
 
    ![](./images/testak.png)
@@ -121,33 +144,49 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 2\. **+Add P1**
 
 ### General Information
+
 - **Description:** IPSec tunnel from WAN1 to MEL1 Netskope
 
 ### IKE Endpoint Configuration
+
 - **Key Exchange Version:** IKEv2
+
 - **Internet Protocol:** IPv4
+
 - **Interface:** WAN1
+
 - **Remote Gateway:** `Failover Netskope POP` e.g. MEL1 (163.116.198.38)
 
 **Note**: Make sure you use the **IPSec Gateway** IP address for the **Failover Netskope POP** you selected in **Step 1.2**. It should be in the **POPS Info** you copied.
 
 ### Phase 1 Proposal (Authentication)
+
 - **Authentication Method:** Mutual PSK
+
 - **My identifier:** User fully qualified domain name / Email
+
     - `pfsense@<`tenant`>.goskope.com` (use your tenant name)
+
 - **Peer identifier:** Peer IP address
+
 - **Pre-Shared Key:** `MaKe_Y0Ur_PaSsW0Rd_Un!qUe`
 
 ### Phase 1 Proposal (Encryption Algorithm)
+
 - **Encryption Algorithm:** 
+
     - Algorithm: AES
+
     - Key Length: 256
+
     - Hash: SHA256
+
     - DH Group: 14 (2048 bit)
 
-
 ### Expiration and Replacement
+
 - **Life Time:** 86400
+
 - **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
 
 3\. **Save**
@@ -162,26 +201,41 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 - **Mode:** Routed (VTI)
 
 ### Networks
+
 - **Local Network:**
+
     - Type: Address
+
     - Address: 10.255.3.5
+
 - **Remote Network:**
+
     - Type: Address
+
     - Address: 10.255.3.6
 
 ### Phase 2 Proposal (SA/Key Exchange)
+
 - **Protocol:** ESP
+
 - **Encryption Algorithms:**
+
     - AES128-GCM / Auto
+
     - AES192-GCM / Auto
+
     - AES256-GCM / Auto
+
 - **PFS key group:** 14
 
 ### Expiration and Replacement
+
 - **Life Time:** 7200
+
 - **Rekey Time:** 6600 (10 minutes less than the Life Time is recommended)
 
 ### Keep Alive
+
 - **Keep Alive:** Enabled
 
 3\. **Save**
