@@ -45,21 +45,6 @@ env | grep -E '^(RG|APP_|ROUTE_|VNET_|STORAGE_)' | sort
 
 > **Read the incident brief first.** `~/LabFiles/scenario-brief.txt` describes what broke and lists the change tickets raised in the window (CHG-4471 to CHG-4481). Each ticket tells you what was **intended**. A fix that undoes the intent of a legitimate change is not a fix, and the validators reject the most common ways of doing that.
 
-## Names You Must Use Verbatim
-
-| Setting | Value |
-|---|---|
-| Jump host (you work here) | **labvm-<inject key="DeploymentID" enableCopy="false"/>** - `10.0.1.10`, in `lab-subnet` (`10.0.1.0/24`) |
-| Application server | **appvm-<inject key="DeploymentID" enableCopy="false"/>** - `10.0.2.10`, in `app-subnet` (`10.0.2.0/24`) |
-| Storage account | <inject key="Storage Account Name" enableCopy="true"/> |
-| Report container | `reports` |
-| Resource group (exists - do **not** delete it) | <inject key="Resource Group Name" enableCopy="true"/> |
-| Application (client) ID | <inject key="ApplicationID" enableCopy="true"/> |
-| Tenant ID | <inject key="TenantID" enableCopy="true"/> |
-| Subscription ID | <inject key="SubscriptionID" enableCopy="true"/> |
-
-Both VMs use the same admin username and password.
-
 ## Environment Reference
 
 | Component | Details |
