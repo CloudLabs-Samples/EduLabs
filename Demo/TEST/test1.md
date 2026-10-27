@@ -16,7 +16,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 ### Advanced IPSec Settings
 - **IPSec Filter Mode:** Filter IPSec VTI and Transport on assigned interfaces, block all tunnel mode traffic.
 
-   ![](./images/testak.png)
+![IPSec-Advanced-Settings.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IPSec-Advanced-Settings.png)
 
 2\. **Save**
 
@@ -36,7 +36,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 **Note**: Make sure you use the **IPSec Gateway** IP address for the **Primary Netskope POP** you selected in **Step 1.2**. It should be in the **POPS Info** you copied.
 
-   ![](./images/testak.png)
+![IKE-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IKE-20260831.png)
 
 ### Phase 1 Proposal (Authentication)
 - **Authentication Method:** Mutual PSK
@@ -45,7 +45,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 - **Peer identifier:** Peer IP address
 - **Pre-Shared Key:** `MaKe_Y0Ur_PaSsW0Rd_Un!qUe`
 
-   ![](./images/testak.png)
+![P1-Auth-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P1-Auth-20260831.png)
 
 ### Phase 1 Proposal (Encryption Algorithm)
 
@@ -59,7 +59,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
     - DH Group: 14 (2048 bit)
 
-        ![](./images/testak.png)
+  ![P1-Encryption.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P1-Encryption.png)
 
 ### Expiration and Replacement
 
@@ -67,7 +67,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 - **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
  
-   ![](./images/testak.png)
+![Lifetime-Rekey.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/Lifetime-Rekey.png)
  
 3\. **Save**
 
@@ -77,13 +77,13 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 2\. **+Add P2**
 
-   ![](./images/testak.png)
+![P2-DP1-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-DP1-20260831.png)
 
 ### General Information
 
 - **Mode:** Routed (VTI)
 
-   ![](./images/testak.png)
+![P2-General-Info-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-General-Info-20260831.png)
 
 ### Networks
 
@@ -99,7 +99,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
     - Address: 10.255.3.2
 
-        ![](./images/testak.png)
+![P2-Networks.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-Networks.png)
 
 ### Phase 2 Proposal (SA/Key Exchange)
 
@@ -115,7 +115,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 - **PFS key group:** 14
 
-   ![](./images/testak.png)
+![P2-Proposal.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-Proposal.png)
 
 ### Expiration and Replacement
 
@@ -123,13 +123,13 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 - **Rekey Time:** 6600 (10 minutes less than the Life Time is recommended)
 
-   ![](./images/testak.png)
+![P2-Expiry-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-Expiry-20260831.png)
 
 ### Keep Alive
 
 - **Keep Alive:** Enabled
 
-   ![](./images/testak.png)
+![P2-KeepAlive.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-KeepAlive.png)
 
 3\. **Save**
 
@@ -244,7 +244,7 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 You should now have two (2) IPSec Tunnels that will initiate from WAN1 to each DP.
 
-   ![](./images/testak.png)
+![IPSec-Tunnels-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IPSec-Tunnels-20260831.png)
 
 ## 3.6. IPSec Interface Assignment
 
@@ -256,7 +256,7 @@ You should now have two (2) IPSec Tunnels that will initiate from WAN1 to each D
 
 You should now have two (2) new Interfaces: OPT4 & OPT5.
 
-   ![](./images/testak.png)
+![IPSec-Interface-Assignments-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IPSec-Interface-Assignments-20260831.png)
 
 ## 3.7. Rename and Enable each IPSec Interface
 
@@ -275,7 +275,7 @@ You should now have two (2) new Interfaces: OPT4 & OPT5.
 
 Your configuration should look similar to the image below.
 
-   ![](./images/testak.png)
+![WAN1SYD1-20261013.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/WAN1SYD1-20261013.png)
 
 ### OPT5
 1\. **Interfaces** > OPT5
