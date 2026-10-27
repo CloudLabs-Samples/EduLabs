@@ -42,9 +42,9 @@ Follow this procedure to set up redundant Netskope IPSec tunnels using the WAN1 
 
 - **Remote Gateway:** `Primary Netskope POP` e.g. SYD1 (163.116.192.38)
 
->**Note:** Make sure you use the **IPSec Gateway** IP address for the **Primary Netskope POP** you selected in **Step 1.2**. It should be in the **POPS Info** you copied.
+    >**Note:** Make sure you use the **IPSec Gateway** IP address for the **Primary Netskope POP** you selected in **Step 1.2**. It should be in the **POPS Info** you copied.
 
-    ![IKE-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IKE-20260831.png)
+        ![IKE-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IKE-20260831.png)
 
 ### Phase 1 Proposal (Authentication)
 
