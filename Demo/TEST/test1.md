@@ -16,7 +16,7 @@
 
 ### Advanced IPSec Settings
 
-- **IPSec Filter Mode:** Filter IPSec VTI and Transport on assigned interfaces, block all tunnel mode traffic.
+1. **IPSec Filter Mode:** Filter IPSec VTI and Transport on assigned interfaces, block all tunnel mode traffic.
 
     ![IPSec-Advanced-Settings.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IPSec-Advanced-Settings.png)
 
@@ -76,19 +76,19 @@
 
 ### Expiration and Replacement
 
-- **Life Time:** 86400
+1. **Life Time:** 86400
 
-- **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
+1. **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
  
     ![Lifetime-Rekey.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/Lifetime-Rekey.png)
  
-3. **Save**
+1. **Save**
 
 ## 3.3. IPSec Tunnels - Phase 2 - Data Plane 1
 
 1. **+Show Phase 2 Entries (0)**
 
-2. **+Add P2**
+1. **+Add P2**
 
     ![P2-DP1-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-DP1-20260831.png)
 
@@ -140,13 +140,13 @@
 
 ### Keep Alive
 
-- **Keep Alive:** Enabled
+1. **Keep Alive:** Enabled
 
     ![P2-KeepAlive.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/P2-KeepAlive.png)
 
-3. **Save**
+1. **Save**
 
-4. **Apply Changes**
+1. **Apply Changes**
 
 **Repeat for the 2nd IPSec Tunnel**
 
@@ -198,11 +198,11 @@
 
 ### Expiration and Replacement
 
-- **Life Time:** 86400
+1. **Life Time:** 86400
 
-- **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
+1. **Rekey Time:** 85800 (10 minutes less than the Life Time is recommended)
 
-3. **Save**
+1. **Save**
 
 ## 3.5. IPSec Tunnels - Phase 2 - Data Plane 2
 
@@ -250,13 +250,13 @@
 
 ### Keep Alive
 
-- **Keep Alive:** Enabled
+1. **Keep Alive:** Enabled
 
-3. **Save**
+1. **Save**
 
-4. **Apply Changes**
+1. **Apply Changes**
 
-5. You should now have two (2) IPSec Tunnels that will initiate from WAN1 to each DP.
+1. You should now have two (2) IPSec Tunnels that will initiate from WAN1 to each DP.
 
     ![IPSec-Tunnels-20260831.png](https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-AI/Lab-Guide/main/15032oq7EMg8e/images/IPSec-Tunnels-20260831.png)
 
